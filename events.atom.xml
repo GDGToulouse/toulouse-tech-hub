@@ -1,0 +1,482 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns:media="http://search.yahoo.com/mrss/" xmlns="http://www.w3.org/2005/Atom">
+  <title>Évènements Toulouse Communautés Tech</title>
+  <subtitle>Flux des prochains évènements des communautés tech à Toulouse</subtitle>
+  <author>
+    <name>https://dotnet.social/@styx31</name>
+  </author>
+  <link rel="self" href="https://tbolon.github.io/toulouse-orgas/events.atom.xml" />
+  <id>urn:uuid:71d76562-7d05-42be-88bd-059544c0b3e5</id>
+  <updated>2025-03-12T19:00:00+01:00</updated>
+  <entry>
+    <id>urn:meetup-304773963</id>
+    <published>2025-01-23T18:00:00+01:00</published>
+    <title>Introduction à Org Topologies</title>
+    <link rel="alternate" href="https://www.meetup.com/fr-FR/agile-toulouse/events/304773963/" />
+    <author>
+      <name>Agile Toulouse</name>
+    </author>
+  </entry>
+  <entry>
+    <id>urn:meetup-305148947</id>
+    <published>2025-01-24T18:00:00+01:00</published>
+    <title>Apprenez l'essentiel de "Accelerate" / DORA, le pied au plancher</title>
+    <link rel="alternate" href="https://www.meetup.com/fr-FR/agile-toulouse/events/305148947/" />
+    <author>
+      <name>Agile Toulouse</name>
+    </author>
+  </entry>
+  <entry>
+    <id>urn:meetup-305226338</id>
+    <published>2025-01-31T18:00:00+01:00</published>
+    <title>Agile Game Labs #3</title>
+    <link rel="alternate" href="https://www.meetup.com/fr-FR/agile-toulouse/events/305226338/" />
+    <author>
+      <name>Agile Toulouse</name>
+    </author>
+    <media:thumbnail url="https://tbolon.github.io/toulouse-orgas/event-imgs/meetup-305226338.webp" />
+    <content type="html">&lt;p class="mb-4"&gt;Agile Toulouse vous propose sa troisième édition de l'Agile Game Labs !&lt;/p&gt;
+&lt;p class="mb-4"&gt;Que tu souhaites animer ou t'entrainer à l'animation d'un serious game agile ou simplement participer, cet événement est fait pour toi !&lt;/p&gt;
+&lt;p class="mb-4"&gt;L'événement sera donc en &lt;strong&gt;Open Forum&lt;/strong&gt; : cela veut dire que chacun pourra présenter un serious game et l'ajouter à l'agenda du meetup. Nous vous conseillons cependant que celui-ci se limite à une heure si vous souhaitez le terminer.&lt;/p&gt;
+&lt;p class="mb-4"&gt;Nous demanderons aux venants d'être membres de l'association Agile Toulouse.&lt;br&gt;
+Pour rappel, c'est gratuit et faisable ici en 1 minute sur téléphone : [&lt;a href="https://www.helloasso.com/associations/agile-toulouse/adhesions/adhesion-agile-toulouse-1" target="_blank" class="!text-viridian" rel="nofollow ugc"&gt;https://www.helloasso.com/associations/agile-toulouse/adhesions/adhesion-agile-toulouse-1&lt;/a&gt;](https://www.helloasso.com/associations/agile-toulouse/adhesions/adhesion-agile-toulouse-1)&lt;/p&gt;
+&lt;p class="mb-4"&gt;Si vous êtes inscrits, mais que cela n'est plus possible pour vous de venir, merci de vous désinscrire pour informer qu'il reste de la place :)&lt;/p&gt;
+&lt;p class="mb-4"&gt;Bonne journée !&lt;br&gt;
+Agile Toulouse&lt;/p&gt;</content>
+    <link rel="enclosure" type="image/webp" href="https://tbolon.github.io/toulouse-orgas/event-imgs/meetup-305226338.webp" />
+  </entry>
+  <entry>
+    <id>urn:meetup-305840851</id>
+    <published>2025-02-01T14:00:00+01:00</published>
+    <title>Introduction à CMake</title>
+    <link rel="alternate" href="https://www.meetup.com/fr-FR/ateliers-cpp-toulouse/events/305840851/" />
+    <author>
+      <name>C++ Toulouse</name>
+    </author>
+    <media:thumbnail url="https://tbolon.github.io/toulouse-orgas/event-imgs/meetup-305840851.webp" />
+    <content type="html">&lt;p class="mb-4"&gt;Dans le cadre des ateliers C++ de Toulibre, nous vous proposons le &lt;strong&gt;samedi 1er février 2025 à 14 heures&lt;/strong&gt; une présentation sur le thème suivant :&lt;/p&gt;
+&lt;p class="mb-4"&gt;&lt;em&gt;&lt;strong&gt;Introduction à CMake&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p class="mb-4"&gt;CMake est un système de configuration de la compilation de logiciels. Cet outil multiplateforme, qui adresse essentiellement les logiciels développés en C++, s'est considérablement enrichi au fil du temps. Cyril Jacquet nous en fera découvrir les principales facettes, en ponctuant notre cheminement d'exemples concrets.&lt;br&gt;
+Au programme :&lt;/p&gt;
+&lt;ul class="pl-5 list-disc mb-4"&gt;
+&lt;li&gt;Introduction à CMake pour le C++&lt;/li&gt;
+&lt;li&gt;Base de la gestion des dépendances (find_package, linking et include)&lt;/li&gt;
+&lt;li&gt;Gestion des dépendances via FetchContent&lt;/li&gt;
+&lt;li&gt;Gestion des dépendances via VCPKG&lt;/li&gt;
+&lt;li&gt;Génération de paquet via CPack&lt;/li&gt;
+&lt;li&gt;CMake et Qt&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p class="mb-4"&gt;&lt;strong&gt;Pour qui ?&lt;/strong&gt;&lt;/p&gt;
+&lt;p class="mb-4"&gt;Cet événement s’adresse aux développeurs curieux, quel que soit leur niveau, à condition d’avoir quelques notions de C++. Apportez éventuellement un ordinateur portable pour pouvoir reproduire les exercices.&lt;/p&gt;
+&lt;p class="mb-4"&gt;&lt;strong&gt;À propos de l’intervenant :&lt;/strong&gt;&lt;/p&gt;
+&lt;p class="mb-4"&gt;Avec 15 ans d’expérience dans le domaine du développement logiciel, &lt;strong&gt;Cyril Jacquet&lt;/strong&gt; a occupé de nombreux rôles chez des clients toulousains : ingénieur DevOps, développeur C++, Rust et Python et formateur.&lt;/p&gt;
+&lt;p class="mb-4"&gt;Ayant conçu plusieurs architectures logicielles en s’inspirant de la Clean Architecture, Cyril partagera avec vous des exemples concrets et ses astuces pour tirer le meilleur de cette approche.&lt;/p&gt;
+&lt;p class="mb-4"&gt;&lt;strong&gt;Un rendez-vous régulier autour du C++&lt;/strong&gt;&lt;/p&gt;
+&lt;p class="mb-4"&gt;Les ateliers C++ de Toulibre se déroulent le premier samedi de chaque mois dans les locaux du fablab Artilect, que nous remercions chaleureusement pour son accueil.&lt;/p&gt;
+&lt;p class="mb-4"&gt;La présentation démarrera à 14 heures, mais &lt;strong&gt;les passionnés de C++ pourront nous rejoindre dès 12 heures&lt;/strong&gt; pour échanger librement ou s’octroyer un temps dédié au développement de leur projet.&lt;/p&gt;
+&lt;p class="mb-4"&gt;La participation est gratuite et ouverte. N’hésitez pas à entrer et à découvrir le lieu. :)&lt;/p&gt;</content>
+    <link rel="enclosure" type="image/webp" href="https://tbolon.github.io/toulouse-orgas/event-imgs/meetup-305840851.webp" />
+  </entry>
+  <entry>
+    <id>urn:meetup-304563258</id>
+    <published>2025-02-04T18:30:00+01:00</published>
+    <title>🍻 Bière Agile - Agilité à l'échelle</title>
+    <link rel="alternate" href="https://www.meetup.com/fr-FR/agile-toulouse/events/304563258/" />
+    <author>
+      <name>Agile Toulouse</name>
+    </author>
+    <media:thumbnail url="https://tbolon.github.io/toulouse-orgas/event-imgs/meetup-304563258.webp" />
+    <content type="html">&lt;p class="mb-4"&gt;🍻 La bière Agile est toujours là mais nous avons changé de lieu !&lt;/p&gt;
+&lt;p class="mb-4"&gt;👋 Agile Toulouse vous propose de venir échanger autour d'une bière (ou autre) une fois par mois à partir de 18h30 aux Halles de la Transition.&lt;/p&gt;
+&lt;p class="mb-4"&gt;📍 Le bar est situé au &lt;a href="http://%5Bhttps://www.google.com/maps/place//data=%5D(https://www.google.com/maps/place//data=)!4m2!3m1!1s0x12aebba55bacefef:0x8ba0091967492853?sa=X&amp;amp;ved=1t:8290&amp;amp;ictx=111" target="_blank" class="!text-viridian" rel="ugc"&gt;7 Rue du Canon d'Arcole, 31000 Toulouse&lt;/a&gt;&lt;br&gt;
+Vu la taille du bar, qui permet de bien s'entendre en parlant, nous limitons les places à 12.&lt;/p&gt;
+&lt;p class="mb-4"&gt;🤓 C'est un événement à destination de tous les profils (plus ou moins expérimentés, plus ou moins dans l'agilité, plus ou moins dans l'informatique…bref vous avez compris l'idée :) ).&lt;/p&gt;
+&lt;p class="mb-4"&gt;⚠️ Nous demanderons aux participants d'être membre de l'association. Pour rappel, c'est gratuit et faisable ici en 1 minute sur téléphone : [&lt;a href="https://www.helloasso.com/associations/agile-toulouse/adhesions/adhesion-agile-toulouse-1" target="_blank" class="!text-viridian" rel="nofollow ugc"&gt;https://www.helloasso.com/associations/agile-toulouse/adhesions/adhesion-agile-toulouse-1&lt;/a&gt;](https://www.helloasso.com/associations/agile-toulouse/adhesions/adhesion-agile-toulouse-1)&lt;/p&gt;
+&lt;p class="mb-4"&gt;🗫 Les sujets de discussion pourront suivre un thème (plus ou moins) mais libre à chacun d'introduire son sujet - cette fois-ci, on pourra discuter des avatanges et inconvénients des framework à l'échelle... ou nous pouvons parler de tout autre chose qui pique votre intérêt :)&lt;/p&gt;
+&lt;p class="mb-4"&gt;🎯L'objectif étant de passer un bon moment, d'échanger librement et de repartir avec le sourire.&lt;/p&gt;
+&lt;p class="mb-4"&gt;Si vous êtes inscrits mais que cela n'est plus possible pour vous de venir, merci de vous désinscrire pour informer qu'il reste de la place.&lt;/p&gt;
+&lt;p class="mb-4"&gt;Bonne journée !&lt;br&gt;
+Sarah &amp;amp; Agile Toulouse&lt;/p&gt;</content>
+    <link rel="enclosure" type="image/webp" href="https://tbolon.github.io/toulouse-orgas/event-imgs/meetup-304563258.webp" />
+  </entry>
+  <entry>
+    <id>urn:meetup-305479083</id>
+    <published>2025-02-06T18:30:00+01:00</published>
+    <title>Le Tech PAF de JS&amp;Co - Février avec Moovers et Neptune Club</title>
+    <link rel="alternate" href="https://www.meetup.com/fr-FR/javascript-and-co/events/305479083/" />
+    <author>
+      <name>Association JS &amp; Co. Toulouse</name>
+    </author>
+    <media:thumbnail url="https://tbolon.github.io/toulouse-orgas/event-imgs/meetup-305479083.webp" />
+    <content type="html">&lt;p class="mb-4"&gt;Qui dit nouvelle année, dit nouvelles rencontres et nouvelles ambitions !&lt;/p&gt;
+&lt;p class="mb-4"&gt;C'est pour cela qu'en février, notre Tech PAF sera une collab interclub avec Moovers et Neptune Business Club.&lt;/p&gt;
+&lt;p class="mb-4"&gt;Ce sont des réseaux qui partagent nos valeurs et notre vision des affaires et dont les rencontres ne peuvent qu'être passionnantes !&lt;/p&gt;
+&lt;p class="mb-4"&gt;Moovers, c'est le collectif des solopreneurs qui réseautent et sortent entre eux à Toulouse.&lt;br&gt;
+&lt;a href="https://moovers.biz/" target="_blank" class="!text-viridian" rel="nofollow ugc"&gt;https://moovers.biz/&lt;/a&gt;&lt;/p&gt;
+&lt;p class="mb-4"&gt;Neptune Club, c'est le club d'affaire à Toulouse et Carcassonne qui met des solutions à disposition des entrepreneurs par les échanges.&lt;br&gt;
+&lt;a href="https://www.neptunebusiness.com/" target="_blank" class="!text-viridian" rel="nofollow ugc"&gt;https://www.neptunebusiness.com/&lt;/a&gt;&lt;/p&gt;
+&lt;p class="mb-4"&gt;Et nous JS&amp;amp;Co, nous sommes le réseau qui rassemble les techs et les entrepreneurs pour créer des synergies et des rencontres professionnelles.&lt;/p&gt;
+&lt;p class="mb-4"&gt;Nous organisons notamment les fameux Tech PAF, l'afterwork des techs et des entrepreneurs tous les premiers jeudi du mois.&lt;br&gt;
+&lt;a href="https://www.meetup.com/fr-FR/javascript-and-co/" target="_blank" class="!text-viridian"&gt;https://www.meetup.com/fr-FR/javascript-and-co/&lt;/a&gt;&lt;/p&gt;
+&lt;p class="mb-4"&gt;Au programme ?&lt;br&gt;
+Venez échanger à bâton rompu entre personnes passionnantes sur vos sujets du moment : tech, business, staffing, astuces, opérationnel ou autre !&lt;/p&gt;
+&lt;p class="mb-4"&gt;Si tout ceci vous plait, venez "parler boutique" autour d'un verre au Bièrographe, 12 rue des Paradoux.&lt;/p&gt;
+&lt;p class="mb-4"&gt;Jeudi 6 février&lt;br&gt;
+Bièrographe&lt;br&gt;
+18h30&lt;/p&gt;</content>
+    <link rel="enclosure" type="image/webp" href="https://tbolon.github.io/toulouse-orgas/event-imgs/meetup-305479083.webp" />
+  </entry>
+  <entry>
+    <id>urn:meetup-305735655</id>
+    <published>2025-02-06T18:30:00+01:00</published>
+    <title>Re:Cap 2025 : le résumé des annonces du AWS re:Invent</title>
+    <link rel="alternate" href="https://www.meetup.com/fr-FR/toulouse-amazon-web-services/events/305735655/" />
+    <author>
+      <name>AWS User Group France - Toulouse</name>
+    </author>
+    <media:thumbnail url="https://tbolon.github.io/toulouse-orgas/event-imgs/meetup-305735655.webp" />
+    <content type="html">&lt;p class="mb-4"&gt;L'AWS User Group Toulouse revient le &lt;strong&gt;jeudi 6 février 2025&lt;/strong&gt; avec une soirée &lt;strong&gt;re:Cap&lt;/strong&gt; en français du &lt;strong&gt;AWS Re:Invent 2024&lt;/strong&gt; à partir de 18h30 dans les locaux de &lt;strong&gt;onepoint Toulouse&lt;/strong&gt;.&lt;/p&gt;
+&lt;p class="mb-4"&gt;La treizième conférence annuelle AWS re:Invent s'est tenue à Las Vegas en décembre 2024. Cette conférence a cette année encore été l'occasion de donner le ton de 2025 et d'annoncer de nouvelles fonctionnalités et services.&lt;/p&gt;
+&lt;p class="mb-4"&gt;Quelles sont les annonces à ne pas rater ? Comment ces nouveautés peuvent vous simplifier la tâche ? Pendant ce meetup, &lt;strong&gt;Lior et Nicolas (Solution architects chez AWS) passeront en revue les principales annonces&lt;/strong&gt;. Ils vous montreront également, à l'aide de plusieurs &lt;strong&gt;démonstrations&lt;/strong&gt; comment tirer le meilleur parti des nouvelles fonctions.&lt;/p&gt;
+&lt;p class="mb-4"&gt;Nous finirons la soirée autour de quelques bières et pizzas, l'occasion de poser toutes vos questions et d'échanger sur ce qui a été présenté.&lt;/p&gt;
+&lt;p class="mb-4"&gt;En résumé :&lt;br&gt;
+- 📆 &lt;strong&gt;Date&lt;/strong&gt; : Jeudi 6 février 2025 à partir de 18h30&lt;br&gt;
+- 🏡 &lt;strong&gt;Lieu&lt;/strong&gt; : Onepoint &lt;a href="http://%5Bhttps://www.google.com/maps/place//data=%5D(https://www.google.com/maps/place//data=)!4m2!3m1!1s0x12aebd4ddb5b3867:0xe25fa7262523fab4?sa=X&amp;amp;ved=1t:8290&amp;amp;ictx=111" target="_blank" class="!text-viridian" rel="ugc"&gt;3 Rue Lapeyrouse, 31000 Toulouse&lt;/a&gt;&lt;/p&gt;
+&lt;ul class="pl-5 list-disc mb-4"&gt;
+&lt;li&gt;&lt;strong&gt;Programme&lt;/strong&gt; :&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;18h30-18h45&lt;/strong&gt; : Accueil&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;18h45 -20h&lt;/strong&gt; : Re:Cap du AWS re:Invent 2024 par Lior PEREZ et Nicolas de PLACE d'AWS&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;20h - 21h30&lt;/strong&gt; : Echanges, Questions et Réponses autour de bières et pizzas&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p class="mb-4"&gt;Nous avons hâte de vous accueillir pour cet événement.&lt;/p&gt;</content>
+    <link rel="enclosure" type="image/webp" href="https://tbolon.github.io/toulouse-orgas/event-imgs/meetup-305735655.webp" />
+  </entry>
+  <entry>
+    <id>urn:meetup-305714647</id>
+    <published>2025-02-11T19:00:00+01:00</published>
+    <title>Soirée SSO (Single Sign-On)</title>
+    <link rel="alternate" href="https://www.meetup.com/fr-FR/toulouse-java-user-group/events/305714647/" />
+    <author>
+      <name>Toulouse Java User Group</name>
+    </author>
+    <media:thumbnail url="https://tbolon.github.io/toulouse-orgas/event-imgs/meetup-305714647.webp" />
+    <content type="html">&lt;p class="mb-4"&gt;La prochaine soirée du Java User Group Toulousain aura lieu le &lt;strong&gt;mardi 11 février à 19h&lt;/strong&gt; !&lt;/p&gt;
+&lt;p class="mb-4"&gt;Pour cette occasion, nous nous retrouverons chez &lt;strong&gt;Epitech&lt;/strong&gt; &lt;strong&gt;Toulouse&lt;/strong&gt;.&lt;/p&gt;
+&lt;p class="mb-4"&gt;***&lt;/p&gt;
+&lt;p class="mb-4"&gt;&lt;strong&gt;== Retour aux sources de l'authentification unique : Kerberos&lt;/strong&gt;&lt;br&gt;
+Speaker : Frédéric Cabestre&lt;/p&gt;
+&lt;p class="mb-4"&gt;Dans l'univers du Web les solutions permettant l'authentification unique (ou Single Sign On) sont pléthoriques. On pourrait ne retenir que CAS, SAML ou OIDC qui sont les plus fréquemment utilisées. Mais elles on un ancêtre commun dans le domaine des réseaux locaux : Kerberos. Développé initialement par le MIT, souvent réputé complexe, Kerberos est plus qu'une curiosité d'institut de recherche. Ce protocole à connu ses heures de gloires quand Microsoft l'a adopté en remplacement de NTLM pour Active Directory et même adapté au monde du Web à travers SPNEGO.&lt;/p&gt;
+&lt;p class="mb-4"&gt;Si nombre de ces acronymes vous échappent cette présentation est faite pour vous. Nous y parlerons bien sûr de l'histoire de Kerberos, de ses principes de fonctionnement au sein d'un LAN, mais aussi de la filiation qui peut exister avec certaines méthodes d'authentification unique du web moderne.&lt;/p&gt;
+&lt;p class="mb-4"&gt;&lt;strong&gt;== Single Sign On en 15mn sans modifier son code&lt;/strong&gt;&lt;br&gt;
+Speaker : Florian Bernard&lt;/p&gt;
+&lt;p class="mb-4"&gt;Ajouter le support du SSO (Single Sign On) dans une application web peut être parfois compliqué et nécessite de la rigueur et de respecter les bonnes pratiques pour assurer la sécurité. En 15 minutes, nous allons voir comment construire un portail SSO qui vous permettra de sécuriser n'importe quelle application web avec OpenID Connect sans modifier une ligne de code ! Le tout grâce à des composants libres et gratuits (Apache, Keycloak, Docker...).&lt;/p&gt;
+&lt;p class="mb-4"&gt;***&lt;/p&gt;
+&lt;p class="mb-4"&gt;Comme d'habitude, la soirée sera suivie d'un apéro (pizza, bières et softs offerts par nos généreux sponsors : &lt;strong&gt;Lyra Network&lt;/strong&gt; et &lt;strong&gt;MonkeyPatch&lt;/strong&gt;.&lt;br&gt;
+Merci à eux !&lt;/p&gt;
+&lt;p class="mb-4"&gt;***&lt;/p&gt;
+&lt;p class="mb-4"&gt;&lt;strong&gt;Nous recherchons activement des volontaires et petites mains pour s'impliquer dans l'organisation du JUG.&lt;/strong&gt;&lt;/p&gt;
+&lt;p class="mb-4"&gt;Nos besoins :&lt;br&gt;
+* Récupération et installation des pizzas/boissons pendant la soirée ;&lt;br&gt;
+* Création des visuels et slides d'intro à partir de templates ;&lt;br&gt;
+* Aide à la planification des prochains sujets ;&lt;br&gt;
+* Installation du/des speakers et accueil/aiguillage du public.&lt;/p&gt;
+&lt;p class="mb-4"&gt;Si un de ces sujets vous intéresse (ou d'autres), n'hésitez pas à nous contacter !&lt;/p&gt;</content>
+    <link rel="enclosure" type="image/webp" href="https://tbolon.github.io/toulouse-orgas/event-imgs/meetup-305714647.webp" />
+  </entry>
+  <entry>
+    <id>urn:meetup-306012404</id>
+    <published>2025-02-18T18:30:00+01:00</published>
+    <title>SELF-SERVICE &amp; PLATEFORMISATION</title>
+    <link rel="alternate" href="https://www.meetup.com/fr-FR/tech-a-break/events/306012404/" />
+    <author>
+      <name>Tech a break</name>
+    </author>
+    <media:thumbnail url="https://tbolon.github.io/toulouse-orgas/event-imgs/meetup-306012404.webp" />
+    <content type="html">&lt;p class="mb-4"&gt;🚀 &lt;strong&gt;TOULOUSE | TABLE RONDE INCOMING&lt;/strong&gt; 🚀&lt;/p&gt;
+&lt;p class="mb-4"&gt;La &lt;strong&gt;plateformisation&lt;/strong&gt; est sur toutes les lèvres, mais comment s’assurer de cibler les bonnes problématiques et de livrer un produit réellement &lt;strong&gt;adopté&lt;/strong&gt;, utile et utilisable ?&lt;/p&gt;
+&lt;p class="mb-4"&gt;Nous aborderons 3 volets :&lt;br&gt;
+&lt;strong&gt;🔹 Le Product Marketing : clé d’une plateformisation réussie&lt;/strong&gt;&lt;br&gt;
+&lt;strong&gt;🔹 Team Topologies : un accélérateur de la culture plateforme&lt;/strong&gt;&lt;br&gt;
+&lt;strong&gt;🔹 Self-service : le nerf de la guerre des services API, Data &amp;amp; Ops&lt;/strong&gt;&lt;/p&gt;
+&lt;p class="mb-4"&gt;Rejoignez-nous pour une &lt;strong&gt;table ronde réellement participative&lt;/strong&gt;, où experts et praticiens partageront &lt;strong&gt;leurs retours d’expérience concrets&lt;/strong&gt; et les &lt;strong&gt;facteurs clés de succès&lt;/strong&gt; !&lt;/p&gt;
+&lt;p class="mb-4"&gt;&lt;strong&gt;📅 Mardi 18 février&lt;/strong&gt;&lt;br&gt;
+📍 1 Place de la Bourse au cœur de &lt;strong&gt;Toulouse&lt;/strong&gt;&lt;br&gt;
+👉 Inscrivez-vous dès maintenant !&lt;/p&gt;
+&lt;p class="mb-4"&gt;#Plateformisation #SelfService&lt;/p&gt;</content>
+    <link rel="enclosure" type="image/webp" href="https://tbolon.github.io/toulouse-orgas/event-imgs/meetup-306012404.webp" />
+  </entry>
+  <entry>
+    <id>urn:tgd-2025-02-18</id>
+    <published>2025-02-18T18:30:00+01:00</published>
+    <title>Meet-up de Février</title>
+    <link rel="alternate" href="https://toulousegamedev.fr/evenements/" />
+    <author>
+      <name>Toulouse Game Dev</name>
+    </author>
+    <media:thumbnail url="https://tbolon.github.io/toulouse-orgas/event-imgs/tgd-2025-02-18.png" />
+    <content type="html">&lt;p&gt;Ce mois-ci nous vous proposons &lt;strong&gt;une table ronde&lt;/strong&gt; sur le sujet suivant : &lt;strong&gt;Jeu de réflexion, comment concurrencer Jonathan Blow ?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Pour cette table ronde, nous aurons le plaisir d’accueillir : &lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;William David&lt;/strong&gt;, Game Designer,&lt;strong&gt; qui est en train de travailler sur le jeu de réflexion «&amp;nbsp;&lt;/strong&gt;Looking for Faël&lt;strong&gt;«&amp;nbsp;. &lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Lénophie, &lt;/strong&gt;Game Designer&lt;strong&gt;, qui a sorti le jeu de réflexion &lt;/strong&gt;Paquerette Down the Bunburrows &lt;strong&gt;. Thibault Barbaroux&lt;/strong&gt;, Game Designer,&lt;strong&gt; qui a sorti le jeu de réflexion &lt;/strong&gt;Wise Garden&lt;strong&gt; et travaille actuellement sur &lt;/strong&gt;Our Journey.&lt;strong&gt; &lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Le planning du Meet-up sera le suivant :&lt;br&gt;&lt;strong&gt;18h30&lt;/strong&gt; : Accueil des personnes ne connaissant pas le TGD&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;18h45 &lt;/strong&gt;: Ouverture des portes&lt;br&gt;&lt;strong&gt;19h00&lt;/strong&gt;: Lancement de la session &lt;strong&gt;Open Mics&lt;/strong&gt;&lt;br&gt;&lt;strong&gt;19h15&lt;/strong&gt; : Début de table ronde&lt;/p&gt;
+&lt;p&gt;En direct sur la chaine Twitch du TGD à 19h00 : &lt;a rel="noreferrer noopener" href="https://www.twitch.tv/toulousegamedev" target="_blank"&gt;ici&lt;/a&gt;&lt;/p&gt;</content>
+    <link rel="enclosure" type="image/png" href="https://tbolon.github.io/toulouse-orgas/event-imgs/tgd-2025-02-18.png" />
+  </entry>
+  <entry>
+    <id>urn:meetup-306035801</id>
+    <published>2025-02-21T18:00:00+01:00</published>
+    <title>Développer le collaboratif dans les équipes - Klub Liberating Structure</title>
+    <link rel="alternate" href="https://www.meetup.com/fr-FR/agile-toulouse/events/306035801/" />
+    <author>
+      <name>Agile Toulouse</name>
+    </author>
+    <media:thumbnail url="https://tbolon.github.io/toulouse-orgas/event-imgs/meetup-306035801.webp" />
+    <content type="html">&lt;p class="mb-4"&gt;Venez expérimenter quelques Liberatings Structures lors de cet atelier expérientiel. Pour explorer leur pouvoir, nous créons une situation fictive qui vous permettra une utilisation contextualisée. Cependant, si vous souhaitez venir avec une problématique de votre équipe, nous essaierons de l'intégrer dans notre déroulé.&lt;br&gt;
+Ce n'est pas encore confirmé à cette heure, mais la présence d'Henri Lipmanowicz, le cofondateur des LS, est envisagée..&lt;/p&gt;
+&lt;p class="mb-4"&gt;Alors si vous voulez expérimenter le pouvoir surprenant des LS, venez nous rejoindre .... à la maison des associations &lt;a href="http://....le" target="_blank" class="!text-viridian" rel="nofollow ugc"&gt;....le&lt;/a&gt; vendredi 21 février de 18h à 20h.&lt;br&gt;
+Philippe &amp;amp; Sam Agile Toulouse&lt;/p&gt;
+&lt;p class="mb-4"&gt;⚠️ Nous demanderons aux participants d'être membre de l'association. Pour rappel, c'est gratuit et faisable ici en 1 minute sur téléphone : [&lt;a href="https://www.helloasso.com/associations/agile-toulouse/adhesions/adhesion-agile-toulouse-1" target="_blank" class="!text-viridian" rel="nofollow ugc"&gt;https://www.helloasso.com/associations/agile-toulouse/adhesions/adhesion-agile-toulouse-1&lt;/a&gt;](https://www.helloasso.com/associations/agile-toulouse/adhesions/adhesion-agile-toulouse-1)&lt;/p&gt;</content>
+    <link rel="enclosure" type="image/webp" href="https://tbolon.github.io/toulouse-orgas/event-imgs/meetup-306035801.webp" />
+  </entry>
+  <entry>
+    <id>urn:meetup-305839504</id>
+    <published>2025-02-24T18:00:00+01:00</published>
+    <title>Pratiquons unFIX ensemble #2 - Process &amp; Growth Patterns</title>
+    <link rel="alternate" href="https://www.meetup.com/fr-FR/agile-toulouse/events/305839504/" />
+    <author>
+      <name>Agile Toulouse</name>
+    </author>
+    <media:thumbnail url="https://tbolon.github.io/toulouse-orgas/event-imgs/meetup-305839504.webp" />
+    <content type="html">&lt;p class="mb-4"&gt;&lt;strong&gt;Nous vous proposons continuer notre introduction dans le monde unFIX et tout particulièrement les Process et Growth Patterns. (ensemble de modèles pour s'interroger sur le mode de fonctionnement d'un projet ou produit, tout en incluant l'innovation).&lt;/strong&gt;&lt;/p&gt;
+&lt;p class="mb-4"&gt;Avec une mise en pratique via un atelier, un échange question/réponse ainsi qu'un vote pour le prochain pattern set à pratiquer ensemble !&lt;/p&gt;
+&lt;p class="mb-4"&gt;Nous demanderons aux venants d'être membres de l'association Agile Toulouse.&lt;/p&gt;
+&lt;p class="mb-4"&gt;Pour rappel, c'est gratuit et faisable ici en 1 minute sur téléphone : [[&lt;a href="https://www.helloasso.com/associations/agile-toulouse/adhesions/adhesion-agile-toulouse-1" target="_blank" class="!text-viridian" rel="nofollow ugc"&gt;https://www.helloasso.com/associations/agile-toulouse/adhesions/adhesion-agile-toulouse-1&lt;/a&gt;](https://www.helloasso.com/associations/agile-toulouse/adhesions/adhesion-agile-toulouse-1)](https://www.helloasso.com/associations/agile-toulouse/adhesions/adhesion-agile-toulouse-1)&lt;/p&gt;
+&lt;p class="mb-4"&gt;Si vous êtes inscrits, mais que cela n'est plus possible pour vous de venir, merci de vous désinscrire pour informer qu'il reste de la place :)&lt;/p&gt;
+&lt;p class="mb-4"&gt;Bonne journée !&lt;br&gt;
+Agile Toulouse&lt;/p&gt;</content>
+    <link rel="enclosure" type="image/webp" href="https://tbolon.github.io/toulouse-orgas/event-imgs/meetup-305839504.webp" />
+  </entry>
+  <entry>
+    <id>urn:meetup-305752126</id>
+    <published>2025-02-25T18:30:00+01:00</published>
+    <title>Toulouse.rb - Conf &amp; Apéro - Février</title>
+    <link rel="alternate" href="https://www.meetup.com/fr-FR/toulouse-ruby-friends/events/305752126/" />
+    <author>
+      <name>Toulouse Ruby and Friends</name>
+    </author>
+    <media:thumbnail url="https://tbolon.github.io/toulouse-orgas/event-imgs/meetup-305752126.webp" />
+    <content type="html">&lt;p class="mb-4"&gt;Bonjour tout le monde 👋&lt;/p&gt;
+&lt;p class="mb-4"&gt;Comme chaque mois, &lt;a href="http://Toulouse.rb" target="_blank" class="!text-viridian" rel="nofollow ugc"&gt;Toulouse.rb&lt;/a&gt; se réunit pour un nouveau meetup autour du langage Ruby.&lt;/p&gt;
+&lt;p class="mb-4"&gt;Le mardi 25 février, nous avons donc rendez vous dans les locaux d'HarryCow à Toulouse à 18:30 (jusqu'à 20:30).&lt;/p&gt;
+&lt;p class="mb-4"&gt;&lt;strong&gt;📍Adresse :&lt;/strong&gt;&lt;br&gt;
+HarryCow&lt;br&gt;
+&lt;a href="https://maps.app.goo.gl/RXar5gEWfQRCZnr96" target="_blank" class="!text-viridian" rel="nofollow ugc"&gt;13 rue Sainte Ursule, 31000 Toulouse&lt;/a&gt;&lt;br&gt;
+Métro(s) à proximité Ⓜ️ :&lt;/p&gt;
+&lt;ul class="pl-5 list-disc mb-4"&gt;
+&lt;li&gt;Esquirol (ligne A)&lt;/li&gt;
+&lt;li&gt;Capitole (ligne A)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p class="mb-4"&gt;📆 &lt;strong&gt;Planning :&lt;/strong&gt;&lt;/p&gt;
+&lt;ul class="pl-5 list-disc mb-4"&gt;
+&lt;li&gt;18:30 démarrage de l’événement, accueil&lt;/li&gt;
+&lt;li&gt;18:45 présentation de &lt;a href="http://Toulouse.rb" target="_blank" class="!text-viridian" rel="nofollow ugc"&gt;Toulouse.rb&lt;/a&gt; &amp;amp; nouvelles&lt;/li&gt;
+&lt;li&gt;19:00 présentation(s) technique :&lt;/li&gt;
+&lt;li&gt;⚡ "Intègre les notifications dans ton app Rails avec la Gem Noticed" par &lt;a href="https://www.linkedin.com/in/franci-lobbie-lalane/" target="_blank" class="!text-viridian" rel="ugc"&gt;Franci-lobbie Lalane&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;💬 "“Sésame, ouvre-toi” : sécurise tes déploiements avec Kamal comme Ali Baba !" par &lt;a href="https://www.linkedin.com/in/pauljeannot" target="_blank" class="!text-viridian" rel="ugc"&gt;Paul Jeannot&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;19:45 apéro&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p class="mb-4"&gt;Un petit aperçu de la présentation de Paul :&lt;/p&gt;
+&lt;p class="mb-4"&gt;On l’a vu ensemble il y a peu : Kamal ça peut être chouette, notamment pour des petits projets. Mais il reste le sujet de la sécurité … 🔓&lt;br&gt;
+On verra premièrement comment sécuriser efficacement et rapidement son serveur en 5 min top chrono (oui oui !) ⏱️&lt;br&gt;
+Un problème persiste : le serveur SSH reste exposé au monde malgré tout, avec tous les désagréments qui en découlent :&lt;br&gt;
+• Vous vous faites spammer par des robots qui tentent désespérément de se connecter à votre serveur&lt;br&gt;
+• Vous suez à chaque nouvelle CVE concernant OpenSSH, et en plus il faut mettre à jour … quelle galère ! 😰&lt;br&gt;
+Dans ce talk, vous apprendrez également à utiliser une séquence secrète, à la manière d’Ali Baba prononçant le fameux “Sésame, ouvre-toi”, pour révéler votre port SSH uniquement sur demande.&lt;br&gt;
+Mais attention ! Pour éviter la même erreur que les 40 voleurs (qui gardaient la même séquence, permettant à Ali Baba de la réutiliser), nous irons plus loin en rendant cette formule magique dynamique, à la manière d’un mot de passe à usage unique (TOTP), pour rendre votre système plus sécurisé. ✨&lt;/p&gt;
+&lt;p class="mb-4"&gt;L'inscription au meetup est souhaitée pour faciliter les aspects logistiques.&lt;/p&gt;
+&lt;p class="mb-4"&gt;N'hésitez pas à diffuser l'information autour de vous et à venir à plusieurs ! 🍕🎉&lt;/p&gt;
+&lt;p class="mb-4"&gt;Merci à Imfiny et à &lt;strong&gt;&lt;a href="https://www.ringcentral.com/" target="_blank" class="!text-viridian" rel="nofollow ugc"&gt;RingCentral&lt;/a&gt;&lt;/strong&gt; pour le sponsoring.&lt;/p&gt;
+&lt;p class="mb-4"&gt;Si vous êtes une entreprise et que vous souhaitez soutenir l'organisation de ces événements vous pouvez prendre contact avec &lt;a href="https://fr.linkedin.com/in/thomas-riboulet-1b4056121" target="_blank" class="!text-viridian" rel="ugc"&gt;Thomas Riboulet&lt;/a&gt; ou &lt;a href="https://fr.linkedin.com/in/fabienchaynes" target="_blank" class="!text-viridian" rel="ugc"&gt;Fabien Chaynes&lt;/a&gt;, les organisateurs.&lt;/p&gt;
+&lt;p class="mb-4"&gt;⚠️ Nous sommes aussi à la recherche de speakers pour les prochaines éditions, que ce soit pour des lightning talks ⚡ (5-10 minutes) ou des formats plus longs 💬 (une vingtaine de minute).&lt;br&gt;
+Débutants comme confirmés, tout le monde peut &lt;a href="https://forms.gle/f4a7Rg3bE6zT9yRX8" target="_blank" class="!text-viridian" rel="nofollow ugc"&gt;proposer un sujet&lt;/a&gt; !&lt;/p&gt;
+&lt;p class="mb-4"&gt;Pour rappel, le serveur slack est ouvert :&lt;br&gt;
+&lt;a href="https://join.slack.com/t/toulouserb/shared_invite/zt-286nnvupv-vGYNIHGWvl2rfdxQc~9pGQ" target="_blank" class="!text-viridian" rel="nofollow ugc"&gt;https://join.slack.com/t/toulouserb/shared_invite/zt-286nnvupv-vGYNIHGWvl2rfdxQc~9pGQ&lt;/a&gt;&lt;br&gt;
+D'anciennes présentations sont disponibles sur la chaîne YouTube : &lt;a href="https://www.youtube.com/@toulouse-rb" target="_blank" class="!text-viridian" rel="ugc"&gt;https://www.youtube.com/@toulouse-rb&lt;/a&gt;&lt;/p&gt;</content>
+    <link rel="enclosure" type="image/webp" href="https://tbolon.github.io/toulouse-orgas/event-imgs/meetup-305752126.webp" />
+  </entry>
+  <entry>
+    <id>urn:meetup-305750119</id>
+    <published>2025-02-28T18:30:00+01:00</published>
+    <title>Klub de lecture de février</title>
+    <link rel="alternate" href="https://www.meetup.com/fr-FR/agile-toulouse/events/305750119/" />
+    <author>
+      <name>Agile Toulouse</name>
+    </author>
+    <media:thumbnail url="https://tbolon.github.io/toulouse-orgas/event-imgs/meetup-305750119.webp" />
+    <content type="html">&lt;p class="mb-4"&gt;Bonjour,&lt;/p&gt;
+&lt;p class="mb-4"&gt;Le prochain Klub de lecture se tiendra le vendredi 28 février 2025 en ligne.&lt;/p&gt;
+&lt;p class="mb-4"&gt;Le vote est clos, et le "livre" retenu est :&lt;/p&gt;
+&lt;p class="mb-4"&gt;&lt;strong&gt;Philippe Bihouix et Vincent Perriot : Ressources un défi pour l'humanité&lt;/strong&gt;&lt;/p&gt;
+&lt;p class="mb-4"&gt;Le résultat du vote est consultable ici :&lt;br&gt;
+&lt;a href="https://pollen.cl/#poll/3BNYmpr7TqeEG72icPGuJQ/result" target="_blank" class="!text-viridian" rel="nofollow ugc"&gt;https://pollen.cl/#poll/3BNYmpr7TqeEG72icPGuJQ/result&lt;/a&gt;&lt;/p&gt;
+&lt;p class="mb-4"&gt;@AgileToulouse&lt;/p&gt;</content>
+    <link rel="enclosure" type="image/webp" href="https://tbolon.github.io/toulouse-orgas/event-imgs/meetup-305750119.webp" />
+  </entry>
+  <entry>
+    <id>urn:meetup-305839478</id>
+    <published>2025-03-04T18:00:00+01:00</published>
+    <title>Jobs To Be Done : Apprenez à mieux comprendre vos utilisateur-ices</title>
+    <link rel="alternate" href="https://www.meetup.com/fr-FR/agile-toulouse/events/305839478/" />
+    <author>
+      <name>Agile Toulouse</name>
+    </author>
+    <media:thumbnail url="https://tbolon.github.io/toulouse-orgas/event-imgs/meetup-305839478.webp" />
+    <content type="html">&lt;p class="mb-4"&gt;Vous cherchez à mieux comprendre les besoins réels de vos utilisateurs et à concevoir des produits qui répondent à leurs attentes profondes ?Rejoignez-nous pour un atelier interactif de 2 heures sur le &lt;strong&gt;framework Jobs to Be Done (JTBD)&lt;/strong&gt; !&lt;/p&gt;
+&lt;p class="mb-4"&gt;👉 &lt;strong&gt;Au programme&lt;/strong&gt; :&lt;/p&gt;
+&lt;ul class="pl-5 list-disc mb-4"&gt;
+&lt;li&gt;Introduction au JTBD : découvrez comment ce framework transforme la compréhension des besoins clients.&lt;/li&gt;
+&lt;li&gt;Apprentissage par l’action : en petits groupes, vous allez utiliser le &lt;strong&gt;Jobs to Be Done Canvas&lt;/strong&gt; sur des cas concrets et ludiques.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p class="mb-4"&gt;Et repartez avec un outil pratique pour vos projets !&lt;br&gt;
+Que vous soyez Product Manager, PO, Designer, Développer ou même créateur-ice d'entreprise cet atelier est fait pour vous !&lt;/p&gt;
+&lt;p class="mb-4"&gt;&lt;strong&gt;Attention :&lt;/strong&gt;&lt;/p&gt;
+&lt;ul class="pl-5 list-disc mb-4"&gt;
+&lt;li&gt;&lt;strong&gt;Cet atelier n'est pas une formation&lt;/strong&gt;, mais une session de découverte d'un outil popularisé par Google, Airbnb, Spotify ...&lt;/li&gt;
+&lt;li&gt;Vous pouvez télécharger gratuitement le livre à l'origine du framework ici : &lt;a href="https://jobs-to-be-done-book.com/" target="_blank" class="!text-viridian" rel="nofollow ugc"&gt;https://jobs-to-be-done-book.com/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p class="mb-4"&gt;Nous demanderons aux venants d'être membres de l'association Agile Toulouse.&lt;/p&gt;
+&lt;p class="mb-4"&gt;Pour rappel, c'est gratuit et faisable ici en 1 minute sur téléphone : [&lt;a href="https://www.helloasso.com/associations/agile-toulouse/adhesions/adhesion-agile-toulouse-1" target="_blank" class="!text-viridian" rel="nofollow ugc"&gt;https://www.helloasso.com/associations/agile-toulouse/adhesions/adhesion-agile-toulouse-1&lt;/a&gt;](&lt;a href="https://www.helloasso.com/associations/agile-toulouse/adhesions/adhesion-agile-toulouse-1" target="_blank" class="!text-viridian" rel="nofollow ugc"&gt;https://www.helloasso.com/associations/agile-toulouse/adhesions/adhesion-agile-toulouse-1&lt;/a&gt;)&lt;/p&gt;
+&lt;p class="mb-4"&gt;Si vous êtes inscrits, mais que cela n'est plus possible pour vous de venir, merci de vous désinscrire pour informer qu'il reste de la place :)&lt;/p&gt;
+&lt;p class="mb-4"&gt;Bonne journée !&lt;/p&gt;
+&lt;p class="mb-4"&gt;Agile Toulouse&lt;br&gt;
+---&lt;br&gt;
+Credits Photo : &lt;a href="https://unsplash.com/fr/@benkolde?utm_content=creditCopyText&amp;amp;utm_medium=referral&amp;amp;utm_source=unsplash" target="_blank" class="!text-viridian" rel="nofollow ugc"&gt;Ben Kolde&lt;/a&gt; sur &lt;a href="https://unsplash.com/fr/photos/white-and-black-laptop-bs2Ba7t69mM?utm_content=creditCopyText&amp;amp;utm_medium=referral&amp;amp;utm_source=unsplash" target="_blank" class="!text-viridian" rel="nofollow ugc"&gt;Unsplash&lt;/a&gt;&lt;/p&gt;</content>
+    <link rel="enclosure" type="image/webp" href="https://tbolon.github.io/toulouse-orgas/event-imgs/meetup-305839478.webp" />
+  </entry>
+  <entry>
+    <id>urn:meetup-306206046</id>
+    <published>2025-03-06T18:30:00+01:00</published>
+    <title>Le Tech PAF de JS&amp;Co - Mars</title>
+    <link rel="alternate" href="https://www.meetup.com/fr-FR/javascript-and-co/events/306206046/" />
+    <author>
+      <name>Association JS &amp; Co. Toulouse</name>
+    </author>
+    <media:thumbnail url="https://tbolon.github.io/toulouse-orgas/event-imgs/meetup-306206046.webp" />
+    <content type="html">&lt;p class="mb-4"&gt;En mars, c'est le retour aux sources !&lt;/p&gt;
+&lt;p class="mb-4"&gt;-Comment ?!&lt;br&gt;
+-Vous allez refaire des meetups techniques ?&lt;br&gt;
+-Oui, mais pas que. Restez connectés !&lt;/p&gt;
+&lt;p class="mb-4"&gt;Pour ce mois de Mars, nous serons heureux de vous retrouver au London Town, le légendaire pub des Carmes où JS&amp;amp;Co et ses membres avaient leurs habitudes.&lt;/p&gt;
+&lt;p class="mb-4"&gt;Nous avons pensé qu'il serait tout indiqué de faire notre Tech PAF là-bas pour marquer le retour aux sources des meetups thématiques.&lt;/p&gt;
+&lt;p class="mb-4"&gt;Ce soir-là, venez échanger à bâton rompu sur vos interrogations du moment :&lt;br&gt;
+-Business ?&lt;br&gt;
+-Tech ?&lt;br&gt;
+-Organisation &amp;amp; productivité ?&lt;br&gt;
+-Se vendre ?&lt;br&gt;
+-choses à savoir quand on se lance ?&lt;/p&gt;
+&lt;p class="mb-4"&gt;On vous dit tout !&lt;br&gt;
+Alors venez parler boutique entre pairs et entre pros :&lt;/p&gt;
+&lt;p class="mb-4"&gt;Jeudi 6 Mars&lt;br&gt;
+18h30&lt;br&gt;
+London Town&lt;/p&gt;</content>
+    <link rel="enclosure" type="image/webp" href="https://tbolon.github.io/toulouse-orgas/event-imgs/meetup-306206046.webp" />
+  </entry>
+  <entry>
+    <id>urn:meetup-306407965</id>
+    <published>2025-03-06T19:00:00+01:00</published>
+    <title>Le Data Mojito est de retour</title>
+    <link rel="alternate" href="https://www.meetup.com/fr-FR/tlse-data-science/events/306407965/" />
+    <author>
+      <name>Toulouse Data Science</name>
+    </author>
+    <media:thumbnail url="https://tbolon.github.io/toulouse-orgas/event-imgs/meetup-306407965.webp" />
+    <content type="html">&lt;p class="mb-4"&gt;🚀 &lt;strong&gt;Toulouse Data Science vous invite à son prochain Data Mojito !&lt;/strong&gt; 🍹📊&lt;br&gt;
+Rejoignez-nous pour une soirée conviviale dédiée aux passionnés de la Data ! Venez échanger autour d’un mojito (ou autre) sur vos projets, vos idées et les tendances du moment.&lt;/p&gt;
+&lt;p class="mb-4"&gt;📍 &lt;strong&gt;Lieu&lt;/strong&gt; : &lt;a href="http://%5Bhttps://www.google.com/maps/place/Tito+Mojito+-+Jean+Jaur%C3%A8s%5D(https://www.google.com/maps/place/Tito+Mojito+-+Jean+Jaur%C3%A8s),+51+All.+Jean+Jaur%C3%A8s,+31000+Toulouse/data=!4m2!3m1!1s0x12aebd3407e919cd:0xf35ba9bf36667fe4?utm_source=mstt_1&amp;amp;entry=gps&amp;amp;lucs=,47075915,47084393&amp;amp;g_ep=CAESCjExLjExOS4xMDEYACDXggMqEiw0NzA3NTkxNSw0NzA4NDM5M0ICRlI%3D" target="_blank" class="!text-viridian" rel="ugc"&gt;Tito Mojito - Jean Jaurès&lt;/a&gt;&lt;br&gt;
+📅 &lt;strong&gt;Date&lt;/strong&gt; : Jeudi 6 mars&lt;br&gt;
+⏰ &lt;strong&gt;Heure&lt;/strong&gt; : 19h&lt;/p&gt;
+&lt;p class="mb-4"&gt;C’est l’occasion pour les membres de se retrouver et d’échanger tranquillement autour d’un verre et de quelques tapas sur l’actualité, les projets en cours et à venir.&lt;/p&gt;
+&lt;p class="mb-4"&gt;Que vous soyez data scientist, analyste, développeur, chercheur ou simplement curieux, cette soirée est l’occasion idéale pour réseauter et partager un bon moment avec la communauté.&lt;/p&gt;
+&lt;p class="mb-4"&gt;&lt;strong&gt;Grande nouveauté&lt;/strong&gt; : le bureau de l’association a changé ! Venez rencontrer les nouveaux organisateurs et découvrir leurs idées pour dynamiser la communauté TDS. Nous serons aussi à l’écoute de vos suggestions et envies pour les prochains événements (Data Talk, Data No Blabla, rencontres...).&lt;/p&gt;
+&lt;p class="mb-4"&gt;Pensez à vous inscrire pour nous aider à organiser au mieux l'événement.&lt;/p&gt;
+&lt;p class="mb-4"&gt;À très bientôt pour trinquer à la data ! 🍻📈&lt;/p&gt;</content>
+    <link rel="enclosure" type="image/webp" href="https://tbolon.github.io/toulouse-orgas/event-imgs/meetup-306407965.webp" />
+  </entry>
+  <entry>
+    <id>urn:meetup-305897754</id>
+    <published>2025-03-11T18:30:00+01:00</published>
+    <title>🍻 Bière Agile - Agilité &amp; deadlines</title>
+    <link rel="alternate" href="https://www.meetup.com/fr-FR/agile-toulouse/events/305897754/" />
+    <author>
+      <name>Agile Toulouse</name>
+    </author>
+    <media:thumbnail url="https://tbolon.github.io/toulouse-orgas/event-imgs/meetup-305897754.webp" />
+    <content type="html">&lt;p class="mb-4"&gt;🍻 La bière Agile est toujours au rendez-vous !&lt;/p&gt;
+&lt;p class="mb-4"&gt;👋 Agile Toulouse vous propose de venir échanger autour d'une bière (ou autre) une fois par mois à partir de 18h30 aux Halles de la Transition.&lt;/p&gt;
+&lt;p class="mb-4"&gt;📍 Le bar est situé au &lt;a href="http://%5Bhttps://www.google.com/maps/place//data=%5D(https://www.google.com/maps/place//data=)!4m2!3m1!1s0x12aebba55bacefef:0x8ba0091967492853?sa=X&amp;amp;ved=1t:8290&amp;amp;ictx=111" target="_blank" class="!text-viridian" rel="ugc"&gt;7 Rue du Canon d'Arcole, 31000 Toulouse&lt;/a&gt;&lt;br&gt;
+Vu la taille du bar, qui permet de bien s'entendre en parlant, nous limitons les places à 12.&lt;/p&gt;
+&lt;p class="mb-4"&gt;🤓 C'est un événement à destination de tous les profils (plus ou moins expérimentés, plus ou moins dans l'agilité, plus ou moins dans l'informatique…bref vous avez compris l'idée :) ).&lt;/p&gt;
+&lt;p class="mb-4"&gt;⚠️ Nous demanderons aux participants d'être membre de l'association. Pour rappel, c'est gratuit et faisable ici en 1 minute sur téléphone : &lt;a href="https://www.helloasso.com/associations/agile-toulouse/adhesions/adhesion-agile-toulouse-1" target="_blank" class="!text-viridian" rel="nofollow ugc"&gt;https://www.helloasso.com/associations/agile-toulouse/adhesions/adhesion-agile-toulouse-1&lt;/a&gt;&lt;/p&gt;
+&lt;p class="mb-4"&gt;🗫 Les sujets de discussion pourront suivre un thème (plus ou moins) mais libre à chacun d'introduire son sujet - cette fois-ci, on pourra discuter de la compatibilité entre l'Agilité et les fameux deadlines ... ou nous pouvons parler de tout autre chose qui pique votre intérêt :)&lt;/p&gt;
+&lt;p class="mb-4"&gt;🎯L'objectif étant de passer un bon moment, d'échanger librement et de repartir avec le sourire et des nouvelles idées en tête&lt;/p&gt;
+&lt;p class="mb-4"&gt;Si vous êtes inscrits mais que cela n'est plus possible pour vous de venir, merci de vous désinscrire pour laisser la place à ceux en liste d'attente.&lt;/p&gt;
+&lt;p class="mb-4"&gt;Bonne journée !&lt;br&gt;
+Sarah &amp;amp; Agile Toulouse&lt;/p&gt;</content>
+    <link rel="enclosure" type="image/webp" href="https://tbolon.github.io/toulouse-orgas/event-imgs/meetup-305897754.webp" />
+  </entry>
+  <entry>
+    <id>urn:meetup-306134791</id>
+    <published>2025-03-12T19:00:00+01:00</published>
+    <title>Code Café #2 : le meetup DevOps et Cloud à Toulouse</title>
+    <link rel="alternate" href="https://www.meetup.com/fr-FR/devops-cloud-toulouse/events/306134791/" />
+    <author>
+      <name>DevOps &amp; Cloud Toulouse</name>
+    </author>
+    <media:thumbnail url="https://tbolon.github.io/toulouse-orgas/event-imgs/meetup-306134791.webp" />
+    <content type="html">&lt;p class="mb-4"&gt;Deuxième séance de "Code Café" !&lt;/p&gt;
+&lt;p class="mb-4"&gt;Un meetup dédié au Dev, DevOps et Cloud, dans une ambiance détendue, au Sud de la ville de Toulouse (Frouzins), et qui se terminera par un moment de discussions et de partage.&lt;/p&gt;
+&lt;p class="mb-4"&gt;Cette fois-ci un programme très riche en partenariat avec Devoteam et Hashicorp ainsi que le Toulouse HUG !&lt;/p&gt;
+&lt;ul class="pl-5 list-disc mb-4"&gt;
+&lt;li&gt;"&lt;em&gt;Nouveautés &amp;amp; annonces Hashicorp&lt;/em&gt;"&lt;/li&gt;
+&lt;li&gt;"&lt;em&gt;Finally, Terraform and Ansible integration, done right !&lt;/em&gt;"&lt;/li&gt;
+&lt;li&gt;"&lt;em&gt;REX Vault - Automatic unseal of a cluster with KMS&lt;/em&gt;"&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p class="mb-4"&gt;Les speakers seront annoncés rapidement !&lt;br&gt;
+Rendez-vous à 19h !&lt;br&gt;
+Et comme d'habitude le nombre de place est limité à 35 personnes ;)&lt;/p&gt;
+&lt;p class="mb-4"&gt;Et suite à la conférence, nous partagerons un apéritif, accompagné de choses à grignoter pour pouvoir continuer à échanger ensemble sur tous ces sujets :)&lt;/p&gt;</content>
+    <link rel="enclosure" type="image/webp" href="https://tbolon.github.io/toulouse-orgas/event-imgs/meetup-306134791.webp" />
+  </entry>
+  <entry>
+    <id>urn:meetup-306435624</id>
+    <published>2025-03-12T19:00:00+01:00</published>
+    <title>Soirée Kafka - Data Contracts &amp; Validation Rules</title>
+    <link rel="alternate" href="https://www.meetup.com/fr-FR/toulouse-java-user-group/events/306435624/" />
+    <author>
+      <name>Toulouse Java User Group</name>
+    </author>
+    <media:thumbnail url="https://tbolon.github.io/toulouse-orgas/event-imgs/meetup-306435624.webp" />
+    <content type="html">&lt;p class="mb-4"&gt;La prochaine soirée du Java User Group Toulousain aura lieu le &lt;strong&gt;mercredi 12 mars à 19h&lt;/strong&gt; !&lt;/p&gt;
+&lt;p class="mb-4"&gt;Oui oui, mercredi !&lt;/p&gt;
+&lt;p class="mb-4"&gt;Pour cette occasion, nous nous retrouverons chez &lt;strong&gt;Epitech&lt;/strong&gt; &lt;strong&gt;Toulouse&lt;/strong&gt; pour parler de Kafka avec la venue tout spécialement pour vous de &lt;strong&gt;Gilles Philippart&lt;/strong&gt;, Software Practice Lead chez Confluent.&lt;/p&gt;
+&lt;p class="mb-4"&gt;Gilles viendra nous parler de Kafka, et plus particulièrement de la qualité de la donnée, comment la valider, comment préserver son intégrité et comment mettre en place une politique de "Shift-Left".&lt;/p&gt;
+&lt;p class="mb-4"&gt;***&lt;/p&gt;
+&lt;p class="mb-4"&gt;&lt;strong&gt;== How To Improve Data Quality with Domain Validation Rules&lt;/strong&gt;&lt;br&gt;
+Speaker : Gilles Philippart&lt;/p&gt;
+&lt;p class="mb-4"&gt;Abstract précis à venir.&lt;/p&gt;
+&lt;p class="mb-4"&gt;***&lt;/p&gt;
+&lt;p class="mb-4"&gt;Comme d'habitude, la soirée sera suivie d'un apéro (pizza, bières et softs offerts par nos généreux sponsors : &lt;strong&gt;MonkeyPatch&lt;/strong&gt; et &lt;strong&gt;OpenAirlines&lt;/strong&gt;.&lt;br&gt;
+Merci à eux !&lt;/p&gt;
+&lt;p class="mb-4"&gt;***&lt;/p&gt;
+&lt;p class="mb-4"&gt;&lt;strong&gt;Nous recherchons activement des volontaires et petites mains pour s'impliquer dans l'organisation du JUG.&lt;/strong&gt;&lt;/p&gt;
+&lt;p class="mb-4"&gt;Nos besoins :&lt;br&gt;
+* Récupération et installation des pizzas/boissons pendant la soirée ;&lt;br&gt;
+* Gestion de la captation son/vidéo ;&lt;br&gt;
+* Création des visuels et slides d'intro à partir de templates ;&lt;br&gt;
+* Aide à la planification des prochains sujets ;&lt;br&gt;
+* Installation du/des speakers et accueil/aiguillage du public.&lt;/p&gt;
+&lt;p class="mb-4"&gt;Si un de ces sujets vous intéresse (ou d'autres), n'hésitez pas à nous contacter !&lt;/p&gt;</content>
+    <link rel="enclosure" type="image/webp" href="https://tbolon.github.io/toulouse-orgas/event-imgs/meetup-306435624.webp" />
+  </entry>
+</feed>

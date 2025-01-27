@@ -1,0 +1,2384 @@
+BEGIN:VCALENDAR
+PRODID:-//github.com/ical-org/ical.net//NONSGML ical.net 4.0//EN
+VERSION:2.0
+BEGIN:VEVENT
+DTEND:20180628T210000
+DTSTAMP;VALUE=DATE:20180628
+DTSTART:20180628T190000
+SEQUENCE:0
+SUMMARY:Toulouse DevOps : Un peu de craft dans l'Infra as Code
+UID:meetup-251544549
+URL:https://www.meetup.com/fr-FR/toulouse-devops/events/251544549/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20181018T210000
+DTSTAMP;VALUE=DATE:20181018
+DTSTART:20181018T190000
+SEQUENCE:0
+SUMMARY:Toulouse DevOps : Introduction à Docker et aux containers
+UID:meetup-255364794
+URL:https://www.meetup.com/fr-FR/toulouse-devops/events/255364794/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20190521T210000
+DTSTAMP;VALUE=DATE:20190521
+DTSTART:20190521T190000
+SEQUENCE:0
+SUMMARY:Toulouse DevOps : Mise en place de l'observabilité sur une archite
+ cture serverless AWS
+UID:meetup-261314071
+URL:https://www.meetup.com/fr-FR/toulouse-devops/events/261314071/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20190613T210000
+DTSTAMP;VALUE=DATE:20190613
+DTSTART:20190613T190000
+SEQUENCE:0
+SUMMARY:Toulouse DevOps : Retour d'expérience : management des équipes tec
+ h chez un GAFA
+UID:meetup-262199370
+URL:https://www.meetup.com/fr-FR/toulouse-devops/events/262199370/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20190912T210000
+DTSTAMP;VALUE=DATE:20190912
+DTSTART:20190912T190000
+SEQUENCE:0
+SUMMARY:Toulouse DevOps : Comment exploiter à fond GitLab
+UID:meetup-264545373
+URL:https://www.meetup.com/fr-FR/toulouse-devops/events/264545373/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20190913T113000
+DTSTAMP;VALUE=DATE:20190913
+DTSTART:20190913T093000
+SEQUENCE:0
+SUMMARY:Toulouse DevOps : Découverte de GitLab par la pratique (Workshop)
+UID:meetup-264545407
+URL:https://www.meetup.com/fr-FR/toulouse-devops/events/264545407/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20191017T210000
+DTSTAMP;VALUE=DATE:20191017
+DTSTART:20191017T190000
+SEQUENCE:0
+SUMMARY:Toulouse DevOps : Quoi de neuf avec Traefik 2.0\, le edge router à
+  1 milliard de téléchargements?
+UID:meetup-265278248
+URL:https://www.meetup.com/fr-FR/toulouse-devops/events/265278248/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20191116T123000
+DTSTAMP;VALUE=DATE:20191116
+DTSTART:20191116T103000
+SEQUENCE:0
+SUMMARY:Toulouse DevOps : Track DevOps du Capitole du Libre
+UID:meetup-266389436
+URL:https://www.meetup.com/fr-FR/toulouse-devops/events/266389436/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20191203T210000
+DTSTAMP;VALUE=DATE:20191203
+DTSTART:20191203T190000
+SEQUENCE:0
+SUMMARY:Toulouse DevOps : Construire une banque pour 3\,5 millions d'utili
+ sateurs
+UID:meetup-266603880
+URL:https://www.meetup.com/fr-FR/toulouse-devops/events/266603880/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20210623T200000
+DTSTAMP;VALUE=DATE:20210623
+DTSTART:20210623T180000
+SEQUENCE:0
+SUMMARY:Association JS & Co. Toulouse : Vis ma vie de Dev #1
+UID:meetup-278383578
+URL:https://www.meetup.com/fr-FR/javascript-and-co/events/278383578/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20211006T200000
+DTSTAMP;VALUE=DATE:20211006
+DTSTART:20211006T180000
+SEQUENCE:0
+SUMMARY:Association JS & Co. Toulouse : Pourquoi n'êtes-vous pas encore pa
+ ssé à GraphQL ?
+UID:meetup-280770230
+URL:https://www.meetup.com/fr-FR/javascript-and-co/events/280770230/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20211124T203000
+DTSTAMP;VALUE=DATE:20211124
+DTSTART:20211124T183000
+SEQUENCE:0
+SUMMARY:Association JS & Co. Toulouse : Vis ma vie de Dev #2
+UID:meetup-281823523
+URL:https://www.meetup.com/fr-FR/javascript-and-co/events/281823523/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20220118T203000
+DTSTAMP;VALUE=DATE:20220118
+DTSTART:20220118T183000
+SEQUENCE:0
+SUMMARY:AWS User Group France - Toulouse : AWS re:Invent 2021 re:Cap pour 
+ les architectes de solutions
+UID:meetup-283340737
+URL:https://www.meetup.com/fr-FR/toulouse-amazon-web-services/events/28334
+ 0737/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20220119T203000
+DTSTAMP;VALUE=DATE:20220119
+DTSTART:20220119T183000
+SEQUENCE:0
+SUMMARY:AWS User Group France - Toulouse : AWS re:Invent 2021 re:Cap pour 
+ les DevOps (Dev et/ou Ops)
+UID:meetup-283340759
+URL:https://www.meetup.com/fr-FR/toulouse-amazon-web-services/events/28334
+ 0759/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20220126T210000
+DTSTAMP;VALUE=DATE:20220126
+DTSTART:20220126T190000
+SEQUENCE:0
+SUMMARY:AWS User Group France - Toulouse : Meetup AWS virtuel #13 - Server
+ less
+UID:meetup-283340781
+URL:https://www.meetup.com/fr-FR/toulouse-amazon-web-services/events/28334
+ 0781/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20220504T203000
+DTSTAMP;VALUE=DATE:20220504
+DTSTART:20220504T183000
+SEQUENCE:0
+SUMMARY:Association JS & Co. Toulouse : Vis ma vie de Dev #4
+UID:meetup-283456438
+URL:https://www.meetup.com/fr-FR/javascript-and-co/events/283456438/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20220531T210000
+DTSTAMP;VALUE=DATE:20220531
+DTSTART:20220531T190000
+SEQUENCE:0
+SUMMARY:AWS User Group France - Toulouse : Meetup AWS @Toulouse
+UID:meetup-285796096
+URL:https://www.meetup.com/fr-FR/toulouse-amazon-web-services/events/28579
+ 6096/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20220614T210000
+DTSTAMP;VALUE=DATE:20220614
+DTSTART:20220614T190000
+SEQUENCE:0
+SUMMARY:Toulouse Java User Group : Soirée retour du JUG
+UID:meetup-286415090
+URL:https://www.meetup.com/fr-FR/toulouse-java-user-group/events/286415090/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20221006T203000
+DTSTAMP;VALUE=DATE:20221006
+DTSTART:20221006T183000
+SEQUENCE:0
+SUMMARY:Python Toulouse : Meetup de rentrée !
+UID:meetup-288352766
+URL:https://www.meetup.com/fr-FR/python-toulouse/events/288352766/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20221017T210000
+DTSTAMP;VALUE=DATE:20221017
+DTSTART:20221017T190000
+SEQUENCE:0
+SUMMARY:MTG:Toulouse : Les nouveautés de .NET 7 et C# 11
+UID:meetup-288942074
+URL:https://www.meetup.com/fr-FR/mtg-toulouse/events/288942074/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20221020T113000
+DTSTAMP;VALUE=DATE:20221020
+DTSTART:20221020T093000
+SEQUENCE:0
+SUMMARY:AWS User Group France - Toulouse : AWS - Tour du Cloud Roadshow 20
+ 22
+UID:meetup-289084601
+URL:https://www.meetup.com/fr-FR/toulouse-amazon-web-services/events/28908
+ 4601/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20221117T210000
+DTSTAMP;VALUE=DATE:20221117
+DTSTART:20221117T190000
+SEQUENCE:0
+SUMMARY:Swift Toulouse : Swift Meetup Toulouse Novembre
+UID:meetup-289496428
+URL:https://www.meetup.com/fr-FR/swift-toulouse/events/289496428/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20221123T203000
+DTSTAMP;VALUE=DATE:20221123
+DTSTART:20221123T183000
+SEQUENCE:0
+SUMMARY:MTG:Toulouse : 2 sessions - Cosmos DB puis Intelligence Artificiel
+ le
+UID:meetup-289650437
+URL:https://www.meetup.com/fr-FR/mtg-toulouse/events/289650437/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20221124T203000
+DTSTAMP;VALUE=DATE:20221124
+DTSTART:20221124T183000
+SEQUENCE:0
+SUMMARY:La "Toul Box" du Cloud Natif : Participez à notre 1er meetup Cloud
+  Natif : microservices\, Crossplane et ACK !
+UID:meetup-289395782
+URL:https://www.meetup.com/fr-FR/latoulboxducloudnatif/events/289395782/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20221203T160000
+DTSTAMP;VALUE=DATE:20221203
+DTSTART:20221203T140000
+SEQUENCE:0
+SUMMARY:C++ Toulouse : Comment structurer le code d’un test ?
+UID:meetup-289897955
+URL:https://www.meetup.com/fr-FR/ateliers-cpp-toulouse/events/289897955/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20221206T205500
+DTSTAMP;VALUE=DATE:20221206
+DTSTART:20221206T185500
+SEQUENCE:0
+SUMMARY:Python Toulouse : Introduction to ReactiveX & RxPY
+UID:meetup-289767749
+URL:https://www.meetup.com/fr-FR/python-toulouse/events/289767749/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20221219T210000
+DTSTAMP;VALUE=DATE:20221219
+DTSTART:20221219T190000
+SEQUENCE:0
+SUMMARY:MTG:Toulouse : Apéro/Networking de Noël
+UID:meetup-290308037
+URL:https://www.meetup.com/fr-FR/mtg-toulouse/events/290308037/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20230107T160000
+DTSTAMP;VALUE=DATE:20230107
+DTSTART:20230107T140000
+SEQUENCE:0
+SUMMARY:C++ Toulouse : Introduction à l'environnement Arduino
+UID:meetup-290724795
+URL:https://www.meetup.com/fr-FR/ateliers-cpp-toulouse/events/290724795/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20230126T203000
+DTSTAMP;VALUE=DATE:20230126
+DTSTART:20230126T183000
+SEQUENCE:0
+SUMMARY:Tech a break : Tech a break #1
+UID:meetup-290871570
+URL:https://www.meetup.com/fr-FR/tech-a-break/events/290871570/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20230204T160000
+DTSTAMP;VALUE=DATE:20230204
+DTSTART:20230204T140000
+SEQUENCE:0
+SUMMARY:C++ Toulouse : Initiation à la programmation de carte ESP32
+UID:meetup-291257151
+URL:https://www.meetup.com/fr-FR/ateliers-cpp-toulouse/events/291257151/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20230216T204500
+DTSTAMP;VALUE=DATE:20230216
+DTSTART:20230216T184500
+SEQUENCE:0
+SUMMARY:AWS User Group France - Toulouse : Meetup AWS - re:Cap AWS re:Inve
+ nt en présentiel
+UID:meetup-290998878
+URL:https://www.meetup.com/fr-FR/toulouse-amazon-web-services/events/29099
+ 8878/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20230304T160000
+DTSTAMP;VALUE=DATE:20230304
+DTSTART:20230304T140000
+SEQUENCE:0
+SUMMARY:C++ Toulouse : Comment travailler avec une base de code legacy ?
+UID:meetup-291754954
+URL:https://www.meetup.com/fr-FR/ateliers-cpp-toulouse/events/291754954/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20230307T210000
+DTSTAMP;VALUE=DATE:20230307
+DTSTART:20230307T190000
+SEQUENCE:0
+SUMMARY:Toulouse Java User Group : Soirée SDKMan & Architecture Hexagonale
+UID:meetup-291633163
+URL:https://www.meetup.com/fr-FR/toulouse-java-user-group/events/291633163/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20230309T203000
+DTSTAMP;VALUE=DATE:20230309
+DTSTART:20230309T183000
+SEQUENCE:0
+SUMMARY:Tech a break : Tech a break #2
+UID:meetup-291683371
+URL:https://www.meetup.com/fr-FR/tech-a-break/events/291683371/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20230316T203000
+DTSTAMP;VALUE=DATE:20230316
+DTSTART:20230316T183000
+SEQUENCE:0
+SUMMARY:La "Toul Box" du Cloud Natif : Un afterwork autour de Vault et Kub
+ eflow !
+UID:meetup-291814671
+URL:https://www.meetup.com/fr-FR/latoulboxducloudnatif/events/291814671/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20230323T203000
+DTSTAMP;VALUE=DATE:20230323
+DTSTART:20230323T183000
+SEQUENCE:0
+SUMMARY:AWS User Group France - Toulouse : Partez à la découverte des serv
+ ices Data AWS
+UID:meetup-291814452
+URL:https://www.meetup.com/fr-FR/toulouse-amazon-web-services/events/29181
+ 4452/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20230323T210000
+DTSTAMP;VALUE=DATE:20230323
+DTSTART:20230323T190000
+SEQUENCE:0
+SUMMARY:Swift Toulouse : Swift Toulouse Meetup mars
+UID:meetup-292069741
+URL:https://www.meetup.com/fr-FR/swift-toulouse/events/292069741/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20230417T210000
+DTSTAMP;VALUE=DATE:20230417
+DTSTART:20230417T190000
+SEQUENCE:0
+SUMMARY:MTG:Toulouse : Dev mobile avec .NET MAUI\, Web API\, émulateur et 
+ mode déconnecté
+UID:meetup-292726756
+URL:https://www.meetup.com/fr-FR/mtg-toulouse/events/292726756/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20230420T141500
+DTSTAMP;VALUE=DATE:20230420
+DTSTART:20230420T121500
+SEQUENCE:0
+SUMMARY:Swift Toulouse : Swift Lunch #1
+UID:meetup-292705633
+URL:https://www.meetup.com/fr-FR/swift-toulouse/events/292705633/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20230427T203000
+DTSTAMP;VALUE=DATE:20230427
+DTSTART:20230427T183000
+SEQUENCE:0
+SUMMARY:Tech a break : Tech a break #3
+UID:meetup-292578223
+URL:https://www.meetup.com/fr-FR/tech-a-break/events/292578223/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20230525T203000
+DTSTAMP;VALUE=DATE:20230525
+DTSTART:20230525T183000
+SEQUENCE:0
+SUMMARY:Toulouse DevOps : Reprise avec une soirée dédiée au DevSecOps
+UID:meetup-293293519
+URL:https://www.meetup.com/fr-FR/toulouse-devops/events/293293519/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20230608T203000
+DTSTAMP;VALUE=DATE:20230608
+DTSTART:20230608T183000
+SEQUENCE:0
+SUMMARY:GDG Toulouse : Soirée IA et DDD
+UID:meetup-292896472
+URL:https://www.meetup.com/fr-FR/gdg-toulouse/events/292896472/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20230608T203000
+DTSTAMP;VALUE=DATE:20230608
+DTSTART:20230608T183000
+SEQUENCE:0
+SUMMARY:MTG:Toulouse : Co-Event GDG Toulouse : Talks Intelligence Artifici
+ elle et Domain Driven Design
+UID:meetup-292996600
+URL:https://www.meetup.com/fr-FR/mtg-toulouse/events/292996600/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20230614T203000
+DTSTAMP;VALUE=DATE:20230614
+DTSTART:20230614T183000
+SEQUENCE:0
+SUMMARY:Toulouse Java User Group : Soirée Spring Boot 3 & Bilan JUG
+UID:meetup-293988838
+URL:https://www.meetup.com/fr-FR/toulouse-java-user-group/events/293988838/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20230615T203000
+DTSTAMP;VALUE=DATE:20230615
+DTSTART:20230615T183000
+SEQUENCE:0
+SUMMARY:Tech a break : Tech a break #4
+UID:meetup-293861305
+URL:https://www.meetup.com/fr-FR/tech-a-break/events/293861305/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20230627T203000
+DTSTAMP;VALUE=DATE:20230627
+DTSTART:20230627T183000
+SEQUENCE:0
+SUMMARY:La "Toul Box" du Cloud Natif : Hashicorp x CNF : Actu Hashicorp\, 
+ dev Air-Gap\, CI∕CD & Serverless au programme !
+UID:meetup-294181363
+URL:https://www.meetup.com/fr-FR/latoulboxducloudnatif/events/294181363/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20230706T203000
+DTSTAMP;VALUE=DATE:20230706
+DTSTART:20230706T183000
+SEQUENCE:0
+SUMMARY:Tech a break : Tech a break #5
+UID:meetup-294323300
+URL:https://www.meetup.com/fr-FR/tech-a-break/events/294323300/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20230711T213000
+DTSTAMP;VALUE=DATE:20230711
+DTSTART:20230711T193000
+SEQUENCE:0
+SUMMARY:MTG:Toulouse : Bière de fin d'année au Biergarten Toulouse Saint-M
+ ichel
+UID:meetup-294640420
+URL:https://www.meetup.com/fr-FR/mtg-toulouse/events/294640420/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20230912T200000
+DTSTAMP;VALUE=DATE:20230912
+DTSTART:20230912T180000
+SEQUENCE:0
+SUMMARY:Swift Toulouse : Apple Event
+UID:meetup-295802711
+URL:https://www.meetup.com/fr-FR/swift-toulouse/events/295802711/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20230921T203000
+DTSTAMP;VALUE=DATE:20230921
+DTSTART:20230921T183000
+SEQUENCE:0
+SUMMARY:Tech a break : Tech a break #6
+UID:meetup-295971713
+URL:https://www.meetup.com/fr-FR/tech-a-break/events/295971713/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20230926T210000
+DTSTAMP;VALUE=DATE:20230926
+DTSTART:20230926T190000
+SEQUENCE:0
+SUMMARY:GDG Toulouse : TypeScript &amp\; Angular
+UID:meetup-295802294
+URL:https://www.meetup.com/fr-FR/gdg-toulouse/events/295802294/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20231003T210000
+DTSTAMP;VALUE=DATE:20231003
+DTSTART:20231003T190000
+SEQUENCE:0
+SUMMARY:Swift Toulouse : Swift Toulouse × Liberty Rider : RoomPlan et Shad
+ ers
+UID:meetup-296292829
+URL:https://www.meetup.com/fr-FR/swift-toulouse/events/296292829/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20231005T210000
+DTSTAMP;VALUE=DATE:20231005
+DTSTART:20231005T190000
+SEQUENCE:0
+SUMMARY:Meetup Toulouse-DataViz : Le guide TDV de la datavisualisation
+UID:meetup-296096699
+URL:https://www.meetup.com/fr-FR/meetup-visualisation-des-donnees-toulouse
+ /events/296096699/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20231007T160000
+DTSTAMP;VALUE=DATE:20231007
+DTSTART:20231007T140000
+SEQUENCE:0
+SUMMARY:C++ Toulouse : Présentation de la stack KDE
+UID:meetup-296387001
+URL:https://www.meetup.com/fr-FR/ateliers-cpp-toulouse/events/296387001/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20231019T200000
+DTSTAMP;VALUE=DATE:20231019
+DTSTART:20231019T180000
+SEQUENCE:0
+SUMMARY:Python Toulouse : Python’s Datamodel: From Scripts to Applications.
+UID:meetup-295978349
+URL:https://www.meetup.com/fr-FR/python-toulouse/events/295978349/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20231024T210000
+DTSTAMP;VALUE=DATE:20231024
+DTSTART:20231024T190000
+SEQUENCE:0
+SUMMARY:Toulouse Data Science : #58 - Large Language Models and Their Appl
+ ications [Distanciel]
+UID:meetup-296540389
+URL:https://www.meetup.com/fr-FR/tlse-data-science/events/296540389/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20231026T141500
+DTSTAMP;VALUE=DATE:20231026
+DTSTART:20231026T121500
+SEQUENCE:0
+SUMMARY:Swift Toulouse : Swift Lunch #2
+UID:meetup-296717550
+URL:https://www.meetup.com/fr-FR/swift-toulouse/events/296717550/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20231104T160000
+DTSTAMP;VALUE=DATE:20231104
+DTSTART:20231104T140000
+SEQUENCE:0
+SUMMARY:C++ Toulouse : Création de modèle de projet C++ via Cookiecutter
+UID:meetup-297093390
+URL:https://www.meetup.com/fr-FR/ateliers-cpp-toulouse/events/297093390/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20231109T201500
+DTSTAMP;VALUE=DATE:20231109
+DTSTART:20231109T181500
+SEQUENCE:0
+SUMMARY:La "Toul Box" du Cloud Natif : Meetup Cloud Native Toul'Box : GitO
+ ps\, ArgoCD & Chatbot au programme !
+UID:meetup-296656327
+URL:https://www.meetup.com/fr-FR/latoulboxducloudnatif/events/296656327/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20231122T210000
+DTSTAMP;VALUE=DATE:20231122
+DTSTART:20231122T190000
+SEQUENCE:0
+SUMMARY:Toulouse Data Science : #59 - Génération d'images et ses applicati
+ ons [Présentiel]
+UID:meetup-297241609
+URL:https://www.meetup.com/fr-FR/tlse-data-science/events/297241609/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20231122T210000
+DTSTAMP;VALUE=DATE:20231122
+DTSTART:20231122T190000
+SEQUENCE:0
+SUMMARY:Toulouse Data Science : #59 - Génération d'images et ses applicati
+ ons [Distanciel]
+UID:meetup-297241624
+URL:https://www.meetup.com/fr-FR/tlse-data-science/events/297241624/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20231123T203000
+DTSTAMP;VALUE=DATE:20231123
+DTSTART:20231123T183000
+SEQUENCE:0
+SUMMARY:Tech a break : Tech A Break #7 - Fall edition
+UID:meetup-297195999
+URL:https://www.meetup.com/fr-FR/tech-a-break/events/297195999/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20231123T210000
+DTSTAMP;VALUE=DATE:20231123
+DTSTART:20231123T190000
+SEQUENCE:0
+SUMMARY:Meetup Toulouse-DataViz : Outils de visualisation de données génér
+ iques pour Python
+UID:meetup-296876148
+URL:https://www.meetup.com/fr-FR/meetup-visualisation-des-donnees-toulouse
+ /events/296876148/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20231202T160000
+DTSTAMP;VALUE=DATE:20231202
+DTSTART:20231202T140000
+SEQUENCE:0
+SUMMARY:C++ Toulouse : Conteneurisez vos environnements de développement a
+ vec les devcontainers
+UID:meetup-297547827
+URL:https://www.meetup.com/fr-FR/ateliers-cpp-toulouse/events/297547827/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20231206T204500
+DTSTAMP;VALUE=DATE:20231206
+DTSTART:20231206T184500
+SEQUENCE:0
+SUMMARY:Python Toulouse : Cosmic Python: Manage Complexity
+UID:meetup-297333521
+URL:https://www.meetup.com/fr-FR/python-toulouse/events/297333521/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20231207T210000
+DTSTAMP;VALUE=DATE:20231207
+DTSTART:20231207T190000
+SEQUENCE:0
+SUMMARY:Swift Toulouse : Swift Toulouse × Lyra Network : 2 talks pour fini
+ r l'année
+UID:meetup-297373454
+URL:https://www.meetup.com/fr-FR/swift-toulouse/events/297373454/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20231216T120000
+DTSTAMP;VALUE=DATE:20231216
+DTSTART:20231216T100000
+SEQUENCE:0
+SUMMARY:Toulouse Data Science : Data NoBlaBla: Créez Votre Assistant Conve
+ rsationnel ...
+UID:meetup-297720964
+URL:https://www.meetup.com/fr-FR/tlse-data-science/events/297720964/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20240118T200000
+DTSTAMP;VALUE=DATE:20240118
+DTSTART:20240118T180000
+SEQUENCE:0
+SUMMARY:AWS User Group France - Toulouse : Re:Cap : le résumé des annonces
+  du AWS re:Invent
+UID:meetup-297831603
+URL:https://www.meetup.com/fr-FR/toulouse-amazon-web-services/events/29783
+ 1603/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20240122T210000
+DTSTAMP;VALUE=DATE:20240122
+DTSTART:20240122T190000
+SEQUENCE:0
+SUMMARY:MTG:Toulouse : Comprendre CQRS avec MediatR : simplicité et effica
+ cité
+UID:meetup-298560429
+URL:https://www.meetup.com/fr-FR/mtg-toulouse/events/298560429/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20240123T210000
+DTSTAMP;VALUE=DATE:20240123
+DTSTART:20240123T190000
+SEQUENCE:0
+SUMMARY:Toulouse Java User Group : Soirée Pattern Matching + Amazing Postg
+ reSQL
+UID:meetup-298562945
+URL:https://www.meetup.com/fr-FR/toulouse-java-user-group/events/298562945/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20240125T204500
+DTSTAMP;VALUE=DATE:20240125
+DTSTART:20240125T184500
+SEQUENCE:0
+SUMMARY:Python Toulouse : Meetup de rentrée : Python dans le monde du rése
+ au / Bytecode & introspection
+UID:meetup-298570635
+URL:https://www.meetup.com/fr-FR/python-toulouse/events/298570635/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20240125T210000
+DTSTAMP;VALUE=DATE:20240125
+DTSTART:20240125T190000
+SEQUENCE:0
+SUMMARY:Meetup Toulouse-DataViz : Avec DuckDB\, gavez-vous d'open data !
+UID:meetup-298356121
+URL:https://www.meetup.com/fr-FR/meetup-visualisation-des-donnees-toulouse
+ /events/298356121/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20240215T203000
+DTSTAMP;VALUE=DATE:20240215
+DTSTART:20240215T183000
+SEQUENCE:0
+SUMMARY:Tech a break : TECH A BREAK#8
+UID:meetup-299009412
+URL:https://www.meetup.com/fr-FR/tech-a-break/events/299009412/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20240224T120000
+DTSTAMP;VALUE=DATE:20240224
+DTSTART:20240224T100000
+SEQUENCE:0
+SUMMARY:Toulouse Data Science : Data NoBlaBla : La génération d'image par 
+ diffusion en pratique
+UID:meetup-299212998
+URL:https://www.meetup.com/fr-FR/tlse-data-science/events/299212998/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20240227T203000
+DTSTAMP;VALUE=DATE:20240227
+DTSTART:20240227T183000
+SEQUENCE:0
+SUMMARY:AWS User Group France - Toulouse : Comment automatiser votre cloud
+  AWS pour vos équipes de dév?
+UID:meetup-298730868
+URL:https://www.meetup.com/fr-FR/toulouse-amazon-web-services/events/29873
+ 0868/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20240228T204500
+DTSTAMP;VALUE=DATE:20240228
+DTSTART:20240228T184500
+SEQUENCE:0
+SUMMARY:Python Toulouse : Python Moderne : Packaging & AsyncIO
+UID:meetup-299154543
+URL:https://www.meetup.com/fr-FR/python-toulouse/events/299154543/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20240312T203000
+DTSTAMP;VALUE=DATE:20240312
+DTSTART:20240312T183000
+SEQUENCE:0
+SUMMARY:La "Toul Box" du Cloud Natif : Découvrez Karpenter et le continuou
+ s profiling avec Pyroscope !
+UID:meetup-299213586
+URL:https://www.meetup.com/fr-FR/latoulboxducloudnatif/events/299213586/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20240314T200000
+DTSTAMP;VALUE=DATE:20240314
+DTSTART:20240314T180000
+SEQUENCE:0
+SUMMARY:AWS User Group France - Toulouse : CHAOS NIGHT INTERVILLES
+UID:meetup-299527644
+URL:https://www.meetup.com/fr-FR/toulouse-amazon-web-services/events/29952
+ 7644/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20240314T210000
+DTSTAMP;VALUE=DATE:20240314
+DTSTART:20240314T190000
+SEQUENCE:0
+SUMMARY:Swift Toulouse : Swift Toulouse de Mars 2024 chez Pictarine
+UID:meetup-298750956
+URL:https://www.meetup.com/fr-FR/swift-toulouse/events/298750956/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20240318T203000
+DTSTAMP;VALUE=DATE:20240318
+DTSTART:20240318T183000
+SEQUENCE:0
+SUMMARY:Toulouse Java User Group : Soirée Spring Boot 3.2
+UID:meetup-299588978
+URL:https://www.meetup.com/fr-FR/toulouse-java-user-group/events/299588978/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20240319T210000
+DTSTAMP;VALUE=DATE:20240319
+DTSTART:20240319T190000
+SEQUENCE:0
+SUMMARY:MTG:Toulouse : Dev et IA Génératives: fantasmes et réalité + Monad
+ s without Maths but with Cats
+UID:meetup-299378166
+URL:https://www.meetup.com/fr-FR/mtg-toulouse/events/299378166/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20240321T203000
+DTSTAMP;VALUE=DATE:20240321
+DTSTART:20240321T183000
+SEQUENCE:0
+SUMMARY:Toulouse Ruby and Friends : Toulouse.rb - Conf & Apéro - Mars
+UID:meetup-298755919
+URL:https://www.meetup.com/fr-FR/toulouse-ruby-friends/events/298755919/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20240403T210000
+DTSTAMP;VALUE=DATE:20240403
+DTSTART:20240403T190000
+SEQUENCE:0
+SUMMARY:Toulouse Data Science : De la recherche à la prod : les secrets de
+ s pipelines RAG et du déploiement NLP
+UID:meetup-300032840
+URL:https://www.meetup.com/fr-FR/tlse-data-science/events/300032840/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20240404T210000
+DTSTAMP;VALUE=DATE:20240404
+DTSTART:20240404T190000
+SEQUENCE:0
+SUMMARY:Meetup Toulouse-DataViz : Hackaviz party 2024
+UID:meetup-299770145
+URL:https://www.meetup.com/fr-FR/meetup-visualisation-des-donnees-toulouse
+ /events/299770145/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20240424T210000
+DTSTAMP;VALUE=DATE:20240424
+DTSTART:20240424T190000
+SEQUENCE:0
+SUMMARY:GDG Toulouse : Meet up 100% Cloud - Google Cloud Next 24
+UID:meetup-300028706
+URL:https://www.meetup.com/fr-FR/gdg-toulouse/events/300028706/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20240425T203000
+DTSTAMP;VALUE=DATE:20240425
+DTSTART:20240425T183000
+SEQUENCE:0
+SUMMARY:Toulouse Java User Group : Soirée Change Data Capture + OpenAPI
+UID:meetup-300034707
+URL:https://www.meetup.com/fr-FR/toulouse-java-user-group/events/300034707/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20240425T204500
+DTSTAMP;VALUE=DATE:20240425
+DTSTART:20240425T184500
+SEQUENCE:0
+SUMMARY:Python Toulouse : Python 3\, depuis l'temps ...
+UID:meetup-300324780
+URL:https://www.meetup.com/fr-FR/python-toulouse/events/300324780/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20240425T210000
+DTSTAMP;VALUE=DATE:20240425
+DTSTART:20240425T190000
+SEQUENCE:0
+SUMMARY:Swift Toulouse : Swift Toulouse d'Avril 2024 chez Atecna
+UID:meetup-299949106
+URL:https://www.meetup.com/fr-FR/swift-toulouse/events/299949106/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20240425T210000
+DTSTAMP;VALUE=DATE:20240425
+DTSTART:20240425T190000
+SEQUENCE:0
+SUMMARY:Meetup Toulouse-DataViz : Explorez l'univers d'OpenStreetMap
+UID:meetup-300391052
+URL:https://www.meetup.com/fr-FR/meetup-visualisation-des-donnees-toulouse
+ /events/300391052/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20240429T210000
+DTSTAMP;VALUE=DATE:20240429
+DTSTART:20240429T190000
+SEQUENCE:0
+SUMMARY:MTG:Toulouse : AvaloniaUI : des UI (enfin) réellement multi-platef
+ ormes pour .NET
+UID:meetup-300477819
+URL:https://www.meetup.com/fr-FR/mtg-toulouse/events/300477819/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20240430T200000
+DTSTAMP;VALUE=DATE:20240430
+DTSTART:20240430T180000
+SEQUENCE:0
+SUMMARY:Toulouse Ruby and Friends : Toulouse.rb - Conf & Apéro - Avril
+UID:meetup-299328457
+URL:https://www.meetup.com/fr-FR/toulouse-ruby-friends/events/299328457/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20240504T160000
+DTSTAMP;VALUE=DATE:20240504
+DTSTART:20240504T140000
+SEQUENCE:0
+SUMMARY:C++ Toulouse : Fonctions avancées de CMake : Presets\, FetchConten
+ t et Unity Builds
+UID:meetup-300684820
+URL:https://www.meetup.com/fr-FR/ateliers-cpp-toulouse/events/300684820/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20240514T204500
+DTSTAMP;VALUE=DATE:20240514
+DTSTART:20240514T184500
+SEQUENCE:0
+SUMMARY:GDG Toulouse : Google I/O 2024 - Watch Party à Toulouse !
+UID:meetup-300742264
+URL:https://www.meetup.com/fr-FR/gdg-toulouse/events/300742264/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20240516T210000
+DTSTAMP;VALUE=DATE:20240516
+DTSTART:20240516T190000
+SEQUENCE:0
+SUMMARY:Meetup Toulouse-DataViz : Direction Artistique pour la visualisati
+ on de données
+UID:meetup-300675629
+URL:https://www.meetup.com/fr-FR/meetup-visualisation-des-donnees-toulouse
+ /events/300675629/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20240521T203000
+DTSTAMP;VALUE=DATE:20240521
+DTSTART:20240521T183000
+SEQUENCE:0
+SUMMARY:Toulouse Java User Group : Soirée Kafka + GraphQL
+UID:meetup-300713703
+URL:https://www.meetup.com/fr-FR/toulouse-java-user-group/events/300713703/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20240528T203000
+DTSTAMP;VALUE=DATE:20240528
+DTSTART:20240528T183000
+SEQUENCE:0
+SUMMARY:Toulouse Ruby and Friends : Toulouse.rb - Conf & Apéro - Mai
+UID:meetup-299948241
+URL:https://www.meetup.com/fr-FR/toulouse-ruby-friends/events/299948241/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20240606T210000
+DTSTAMP;VALUE=DATE:20240606
+DTSTART:20240606T190000
+SEQUENCE:0
+SUMMARY:GDG Toulouse : Soirée Dependency Injection
+UID:meetup-301014214
+URL:https://www.meetup.com/fr-FR/gdg-toulouse/events/301014214/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20240610T203000
+DTSTAMP;VALUE=DATE:20240610
+DTSTART:20240610T183000
+SEQUENCE:0
+SUMMARY:Swift Toulouse : Keynote WWDC24 @ Epitech
+UID:meetup-301194229
+URL:https://www.meetup.com/fr-FR/swift-toulouse/events/301194229/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20240618T203000
+DTSTAMP;VALUE=DATE:20240618
+DTSTART:20240618T183000
+SEQUENCE:0
+SUMMARY:Toulouse Ruby and Friends : Toulouse.rb - Conf & Apéro - Juin
+UID:meetup-300756493
+URL:https://www.meetup.com/fr-FR/toulouse-ruby-friends/events/300756493/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20240618T203000
+DTSTAMP;VALUE=DATE:20240618
+DTSTART:20240618T183000
+SEQUENCE:0
+SUMMARY:Toulouse Java User Group : Soirée Java 22 & Bilan JUG
+UID:meetup-301436201
+URL:https://www.meetup.com/fr-FR/toulouse-java-user-group/events/301436201/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20240620T210000
+DTSTAMP;VALUE=DATE:20240620
+DTSTART:20240620T190000
+SEQUENCE:0
+SUMMARY:Meetup Toulouse-DataViz : Mettre sur le web votre TdB\, rapport et
+  appli efficacement et gratuitement
+UID:meetup-301597710
+URL:https://www.meetup.com/fr-FR/meetup-visualisation-des-donnees-toulouse
+ /events/301597710/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20240716T203000
+DTSTAMP;VALUE=DATE:20240716
+DTSTART:20240716T183000
+SEQUENCE:0
+SUMMARY:Toulouse Ruby and Friends : Toulouse.rb - Conf & Apéro - Juillet
+UID:meetup-301421255
+URL:https://www.meetup.com/fr-FR/toulouse-ruby-friends/events/301421255/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20240801T203000
+DTSTAMP;VALUE=DATE:20240801
+DTSTART:20240801T183000
+SEQUENCE:0
+SUMMARY:Association JS & Co. Toulouse : Tech PAF - Le retour de JS&Co
+UID:meetup-302386245
+URL:https://www.meetup.com/fr-FR/javascript-and-co/events/302386245/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20240905T203000
+DTSTAMP;VALUE=DATE:20240905
+DTSTART:20240905T183000
+SEQUENCE:0
+SUMMARY:Association JS & Co. Toulouse : Tech PAF - JS&Co - Septembre
+UID:meetup-302649911
+URL:https://www.meetup.com/fr-FR/javascript-and-co/events/302649911/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20240910T210000
+DTSTAMP;VALUE=DATE:20240910
+DTSTART:20240910T190000
+SEQUENCE:0
+SUMMARY:GDG Toulouse : Soirée Kubernetes
+UID:meetup-301636995
+URL:https://www.meetup.com/fr-FR/gdg-toulouse/events/301636995/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20240917T203000
+DTSTAMP;VALUE=DATE:20240917
+DTSTART:20240917T183000
+SEQUENCE:0
+SUMMARY:Toulouse Ruby and Friends : Toulouse.rb - Conf & Apéro - Septembre
+UID:meetup-301833528
+URL:https://www.meetup.com/fr-FR/toulouse-ruby-friends/events/301833528/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20240917T210000
+DTSTAMP;VALUE=DATE:20240917
+DTSTART:20240917T190000
+SEQUENCE:0
+SUMMARY:DevOps & Cloud Toulouse : Code Café #1 : le meetup DevOps et Cloud
+  à Toulouse
+UID:meetup-300566088
+URL:https://www.meetup.com/fr-FR/devops-cloud-toulouse/events/300566088/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20240919T203000
+DTSTAMP;VALUE=DATE:20240919
+DTSTART:20240919T183000
+SEQUENCE:0
+SUMMARY:La "Toul Box" du Cloud Natif : Shift Left\, Speech-to-Text & Multi
+ -Cloud
+UID:meetup-302453867
+URL:https://www.meetup.com/fr-FR/latoulboxducloudnatif/events/302453867/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20241002T210000
+DTSTAMP;VALUE=DATE:20241002
+DTSTART:20241002T190000
+SEQUENCE:0
+SUMMARY:GDG Toulouse : Soirée Rust
+UID:meetup-303255376
+URL:https://www.meetup.com/fr-FR/gdg-toulouse/events/303255376/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20241003T203000
+DTSTAMP;VALUE=DATE:20241003
+DTSTART:20241003T183000
+SEQUENCE:0
+SUMMARY:Association JS & Co. Toulouse : Tech PAF - JS&Co - Octobre
+UID:meetup-303664085
+URL:https://www.meetup.com/fr-FR/javascript-and-co/events/303664085/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20241003T210000
+DTSTAMP;VALUE=DATE:20241003
+DTSTART:20241003T190000
+SEQUENCE:0
+SUMMARY:Meetup Toulouse-DataViz : Témoignages d’utilisateurs de visualisat
+ ions de données
+UID:meetup-303598680
+URL:https://www.meetup.com/fr-FR/meetup-visualisation-des-donnees-toulouse
+ /events/303598680/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20241008T203000
+DTSTAMP;VALUE=DATE:20241008
+DTSTART:20241008T183000
+SEQUENCE:0
+SUMMARY:Toulouse Java User Group : Soirée High-Performance Kotlin + Glitch
+ age de microcontroleur
+UID:meetup-303600904
+URL:https://www.meetup.com/fr-FR/toulouse-java-user-group/events/303600904/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20241017T210000
+DTSTAMP;VALUE=DATE:20241017
+DTSTART:20241017T190000
+SEQUENCE:0
+SUMMARY:MTG:Toulouse : Workshop : Découvrons ensemble .NET Aspire
+UID:meetup-303524813
+URL:https://www.meetup.com/fr-FR/mtg-toulouse/events/303524813/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20241017T210000
+DTSTAMP;VALUE=DATE:20241017
+DTSTART:20241017T190000
+SEQUENCE:0
+SUMMARY:Toulouse Data Science : L'IA de confiance : Explicabilité et Quant
+ ification d'incertitudes avec l'IRT
+UID:meetup-303871289
+URL:https://www.meetup.com/fr-FR/tlse-data-science/events/303871289/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20241017T210000
+DTSTAMP;VALUE=DATE:20241017
+DTSTART:20241017T190000
+SEQUENCE:0
+SUMMARY:Toulouse Data Science : [ONLINE] L'IA de confiance : Explicabilité
+  et Quantification d'incertitudes
+UID:meetup-304058706
+URL:https://www.meetup.com/fr-FR/tlse-data-science/events/304058706/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20241022T210000
+DTSTAMP;VALUE=DATE:20241022
+DTSTART:20241022T190000
+SEQUENCE:0
+SUMMARY:Toulouse Ruby and Friends : Toulouse.rb - Conf & Apéro - Octobre
+UID:meetup-303370450
+URL:https://www.meetup.com/fr-FR/toulouse-ruby-friends/events/303370450/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20241030T203000
+DTSTAMP;VALUE=DATE:20241030
+DTSTART:20241030T183000
+SEQUENCE:0
+SUMMARY:Python Toulouse : Ce soir : Afterwork Python
+UID:meetup-304265660
+URL:https://www.meetup.com/fr-FR/python-toulouse/events/304265660/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20241107T203000
+DTSTAMP;VALUE=DATE:20241107
+DTSTART:20241107T183000
+SEQUENCE:0
+SUMMARY:Association JS & Co. Toulouse : Le Tech PAF de JS&Co - Novembre
+UID:meetup-303863847
+URL:https://www.meetup.com/fr-FR/javascript-and-co/events/303863847/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20241119T203000
+DTSTAMP;VALUE=DATE:20241119
+DTSTART:20241119T183000
+SEQUENCE:0
+SUMMARY:Toulouse Ruby and Friends : Toulouse.rb - Conf & Apéro - Novembre
+UID:meetup-304416126
+URL:https://www.meetup.com/fr-FR/toulouse-ruby-friends/events/304416126/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20241121T210000
+DTSTAMP;VALUE=DATE:20241121
+DTSTART:20241121T190000
+SEQUENCE:0
+SUMMARY:Meetup Toulouse-DataViz : L’abc du X\,Y : rendre accessibles les d
+ onnées aux non experts grâce à la dataviz
+UID:meetup-304376293
+URL:https://www.meetup.com/fr-FR/meetup-visualisation-des-donnees-toulouse
+ /events/304376293/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20241126T210000
+DTSTAMP;VALUE=DATE:20241126
+DTSTART:20241126T190000
+SEQUENCE:0
+SUMMARY:GDG Toulouse : Soirée CI/CD et Observabilité
+UID:meetup-304393622
+URL:https://www.meetup.com/fr-FR/gdg-toulouse/events/304393622/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20241128T200000
+DTSTAMP;VALUE=DATE:20241128
+DTSTART:20241128T180000
+SEQUENCE:0
+SUMMARY:Agile Toulouse : L'atelier 404 ou Comment échouer de manière produ
+ ctive
+UID:meetup-304144204
+URL:https://www.meetup.com/fr-FR/agile-toulouse/events/304144204/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20241128T210000
+DTSTAMP;VALUE=DATE:20241128
+DTSTART:20241128T190000
+SEQUENCE:0
+SUMMARY:Toulouse Data Science : #62 : 2 Cas d'usages de l'IA appliqués à l
+ a vision par ordinateur chez Aqsone
+UID:meetup-304602272
+URL:https://www.meetup.com/fr-FR/tlse-data-science/events/304602272/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20241128T210000
+DTSTAMP;VALUE=DATE:20241128
+DTSTART:20241128T190000
+SEQUENCE:0
+SUMMARY:Toulouse Data Science : #62 [REMOTE] : 2 Cas d'usages de l'IA chez
+  Aqsone
+UID:meetup-304635219
+URL:https://www.meetup.com/fr-FR/tlse-data-science/events/304635219/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20241203T203000
+DTSTAMP;VALUE=DATE:20241203
+DTSTART:20241203T183000
+SEQUENCE:0
+SUMMARY:Agile Toulouse : 🍻 Bière Agile - Mesurer la réussite Agile ?
+UID:meetup-304563208
+URL:https://www.meetup.com/fr-FR/agile-toulouse/events/304563208/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20241204T204500
+DTSTAMP;VALUE=DATE:20241204
+DTSTART:20241204T184500
+SEQUENCE:0
+SUMMARY:Python Toulouse : Django DRF et Zig : des APIs simples et du Pytho
+ n rapide 🤯
+UID:meetup-304433354
+URL:https://www.meetup.com/fr-FR/python-toulouse/events/304433354/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20241205T203000
+DTSTAMP;VALUE=DATE:20241205
+DTSTART:20241205T183000
+SEQUENCE:0
+SUMMARY:Association JS & Co. Toulouse : Le Tech PAF de JS&Co - Décembre
+UID:meetup-304453195
+URL:https://www.meetup.com/fr-FR/javascript-and-co/events/304453195/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20241205T203000
+DTSTAMP;VALUE=DATE:20241205
+DTSTART:20241205T183000
+SEQUENCE:0
+SUMMARY:Tech a break : TECH A BREAK #9
+UID:meetup-304627925
+URL:https://www.meetup.com/fr-FR/tech-a-break/events/304627925/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20241205T204500
+DTSTAMP;VALUE=DATE:20241205
+DTSTART:20241205T184500
+SEQUENCE:0
+SUMMARY:GDG Toulouse : Microservices et Google Apps Script
+UID:meetup-304666961
+URL:https://www.meetup.com/fr-FR/gdg-toulouse/events/304666961/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20241207T160000
+DTSTAMP;VALUE=DATE:20241207
+DTSTART:20241207T140000
+SEQUENCE:0
+SUMMARY:C++ Toulouse : Introduction au pipeline graphique du GPU
+UID:meetup-304954807
+URL:https://www.meetup.com/fr-FR/ateliers-cpp-toulouse/events/304954807/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20241210T203000
+DTSTAMP;VALUE=DATE:20241210
+DTSTART:20241210T183000
+SEQUENCE:0
+SUMMARY:Toulouse Java User Group : Soirée Sécurité
+UID:meetup-304896637
+URL:https://www.meetup.com/fr-FR/toulouse-java-user-group/events/304896637/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20241212T200000
+DTSTAMP;VALUE=DATE:20241212
+DTSTART:20241212T180000
+SEQUENCE:0
+SUMMARY:Agile Toulouse : Diamond Path - Serious Game autour du Design Thin
+ king
+UID:meetup-304321428
+URL:https://www.meetup.com/fr-FR/agile-toulouse/events/304321428/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20241216T200000
+DTSTAMP;VALUE=DATE:20241216
+DTSTART:20241216T180000
+SEQUENCE:0
+SUMMARY:Agile Toulouse : Pratiquons unFIX ensemble - Introduction Général 
+ et Structural Patterns
+UID:meetup-304321417
+URL:https://www.meetup.com/fr-FR/agile-toulouse/events/304321417/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20241217T203000
+DTSTAMP;VALUE=DATE:20241217
+DTSTART:20241217T183000
+SEQUENCE:0
+SUMMARY:Toulouse Ruby and Friends : Toulouse.rb - Conf & Apéro - Décembre
+UID:meetup-304627678
+URL:https://www.meetup.com/fr-FR/toulouse-ruby-friends/events/304627678/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20241219T200000
+DTSTAMP;VALUE=DATE:20241219
+DTSTART:20241219T180000
+SEQUENCE:0
+SUMMARY:Agile Toulouse : Assemblée Générale : Bilan 2024 & Élection du Bur
+ eau & Présentation projet/idée
+UID:meetup-304758201
+URL:https://www.meetup.com/fr-FR/agile-toulouse/events/304758201/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20250107T203000
+DTSTAMP;VALUE=DATE:20250107
+DTSTART:20250107T183000
+SEQUENCE:0
+SUMMARY:Agile Toulouse : 🍻 Bière Agile - Agilité dans tous les secteurs ?
+UID:meetup-304563242
+URL:https://www.meetup.com/fr-FR/agile-toulouse/events/304563242/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20250109T203000
+DTSTAMP;VALUE=DATE:20250109
+DTSTART:20250109T183000
+SEQUENCE:0
+SUMMARY:Agile Toulouse : Klub de lecture janvier 2025
+UID:meetup-304876429
+URL:https://www.meetup.com/fr-FR/agile-toulouse/events/304876429/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20250109T203000
+DTSTAMP;VALUE=DATE:20250109
+DTSTART:20250109T183000
+SEQUENCE:0
+SUMMARY:Association JS & Co. Toulouse : Le Tech PAF de JS&Co - Janvier
+UID:meetup-304988989
+URL:https://www.meetup.com/fr-FR/javascript-and-co/events/304988989/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20250111T160000
+DTSTAMP;VALUE=DATE:20250111
+DTSTART:20250111T140000
+SEQUENCE:0
+SUMMARY:C++ Toulouse : Introduction à la Clean Architecture : concevoir du
+  code modulaire et évolutif
+UID:meetup-305473927
+URL:https://www.meetup.com/fr-FR/ateliers-cpp-toulouse/events/305473927/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20250114T200000
+DTSTAMP;VALUE=DATE:20250114
+DTSTART:20250114T180000
+SEQUENCE:0
+SUMMARY:Agile Toulouse : Venez expérimenter la puissance des Legos lors d'
+ un atelier découverte.
+UID:meetup-305226325
+URL:https://www.meetup.com/fr-FR/agile-toulouse/events/305226325/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20250116T210000
+DTSTAMP;VALUE=DATE:20250116
+DTSTART:20250116T190000
+SEQUENCE:0
+SUMMARY:Meetup Toulouse-DataViz : Explorer\, échouer\, innover : le cercle
+  vertueux des petits projets
+UID:meetup-304850183
+URL:https://www.meetup.com/fr-FR/meetup-visualisation-des-donnees-toulouse
+ /events/304850183/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20250116T210000
+DTSTAMP;VALUE=DATE:20250116
+DTSTART:20250116T190000
+SEQUENCE:0
+SUMMARY:GDG Toulouse : Soirée IA
+UID:meetup-304913013
+URL:https://www.meetup.com/fr-FR/gdg-toulouse/events/304913013/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20250121T223000
+DTSTAMP;VALUE=DATE:20250121
+DTSTART:20250121T183000
+SEQUENCE:0
+SUMMARY:Toulouse Game Dev : Meet-up de Janvier
+UID:tgd-2025-01-21
+URL:https://toulousegamedev.fr/evenements/
+X-ALT-DESC:<p>Ce mois-ci nous accueillons <strong>Danís Chadeuil est ingén
+ ieur\, promoteur et acteur culturel\, spécialiste de langue et culture oc
+ citanes. </strong></p>\n<p>Lors de cette conférence\, <strong>il reviendr
+ a sur ses expériences et livrera quelques pistes et opportunités autour d
+ e la valorisation des langues et cultures minoritaires du monde entier da
+ ns le jeu vidéo.</strong></p>\n<p>Le planning du Meet-up sera le suivant 
+ :<br><strong>18h30</strong> : Accueil des personnes ne connaissant pas le
+  TGD</p>\n<p><strong>18h45 </strong>: Ouverture des portes<br><strong>19h
+ 00</strong>: Lancement de la session <strong>Open Mics</strong><br><stron
+ g>19h15</strong> : Début de la conférence de <strong>Danís Chadeuil</stro
+ ng></p>\n<p>En direct sur la chaine Twitch du TGD à 19h00 : <a rel="noref
+ errer noopener" href="https://www.twitch.tv/toulousegamedev" target="_bla
+ nk">ici</a></p>
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20250121T210000
+DTSTAMP;VALUE=DATE:20250121
+DTSTART:20250121T190000
+SEQUENCE:0
+SUMMARY:Toulouse Ruby and Friends : Toulouse.rb - Conf & Apéro - Janvier
+UID:meetup-304951231
+URL:https://www.meetup.com/fr-FR/toulouse-ruby-friends/events/304951231/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20250122T210000
+DTSTAMP;VALUE=DATE:20250122
+DTSTART:20250122T190000
+SEQUENCE:0
+SUMMARY:Python Toulouse : Les frameworks Gen AI - LLM
+UID:meetup-305592922
+URL:https://www.meetup.com/fr-FR/python-toulouse/events/305592922/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20250123T200000
+DTSTAMP;VALUE=DATE:20250123
+DTSTART:20250123T180000
+SEQUENCE:0
+SUMMARY:Agile Toulouse : Introduction à Org Topologies
+UID:meetup-304773963
+URL:https://www.meetup.com/fr-FR/agile-toulouse/events/304773963/
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20250124T200000
+DTSTAMP;VALUE=DATE:20250124
+DTSTART:20250124T180000
+SEQUENCE:0
+SUMMARY:Agile Toulouse : Apprenez l'essentiel de "Accelerate" / DORA\, le 
+ pied au plancher
+UID:meetup-305148947
+URL:https://www.meetup.com/fr-FR/agile-toulouse/events/305148947/
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Agile Toulouse vous propose sa troisième édition de l'Agile Ga
+ me Labs !\nQue tu souhaites animer ou t'entrainer à l'animation d'un seri
+ ous game agile ou simplement participer\, cet événement est fait pour toi
+  !\nL'événement sera donc en Open Forum : cela veut dire que chacun pourr
+ a présenter un serious game et l'ajouter à l'agenda du meetup. Nous vous 
+ conseillons cependant que celui-ci se limite à une heure si vous souhaite
+ z le terminer.\nNous demanderons aux venants d'être membres de l'associat
+ ion Agile Toulouse.\nPour rappel\, c'est gratuit et faisable ici en 1 min
+ ute sur téléphone : [https://www.helloasso.com/associations/agile-toulous
+ e/adhesions/adhesion-agile-toulouse-1](https://www.helloasso.com/associat
+ ions/agile-toulouse/adhesions/adhesion-agile-toulouse-1)\nSi vous êtes in
+ scrits\, mais que cela n'est plus possible pour vous de venir\, merci de 
+ vous désinscrire pour informer qu'il reste de la place :)\nBonne journée 
+ !\nAgile Toulouse
+DTEND:20250131T200000
+DTSTAMP;VALUE=DATE:20250131
+DTSTART:20250131T180000
+LOCATION:Maison des Associations\, 3 Pl. Guy Hersant Toulouse
+SEQUENCE:0
+SUMMARY:Agile Toulouse : Agile Game Labs #3
+UID:meetup-305226338
+URL:https://www.meetup.com/fr-FR/agile-toulouse/events/305226338/
+X-ALT-DESC:<p class="mb-4">Agile Toulouse vous propose sa troisième éditio
+ n de l'Agile Game Labs !</p>\n<p class="mb-4">Que tu souhaites animer ou 
+ t'entrainer à l'animation d'un serious game agile ou simplement participe
+ r\, cet événement est fait pour toi !</p>\n<p class="mb-4">L'événement se
+ ra donc en <strong>Open Forum</strong> : cela veut dire que chacun pourra
+  présenter un serious game et l'ajouter à l'agenda du meetup. Nous vous c
+ onseillons cependant que celui-ci se limite à une heure si vous souhaitez
+  le terminer.</p>\n<p class="mb-4">Nous demanderons aux venants d'être me
+ mbres de l'association Agile Toulouse.<br>\nPour rappel\, c'est gratuit e
+ t faisable ici en 1 minute sur téléphone : [<a href="https://www.helloass
+ o.com/associations/agile-toulouse/adhesions/adhesion-agile-toulouse-1" ta
+ rget="_blank" class="!text-viridian" rel="nofollow ugc">https://www.hello
+ asso.com/associations/agile-toulouse/adhesions/adhesion-agile-toulouse-1<
+ /a>](https://www.helloasso.com/associations/agile-toulouse/adhesions/adhe
+ sion-agile-toulouse-1)</p>\n<p class="mb-4">Si vous êtes inscrits\, mais 
+ que cela n'est plus possible pour vous de venir\, merci de vous désinscri
+ re pour informer qu'il reste de la place :)</p>\n<p class="mb-4">Bonne jo
+ urnée !<br>\nAgile Toulouse</p>
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Dans le cadre des ateliers C++ de Toulibre\, nous vous proposo
+ ns le samedi 1er février 2025 à 14 heures une présentation sur le thème s
+ uivant :\nIntroduction à CMake\nCMake est un système de configuration de 
+ la compilation de logiciels. Cet outil multiplateforme\, qui adresse esse
+ ntiellement les logiciels développés en C++\, s'est considérablement enri
+ chi au fil du temps. Cyril Jacquet nous en fera découvrir les principales
+  facettes\, en ponctuant notre cheminement d'exemples concrets.\nAu progr
+ amme :\n\nIntroduction à CMake pour le C++\nBase de la gestion des dépend
+ ances (find_package\, linking et include)\nGestion des dépendances via Fe
+ tchContent\nGestion des dépendances via VCPKG\nGénération de paquet via C
+ Pack\nCMake et Qt\n\nPour qui ?\nCet événement s’adresse aux développeurs
+  curieux\, quel que soit leur niveau\, à condition d’avoir quelques notio
+ ns de C++. Apportez éventuellement un ordinateur portable pour pouvoir re
+ produire les exercices.\nÀ propos de l’intervenant :\nAvec 15 ans d’expér
+ ience dans le domaine du développement logiciel\, Cyril Jacquet a occupé 
+ de nombreux rôles chez des clients toulousains : ingénieur DevOps\, dével
+ oppeur C++\, Rust et Python et formateur.\nAyant conçu plusieurs architec
+ tures logicielles en s’inspirant de la Clean Architecture\, Cyril partage
+ ra avec vous des exemples concrets et ses astuces pour tirer le meilleur 
+ de cette approche.\nUn rendez-vous régulier autour du C++\nLes ateliers C
+ ++ de Toulibre se déroulent le premier samedi de chaque mois dans les loc
+ aux du fablab Artilect\, que nous remercions chaleureusement pour son acc
+ ueil.\nLa présentation démarrera à 14 heures\, mais les passionnés de C++
+  pourront nous rejoindre dès 12 heures pour échanger librement ou s’octro
+ yer un temps dédié au développement de leur projet.\nLa participation est
+  gratuite et ouverte. N’hésitez pas à entrer et à découvrir le lieu. :)
+DTEND:20250201T160000
+DTSTAMP;VALUE=DATE:20250201
+DTSTART:20250201T140000
+LOCATION:Artilect FabLab Toulouse\, 10 Rue Tripière Toulouse
+SEQUENCE:0
+SUMMARY:C++ Toulouse : Introduction à CMake
+UID:meetup-305840851
+URL:https://www.meetup.com/fr-FR/ateliers-cpp-toulouse/events/305840851/
+X-ALT-DESC:<p class="mb-4">Dans le cadre des ateliers C++ de Toulibre\, no
+ us vous proposons le <strong>samedi 1er février 2025 à 14 heures</strong>
+  une présentation sur le thème suivant :</p>\n<p class="mb-4"><em><strong
+ >Introduction à CMake</strong></em></p>\n<p class="mb-4">CMake est un sys
+ tème de configuration de la compilation de logiciels. Cet outil multiplat
+ eforme\, qui adresse essentiellement les logiciels développés en C++\, s'
+ est considérablement enrichi au fil du temps. Cyril Jacquet nous en fera 
+ découvrir les principales facettes\, en ponctuant notre cheminement d'exe
+ mples concrets.<br>\nAu programme :</p>\n<ul class="pl-5 list-disc mb-4">
+ \n<li>Introduction à CMake pour le C++</li>\n<li>Base de la gestion des d
+ épendances (find_package\, linking et include)</li>\n<li>Gestion des dépe
+ ndances via FetchContent</li>\n<li>Gestion des dépendances via VCPKG</li>
+ \n<li>Génération de paquet via CPack</li>\n<li>CMake et Qt</li>\n</ul>\n<
+ p class="mb-4"><strong>Pour qui ?</strong></p>\n<p class="mb-4">Cet événe
+ ment s’adresse aux développeurs curieux\, quel que soit leur niveau\, à c
+ ondition d’avoir quelques notions de C++. Apportez éventuellement un ordi
+ nateur portable pour pouvoir reproduire les exercices.</p>\n<p class="mb-
+ 4"><strong>À propos de l’intervenant :</strong></p>\n<p class="mb-4">Avec
+  15 ans d’expérience dans le domaine du développement logiciel\, <strong>
+ Cyril Jacquet</strong> a occupé de nombreux rôles chez des clients toulou
+ sains : ingénieur DevOps\, développeur C++\, Rust et Python et formateur.
+ </p>\n<p class="mb-4">Ayant conçu plusieurs architectures logicielles en 
+ s’inspirant de la Clean Architecture\, Cyril partagera avec vous des exem
+ ples concrets et ses astuces pour tirer le meilleur de cette approche.</p
+ >\n<p class="mb-4"><strong>Un rendez-vous régulier autour du C++</strong>
+ </p>\n<p class="mb-4">Les ateliers C++ de Toulibre se déroulent le premie
+ r samedi de chaque mois dans les locaux du fablab Artilect\, que nous rem
+ ercions chaleureusement pour son accueil.</p>\n<p class="mb-4">La présent
+ ation démarrera à 14 heures\, mais <strong>les passionnés de C++ pourront
+  nous rejoindre dès 12 heures</strong> pour échanger librement ou s’octro
+ yer un temps dédié au développement de leur projet.</p>\n<p class="mb-4">
+ La participation est gratuite et ouverte. N’hésitez pas à entrer et à déc
+ ouvrir le lieu. :)</p>
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:🍻 La bière Agile est toujours là mais nous avons changé de li
+ eu !\n👋 Agile Toulouse vous propose de venir échanger autour d'une bière
+  (ou autre) une fois par mois à partir de 18h30 aux Halles de la Transiti
+ on.\n📍 Le bar est situé au 7 Rue du Canon d'Arcole\, 31000 Toulouse\nVu 
+ la taille du bar\, qui permet de bien s'entendre en parlant\, nous limito
+ ns les places à 12.\n🤓 C'est un événement à destination de tous les prof
+ ils (plus ou moins expérimentés\, plus ou moins dans l'agilité\, plus ou 
+ moins dans l'informatique…bref vous avez compris l'idée :) ).\n⚠️ Nous de
+ manderons aux participants d'être membre de l'association. Pour rappel\, 
+ c'est gratuit et faisable ici en 1 minute sur téléphone : [https://www.he
+ lloasso.com/associations/agile-toulouse/adhesions/adhesion-agile-toulouse
+ -1](https://www.helloasso.com/associations/agile-toulouse/adhesions/adhes
+ ion-agile-toulouse-1)\n🗫 Les sujets de discussion pourront suivre un thè
+ me (plus ou moins) mais libre à chacun d'introduire son sujet - cette foi
+ s-ci\, on pourra discuter des avatanges et inconvénients des framework à 
+ l'échelle... ou nous pouvons parler de tout autre chose qui pique votre i
+ ntérêt :)\n🎯L'objectif étant de passer un bon moment\, d'échanger librem
+ ent et de repartir avec le sourire.\nSi vous êtes inscrits mais que cela 
+ n'est plus possible pour vous de venir\, merci de vous désinscrire pour i
+ nformer qu'il reste de la place.\nBonne journée !\nSarah & Agile Toulouse
+DTEND:20250204T203000
+DTSTAMP;VALUE=DATE:20250204
+DTSTART:20250204T183000
+LOCATION:Les halles de la transition\, Rue du canon d'arcole\, Toulouse
+SEQUENCE:0
+SUMMARY:Agile Toulouse : 🍻 Bière Agile - Agilité à l'échelle
+UID:meetup-304563258
+URL:https://www.meetup.com/fr-FR/agile-toulouse/events/304563258/
+X-ALT-DESC:<p class="mb-4">🍻 La bière Agile est toujours là mais nous avo
+ ns changé de lieu !</p>\n<p class="mb-4">👋 Agile Toulouse vous propose d
+ e venir échanger autour d'une bière (ou autre) une fois par mois à partir
+  de 18h30 aux Halles de la Transition.</p>\n<p class="mb-4">📍 Le bar est
+  situé au <a href="http://%5Bhttps://www.google.com/maps/place//data=%5D(
+ https://www.google.com/maps/place//data=)!4m2!3m1!1s0x12aebba55bacefef:0x
+ 8ba0091967492853?sa=X&amp\;ved=1t:8290&amp\;ictx=111" target="_blank" cla
+ ss="!text-viridian" rel="ugc">7 Rue du Canon d'Arcole\, 31000 Toulouse</a
+ ><br>\nVu la taille du bar\, qui permet de bien s'entendre en parlant\, n
+ ous limitons les places à 12.</p>\n<p class="mb-4">🤓 C'est un événement 
+ à destination de tous les profils (plus ou moins expérimentés\, plus ou m
+ oins dans l'agilité\, plus ou moins dans l'informatique…bref vous avez co
+ mpris l'idée :) ).</p>\n<p class="mb-4">⚠️ Nous demanderons aux participa
+ nts d'être membre de l'association. Pour rappel\, c'est gratuit et faisab
+ le ici en 1 minute sur téléphone : [<a href="https://www.helloasso.com/as
+ sociations/agile-toulouse/adhesions/adhesion-agile-toulouse-1" target="_b
+ lank" class="!text-viridian" rel="nofollow ugc">https://www.helloasso.com
+ /associations/agile-toulouse/adhesions/adhesion-agile-toulouse-1</a>](htt
+ ps://www.helloasso.com/associations/agile-toulouse/adhesions/adhesion-agi
+ le-toulouse-1)</p>\n<p class="mb-4">🗫 Les sujets de discussion pourront 
+ suivre un thème (plus ou moins) mais libre à chacun d'introduire son suje
+ t - cette fois-ci\, on pourra discuter des avatanges et inconvénients des
+  framework à l'échelle... ou nous pouvons parler de tout autre chose qui 
+ pique votre intérêt :)</p>\n<p class="mb-4">🎯L'objectif étant de passer 
+ un bon moment\, d'échanger librement et de repartir avec le sourire.</p>\
+ n<p class="mb-4">Si vous êtes inscrits mais que cela n'est plus possible 
+ pour vous de venir\, merci de vous désinscrire pour informer qu'il reste 
+ de la place.</p>\n<p class="mb-4">Bonne journée !<br>\nSarah &amp\; Agile
+  Toulouse</p>
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Qui dit nouvelle année\, dit nouvelles rencontres et nouvelles
+  ambitions !\nC'est pour cela qu'en février\, notre Tech PAF sera une col
+ lab interclub avec Moovers et Neptune Business Club.\nCe sont des réseaux
+  qui partagent nos valeurs et notre vision des affaires et dont les renco
+ ntres ne peuvent qu'être passionnantes !\nMoovers\, c'est le collectif de
+ s solopreneurs qui réseautent et sortent entre eux à Toulouse.\nhttps://m
+ oovers.biz/\nNeptune Club\, c'est le club d'affaire à Toulouse et Carcass
+ onne qui met des solutions à disposition des entrepreneurs par les échang
+ es.\nhttps://www.neptunebusiness.com/\nEt nous JS&Co\, nous sommes le rés
+ eau qui rassemble les techs et les entrepreneurs pour créer des synergies
+  et des rencontres professionnelles.\nNous organisons notamment les fameu
+ x Tech PAF\, l'afterwork des techs et des entrepreneurs tous les premiers
+  jeudi du mois.\nhttps://www.meetup.com/fr-FR/javascript-and-co/\nAu prog
+ ramme ?\nVenez échanger à bâton rompu entre personnes passionnantes sur v
+ os sujets du moment : tech\, business\, staffing\, astuces\, opérationnel
+  ou autre !\nSi tout ceci vous plait\, venez "parler boutique" autour d'u
+ n verre au Bièrographe\, 12 rue des Paradoux.\nJeudi 6 février\nBièrograp
+ he\n18h30
+DTEND:20250206T203000
+DTSTAMP;VALUE=DATE:20250206
+DTSTART:20250206T183000
+LOCATION:Bierographe toulouse\, 12 Rue des Paradoux\, Toulouse
+SEQUENCE:0
+SUMMARY:Association JS & Co. Toulouse : Le Tech PAF de JS&Co - Février ave
+ c Moovers et Neptune Club
+UID:meetup-305479083
+URL:https://www.meetup.com/fr-FR/javascript-and-co/events/305479083/
+X-ALT-DESC:<p class="mb-4">Qui dit nouvelle année\, dit nouvelles rencontr
+ es et nouvelles ambitions !</p>\n<p class="mb-4">C'est pour cela qu'en fé
+ vrier\, notre Tech PAF sera une collab interclub avec Moovers et Neptune 
+ Business Club.</p>\n<p class="mb-4">Ce sont des réseaux qui partagent nos
+  valeurs et notre vision des affaires et dont les rencontres ne peuvent q
+ u'être passionnantes !</p>\n<p class="mb-4">Moovers\, c'est le collectif 
+ des solopreneurs qui réseautent et sortent entre eux à Toulouse.<br>\n<a 
+ href="https://moovers.biz/" target="_blank" class="!text-viridian" rel="n
+ ofollow ugc">https://moovers.biz/</a></p>\n<p class="mb-4">Neptune Club\,
+  c'est le club d'affaire à Toulouse et Carcassonne qui met des solutions 
+ à disposition des entrepreneurs par les échanges.<br>\n<a href="https://w
+ ww.neptunebusiness.com/" target="_blank" class="!text-viridian" rel="nofo
+ llow ugc">https://www.neptunebusiness.com/</a></p>\n<p class="mb-4">Et no
+ us JS&amp\;Co\, nous sommes le réseau qui rassemble les techs et les entr
+ epreneurs pour créer des synergies et des rencontres professionnelles.</p
+ >\n<p class="mb-4">Nous organisons notamment les fameux Tech PAF\, l'afte
+ rwork des techs et des entrepreneurs tous les premiers jeudi du mois.<br>
+ \n<a href="https://www.meetup.com/fr-FR/javascript-and-co/" target="_blan
+ k" class="!text-viridian">https://www.meetup.com/fr-FR/javascript-and-co/
+ </a></p>\n<p class="mb-4">Au programme ?<br>\nVenez échanger à bâton romp
+ u entre personnes passionnantes sur vos sujets du moment : tech\, busines
+ s\, staffing\, astuces\, opérationnel ou autre !</p>\n<p class="mb-4">Si 
+ tout ceci vous plait\, venez "parler boutique" autour d'un verre au Bièro
+ graphe\, 12 rue des Paradoux.</p>\n<p class="mb-4">Jeudi 6 février<br>\nB
+ ièrographe<br>\n18h30</p>
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:L'AWS User Group Toulouse revient le jeudi 6 février 2025 avec
+  une soirée re:Cap en français du AWS Re:Invent 2024 à partir de 18h30 da
+ ns les locaux de onepoint Toulouse.\nLa treizième conférence annuelle AWS
+  re:Invent s'est tenue à Las Vegas en décembre 2024. Cette conférence a c
+ ette année encore été l'occasion de donner le ton de 2025 et d'annoncer d
+ e nouvelles fonctionnalités et services.\nQuelles sont les annonces à ne 
+ pas rater ? Comment ces nouveautés peuvent vous simplifier la tâche ? Pen
+ dant ce meetup\, Lior et Nicolas (Solution architects chez AWS) passeront
+  en revue les principales annonces. Ils vous montreront également\, à l'a
+ ide de plusieurs démonstrations comment tirer le meilleur parti des nouve
+ lles fonctions.\nNous finirons la soirée autour de quelques bières et piz
+ zas\, l'occasion de poser toutes vos questions et d'échanger sur ce qui a
+  été présenté.\nEn résumé :\n- 📆 Date : Jeudi 6 février 2025 à partir de
+  18h30\n- 🏡 Lieu : Onepoint 3 Rue Lapeyrouse\, 31000 Toulouse\n\nProgram
+ me :\n18h30-18h45 : Accueil\n18h45 -20h : Re:Cap du AWS re:Invent 2024 pa
+ r Lior PEREZ et Nicolas de PLACE d'AWS\n20h - 21h30 : Echanges\, Question
+ s et Réponses autour de bières et pizzas\n\nNous avons hâte de vous accue
+ illir pour cet événement.
+DTEND:20250206T203000
+DTSTAMP;VALUE=DATE:20250206
+DTSTART:20250206T183000
+LOCATION:Onepoint Toulouse - Transformation Digital\, 3 Rue Lapeyrouse Tou
+ louse
+SEQUENCE:0
+SUMMARY:AWS User Group France - Toulouse : Re:Cap 2025 : le résumé des ann
+ onces du AWS re:Invent
+UID:meetup-305735655
+URL:https://www.meetup.com/fr-FR/toulouse-amazon-web-services/events/30573
+ 5655/
+X-ALT-DESC:<p class="mb-4">L'AWS User Group Toulouse revient le <strong>je
+ udi 6 février 2025</strong> avec une soirée <strong>re:Cap</strong> en fr
+ ançais du <strong>AWS Re:Invent 2024</strong> à partir de 18h30 dans les 
+ locaux de <strong>onepoint Toulouse</strong>.</p>\n<p class="mb-4">La tre
+ izième conférence annuelle AWS re:Invent s'est tenue à Las Vegas en décem
+ bre 2024. Cette conférence a cette année encore été l'occasion de donner 
+ le ton de 2025 et d'annoncer de nouvelles fonctionnalités et services.</p
+ >\n<p class="mb-4">Quelles sont les annonces à ne pas rater ? Comment ces
+  nouveautés peuvent vous simplifier la tâche ? Pendant ce meetup\, <stron
+ g>Lior et Nicolas (Solution architects chez AWS) passeront en revue les p
+ rincipales annonces</strong>. Ils vous montreront également\, à l'aide de
+  plusieurs <strong>démonstrations</strong> comment tirer le meilleur part
+ i des nouvelles fonctions.</p>\n<p class="mb-4">Nous finirons la soirée a
+ utour de quelques bières et pizzas\, l'occasion de poser toutes vos quest
+ ions et d'échanger sur ce qui a été présenté.</p>\n<p class="mb-4">En rés
+ umé :<br>\n- 📆 <strong>Date</strong> : Jeudi 6 février 2025 à partir de 
+ 18h30<br>\n- 🏡 <strong>Lieu</strong> : Onepoint <a href="http://%5Bhttps
+ ://www.google.com/maps/place//data=%5D(https://www.google.com/maps/place/
+ /data=)!4m2!3m1!1s0x12aebd4ddb5b3867:0xe25fa7262523fab4?sa=X&amp\;ved=1t:
+ 8290&amp\;ictx=111" target="_blank" class="!text-viridian" rel="ugc">3 Ru
+ e Lapeyrouse\, 31000 Toulouse</a></p>\n<ul class="pl-5 list-disc mb-4">\n
+ <li><strong>Programme</strong> :</li>\n<li><strong>18h30-18h45</strong> :
+  Accueil</li>\n<li><strong>18h45 -20h</strong> : Re:Cap du AWS re:Invent 
+ 2024 par Lior PEREZ et Nicolas de PLACE d'AWS</li>\n<li><strong>20h - 21h
+ 30</strong> : Echanges\, Questions et Réponses autour de bières et pizzas
+ </li>\n</ul>\n<p class="mb-4">Nous avons hâte de vous accueillir pour cet
+  événement.</p>
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:La prochaine soirée du Java User Group Toulousain aura lieu le
+  mardi 11 février à 19h !\nPour cette occasion\, nous nous retrouverons c
+ hez Epitech Toulouse.\n***\n== Retour aux sources de l'authentification u
+ nique : Kerberos\nSpeaker : Frédéric Cabestre\nDans l'univers du Web les 
+ solutions permettant l'authentification unique (ou Single Sign On) sont p
+ léthoriques. On pourrait ne retenir que CAS\, SAML ou OIDC qui sont les p
+ lus fréquemment utilisées. Mais elles on un ancêtre commun dans le domain
+ e des réseaux locaux : Kerberos. Développé initialement par le MIT\, souv
+ ent réputé complexe\, Kerberos est plus qu'une curiosité d'institut de re
+ cherche. Ce protocole à connu ses heures de gloires quand Microsoft l'a a
+ dopté en remplacement de NTLM pour Active Directory et même adapté au mon
+ de du Web à travers SPNEGO.\nSi nombre de ces acronymes vous échappent ce
+ tte présentation est faite pour vous. Nous y parlerons bien sûr de l'hist
+ oire de Kerberos\, de ses principes de fonctionnement au sein d'un LAN\, 
+ mais aussi de la filiation qui peut exister avec certaines méthodes d'aut
+ hentification unique du web moderne.\n== Single Sign On en 15mn sans modi
+ fier son code\nSpeaker : Florian Bernard\nAjouter le support du SSO (Sing
+ le Sign On) dans une application web peut être parfois compliqué et néces
+ site de la rigueur et de respecter les bonnes pratiques pour assurer la s
+ écurité. En 15 minutes\, nous allons voir comment construire un portail S
+ SO qui vous permettra de sécuriser n'importe quelle application web avec 
+ OpenID Connect sans modifier une ligne de code ! Le tout grâce à des comp
+ osants libres et gratuits (Apache\, Keycloak\, Docker...).\n***\nComme d'
+ habitude\, la soirée sera suivie d'un apéro (pizza\, bières et softs offe
+ rts par nos généreux sponsors : Lyra Network et MonkeyPatch.\nMerci à eux
+  !\n***\nNous recherchons activement des volontaires et petites mains pou
+ r s'impliquer dans l'organisation du JUG.\nNos besoins :\n* Récupération 
+ et installation des pizzas/boissons pendant la soirée \;\n* Création des 
+ visuels et slides d'intro à partir de templates \;\n* Aide à la planifica
+ tion des prochains sujets \;\n* Installation du/des speakers et accueil/a
+ iguillage du public.\nSi un de ces sujets vous intéresse (ou d'autres)\, 
+ n'hésitez pas à nous contacter !
+DTEND:20250211T210000
+DTSTAMP;VALUE=DATE:20250211
+DTSTART:20250211T190000
+LOCATION:EPITECH - Amphi rez-de-chaussée\, 40 Boulevard de la Marquette To
+ ulouse
+SEQUENCE:0
+SUMMARY:Toulouse Java User Group : Soirée SSO (Single Sign-On)
+UID:meetup-305714647
+URL:https://www.meetup.com/fr-FR/toulouse-java-user-group/events/305714647/
+X-ALT-DESC:<p class="mb-4">La prochaine soirée du Java User Group Toulousa
+ in aura lieu le <strong>mardi 11 février à 19h</strong> !</p>\n<p class="
+ mb-4">Pour cette occasion\, nous nous retrouverons chez <strong>Epitech</
+ strong> <strong>Toulouse</strong>.</p>\n<p class="mb-4">***</p>\n<p class
+ ="mb-4"><strong>== Retour aux sources de l'authentification unique : Kerb
+ eros</strong><br>\nSpeaker : Frédéric Cabestre</p>\n<p class="mb-4">Dans 
+ l'univers du Web les solutions permettant l'authentification unique (ou S
+ ingle Sign On) sont pléthoriques. On pourrait ne retenir que CAS\, SAML o
+ u OIDC qui sont les plus fréquemment utilisées. Mais elles on un ancêtre 
+ commun dans le domaine des réseaux locaux : Kerberos. Développé initialem
+ ent par le MIT\, souvent réputé complexe\, Kerberos est plus qu'une curio
+ sité d'institut de recherche. Ce protocole à connu ses heures de gloires 
+ quand Microsoft l'a adopté en remplacement de NTLM pour Active Directory 
+ et même adapté au monde du Web à travers SPNEGO.</p>\n<p class="mb-4">Si 
+ nombre de ces acronymes vous échappent cette présentation est faite pour 
+ vous. Nous y parlerons bien sûr de l'histoire de Kerberos\, de ses princi
+ pes de fonctionnement au sein d'un LAN\, mais aussi de la filiation qui p
+ eut exister avec certaines méthodes d'authentification unique du web mode
+ rne.</p>\n<p class="mb-4"><strong>== Single Sign On en 15mn sans modifier
+  son code</strong><br>\nSpeaker : Florian Bernard</p>\n<p class="mb-4">Aj
+ outer le support du SSO (Single Sign On) dans une application web peut êt
+ re parfois compliqué et nécessite de la rigueur et de respecter les bonne
+ s pratiques pour assurer la sécurité. En 15 minutes\, nous allons voir co
+ mment construire un portail SSO qui vous permettra de sécuriser n'importe
+  quelle application web avec OpenID Connect sans modifier une ligne de co
+ de ! Le tout grâce à des composants libres et gratuits (Apache\, Keycloak
+ \, Docker...).</p>\n<p class="mb-4">***</p>\n<p class="mb-4">Comme d'habi
+ tude\, la soirée sera suivie d'un apéro (pizza\, bières et softs offerts 
+ par nos généreux sponsors : <strong>Lyra Network</strong> et <strong>Monk
+ eyPatch</strong>.<br>\nMerci à eux !</p>\n<p class="mb-4">***</p>\n<p cla
+ ss="mb-4"><strong>Nous recherchons activement des volontaires et petites 
+ mains pour s'impliquer dans l'organisation du JUG.</strong></p>\n<p class
+ ="mb-4">Nos besoins :<br>\n* Récupération et installation des pizzas/bois
+ sons pendant la soirée \;<br>\n* Création des visuels et slides d'intro à
+  partir de templates \;<br>\n* Aide à la planification des prochains suje
+ ts \;<br>\n* Installation du/des speakers et accueil/aiguillage du public
+ .</p>\n<p class="mb-4">Si un de ces sujets vous intéresse (ou d'autres)\,
+  n'hésitez pas à nous contacter !</p>
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:🚀 TOULOUSE | TABLE RONDE INCOMING 🚀\nLa plateformisation est
+  sur toutes les lèvres\, mais comment s’assurer de cibler les bonnes prob
+ lématiques et de livrer un produit réellement adopté\, utile et utilisabl
+ e ?\nNous aborderons 3 volets :\n🔹 Le Product Marketing : clé d’une plat
+ eformisation réussie\n🔹 Team Topologies : un accélérateur de la culture 
+ plateforme\n🔹 Self-service : le nerf de la guerre des services API\, Dat
+ a & Ops\nRejoignez-nous pour une table ronde réellement participative\, o
+ ù experts et praticiens partageront leurs retours d’expérience concrets e
+ t les facteurs clés de succès !\n📅 Mardi 18 février\n📍 1 Place de la Bo
+ urse au cœur de Toulouse\n👉 Inscrivez-vous dès maintenant !\n#Plateformi
+ sation #SelfService
+DTEND:20250218T203000
+DTSTAMP;VALUE=DATE:20250218
+DTSTART:20250218T183000
+LOCATION:1 Pl. de la Bourse\, 1 Pl. de la Bourse Toulouse
+SEQUENCE:0
+SUMMARY:Tech a break : SELF-SERVICE & PLATEFORMISATION
+UID:meetup-306012404
+URL:https://www.meetup.com/fr-FR/tech-a-break/events/306012404/
+X-ALT-DESC:<p class="mb-4">🚀 <strong>TOULOUSE | TABLE RONDE INCOMING</str
+ ong> 🚀</p>\n<p class="mb-4">La <strong>plateformisation</strong> est sur
+  toutes les lèvres\, mais comment s’assurer de cibler les bonnes probléma
+ tiques et de livrer un produit réellement <strong>adopté</strong>\, utile
+  et utilisable ?</p>\n<p class="mb-4">Nous aborderons 3 volets :<br>\n<st
+ rong>🔹 Le Product Marketing : clé d’une plateformisation réussie</strong
+ ><br>\n<strong>🔹 Team Topologies : un accélérateur de la culture platefo
+ rme</strong><br>\n<strong>🔹 Self-service : le nerf de la guerre des serv
+ ices API\, Data &amp\; Ops</strong></p>\n<p class="mb-4">Rejoignez-nous p
+ our une <strong>table ronde réellement participative</strong>\, où expert
+ s et praticiens partageront <strong>leurs retours d’expérience concrets</
+ strong> et les <strong>facteurs clés de succès</strong> !</p>\n<p class="
+ mb-4"><strong>📅 Mardi 18 février</strong><br>\n📍 1 Place de la Bourse a
+ u cœur de <strong>Toulouse</strong><br>\n👉 Inscrivez-vous dès maintenant
+  !</p>\n<p class="mb-4">#Plateformisation #SelfService</p>
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20250218T223000
+DTSTAMP;VALUE=DATE:20250218
+DTSTART:20250218T183000
+SEQUENCE:0
+SUMMARY:Toulouse Game Dev : Meet-up de Février
+UID:tgd-2025-02-18
+URL:https://toulousegamedev.fr/evenements/
+X-ALT-DESC:<p>Ce mois-ci nous vous proposons <strong>une table ronde</stro
+ ng> sur le sujet suivant : <strong>Jeu de réflexion\, comment concurrence
+ r Jonathan Blow ?</strong></p>\n<p><strong>Pour cette table ronde\, nous 
+ aurons le plaisir d’accueillir : </strong></p>\n<p><strong>William David<
+ /strong>\, Game Designer\,<strong> qui est en train de travailler sur le 
+ jeu de réflexion «&nbsp\;</strong>Looking for Faël<strong>«&nbsp\;. </str
+ ong></p>\n<p><strong>Lénophie\, </strong>Game Designer<strong>\, qui a so
+ rti le jeu de réflexion </strong>Paquerette Down the Bunburrows <strong>.
+  Thibault Barbaroux</strong>\, Game Designer\,<strong> qui a sorti le jeu
+  de réflexion </strong>Wise Garden<strong> et travaille actuellement sur 
+ </strong>Our Journey.<strong> </strong></p>\n<p>Le planning du Meet-up se
+ ra le suivant :<br><strong>18h30</strong> : Accueil des personnes ne conn
+ aissant pas le TGD</p>\n<p><strong>18h45 </strong>: Ouverture des portes<
+ br><strong>19h00</strong>: Lancement de la session <strong>Open Mics</str
+ ong><br><strong>19h15</strong> : Début de table ronde</p>\n<p>En direct s
+ ur la chaine Twitch du TGD à 19h00 : <a rel="noreferrer noopener" href="h
+ ttps://www.twitch.tv/toulousegamedev" target="_blank">ici</a></p>
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Venez expérimenter quelques Liberatings Structures lors de cet
+  atelier expérientiel. Pour explorer leur pouvoir\, nous créons une situa
+ tion fictive qui vous permettra une utilisation contextualisée. Cependant
+ \, si vous souhaitez venir avec une problématique de votre équipe\, nous 
+ essaierons de l'intégrer dans notre déroulé.\nCe n'est pas encore confirm
+ é à cette heure\, mais la présence d'Henri Lipmanowicz\, le cofondateur d
+ es LS\, est envisagée..\nAlors si vous voulez expérimenter le pouvoir sur
+ prenant des LS\, venez nous rejoindre .... à la maison des associations .
+ ...le vendredi 21 février de 18h à 20h.\nPhilippe & Sam Agile Toulouse\n⚠
+ ️ Nous demanderons aux participants d'être membre de l'association. Pour 
+ rappel\, c'est gratuit et faisable ici en 1 minute sur téléphone : [https
+ ://www.helloasso.com/associations/agile-toulouse/adhesions/adhesion-agile
+ -toulouse-1](https://www.helloasso.com/associations/agile-toulouse/adhesi
+ ons/adhesion-agile-toulouse-1)
+DTEND:20250221T200000
+DTSTAMP;VALUE=DATE:20250221
+DTSTART:20250221T180000
+LOCATION:Maison des associations\, Ancienne caserne Niel - 3 place Guy Her
+ sant Toulouse
+SEQUENCE:0
+SUMMARY:Agile Toulouse : Développer le collaboratif dans les équipes - Klu
+ b Liberating Structure
+UID:meetup-306035801
+URL:https://www.meetup.com/fr-FR/agile-toulouse/events/306035801/
+X-ALT-DESC:<p class="mb-4">Venez expérimenter quelques Liberatings Structu
+ res lors de cet atelier expérientiel. Pour explorer leur pouvoir\, nous c
+ réons une situation fictive qui vous permettra une utilisation contextual
+ isée. Cependant\, si vous souhaitez venir avec une problématique de votre
+  équipe\, nous essaierons de l'intégrer dans notre déroulé.<br>\nCe n'est
+  pas encore confirmé à cette heure\, mais la présence d'Henri Lipmanowicz
+ \, le cofondateur des LS\, est envisagée..</p>\n<p class="mb-4">Alors si 
+ vous voulez expérimenter le pouvoir surprenant des LS\, venez nous rejoin
+ dre .... à la maison des associations <a href="http://....le" target="_bl
+ ank" class="!text-viridian" rel="nofollow ugc">....le</a> vendredi 21 fév
+ rier de 18h à 20h.<br>\nPhilippe &amp\; Sam Agile Toulouse</p>\n<p class=
+ "mb-4">⚠️ Nous demanderons aux participants d'être membre de l'associatio
+ n. Pour rappel\, c'est gratuit et faisable ici en 1 minute sur téléphone 
+ : [<a href="https://www.helloasso.com/associations/agile-toulouse/adhesio
+ ns/adhesion-agile-toulouse-1" target="_blank" class="!text-viridian" rel=
+ "nofollow ugc">https://www.helloasso.com/associations/agile-toulouse/adhe
+ sions/adhesion-agile-toulouse-1</a>](https://www.helloasso.com/associatio
+ ns/agile-toulouse/adhesions/adhesion-agile-toulouse-1)</p>
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Nous vous proposons continuer notre introduction dans le monde
+  unFIX et tout particulièrement les Process et Growth Patterns. (ensemble
+  de modèles pour s'interroger sur le mode de fonctionnement d'un projet o
+ u produit\, tout en incluant l'innovation).\nAvec une mise en pratique vi
+ a un atelier\, un échange question/réponse ainsi qu'un vote pour le proch
+ ain pattern set à pratiquer ensemble !\nNous demanderons aux venants d'êt
+ re membres de l'association Agile Toulouse.\nPour rappel\, c'est gratuit 
+ et faisable ici en 1 minute sur téléphone : [[https://www.helloasso.com/a
+ ssociations/agile-toulouse/adhesions/adhesion-agile-toulouse-1](https://w
+ ww.helloasso.com/associations/agile-toulouse/adhesions/adhesion-agile-tou
+ louse-1)](https://www.helloasso.com/associations/agile-toulouse/adhesions
+ /adhesion-agile-toulouse-1)\nSi vous êtes inscrits\, mais que cela n'est 
+ plus possible pour vous de venir\, merci de vous désinscrire pour informe
+ r qu'il reste de la place :)\nBonne journée !\nAgile Toulouse
+DTEND:20250224T200000
+DTSTAMP;VALUE=DATE:20250224
+DTSTART:20250224T180000
+LOCATION:Maison des Associations\, 3 Pl. Guy Hersant Toulouse
+SEQUENCE:0
+SUMMARY:Agile Toulouse : Pratiquons unFIX ensemble #2 - Process & Growth P
+ atterns
+UID:meetup-305839504
+URL:https://www.meetup.com/fr-FR/agile-toulouse/events/305839504/
+X-ALT-DESC:<p class="mb-4"><strong>Nous vous proposons continuer notre int
+ roduction dans le monde unFIX et tout particulièrement les Process et Gro
+ wth Patterns. (ensemble de modèles pour s'interroger sur le mode de fonct
+ ionnement d'un projet ou produit\, tout en incluant l'innovation).</stron
+ g></p>\n<p class="mb-4">Avec une mise en pratique via un atelier\, un éch
+ ange question/réponse ainsi qu'un vote pour le prochain pattern set à pra
+ tiquer ensemble !</p>\n<p class="mb-4">Nous demanderons aux venants d'êtr
+ e membres de l'association Agile Toulouse.</p>\n<p class="mb-4">Pour rapp
+ el\, c'est gratuit et faisable ici en 1 minute sur téléphone : [[<a href=
+ "https://www.helloasso.com/associations/agile-toulouse/adhesions/adhesion
+ -agile-toulouse-1" target="_blank" class="!text-viridian" rel="nofollow u
+ gc">https://www.helloasso.com/associations/agile-toulouse/adhesions/adhes
+ ion-agile-toulouse-1</a>](https://www.helloasso.com/associations/agile-to
+ ulouse/adhesions/adhesion-agile-toulouse-1)](https://www.helloasso.com/as
+ sociations/agile-toulouse/adhesions/adhesion-agile-toulouse-1)</p>\n<p cl
+ ass="mb-4">Si vous êtes inscrits\, mais que cela n'est plus possible pour
+  vous de venir\, merci de vous désinscrire pour informer qu'il reste de l
+ a place :)</p>\n<p class="mb-4">Bonne journée !<br>\nAgile Toulouse</p>
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Bonjour tout le monde 👋\nComme chaque mois\, Toulouse.rb se r
+ éunit pour un nouveau meetup autour du langage Ruby.\nLe mardi 25 février
+ \, nous avons donc rendez vous dans les locaux d'HarryCow à Toulouse à 18
+ :30 (jusqu'à 20:30).\n📍Adresse :\nHarryCow\n13 rue Sainte Ursule\, 31000
+  Toulouse\nMétro(s) à proximité Ⓜ️ :\n\nEsquirol (ligne A)\nCapitole (lig
+ ne A)\n\n📆 Planning :\n\n18:30 démarrage de l’événement\, accueil\n18:45
+  présentation de Toulouse.rb & nouvelles\n19:00 présentation(s) technique
+  :\n⚡ "Intègre les notifications dans ton app Rails avec la Gem Noticed" 
+ par Franci-lobbie Lalane\n💬 "“Sésame\, ouvre-toi” : sécurise tes déploie
+ ments avec Kamal comme Ali Baba !" par Paul Jeannot\n19:45 apéro\n\nUn pe
+ tit aperçu de la présentation de Paul :\nOn l’a vu ensemble il y a peu : 
+ Kamal ça peut être chouette\, notamment pour des petits projets. Mais il 
+ reste le sujet de la sécurité … 🔓\nOn verra premièrement comment sécuris
+ er efficacement et rapidement son serveur en 5 min top chrono (oui oui !)
+  ⏱️\nUn problème persiste : le serveur SSH reste exposé au monde malgré t
+ out\, avec tous les désagréments qui en découlent :\n• Vous vous faites s
+ pammer par des robots qui tentent désespérément de se connecter à votre s
+ erveur\n• Vous suez à chaque nouvelle CVE concernant OpenSSH\, et en plus
+  il faut mettre à jour … quelle galère ! 😰\nDans ce talk\, vous apprendr
+ ez également à utiliser une séquence secrète\, à la manière d’Ali Baba pr
+ ononçant le fameux “Sésame\, ouvre-toi”\, pour révéler votre port SSH uni
+ quement sur demande.\nMais attention ! Pour éviter la même erreur que les
+  40 voleurs (qui gardaient la même séquence\, permettant à Ali Baba de la
+  réutiliser)\, nous irons plus loin en rendant cette formule magique dyna
+ mique\, à la manière d’un mot de passe à usage unique (TOTP)\, pour rendr
+ e votre système plus sécurisé. ✨\nL'inscription au meetup est souhaitée p
+ our faciliter les aspects logistiques.\nN'hésitez pas à diffuser l'inform
+ ation autour de vous et à venir à plusieurs ! 🍕🎉\nMerci à Imfiny et à R
+ ingCentral pour le sponsoring.\nSi vous êtes une entreprise et que vous s
+ ouhaitez soutenir l'organisation de ces événements vous pouvez prendre co
+ ntact avec Thomas Riboulet ou Fabien Chaynes\, les organisateurs.\n⚠️ Nou
+ s sommes aussi à la recherche de speakers pour les prochaines éditions\, 
+ que ce soit pour des lightning talks ⚡ (5-10 minutes) ou des formats plus
+  longs 💬 (une vingtaine de minute).\nDébutants comme confirmés\, tout le
+  monde peut proposer un sujet !\nPour rappel\, le serveur slack est ouver
+ t :\nhttps://join.slack.com/t/toulouserb/shared_invite/zt-286nnvupv-vGYNI
+ HGWvl2rfdxQc~9pGQ\nD'anciennes présentations sont disponibles sur la chaî
+ ne YouTube : https://www.youtube.com/@toulouse-rb
+DTEND:20250225T203000
+DTSTAMP;VALUE=DATE:20250225
+DTSTART:20250225T183000
+LOCATION:HarryCow Coworking\, 13 Rue Sainte-Ursule Toulouse
+SEQUENCE:0
+SUMMARY:Toulouse Ruby and Friends : Toulouse.rb - Conf & Apéro - Février
+UID:meetup-305752126
+URL:https://www.meetup.com/fr-FR/toulouse-ruby-friends/events/305752126/
+X-ALT-DESC:<p class="mb-4">Bonjour tout le monde 👋</p>\n<p class="mb-4">C
+ omme chaque mois\, <a href="http://Toulouse.rb" target="_blank" class="!t
+ ext-viridian" rel="nofollow ugc">Toulouse.rb</a> se réunit pour un nouvea
+ u meetup autour du langage Ruby.</p>\n<p class="mb-4">Le mardi 25 février
+ \, nous avons donc rendez vous dans les locaux d'HarryCow à Toulouse à 18
+ :30 (jusqu'à 20:30).</p>\n<p class="mb-4"><strong>📍Adresse :</strong><br
+ >\nHarryCow<br>\n<a href="https://maps.app.goo.gl/RXar5gEWfQRCZnr96" targ
+ et="_blank" class="!text-viridian" rel="nofollow ugc">13 rue Sainte Ursul
+ e\, 31000 Toulouse</a><br>\nMétro(s) à proximité Ⓜ️ :</p>\n<ul class="pl-
+ 5 list-disc mb-4">\n<li>Esquirol (ligne A)</li>\n<li>Capitole (ligne A)</
+ li>\n</ul>\n<p class="mb-4">📆 <strong>Planning :</strong></p>\n<ul class
+ ="pl-5 list-disc mb-4">\n<li>18:30 démarrage de l’événement\, accueil</li
+ >\n<li>18:45 présentation de <a href="http://Toulouse.rb" target="_blank"
+  class="!text-viridian" rel="nofollow ugc">Toulouse.rb</a> &amp\; nouvell
+ es</li>\n<li>19:00 présentation(s) technique :</li>\n<li>⚡ "Intègre les n
+ otifications dans ton app Rails avec la Gem Noticed" par <a href="https:/
+ /www.linkedin.com/in/franci-lobbie-lalane/" target="_blank" class="!text-
+ viridian" rel="ugc">Franci-lobbie Lalane</a></li>\n<li>💬 "“Sésame\, ouvr
+ e-toi” : sécurise tes déploiements avec Kamal comme Ali Baba !" par <a hr
+ ef="https://www.linkedin.com/in/pauljeannot" target="_blank" class="!text
+ -viridian" rel="ugc">Paul Jeannot</a></li>\n<li>19:45 apéro</li>\n</ul>\n
+ <p class="mb-4">Un petit aperçu de la présentation de Paul :</p>\n<p clas
+ s="mb-4">On l’a vu ensemble il y a peu : Kamal ça peut être chouette\, no
+ tamment pour des petits projets. Mais il reste le sujet de la sécurité … 
+ 🔓<br>\nOn verra premièrement comment sécuriser efficacement et rapidemen
+ t son serveur en 5 min top chrono (oui oui !) ⏱️<br>\nUn problème persist
+ e : le serveur SSH reste exposé au monde malgré tout\, avec tous les désa
+ gréments qui en découlent :<br>\n• Vous vous faites spammer par des robot
+ s qui tentent désespérément de se connecter à votre serveur<br>\n• Vous s
+ uez à chaque nouvelle CVE concernant OpenSSH\, et en plus il faut mettre 
+ à jour … quelle galère ! 😰<br>\nDans ce talk\, vous apprendrez également
+  à utiliser une séquence secrète\, à la manière d’Ali Baba prononçant le 
+ fameux “Sésame\, ouvre-toi”\, pour révéler votre port SSH uniquement sur 
+ demande.<br>\nMais attention ! Pour éviter la même erreur que les 40 vole
+ urs (qui gardaient la même séquence\, permettant à Ali Baba de la réutili
+ ser)\, nous irons plus loin en rendant cette formule magique dynamique\, 
+ à la manière d’un mot de passe à usage unique (TOTP)\, pour rendre votre 
+ système plus sécurisé. ✨</p>\n<p class="mb-4">L'inscription au meetup est
+  souhaitée pour faciliter les aspects logistiques.</p>\n<p class="mb-4">N
+ 'hésitez pas à diffuser l'information autour de vous et à venir à plusieu
+ rs ! 🍕🎉</p>\n<p class="mb-4">Merci à Imfiny et à <strong><a href="https
+ ://www.ringcentral.com/" target="_blank" class="!text-viridian" rel="nofo
+ llow ugc">RingCentral</a></strong> pour le sponsoring.</p>\n<p class="mb-
+ 4">Si vous êtes une entreprise et que vous souhaitez soutenir l'organisat
+ ion de ces événements vous pouvez prendre contact avec <a href="https://f
+ r.linkedin.com/in/thomas-riboulet-1b4056121" target="_blank" class="!text
+ -viridian" rel="ugc">Thomas Riboulet</a> ou <a href="https://fr.linkedin.
+ com/in/fabienchaynes" target="_blank" class="!text-viridian" rel="ugc">Fa
+ bien Chaynes</a>\, les organisateurs.</p>\n<p class="mb-4">⚠️ Nous sommes
+  aussi à la recherche de speakers pour les prochaines éditions\, que ce s
+ oit pour des lightning talks ⚡ (5-10 minutes) ou des formats plus longs 
+  (une vingtaine de minute).<br>\nDébutants comme confirmés\, tout le mon
+ de peut <a href="https://forms.gle/f4a7Rg3bE6zT9yRX8" target="_blank" cla
+ ss="!text-viridian" rel="nofollow ugc">proposer un sujet</a> !</p>\n<p cl
+ ass="mb-4">Pour rappel\, le serveur slack est ouvert :<br>\n<a href="http
+ s://join.slack.com/t/toulouserb/shared_invite/zt-286nnvupv-vGYNIHGWvl2rfd
+ xQc~9pGQ" target="_blank" class="!text-viridian" rel="nofollow ugc">https
+ ://join.slack.com/t/toulouserb/shared_invite/zt-286nnvupv-vGYNIHGWvl2rfdx
+ Qc~9pGQ</a><br>\nD'anciennes présentations sont disponibles sur la chaîne
+  YouTube : <a href="https://www.youtube.com/@toulouse-rb" target="_blank"
+  class="!text-viridian" rel="ugc">https://www.youtube.com/@toulouse-rb</a
+ ></p>
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Bonjour\,\nLe prochain Klub de lecture se tiendra le vendredi 
+ 28 février 2025 en ligne.\nLe vote est clos\, et le "livre" retenu est :\
+ nPhilippe Bihouix et Vincent Perriot : Ressources un défi pour l'humanité
+ \nLe résultat du vote est consultable ici :\nhttps://pollen.cl/#poll/3BNY
+ mpr7TqeEG72icPGuJQ/result\n@AgileToulouse
+DTEND:20250228T203000
+DTSTAMP;VALUE=DATE:20250228
+DTSTART:20250228T183000
+SEQUENCE:0
+SUMMARY:Agile Toulouse : Klub de lecture de février
+UID:meetup-305750119
+URL:https://www.meetup.com/fr-FR/agile-toulouse/events/305750119/
+X-ALT-DESC:<p class="mb-4">Bonjour\,</p>\n<p class="mb-4">Le prochain Klub
+  de lecture se tiendra le vendredi 28 février 2025 en ligne.</p>\n<p clas
+ s="mb-4">Le vote est clos\, et le "livre" retenu est :</p>\n<p class="mb-
+ 4"><strong>Philippe Bihouix et Vincent Perriot : Ressources un défi pour 
+ l'humanité</strong></p>\n<p class="mb-4">Le résultat du vote est consulta
+ ble ici :<br>\n<a href="https://pollen.cl/#poll/3BNYmpr7TqeEG72icPGuJQ/re
+ sult" target="_blank" class="!text-viridian" rel="nofollow ugc">https://p
+ ollen.cl/#poll/3BNYmpr7TqeEG72icPGuJQ/result</a></p>\n<p class="mb-4">@Ag
+ ileToulouse</p>
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Vous cherchez à mieux comprendre les besoins réels de vos util
+ isateurs et à concevoir des produits qui répondent à leurs attentes profo
+ ndes ?Rejoignez-nous pour un atelier interactif de 2 heures sur le framew
+ ork Jobs to Be Done (JTBD) !\n👉 Au programme :\n\nIntroduction au JTBD :
+  découvrez comment ce framework transforme la compréhension des besoins c
+ lients.\nApprentissage par l’action : en petits groupes\, vous allez util
+ iser le Jobs to Be Done Canvas sur des cas concrets et ludiques.\n\nEt re
+ partez avec un outil pratique pour vos projets !\nQue vous soyez Product 
+ Manager\, PO\, Designer\, Développer ou même créateur-ice d'entreprise ce
+ t atelier est fait pour vous !\nAttention :\n\nCet atelier n'est pas une 
+ formation\, mais une session de découverte d'un outil popularisé par Goog
+ le\, Airbnb\, Spotify ...\nVous pouvez télécharger gratuitement le livre 
+ à l'origine du framework ici : https://jobs-to-be-done-book.com/\n\nNous 
+ demanderons aux venants d'être membres de l'association Agile Toulouse.\n
+ Pour rappel\, c'est gratuit et faisable ici en 1 minute sur téléphone : [
+ https://www.helloasso.com/associations/agile-toulouse/adhesions/adhesion-
+ agile-toulouse-1](https://www.helloasso.com/associations/agile-toulouse/a
+ dhesions/adhesion-agile-toulouse-1)\nSi vous êtes inscrits\, mais que cel
+ a n'est plus possible pour vous de venir\, merci de vous désinscrire pour
+  informer qu'il reste de la place :)\nBonne journée !\nAgile Toulouse\n--
+ -\nCredits Photo : Ben Kolde sur Unsplash
+DTEND:20250304T200000
+DTSTAMP;VALUE=DATE:20250304
+DTSTART:20250304T180000
+LOCATION:Maison des Associations\, 3 Pl. Guy Hersant Toulouse
+SEQUENCE:0
+SUMMARY:Agile Toulouse : Jobs To Be Done : Apprenez à mieux comprendre vos
+  utilisateur-ices
+UID:meetup-305839478
+URL:https://www.meetup.com/fr-FR/agile-toulouse/events/305839478/
+X-ALT-DESC:<p class="mb-4">Vous cherchez à mieux comprendre les besoins ré
+ els de vos utilisateurs et à concevoir des produits qui répondent à leurs
+  attentes profondes ?Rejoignez-nous pour un atelier interactif de 2 heure
+ s sur le <strong>framework Jobs to Be Done (JTBD)</strong> !</p>\n<p clas
+ s="mb-4">👉 <strong>Au programme</strong> :</p>\n<ul class="pl-5 list-dis
+ c mb-4">\n<li>Introduction au JTBD : découvrez comment ce framework trans
+ forme la compréhension des besoins clients.</li>\n<li>Apprentissage par l
+ ’action : en petits groupes\, vous allez utiliser le <strong>Jobs to Be D
+ one Canvas</strong> sur des cas concrets et ludiques.</li>\n</ul>\n<p cla
+ ss="mb-4">Et repartez avec un outil pratique pour vos projets !<br>\nQue 
+ vous soyez Product Manager\, PO\, Designer\, Développer ou même créateur-
+ ice d'entreprise cet atelier est fait pour vous !</p>\n<p class="mb-4"><s
+ trong>Attention :</strong></p>\n<ul class="pl-5 list-disc mb-4">\n<li><st
+ rong>Cet atelier n'est pas une formation</strong>\, mais une session de d
+ écouverte d'un outil popularisé par Google\, Airbnb\, Spotify ...</li>\n<
+ li>Vous pouvez télécharger gratuitement le livre à l'origine du framework
+  ici : <a href="https://jobs-to-be-done-book.com/" target="_blank" class=
+ "!text-viridian" rel="nofollow ugc">https://jobs-to-be-done-book.com/</a>
+ </li>\n</ul>\n<p class="mb-4">Nous demanderons aux venants d'être membres
+  de l'association Agile Toulouse.</p>\n<p class="mb-4">Pour rappel\, c'es
+ t gratuit et faisable ici en 1 minute sur téléphone : [<a href="https://w
+ ww.helloasso.com/associations/agile-toulouse/adhesions/adhesion-agile-tou
+ louse-1" target="_blank" class="!text-viridian" rel="nofollow ugc">https:
+ //www.helloasso.com/associations/agile-toulouse/adhesions/adhesion-agile-
+ toulouse-1</a>](<a href="https://www.helloasso.com/associations/agile-tou
+ louse/adhesions/adhesion-agile-toulouse-1" target="_blank" class="!text-v
+ iridian" rel="nofollow ugc">https://www.helloasso.com/associations/agile-
+ toulouse/adhesions/adhesion-agile-toulouse-1</a>)</p>\n<p class="mb-4">Si
+  vous êtes inscrits\, mais que cela n'est plus possible pour vous de veni
+ r\, merci de vous désinscrire pour informer qu'il reste de la place :)</p
+ >\n<p class="mb-4">Bonne journée !</p>\n<p class="mb-4">Agile Toulouse<br
+ >\n---<br>\nCredits Photo : <a href="https://unsplash.com/fr/@benkolde?ut
+ m_content=creditCopyText&amp\;utm_medium=referral&amp\;utm_source=unsplas
+ h" target="_blank" class="!text-viridian" rel="nofollow ugc">Ben Kolde</a
+ > sur <a href="https://unsplash.com/fr/photos/white-and-black-laptop-bs2B
+ a7t69mM?utm_content=creditCopyText&amp\;utm_medium=referral&amp\;utm_sour
+ ce=unsplash" target="_blank" class="!text-viridian" rel="nofollow ugc">Un
+ splash</a></p>
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:En mars\, c'est le retour aux sources !\n-Comment ?!\n-Vous al
+ lez refaire des meetups techniques ?\n-Oui\, mais pas que. Restez connect
+ és !\nPour ce mois de Mars\, nous serons heureux de vous retrouver au Lon
+ don Town\, le légendaire pub des Carmes où JS&Co et ses membres avaient l
+ eurs habitudes.\nNous avons pensé qu'il serait tout indiqué de faire notr
+ e Tech PAF là-bas pour marquer le retour aux sources des meetups thématiq
+ ues.\nCe soir-là\, venez échanger à bâton rompu sur vos interrogations du
+  moment :\n-Business ?\n-Tech ?\n-Organisation & productivité ?\n-Se vend
+ re ?\n-choses à savoir quand on se lance ?\nOn vous dit tout !\nAlors ven
+ ez parler boutique entre pairs et entre pros :\nJeudi 6 Mars\n18h30\nLond
+ on Town
+DTEND:20250306T203000
+DTSTAMP;VALUE=DATE:20250306
+DTSTART:20250306T183000
+LOCATION:The London Town\, 14 Rue des Prêtres\, 31000 Toulouse Toulouse
+SEQUENCE:0
+SUMMARY:Association JS & Co. Toulouse : Le Tech PAF de JS&Co - Mars
+UID:meetup-306206046
+URL:https://www.meetup.com/fr-FR/javascript-and-co/events/306206046/
+X-ALT-DESC:<p class="mb-4">En mars\, c'est le retour aux sources !</p>\n<p
+  class="mb-4">-Comment ?!<br>\n-Vous allez refaire des meetups techniques
+  ?<br>\n-Oui\, mais pas que. Restez connectés !</p>\n<p class="mb-4">Pour
+  ce mois de Mars\, nous serons heureux de vous retrouver au London Town\,
+  le légendaire pub des Carmes où JS&amp\;Co et ses membres avaient leurs 
+ habitudes.</p>\n<p class="mb-4">Nous avons pensé qu'il serait tout indiqu
+ é de faire notre Tech PAF là-bas pour marquer le retour aux sources des m
+ eetups thématiques.</p>\n<p class="mb-4">Ce soir-là\, venez échanger à bâ
+ ton rompu sur vos interrogations du moment :<br>\n-Business ?<br>\n-Tech 
+ ?<br>\n-Organisation &amp\; productivité ?<br>\n-Se vendre ?<br>\n-choses
+  à savoir quand on se lance ?</p>\n<p class="mb-4">On vous dit tout !<br>
+ \nAlors venez parler boutique entre pairs et entre pros :</p>\n<p class="
+ mb-4">Jeudi 6 Mars<br>\n18h30<br>\nLondon Town</p>
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:🚀 Toulouse Data Science vous invite à son prochain Data Mojit
+ o ! 🍹📊\nRejoignez-nous pour une soirée conviviale dédiée aux passionnés
+  de la Data ! Venez échanger autour d’un mojito (ou autre) sur vos projet
+ s\, vos idées et les tendances du moment.\n📍 Lieu : Tito Mojito - Jean J
+ aurès\n📅 Date : Jeudi 6 mars\n⏰ Heure : 19h\nC’est l’occasion pour les m
+ embres de se retrouver et d’échanger tranquillement autour d’un verre et 
+ de quelques tapas sur l’actualité\, les projets en cours et à venir.\nQue
+  vous soyez data scientist\, analyste\, développeur\, chercheur ou simple
+ ment curieux\, cette soirée est l’occasion idéale pour réseauter et parta
+ ger un bon moment avec la communauté.\nGrande nouveauté : le bureau de l’
+ association a changé ! Venez rencontrer les nouveaux organisateurs et déc
+ ouvrir leurs idées pour dynamiser la communauté TDS. Nous serons aussi à 
+ l’écoute de vos suggestions et envies pour les prochains événements (Data
+  Talk\, Data No Blabla\, rencontres...).\nPensez à vous inscrire pour nou
+ s aider à organiser au mieux l'événement.\nÀ très bientôt pour trinquer à
+  la data ! 🍻📈
+DTEND:20250306T210000
+DTSTAMP;VALUE=DATE:20250306
+DTSTART:20250306T190000
+LOCATION:Tito mojito\, 51 All. Jean Jaurès\, 31000 Toulouse Toulouse
+SEQUENCE:0
+SUMMARY:Toulouse Data Science : Le Data Mojito est de retour
+UID:meetup-306407965
+URL:https://www.meetup.com/fr-FR/tlse-data-science/events/306407965/
+X-ALT-DESC:<p class="mb-4">🚀 <strong>Toulouse Data Science vous invite à 
+ son prochain Data Mojito !</strong> 🍹📊<br>\nRejoignez-nous pour une soi
+ rée conviviale dédiée aux passionnés de la Data ! Venez échanger autour d
+ ’un mojito (ou autre) sur vos projets\, vos idées et les tendances du mom
+ ent.</p>\n<p class="mb-4">📍 <strong>Lieu</strong> : <a href="http://%5Bh
+ ttps://www.google.com/maps/place/Tito+Mojito+-+Jean+Jaur%C3%A8s%5D(https:
+ //www.google.com/maps/place/Tito+Mojito+-+Jean+Jaur%C3%A8s)\,+51+All.+Jea
+ n+Jaur%C3%A8s\,+31000+Toulouse/data=!4m2!3m1!1s0x12aebd3407e919cd:0xf35ba
+ 9bf36667fe4?utm_source=mstt_1&amp\;entry=gps&amp\;lucs=\,47075915\,470843
+ 93&amp\;g_ep=CAESCjExLjExOS4xMDEYACDXggMqEiw0NzA3NTkxNSw0NzA4NDM5M0ICRlI%
+ 3D" target="_blank" class="!text-viridian" rel="ugc">Tito Mojito - Jean J
+ aurès</a><br>\n📅 <strong>Date</strong> : Jeudi 6 mars<br>\n⏰ <strong>Heu
+ re</strong> : 19h</p>\n<p class="mb-4">C’est l’occasion pour les membres 
+ de se retrouver et d’échanger tranquillement autour d’un verre et de quel
+ ques tapas sur l’actualité\, les projets en cours et à venir.</p>\n<p cla
+ ss="mb-4">Que vous soyez data scientist\, analyste\, développeur\, cherch
+ eur ou simplement curieux\, cette soirée est l’occasion idéale pour résea
+ uter et partager un bon moment avec la communauté.</p>\n<p class="mb-4"><
+ strong>Grande nouveauté</strong> : le bureau de l’association a changé ! 
+ Venez rencontrer les nouveaux organisateurs et découvrir leurs idées pour
+  dynamiser la communauté TDS. Nous serons aussi à l’écoute de vos suggest
+ ions et envies pour les prochains événements (Data Talk\, Data No Blabla\
+ , rencontres...).</p>\n<p class="mb-4">Pensez à vous inscrire pour nous a
+ ider à organiser au mieux l'événement.</p>\n<p class="mb-4">À très bientô
+ t pour trinquer à la data ! 🍻📈</p>
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:🍻 La bière Agile est toujours au rendez-vous !\n👋 Agile Toul
+ ouse vous propose de venir échanger autour d'une bière (ou autre) une foi
+ s par mois à partir de 18h30 aux Halles de la Transition.\n📍 Le bar est 
+ situé au 7 Rue du Canon d'Arcole\, 31000 Toulouse\nVu la taille du bar\, 
+ qui permet de bien s'entendre en parlant\, nous limitons les places à 12.
+ \n🤓 C'est un événement à destination de tous les profils (plus ou moins 
+ expérimentés\, plus ou moins dans l'agilité\, plus ou moins dans l'inform
+ atique…bref vous avez compris l'idée :) ).\n⚠️ Nous demanderons aux parti
+ cipants d'être membre de l'association. Pour rappel\, c'est gratuit et fa
+ isable ici en 1 minute sur téléphone : https://www.helloasso.com/associat
+ ions/agile-toulouse/adhesions/adhesion-agile-toulouse-1\n🗫 Les sujets de
+  discussion pourront suivre un thème (plus ou moins) mais libre à chacun 
+ d'introduire son sujet - cette fois-ci\, on pourra discuter de la compati
+ bilité entre l'Agilité et les fameux deadlines ... ou nous pouvons parler
+  de tout autre chose qui pique votre intérêt :)\n🎯L'objectif étant de pa
+ sser un bon moment\, d'échanger librement et de repartir avec le sourire 
+ et des nouvelles idées en tête\nSi vous êtes inscrits mais que cela n'est
+  plus possible pour vous de venir\, merci de vous désinscrire pour laisse
+ r la place à ceux en liste d'attente.\nBonne journée !\nSarah & Agile Tou
+ louse
+DTEND:20250311T203000
+DTSTAMP;VALUE=DATE:20250311
+DTSTART:20250311T183000
+LOCATION:Les halles de la transition\, Rue du canon d'arcole\, Toulouse
+SEQUENCE:0
+SUMMARY:Agile Toulouse : 🍻 Bière Agile - Agilité & deadlines
+UID:meetup-305897754
+URL:https://www.meetup.com/fr-FR/agile-toulouse/events/305897754/
+X-ALT-DESC:<p class="mb-4">🍻 La bière Agile est toujours au rendez-vous !
+ </p>\n<p class="mb-4">👋 Agile Toulouse vous propose de venir échanger au
+ tour d'une bière (ou autre) une fois par mois à partir de 18h30 aux Halle
+ s de la Transition.</p>\n<p class="mb-4">📍 Le bar est situé au <a href="
+ http://%5Bhttps://www.google.com/maps/place//data=%5D(https://www.google.
+ com/maps/place//data=)!4m2!3m1!1s0x12aebba55bacefef:0x8ba0091967492853?sa
+ =X&amp\;ved=1t:8290&amp\;ictx=111" target="_blank" class="!text-viridian"
+  rel="ugc">7 Rue du Canon d'Arcole\, 31000 Toulouse</a><br>\nVu la taille
+  du bar\, qui permet de bien s'entendre en parlant\, nous limitons les pl
+ aces à 12.</p>\n<p class="mb-4">🤓 C'est un événement à destination de to
+ us les profils (plus ou moins expérimentés\, plus ou moins dans l'agilité
+ \, plus ou moins dans l'informatique…bref vous avez compris l'idée :) ).<
+ /p>\n<p class="mb-4">⚠️ Nous demanderons aux participants d'être membre d
+ e l'association. Pour rappel\, c'est gratuit et faisable ici en 1 minute 
+ sur téléphone : <a href="https://www.helloasso.com/associations/agile-tou
+ louse/adhesions/adhesion-agile-toulouse-1" target="_blank" class="!text-v
+ iridian" rel="nofollow ugc">https://www.helloasso.com/associations/agile-
+ toulouse/adhesions/adhesion-agile-toulouse-1</a></p>\n<p class="mb-4">🗫 
+ Les sujets de discussion pourront suivre un thème (plus ou moins) mais li
+ bre à chacun d'introduire son sujet - cette fois-ci\, on pourra discuter 
+ de la compatibilité entre l'Agilité et les fameux deadlines ... ou nous p
+ ouvons parler de tout autre chose qui pique votre intérêt :)</p>\n<p clas
+ s="mb-4">🎯L'objectif étant de passer un bon moment\, d'échanger libremen
+ t et de repartir avec le sourire et des nouvelles idées en tête</p>\n<p c
+ lass="mb-4">Si vous êtes inscrits mais que cela n'est plus possible pour 
+ vous de venir\, merci de vous désinscrire pour laisser la place à ceux en
+  liste d'attente.</p>\n<p class="mb-4">Bonne journée !<br>\nSarah &amp\; 
+ Agile Toulouse</p>
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Deuxième séance de "Code Café" !\nUn meetup dédié au Dev\, Dev
+ Ops et Cloud\, dans une ambiance détendue\, au Sud de la ville de Toulous
+ e (Frouzins)\, et qui se terminera par un moment de discussions et de par
+ tage.\nCette fois-ci un programme très riche en partenariat avec Devoteam
+  et Hashicorp ainsi que le Toulouse HUG !\n\n"Nouveautés & annonces Hashi
+ corp"\n"Finally\, Terraform and Ansible integration\, done right !"\n"REX
+  Vault - Automatic unseal of a cluster with KMS"\n\nLes speakers seront a
+ nnoncés rapidement !\nRendez-vous à 19h !\nEt comme d'habitude le nombre 
+ de place est limité à 35 personnes \;)\nEt suite à la conférence\, nous p
+ artagerons un apéritif\, accompagné de choses à grignoter pour pouvoir co
+ ntinuer à échanger ensemble sur tous ces sujets :)
+DTEND:20250312T210000
+DTSTAMP;VALUE=DATE:20250312
+DTSTART:20250312T190000
+LOCATION:2 Chem. de Tréville\, 2 Chem. de Tréville Frouzins
+SEQUENCE:0
+SUMMARY:DevOps & Cloud Toulouse : Code Café #2 : le meetup DevOps et Cloud
+  à Toulouse
+UID:meetup-306134791
+URL:https://www.meetup.com/fr-FR/devops-cloud-toulouse/events/306134791/
+X-ALT-DESC:<p class="mb-4">Deuxième séance de "Code Café" !</p>\n<p class=
+ "mb-4">Un meetup dédié au Dev\, DevOps et Cloud\, dans une ambiance déten
+ due\, au Sud de la ville de Toulouse (Frouzins)\, et qui se terminera par
+  un moment de discussions et de partage.</p>\n<p class="mb-4">Cette fois-
+ ci un programme très riche en partenariat avec Devoteam et Hashicorp ains
+ i que le Toulouse HUG !</p>\n<ul class="pl-5 list-disc mb-4">\n<li>"<em>N
+ ouveautés &amp\; annonces Hashicorp</em>"</li>\n<li>"<em>Finally\, Terraf
+ orm and Ansible integration\, done right !</em>"</li>\n<li>"<em>REX Vault
+  - Automatic unseal of a cluster with KMS</em>"</li>\n</ul>\n<p class="mb
+ -4">Les speakers seront annoncés rapidement !<br>\nRendez-vous à 19h !<br
+ >\nEt comme d'habitude le nombre de place est limité à 35 personnes \;)</
+ p>\n<p class="mb-4">Et suite à la conférence\, nous partagerons un apérit
+ if\, accompagné de choses à grignoter pour pouvoir continuer à échanger e
+ nsemble sur tous ces sujets :)</p>
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:La prochaine soirée du Java User Group Toulousain aura lieu le
+  mercredi 12 mars à 19h !\nOui oui\, mercredi !\nPour cette occasion\, no
+ us nous retrouverons chez Epitech Toulouse pour parler de Kafka avec la v
+ enue tout spécialement pour vous de Gilles Philippart\, Software Practice
+  Lead chez Confluent.\nGilles viendra nous parler de Kafka\, et plus part
+ iculièrement de la qualité de la donnée\, comment la valider\, comment pr
+ éserver son intégrité et comment mettre en place une politique de "Shift-
+ Left".\n***\n== How To Improve Data Quality with Domain Validation Rules\
+ nSpeaker : Gilles Philippart\nAbstract précis à venir.\n***\nComme d'habi
+ tude\, la soirée sera suivie d'un apéro (pizza\, bières et softs offerts 
+ par nos généreux sponsors : MonkeyPatch et OpenAirlines.\nMerci à eux !\n
+ ***\nNous recherchons activement des volontaires et petites mains pour s'
+ impliquer dans l'organisation du JUG.\nNos besoins :\n* Récupération et i
+ nstallation des pizzas/boissons pendant la soirée \;\n* Gestion de la cap
+ tation son/vidéo \;\n* Création des visuels et slides d'intro à partir de
+  templates \;\n* Aide à la planification des prochains sujets \;\n* Insta
+ llation du/des speakers et accueil/aiguillage du public.\nSi un de ces su
+ jets vous intéresse (ou d'autres)\, n'hésitez pas à nous contacter !
+DTEND:20250312T210000
+DTSTAMP;VALUE=DATE:20250312
+DTSTART:20250312T190000
+LOCATION:EPITECH - Amphi rez-de-chaussée\, 40 Boulevard de la Marquette To
+ ulouse
+SEQUENCE:0
+SUMMARY:Toulouse Java User Group : Soirée Kafka - Data Contracts & Validat
+ ion Rules
+UID:meetup-306435624
+URL:https://www.meetup.com/fr-FR/toulouse-java-user-group/events/306435624/
+X-ALT-DESC:<p class="mb-4">La prochaine soirée du Java User Group Toulousa
+ in aura lieu le <strong>mercredi 12 mars à 19h</strong> !</p>\n<p class="
+ mb-4">Oui oui\, mercredi !</p>\n<p class="mb-4">Pour cette occasion\, nou
+ s nous retrouverons chez <strong>Epitech</strong> <strong>Toulouse</stron
+ g> pour parler de Kafka avec la venue tout spécialement pour vous de <str
+ ong>Gilles Philippart</strong>\, Software Practice Lead chez Confluent.</
+ p>\n<p class="mb-4">Gilles viendra nous parler de Kafka\, et plus particu
+ lièrement de la qualité de la donnée\, comment la valider\, comment prése
+ rver son intégrité et comment mettre en place une politique de "Shift-Lef
+ t".</p>\n<p class="mb-4">***</p>\n<p class="mb-4"><strong>== How To Impro
+ ve Data Quality with Domain Validation Rules</strong><br>\nSpeaker : Gill
+ es Philippart</p>\n<p class="mb-4">Abstract précis à venir.</p>\n<p class
+ ="mb-4">***</p>\n<p class="mb-4">Comme d'habitude\, la soirée sera suivie
+  d'un apéro (pizza\, bières et softs offerts par nos généreux sponsors : 
+ <strong>MonkeyPatch</strong> et <strong>OpenAirlines</strong>.<br>\nMerci
+  à eux !</p>\n<p class="mb-4">***</p>\n<p class="mb-4"><strong>Nous reche
+ rchons activement des volontaires et petites mains pour s'impliquer dans 
+ l'organisation du JUG.</strong></p>\n<p class="mb-4">Nos besoins :<br>\n*
+  Récupération et installation des pizzas/boissons pendant la soirée \;<br
+ >\n* Gestion de la captation son/vidéo \;<br>\n* Création des visuels et 
+ slides d'intro à partir de templates \;<br>\n* Aide à la planification de
+ s prochains sujets \;<br>\n* Installation du/des speakers et accueil/aigu
+ illage du public.</p>\n<p class="mb-4">Si un de ces sujets vous intéresse
+  (ou d'autres)\, n'hésitez pas à nous contacter !</p>
+END:VEVENT
+BEGIN:VTIMEZONE
+TZID:Europe/Paris
+X-LIC-LOCATION:Europe/Paris
+BEGIN:STANDARD
+DTSTART:20231029T030000
+RRULE:FREQ=YEARLY;BYDAY=-1SU;BYMONTH=10
+TZNAME:CET
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:20240331T020000
+RRULE:FREQ=YEARLY;BYDAY=-1SU;BYMONTH=3
+TZNAME:CEST
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+END:DAYLIGHT
+END:VTIMEZONE
+END:VCALENDAR

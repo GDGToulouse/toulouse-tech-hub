@@ -1,0 +1,111 @@
+---
+layout: null
+---
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agenda des communautés tech toulousaines</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <style type="text/css">
+    .card a {
+      text-decoration: none;
+      color: #212529;
+    }
+
+    .card:hover button {
+      display: block !important;
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <div class="container" id="content">
+      <div class="text-center">
+        <h1 class="my-2">Prochains meetups</h1>
+      </div>
+
+      <div class="row row-cols-1 row-cols-md-2 row-cols-xxl-3 g-3">
+
+        {% for event in site.data.events %}
+
+        <div class="col" id="card-{{ event.id }}">
+          <div class="card shadow">
+            <div class="card-header d-flex justify-content-between align-items-center">🧑‍💻 {{ event.community }}
+              <button type="button" class="btn-close pull-right" aria-label="Masquer" style="display: none"
+                onclick="removeCard('{{ event.id }}')"></button>
+            </div>
+            <a href="{{ event.link }}">
+              <img width="100%" style="aspect-ratio: 16/9" src="{{ site.baseurl }}/{{ event.localImg }}" />
+              <div class="card-body text-center">
+                <h5 class="card-title">{{ event.title }}</h5>
+                <p class="card-text">
+                  {{ event.dateFr }} à {{ event.timeFr }}
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        {% endfor %}
+
+      </div>
+
+      <p class="text-center mt-2">
+        <a href="https://tbolon.github.io/toulouse-orgas/">https://tbolon.github.io/toulouse-orgas/</a>
+      </p>
+    </div>
+
+    <footer class="text-muted my-5">
+      <div class="container">
+        <p class="text-center">
+          <button onclick="capture()" class="btn btn-primary"><i class="bi bi-cloud-arrow-down"></i> Capturer PNG</button>
+        </p>
+      </div>
+    </footer>
+
+  </main>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+  <script src="js/FileSaver.min.js"></script>
+  <script type="text/javascript">
+
+    function copyToClipboard(name) {
+      var elt = document.getElementById(name);
+      if (!elt) return;
+      elt.select();
+      elt.setSelectionRange(0, 99999); // for mobile devices??
+      navigator.clipboard.writeText(elt.value);
+
+      var tooltip = bootstrap.Tooltip.getOrCreateInstance(elt, { title: 'URL copiée !', trigger: 'manual' });
+      tooltip.show();
+      setTimeout(function () { tooltip.hide() }, 3000);
+    }
+
+    function removeCard(id) {
+      var elt = document.getElementById("card-" + id);
+      elt.remove();
+    }
+
+    function capture() {
+      var src = document.querySelector("#content");
+      var dest = document.getElementById("screenshot");
+      //html2canvas(src, { canvas: dest, scale: 1 });
+
+      html2canvas(src).then(canvas => {
+        canvas.toBlob(function (blob) {
+          window.saveAs(blob, 'agenda_meetup.png');
+        });
+      });
+    }
+
+  </script>
+</body>
+
+</html>
