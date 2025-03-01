@@ -82,7 +82,7 @@ layout: default
     <p class="float-end mb-1">
       <a href="#">Retour en haut</a>
     </p>
-    <p>Votre communauté n'est pas présente et vous souhaitez qu'elle soit ajoutée ?<br>Contactez-moi sur <a href="https://dotnet.social/@styx31">dotnet.social/@styx31</a>.</p>
+    <p>Votre communauté n'est pas présente et vous souhaitez qu'elle soit ajoutée ?<br>Venez le signaler sur <a href="https://github.com/GDGToulouse/toulouse-tech-hub">github.com/GDGToulouse/toulouse-tech-hub</a>.</p>
     <!-- <p class="mb-1">Album example is © Bootstrap, but please download and customize it for yourself!</p> -->
     <!-- <p class="mb-0">New to Bootstrap? <a href="/">Visit the homepage</a> or read our <a href="/docs/5.0/getting-started/introduction/">getting started guide</a>.</p> -->
   </div>
