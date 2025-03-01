@@ -27,17 +27,17 @@ layout: default
         <p>        
           <div class="input-group my-2">
             <span class="input-group-text"><i class="bi bi-calendar2-week"></i>&nbsp;iCal</span>
-            <input id="icsInput" type="text" value="https://tbolon.github.io/toulouse-orgas/events.ics" readonly class="form-control" style="background-color:#fff" onfocus="this.select()">
+            <input id="icsInput" type="text" value="{{ site.site }}{{ site.baseurl }}/events.ics" readonly class="form-control" style="background-color:#fff" onfocus="this.select()">
             <button class="btn btn-outline-secondary" type="button" id="button-addon2" title="Copier l'URL dans le presse-papier" onclick="copyToClipboard('icsInput')"><i class="bi bi-clipboard-check"></i></button>
           </div>
           <div class="input-group my-2">
             <span class="input-group-text"><i class="bi bi-rss"></i>&nbsp;Rss/Atom</span>
-            <input id="atomInput" type="text" value="https://tbolon.github.io/toulouse-orgas/events.atom.xml" readonly class="form-control" style="background-color:#fff" onfocus="this.select()">
+            <input id="atomInput" type="text" value="{{ site.site }}{{ site.baseurl }}/events.atom.xml" readonly class="form-control" style="background-color:#fff" onfocus="this.select()">
             <button class="btn btn-outline-secondary" type="button" id="button-addon2" title="Copier l'URL dans le presse-papier" onclick="copyToClipboard('atomInput')"><i class="bi bi-clipboard-check"></i></button>
           </div>
           <div class="input-group my-2">
             <span class="input-group-text"><i class="bi bi-braces"></i>&nbsp;Json</span>
-            <input id="jsonInput" type="text" value="https://tbolon.github.io/toulouse-orgas/events.json" readonly class="form-control" style="background-color:#fff" onfocus="this.select()">
+            <input id="jsonInput" type="text" value="{{ site.site }}{{ site.baseurl }}/events.json" readonly class="form-control" style="background-color:#fff" onfocus="this.select()">
             <button class="btn btn-outline-secondary" type="button" id="button-addon2" title="Copier l'URL dans le presse-papier" onclick="copyToClipboard('jsonInput')"><i class="bi bi-clipboard-check"></i></button>
           </div>
           <!--
