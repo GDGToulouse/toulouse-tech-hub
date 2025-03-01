@@ -2219,9 +2219,9 @@ BEGIN:VEVENT
 DESCRIPTION:Fêtez avec nous l'ouverture de la billetterie d'Agile Tour Tou
  louse 2025 !\nVenez participer à une soirée à distance pour poser vos que
  stions sur l'événement et/ou échanger avec l'équipe.
-DTEND:20250310T190000
+DTEND:20250310T200000
 DTSTAMP;VALUE=DATE:20250310
-DTSTART:20250310T170000
+DTSTART:20250310T180000
 SEQUENCE:0
 SUMMARY:Agile Toulouse : Ouverture billetterie ATTLS25 - Echanger et poser
   vos questions
