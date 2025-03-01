@@ -2754,6 +2754,23 @@
     "LocalImgSrc": "event-imgs/meetup-306407965.webp"
   },
   {
+    "Id": "meetup-306421959",
+    "Href": "https://www.meetup.com/fr-FR/agile-toulouse/events/306421959/",
+    "Title": "Ouverture billetterie ATTLS25 - Echanger et poser vos questions",
+    "Start": "2025-03-10T17:00:00+00:00",
+    "ImgSrc": "https://secure.meetupstatic.com/photos/event/9/9/0/3/event_526479171.webp",
+    "Group": "Agile Toulouse",
+    "Duration": null,
+    "FullImgSrc": "https://secure.meetupstatic.com/photos/event/9/9/0/3/600_526479171.webp?w=750",
+    "HtmlDescription": "<p class=\"mb-4\">Fêtez avec nous l'ouverture de la billetterie d'Agile Tour Toulouse 2025 !</p>\n<p class=\"mb-4\">Venez participer à une soirée à distance pour poser vos questions sur l'événement et/ou échanger avec l'équipe.</p>",
+    "TextDescription": "Fêtez avec nous l'ouverture de la billetterie d'Agile Tour Toulouse 2025 !\nVenez participer à une soirée à distance pour poser vos questions sur l'événement et/ou échanger avec l'équipe.",
+    "VenueName": null,
+    "VenueAddr": null,
+    "Latitude": null,
+    "Longitude": null,
+    "LocalImgSrc": "event-imgs/meetup-306421959.webp"
+  },
+  {
     "Id": "meetup-305897754",
     "Href": "https://www.meetup.com/fr-FR/agile-toulouse/events/305897754/",
     "Title": "\uD83C\uDF7B Bière Agile - Agilité & deadlines",

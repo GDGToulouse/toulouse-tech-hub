@@ -1,4 +1,4 @@
-BEGIN:VCALENDAR
+﻿BEGIN:VCALENDAR
 PRODID:-//github.com/ical-org/ical.net//NONSGML ical.net 4.0//EN
 VERSION:2.0
 BEGIN:VEVENT
@@ -2214,6 +2214,23 @@ X-ALT-DESC:<p class="mb-4">🚀 <strong>Toulouse Data Science vous invite à
  , rencontres...).</p>\n<p class="mb-4">Pensez à vous inscrire pour nous a
  ider à organiser au mieux l'événement.</p>\n<p class="mb-4">À très bientô
  t pour trinquer à la data ! 🍻📈</p>
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Fêtez avec nous l'ouverture de la billetterie d'Agile Tour Tou
+ louse 2025 !\nVenez participer à une soirée à distance pour poser vos que
+ stions sur l'événement et/ou échanger avec l'équipe.
+DTEND:20250310T190000
+DTSTAMP;VALUE=DATE:20250310
+DTSTART:20250310T170000
+SEQUENCE:0
+SUMMARY:Agile Toulouse : Ouverture billetterie ATTLS25 - Echanger et poser
+  vos questions
+UID:meetup-306421959
+URL:https://www.meetup.com/fr-FR/agile-toulouse/events/306421959/
+X-ALT-DESC:<p class="mb-4">Fêtez avec nous l'ouverture de la billetterie d
+ 'Agile Tour Toulouse 2025 !</p>\n<p class="mb-4">Venez participer à une s
+ oirée à distance pour poser vos questions sur l'événement et/ou échanger 
+ avec l'équipe.</p>
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:🍻 La bière Agile est toujours au rendez-vous !\n👋 Agile Toul

@@ -90,6 +90,23 @@
     <p class="mb-4">Pensez à vous inscrire pour nous aider à organiser au mieux l'événement.</p>
     <p class="mb-4">À très bientôt pour trinquer à la data ! 🍻📈</p>
 
+- id: 'meetup-306421959'
+  title: 'Ouverture billetterie ATTLS25 - Echanger et poser vos questions'
+  community: 'Agile Toulouse'
+  date: '2025-03-10 17:00'
+  dateFr: 'lundi 10 mars'
+  timeFr: '17:00'
+  place: ", "
+  placeName: ""
+  placeAddr: ""
+  link: https://www.meetup.com/fr-FR/agile-toulouse/events/306421959/
+  linkHost: www.meetup.com
+  img: https://secure.meetupstatic.com/photos/event/9/9/0/3/600_526479171.webp?w=750
+  localImg: event-imgs/meetup-306421959.webp
+  description: >
+    <p class="mb-4">Fêtez avec nous l'ouverture de la billetterie d'Agile Tour Toulouse 2025 !</p>
+    <p class="mb-4">Venez participer à une soirée à distance pour poser vos questions sur l'événement et/ou échanger avec l'équipe.</p>
+
 - id: 'meetup-305897754'
   title: '🍻 Bière Agile - Agilité & deadlines'
   community: 'Agile Toulouse'

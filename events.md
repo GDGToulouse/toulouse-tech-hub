@@ -75,6 +75,18 @@ Rejoignez-nous pour une soirée conviviale dédiée aux passionnés de la Data !
 <p class="mb-4">Pensez à vous inscrire pour nous aider à organiser au mieux l'événement.</p>
 <p class="mb-4">À très bientôt pour trinquer à la data ! 🍻📈</p>
 
+### Ouverture billetterie ATTLS25 - Echanger et poser vos questions
+
+* <span title="communauté">🧑‍💻</span> Agile Toulouse
+* <span title="date">📅</span> lundi 10 mars 2025 à 17:00
+* <span title="lieu">📍</span> , 
+* <span title="lien">🔗</span> [www.meetup.com](https://www.meetup.com/fr-FR/agile-toulouse/events/306421959/)
+
+![image](https://secure.meetupstatic.com/photos/event/9/9/0/3/600_526479171.webp?w=750)
+
+<p class="mb-4">Fêtez avec nous l'ouverture de la billetterie d'Agile Tour Toulouse 2025 !</p>
+<p class="mb-4">Venez participer à une soirée à distance pour poser vos questions sur l'événement et/ou échanger avec l'équipe.</p>
+
 ### 🍻 Bière Agile - Agilité & deadlines
 
 * <span title="communauté">🧑‍💻</span> Agile Toulouse

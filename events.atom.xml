@@ -9,15 +9,6 @@
   <id>urn:uuid:71d76562-7d05-42be-88bd-059544c0b3e5</id>
   <updated>2025-03-12T19:00:00+01:00</updated>
   <entry>
-    <id>urn:meetup-304773963</id>
-    <published>2025-01-23T18:00:00+01:00</published>
-    <title>Introduction à Org Topologies</title>
-    <link rel="alternate" href="https://www.meetup.com/fr-FR/agile-toulouse/events/304773963/" />
-    <author>
-      <name>Agile Toulouse</name>
-    </author>
-  </entry>
-  <entry>
     <id>urn:meetup-305148947</id>
     <published>2025-01-24T18:00:00+01:00</published>
     <title>Apprenez l'essentiel de "Accelerate" / DORA, le pied au plancher</title>
@@ -402,6 +393,19 @@ Rejoignez-nous pour une soirée conviviale dédiée aux passionnés de la Data !
 &lt;p class="mb-4"&gt;Pensez à vous inscrire pour nous aider à organiser au mieux l'événement.&lt;/p&gt;
 &lt;p class="mb-4"&gt;À très bientôt pour trinquer à la data ! 🍻📈&lt;/p&gt;</content>
     <link rel="enclosure" type="image/webp" href="https://gdgtoulouse.github.io/toulouse-tech-hub/event-imgs/meetup-306407965.webp" />
+  </entry>
+  <entry>
+    <id>urn:meetup-306421959</id>
+    <published>2025-03-10T17:00:00+00:00</published>
+    <title>Ouverture billetterie ATTLS25 - Echanger et poser vos questions</title>
+    <link rel="alternate" href="https://www.meetup.com/fr-FR/agile-toulouse/events/306421959/" />
+    <author>
+      <name>Agile Toulouse</name>
+    </author>
+    <media:thumbnail url="https://gdgtoulouse.github.io/toulouse-tech-hub/event-imgs/meetup-306421959.webp" />
+    <content type="html">&lt;p class="mb-4"&gt;Fêtez avec nous l'ouverture de la billetterie d'Agile Tour Toulouse 2025 !&lt;/p&gt;
+&lt;p class="mb-4"&gt;Venez participer à une soirée à distance pour poser vos questions sur l'événement et/ou échanger avec l'équipe.&lt;/p&gt;</content>
+    <link rel="enclosure" type="image/webp" href="https://gdgtoulouse.github.io/toulouse-tech-hub/event-imgs/meetup-306421959.webp" />
   </entry>
   <entry>
     <id>urn:meetup-305897754</id>
