@@ -52,7 +52,8 @@ layout: default
 <div class="container">
   <div class="row row-cols-1 row-cols-md-2 row-cols-xxl-3 g-3">
 
-{% for event in site.data.events %}
+{% for event_hash in site.data.events %}
+{% assign event = event_hash[1] %}
 
   <div class="col">
     <div class="card shadow">
@@ -64,7 +65,7 @@ layout: default
           <p class="card-text">
           </p>
           <div class="d-flex justify-content-between align-items-center text-right">
-            <small class="text-muted">🏠 {{ event.placeName }}<br>📍 {{ event.placeAddr }}</small>
+            <small class="text-muted">🏠 {{ event.place }}<br>📍 {{ event.placeAddr }}</small>
             <small class="text-muted text-end">{{ event.dateFr }}📅<br>{{ event.timeFr }}⌚</small>
           </div>
         </div>
