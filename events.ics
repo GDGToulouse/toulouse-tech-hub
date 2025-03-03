@@ -1,19 +1,27 @@
 ---
 layout: null
 ---
+{%- assign now_time = site.time | date: "%s" | plus: 0 -%}
 BEGIN:VCALENDAR
 PRODID:-//github.com/ical-org/ical.net//NONSGML ical.net 4.0//EN
 VERSION:2.0
-{% for event_hash in site.data.events %}{% assign event = event_hash[1] %}BEGIN:VEVENT
+{%- for event_hash in site.data.events reversed -%}
+  {%- assign event = event_hash[1] -%}
+  {%- assign event_time = event.dateIso | date:"%s" | plus: 0 -%}
+  {%- if event_time < now_time -%}
+    {%- continue -%}
+  {%- endif -%}
+BEGIN:VEVENT
 DTSTAMP;VALUE=DATE:{{ event.dateIso | date: "%Y%m%d" }}
 DTSTART:{{ event.dateIso | date: "%Y%m%d" }}T{{ event.dateIso | date: "%H%M" }}00
-DTEND:{{ event.dateIso | date: "%Y%m%d" }}T{{ event.dateIso | date: "%s" | plus: 7200 | date: "%H%M" }}00
+DTEND:{{ event.dateIso | date: "%Y%m%d" }}T{{ event.dateIso | date: "%s" | plus: 7200 | date: "%H%M" }}00
 SEQUENCE:0
-SUMMARY:{{ event.title | remove: ',' | remove: ';' }}
+SUMMARY:{{ event.title }}
 UID:{{ event.id }}
 URL:{{ event.link }}
 X-ALT-DESC:{{ event.description }}
-END:VEVENT{% endfor %}
+END:VEVENT
+{%- endfor -%}
 BEGIN:VTIMEZONE
 TZID:Europe/Paris
 X-LIC-LOCATION:Europe/Paris
