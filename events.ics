@@ -1,4 +1,4 @@
-﻿---
+---
 layout: null
 ---
 {%- assign now_time = site.time | date: "%s" | plus: 0 -%}
