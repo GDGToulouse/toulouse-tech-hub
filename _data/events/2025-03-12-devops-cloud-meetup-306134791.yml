@@ -11,14 +11,15 @@ img: https://secure.meetupstatic.com/photos/event/5/d/2/7/600_526223847.webp?w=7
 localImg: event-imgs/meetup-306134791.webp
 description: >
   <p class="mb-4">Deuxième séance de "Code Café" !</p>
-  <p class="mb-4">Un meetup dédié au Dev, DevOps et Cloud, dans une ambiance détendue, au Sud de la ville de Toulouse (Frouzins), et qui se terminera par un moment de discussions et de partage.</p>
-  <p class="mb-4">Cette fois-ci un programme très riche en partenariat avec Devoteam et Hashicorp ainsi que le Toulouse HUG !</p>
-  <ul class="pl-5 list-disc mb-4">
-  <li>"<em>Nouveautés &amp; annonces Hashicorp</em>"</li>
-  <li>"<em>Finally, Terraform and Ansible integration, done right !</em>"</li>
-  <li>"<em>REX Vault - Automatic unseal of a cluster with KMS</em>"</li>
-  </ul>
-  <p class="mb-4">Les speakers seront annoncés rapidement !<br>
-  Rendez-vous à 19h !<br>
-  Et comme d'habitude le nombre de place est limité à 35 personnes ;)</p>
-  <p class="mb-4">Et suite à la conférence, nous partagerons un apéritif, accompagné de choses à grignoter pour pouvoir continuer à échanger ensemble sur tous ces sujets :)</p>
+    <p class="mb-4">Un meetup dédié au Dev, DevOps et Cloud, dans une ambiance détendue, au Sud de la ville de Toulouse (Frouzins), et qui se terminera par un moment de discussions et de partage.</p>
+    <p class="mb-4">Cette fois-ci un programme très riche en partenariat avec Devoteam et Hashicorp ainsi que le Toulouse HUG !</p>
+    <ul class="pl-5 list-disc mb-4">
+    <li>"<em>Nouveautés &amp; annonces Hashicorp</em>"</li>
+    <li>"<em>Finally, Terraform and Ansible integration, done right !</em>"</li>
+    <li>"<em>REX Vault - Automatic unseal of a cluster with KMS</em>"</li>
+    </ul>
+    <p class="mb-4">Les speakers seront annoncés rapidement !<br>
+    Rendez-vous à 19h !<br>
+    Et comme d'habitude le nombre de place est limité à 35 personnes ;)</p>
+    <p class="mb-4">Et suite à la conférence, nous partagerons un apéritif, accompagné de choses à grignoter pour pouvoir continuer à échanger ensemble sur tous ces sujets :)</p>
+
