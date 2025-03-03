@@ -1396,6 +1396,26 @@ X-ALT-DESC:<p class="mb-4">La prochaine soirée du Java User Group Toulousa
  illage du public.</p>\n<p class="mb-4">Si un de ces sujets vous intéresse
   (ou d'autres)\, n'hésitez pas à nous contacter !</p>
 END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Bonjour\,\nLe prochain Klub de lecture se tiendra le mardi 8 a
+ vril 2025.\nNous ouvrons la liste des propositions jusqu'à ce vendredi 7 
+ mars à 23h00.\nPour proposer un livre\, une vidéo d'une conférence\, un p
+ odcast\, un article... c'est ici dans les commentaires de cet événement.\
+ n@AgileToulouse.
+DTEND:20250408T200000
+DTSTAMP;VALUE=DATE:20250408
+DTSTART:20250408T180000
+SEQUENCE:0
+SUMMARY:Agile Toulouse : Klub de lecture le mardi 8 avril 2025
+UID:meetup-306513726
+URL:https://www.meetup.com/fr-FR/agile-toulouse/events/306513726/
+X-ALT-DESC:<p class="mb-4">Bonjour\,</p>\n<p class="mb-4">Le prochain Klub
+  de lecture se tiendra le <strong>mardi 8 avril 2025.</strong></p>\n<p cl
+ ass="mb-4">Nous ouvrons la liste des propositions jusqu'à ce vendredi 7 m
+ ars à 23h00.</p>\n<p class="mb-4">Pour proposer un livre\, une vidéo d'un
+ e conférence\, un podcast\, un article... c'est ici dans les commentaires
+  de cet événement.</p>\n<p class="mb-4">@AgileToulouse.</p>
+END:VEVENT
 BEGIN:VTIMEZONE
 TZID:Europe/Paris
 X-LIC-LOCATION:Europe/Paris

@@ -7,16 +7,7 @@
   </author>
   <link rel="self" href="https://toulouse-tech-hub.fr/events.atom.xml" />
   <id>urn:uuid:71d76562-7d05-42be-88bd-059544c0b3e5</id>
-  <updated>2025-03-12T19:00:00+01:00</updated>
-  <entry>
-    <id>urn:meetup-305148947</id>
-    <published>2025-01-24T18:00:00+01:00</published>
-    <title>Apprenez l'essentiel de "Accelerate" / DORA, le pied au plancher</title>
-    <link rel="alternate" href="https://www.meetup.com/fr-FR/agile-toulouse/events/305148947/" />
-    <author>
-      <name>Agile Toulouse</name>
-    </author>
-  </entry>
+  <updated>2025-04-08T18:00:00+02:00</updated>
   <entry>
     <id>urn:meetup-305226338</id>
     <published>2025-01-31T18:00:00+01:00</published>
@@ -482,5 +473,21 @@ Merci à eux !&lt;/p&gt;
 * Installation du/des speakers et accueil/aiguillage du public.&lt;/p&gt;
 &lt;p class="mb-4"&gt;Si un de ces sujets vous intéresse (ou d'autres), n'hésitez pas à nous contacter !&lt;/p&gt;</content>
     <link rel="enclosure" type="image/webp" href="https://toulouse-tech-hub.fr/event-imgs/meetup-306435624.webp" />
+  </entry>
+  <entry>
+    <id>urn:meetup-306513726</id>
+    <published>2025-04-08T18:00:00+02:00</published>
+    <title>Klub de lecture le mardi 8 avril 2025</title>
+    <link rel="alternate" href="https://www.meetup.com/fr-FR/agile-toulouse/events/306513726/" />
+    <author>
+      <name>Agile Toulouse</name>
+    </author>
+    <media:thumbnail url="https://toulouse-tech-hub.fr/event-imgs/meetup-306513726.webp" />
+    <content type="html">&lt;p class="mb-4"&gt;Bonjour,&lt;/p&gt;
+&lt;p class="mb-4"&gt;Le prochain Klub de lecture se tiendra le &lt;strong&gt;mardi 8 avril 2025.&lt;/strong&gt;&lt;/p&gt;
+&lt;p class="mb-4"&gt;Nous ouvrons la liste des propositions jusqu'à ce vendredi 7 mars à 23h00.&lt;/p&gt;
+&lt;p class="mb-4"&gt;Pour proposer un livre, une vidéo d'une conférence, un podcast, un article... c'est ici dans les commentaires de cet événement.&lt;/p&gt;
+&lt;p class="mb-4"&gt;@AgileToulouse.&lt;/p&gt;</content>
+    <link rel="enclosure" type="image/webp" href="https://toulouse-tech-hub.fr/event-imgs/meetup-306513726.webp" />
   </entry>
 </feed>

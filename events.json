@@ -2820,5 +2820,22 @@
     "Latitude": 43.61244,
     "Longitude": 1.429108,
     "LocalImgSrc": "event-imgs/meetup-306435624.webp"
+  },
+  {
+    "Id": "meetup-306513726",
+    "Href": "https://www.meetup.com/fr-FR/agile-toulouse/events/306513726/",
+    "Title": "Klub de lecture le mardi 8 avril 2025",
+    "Start": "2025-04-08T18:00:00+02:00",
+    "ImgSrc": "https://secure.meetupstatic.com/photos/event/2/e/c/9/event_526571977.webp",
+    "Group": "Agile Toulouse",
+    "Duration": null,
+    "FullImgSrc": "https://secure.meetupstatic.com/photos/event/2/e/c/9/600_526571977.webp?w=750",
+    "HtmlDescription": "<p class=\"mb-4\">Bonjour,</p>\n<p class=\"mb-4\">Le prochain Klub de lecture se tiendra le <strong>mardi 8 avril 2025.</strong></p>\n<p class=\"mb-4\">Nous ouvrons la liste des propositions jusqu'à ce vendredi 7 mars à 23h00.</p>\n<p class=\"mb-4\">Pour proposer un livre, une vidéo d'une conférence, un podcast, un article... c'est ici dans les commentaires de cet événement.</p>\n<p class=\"mb-4\">@AgileToulouse.</p>",
+    "TextDescription": "Bonjour,\nLe prochain Klub de lecture se tiendra le mardi 8 avril 2025.\nNous ouvrons la liste des propositions jusqu'à ce vendredi 7 mars à 23h00.\nPour proposer un livre, une vidéo d'une conférence, un podcast, un article... c'est ici dans les commentaires de cet événement.\n@AgileToulouse.",
+    "VenueName": null,
+    "VenueAddr": null,
+    "Latitude": null,
+    "Longitude": null,
+    "LocalImgSrc": "event-imgs/meetup-306513726.webp"
   }
 ]
