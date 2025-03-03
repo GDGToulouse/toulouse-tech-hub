@@ -52,7 +52,13 @@ layout: default
 <div class="container">
   <div class="row row-cols-1 row-cols-md-2 row-cols-xxl-3 g-3">
 
-{% for event in site.data.events %}
+{%- assign now_time = site.time | date: "%s" | plus: 0 -%}
+{%- for event_hash in site.data.events -%}
+{%- assign event = event_hash[1] -%}
+{%- assign event_time = event.dateIso | date:"%s" | plus: 0 -%}
+{%- if event_time < now_time -%}
+  {%- continue -%}
+{%- endif -%}
 
   <div class="col">
     <div class="card shadow">
@@ -64,7 +70,11 @@ layout: default
           <p class="card-text">
           </p>
           <div class="d-flex justify-content-between align-items-center text-right">
-            <small class="text-muted">🏠 {{ event.placeName }}<br>📍 {{ event.placeAddr }}</small>
+            <small class="text-muted">
+            {%- if event.place -%}
+            🏠 {{ event.place }}<br>📍 {{ event.placeAddr }}
+            {%- endif -%}
+            </small>
             <small class="text-muted text-end">{{ event.dateFr }}📅<br>{{ event.timeFr }}⌚</small>
           </div>
         </div>
@@ -72,7 +82,7 @@ layout: default
     </div>
   </div>
 
-{% endfor %}
+{%- endfor -%}
 
   </div>
 </div>
