@@ -24,29 +24,23 @@ layout: default
         <p class="lead text-muted">
             Retrouvez tous les prochains évènements des communautés toulousaines sur une seule page.
         </p>
-        <p>        
           <div class="input-group my-2">
             <span class="input-group-text"><i class="bi bi-calendar2-week"></i>&nbsp;iCal</span>
             <input id="icsInput" type="text" value="{{ site.site }}{{ site.baseurl }}/events.ics" readonly class="form-control" style="background-color:#fff" onfocus="this.select()">
-            <button class="btn btn-outline-secondary" type="button" id="button-addon2" title="Copier l'URL dans le presse-papier" onclick="copyToClipboard('icsInput')"><i class="bi bi-clipboard-check"></i></button>
+            <button class="btn btn-outline-secondary" type="button" id="button-addon-ics" title="Copier l'URL dans le presse-papier" onclick="copyToClipboard('icsInput')"><i class="bi bi-clipboard-check"></i></button>
           </div>
           <div class="input-group my-2">
             <span class="input-group-text"><i class="bi bi-rss"></i>&nbsp;Rss/Atom</span>
             <input id="atomInput" type="text" value="{{ site.site }}{{ site.baseurl }}/events.atom.xml" readonly class="form-control" style="background-color:#fff" onfocus="this.select()">
-            <button class="btn btn-outline-secondary" type="button" id="button-addon2" title="Copier l'URL dans le presse-papier" onclick="copyToClipboard('atomInput')"><i class="bi bi-clipboard-check"></i></button>
+            <button class="btn btn-outline-secondary" type="button" id="button-addon-atom" title="Copier l'URL dans le presse-papier" onclick="copyToClipboard('atomInput')"><i class="bi bi-clipboard-check"></i></button>
           </div>
           <div class="input-group my-2">
             <span class="input-group-text"><i class="bi bi-braces"></i>&nbsp;Json</span>
             <input id="jsonInput" type="text" value="{{ site.site }}{{ site.baseurl }}/events.json" readonly class="form-control" style="background-color:#fff" onfocus="this.select()">
-            <button class="btn btn-outline-secondary" type="button" id="button-addon2" title="Copier l'URL dans le presse-papier" onclick="copyToClipboard('jsonInput')"><i class="bi bi-clipboard-check"></i></button>
+            <button class="btn btn-outline-secondary" type="button" id="button-addon-json" title="Copier l'URL dans le presse-papier" onclick="copyToClipboard('jsonInput')"><i class="bi bi-clipboard-check"></i></button>
           </div>
-          <!--
-          <a href="events.atom.xml" class="btn btn-secondary my-2">RSS/ATOM</a>
-          <a href="events.json" class="btn btn-secondary my-2">Json</a>
-          -->
-        </p>
       </div>
-    </div>  
+    </div>
 </section>
 
 <div class="container">
