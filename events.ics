@@ -1,11 +1,11 @@
----
+﻿---
 layout: null
 ---
 {%- assign now_time = site.time | date: "%s" | plus: 0 -%}
 BEGIN:VCALENDAR
 PRODID:-//github.com/ical-org/ical.net//NONSGML ical.net 4.0//EN
 VERSION:2.0
-{%- for event_hash in site.data.events reversed -%}
+{% for event_hash in site.data.events reversed %}
   {%- assign event = event_hash[1] -%}
   {%- assign event_time = event.dateIso | date:"%s" | plus: 0 -%}
   {%- if event_time < now_time -%}
@@ -21,7 +21,7 @@ UID:{{ event.id }}
 URL:{{ event.link }}
 X-ALT-DESC:{{ event.description }}
 END:VEVENT
-{%- endfor -%}
+{% endfor %}
 BEGIN:VTIMEZONE
 TZID:Europe/Paris
 X-LIC-LOCATION:Europe/Paris
