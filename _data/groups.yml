@@ -1,6 +1,6 @@
 - id: gdg
   name: GDG Toulouse
-  site: https://www.gdgtoulouse.fr/
+  url: https://www.gdgtoulouse.fr/
   registration: https://www.meetup.com/gdg-toulouse/
   description: |
     <p>Les Google Developers Groups (GDGs) sont des regroupements de personnes intéressées par les technologies
@@ -13,7 +13,7 @@
 
 - id: mtg
   name: MTG:Toulouse
-  site: https://www.meetup.com/mtg-toulouse/
+  url: https://www.meetup.com/mtg-toulouse/
   registration: https://www.meetup.com/mtg-toulouse/
   description: |
     <p>Le MTG:Toulouse (Microsoft Tech Group) est une association dont le but est de créer un espace d’apprentissage
@@ -38,9 +38,9 @@
   - name: linkedin
     url: https://www.linkedin.com/company/mtg-toulouse/
 
-- id:
+- id: agile
   name: Agile Toulouse
-  site: https://www.agiletoulouse.fr/  
+  url: https://www.agiletoulouse.fr/
   description: |    
     <p>Le but de l’association Agile Toulouse est de développer une communauté d’agilistes <em>-personnes qui s’intéressent
     aux méthodes agiles-</em>, à Toulouse et dans le Sud-Ouest, par des actions diverses de promotion, de rencontre
@@ -54,3 +54,45 @@
     <p>L’association dispose d’un bureau à la Maison des Associations de Toulouse.</p>
     <p>Pour les événements prévus prochainement et éventuellement vous y inscrire, RDV sur <a href="https://www.meetup.com/fr-FR/Agile-Toulouse/">meetup</a>.</p>
     <p>Le plus gros événement de l’année étant l’Agile Tour Toulouse qui rassemble environ 500 personnes sur 2 jours au troisième trimestre.</p>
+
+- name: JUG Toulouse
+  url: https://www.meetup.com/toulouse-java-user-group/
+
+- name: Toulouse Ruby and Friends
+  url: https://www.meetup.com/toulouse-ruby-friends/
+
+- name: Python Toulouse
+  url: https://www.meetup.com/python-toulouse/
+
+- name: Toulouse Data Science
+  url: https://www.meetup.com/tlse-data-science/
+
+- name: Toulouse Game Dev
+  url: https://toulousegamedev.fr/
+
+- name: Toulouse Data-Viz
+  url: https://www.meetup.com/meetup-visualisation-des-donnees-toulouse/
+
+- name: C++ Toulouse
+  url: https://www.meetup.com/ateliers-cpp-toulouse/
+
+- name: AWS User Group Toulouse
+  url: https://www.meetup.com/toulouse-amazon-web-services/
+
+- name: Swift Toulouse
+  url: https://www.meetup.com/swift-toulouse/
+
+- name: Tech a Break
+  url: https://www.meetup.com/tech-a-break/
+
+- name: Toulouse DevOps
+  url: https://www.meetup.com/toulouse-devops/
+
+- name: Devops & Cloud Toulouse
+  url: https://www.meetup.com/devops-cloud-toulouse/
+
+- name: JS & Co Toulouse
+  url: https://www.meetup.com/javascript-and-co/
+
+- name: La "Toul Box" du Cloud Natif
+  url: https://www.meetup.com/latoulboxducloudnatif/

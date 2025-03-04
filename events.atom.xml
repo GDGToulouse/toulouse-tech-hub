@@ -3,7 +3,7 @@ layout: null
 ---
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns:media="http://search.yahoo.com/mrss/" xmlns="http://www.w3.org/2005/Atom">
-  <title>Évènements Toulouse Communautés Tech</title>
+  <title>Évènements Communautés Toulouse Tech</title>
   <subtitle>Flux des prochains évènements des communautés tech à Toulouse</subtitle>
   <author><name>Toulouse Tech Hub</name></author>
   <link rel="self" href="{{ site.site }}/events.atom.xml" />
