@@ -5,9 +5,7 @@ layout: null
 <feed xmlns:media="http://search.yahoo.com/mrss/" xmlns="http://www.w3.org/2005/Atom">
   <title>Évènements Toulouse Communautés Tech</title>
   <subtitle>Flux des prochains évènements des communautés tech à Toulouse</subtitle>
-  <author>
-    <name>Toulouse Tech Hub</name>
-  </author>
+  <author><name>Toulouse Tech Hub</name></author>
   <link rel="self" href="{{ site.site }}/events.atom.xml" />
   <id>urn:uuid:71d76562-7d05-42be-88bd-059544c0b3e5</id>
   <updated>{{ site.time | date:"%Y-%m-%dT%T" }}+01:00</updated>
@@ -15,23 +13,21 @@ layout: null
 {%- assign now_time = site.time | date: "%s" | plus: 0 -%}
 {% for event_hash in site.data.events reversed %}
 {%- assign event = event_hash[1] -%}
-{%- assign event_time = event.dateIso | date:"%s" | plus: 0 -%}
-{%- if event_time < now_time -%}
+{%- assign event_time = event.datePublished | date:"%s" | plus: 0 -%}
+{%- if event_time > now_time -%}
   {%- continue -%}
 {%- endif -%}
 {%- assign tz = event.dateIso | date:"%z" -%}
 
   <entry>
     <id>urn:{{ event.id }}</id>
-    <published>{{ event.dateIso | date: "%Y-%m-%dT%T" }}{{ tz | slice: 0, 3 }}:00</published>
-    <title>{{ event.title | replace: "&", "&amp;" | replace: "<", "&lt;" }}</title>
+    <published>{{ event.datePublished | date: "%Y-%m-%dT%T" }}{{ tz | slice: 0, 3 }}:00</published>
+    <title>{{ event.dateFr }} à {{ event.timeFr}} : {{ event.title | replace: "&", "&amp;" | replace: "<", "&lt;" }}</title>
     <link rel="alternate" href="{{ event.link }}" />
     <author><name>{{ event.community | replace: "&", "&amp;" | replace: "<", "&lt;" }}</name></author>
-    <media:thumbnail url="{{ site.site }}/{{ site.baseurl }}/{{ event.localImg }}" />
-    <link rel="enclosure" type="image/webp" href="{{ site.site }}/{{ site.baseurl }}/{{ event.localImg }}" />
-    <content type="html">
-      {{ event.description | replace: "&", "&amp;" | replace: "<", "&lt;" | replace: ">", "&gt;" }}
-    </content>
+    <media:thumbnail url="{{ site.site }}{{ site.baseurl }}/{{ event.localImg }}" />
+    <link rel="enclosure" type="image/webp" href="{{ site.site }}{{ site.baseurl }}/{{ event.localImg }}" />
+    <content type="html">{{ event.description | replace: "&", "&amp;" | replace: "<", "&lt;" | replace: ">", "&gt;" }}</content>
   </entry>
 
 {% endfor %}
