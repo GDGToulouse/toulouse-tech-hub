@@ -17,10 +17,11 @@ layout: default
   }
 </script>
 
-<section class="py-5 text-center container">
-    <div class="row py-lg-5">
+<section class="py-1 text-center container">
+    <div class="row">
       <div class="col-lg-6 col-md-8 mx-auto">
-        <h1 class="fw-light">Agenda des communautés<br>tech toulousaines</h1>
+        <img src="logo.png" style="width: 100%" />
+        <h1 class="fw-light">l'agenda des communautés<br>tech toulousaines</h1>
         <p class="lead text-muted">
             Retrouvez tous les prochains évènements des communautés toulousaines sur une seule page.
         </p>
