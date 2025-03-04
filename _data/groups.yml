@@ -1,0 +1,56 @@
+- id: gdg
+  name: GDG Toulouse
+  site: https://www.gdgtoulouse.fr/
+  registration: https://www.meetup.com/gdg-toulouse/
+  description: |
+    <p>Les Google Developers Groups (GDGs) sont des regroupements de personnes intéressées par les technologies
+    et plateformes de Google: Android, Angular, Chrome, Google Apps, GWT, Cloud Platform… mais pas que !</p>
+  social:
+  - name: x
+    url: https://x.com/gdgtoulouse
+  - name: linkedin
+    url: https://www.linkedin.com/company/gdg-toulouse
+
+- id: mtg
+  name: MTG:Toulouse
+  site: https://www.meetup.com/mtg-toulouse/
+  registration: https://www.meetup.com/mtg-toulouse/
+  description: |
+    <p>Le MTG:Toulouse (Microsoft Tech Group) est une association dont le but est de créer un espace d’apprentissage
+    et de partage technique dans la région Toulousaine, centré autour des technologies et plateformes Microsoft,
+    plus particulièrement .NET et Azure.</p>
+    <p>Nous sommes aussi intéressés par le développement logiciel en général, et les différents langages de programmation.</p>
+    <p>Nous souhaitons créer un espace convivial pour se retrouver, rencontrer d’autres développeurs et techniques
+    venant de tous horizons. Un espace pour apprendre de nouvelles choses et pour partager ses connaissances dans un
+    environnement fun, inclusif et bienveillant.</p>
+    <p>Nous organisons des évènements de manière régulière :
+    <ul>
+    <li>Conférences sur les technologies Microsoft (.NET et Azure principalement)</li>
+    <li>Conférences découvertes et ouverture d’esprit sur d’autres technologies</li>
+    <li>Conférences sur les techniques de développement logiciel</li>
+    <li>Apéros à la suite des conférences pour se rencontrer et boire un verre ensemble</li>
+    <li>Le groupe existe depuis 2017 et a à son actif plus d’une cinquantaine d’événements.</li>
+    </ul>
+    </p>
+  social:
+  - name: x
+    url: https://twitter.com/mtg_toulouse
+  - name: linkedin
+    url: https://www.linkedin.com/company/mtg-toulouse/
+
+- id:
+  name: Agile Toulouse
+  site: https://www.agiletoulouse.fr/  
+  description: |    
+    <p>Le but de l’association Agile Toulouse est de développer une communauté d’agilistes <em>-personnes qui s’intéressent
+    aux méthodes agiles-</em>, à Toulouse et dans le Sud-Ouest, par des actions diverses de promotion, de rencontre
+    et de communication.</p>
+    <p>L’association propose des ateliers pratiques et thématiques, et aussi, avec une fréquence mensuelle, les Klubs :</p>
+    <ul>
+    <li>ShuHaRi Klub</li>
+    <li>Klub de lecture</a></li>
+    <li>La bière agile</li>
+    </ul>
+    <p>L’association dispose d’un bureau à la Maison des Associations de Toulouse.</p>
+    <p>Pour les événements prévus prochainement et éventuellement vous y inscrire, RDV sur <a href="https://www.meetup.com/fr-FR/Agile-Toulouse/">meetup</a>.</p>
+    <p>Le plus gros événement de l’année étant l’Agile Tour Toulouse qui rassemble environ 500 personnes sur 2 jours au troisième trimestre.</p>
