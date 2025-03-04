@@ -131,11 +131,18 @@ layout: default
     <div class="my-2 col-3">
       <div class="card shadow">
         <div class="card-header">📢 Cloud Toulouse</div>
-        <a href="https://cloudtoulouse.com/">
           <div class="card-body">
-            <h5 class="card-title">15 mai 2025</h5>
+            <a href="https://cloudtoulouse.com/" class="muted">
+              <h5 class="card-title">15 mai 2025</h5>
+            </a>
+            <!--
+            <div class="d-flex align-items-left">
+              <a href="https://www.linkedin.com/company/cloud-toulouse/" class="mx-1"><i class="bi bi-linkedin"></i></a>
+              <a href="https://x.com/cloud_toulouse" class="mx-1"><i class="bi bi-twitter-x"></i></a>
+              <a href="https://bsky.app/profile/cloud-toulouse.bsky.social" class="mx-1"><i class="bi bi-link-45deg"></i></a>
+            </div>
+            -->
           </div>
-        </a>
       </div>
     </div>
     <div class="my-2 col-3">
