@@ -18,30 +18,40 @@ layout: default
 </script>
 
 <section class="py-1 text-center container">
-    <div class="row">
-      <div class="col-lg-6 col-md-8 mx-auto">
-        <img src="logo.png" style="width: 100%" />
-        <h1 class="fw-light">l'agenda des communautés<br>tech toulousaines</h1>
-        <p class="lead text-muted">
-            Retrouvez tous les prochains évènements des communautés toulousaines sur une seule page.
-        </p>
-          <div class="input-group my-2">
-            <span class="input-group-text"><i class="bi bi-calendar2-week"></i>&nbsp;iCal</span>
-            <input id="icsInput" type="text" value="{{ site.site }}{{ site.baseurl }}/events.ics" readonly class="form-control" style="background-color:#fff" onfocus="this.select()">
-            <button class="btn btn-outline-secondary" type="button" id="button-addon-ics" title="Copier l'URL dans le presse-papier" onclick="copyToClipboard('icsInput')"><i class="bi bi-clipboard-check"></i></button>
-          </div>
-          <div class="input-group my-2">
-            <span class="input-group-text"><i class="bi bi-rss"></i>&nbsp;Rss/Atom</span>
-            <input id="atomInput" type="text" value="{{ site.site }}{{ site.baseurl }}/events.atom.xml" readonly class="form-control" style="background-color:#fff" onfocus="this.select()">
-            <button class="btn btn-outline-secondary" type="button" id="button-addon-atom" title="Copier l'URL dans le presse-papier" onclick="copyToClipboard('atomInput')"><i class="bi bi-clipboard-check"></i></button>
-          </div>
-          <div class="input-group my-2">
-            <span class="input-group-text"><i class="bi bi-braces"></i>&nbsp;Json</span>
-            <input id="jsonInput" type="text" value="{{ site.site }}{{ site.baseurl }}/events.json" readonly class="form-control" style="background-color:#fff" onfocus="this.select()">
-            <button class="btn btn-outline-secondary" type="button" id="button-addon-json" title="Copier l'URL dans le presse-papier" onclick="copyToClipboard('jsonInput')"><i class="bi bi-clipboard-check"></i></button>
-          </div>
+  <div class="row">
+    <div class="col-lg-6 col-md-8 mx-auto">
+      <img src="logo.png" style="width: 100%" />
+      <h1 class="fw-light">l'agenda des communautés<br>tech toulousaines</h1>
+      <p class="lead text-muted">
+          Retrouvez tous les prochains évènements des communautés toulousaines sur une seule page.
+      </p>
+    </div>
+  </div>
+  <div class="row justify-content-center">
+    <div class="my-2 col-lg-4 col-md-8">
+      <div class="input-group">
+        <span class="input-group-text"><i class="bi bi-calendar2-week"></i>&nbsp;iCal</span>
+        <input id="icsInput" type="text" value="{{ site.site }}{{ site.baseurl }}/events.ics" readonly class="form-control" style="background-color:#fff" onfocus="this.select()">
+        <button class="btn btn-outline-secondary" type="button" id="button-addon-ics" title="Copier l'URL dans le presse-papier" onclick="copyToClipboard('icsInput')"><i class="bi bi-clipboard-check"></i></button>
       </div>
     </div>
+    <div class="my-2 col-lg-4 col-md-8">
+      <div class="input-group">
+      <span class="input-group-text"><i class="bi bi-rss"></i>&nbsp;Rss/Atom</span>
+      <input id="atomInput" type="text" value="{{ site.site }}{{ site.baseurl }}/events.atom.xml" readonly class="form-control" style="background-color:#fff" onfocus="this.select()">
+      <button class="btn btn-outline-secondary" type="button" id="button-addon-atom" title="Copier l'URL dans le presse-papier" onclick="copyToClipboard('atomInput')"><i class="bi bi-clipboard-check"></i></button>
+      </div>
+    </div>
+  </div>
+  <div class="row justify-content-center">
+    <div class="my-2 col-lg-8 col-md-8">
+      <div class="input-group">
+      <span class="input-group-text"><i class="bi bi-braces"></i>&nbsp;Json</span>
+      <input id="jsonInput" type="text" value="{{ site.site }}{{ site.baseurl }}/events.json" readonly class="form-control" style="background-color:#fff" onfocus="this.select()">
+      <button class="btn btn-outline-secondary" type="button" id="button-addon-json" title="Copier l'URL dans le presse-papier" onclick="copyToClipboard('jsonInput')"><i class="bi bi-clipboard-check"></i></button>
+      </div>
+    </div>
+  </div>
 </section>
 
 <div class="container">
@@ -65,14 +75,14 @@ layout: default
           <p class="card-text">
           </p>
           <div class="d-flex justify-content-between align-items-center text-right">
-            <small class="text-muted">
+            <small class="text-muted place">
             {%- if event.place != null and event.place != "" -%}
             🏠 {{ event.place }}<br>📍 {{ event.placeAddr }}
             {%- else −%}
             🌍 en ligne
             {%- endif -%}
             </small>
-            <small class="text-muted text-end">{{ event.dateFr }}📅<br>{{ event.timeFr }}⌚</small>
+            <small class="text-muted text-end time">{{ event.dateFr }}📅<br>{{ event.timeFr }}⌚</small>
           </div>
         </div>
       </a>
