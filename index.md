@@ -66,8 +66,10 @@ layout: default
           </p>
           <div class="d-flex justify-content-between align-items-center text-right">
             <small class="text-muted">
-            {%- if event.place -%}
+            {%- if event.place != null and event.place != "" -%}
             🏠 {{ event.place }}<br>📍 {{ event.placeAddr }}
+            {%- else −%}
+            🌍 en ligne
             {%- endif -%}
             </small>
             <small class="text-muted text-end">{{ event.dateFr }}📅<br>{{ event.timeFr }}⌚</small>
