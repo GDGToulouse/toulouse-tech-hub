@@ -84,9 +84,13 @@ layout: default
 <footer class="text-muted py-5">
   <div class="container">
     <p class="float-end mb-1">
-      <a href="#">Retour en haut</a>
+      <a href="#">⬆️Retour en haut</a>
     </p>
-    <p>Votre communauté n'est pas présente et vous souhaitez qu'elle soit ajoutée ?<br>Venez le signaler sur <a href="https://github.com/GDGToulouse/toulouse-tech-hub">github.com/GDGToulouse/toulouse-tech-hub</a>.</p>
+    <p>
+      ❓Votre communauté n'est pas présente et vous souhaitez qu'elle soit ajoutée ?<br>
+      👉Venez le signaler sur le <a href="https://github.com/GDGToulouse/toulouse-tech-hub">projet github.com</a>.<br>
+      ⚖️<a href="mentions.html">Mentions légales</a>
+    </p>
     <!-- <p class="mb-1">Album example is © Bootstrap, but please download and customize it for yourself!</p> -->
     <!-- <p class="mb-0">New to Bootstrap? <a href="/">Visit the homepage</a> or read our <a href="/docs/5.0/getting-started/introduction/">getting started guide</a>.</p> -->
   </div>
