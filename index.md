@@ -127,7 +127,7 @@ layout: default
     </div>
   </div>
 
-  <div class="row row-cols-1 row-cols-md-2 row-cols-xxl-3">
+  <div class="row row-cols-1 row-cols-md-2 row-cols-xxl-4">
     <div class="my-2 col">
       <div class="card shadow">
         <div class="card-header">📢 Cloud Toulouse</div>
@@ -209,7 +209,7 @@ layout: default
     <div class="mx-auto text-center">
       <h1 class="fw-light">Communautés</h1>
       <p class="lead text-muted">
-        La listes des communautés toulousaines référencées.
+        La liste des communautés tech toulousaines référencées.
       </p>
     </div>
   </div>
