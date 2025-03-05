@@ -131,6 +131,7 @@ layout: default
     <div class="my-2 col">
       <div class="card shadow">
         <div class="card-header">📢 Cloud Toulouse</div>
+          <img width="100%" style="aspect-ratio: 16/9" src="{{ site.baseurl }}/confs-imgs/cloud-toulouse.jpg" />
           <div class="card-body">
             <a href="https://cloudtoulouse.com/" class="muted">
               <h5 class="card-title">15 mai 2025</h5>
@@ -149,6 +150,7 @@ layout: default
       <div class="card shadow">
         <div class="card-header">📢 Agile Tour Toulouse</div>
         <a href="https://tour.agiletoulouse.fr/">
+          <img width="100%" style="aspect-ratio: 16/9" src="{{ site.baseurl }}/confs-imgs/agile-tour.jpg" />
           <div class="card-body">
             <h5 class="card-title">12 et 13 juin 2025</h5>
           </div>
@@ -159,6 +161,7 @@ layout: default
       <div class="card shadow">
         <div class="card-header">📢 DevFest Toulouse</div>
         <a href="https://devfesttoulouse.fr/">
+          <img width="100%" style="aspect-ratio: 16/9" src="{{ site.baseurl }}/confs-imgs/devfest.jpg" />
           <div class="card-body">
             <h5 class="card-title">13 novembre 2025</h5>
           </div>
@@ -169,6 +172,7 @@ layout: default
       <div class="card shadow">
         <div class="card-header">📢 Le Capitole du Libre</div>
         <a href="https://capitoledulibre.org/">
+          <img width="100%" style="aspect-ratio: 16/9" src="{{ site.baseurl }}/confs-imgs/capitole-du-libre.jpg" />
           <div class="card-body">
             <h5 class="card-title">TBA</h5>
           </div>
