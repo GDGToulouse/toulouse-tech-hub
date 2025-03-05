@@ -27,7 +27,13 @@ layout: null
   <main>
     <div class="container" id="title" style="text-align: center">
       <img src="logo.png" style="width: 80%" />
+      <p class="lead text-muted text-center">
+        1️⃣&nbsp;Sélectionnez les prochains évènements que vous souhaitez annoncez, supprimez les autres à l'aide de la croix.<br>
+        2️⃣&nbsp;Redimensionnez votre fenêtre pour choisir le nombre d'évènements à afficher.<br>
+        3️⃣&nbsp;Cliquez sur "Capturer PNG" pour obtenir un PNG à insérer dans vos diapos pour annoncer l'agenda à vos participants !
+      </p>
     </div>
+
     <div class="container" id="content">
       <div class="text-center">
         <h1 class="my-2">Prochains meetups</h1>
@@ -49,7 +55,6 @@ layout: null
             <div class="card-header d-flex justify-content-between align-items-center">🧑‍💻 {{ event.community }}
               <button type="button" class="btn-close pull-right" aria-label="Masquer" style="display: none" onclick="removeCard('{{ event.id }}')"></button>
             </div>
-            <a href="{{ event.link }}">
               <img width="100%" style="aspect-ratio: 16/9" src="{{ site.baseurl }}/{{ event.localImg }}" />
               <div class="card-body text-center">
                 <h5 class="card-title">{{ event.title }}</h5>
@@ -57,7 +62,6 @@ layout: null
                   {{ event.dateFr }} à {{ event.timeFr }}
                 </p>
               </div>
-            </a>
           </div>
         </div>
 
