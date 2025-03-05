@@ -127,8 +127,8 @@ layout: default
     </div>
   </div>
 
-  <div class="row">
-    <div class="my-2 col-3">
+  <div class="row row-cols-1 row-cols-md-2 row-cols-xxl-3">
+    <div class="my-2 col">
       <div class="card shadow">
         <div class="card-header">📢 Cloud Toulouse</div>
           <div class="card-body">
@@ -145,7 +145,7 @@ layout: default
           </div>
       </div>
     </div>
-    <div class="my-2 col-3">
+    <div class="my-2 col">
       <div class="card shadow">
         <div class="card-header">📢 Agile Tour Toulouse</div>
         <a href="https://tour.agiletoulouse.fr/">
@@ -155,7 +155,7 @@ layout: default
         </a>
       </div>
     </div>
-    <div class="my-2 col-3">
+    <div class="my-2 col">
       <div class="card shadow">
         <div class="card-header">📢 DevFest Toulouse</div>
         <a href="https://devfesttoulouse.fr/">
@@ -165,7 +165,7 @@ layout: default
         </a>
       </div>
     </div>
-    <div class="my-2 col-3">
+    <div class="my-2 col">
       <div class="card shadow">
         <div class="card-header">📢 Le Capitole du Libre</div>
         <a href="https://capitoledulibre.org/">
@@ -205,7 +205,7 @@ layout: default
 <section class="container my-2">
 
   <!-- title -->
-  <div class="row">
+  <div class="row ">
     <div class="mx-auto text-center">
       <h1 class="fw-light">Communautés</h1>
       <p class="lead text-muted">
@@ -215,10 +215,10 @@ layout: default
   </div>
 
   <!-- list -->
-  <div class="row">
+  <div class="row row-cols-1 row-cols-md-2 row-cols-xxl-3">
   {% assign groups_by_name = site.data.groups | sort: "name" %}
   {% for group in groups_by_name %}
-  <div class="my-2 col-3">
+  <div class="my-2 col">
     <div class="card shadow">
     <div class="card-body">
       🧑‍💻 <a href="{{ group.url }}">{{ group.name }}</a>
