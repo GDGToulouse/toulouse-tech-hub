@@ -128,55 +128,77 @@ layout: default
   </div>
 
   <div class="row row-cols-1 row-cols-md-2 row-cols-xxl-4">
-    <div class="my-2 col">
+    <!-- Cloud Toulouse -->
+    <div class="my-2 col">    
       <div class="card shadow">
         <div class="card-header">📢 Cloud Toulouse</div>
+        <a href="https://cloudtoulouse.com/" class="muted">
           <img width="100%" style="aspect-ratio: 16/9" src="{{ site.baseurl }}/confs-imgs/cloud-toulouse.jpg" />
-          <div class="card-body">
-            <a href="https://cloudtoulouse.com/" class="muted">
-              <h5 class="card-title">15 mai 2025</h5>
-            </a>
-            <!--
-            <div class="d-flex align-items-left">
-              <a href="https://www.linkedin.com/company/cloud-toulouse/" class="mx-1"><i class="bi bi-linkedin"></i></a>
-              <a href="https://x.com/cloud_toulouse" class="mx-1"><i class="bi bi-twitter-x"></i></a>
-              <a href="https://bsky.app/profile/cloud-toulouse.bsky.social" class="mx-1"><i class="bi bi-link-45deg"></i></a>
-            </div>
-            -->
+        </a>
+        <div class="card-body">
+          <a href="https://cloudtoulouse.com/" class="muted">
+            <h5 class="card-title">15 mai 2025</h5>
+          </a>
+          <div class="d-flex align-items-left">
+            <a href="https://cloudtoulouse.com/" title="Site Officiel" class="mx-1 link-secondary"><i class="bi bi-globe"></i></a>
+            <a href="https://www.linkedin.com/company/cloud-toulouse/" title="Page LinkedIn" class="mx-1 link-secondary"><i class="bi bi-linkedin"></i></a>
+            <a href="https://bsky.app/profile/cloud-toulouse.bsky.social" title="Page Bluesky" class="mx-1 link-secondary"><i class="bi bi-stars"></i></a>
+            <a href="https://x.com/cloud_toulouse" title="Page X / Twitter" class="mx-1 link-secondary"><i class="bi bi-twitter-x"></i></a>
           </div>
+        </div>
       </div>
     </div>
+    <!-- Agile Tour Toulouse -->
     <div class="my-2 col">
       <div class="card shadow">
         <div class="card-header">📢 Agile Tour Toulouse</div>
-        <a href="https://tour.agiletoulouse.fr/">
-          <img width="100%" style="aspect-ratio: 16/9" src="{{ site.baseurl }}/confs-imgs/agile-tour.jpg" />
-          <div class="card-body">
+        <a href="https://tour.agiletoulouse.fr/"><img width="100%" style="aspect-ratio: 16/9" src="{{ site.baseurl }}/confs-imgs/agile-tour.jpg" /></a>
+        <div class="card-body">
+          <a href="https://tour.agiletoulouse.fr/" class="muted">
             <h5 class="card-title">12 et 13 juin 2025</h5>
+          </a>
+          <div class="d-flex align-items-left">
+            <a href="https://tour.agiletoulouse.fr/" title="Site Officiel" class="mx-1 link-secondary"><i class="bi bi-globe"></i></a>
+            <a href="https://www.linkedin.com/company/agile-toulouse" title="Page LinkedIn" class="mx-1 link-secondary"><i class="bi bi-linkedin"></i></a>
+            <a href="https://twitter.com/agiletoulouse" title="Page X / Twitter" class="mx-1 link-secondary"><i class="bi bi-twitter-x"></i></a>
           </div>
-        </a>
+        </div>
       </div>
     </div>
+    <!-- DevFest Toulouse -->
     <div class="my-2 col">
       <div class="card shadow">
         <div class="card-header">📢 DevFest Toulouse</div>
-        <a href="https://devfesttoulouse.fr/">
-          <img width="100%" style="aspect-ratio: 16/9" src="{{ site.baseurl }}/confs-imgs/devfest.jpg" />
-          <div class="card-body">
+        <a href="https://devfesttoulouse.fr/"><img width="100%" style="aspect-ratio: 16/9" src="{{ site.baseurl }}/confs-imgs/devfest.jpg" /></a>
+        <div class="card-body">
+          <a href="https://devfesttoulouse.fr/" class="muted">
             <h5 class="card-title">13 novembre 2025</h5>
+          </a>
+          <div class="d-flex align-items-left">
+            <a href="https://devfesttoulouse.fr/" title="Site Officiel" class="mx-1 link-secondary"><i class="bi bi-globe"></i></a>
+            <a href="https://www.linkedin.com/company/devfesttoulous" title="Page LinkedIn" class="mx-1 link-secondary"><i class="bi bi-linkedin"></i></a>
+            <a href="https://bsky.app/profile/devfesttoulouse.fr" title="Page Bluesky" class="mx-1 link-secondary"><i class="bi bi-stars"></i></a>
+            <a href="https://twitter.com/devfesttoulouse" title="Page X / Twitter" class="mx-1 link-secondary"><i class="bi bi-twitter-x"></i></a>
           </div>
-        </a>
+        </div>
       </div>
     </div>
+    <!-- Capitole du Libre -->
     <div class="my-2 col">
       <div class="card shadow">
         <div class="card-header">📢 Le Capitole du Libre</div>
-        <a href="https://capitoledulibre.org/">
-          <img width="100%" style="aspect-ratio: 16/9" src="{{ site.baseurl }}/confs-imgs/capitole-du-libre.jpg" />
-          <div class="card-body">
-            <h5 class="card-title">TBA</h5>
+        <a href="https://capitoledulibre.org/"><img width="100%" style="aspect-ratio: 16/9" src="{{ site.baseurl }}/confs-imgs/capitole-du-libre.jpg" /></a>
+        <div class="card-body">
+          <a href="https://capitoledulibre.org/" class="muted">
+            <h5 class="card-title">Date à venir...</h5>
+          </a>
+          <div class="d-flex align-items-left">
+            <a href="https://capitoledulibre.org/" title="Site Officiel" class="mx-1 link-secondary"><i class="bi bi-globe"></i></a>
+            <a href="https://linkedin.com/company/capitole-du-libre" title="Page LinkedIn" class="mx-1 link-secondary"><i class="bi bi-linkedin"></i></a>
+            <a href="https://framapiaf.org/@capitoledulibre" title="Page Bluesky" class="mx-1 link-secondary"><i class="bi bi-mastodon"></i></a>
+            <a href="https://x.com/capitoledulibre" title="Page X / Twitter" class="mx-1 link-secondary"><i class="bi bi-twitter-x"></i></a>
           </div>
-        </a>
+        </div>
       </div>
     </div>
   </div>
