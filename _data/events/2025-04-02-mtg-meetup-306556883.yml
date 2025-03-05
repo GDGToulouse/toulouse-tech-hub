@@ -1,0 +1,37 @@
+id: 'meetup-306556883'
+title: '.NET async/await dans tous ses états'
+community: 'MTG:Toulouse'
+datePublished: '2025-03-05 21:43'
+dateIso: '2025-04-02 19:00'
+dateFr: 'mercredi 02 avril'
+timeFr: '19:00'
+place: "La Cantine by La Mêlée"
+placeAddr: "27 Rue d'Aubuisson Toulouse"
+link: https://www.meetup.com/fr-FR/mtg-toulouse/events/306556883/
+img: https://secure.meetupstatic.com/photos/event/b/e/7/d/600_526608765.webp?w=750
+localImg: event-imgs/meetup-306556883.webp
+description: >
+  <p class="mb-4">📢 Première session de 2025 dédiée à .NET et son fameux async/await.<br>
+  ✨ Deux speakers en force pour un sujet autour de l'asynchronisme, l'occasion de revoir les fondamentaux et de pousser un peu le sujet.</p>
+  <p class="mb-4">Ce pattern existe depuis plus de 10 ans, à la base dès 2007 en F#, puis C#. Depuis d'autres langages ont adopté ce pattern : haskell, python, typescript, javascript, rust, c++ et swift...</p>
+  <p class="mb-4">Cette session lui sera dédiée, et vous comblera que vous soyez débutant .NET ou expert chevronné.</p>
+  <p class="mb-4"><strong>=== 💣 Async/Await : Performances &amp; Best Practices 💣===</strong><br>
+  par Sébastien Pertus, Senior Software Engineer chez Microsoft</p>
+  <p class="mb-4">Le support du modèle async/await existe depuis une dizaine d'années.<br>
+  Depuis lors, "l'asynchronisme facile" a transformé notre façon de coder, de manière efficiente, nos applications .NET.<br>
+  Globalement nous utilisons async/await de manière quotidienne, mais sans savoir ce qui se passe en réalité.</p>
+  <p class="mb-4">💡 Et c'est tant mieux !</p>
+  <p class="mb-4">Durant cette session, nous allons passer en revue les erreurs classiques lorsqu'on utilise async/await.<br>
+  Nous verrons quelques astuces pour améliorer l'usage du modèle async/await afin de comprendre et booster vos performances.<br>
+  Nous verrons enfin en détails les nouvelles fonctionnalités qui ont été implémentées dans les dernières versions du framework .NET (depuis la version 5 à la version 9)</p>
+  <p class="mb-4"><strong>=== 💣 Async/Await : ThreadPool Starvation 💣===</strong><br>
+  par Benoît Laut, Architecte Microsoft Azure / DevOps / .Net chez CALEOPS</p>
+  <p class="mb-4">C# a révolutionné et largement simplifié la programmation asynchrone avec la Task Parallel Library (TPL) et les mots clés async/await.</p>
+  <p class="mb-4">❓Mais pourquoi faut-il préférer un traitement asynchrone lorsque l'on accède à une ressource externe ?</p>
+  <p class="mb-4">Pourquoi dans les bonnes pratiques de développement d'applications .Net, en particulier des applications Web, il est recommandé de toujours privilégier des appels asynchrones vers une base de données ou vers une API http ?<br>
+  Lors de cette session nous découvrirons comment le ThreadPool est impacté et en quoi des appels synchrones peuvent pénaliser les performances des applications.<br>
+  Si vous avez déjà lu ou entendu parler de problèmes de 'ThreadPool Starvation' cette session vous permettra de le comprendre et surtout de l'éviter.</p>
+  <p class="mb-4"><strong>=== 🍕🥂 Pizza blabla 🥂 ===</strong></p>
+  <p class="mb-4">Les pizzas sont de retour ! Pour fêter l'arrivée du printemps la session sera suivi d'un temps d'échange autour d'un morceau de pizza sur place.</p>
+  <p class="mb-4">⚠️ Pas de gaspillage ! Merci de vous inscrire et de penser à vous désinscrire si vous ne venez pas, afin d'ajuster au mieux la commande de nourriture. 🙏</p>
+
