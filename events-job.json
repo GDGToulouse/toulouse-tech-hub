@@ -3154,6 +3154,25 @@
     "LocalImgSrc": "event-imgs/meetup-306435624.webp"
   },
   {
+    "Id": "meetup-306253496",
+    "PublishedOn": "2025-03-06T09:22:50.6740709+00:00",
+    "Href": "https://www.meetup.com/fr-FR/agile-toulouse/events/306253496/",
+    "Title": "Faire émerger le meilleur des équipes auto-organisées",
+    "Start": "2025-03-21T18:00:00+01:00",
+    "ImgSrc": "https://secure.meetupstatic.com/photos/event/5/8/4/4/event_526342596.webp",
+    "Group": "Agile Toulouse",
+    "GroupId": "agile",
+    "Duration": null,
+    "FullImgSrc": "https://secure.meetupstatic.com/photos/event/5/8/4/4/600_526342596.webp?w=750",
+    "HtmlDescription": "<p class=\"mb-4\">Travailler en équipe auto-organisée, c'est un principe fondamental de l'agilité.<br>\nApprofondissons ensemble, avec un atelier ludique, ce qu'implique l'auto-organisation et identifions quels antipatterns éviter dans votre contexte.</p>\n<p class=\"mb-4\"><strong>Programme (2h)</strong><br>\n- Introduction sur la notion d'auto-organisation<br>\n- Atelier d'intelligence collective pour reconstituer des liens de causalité sur la façon de travailler en équipe, le pouvoir et la vérification du travail, avant d'explorer des actions à mener<br>\n- Questions/réponses sur l'auto-organisation</p>\n<p class=\"mb-4\">Nous demanderons aux venants d'être membres de l'association Agile Toulouse.</p>\n<p class=\"mb-4\">Pour rappel, c'est gratuit et faisable ici en 1 minute sur téléphone : <a href=\"https://www.helloasso.com/associations/agile-toulouse/adhesions/adhesion-agile-toulouse-1\" target=\"_blank\" class=\"!text-viridian\" rel=\"nofollow ugc\">https://www.helloasso.com/associations/agile-toulouse/adhesions/adhesion-agile-toulouse-1</a></p>\n<p class=\"mb-4\">Si vous êtes inscrits, mais que cela n'est plus possible pour vous de venir, merci de vous désinscrire pour informer qu'il reste de la place :)</p>\n<p class=\"mb-4\">Bonne journée !</p>\n<p class=\"mb-4\">Agile Toulouse</p>",
+    "TextDescription": "Travailler en équipe auto-organisée, c'est un principe fondamental de l'agilité.\nApprofondissons ensemble, avec un atelier ludique, ce qu'implique l'auto-organisation et identifions quels antipatterns éviter dans votre contexte.\nProgramme (2h)\n- Introduction sur la notion d'auto-organisation\n- Atelier d'intelligence collective pour reconstituer des liens de causalité sur la façon de travailler en équipe, le pouvoir et la vérification du travail, avant d'explorer des actions à mener\n- Questions/réponses sur l'auto-organisation\nNous demanderons aux venants d'être membres de l'association Agile Toulouse.\nPour rappel, c'est gratuit et faisable ici en 1 minute sur téléphone : https://www.helloasso.com/associations/agile-toulouse/adhesions/adhesion-agile-toulouse-1\nSi vous êtes inscrits, mais que cela n'est plus possible pour vous de venir, merci de vous désinscrire pour informer qu'il reste de la place :)\nBonne journée !\nAgile Toulouse",
+    "VenueName": "Maison des Associations",
+    "VenueAddr": "3 Pl. Guy Hersant Toulouse",
+    "Latitude": 43.5775,
+    "Longitude": 1.444116,
+    "LocalImgSrc": "event-imgs/meetup-306253496.webp"
+  },
+  {
     "Id": "meetup-306548583",
     "PublishedOn": "2025-03-05T09:22:25.8099678+00:00",
     "Href": "https://www.meetup.com/fr-FR/tech-a-break/events/306548583/",
