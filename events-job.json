@@ -3211,6 +3211,25 @@
     "LocalImgSrc": "event-imgs/meetup-306556883.webp"
   },
   {
+    "Id": "meetup-306364724",
+    "PublishedOn": "2025-03-12T09:24:04.9053899+00:00",
+    "Href": "https://www.meetup.com/fr-FR/javascript-and-co/events/306364724/",
+    "Title": "JS&Co et l'AFUP : soirée réconcil",
+    "Start": "2025-04-03T18:30:00+02:00",
+    "ImgSrc": "https://secure.meetupstatic.com/photos/event/7/3/5/7/event_526709527.webp",
+    "Group": "Association JS & Co. Toulouse",
+    "GroupId": "js-and-co",
+    "Duration": null,
+    "FullImgSrc": "https://secure.meetupstatic.com/photos/event/7/3/5/7/600_526709527.webp?w=750",
+    "HtmlDescription": "<p class=\"mb-4\">Nous n'avons pas le même langage, mais nous avons la même passion !</p>\n<p class=\"mb-4\">Javascript, PHP, votre coeur balance ?<br>\nPourquoi choisir quand nous sommes complémentaires ?</p>\n<p class=\"mb-4\">C'est pourquoi nous vous convions le Jeudi 3 Avril pour un Tech PAF avec nos amis de l'AFUP, l'Association des Utilisateurs Français de PHP au Pub O'Clock.</p>\n<p class=\"mb-4\">Quoi de mieux que de commencer le mois d'Avril en venant rencontrer des profils passionnants ou des pairs qui utilisent un langage différent.</p>\n<p class=\"mb-4\">Toujours pour créer des rencontres, des synergies et parce que ça faisait depuis longtemps que nous voulions organiser des évènements avec nos amis de l'AFUP !</p>\n<p class=\"mb-4\">Venez échanger à bâton rompu sur vos interrogations du moment, tech ou non, et passer un bon moment après votre journée de travail !</p>\n<p class=\"mb-4\">Le réseautage, c'est aussi des affaires !<br>\nVous le savez, pas d'hyprocrisies chez JS&amp;Co alors n'hésitez pas à venir proposer vos services ou acheter des prestations ou rencontrer des candidats ou recruteurs, nos évènements servent à cela.</p>\n<p class=\"mb-4\">Si tout ceci vous parle,<br>\nvenez parler boutique à</p>\n<p class=\"mb-4\">LA SOIRÉE RECONCIL !<br>\n(tatataaaaa)</p>\n<p class=\"mb-4\">Jeudi 3 avril<br>\nPub O'Clock<br>\n18h30</p>\n<p class=\"mb-4\">À bientôt les amis !<br>\nL'équipe de JS&amp;Co - Jérémy Simonklein &amp; Simon Faux</p>",
+    "TextDescription": "Nous n'avons pas le même langage, mais nous avons la même passion !\nJavascript, PHP, votre coeur balance ?\nPourquoi choisir quand nous sommes complémentaires ?\nC'est pourquoi nous vous convions le Jeudi 3 Avril pour un Tech PAF avec nos amis de l'AFUP, l'Association des Utilisateurs Français de PHP au Pub O'Clock.\nQuoi de mieux que de commencer le mois d'Avril en venant rencontrer des profils passionnants ou des pairs qui utilisent un langage différent.\nToujours pour créer des rencontres, des synergies et parce que ça faisait depuis longtemps que nous voulions organiser des évènements avec nos amis de l'AFUP !\nVenez échanger à bâton rompu sur vos interrogations du moment, tech ou non, et passer un bon moment après votre journée de travail !\nLe réseautage, c'est aussi des affaires !\nVous le savez, pas d'hyprocrisies chez JS&Co alors n'hésitez pas à venir proposer vos services ou acheter des prestations ou rencontrer des candidats ou recruteurs, nos évènements servent à cela.\nSi tout ceci vous parle,\nvenez parler boutique à\nLA SOIRÉE RECONCIL !\n(tatataaaaa)\nJeudi 3 avril\nPub O'Clock\n18h30\nÀ bientôt les amis !\nL'équipe de JS&Co - Jérémy Simonklein & Simon Faux",
+    "VenueName": "Pub O'Clock",
+    "VenueAddr": "21 Boulevard de Strasbourg, 31000 Toulouse Toulouse",
+    "Latitude": 43.606956,
+    "Longitude": 1.447069,
+    "LocalImgSrc": "event-imgs/meetup-306364724.webp"
+  },
+  {
     "Id": "meetup-306513726",
     "PublishedOn": "2025-03-08T18:00:00+02:00",
     "Href": "https://www.meetup.com/fr-FR/agile-toulouse/events/306513726/",
