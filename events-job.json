@@ -3154,6 +3154,25 @@
     "LocalImgSrc": "event-imgs/meetup-306435624.webp"
   },
   {
+    "Id": "tgd-2025-03-20",
+    "PublishedOn": "2025-03-12T10:19:39.8386379+00:00",
+    "Href": "https://toulousegamedev.fr/evenements/",
+    "Title": "Meet-up de Mars",
+    "Start": "2025-03-20T18:30:00+01:00",
+    "ImgSrc": "https://toulousegamedev.fr/wp-content/uploads/2025/03/20-03-25_carre.png",
+    "Group": "Toulouse Game Dev",
+    "GroupId": "tgd",
+    "Duration": "04:00:00",
+    "FullImgSrc": null,
+    "HtmlDescription": "<p>Ce mois-ci nous accueillons le compositeur de la musique de Split Brain : <strong>Masami Komuro.</strong></p>\n<p><br>Masami abordera les contraintes qui ont induit le design des sons créés spécialement pour la musique de ce jeu Split Brain.</p>\n<p><br>Ce sera également l’occasion pour Masami de revenir sur d’autres de ses projets dans lesquels il a conçu des timbres sonores spécifiques, et d’expliquer en quoi le design sonore pour la musique fait partie intégrante de l’identité du jeu.</p>\n<p>La page du jeu : <a href=\"https://store.steampowered.com/app/3156640/Split_Brain/\">Split Brain </a></p>\n<p>Le planning du Meet-up sera le suivant :<br><strong>18h30</strong> : Accueil des personnes ne connaissant pas le TGD</p>\n<p><strong>18h45 </strong>: Ouverture des portes<br><strong>19h00</strong>: Lancement de la session <strong>Open Mics</strong><br><strong>19h15</strong> : Début de de la conférence</p>\n<p>En direct sur la chaine Twitch du TGD à 19h00 : <a rel=\"noreferrer noopener\" href=\"https://www.twitch.tv/toulousegamedev\" target=\"_blank\">ici</a></p>",
+    "TextDescription": null,
+    "VenueName": null,
+    "VenueAddr": null,
+    "Latitude": null,
+    "Longitude": null,
+    "LocalImgSrc": "event-imgs/tgd-2025-03-20.png"
+  },
+  {
     "Id": "meetup-306253496",
     "PublishedOn": "2025-03-06T09:22:50.6740709+00:00",
     "Href": "https://www.meetup.com/fr-FR/agile-toulouse/events/306253496/",
