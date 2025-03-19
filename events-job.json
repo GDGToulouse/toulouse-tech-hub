@@ -3304,5 +3304,24 @@
     "Latitude": null,
     "Longitude": null,
     "LocalImgSrc": "event-imgs/meetup-306513726.webp"
+  },
+  {
+    "Id": "meetup-306803179",
+    "PublishedOn": "2025-03-19T09:24:02.5929568+00:00",
+    "Href": "https://www.meetup.com/fr-FR/meetup-visualisation-des-donnees-toulouse/events/306803179/",
+    "Title": "animint2 dans R pour les graphiques interactifs",
+    "Start": "2025-04-10T19:00:00+02:00",
+    "ImgSrc": "https://secure.meetupstatic.com/photos/event/1/5/9/1/event_526865521.webp",
+    "Group": "Meetup Toulouse-DataViz",
+    "GroupId": "dataviz",
+    "Duration": null,
+    "FullImgSrc": "https://secure.meetupstatic.com/photos/event/1/5/9/1/600_526865521.webp?w=750",
+    "HtmlDescription": "<p class=\"mb-4\">Dans la visualisation de données, les graphiques interactifs permettent de cliquer sur des éléments d’un graphique, pour ensuite changer ce qui est affiché dans un autre graphique. Ils sont utiles pour l’enseignement et la recherche, mais ils sont souvent difficiles à créer. Ici, le <a href=\"https://github.com/animint/animint2\" target=\"_blank\" class=\"!text-viridian\" rel=\"nofollow ugc\">package R animint2</a> est proposé pour la création rapide des graphiques interactifs, en utilisant la méthode “grammaire de graphiques” qui a été popularisé par ggplot2 pour les graphiques non interactifs. animint2 est un logiciel mature, développé depuis 2013, disponible sur CRAN, avec beaucoup de documentation. Dans cette présentation je vais expliquer comment vous pouvez utiliser animint2 pour créer et partager les graphiques interactifs.</p>\n<p class=\"mb-4\"><a href=\"http://tdhock.github.io/\" target=\"_blank\" class=\"!text-viridian\" rel=\"nofollow ugc\">Toby Dylan Hocking</a>, originaire de Californie, a obtenu un doctorat en mathématiques à l'École normale supérieure de Cachan en 2012. Après avoir été Assistant Professor à Northern Arizona University (2018-2024), il est maintenant professeur agrégé à l'Université de Sherbrooke, où il dirige le laboratoire LASSO. Spécialiste en apprentissage automatique et logiciels statistiques, il a publié plus de 40 articles et développé de nombreux paquets R. Il a encadré plus de 30 étudiants en recherche et contribué au projet R via le Google Summer of Code.</p>\n<p class=\"mb-4\"><strong>Présentiel et online</strong> : <a href=\"https://us06web.zoom.us/j/87904464196\" target=\"_blank\" class=\"!text-viridian\" rel=\"nofollow ugc\">https://us06web.zoom.us/j/87904464196</a></p>",
+    "TextDescription": "Dans la visualisation de données, les graphiques interactifs permettent de cliquer sur des éléments d’un graphique, pour ensuite changer ce qui est affiché dans un autre graphique. Ils sont utiles pour l’enseignement et la recherche, mais ils sont souvent difficiles à créer. Ici, le package R animint2 est proposé pour la création rapide des graphiques interactifs, en utilisant la méthode “grammaire de graphiques” qui a été popularisé par ggplot2 pour les graphiques non interactifs. animint2 est un logiciel mature, développé depuis 2013, disponible sur CRAN, avec beaucoup de documentation. Dans cette présentation je vais expliquer comment vous pouvez utiliser animint2 pour créer et partager les graphiques interactifs.\nToby Dylan Hocking, originaire de Californie, a obtenu un doctorat en mathématiques à l'École normale supérieure de Cachan en 2012. Après avoir été Assistant Professor à Northern Arizona University (2018-2024), il est maintenant professeur agrégé à l'Université de Sherbrooke, où il dirige le laboratoire LASSO. Spécialiste en apprentissage automatique et logiciels statistiques, il a publié plus de 40 articles et développé de nombreux paquets R. Il a encadré plus de 30 étudiants en recherche et contribué au projet R via le Google Summer of Code.\nPrésentiel et online : https://us06web.zoom.us/j/87904464196",
+    "VenueName": "Etincelle Coworking - Alsace-Lorraine",
+    "VenueAddr": "36 Rue d'Alsace Lorraine Toulouse",
+    "Latitude": 43.605507,
+    "Longitude": 1.445923,
+    "LocalImgSrc": "event-imgs/meetup-306803179.webp"
   }
 ]
