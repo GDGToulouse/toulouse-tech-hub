@@ -3306,6 +3306,25 @@
     "LocalImgSrc": "event-imgs/meetup-306513726.webp"
   },
   {
+    "Id": "meetup-306826511",
+    "PublishedOn": "2025-03-20T17:20:48.0194646+00:00",
+    "Href": "https://www.meetup.com/fr-FR/latoulboxducloudnatif/events/306826511/",
+    "Title": "LLM self-hosted, Kube/BATS et Talos Linux ça vous parle ?",
+    "Start": "2025-04-10T18:30:00+02:00",
+    "ImgSrc": "https://secure.meetupstatic.com/photos/event/5/b/7/3/event_526883411.webp",
+    "Group": "La \"Toul Box\" du Cloud Natif",
+    "GroupId": "toulbox",
+    "Duration": null,
+    "FullImgSrc": "https://secure.meetupstatic.com/photos/event/5/b/7/3/600_526883411.webp?w=750",
+    "HtmlDescription": "<p class=\"mb-4\"><strong>Talk #1</strong><br>\n<strong>De OpenAI jusqu'au salon : retour d'expérience sur la création d'un LLM self-hosted</strong><br>\nComment j'ai créé mon propre LLM self-hosted dans mon salon : retour d'expérience sur la création d'un d'un assistant AI en quelques mois, avec des outils et une infrastructure DIY<br>\n<em><strong>Par Bastien Vidé</strong></em></p>\n<p class=\"mb-4\"><strong>Talk #2</strong><br>\n<strong>\"J’ai testé ma plateforme.</strong><br>\nJ'ai déployé ma plateforme. Tout semblait OK.<br>\nJe me suis dit : faudrait tester. J’aime pas tester.<br>\nJ’ai cherché un outil. J’ai trouvé BATS.<br>\nC’est du Bash. J’aime bien le Bash.<br>\nJ’ai écrit des tests. Je les ai lancés. Ça marchait.<br>\nPas de Python. Pas de galère.<br>\nBref. J’ai testé ma plateforme.\"<br>\n<em><strong>Par Laura Bertrand</strong></em></p>\n<p class=\"mb-4\"><strong>Talk #3</strong><br>\n<strong>1 Jour, 1 Question – Pourquoi Talos Linux révolutionne Kubernetes ?</strong><br>\nParticipez à une démo de Talos et découvrez comment cet outil répond aux défis incontournables du déploiement d'un cluster Kubernetes.<br>\n<em><strong>Par Frédéric Martin</strong></em></p>\n<p class=\"mb-4\">Et bien évidemment après tout ça, notre fameux apéro pizzas histoire de faire connaissance.</p>\n<p class=\"mb-4\">Ô Local accueille l'exposition \"l'entreprise illustrée\" et vous convie aussi à son vernissage après l'événement si vous le souhaitez.<br>\nJean Lecourieux-Bory est un ancien industriel. Il s’est reconverti dans la photographie en 2013 en réalisant son premier portfolio « Petit Patron » sur les chefs d’entreprise en difficulté, il est toujours d’actualité…</p>\n<p class=\"mb-4\">\"L'entreprise Illustrée\" est son dernier travail, il est basé sur la mise en images de citations, aphorismes et maximes ayant un lien avec le monde de l’entreprise.</p>",
+    "TextDescription": "Talk #1\nDe OpenAI jusqu'au salon : retour d'expérience sur la création d'un LLM self-hosted\nComment j'ai créé mon propre LLM self-hosted dans mon salon : retour d'expérience sur la création d'un d'un assistant AI en quelques mois, avec des outils et une infrastructure DIY\nPar Bastien Vidé\nTalk #2\n\"J’ai testé ma plateforme.\nJ'ai déployé ma plateforme. Tout semblait OK.\nJe me suis dit : faudrait tester. J’aime pas tester.\nJ’ai cherché un outil. J’ai trouvé BATS.\nC’est du Bash. J’aime bien le Bash.\nJ’ai écrit des tests. Je les ai lancés. Ça marchait.\nPas de Python. Pas de galère.\nBref. J’ai testé ma plateforme.\"\nPar Laura Bertrand\nTalk #3\n1 Jour, 1 Question – Pourquoi Talos Linux révolutionne Kubernetes ?\nParticipez à une démo de Talos et découvrez comment cet outil répond aux défis incontournables du déploiement d'un cluster Kubernetes.\nPar Frédéric Martin\nEt bien évidemment après tout ça, notre fameux apéro pizzas histoire de faire connaissance.\nÔ Local accueille l'exposition \"l'entreprise illustrée\" et vous convie aussi à son vernissage après l'événement si vous le souhaitez.\nJean Lecourieux-Bory est un ancien industriel. Il s’est reconverti dans la photographie en 2013 en réalisant son premier portfolio « Petit Patron » sur les chefs d’entreprise en difficulté, il est toujours d’actualité…\n\"L'entreprise Illustrée\" est son dernier travail, il est basé sur la mise en images de citations, aphorismes et maximes ayant un lien avec le monde de l’entreprise.",
+    "VenueName": "8 Imp. Bonnet",
+    "VenueAddr": "8 Imp. Bonnet Toulouse",
+    "Latitude": 43.599613,
+    "Longitude": 1.457047,
+    "LocalImgSrc": "event-imgs/meetup-306826511.webp"
+  },
+  {
     "Id": "meetup-306803179",
     "PublishedOn": "2025-03-19T09:24:02.5929568+00:00",
     "Href": "https://www.meetup.com/fr-FR/meetup-visualisation-des-donnees-toulouse/events/306803179/",
