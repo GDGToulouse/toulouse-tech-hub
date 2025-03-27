@@ -3306,6 +3306,25 @@
     "LocalImgSrc": "event-imgs/meetup-306513726.webp"
   },
   {
+    "Id": "meetup-305897764",
+    "PublishedOn": "2025-03-27T09:23:03.5876275+00:00",
+    "Href": "https://www.meetup.com/fr-FR/agile-toulouse/events/305897764/",
+    "Title": "\uD83C\uDF7B Bière Agile - Agilité et IA ?",
+    "Start": "2025-04-08T18:30:00+02:00",
+    "ImgSrc": "https://secure.meetupstatic.com/photos/event/6/e/2/9/event_525988201.webp",
+    "Group": "Agile Toulouse",
+    "GroupId": "agile",
+    "Duration": null,
+    "FullImgSrc": "https://secure.meetupstatic.com/photos/event/6/e/2/9/600_525988201.webp?w=750",
+    "HtmlDescription": "<p class=\"mb-4\">\uD83C\uDF7B La bière Agile est toujours au rendez-vous !</p>\n<p class=\"mb-4\">\uD83D\uDC4B Agile Toulouse vous propose de venir échanger autour d'une bière (ou autre) une fois par mois à partir de 18h30 aux Halles de la Transition.</p>\n<p class=\"mb-4\">\uD83D\uDCCD Le bar est situé au <a href=\"http://%5Bhttps://www.google.com/maps/place//data=%5D(https://www.google.com/maps/place//data=)!4m2!3m1!1s0x12aebba55bacefef:0x8ba0091967492853?sa=X&amp;ved=1t:8290&amp;ictx=111\" target=\"_blank\" class=\"!text-viridian\" rel=\"ugc\">7 Rue du Canon d'Arcole, 31000 Toulouse</a><br>\nVu la taille du bar, qui permet de bien s'entendre en parlant, nous limitons les places à 16.</p>\n<p class=\"mb-4\">\uD83E\uDD13 C'est un événement à destination de tous les profils (plus ou moins expérimentés, plus ou moins dans l'agilité, plus ou moins dans l'informatique…bref vous avez compris l'idée :) ).</p>\n<p class=\"mb-4\">⚠️ Nous demanderons aux participants d'être membre de l'association. Pour rappel, c'est gratuit et faisable ici en 1 minute sur téléphone : <a href=\"https://www.helloasso.com/associations/agile-toulouse/adhesions/adhesion-agile-toulouse-1\" target=\"_blank\" class=\"!text-viridian\" rel=\"nofollow ugc\">https://www.helloasso.com/associations/agile-toulouse/adhesions/adhesion-agile-toulouse-1</a></p>\n<p class=\"mb-4\">\uD83D\uDDEB Les sujets de discussion pourront suivre un thème (plus ou moins) mais libre à chacun d'introduire son sujet - cette fois-ci, on pourra discuter de l'opportunité ou la menace que peut apporter l'IA dans le monde de l'Agilité ... ou nous pouvons parler de tout autre chose qui pique votre intérêt :)</p>\n<p class=\"mb-4\">\uD83C\uDFAFL'objectif étant de passer un bon moment, d'échanger librement et de repartir avec le sourire et des nouvelles idées en tête</p>\n<p class=\"mb-4\">Si vous êtes inscrits mais que cela n'est plus possible pour vous de venir, merci de vous désinscrire pour laisser la place à ceux en liste d'attente.</p>\n<p class=\"mb-4\">Bonne journée !<br>\nSarah &amp; Agile Toulouse</p>",
+    "TextDescription": "\uD83C\uDF7B La bière Agile est toujours au rendez-vous !\n\uD83D\uDC4B Agile Toulouse vous propose de venir échanger autour d'une bière (ou autre) une fois par mois à partir de 18h30 aux Halles de la Transition.\n\uD83D\uDCCD Le bar est situé au 7 Rue du Canon d'Arcole, 31000 Toulouse\nVu la taille du bar, qui permet de bien s'entendre en parlant, nous limitons les places à 16.\n\uD83E\uDD13 C'est un événement à destination de tous les profils (plus ou moins expérimentés, plus ou moins dans l'agilité, plus ou moins dans l'informatique…bref vous avez compris l'idée :) ).\n⚠️ Nous demanderons aux participants d'être membre de l'association. Pour rappel, c'est gratuit et faisable ici en 1 minute sur téléphone : https://www.helloasso.com/associations/agile-toulouse/adhesions/adhesion-agile-toulouse-1\n\uD83D\uDDEB Les sujets de discussion pourront suivre un thème (plus ou moins) mais libre à chacun d'introduire son sujet - cette fois-ci, on pourra discuter de l'opportunité ou la menace que peut apporter l'IA dans le monde de l'Agilité ... ou nous pouvons parler de tout autre chose qui pique votre intérêt :)\n\uD83C\uDFAFL'objectif étant de passer un bon moment, d'échanger librement et de repartir avec le sourire et des nouvelles idées en tête\nSi vous êtes inscrits mais que cela n'est plus possible pour vous de venir, merci de vous désinscrire pour laisser la place à ceux en liste d'attente.\nBonne journée !\nSarah & Agile Toulouse",
+    "VenueName": "Les halles de la transition",
+    "VenueAddr": "Rue du canon d'arcole, Toulouse",
+    "Latitude": 43.61285,
+    "Longitude": 1.435785,
+    "LocalImgSrc": "event-imgs/meetup-305897764.webp"
+  },
+  {
     "Id": "meetup-306826511",
     "PublishedOn": "2025-03-20T17:20:48.0194646+00:00",
     "Href": "https://www.meetup.com/fr-FR/latoulboxducloudnatif/events/306826511/",
@@ -3342,5 +3361,24 @@
     "Latitude": 43.605507,
     "Longitude": 1.445923,
     "LocalImgSrc": "event-imgs/meetup-306803179.webp"
+  },
+  {
+    "Id": "meetup-306950448",
+    "PublishedOn": "2025-03-27T09:22:23.3133494+00:00",
+    "Href": "https://www.meetup.com/fr-FR/gdg-toulouse/events/306950448/",
+    "Title": "Deviens Conférencier au DevFest",
+    "Start": "2025-04-28T19:00:00+02:00",
+    "ImgSrc": "https://secure.meetupstatic.com/photos/event/7/f/d/4/event_527012724.webp",
+    "Group": "GDG Toulouse",
+    "GroupId": "gdg",
+    "Duration": null,
+    "FullImgSrc": "https://secure.meetupstatic.com/photos/event/7/f/d/4/600_527012724.webp?w=750",
+    "HtmlDescription": "<p class=\"mb-4\">✨ Un meetup un peu particulier pour fêter le lancement du call-for-paper du DevFest Toulouse : comment devenir conférencier dans un évènement ?</p>\n<p class=\"mb-4\">\uD83D\uDD0D Vous travaillez dans la tech, vous êtes sur le terrain, vous avez vu les programmes de conférences locales ou de meetups, et vous vous êtes déjà dit : « Non, mon sujet n'est pas assez intéressant pour être présenté », « Je ne suis pas légitime par rapport à d'autres », « Je ne sais pas comment candidater » ? Et bien vous avez tout faux, et on va vous le prouver.</p>\n<p class=\"mb-4\">\uD83C\uDF89 Une soirée spéciale animée par 3 meetups toulousains : le <strong>GDG</strong> (Google Developer Group), le <strong>JUG</strong> (Java User Group) et <strong>MTG</strong> (Microsoft Tech Group) et des représentants des 4 conférences tech majeures toulousaines : Le <strong>DevFest Toulouse</strong>, Le <strong>Capitole du Libre</strong>, <strong>Cloud Toulouse</strong> et <strong>Agile Tour Toulouse</strong>.</p>\n<p class=\"mb-4\">❓ Après une présentation des conférences et de leur format, <strong>Sylvain Wallez</strong>, conférencier expérimenté et responsable du jury du <strong>DevFest Toulouse</strong> vous parlera du fonctionnement des candidatures, ce qu'est un CFP (Call For Paper) et pourquoi et comment présenter vos sujets pour vous assurer d'être bien pris en compte.</p>\n<p class=\"mb-4\">\uD83E\uDDD1‍\uD83C\uDF93 Viendront ensuite des <strong>retours d'expérience</strong> sur le terrain de conférenciers qui eux aussi ont dû être convaincus qu'ils avaient bien leur place dans ces évènements. Plusieurs intervenants se succèderont pour répondre à vos questions et donner quelques conseils.</p>\n<p class=\"mb-4\">\uD83C\uDF55 Et enfin nous vous proposons <strong>un temps d'échange</strong> autour de la sacro-sainte pizza et autre breuvage houblonné entre conférenciers et participants pour discuter de nos expériences personnelles et vous convaincre de proposer vos sujets dans toutes les conférences toulousaines.</p>\n<p class=\"mb-4\">À très vite !</p>",
+    "TextDescription": "✨ Un meetup un peu particulier pour fêter le lancement du call-for-paper du DevFest Toulouse : comment devenir conférencier dans un évènement ?\n\uD83D\uDD0D Vous travaillez dans la tech, vous êtes sur le terrain, vous avez vu les programmes de conférences locales ou de meetups, et vous vous êtes déjà dit : « Non, mon sujet n'est pas assez intéressant pour être présenté », « Je ne suis pas légitime par rapport à d'autres », « Je ne sais pas comment candidater » ? Et bien vous avez tout faux, et on va vous le prouver.\n\uD83C\uDF89 Une soirée spéciale animée par 3 meetups toulousains : le GDG (Google Developer Group), le JUG (Java User Group) et MTG (Microsoft Tech Group) et des représentants des 4 conférences tech majeures toulousaines : Le DevFest Toulouse, Le Capitole du Libre, Cloud Toulouse et Agile Tour Toulouse.\n❓ Après une présentation des conférences et de leur format, Sylvain Wallez, conférencier expérimenté et responsable du jury du DevFest Toulouse vous parlera du fonctionnement des candidatures, ce qu'est un CFP (Call For Paper) et pourquoi et comment présenter vos sujets pour vous assurer d'être bien pris en compte.\n\uD83E\uDDD1‍\uD83C\uDF93 Viendront ensuite des retours d'expérience sur le terrain de conférenciers qui eux aussi ont dû être convaincus qu'ils avaient bien leur place dans ces évènements. Plusieurs intervenants se succèderont pour répondre à vos questions et donner quelques conseils.\n\uD83C\uDF55 Et enfin nous vous proposons un temps d'échange autour de la sacro-sainte pizza et autre breuvage houblonné entre conférenciers et participants pour discuter de nos expériences personnelles et vous convaincre de proposer vos sujets dans toutes les conférences toulousaines.\nÀ très vite !",
+    "VenueName": "HarryCow Coworking",
+    "VenueAddr": "13 Rue Sainte-Ursule Toulouse",
+    "Latitude": 43.602283,
+    "Longitude": 1.441679,
+    "LocalImgSrc": "event-imgs/meetup-306950448.webp"
   }
 ]
