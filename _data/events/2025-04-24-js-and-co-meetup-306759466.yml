@@ -8,7 +8,7 @@ timeFr: '18:30'
 place: "La Cantine Toulouse"
 placeAddr: "27 rue d’Aubuisson Toulouse"
 link: https://www.meetup.com/fr-FR/javascript-and-co/events/306759466/
-img: https://secure.meetupstatic.com/photos/event/b/c/4/d/600_527028205.webp?w=750
+img: https://secure.meetupstatic.com/photos/event/b/c/4/d/highres_527028205.webp?w=750
 localImg: event-imgs/meetup-306759466.webp
 description: >
   <p class="mb-4">Il y a du nouveau dans le langage Javascript avec ce framework fullstack.</p>
