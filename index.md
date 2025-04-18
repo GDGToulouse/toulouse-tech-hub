@@ -190,12 +190,13 @@ layout: default
         <a href="https://capitoledulibre.org/"><img width="100%" style="aspect-ratio: 16/9" src="{{ site.baseurl }}/confs-imgs/capitole-du-libre.jpg" /></a>
         <div class="card-body">
           <a href="https://capitoledulibre.org/" class="muted">
-            <h5 class="card-title">Date à venir...</h5>
+            <h5 class="card-title">15 et 16 novembre 2025</h5>
           </a>
           <div class="d-flex align-items-left">
             <a href="https://capitoledulibre.org/" title="Site Officiel" class="mx-1 link-secondary"><i class="bi bi-globe"></i></a>
             <a href="https://linkedin.com/company/capitole-du-libre" title="Page LinkedIn" class="mx-1 link-secondary"><i class="bi bi-linkedin"></i></a>
-            <a href="https://framapiaf.org/@capitoledulibre" title="Page Bluesky" class="mx-1 link-secondary"><i class="bi bi-mastodon"></i></a>
+            <a href="https://framapiaf.org/@capitoledulibre" title="Page Mastodon" class="mx-1 link-secondary"><i class="bi bi-mastodon"></i></a>
+            <a href="https://bsky.app/profile/capitoledulibre.org" title="Page Bluesky" class="mx-1 link-secondary"><i class="bi bi-stars"></i></a>
             <a href="https://x.com/capitoledulibre" title="Page X / Twitter" class="mx-1 link-secondary"><i class="bi bi-twitter-x"></i></a>
           </div>
         </div>
