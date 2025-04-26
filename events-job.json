@@ -3556,20 +3556,20 @@
     "Id": "meetup-306422374",
     "PublishedOn": "2025-04-18T11:57:04.62678+00:00",
     "Href": "https://www.meetup.com/fr-FR/artilect-fablab/events/306422374/",
-    "Title": "Meetup IA: Masterclass AIDER - Les techniques pour faire du bon code par IA",
+    "Title": "Meetup IA: Masterclass AIDER - Les techniques pour faire du bon code avec l'IA",
     "Start": "2025-05-12T19:00:00+02:00",
-    "ImgSrc": null,
+    "ImgSrc": "https://secure.meetupstatic.com/photos/event/d/7/2/4/event_527575076.webp",
     "Group": "Artilect : FabLab, Coworking, FabCafé",
     "GroupId": "artilect",
     "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": "<p class=\"mb-4\">Le FabLab Artilect vous invite au Meetup IA:</p>\n<p class=\"mb-4\">Ce mois-ci nous alons voir les techniques pour d'utilisation de Aider outil de terminal extrement performant de coding IA ou \"vibe codding\"</p>\n<p class=\"mb-4\">Cette session est un peu plus avancee que d'habitude, et oriente vers des presonnes interessees par la programmation.</p>\n<p class=\"mb-4\">Il y aura deux invité surprise pour pouvoir vous montrer les differentres facons d'utiliser Aider...</p>\n<p class=\"mb-4\">Venez avec votre PC et si possible:<br>\n- instalez Aider: https://github.com/Aider-AI/aider<br>\n- obtenez une clef API de Gemini: https://umatechnology.org/how-to-access-and-use-google-gemini-api-key-with-examples/</p>",
-    "TextDescription": "Le FabLab Artilect vous invite au Meetup IA:\nCe mois-ci nous alons voir les techniques pour d'utilisation de Aider outil de terminal extrement performant de coding IA ou \"vibe codding\"\nCette session est un peu plus avancee que d'habitude, et oriente vers des presonnes interessees par la programmation.\nIl y aura deux invité surprise pour pouvoir vous montrer les differentres facons d'utiliser Aider...\nVenez avec votre PC et si possible:\n- instalez Aider: https://github.com/Aider-AI/aider\n- obtenez une clef API de Gemini: https://umatechnology.org/how-to-access-and-use-google-gemini-api-key-with-examples/",
+    "FullImgSrc": "https://secure.meetupstatic.com/photos/event/d/7/2/4/highres_527575076.webp?w=750",
+    "HtmlDescription": "<p class=\"mb-4\">Le FabLab Artilect est heureux de vous convier à son prochain Meetup dédié à l'Intelligence Artificielle !<br>\nCe mois-ci, nous plongeons dans les <strong>techniques d'utilisation d'Aider</strong>, un outil de programation assisté par IA extrêmement performant, qui fonctionne directement depuis votre terminal. On va decouvrir comment cet outil peut accélérer et améliorer le flux de travail en développement.<br>\n<strong>Attention :</strong> Cette session sera un peu plus technique que nos rencontres habituelles. Elle s'adresse particulièrement aux <strong>développeurs, étudiants en informatique, et à toute personne intéressée par la programmation</strong> et souhaitant explorer le potentiel du \"pair programming\" avec une IA.<br>\nPour rendre cette exploration encore plus riche, nous aurons le plaisir d'accueillir <strong>deux invités qui utilisent Aider professionelement</strong>!<br>\nIls partageront leurs expériences et vous dévoileront différentes approches et astuces pour tirer le meilleur parti d'Aider au quotidien.<br>\n<strong>Préparez votre session :</strong><br>\nSi possible venez avec votre <strong>ordinateur portable</strong> pour pouvoir expérimenter en direct. Pour une expérience optimale, nous vous recommandons ces deux etapes de preparation :</p>\n<ol class=\"pl-5 list-decimal mb-4\">\n<li><strong>Installer Aider</strong> en suivant les instructions ici : <a href=\"https://github.com/Aider-AI/aider\" target=\"_blank\" class=\"!text-viridian\" rel=\"nofollow ugc\">https://github.com/Aider-AI/aider</a></li>\n<li><strong>Obtenir une clé API Gemini</strong> (Google AI) via ce lien : <a href=\"https://aistudio.google.com/app/apikey\" target=\"_blank\" class=\"!text-viridian\" rel=\"ugc\">https://aistudio.google.com/app/apikey</a></li>\n</ol>",
+    "TextDescription": "Le FabLab Artilect est heureux de vous convier à son prochain Meetup dédié à l'Intelligence Artificielle !\nCe mois-ci, nous plongeons dans les techniques d'utilisation d'Aider, un outil de programation assisté par IA extrêmement performant, qui fonctionne directement depuis votre terminal. On va decouvrir comment cet outil peut accélérer et améliorer le flux de travail en développement.\nAttention : Cette session sera un peu plus technique que nos rencontres habituelles. Elle s'adresse particulièrement aux développeurs, étudiants en informatique, et à toute personne intéressée par la programmation et souhaitant explorer le potentiel du \"pair programming\" avec une IA.\nPour rendre cette exploration encore plus riche, nous aurons le plaisir d'accueillir deux invités qui utilisent Aider professionelement!\nIls partageront leurs expériences et vous dévoileront différentes approches et astuces pour tirer le meilleur parti d'Aider au quotidien.\nPréparez votre session :\nSi possible venez avec votre ordinateur portable pour pouvoir expérimenter en direct. Pour une expérience optimale, nous vous recommandons ces deux etapes de preparation :\n\nInstaller Aider en suivant les instructions ici : https://github.com/Aider-AI/aider\nObtenir une clé API Gemini (Google AI) via ce lien : https://aistudio.google.com/app/apikey\n",
     "VenueName": "Artilect FabLab Toulouse",
     "VenueAddr": "10 Rue Tripière Toulouse",
     "Latitude": 43.60174,
     "Longitude": 1.442948,
-    "LocalImgSrc": null
+    "LocalImgSrc": "event-imgs/meetup-306422374.webp"
   },
   {
     "Id": "meetup-307351763",
@@ -3608,5 +3608,24 @@
     "Latitude": null,
     "Longitude": null,
     "LocalImgSrc": "event-imgs/meetup-307289521.webp"
+  },
+  {
+    "Id": "meetup-lkmdrtyhcjbmb",
+    "PublishedOn": "2025-04-26T09:22:13.6337726+00:00",
+    "Href": "https://www.meetup.com/fr-FR/artilect-fablab/events/lkmdrtyhcjbmb/",
+    "Title": "Meetup IA: Un sujet Facinant sur l'IA",
+    "Start": "2025-06-09T19:00:00+02:00",
+    "ImgSrc": "https://secure.meetupstatic.com/photos/event/d/7/2/4/event_527575076.webp",
+    "Group": "Artilect : FabLab, Coworking, FabCafé",
+    "GroupId": "artilect",
+    "Duration": null,
+    "FullImgSrc": "https://secure.meetupstatic.com/photos/event/d/7/2/4/highres_527575076.webp?w=750",
+    "HtmlDescription": "<p class=\"mb-4\">Le FabLab Artilect est heureux de vous convier à son prochain Meetup dédié à l'Intelligence Artificielle !<br>\nCe mois-ci, nous plongeons dans un sujet a definir...</p>",
+    "TextDescription": "Le FabLab Artilect est heureux de vous convier à son prochain Meetup dédié à l'Intelligence Artificielle !\nCe mois-ci, nous plongeons dans un sujet a definir...",
+    "VenueName": "Artilect FabLab Toulouse",
+    "VenueAddr": "10 Rue Tripière Toulouse",
+    "Latitude": 43.60174,
+    "Longitude": 1.442948,
+    "LocalImgSrc": "event-imgs/meetup-lkmdrtyhcjbmb.webp"
   }
 ]
