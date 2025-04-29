@@ -1,0 +1,36 @@
+id: 'meetup-307529722'
+title: 'Soirée java.lang avec Rémi Forax'
+community: 'Toulouse Java User Group'
+datePublished: '2025-04-29 07:37'
+dateIso: '2025-05-20 19:00'
+dateFr: 'mardi 20 mai'
+timeFr: '19:00'
+place: "EPITECH - Amphi rez-de-chaussée"
+placeAddr: "40 Boulevard de la Marquette Toulouse"
+link: https://www.meetup.com/fr-FR/toulouse-java-user-group/events/307529722/
+img: https://secure.meetupstatic.com/photos/event/f/e/5/highres_527644069.webp?w=750
+localImg: event-imgs/meetup-307529722.webp
+description: >
+  <p class="mb-4">La prochaine soirée du Java User Group Toulousain aura lieu le <strong>mardi 20 mai à 19h</strong> chez <strong>Epitech</strong> <strong>Toulouse</strong>.</p>
+  <p class="mb-4"><strong>Rémi Forax</strong> nous fera le plaisir de revenir dans la ville rose nous parse de Java, des objets et de l'histoire du langage !</p>
+  <p class="mb-4">***</p>
+  <p class="mb-4"><strong>== Plongée dans l'histoire de <a href="http://java.lang" target="_blank" class="!text-viridian" rel="nofollow ugc">java.lang</a></strong><br>
+  Speaker : <strong>Rémi Forax</strong></p>
+  <p class="mb-4">Lorsque l'on alloue un objet en Java, en plus des champs, la machine virtuelle ajoute un "header" qui permet de répondre à des questions comme object.getClass() ou Thread.holdLock(object).</p>
+  <p class="mb-4">Je vous propose un talk sur l'histoire des versions Java depuis que Java est OpenSource jusqu'à nos jours (et un peu plus dans le future) à travers le header des objets.</p>
+  <p class="mb-4">En regardant les différentes implantations de ce header, on peut s'en servir comme proxy pour comprendre les péoccupations de la communauté Java à l'époque et comment les développeurs de la VM ont tenté d'y répondre.</p>
+  <p class="mb-4">***</p>
+  <p class="mb-4">Comme d'habitude, la soirée sera suivie d'un apéro (pizza, bières et softs) où nous pourrons nous retrouver pour réseauter et discuter de Java et d'autres sujets !</p>
+  <p class="mb-4">Et en parlant de sujets, notre CFP est ouvert 24h/24, 7j/7, toute l'année, n'hésitez pas à aller voter sur vos sujets préférés, proposer des idées, des thèmes et même proposer vos propres présentations !<br>
+  <strong><a href="https://bit.ly/toulousejug-cfp" target="_blank" class="!text-viridian" rel="nofollow ugc">https://bit.ly/toulousejug-cfp</a></strong></p>
+  <p class="mb-4">***</p>
+  <p class="mb-4">Merci à nos sponsors : <strong>MonkeyPatch</strong> et <strong>OpenAirlines</strong>.</p>
+  <p class="mb-4">***</p>
+  <p class="mb-4"><strong>Nous recherchons activement des volontaires pour s'impliquer dans l'organisation du JUG.</strong></p>
+  <p class="mb-4">Nos besoins :<br>
+  * Récupération et installation des pizzas/boissons ;<br>
+  * Aide à la planification des prochains sujets ;<br>
+  * Création de supports graphiques et visuels, communication ;<br>
+  * Gestion de la captation son/vidéo ;</p>
+  <p class="mb-4">Si un de ces sujets vous intéresse (ou d'autres), n'hésitez pas à nous contacter !</p>
+
