@@ -3610,6 +3610,25 @@
     "LocalImgSrc": "event-imgs/meetup-307529722.webp"
   },
   {
+    "Id": "meetup-307533011",
+    "PublishedOn": "2025-05-01T09:23:31.1760103+00:00",
+    "Href": "https://www.meetup.com/fr-FR/meetup-visualisation-des-donnees-toulouse/events/307533011/",
+    "Title": "Puissance et Rapidité de DuckDB en 2025",
+    "Start": "2025-05-22T19:00:00+02:00",
+    "ImgSrc": "https://secure.meetupstatic.com/photos/event/9/0/d/c/event_527677084.webp",
+    "Group": "Meetup Toulouse-DataViz",
+    "GroupId": "dataviz",
+    "Duration": null,
+    "FullImgSrc": "https://secure.meetupstatic.com/photos/event/9/0/d/c/highres_527677084.webp?w=750",
+    "HtmlDescription": "<p class=\"mb-4\">\uD83E\uDD86 <strong>DuckDB</strong> croit en popularité dans notre écosystème data, mais où peut-il être utilisé ? Après la présentation en 2023 par Eric Mauvière \"Avec DuckDB, gavez-vous d'open data\" voici une actualisation pour 2025 sur les usages de cette base de données analytique décoiffante par sa rapidité &amp; versatilité \uD83D\uDE80</p>\n<p class=\"mb-4\">\uD83C\uDF7D️ <strong>Au menu</strong> :</p>\n<ul class=\"pl-5 list-disc mb-4\">\n<li>Démocratiser des analyses exploratoires sans infrastructure</li>\n<li>Démo sur des diverses données (Vélos en libre services, Open Damir - actes de la sécurité sociale ...)</li>\n<li>Usages côté industrialisation (\"en prod\")</li>\n<li>S'interfacer avec nos BDD OLTP (transactionnelle)</li>\n<li>Accélérer/Optimiser nos flux de traitement de données</li>\n<li>ETL tout en SQL ? GCS - DuckDB - BigQuery</li>\n<li>Embarqué dans nos app web &amp; mobile (WASM)</li>\n<li>Démo projet Static BI de Paul Marcombes</li>\n</ul>\n<p class=\"mb-4\"><strong>Antoine Giraud</strong> est Expert data chez Keyrus</p>\n<p class=\"mb-4\"><strong>Présentiel et online</strong> : <a href=\"https://us06web.zoom.us/j/84007726428\" target=\"_blank\" class=\"!text-viridian\" rel=\"nofollow ugc\">https://us06web.zoom.us/j/84007726428</a></p>",
+    "TextDescription": "\uD83E\uDD86 DuckDB croit en popularité dans notre écosystème data, mais où peut-il être utilisé ? Après la présentation en 2023 par Eric Mauvière \"Avec DuckDB, gavez-vous d'open data\" voici une actualisation pour 2025 sur les usages de cette base de données analytique décoiffante par sa rapidité & versatilité \uD83D\uDE80\n\uD83C\uDF7D️ Au menu :\n\nDémocratiser des analyses exploratoires sans infrastructure\nDémo sur des diverses données (Vélos en libre services, Open Damir - actes de la sécurité sociale ...)\nUsages côté industrialisation (\"en prod\")\nS'interfacer avec nos BDD OLTP (transactionnelle)\nAccélérer/Optimiser nos flux de traitement de données\nETL tout en SQL ? GCS - DuckDB - BigQuery\nEmbarqué dans nos app web & mobile (WASM)\nDémo projet Static BI de Paul Marcombes\n\nAntoine Giraud est Expert data chez Keyrus\nPrésentiel et online : https://us06web.zoom.us/j/84007726428",
+    "VenueName": "Etincelle Coworking - Alsace-Lorraine",
+    "VenueAddr": "36 Rue d'Alsace Lorraine Toulouse",
+    "Latitude": 43.605507,
+    "Longitude": 1.445923,
+    "LocalImgSrc": "event-imgs/meetup-307533011.webp"
+  },
+  {
     "Id": "meetup-307533870",
     "PublishedOn": "2025-04-29T07:39:29.3414746+00:00",
     "Href": "https://www.meetup.com/fr-FR/artilect-fablab/events/307533870/",
