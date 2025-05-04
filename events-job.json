@@ -3686,6 +3686,25 @@
     "LocalImgSrc": "event-imgs/meetup-307289521.webp"
   },
   {
+    "Id": "meetup-307602307",
+    "PublishedOn": "2025-05-04T09:21:56.9014798+00:00",
+    "Href": "https://www.meetup.com/fr-FR/javascript-and-co/events/307602307/",
+    "Title": "Le Tech PAF de JS&Co - Juin au Black Owl",
+    "Start": "2025-06-05T18:30:00+02:00",
+    "ImgSrc": "https://secure.meetupstatic.com/photos/event/a/f/2/a/event_527744842.webp",
+    "Group": "Association JS & Co Toulouse",
+    "GroupId": "js-and-co",
+    "Duration": null,
+    "FullImgSrc": "https://secure.meetupstatic.com/photos/event/a/f/2/a/highres_527744842.webp?w=750",
+    "HtmlDescription": "<p class=\"mb-4\">Il est mort le soleil ?<br>\nNicoletta avait tord,<br>\nJS&amp;Co avait raison,<br>\nLe soleil est de retour et les terrasses aussi !<br>\nVoici venir le Tech PAF de juin !</p>\n<p class=\"mb-4\">Jeudi 5 Juin donc, venez profiter des soleils de printemps après une bonne journée à la terrasse du Black Owl !</p>\n<p class=\"mb-4\">Nous aurons le plaisir d'être reçus dans ce bar iconique du quartier Jean Jaures-Jeanne d'Arc où nous aurons la terrasse et un espace dédié au fond !</p>\n<p class=\"mb-4\">Au programme, alliez l'utile à l'agréable en rencontrant des professionnels passionnants tout en prenant le soleil.</p>\n<p class=\"mb-4\">On parlera boutique, technique, démarchage, stratégie, finance, publicité, logistique ou immobilier : des profils de tous les secteurs viennent partager des idées inspirantes !</p>\n<p class=\"mb-4\">JS&amp;Co, c'est de la bonne humeur et des relations mais c'est aussi du business. Si vous cherchez des prestataires ou proposez vos services, cherchez un job, une alternance ou un stage ! Vous êtes au bon endroit !</p>\n<p class=\"mb-4\">Porteurs de projets, recruteurs, venez rencontrer les talents d'aujourd'hui et de demain.</p>\n<p class=\"mb-4\">Vous n'êtes pas encore convaincus ? L'event est gratuit.</p>\n<p class=\"mb-4\">Rendez-vous donc :<br>\n- Jeudi 5 Juin<br>\n- Black Owl<br>\n-18h30</p>\n<p class=\"mb-4\">À bientôt chers amis,<br>\nl'équipe de JS&amp;Co - Jérémy Simonklein Angély &amp; Simon Faux</p>",
+    "TextDescription": "Il est mort le soleil ?\nNicoletta avait tord,\nJS&Co avait raison,\nLe soleil est de retour et les terrasses aussi !\nVoici venir le Tech PAF de juin !\nJeudi 5 Juin donc, venez profiter des soleils de printemps après une bonne journée à la terrasse du Black Owl !\nNous aurons le plaisir d'être reçus dans ce bar iconique du quartier Jean Jaures-Jeanne d'Arc où nous aurons la terrasse et un espace dédié au fond !\nAu programme, alliez l'utile à l'agréable en rencontrant des professionnels passionnants tout en prenant le soleil.\nOn parlera boutique, technique, démarchage, stratégie, finance, publicité, logistique ou immobilier : des profils de tous les secteurs viennent partager des idées inspirantes !\nJS&Co, c'est de la bonne humeur et des relations mais c'est aussi du business. Si vous cherchez des prestataires ou proposez vos services, cherchez un job, une alternance ou un stage ! Vous êtes au bon endroit !\nPorteurs de projets, recruteurs, venez rencontrer les talents d'aujourd'hui et de demain.\nVous n'êtes pas encore convaincus ? L'event est gratuit.\nRendez-vous donc :\n- Jeudi 5 Juin\n- Black Owl\n-18h30\nÀ bientôt chers amis,\nl'équipe de JS&Co - Jérémy Simonklein Angély & Simon Faux",
+    "VenueName": "The Black Owl pub",
+    "VenueAddr": "29 boulevard de Strasbourg TOULOUSE",
+    "Latitude": 43.607563,
+    "Longitude": 1.44645,
+    "LocalImgSrc": "event-imgs/meetup-307602307.webp"
+  },
+  {
     "Id": "meetup-lkmdrtyhcjbmb",
     "PublishedOn": "2025-04-26T09:22:13.6337726+00:00",
     "Href": "https://www.meetup.com/fr-FR/artilect-fablab/events/lkmdrtyhcjbmb/",
