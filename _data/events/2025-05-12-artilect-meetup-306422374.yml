@@ -15,8 +15,10 @@ description: >
   Ce mois-ci, nous plongeons dans les <strong>techniques d'utilisation d'Aider</strong>, un outil de programation assisté par IA extrêmement performant, qui fonctionne directement depuis votre terminal. On va decouvrir comment cet outil peut accélérer et améliorer le flux de travail en développement.<br>
   <strong>Attention :</strong> Cette session sera un peu plus technique que nos rencontres habituelles. Elle s'adresse particulièrement aux <strong>développeurs, étudiants en informatique, et à toute personne intéressée par la programmation</strong> et souhaitant explorer le potentiel du "pair programming" avec une IA.<br>
   Pour rendre cette exploration encore plus riche, nous aurons le plaisir d'accueillir <strong>deux invités qui utilisent Aider professionelement</strong>!<br>
-  Ils partageront leurs expériences et vous dévoileront différentes approches et astuces pour tirer le meilleur parti d'Aider au quotidien.<br>
-  <strong>Préparez votre session :</strong><br>
+  Ils partageront leurs expériences et vous dévoileront différentes approches et astuces pour tirer le meilleur parti d'Aider au quotidien.</p>
+  <p class="mb-4"><strong>Hans Rakotomanga:</strong> Data engineer chez Maxi Cofee a Bordeaux<br>
+  <strong>Jean-Claude Antonio:</strong> Developer Freelance a Paris</p>
+  <p class="mb-4"><strong>Préparez votre session :</strong><br>
   Si possible venez avec votre <strong>ordinateur portable</strong> pour pouvoir expérimenter en direct. Pour une expérience optimale, nous vous recommandons ces deux etapes de preparation :</p>
   <ol class="pl-5 list-decimal mb-4">
   <li><strong>Installer Aider</strong> en suivant les instructions ici : <a href="https://github.com/Aider-AI/aider" target="_blank" class="!text-viridian" rel="nofollow ugc">https://github.com/Aider-AI/aider</a></li>
