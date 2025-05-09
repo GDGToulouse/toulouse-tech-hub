@@ -3705,6 +3705,25 @@
     "LocalImgSrc": "event-imgs/meetup-307602307.webp"
   },
   {
+    "Id": "meetup-307723256",
+    "PublishedOn": "2025-05-09T09:25:07.2378398+00:00",
+    "Href": "https://www.meetup.com/fr-FR/artilect-fablab/events/307723256/",
+    "Title": "Meetup IA: Un sujet Facinant sur l'IA",
+    "Start": "2025-06-09T19:00:00+02:00",
+    "ImgSrc": "https://secure.meetupstatic.com/photos/event/d/7/2/4/event_527575076.webp",
+    "Group": "Artilect : FabLab, Coworking, FabCafé",
+    "GroupId": "artilect",
+    "Duration": null,
+    "FullImgSrc": "https://secure.meetupstatic.com/photos/event/d/7/2/4/highres_527575076.webp?w=750",
+    "HtmlDescription": "<p class=\"mb-4\">Le FabLab Artilect est heureux de vous convier à son prochain Meetup dédié à l'Intelligence Artificielle !<br>\nCe mois-ci, nous plongeons dans un sujet a definir...</p>",
+    "TextDescription": "Le FabLab Artilect est heureux de vous convier à son prochain Meetup dédié à l'Intelligence Artificielle !\nCe mois-ci, nous plongeons dans un sujet a definir...",
+    "VenueName": "Artilect FabLab Toulouse",
+    "VenueAddr": "10 Rue Tripière Toulouse",
+    "Latitude": 43.60174,
+    "Longitude": 1.442948,
+    "LocalImgSrc": "event-imgs/meetup-307723256.webp"
+  },
+  {
     "Id": "meetup-lkmdrtyhcjbmb",
     "PublishedOn": "2025-04-26T09:22:13.6337726+00:00",
     "Href": "https://www.meetup.com/fr-FR/artilect-fablab/events/lkmdrtyhcjbmb/",
