@@ -1,0 +1,33 @@
+id: 'meetup-307842478'
+title: 'Soirée DevFlow'
+community: 'GDG Toulouse'
+datePublished: '2025-05-15 17:19'
+dateIso: '2025-06-11 18:30'
+dateFr: 'mercredi 11 juin'
+timeFr: '18:30'
+place: "HarryCow Coworking"
+placeAddr: "13 Rue Sainte-Ursule Toulouse"
+link: https://www.meetup.com/fr-FR/gdg-toulouse/events/307842478/
+img: https://secure.meetupstatic.com/photos/event/7/a/a/b/highres_527971403.webp?w=750
+localImg: event-imgs/meetup-307842478.webp
+description: >
+  <p class="mb-4">Bienvenue à cette nouvelle édition des meetups GDG Toulouse !</p>
+  <p class="mb-4">Comme d'habitude, les présentations seront disponibles sur notre <a href="https://www.youtube.com/playlist?list=PLuZ_sYdawLiW6peh0Q__Nhx6wsnkeeI64" target="_blank" class="!text-viridian" rel="ugc">chaine Youtube</a> (par contre en video il n'y a pas les discussions et les pizzas 🍕)</p>
+  <p class="mb-4"><strong>Comment faire de Discord son SaaS</strong> par <a href="https://www.linkedin.com/in/laurent-bensoussan-%F0%9F%97%9E%EF%B8%8F-a4a531107/" target="_blank" class="!text-viridian" rel="ugc">Laurent BENSOUSSAN</a></p>
+  <p class="mb-4">À l’heure où les SaaS explosent grâce au cloud et à l’IA qui démocratise le code, une difficulté persiste : comment vendre son SaaS ?</p>
+  <p class="mb-4">Discord, à la base utilisé par les gamers, est en réalité un vrai game changer. Il regorge de possibilités et de personnalisation. Il suffit d’implémenter des bots, de créer des commandes, et tu te retrouves avec une sorte de front-end interactif entre les mains.</p>
+  <p class="mb-4">Mais la vraie question, c’est : comment faire adhérer toute une communauté à cet écosystème ?</p>
+  <p class="mb-4">👉 Dans ce MeetUp, on parlera technique, stratégie, et surtout lancement de ton SaaS.</p>
+  <p class="mb-4"><strong>Angular + IA : le duo gagnant pour accélérer la productivité des devs</strong> par <a href="https://www.linkedin.com/in/elodieturlier/" target="_blank" class="!text-viridian" rel="ugc">Elodie TURLIER</a></p>
+  <p class="mb-4">Angular change : standalone components, signals, structure plus claire…</p>
+  <p class="mb-4">Et si on profitait de ces nouveautés pour revoir notre manière de développer ?</p>
+  <p class="mb-4">Dans ce talk, je te présente une méthode concrète, combinant Angular moderne avec une IA bien utilisée :</p>
+  <p class="mb-4">• L’IA Architecte t’aide à réfléchir, planifier et découper tes features</p>
+  <p class="mb-4">• L’IA Éditeur implémente vite et proprement avec les bonnes pratiques Angular</p>
+  <p class="mb-4">Agenda</p>
+  <p class="mb-4">***</p>
+  <p class="mb-4">Hosted By</p>
+  <p class="mb-4">Julien Faixo, GDG Organizer<br>
+  Samir Bouhassoun, GDG Organizer</p>
+  <p class="mb-4">Complete your event RSVP here: <a href="https://gdg.community.dev/events/details/google-gdg-toulouse-presents-soiree-devflow/." target="_blank" class="!text-viridian" rel="nofollow ugc">https://gdg.community.dev/events/details/google-gdg-toulouse-presents-soiree-devflow/.</a></p>
+
