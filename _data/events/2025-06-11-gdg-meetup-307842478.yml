@@ -8,7 +8,7 @@ timeFr: '18:30'
 place: "HarryCow Coworking"
 placeAddr: "13 Rue Sainte-Ursule Toulouse"
 link: https://www.meetup.com/fr-FR/gdg-toulouse/events/307842478/
-img: https://secure.meetupstatic.com/photos/event/7/d/7/c/highres_527972124.webp?w=750
+img: https://secure.meetupstatic.com/photos/event/d/8/3/a/highres_527995354.webp?w=750
 localImg: event-imgs/meetup-307842478.webp
 description: >
   <p class="mb-4">Bienvenue à cette nouvelle édition des meetups GDG Toulouse !</p>
@@ -22,8 +22,8 @@ description: >
   <p class="mb-4">Angular change : standalone components, signals, structure plus claire…</p>
   <p class="mb-4">Et si on profitait de ces nouveautés pour revoir notre manière de développer ?</p>
   <p class="mb-4">Dans ce talk, je te présente une méthode concrète, combinant Angular moderne avec une IA bien utilisée :</p>
-  <p class="mb-4">•&nbsp;&nbsp;&nbsp;&nbsp;L’IA Architecte t’aide à réfléchir, planifier et découper tes features</p>
-  <p class="mb-4">•&nbsp;&nbsp;&nbsp;&nbsp;L’IA Éditeur implémente vite et proprement avec les bonnes pratiques Angular</p>
+  <p class="mb-4">• L’IA Architecte t’aide à réfléchir, planifier et découper tes features</p>
+  <p class="mb-4">• L’IA Éditeur implémente vite et proprement avec les bonnes pratiques Angular</p>
   <p class="mb-4">Agenda</p>
   <p class="mb-4">---</p>
   <p class="mb-4">Hosted By</p>
