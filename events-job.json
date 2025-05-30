@@ -3781,6 +3781,25 @@
     "LocalImgSrc": "event-imgs/meetup-lkmdrtyhcjbmb.webp"
   },
   {
+    "Id": "meetup-308157535",
+    "PublishedOn": "2025-05-30T17:20:12.9344926+00:00",
+    "Href": "https://www.meetup.com/fr-FR/agile-toulouse/events/308157535/",
+    "Title": "\uD83C\uDF7B Bière Agile - Quel sujets pour un open forum ?",
+    "Start": "2025-06-10T18:30:00+02:00",
+    "ImgSrc": "https://secure.meetupstatic.com/photos/event/2/8/6/4/event_528250340.webp",
+    "Group": "Agile Toulouse",
+    "GroupId": "agile",
+    "Duration": null,
+    "FullImgSrc": "https://secure.meetupstatic.com/photos/event/2/8/6/4/highres_528250340.webp?w=750",
+    "HtmlDescription": "<p class=\"mb-4\">\uD83C\uDF7B La bière Agile est toujours au rendez-vous !</p>\n<p class=\"mb-4\">\uD83D\uDC4B Agile Toulouse vous propose de venir échanger autour d'une bière (ou autre) une fois par mois à partir de 18h30 aux Halles de la Transition.</p>\n<p class=\"mb-4\">\uD83D\uDCCD Le bar est situé au <a href=\"https://www.google.com/maps/place//data=!4m2!3m1!1s0x12aebba55bacefef:0x8ba0091967492853?sa=X&amp;ved=1t:8290&amp;ictx=111\" target=\"_blank\" class=\"!text-viridian\" rel=\"ugc\">7 Rue du Canon d'Arcole, 31000 Toulouse</a><br>\nVu la taille du bar, qui permet de bien s'entendre en parlant, nous limitons les places à 16.</p>\n<p class=\"mb-4\">\uD83E\uDD13 C'est un événement à destination de tous les profils (plus ou moins expérimentés, plus ou moins dans l'agilité, plus ou moins dans l'informatique…bref vous avez compris l'idée :) ).</p>\n<p class=\"mb-4\">⚠️ Nous demanderons aux participants d'être membre de l'association. Pour rappel, c'est gratuit et faisable ici en 1 minute sur téléphone : <a href=\"https://www.helloasso.com/associations/agile-toulouse/adhesions/adhesion-agile-toulouse-1\" target=\"_blank\" class=\"!text-viridian\" rel=\"nofollow ugc\">https://www.helloasso.com/associations/agile-toulouse/adhesions/adhesion-agile-toulouse-1</a></p>\n<p class=\"mb-4\">\uD83D\uDDEB Les sujets de discussion pourront suivre un thème (plus ou moins) mais libre à chacun d'introduire son sujet - cette fois-ci, on pourra échanger nos opinions sur le fameux Sprint 0 ... ou nous pouvons parler de tout autre chose qui pique votre intérêt :)</p>\n<p class=\"mb-4\">\uD83C\uDFAFL'objectif étant de passer un bon moment, d'échanger librement et de repartir avec le sourire et des nouvelles idées en tête</p>\n<p class=\"mb-4\">Si vous êtes inscrits mais que cela n'est plus possible pour vous de venir, merci de vous désinscrire pour laisser la place à ceux en liste d'attente.</p>\n<p class=\"mb-4\">Bonne journée !<br>\nSarah &amp; Agile Toulouse</p>",
+    "TextDescription": "\uD83C\uDF7B La bière Agile est toujours au rendez-vous !\n\uD83D\uDC4B Agile Toulouse vous propose de venir échanger autour d'une bière (ou autre) une fois par mois à partir de 18h30 aux Halles de la Transition.\n\uD83D\uDCCD Le bar est situé au 7 Rue du Canon d'Arcole, 31000 Toulouse\nVu la taille du bar, qui permet de bien s'entendre en parlant, nous limitons les places à 16.\n\uD83E\uDD13 C'est un événement à destination de tous les profils (plus ou moins expérimentés, plus ou moins dans l'agilité, plus ou moins dans l'informatique…bref vous avez compris l'idée :) ).\n⚠️ Nous demanderons aux participants d'être membre de l'association. Pour rappel, c'est gratuit et faisable ici en 1 minute sur téléphone : https://www.helloasso.com/associations/agile-toulouse/adhesions/adhesion-agile-toulouse-1\n\uD83D\uDDEB Les sujets de discussion pourront suivre un thème (plus ou moins) mais libre à chacun d'introduire son sujet - cette fois-ci, on pourra échanger nos opinions sur le fameux Sprint 0 ... ou nous pouvons parler de tout autre chose qui pique votre intérêt :)\n\uD83C\uDFAFL'objectif étant de passer un bon moment, d'échanger librement et de repartir avec le sourire et des nouvelles idées en tête\nSi vous êtes inscrits mais que cela n'est plus possible pour vous de venir, merci de vous désinscrire pour laisser la place à ceux en liste d'attente.\nBonne journée !\nSarah & Agile Toulouse",
+    "VenueName": "Les halles de la transition",
+    "VenueAddr": "Rue du canon d'arcole, Toulouse",
+    "Latitude": 43.61285,
+    "Longitude": 1.435785,
+    "LocalImgSrc": "event-imgs/meetup-308157535.webp"
+  },
+  {
     "Id": "meetup-307842478",
     "PublishedOn": "2025-05-15T17:19:00.0606439+00:00",
     "Href": "https://www.meetup.com/fr-FR/gdg-toulouse/events/307842478/",
