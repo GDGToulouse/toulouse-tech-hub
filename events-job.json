@@ -3874,5 +3874,24 @@
     "Latitude": 43.60174,
     "Longitude": 1.442948,
     "LocalImgSrc": "event-imgs/meetup-308236480.webp"
+  },
+  {
+    "Id": "meetup-308252516",
+    "PublishedOn": "2025-06-03T17:21:36.5820414+00:00",
+    "Href": "https://www.meetup.com/fr-FR/agile-toulouse/events/308252516/",
+    "Title": "Klub de lecture de juillet 2025",
+    "Start": "2025-07-07T18:30:00+02:00",
+    "ImgSrc": "https://secure.meetupstatic.com/photos/event/8/3/9/1/event_528333681.webp",
+    "Group": "Agile Toulouse",
+    "GroupId": "agile",
+    "Duration": null,
+    "FullImgSrc": "https://secure.meetupstatic.com/photos/event/8/3/9/1/highres_528333681.webp?w=750",
+    "HtmlDescription": "<p class=\"mb-4\">Bonjour,</p>\n<p class=\"mb-4\">Le prochain Klub de lecture se tiendra le l<strong>undi 7 juillet 2025.</strong></p>\n<p class=\"mb-4\">Nous ouvrons la liste des propositions jusqu'à ce <strong>samedi 7 juin à 23h00.</strong><br>\nPour proposer un livre, une vidéo d'une conférence, un podcast, un article... c'est ici dans les commentaires de cet événement.</p>\n<p class=\"mb-4\">@AgileToulouse.</p>",
+    "TextDescription": "Bonjour,\nLe prochain Klub de lecture se tiendra le lundi 7 juillet 2025.\nNous ouvrons la liste des propositions jusqu'à ce samedi 7 juin à 23h00.\nPour proposer un livre, une vidéo d'une conférence, un podcast, un article... c'est ici dans les commentaires de cet événement.\n@AgileToulouse.",
+    "VenueName": null,
+    "VenueAddr": null,
+    "Latitude": null,
+    "Longitude": null,
+    "LocalImgSrc": "event-imgs/meetup-308252516.webp"
   }
 ]
