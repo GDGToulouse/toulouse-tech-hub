@@ -3876,6 +3876,25 @@
     "LocalImgSrc": "event-imgs/meetup-308236480.webp"
   },
   {
+    "Id": "meetup-308424578",
+    "PublishedOn": "2025-06-11T17:22:08.5003719+00:00",
+    "Href": "https://www.meetup.com/fr-FR/meetup-visualisation-des-donnees-toulouse/events/308424578/",
+    "Title": "MARIMO en action : un nouveau terrain de jeu pour les passionné·e·s de data",
+    "Start": "2025-07-03T19:00:00+02:00",
+    "ImgSrc": "https://secure.meetupstatic.com/photos/event/e/a/4/2/event_528479970.webp",
+    "Group": "Meetup Toulouse-DataViz",
+    "GroupId": "dataviz",
+    "Duration": null,
+    "FullImgSrc": "https://secure.meetupstatic.com/photos/event/e/a/4/2/highres_528479970.webp?w=750",
+    "HtmlDescription": "<p class=\"mb-4\">Et si vos notebooks devenaient interactifs, lisibles, versionnables… et transformables en applications web en un clic ?<br>\n<strong>Marimo</strong> est un nouveau notebook réactif pour Python, pensé pour celles et ceux qui jonglent entre exploration de données, visualisation, prototypage et pédagogie. À mi-chemin entre Jupyter, Streamlit et Observable, il permet de créer des interfaces dynamiques tout en restant dans l’univers familier du code Python.</p>\n<p class=\"mb-4\"><strong>Julien Coche</strong> est cofondateur de <a href=\"http://%5B%5Bhttps://www.agenticfoundry.ai/%5D%5D(https://www.agenticfoundry.ai/%5D)(%5Bhttps://www.agenticfoundry.ai/%5D(https://www.agenticfoundry.ai/))\" target=\"_blank\" class=\"!text-viridian\" rel=\"nofollow ugc\">agentic foundry</a>, ingénieur et docteur en systèmes d'information. Passionné par tous les sujets relatifs aux données, il s'intéresse particulièrement aux applications de l'apprentissage machine et l'intelligence artificielle générative pour l'automatisation de tâches répétitives ou complexes.</p>\n<p class=\"mb-4\"><strong>Présentiel et online</strong> : <a href=\"https://us06web.zoom.us/j/81809831352\" target=\"_blank\" class=\"!text-viridian\" rel=\"nofollow ugc\">https://us06web.zoom.us/j/81809831352</a></p>",
+    "TextDescription": "Et si vos notebooks devenaient interactifs, lisibles, versionnables… et transformables en applications web en un clic ?\nMarimo est un nouveau notebook réactif pour Python, pensé pour celles et ceux qui jonglent entre exploration de données, visualisation, prototypage et pédagogie. À mi-chemin entre Jupyter, Streamlit et Observable, il permet de créer des interfaces dynamiques tout en restant dans l’univers familier du code Python.\nJulien Coche est cofondateur de agentic foundry, ingénieur et docteur en systèmes d'information. Passionné par tous les sujets relatifs aux données, il s'intéresse particulièrement aux applications de l'apprentissage machine et l'intelligence artificielle générative pour l'automatisation de tâches répétitives ou complexes.\nPrésentiel et online : https://us06web.zoom.us/j/81809831352",
+    "VenueName": null,
+    "VenueAddr": null,
+    "Latitude": null,
+    "Longitude": null,
+    "LocalImgSrc": "event-imgs/meetup-308424578.webp"
+  },
+  {
     "Id": "meetup-308252516",
     "PublishedOn": "2025-06-03T17:21:36.5820414+00:00",
     "Href": "https://www.meetup.com/fr-FR/agile-toulouse/events/308252516/",
