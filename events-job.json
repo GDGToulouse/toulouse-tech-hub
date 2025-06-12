@@ -3876,6 +3876,25 @@
     "LocalImgSrc": "event-imgs/meetup-308236480.webp"
   },
   {
+    "Id": "meetup-308458519",
+    "PublishedOn": "2025-06-12T17:20:53.5376986+00:00",
+    "Href": "https://www.meetup.com/fr-FR/javascript-and-co/events/308458519/",
+    "Title": "Meetup de JS&Co : développer avec Cursor et l'IA",
+    "Start": "2025-06-26T18:30:00+02:00",
+    "ImgSrc": "https://secure.meetupstatic.com/photos/event/4/a/3/c/event_528499004.webp",
+    "Group": "Association JS & Co Toulouse",
+    "GroupId": "js-and-co",
+    "Duration": null,
+    "FullImgSrc": "https://secure.meetupstatic.com/photos/event/4/a/3/c/highres_528499004.webp?w=750",
+    "HtmlDescription": "<p class=\"mb-4\">Pour ce nouveau meetup technique pour le mois de juin chez JS&amp;Co,<br>\nnous aurons le plaisir de vous retrouver et d'écouter Philippe Pynson sur le développement avec l'IA et Cursor.</p>\n<p class=\"mb-4\">Au programme, comment l'utiliser ? Quels avantages ? Quels inconvénients ? Sur quels champs d'applications puis-je l'utiliser ?</p>\n<p class=\"mb-4\">S'en suivra après le meetup, notre traditionnel échange autour d'un verre au bar en face de La Cantine by La Mêlée, le Poêle de la Bête.</p>\n<p class=\"mb-4\">Rendez-vous :<br>\n- Jeudi 26 juin<br>\n- La Cantine by La Mêlée<br>\n- 18h30</p>\n<p class=\"mb-4\">à bientôt chers amis,<br>\nl'équipe de JS&amp;Co - Jérémy Simonklein Angély &amp; Simon Faux</p>",
+    "TextDescription": "Pour ce nouveau meetup technique pour le mois de juin chez JS&Co,\nnous aurons le plaisir de vous retrouver et d'écouter Philippe Pynson sur le développement avec l'IA et Cursor.\nAu programme, comment l'utiliser ? Quels avantages ? Quels inconvénients ? Sur quels champs d'applications puis-je l'utiliser ?\nS'en suivra après le meetup, notre traditionnel échange autour d'un verre au bar en face de La Cantine by La Mêlée, le Poêle de la Bête.\nRendez-vous :\n- Jeudi 26 juin\n- La Cantine by La Mêlée\n- 18h30\nà bientôt chers amis,\nl'équipe de JS&Co - Jérémy Simonklein Angély & Simon Faux",
+    "VenueName": "La Cantine Toulouse",
+    "VenueAddr": "27 rue d’Aubuisson Toulouse",
+    "Latitude": 43.602768,
+    "Longitude": 1.454036,
+    "LocalImgSrc": "event-imgs/meetup-308458519.webp"
+  },
+  {
     "Id": "meetup-308424578",
     "PublishedOn": "2025-06-11T17:22:08.5003719+00:00",
     "Href": "https://www.meetup.com/fr-FR/meetup-visualisation-des-donnees-toulouse/events/308424578/",
