@@ -3895,6 +3895,25 @@
     "LocalImgSrc": "event-imgs/meetup-308458519.webp"
   },
   {
+    "Id": "meetup-308516768",
+    "PublishedOn": "2025-06-15T17:21:26.3360562+00:00",
+    "Href": "https://www.meetup.com/fr-FR/javascript-and-co/events/308516768/",
+    "Title": "Le Tech PAF de JS&Co - Juillet au Poêle de la Bête !",
+    "Start": "2025-07-03T18:30:00+02:00",
+    "ImgSrc": "https://secure.meetupstatic.com/photos/event/2/6/8/7/event_528549863.webp",
+    "Group": "Association JS & Co Toulouse",
+    "GroupId": "js-and-co",
+    "Duration": null,
+    "FullImgSrc": "https://secure.meetupstatic.com/photos/event/2/6/8/7/highres_528549863.webp?w=750",
+    "HtmlDescription": "<p class=\"mb-4\">Un mois du juillet au poil !</p>\n<p class=\"mb-4\">Bien le bonjour chers amis,<br>\nCe mois de juillet sera la dernière ligne droite pour assurer les besoins de vos clients et préparer la rentrée mais ça fait toujours du bien de venir souffler à nos Tech PAF.</p>\n<p class=\"mb-4\">Vous l'aurez compris, en juillet, c'est classico !<br>\nJS&amp;Co vous donne rendez-vous au Poêle de la Bête, ce légendaire bistrot situé en face de la Cantine, rue d'Aubuisson.</p>\n<p class=\"mb-4\">Au programme pains au laguiole, boeuf au saté, poêlée de champignons ou frites maisons jalousées même en Belgique.</p>\n<p class=\"mb-4\">Mais aussi, venez échanger sur vos projets du moment, vos points d'achoppements sur lesquels vous voudriez des conseils ou venez parler boutique ou technique.</p>\n<p class=\"mb-4\">Vous connaissez la formule et vous adorer,<br>\nalors, donnons-nous rendez vous dans 15 jours, même jour, même heure, même port que les Techs PAF. (Tu connais la chanson)</p>\n<p class=\"mb-4\">Donc en bref :<br>\n- Jeudi 3 juillet<br>\n- Au Poêle de la Bête<br>\n- 18h30</p>\n<p class=\"mb-4\">À bientôt chers amis,<br>\nl'équipe de JS&amp;Co - Jérémy Simonklein Angely &amp; Simon Faux</p>",
+    "TextDescription": "Un mois du juillet au poil !\nBien le bonjour chers amis,\nCe mois de juillet sera la dernière ligne droite pour assurer les besoins de vos clients et préparer la rentrée mais ça fait toujours du bien de venir souffler à nos Tech PAF.\nVous l'aurez compris, en juillet, c'est classico !\nJS&Co vous donne rendez-vous au Poêle de la Bête, ce légendaire bistrot situé en face de la Cantine, rue d'Aubuisson.\nAu programme pains au laguiole, boeuf au saté, poêlée de champignons ou frites maisons jalousées même en Belgique.\nMais aussi, venez échanger sur vos projets du moment, vos points d'achoppements sur lesquels vous voudriez des conseils ou venez parler boutique ou technique.\nVous connaissez la formule et vous adorer,\nalors, donnons-nous rendez vous dans 15 jours, même jour, même heure, même port que les Techs PAF. (Tu connais la chanson)\nDonc en bref :\n- Jeudi 3 juillet\n- Au Poêle de la Bête\n- 18h30\nÀ bientôt chers amis,\nl'équipe de JS&Co - Jérémy Simonklein Angely & Simon Faux",
+    "VenueName": "Au Poêle de la Bête",
+    "VenueAddr": "56, rue d'Aubuisson Toulouse",
+    "Latitude": 43.602737,
+    "Longitude": 1.454317,
+    "LocalImgSrc": "event-imgs/meetup-308516768.webp"
+  },
+  {
     "Id": "meetup-308424578",
     "PublishedOn": "2025-06-11T17:22:08.5003719+00:00",
     "Href": "https://www.meetup.com/fr-FR/meetup-visualisation-des-donnees-toulouse/events/308424578/",
