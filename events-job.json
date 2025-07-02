@@ -3945,10 +3945,10 @@
     "FullImgSrc": "https://secure.meetupstatic.com/photos/event/e/a/4/2/highres_528479970.webp?w=750",
     "HtmlDescription": "<p class=\"mb-4\">Et si vos notebooks devenaient interactifs, lisibles, versionnables… et transformables en applications web en un clic ?<br>\n<strong>Marimo</strong> est un nouveau notebook réactif pour Python, pensé pour celles et ceux qui jonglent entre exploration de données, visualisation, prototypage et pédagogie. À mi-chemin entre Jupyter, Streamlit et Observable, il permet de créer des interfaces dynamiques tout en restant dans l’univers familier du code Python.</p>\n<p class=\"mb-4\"><strong>Julien Coche</strong> est cofondateur de <a href=\"http://%5B%5Bhttps://www.agenticfoundry.ai/%5D%5D(https://www.agenticfoundry.ai/%5D)(%5Bhttps://www.agenticfoundry.ai/%5D(https://www.agenticfoundry.ai/))\" target=\"_blank\" class=\"!text-viridian\" rel=\"nofollow ugc\">agentic foundry</a>, ingénieur et docteur en systèmes d'information. Passionné par tous les sujets relatifs aux données, il s'intéresse particulièrement aux applications de l'apprentissage machine et l'intelligence artificielle générative pour l'automatisation de tâches répétitives ou complexes.</p>\n<p class=\"mb-4\"><strong>Présentiel et online</strong> : <a href=\"https://us06web.zoom.us/j/81809831352\" target=\"_blank\" class=\"!text-viridian\" rel=\"nofollow ugc\">https://us06web.zoom.us/j/81809831352</a></p>",
     "TextDescription": "Et si vos notebooks devenaient interactifs, lisibles, versionnables… et transformables en applications web en un clic ?\nMarimo est un nouveau notebook réactif pour Python, pensé pour celles et ceux qui jonglent entre exploration de données, visualisation, prototypage et pédagogie. À mi-chemin entre Jupyter, Streamlit et Observable, il permet de créer des interfaces dynamiques tout en restant dans l’univers familier du code Python.\nJulien Coche est cofondateur de agentic foundry, ingénieur et docteur en systèmes d'information. Passionné par tous les sujets relatifs aux données, il s'intéresse particulièrement aux applications de l'apprentissage machine et l'intelligence artificielle générative pour l'automatisation de tâches répétitives ou complexes.\nPrésentiel et online : https://us06web.zoom.us/j/81809831352",
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
+    "VenueName": "Etincelle Coworking - Alsace-Lorraine",
+    "VenueAddr": "36 Rue d'Alsace Lorraine Toulouse",
+    "Latitude": 43.605507,
+    "Longitude": 1.445923,
     "LocalImgSrc": "event-imgs/meetup-308424578.webp"
   },
   {
