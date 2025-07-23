@@ -4064,5 +4064,24 @@
     "Latitude": 43.600674,
     "Longitude": 1.455908,
     "LocalImgSrc": "event-imgs/meetup-308624569.webp"
+  },
+  {
+    "Id": "meetup-308526249",
+    "PublishedOn": "2025-07-23T17:27:07.0186672+00:00",
+    "Href": "https://www.meetup.com/fr-FR/javascript-and-co/events/308526249/",
+    "Title": "La Mêlée Tech x JS&Co",
+    "Start": "2025-09-26T09:00:00+02:00",
+    "ImgSrc": "https://secure.meetupstatic.com/photos/event/5/0/8/8/event_529220616.webp",
+    "Group": "Association JS & Co Toulouse",
+    "GroupId": "js-and-co",
+    "Duration": null,
+    "FullImgSrc": "https://secure.meetupstatic.com/photos/event/5/0/8/8/highres_529220616.webp?w=750",
+    "HtmlDescription": "<p class=\"mb-4\">La Mêlée Numérique organise avec JS&amp;CO, La Mêlée Tech.</p>\n<p class=\"mb-4\">La Mêlée Numérique est le festival de l'innovation, des startups et du numérique de l'association La Mêlée depuis 25 ans.</p>\n<p class=\"mb-4\">Ce haut lieu de rencontres, d'échanges, d'apprentissage et d'inspirations pour les professionnels de tous les secteurs est le temps fort de la rentrée.</p>\n<p class=\"mb-4\">Le vendredi 26 septembre sera la journée dédiée à la Tech !</p>\n<p class=\"mb-4\">Venez retrouver des intervenants lors de conférences et ateliers dédiés à l'IA, aux nouveaux langages de programmation et aux bonnes pratiques de productivité pour la tech.</p>\n<p class=\"mb-4\">Nous aurons le plaisir de vous retrouver pour une série d'évènements dédiés.<br>\n- IA<br>\n- Cyber<br>\n- Data<br>\n- Nouveaux langages &amp; frameworks<br>\n- IOT<br>\n- Architecture<br>\n- Réseaux</p>\n<p class=\"mb-4\">Pour y être inscris, suivez le lien ci-dessous pour le détail des events et vos inscriptions :<br>\n<a href=\"https://www.meleenumerique.com/billetterie/\" target=\"_blank\" class=\"!text-viridian\" rel=\"nofollow ugc\">https://www.meleenumerique.com/billetterie/</a></p>\n<p class=\"mb-4\">À bientôt chers amis,<br>\nl'équipe de JS&amp;Co - Jérémy Simonklein Angély &amp; Simon Faux</p>",
+    "TextDescription": "La Mêlée Numérique organise avec JS&CO, La Mêlée Tech.\nLa Mêlée Numérique est le festival de l'innovation, des startups et du numérique de l'association La Mêlée depuis 25 ans.\nCe haut lieu de rencontres, d'échanges, d'apprentissage et d'inspirations pour les professionnels de tous les secteurs est le temps fort de la rentrée.\nLe vendredi 26 septembre sera la journée dédiée à la Tech !\nVenez retrouver des intervenants lors de conférences et ateliers dédiés à l'IA, aux nouveaux langages de programmation et aux bonnes pratiques de productivité pour la tech.\nNous aurons le plaisir de vous retrouver pour une série d'évènements dédiés.\n- IA\n- Cyber\n- Data\n- Nouveaux langages & frameworks\n- IOT\n- Architecture\n- Réseaux\nPour y être inscris, suivez le lien ci-dessous pour le détail des events et vos inscriptions :\nhttps://www.meleenumerique.com/billetterie/\nÀ bientôt chers amis,\nl'équipe de JS&Co - Jérémy Simonklein Angély & Simon Faux",
+    "VenueName": "La Cantine du Quai",
+    "VenueAddr": "39 allée Jules Guesde Toulouse",
+    "Latitude": 43.594585,
+    "Longitude": 1.450255,
+    "LocalImgSrc": "event-imgs/meetup-308526249.webp"
   }
 ]
