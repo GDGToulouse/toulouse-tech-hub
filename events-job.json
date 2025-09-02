@@ -4180,6 +4180,25 @@
     "LocalImgSrc": "event-imgs/meetup-310610875.webp"
   },
   {
+    "Id": "meetup-310827071",
+    "PublishedOn": "2025-09-02T09:24:48.0867131+00:00",
+    "Href": "https://www.meetup.com/fr-FR/tech-a-break/events/310827071/",
+    "Title": "TECH A BREAK #10",
+    "Start": "2025-09-11T18:30:00+02:00",
+    "ImgSrc": "https://secure.meetupstatic.com/photos/event/b/0/e/f/event_529965295.webp",
+    "Group": "Tech a break",
+    "GroupId": "tech-a-break",
+    "Duration": null,
+    "FullImgSrc": "https://secure.meetupstatic.com/photos/event/b/0/e/f/highres_529965295.webp?w=750",
+    "HtmlDescription": "<p class=\"mb-4\">Tech a break #10<br>\nLes meet'up toulousains autour de sujets techniques de l'IT vous intéressent ?<br>\nUne communauté de passionnés vous présente le dixième événement de cette série, par les techs pour les techs !<br>\nIci on aime parler de nos métiers, de nos quotidiens et on souhaite en savoir plus sur ce que font nos collègues de tous bords : Cloud, Data, Craft, Agile, Mobile, Architecture...</p>\n<p class=\"mb-4\"><strong>Programme du meetup :</strong><br>\n18h30 - Accueil des personnes<br>\n19h00 - Début du talk (1h + questions de l'audience)<br>\n20h30 - Echanges autour de pizzas &amp; bières<br>\n<strong>Où ?</strong><br>\n1 pl. de la Bourse 31000 Toulouse<br>\n<strong>Quand ?</strong><br>\nle 11 septembre 2025 à 18h30<br>\n------------------------------------<br>\n<strong>IA Générative, TDD et Architecture Hexagonale : Une Synergie Révolutionnaire ?</strong></p>\n<p class=\"mb-4\">IA vs Software crafter.<br>\nD’un côté, une génération de code ultra rapide mais souvent perfectible en termes de qualité. De l’autre, des passionnés attachés à la qualité, au clean code et à la maintenabilité.</p>\n<p class=\"mb-4\">Ces deux approches sont-elles vouées à s’opposer ? Peut-on les faire travailler ensemble pour obtenir le meilleur des deux mondes ?<br>\nNous avons testé différentes stratégies et nous vous dévoilons comment nous avons encadré l'IA pour accélérer nos développements. Au programme : tests de composants, architecture hexagonale et, bien sûr, l’IA générative comme alliée du software crafter.</p>\n<p class=\"mb-4\">&gt;_ <strong>Florine Chevrier:</strong> Développeuse fullstack depuis peu, j'ai découvert l'univers du Software Craftsmanship chez Ippon. Depuis, je continue à enrichir mes compétences et à les transmettre autour de moi.</p>\n<p class=\"mb-4\">&gt;_ <strong>Clément Virieux:</strong> Développeur back (et un peu front) depuis 9 ans, j’ai découvert l’univers du Software Craftsmanship il y a 4 ans. Depuis, je m’efforce d’approfondir mes connaissances tout en partageant mes découvertes avec la communauté.</p>\n<p class=\"mb-4\">------------------------------------</p>\n<p class=\"mb-4\">Bon meetup à toutes et à tous !</p>",
+    "TextDescription": "Tech a break #10\nLes meet'up toulousains autour de sujets techniques de l'IT vous intéressent ?\nUne communauté de passionnés vous présente le dixième événement de cette série, par les techs pour les techs !\nIci on aime parler de nos métiers, de nos quotidiens et on souhaite en savoir plus sur ce que font nos collègues de tous bords : Cloud, Data, Craft, Agile, Mobile, Architecture...\nProgramme du meetup :\n18h30 - Accueil des personnes\n19h00 - Début du talk (1h + questions de l'audience)\n20h30 - Echanges autour de pizzas & bières\nOù ?\n1 pl. de la Bourse 31000 Toulouse\nQuand ?\nle 11 septembre 2025 à 18h30\n------------------------------------\nIA Générative, TDD et Architecture Hexagonale : Une Synergie Révolutionnaire ?\nIA vs Software crafter.\nD’un côté, une génération de code ultra rapide mais souvent perfectible en termes de qualité. De l’autre, des passionnés attachés à la qualité, au clean code et à la maintenabilité.\nCes deux approches sont-elles vouées à s’opposer ? Peut-on les faire travailler ensemble pour obtenir le meilleur des deux mondes ?\nNous avons testé différentes stratégies et nous vous dévoilons comment nous avons encadré l'IA pour accélérer nos développements. Au programme : tests de composants, architecture hexagonale et, bien sûr, l’IA générative comme alliée du software crafter.\n>_ Florine Chevrier: Développeuse fullstack depuis peu, j'ai découvert l'univers du Software Craftsmanship chez Ippon. Depuis, je continue à enrichir mes compétences et à les transmettre autour de moi.\n>_ Clément Virieux: Développeur back (et un peu front) depuis 9 ans, j’ai découvert l’univers du Software Craftsmanship il y a 4 ans. Depuis, je m’efforce d’approfondir mes connaissances tout en partageant mes découvertes avec la communauté.\n------------------------------------\nBon meetup à toutes et à tous !",
+    "VenueName": "1 Pl. de la Bourse",
+    "VenueAddr": "1 Pl. de la Bourse Toulouse",
+    "Latitude": 43.601437,
+    "Longitude": 1.442047,
+    "LocalImgSrc": "event-imgs/meetup-310827071.webp"
+  },
+  {
     "Id": "meetup-310709130",
     "PublishedOn": "2025-08-26T09:24:08.1397635+00:00",
     "Href": "https://www.meetup.com/fr-FR/gdg-toulouse/events/310709130/",
