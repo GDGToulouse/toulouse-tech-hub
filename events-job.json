@@ -4294,6 +4294,25 @@
     "LocalImgSrc": "event-imgs/meetup-qmzpstyhcnbrb.webp"
   },
   {
+    "Id": "meetup-310579893",
+    "PublishedOn": "2025-09-07T10:29:14.457313+00:00",
+    "Href": "https://www.meetup.com/fr-FR/agile-toulouse/events/310579893/",
+    "Title": "Atelier : Cartographie Systémique Face aux Problèmes Complexes - Extension pack",
+    "Start": "2025-10-18T13:30:00+02:00",
+    "ImgSrc": "https://secure.meetupstatic.com/photos/event/9/c/8/d/event_530020077.webp",
+    "Group": "Agile Toulouse",
+    "GroupId": "agile",
+    "Duration": null,
+    "FullImgSrc": "https://secure.meetupstatic.com/photos/event/9/c/8/d/highres_530020077.webp?w=750",
+    "HtmlDescription": "<p class=\"mb-4\">Nous rencontrons quotidiennement des problèmes complexes et apparemment insolubles, caractérisés par des interconnexions multiples et des évolutions constantes.</p>\n<p class=\"mb-4\">Nous vous avons déjà proposé un 1er meetup de 2h à ce sujet.<br>\nNous vous proposons de refaire celui-ci sur une après-midi afin de prendre le temps de pratiquer chaque étape.</p>\n<p class=\"mb-4\">Cet atelier propose une approche novatrice pour appréhender et résoudre ces défis adaptatifs complexes grâce à la méthode systémique de la cartographie.</p>\n<p class=\"mb-4\">Participez à des exercices pratiques en petits groupes pour maîtriser cette technique et pouvoir l'appliquer au sein de vos équipes ou organisations.</p>\n<p class=\"mb-4\">Nous demanderons aux venants d'être membres de l'association Agile Toulouse.</p>\n<p class=\"mb-4\">Pour rappel, c'est gratuit et faisable ici en 1 minute sur téléphone : (<a href=\"https://www.helloasso.com/associations/agile-toulouse/adhesions/adhesion-agile-toulouse-1\" target=\"_blank\" class=\"!text-viridian\" rel=\"nofollow ugc\">https://www.helloasso.com/associations/agile-toulouse/adhesions/adhesion-agile-toulouse-1</a>)</p>\n<p class=\"mb-4\">Si vous êtes inscrits, mais que cela n'est plus possible pour vous de venir, merci de vous désinscrire pour informer qu'il reste de la place :)</p>\n<p class=\"mb-4\">Bonne journée !<br>\nAgile Toulouse</p>",
+    "TextDescription": "Nous rencontrons quotidiennement des problèmes complexes et apparemment insolubles, caractérisés par des interconnexions multiples et des évolutions constantes.\nNous vous avons déjà proposé un 1er meetup de 2h à ce sujet.\nNous vous proposons de refaire celui-ci sur une après-midi afin de prendre le temps de pratiquer chaque étape.\nCet atelier propose une approche novatrice pour appréhender et résoudre ces défis adaptatifs complexes grâce à la méthode systémique de la cartographie.\nParticipez à des exercices pratiques en petits groupes pour maîtriser cette technique et pouvoir l'appliquer au sein de vos équipes ou organisations.\nNous demanderons aux venants d'être membres de l'association Agile Toulouse.\nPour rappel, c'est gratuit et faisable ici en 1 minute sur téléphone : (https://www.helloasso.com/associations/agile-toulouse/adhesions/adhesion-agile-toulouse-1)\nSi vous êtes inscrits, mais que cela n'est plus possible pour vous de venir, merci de vous désinscrire pour informer qu'il reste de la place :)\nBonne journée !\nAgile Toulouse",
+    "VenueName": "Maison des Associations",
+    "VenueAddr": "3 Pl. Guy Hersant Toulouse",
+    "Latitude": 43.5775,
+    "Longitude": 1.444116,
+    "LocalImgSrc": "event-imgs/meetup-310579893.webp"
+  },
+  {
     "Id": "meetup-310709347",
     "PublishedOn": "2025-08-26T09:26:23.2132551+00:00",
     "Href": "https://www.meetup.com/fr-FR/artilect-fablab/events/310709347/",
