@@ -4199,6 +4199,25 @@
     "LocalImgSrc": "event-imgs/meetup-310827071.webp"
   },
   {
+    "Id": "meetup-311023008",
+    "PublishedOn": "2025-09-13T17:19:33.9585151+00:00",
+    "Href": "https://www.meetup.com/fr-FR/javascript-and-co/events/311023008/",
+    "Title": "Le Tech PAF de JS&Co - Octobre au Péry",
+    "Start": "2025-09-14T18:30:00+02:00",
+    "ImgSrc": "https://secure.meetupstatic.com/photos/event/3/2/9/event_530160809.webp",
+    "Group": "Association JS & Co Toulouse",
+    "GroupId": "js-and-co",
+    "Duration": null,
+    "FullImgSrc": "https://secure.meetupstatic.com/photos/event/3/2/9/highres_530160809.webp?w=750",
+    "HtmlDescription": "<p class=\"mb-4\">La légende disait vrai, votre afterwork préféré reprend du service pour le mois d'octobre !</p>\n<p class=\"mb-4\">Pour ce mois d'octobre, nous nous donnerons rendez-vous dans ce bar iconique de la rue Gabriel Péri, le bar Le Péry !</p>\n<p class=\"mb-4\">Venez profiter de vos breuvages préférés et vous régaler de leur carte de tapas et bistrot de cette brasserie de quartier.</p>\n<p class=\"mb-4\">Venez vous offrir une pause bien méritée pendant cette rentrée mouvementée en venant retrouver vos relations au Tech PAF d'octobre.</p>\n<p class=\"mb-4\">Venez parler boutique, technique, démarchage, marketing &amp; communication, immobilier, architecture ou design avec nos membres talentueux.</p>\n<p class=\"mb-4\">L'évènement est encore et toujours gratuit alors n'hésitez pas à venir et à inviter vos amis et vos collègues pour apprécier notre afterwork.</p>\n<p class=\"mb-4\">Bonne ambiance garantie alors si tout ceci vous-plait,<br>\nrendez-vous :<br>\n- Jeudi 2 octobre<br>\n- 18h30<br>\n- Le Péry</p>\n<p class=\"mb-4\">À bientôt chers amis,<br>\nL'équipe de JS&amp;Co - Jérémy Simonklein Angély &amp; Simon Faux</p>",
+    "TextDescription": "La légende disait vrai, votre afterwork préféré reprend du service pour le mois d'octobre !\nPour ce mois d'octobre, nous nous donnerons rendez-vous dans ce bar iconique de la rue Gabriel Péri, le bar Le Péry !\nVenez profiter de vos breuvages préférés et vous régaler de leur carte de tapas et bistrot de cette brasserie de quartier.\nVenez vous offrir une pause bien méritée pendant cette rentrée mouvementée en venant retrouver vos relations au Tech PAF d'octobre.\nVenez parler boutique, technique, démarchage, marketing & communication, immobilier, architecture ou design avec nos membres talentueux.\nL'évènement est encore et toujours gratuit alors n'hésitez pas à venir et à inviter vos amis et vos collègues pour apprécier notre afterwork.\nBonne ambiance garantie alors si tout ceci vous-plait,\nrendez-vous :\n- Jeudi 2 octobre\n- 18h30\n- Le Péry\nÀ bientôt chers amis,\nL'équipe de JS&Co - Jérémy Simonklein Angély & Simon Faux",
+    "VenueName": "Le péry",
+    "VenueAddr": "22 Rue Gabriel Péri Toulouse",
+    "Latitude": 43.606,
+    "Longitude": 1.453156,
+    "LocalImgSrc": "event-imgs/meetup-311023008.webp"
+  },
+  {
     "Id": "meetup-310709130",
     "PublishedOn": "2025-08-26T09:24:08.1397635+00:00",
     "Href": "https://www.meetup.com/fr-FR/gdg-toulouse/events/310709130/",
