@@ -16,14 +16,13 @@ description: >
   <p class="mb-4">Ce haut lieu de rencontres, d'échanges, d'apprentissage et d'inspirations pour les professionnels de tous les secteurs est le temps fort de la rentrée.</p>
   <p class="mb-4">Le vendredi 26 septembre sera la journée dédiée à la Tech !</p>
   <p class="mb-4">Venez retrouver des intervenants lors de conférences et ateliers dédiés à l'IA, aux nouveaux langages de programmation et aux bonnes pratiques de productivité pour la tech.</p>
-  <p class="mb-4">Nous aurons le plaisir de vous retrouver pour une série d'évènements dédiés.<br>
-  - IA<br>
-  - Cyber<br>
-  - Data<br>
-  - Nouveaux langages &amp; frameworks<br>
-  - IOT<br>
-  - Architecture<br>
-  - Réseaux</p>
+  <p class="mb-4">Nous aurons le plaisir de vous retrouver pour une série d'évènements dédiés.</p>
+  <ul class="pl-5 list-disc mb-4">
+  <li>Comment l’IA réinvente l’UX, l’UI et le développement web - Laetitia Digard</li>
+  <li>Comment développer le front-end d’une app assez simple adossée à un back end via les mcp</li>
+  <li>De warhol à Basquiat, le vibe coding démocrastise-t-il la création logicielle</li>
+  <li>IA et souveraineté : du code à la décision</li>
+  </ul>
   <p class="mb-4">Pour y être inscris, suivez le lien ci-dessous pour le détail des events et vos inscriptions :<br>
   <a href="https://www.meleenumerique.com/billetterie/" target="_blank" class="!text-viridian" rel="nofollow ugc">https://www.meleenumerique.com/billetterie/</a></p>
   <p class="mb-4">À bientôt chers amis,<br>
