@@ -4256,6 +4256,25 @@
     "LocalImgSrc": "event-imgs/meetup-308526249.webp"
   },
   {
+    "Id": "meetup-311059325",
+    "PublishedOn": "2025-09-17T09:24:17.0922947+00:00",
+    "Href": "https://www.meetup.com/fr-FR/agile-toulouse/events/311059325/",
+    "Title": "Café Agile septembre 2025",
+    "Start": "2025-09-30T13:00:00+02:00",
+    "ImgSrc": "https://secure.meetupstatic.com/photos/event/e/1/e/1/event_530217825.webp",
+    "Group": "Agile Toulouse",
+    "GroupId": "agile",
+    "Duration": null,
+    "FullImgSrc": "https://secure.meetupstatic.com/photos/event/e/1/e/1/highres_530217825.webp?w=750",
+    "HtmlDescription": "<p class=\"mb-4\"><strong>Voici le Klub d'Agile Toulouse : le \"Café Agile\" !</strong></p>\n<p class=\"mb-4\">L'idée est de proposer un événement mensuel, simple, en remote, afin de donner la possibilité aux membres d'échanger, de demander un coup de main, de partager sa dernière lecture, de poser une question, etc.</p>\n<p class=\"mb-4\">Le format sera libre ou sous la forme d'un Lean Coffee selon le nombre de participants :-)</p>\n<p class=\"mb-4\">Dans la mesure du possible et pour que cela reste un échange convivial pour tous, on vous demandera de mettre votre prénom sur Discord et d'activer vos webcams durant l'échange.</p>\n<p class=\"mb-4\">Nous demanderons aux venants d'être membres de l'association Agile Toulouse.</p>\n<p class=\"mb-4\">Pour rappel, c'est gratuit et faisable ici en 1 minute sur téléphone : <a href=\"https://www.helloasso.com/associations/agile-toulouse/adhesions/adhesion-agile-toulouse-1\" target=\"_blank\" class=\"!text-viridian\" rel=\"nofollow ugc\">https://www.helloasso.com/associations/agile-toulouse/adhesions/adhesion-agile-toulouse-1</a></p>\n<p class=\"mb-4\">Bonne journée !</p>\n<p class=\"mb-4\">Agile Toulouse</p>",
+    "TextDescription": "Voici le Klub d'Agile Toulouse : le \"Café Agile\" !\nL'idée est de proposer un événement mensuel, simple, en remote, afin de donner la possibilité aux membres d'échanger, de demander un coup de main, de partager sa dernière lecture, de poser une question, etc.\nLe format sera libre ou sous la forme d'un Lean Coffee selon le nombre de participants :-)\nDans la mesure du possible et pour que cela reste un échange convivial pour tous, on vous demandera de mettre votre prénom sur Discord et d'activer vos webcams durant l'échange.\nNous demanderons aux venants d'être membres de l'association Agile Toulouse.\nPour rappel, c'est gratuit et faisable ici en 1 minute sur téléphone : https://www.helloasso.com/associations/agile-toulouse/adhesions/adhesion-agile-toulouse-1\nBonne journée !\nAgile Toulouse",
+    "VenueName": null,
+    "VenueAddr": null,
+    "Latitude": null,
+    "Longitude": null,
+    "LocalImgSrc": "event-imgs/meetup-311059325.webp"
+  },
+  {
     "Id": "meetup-311023008",
     "PublishedOn": "2025-09-13T17:19:33.9585151+00:00",
     "Href": "https://www.meetup.com/fr-FR/javascript-and-co/events/311023008/",
