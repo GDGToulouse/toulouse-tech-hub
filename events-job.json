@@ -4275,6 +4275,25 @@
     "LocalImgSrc": "event-imgs/meetup-311059325.webp"
   },
   {
+    "Id": "meetup-311118535",
+    "PublishedOn": "2025-09-30T09:23:28.9390197+00:00",
+    "Href": "https://www.meetup.com/fr-FR/agile-toulouse/events/311118535/",
+    "Title": "Pitcher son produit : techniques, formats et secrets du terrain",
+    "Start": "2025-10-02T18:00:00+02:00",
+    "ImgSrc": "https://secure.meetupstatic.com/photos/event/c/a/3/b/event_530271771.webp",
+    "Group": "Agile Toulouse",
+    "GroupId": "agile",
+    "Duration": null,
+    "FullImgSrc": "https://secure.meetupstatic.com/photos/event/c/a/3/b/highres_530271771.webp?w=750",
+    "HtmlDescription": "<p class=\"mb-4\">Vous avez une idée. Un produit en cours. Une roadmap pleine de sens. Mais voilà : comment convaincre ceux qui comptent ? Investisseurs, managers, partenaires, équipes… tous attendent plus qu’un fichier Figma ou un ticket Jira : ils veulent comprendre, être embarqués, et croire que ça va marcher. C’est là qu’intervient le Product Pitch — un art trop souvent négligé par les Product Owners et PMs.</p>\n<p class=\"mb-4\">Dans cet atelier, on va apprendre à pitcher son produit avec impact, sans tomber dans le blabla commercial ni le jargon technique. On fera le tour des différents formats de pitch selon les situations, on décortiquera les ingrédients d’un pitch qui capte l’attention, structure l’information et déclenche l’adhésion. Et surtout, on s’entraînera, ensemble, à pitcher des cas concrets, avec des retours directs et des astuces issues du terrain.</p>\n<p class=\"mb-4\"><strong>Objectif :</strong> repartir avec des outils, de la méthode, et la capacité à vendre vos idées sans vous renier. Car non, pitcher n’est pas du marketing bullshit — c’est une compétence clé pour tout product leader qui veut faire bouger les lignes.</p>\n<p class=\"mb-4\">Nous demanderons aux venants d'être membres de l'association Agile Toulouse.<br>\nPour rappel, c'est gratuit et faisable ici en 1 minute sur téléphone : (<a href=\"https://www.helloasso.com/associations/agile-toulouse/adhesions/adhesion-agile-toulouse-1\" target=\"_blank\" class=\"!text-viridian\" rel=\"nofollow ugc\">https://www.helloasso.com/associations/agile-toulouse/adhesions/adhesion-agile-toulouse-1</a>)</p>\n<p class=\"mb-4\">Si vous êtes inscrits, mais que cela n'est plus possible pour vous de venir, merci de vous désinscrire pour informer qu'il reste de la place :)</p>\n<p class=\"mb-4\">Bonne journée !<br>\nAgile Toulouse</p>",
+    "TextDescription": "Vous avez une idée. Un produit en cours. Une roadmap pleine de sens. Mais voilà : comment convaincre ceux qui comptent ? Investisseurs, managers, partenaires, équipes… tous attendent plus qu’un fichier Figma ou un ticket Jira : ils veulent comprendre, être embarqués, et croire que ça va marcher. C’est là qu’intervient le Product Pitch — un art trop souvent négligé par les Product Owners et PMs.\nDans cet atelier, on va apprendre à pitcher son produit avec impact, sans tomber dans le blabla commercial ni le jargon technique. On fera le tour des différents formats de pitch selon les situations, on décortiquera les ingrédients d’un pitch qui capte l’attention, structure l’information et déclenche l’adhésion. Et surtout, on s’entraînera, ensemble, à pitcher des cas concrets, avec des retours directs et des astuces issues du terrain.\nObjectif : repartir avec des outils, de la méthode, et la capacité à vendre vos idées sans vous renier. Car non, pitcher n’est pas du marketing bullshit — c’est une compétence clé pour tout product leader qui veut faire bouger les lignes.\nNous demanderons aux venants d'être membres de l'association Agile Toulouse.\nPour rappel, c'est gratuit et faisable ici en 1 minute sur téléphone : (https://www.helloasso.com/associations/agile-toulouse/adhesions/adhesion-agile-toulouse-1)\nSi vous êtes inscrits, mais que cela n'est plus possible pour vous de venir, merci de vous désinscrire pour informer qu'il reste de la place :)\nBonne journée !\nAgile Toulouse",
+    "VenueName": "Maison des Associations",
+    "VenueAddr": "3 Pl. Guy Hersant Toulouse",
+    "Latitude": 43.5775,
+    "Longitude": 1.444116,
+    "LocalImgSrc": "event-imgs/meetup-311118535.webp"
+  },
+  {
     "Id": "meetup-311023008",
     "PublishedOn": "2025-09-13T17:19:33.9585151+00:00",
     "Href": "https://www.meetup.com/fr-FR/javascript-and-co/events/311023008/",
@@ -4368,6 +4387,25 @@
     "Latitude": 43.60174,
     "Longitude": 1.442948,
     "LocalImgSrc": "event-imgs/meetup-qmzpstyhcnbrb.webp"
+  },
+  {
+    "Id": "meetup-311291429",
+    "PublishedOn": "2025-09-30T09:23:59.108924+00:00",
+    "Href": "https://www.meetup.com/fr-FR/meetup-visualisation-des-donnees-toulouse/events/311291429/",
+    "Title": "Retour aux fondamentaux de la dataviz",
+    "Start": "2025-10-16T19:00:00+02:00",
+    "ImgSrc": "https://secure.meetupstatic.com/photos/event/3/7/8/5/event_530474213.webp",
+    "Group": "Meetup Toulouse-DataViz",
+    "GroupId": "dataviz",
+    "Duration": null,
+    "FullImgSrc": "https://secure.meetupstatic.com/photos/event/3/7/8/5/highres_530474213.webp?w=750",
+    "HtmlDescription": "<p class=\"mb-4\">La visualisation de données, c’est bien plus qu’un simple outil : c’est un langage universel, capable de révéler des histoires cachées dans les chiffres et de rendre l’information accessible à tous. Présente dans les sciences, la communication, le journalisme et bien d’autres domaines, elle joue un rôle clé pour analyser, comprendre et partager les données.<br>\nDepuis plus de 10 ans, l’équipe <strong>Toulouse-dataviz</strong> explore ce terrain passionnant. Lors de ce meetup, <strong>Alain Roan</strong> et <strong>Vincent Vivanloc</strong> vous proposeront un voyage “retour aux bases” : principes essentiels, bonnes pratiques, outils incontournables… tout ce qu’il faut pour renforcer ou rafraîchir vos connaissances.<br>\nQue vous soyez <strong>curieux, débutant, passionné ou déjà initié</strong>, c’est l’occasion idéale pour découvrir (ou redécouvrir) les fondamentaux de la dataviz, échanger avec des experts et rencontrer la communauté locale.</p>\n<p class=\"mb-4\"><strong>Présentiel et online :</strong> <a href=\"https://us06web.zoom.us/j/86327875203\" target=\"_blank\" class=\"!text-viridian\" rel=\"nofollow ugc\">https://us06web.zoom.us/j/86327875203</a></p>",
+    "TextDescription": "La visualisation de données, c’est bien plus qu’un simple outil : c’est un langage universel, capable de révéler des histoires cachées dans les chiffres et de rendre l’information accessible à tous. Présente dans les sciences, la communication, le journalisme et bien d’autres domaines, elle joue un rôle clé pour analyser, comprendre et partager les données.\nDepuis plus de 10 ans, l’équipe Toulouse-dataviz explore ce terrain passionnant. Lors de ce meetup, Alain Roan et Vincent Vivanloc vous proposeront un voyage “retour aux bases” : principes essentiels, bonnes pratiques, outils incontournables… tout ce qu’il faut pour renforcer ou rafraîchir vos connaissances.\nQue vous soyez curieux, débutant, passionné ou déjà initié, c’est l’occasion idéale pour découvrir (ou redécouvrir) les fondamentaux de la dataviz, échanger avec des experts et rencontrer la communauté locale.\nPrésentiel et online : https://us06web.zoom.us/j/86327875203",
+    "VenueName": "Etincelle Coworking - Alsace-Lorraine",
+    "VenueAddr": "36 Rue d'Alsace Lorraine Toulouse",
+    "Latitude": 43.605507,
+    "Longitude": 1.445923,
+    "LocalImgSrc": "event-imgs/meetup-311291429.webp"
   },
   {
     "Id": "meetup-310579893",
