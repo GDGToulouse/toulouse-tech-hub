@@ -96,3 +96,21 @@
 
 - name: La "Toul Box" du Cloud Natif
   url: https://www.meetup.com/latoulboxducloudnatif/
+
+- name: Artilect FabLab
+  url: https://www.meetup.com/artilect-fablab/
+  description: |
+    <p>Artilect est un tiers-lieu collaboratif comprenant un Fab Lab, un espace de coworking, un café et des salles dédiées à l'événementiel, le tout situé dans l'hyper-centre de Toulouse.
+    Nous sommes ouverts à tous, et nous disposons d'une large communauté d'indépendants, de makers, de startups, de développeurs, d'ingénieurs, de designers, de créatifs, d'entrepreneurs, etc.</p>
+    <p>Nous organisons régulièrement des événements : ateliers, meetups, workshops, formations, petits-déjeuners, after-work...</p>
+    <p>Vous pouvez nous rejoindre pour prendre un café, coworker avec nous ou pour organiser vos événements...</p>
+    <p><a href="https://artilect.fr/" target="_blank">https://artilect.fr/</a></p>
+
+- name: Postgres Toulouse
+  url: https://www.meetup.com/postgres-toulouse
+  description: |
+    <p>Venez partager vos expériences et apprendre des autres dans ce groupe d'utilisateurs de PostgreSQL.
+    Véritable reboot du groupe existant précédemment, nous nous voulons ouverts à toutes celles et ceux qui veulent en savoir plus sur notre SGBD relationnel préféré.
+    Alors à bientôt pour une rencontre ?</p>
+    <p>Les évènements de ce groupe adhèrent au <a href="https://2025.pgconf.eu/code-of-conduct/" target="_blank">code de conduite</a> de la PostgreSQL Conference 2025.
+    Si vous êtes victimes ou témoins de comportements inappropriés, signalez-le immédiatement à l'équipe d'organisation.</p>
