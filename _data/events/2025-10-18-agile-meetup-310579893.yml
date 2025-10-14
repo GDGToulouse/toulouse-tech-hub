@@ -7,11 +7,11 @@ dateFr: 'samedi 18 octobre'
 timeFr: '13:30'
 place: "Maison des Associations"
 placeAddr: "3 Pl. Guy Hersant Toulouse"
-link: https://www.meetup.com/fr-FR/agile-toulouse/events/310579893/
-img: https://secure.meetupstatic.com/photos/event/9/c/8/d/highres_530020077.webp?w=750
+link: https://www.meetup.com/fr-FR/agile-toulouse/events/310579893/?eventOrigin=group_similar_events
+img: https://secure.meetupstatic.com/photos/event/9/c/8/d/highres_530020077.webp?w=3840
 localImg: event-imgs/meetup-310579893.webp
 description: >
-  <p class="mb-4">Nous rencontrons quotidiennement des problèmes complexes et apparemment insolubles, caractérisés par des interconnexions multiples et des évolutions constantes.</p>
+  <div class="w-full break-words transition-all duration-300 line-clamp-[15]" style="font-family:NeuSans, Inter, system-ui, sans-serif"><p class="mb-4">Nous rencontrons quotidiennement des problèmes complexes et apparemment insolubles, caractérisés par des interconnexions multiples et des évolutions constantes.</p>
   <p class="mb-4">Nous vous avons déjà proposé un 1er meetup de 2h à ce sujet.<br>
   Nous vous proposons de refaire celui-ci sur une après-midi afin de prendre le temps de pratiquer chaque étape.</p>
   <p class="mb-4">Cet atelier propose une approche novatrice pour appréhender et résoudre ces défis adaptatifs complexes grâce à la méthode systémique de la cartographie.</p>
@@ -20,5 +20,5 @@ description: >
   <p class="mb-4">Pour rappel, c'est gratuit et faisable ici en 1 minute sur téléphone : (<a href="https://www.helloasso.com/associations/agile-toulouse/adhesions/adhesion-agile-toulouse-1" target="_blank" class="!text-viridian" rel="nofollow ugc">https://www.helloasso.com/associations/agile-toulouse/adhesions/adhesion-agile-toulouse-1</a>)</p>
   <p class="mb-4">Si vous êtes inscrits, mais que cela n'est plus possible pour vous de venir, merci de vous désinscrire pour informer qu'il reste de la place :)</p>
   <p class="mb-4">Bonne journée !<br>
-  Agile Toulouse</p>
+  Agile Toulouse</p></div><button class="inline-flex items-center justify-center rounded-ds2-max max-w-full relative data-[disabled=false]:active:scale-98 transition-all duration-150 before:absolute before:rounded-ds2-max before:z-0 before:opacity-0 data-[disabled=false]:hover:before:opacity-100 before:transition-opacity before:duration-150 data-[disabled=true]:cursor-not-allowed data-[disabled=true]:pointer-events-none hover:no-underline text-ds2-text_button-content-fill-brand_primary-enabled hover:text-ds2-text_button-content-fill-brand_primary-hover before:bg-ds2-text_button-base-fill-shared-hover data-[disabled=true]:text-ds2-text_button-content-fill-brand_primary-disabled gap-ds2-6 ds2-m16 before:-inset-x-ds2-12 before:-inset-y-ds2-6 w-fit" type="button" data-disabled="false"><span class="relative z-10 flex min-w-0 max-w-full items-center justify-center" style="gap: inherit;"><span class="relative z-10 flex min-w-0 max-w-full items-center justify-center truncate" style="gap: inherit;"><span class="min-w-0 max-w-full truncate">Lire plus</span></span></span></button>
 
