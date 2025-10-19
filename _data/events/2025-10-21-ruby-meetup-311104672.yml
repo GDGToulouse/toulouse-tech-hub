@@ -8,7 +8,7 @@ timeFr: '17:00'
 place: "Ô Local"
 placeAddr: "8 Impasse Bonnet Toulouse"
 link: https://www.meetup.com/fr-FR/toulouse-ruby-friends/events/311104672/
-img: https://secure.meetupstatic.com/photos/event/7/b/6/9/highres_530731593.webp?w=3840
+img: https://secure.meetupstatic.com/photos/event/d/b/d/a/highres_530816282.webp?w=3840
 localImg: event-imgs/meetup-311104672.webp
 description: >
   <div class="w-full break-words transition-all duration-300 line-clamp-[15]" style="font-family:NeuSans, Inter, system-ui, sans-serif"><p class="mb-4">Bonjour tout le monde 👋</p>
@@ -26,6 +26,7 @@ description: >
   <li>19:00 démarrage de l’événement, accueil</li>
   <li>19:10 présentation de <a href="http://Toulouse.rb" target="_blank" class="!text-viridian" rel="nofollow ugc">Toulouse.rb</a> &amp; nouvelles</li>
   <li>19:15 présentation(s) technique</li>
+  <li>💬 "Logs Structurés d'une app rails avec une stack Elastic"par <a href="https://fr.linkedin.com/in/thomas-riboulet-1b4056121" target="_blank" class="!text-viridian" rel="ugc">Thomas Riboulet</a></li>
   <li>19:45 apéro</li>
   </ul>
   <p class="mb-4">L'inscription au meetup est souhaitée pour faciliter les aspects logistiques.</p>
