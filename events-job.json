@@ -4541,6 +4541,25 @@
     "LocalImgSrc": "event-imgs/meetup-311548562.jpeg"
   },
   {
+    "Id": "meetup-311729829",
+    "PublishedOn": "2025-10-27T17:20:26.3547954+00:00",
+    "Href": "https://www.meetup.com/fr-FR/agile-toulouse/events/311729829/",
+    "Title": "\uD83C\uDF7B Bière Agile - Agilité & forfait : un mariage impossible ?",
+    "Start": "2025-11-04T17:30:00+01:00",
+    "ImgSrc": "https://secure.meetupstatic.com/photos/event/7/4/6/3/highres_530969795.jpeg",
+    "Group": "Agile Toulouse",
+    "GroupId": "agile",
+    "Duration": null,
+    "FullImgSrc": "https://secure.meetupstatic.com/photos/event/7/4/6/3/highres_530969795.webp?w=3840",
+    "HtmlDescription": "<div class=\"w-full break-words transition-all duration-300 line-clamp-[15]\" style=\"font-family:NeuSans, Inter, system-ui, sans-serif\"><p class=\"mb-4\">Rejoignez-nous pour notre événement \"Bière Agile\" ! \uD83C\uDF89</p>\n<p class=\"mb-4\">Que vous soyez un passionné de l'Agilité, un membre de notre association \"Agile Toulouse\", ou simplement curieux de découvrir notre communauté, vous êtes le bienvenu !</p>\n<p class=\"mb-4\">Ce sera l'occasion parfaite de se retrouver, de se rencontrer, de partager autour de nos expériences d'anti-patterns ... ou d'autre chose \uD83C\uDF8A</p>\n<p class=\"mb-4\"><strong>Quand ?</strong> 07 Octobre 2025 \uD83D\uDCC5<br>\n<strong>Où ?</strong> Les Halles de la Transition \uD83D\uDCCD</p>\n<p class=\"mb-4\">Au programme : des discussions passionnantes, du partage d'expériences, et bien sûr, une bonne bière (ou autre) pour trinquer à nos accomplissements ! \uD83C\uDF7B</p>\n<p class=\"mb-4\">Ne manquez pas cette opportunité de réseauter, d'apprendre et de partager avec nous. Restez à l'affût pour plus de détails à venir !<br>\nA très vite,<br>\nSarah</p>\n<p class=\"mb-4\">#AgileToulouse #Agilité #Meetup #Célébration</p></div>",
+    "TextDescription": "Rejoignez-nous pour notre événement \"Bière Agile\" ! \uD83C\uDF89\nQue vous soyez un passionné de l'Agilité, un membre de notre association \"Agile Toulouse\", ou simplement curieux de découvrir notre communauté, vous êtes le bienvenu !\nCe sera l'occasion parfaite de se retrouver, de se rencontrer, de partager autour de nos expériences d'anti-patterns ... ou d'autre chose \uD83C\uDF8A\nQuand ? 07 Octobre 2025 \uD83D\uDCC5\nOù ? Les Halles de la Transition \uD83D\uDCCD\nAu programme : des discussions passionnantes, du partage d'expériences, et bien sûr, une bonne bière (ou autre) pour trinquer à nos accomplissements ! \uD83C\uDF7B\nNe manquez pas cette opportunité de réseauter, d'apprendre et de partager avec nous. Restez à l'affût pour plus de détails à venir !\nA très vite,\nSarah\n#AgileToulouse #Agilité #Meetup #Célébration",
+    "VenueName": "Les halles de la transition",
+    "VenueAddr": "Rue du canon d'arcole, Toulouse",
+    "Latitude": null,
+    "Longitude": null,
+    "LocalImgSrc": "event-imgs/meetup-311729829.webp"
+  },
+  {
     "Id": "meetup-311471410",
     "PublishedOn": "2025-10-14T07:45:55.3699839+00:00",
     "Href": "https://www.meetup.com/fr-FR/agile-toulouse/events/311471410/",
