@@ -1,0 +1,34 @@
+id: 'meetup-311746436'
+title: 'LangGraph, GAIA & CI/CD boostée par l''IA 🤖'
+community: 'Python Toulouse'
+datePublished: '2025-10-28 17:25'
+dateIso: '2025-11-12 18:00'
+dateFr: 'mercredi 12 novembre'
+timeFr: '18:00'
+place: "La Cantine"
+placeAddr: "27 rue d'Aubuisson Toulouse"
+link: https://www.meetup.com/fr-FR/python-toulouse/events/311746436/
+img: https://secure.meetupstatic.com/photos/event/b/f/c/7/highres_530989095.webp?w=3840
+localImg: event-imgs/meetup-311746436.webp
+description: >
+  <div class="w-full break-words transition-all duration-300 line-clamp-[15]" style="font-family:NeuSans, Inter, system-ui, sans-serif"><p class="mb-4">On se retrouve le <strong>mercredi 12 novembre</strong> pour un meetup Python autour de l’IA ! Deux talks complémentaires : <strong>orchestration d’agents avec LangGraph, et CI/CD augmentée par GenAI.</strong></p>
+  <p class="mb-4">🙂 Rejoignez-nous ! Pizzas &amp; boissons offertes par Bashroom 🍕🍻 Venez apprendre, discuter et boire un verre avec la communauté !</p>
+  <p class="mb-4">📍 Attention <strong>ce sera à La Cantine by La Mêlée</strong>, 27 rue d’Aubuisson</p>
+  <p class="mb-4">👉 Si vous ne pouvez pas être là le 12 : la talk LangGraph sera aussi présentée le lendemain au Devfest Toulouse !</p>
+  <p class="mb-4">🧠 <strong>LangGraph &amp; GAIA – par Florian Marc</strong><br>
+  On construit un agent IA pas à pas avec LangGraph, puis on le teste sur le benchmark GAIA de Hugging Face. Objectif : comprendre comment l’orchestration par graphes améliore les résultats sur des cas réels.</p>
+  <p class="mb-4">⚙️ <strong>CI/CD boostée par l’IA – par Guilhem De Miollis</strong><br>
+  Retour d’expérience sur GitLab CI (transposable à GitHub Actions) :<br>
+  → code review AI automatique,<br>
+  → doc &amp; diagrammes générés par GenAI,<br>
+  → tips pour aller plus loin que le classique "build/test/deploy".</p>
+  <p class="mb-4">📆 Mercredi 12 novembre<br>
+  📍 La Cantine by La Mêlée – 27 rue d’Aubuisson, Toulouse<br>
+  18:45 → Accueil<br>
+  19:00 → Talks<br>
+  20:15+ → Apéro &amp; échanges</p>
+  <p class="mb-4"><strong>Merci à Bashroom et à La Cantine by La Mêlée de rendre cet événement possible ! 🙏</strong></p>
+  <p class="mb-4">Et merci à nos speakers / orgas :</p>
+  <p class="mb-4"><strong>Florian Marc</strong>: Ingénieur R&amp;D. Spécialisé dans le développement d'applications Web dans les environnements Google Cloud Platform et Cloud Native, développe son expertise autour du Machine Learning.</p>
+  <p class="mb-4"><strong>Guilhem:</strong> ancien développeur Android passé du côté back de la force parce qu'il en avait marre d'aligner des boutons sur des écrans trop petits, automatise tout ce qu'il peux parce que il est faignant.</p></div><button class="inline-flex items-center justify-center rounded-ds2-max max-w-full relative data-[disabled=false]:active:scale-98 transition-all duration-150 before:absolute before:rounded-ds2-max before:z-0 before:opacity-0 data-[disabled=false]:hover:before:opacity-100 before:transition-opacity before:duration-150 data-[disabled=true]:cursor-not-allowed data-[disabled=true]:pointer-events-none hover:no-underline text-ds2-text_button-content-fill-brand_primary-enabled hover:text-ds2-text_button-content-fill-brand_primary-hover before:bg-ds2-text_button-base-fill-shared-hover data-[disabled=true]:text-ds2-text_button-content-fill-brand_primary-disabled gap-ds2-6 ds2-m16 before:-inset-x-ds2-12 before:-inset-y-ds2-6 w-fit" type="button" data-disabled="false"><span class="relative z-10 flex min-w-0 max-w-full items-center justify-center" style="gap: inherit;"><span class="relative z-10 flex min-w-0 max-w-full items-center justify-center truncate" style="gap: inherit;"><span class="min-w-0 max-w-full truncate">Lire plus</span></span></span></button>
+
