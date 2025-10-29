@@ -4805,5 +4805,24 @@
     "Latitude": 43.60174,
     "Longitude": 1.442948,
     "LocalImgSrc": "event-imgs/meetup-qmzpstyhcqblb.webp"
+  },
+  {
+    "Id": "meetup-311744824",
+    "PublishedOn": "2025-10-29T09:27:34.5067402+00:00",
+    "Href": "https://www.meetup.com/fr-FR/postgres-toulouse/events/311744824/",
+    "Title": "psql -h Toulouse -d meteofrance",
+    "Start": "2026-01-13T17:00:00+01:00",
+    "ImgSrc": "https://secure.meetupstatic.com/photos/event/c/0/6/e/highres_530989262.jpeg",
+    "Group": "Postgres Toulouse User Group",
+    "GroupId": "postgres",
+    "Duration": null,
+    "FullImgSrc": "https://secure.meetupstatic.com/photos/event/c/0/6/e/highres_530989262.webp?w=3840",
+    "HtmlDescription": "<div class=\"w-full break-words transition-all duration-300 line-clamp-[15]\" style=\"font-family:NeuSans, Inter, system-ui, sans-serif\"><p class=\"mb-4\">Le redémarrage des meetups PostgreSQL Toulousain a eu lieu il y a moins d'un mois et nous avons déjà une nouvelle date à vous communiquer pour la prochaine session : réservez vos agendas pour le 13 janvier 2026 de 18h00 à 21h30.</p>\n<p class=\"mb-4\"><strong>Météo-France</strong> nous reçoit pour cette nouvelle session.</p>\n<p class=\"mb-4\">Comme lors de la session précédente, <strong>deux slots de présentation</strong> d'environ 30 minutes (+ questions) sont ouverts et, nouveauté, nous vous proposons ensuite <strong>4 slots de 5 minutes</strong> pour des lightning talks. L'idée est de présenter 1 ou 2 diapositives et de parler 5 minutes (maximum) sur votre expérience avec PostgreSQL. C'est idéal pour vous lancer en tant que speaker ou pour présenter un projet réussi, un problème rencontré, une expérience en cours ou passée ou encore une idée de développement ou d'extension avec PostgreSQL!</p>\n<p class=\"mb-4\">Quelle que soit votre proposition, vous pouvez vous connecter sur sessionize pour proposer vos présentations (jusqu'au 13 décembre 2025) :</p>\n<p class=\"mb-4\"><a href=\"https://sessionize.com/tls-pug-session/\" target=\"_blank\" class=\"!text-viridian\" rel=\"nofollow ugc\">https://sessionize.com/tls-pug-session/</a></p>\n<p class=\"mb-4\">Les sujets proposés seront publiés un peu avant Noël.</p>\n<p class=\"mb-4\"><strong>Surveillez donc cet événement pour en savoir plus à la fin du mois de décembre!</strong></p></div><button class=\"inline-flex items-center justify-center rounded-ds2-max max-w-full relative data-[disabled=false]:active:scale-98 transition-all duration-150 before:absolute before:rounded-ds2-max before:z-0 before:opacity-0 data-[disabled=false]:hover:before:opacity-100 before:transition-opacity before:duration-150 data-[disabled=true]:cursor-not-allowed data-[disabled=true]:pointer-events-none hover:no-underline text-ds2-text_button-content-fill-brand_primary-enabled hover:text-ds2-text_button-content-fill-brand_primary-hover before:bg-ds2-text_button-base-fill-shared-hover data-[disabled=true]:text-ds2-text_button-content-fill-brand_primary-disabled gap-ds2-6 ds2-m16 before:-inset-x-ds2-12 before:-inset-y-ds2-6 w-fit\" type=\"button\" data-disabled=\"false\"><span class=\"relative z-10 flex min-w-0 max-w-full items-center justify-center\" style=\"gap: inherit;\"><span class=\"relative z-10 flex min-w-0 max-w-full items-center justify-center truncate\" style=\"gap: inherit;\"><span class=\"min-w-0 max-w-full truncate\">Lire plus</span></span></span></button>",
+    "TextDescription": "Le redémarrage des meetups PostgreSQL Toulousain a eu lieu il y a moins d'un mois et nous avons déjà une nouvelle date à vous communiquer pour la prochaine session : réservez vos agendas pour le 13 janvier 2026 de 18h00 à 21h30.\nMétéo-France nous reçoit pour cette nouvelle session.\nComme lors de la session précédente, deux slots de présentation d'environ 30 minutes (+ questions) sont ouverts et, nouveauté, nous vous proposons ensuite 4 slots de 5 minutes pour des lightning talks. L'idée est de présenter 1 ou 2 diapositives et de parler 5 minutes (maximum) sur votre expérience avec PostgreSQL. C'est idéal pour vous lancer en tant que speaker ou pour présenter un projet réussi, un problème rencontré, une expérience en cours ou passée ou encore une idée de développement ou d'extension avec PostgreSQL!\nQuelle que soit votre proposition, vous pouvez vous connecter sur sessionize pour proposer vos présentations (jusqu'au 13 décembre 2025) :\nhttps://sessionize.com/tls-pug-session/\nLes sujets proposés seront publiés un peu avant Noël.\nSurveillez donc cet événement pour en savoir plus à la fin du mois de décembre!Lire plus",
+    "VenueName": "Centre international de conférence de Météo France",
+    "VenueAddr": "42 Avenue Gaspard Coriolis Toulouse",
+    "Latitude": null,
+    "Longitude": null,
+    "LocalImgSrc": "event-imgs/meetup-311744824.webp"
   }
 ]
