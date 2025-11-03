@@ -1,0 +1,23 @@
+id: 'meetup-311746637'
+title: 'Édition spéciale : DevFest x Meetup Python 🎉'
+community: 'Python Toulouse'
+datePublished: '2025-11-03 17:22'
+dateIso: '2025-11-13 15:05'
+dateFr: 'jeudi 13 novembre'
+timeFr: '15:05'
+place: "Diagora"
+placeAddr: "150 Rue Pierre Gilles de Gennes Labège"
+link: https://www.meetup.com/fr-FR/python-toulouse/events/311746637/
+img: https://secure.meetupstatic.com/photos/event/c/1/d/5/highres_530989621.webp?w=3840
+localImg: event-imgs/meetup-311746637.webp
+description: >
+  <div class="w-full break-words transition-all duration-300 line-clamp-[15]" style="font-family:NeuSans, Inter, system-ui, sans-serif"><p class="mb-4">Le DevFest Toulouse nous invite à participer à sa track Communautés, une superbe initiative qui met à l’honneur les meetups et groupes tech de la région 🙌</p>
+  <p class="mb-4">Toute une journée dédiée aux communautés locales, avec des talks portés par celles et ceux qui font vivre la scène toulousaine !</p>
+  <p class="mb-4">Le meetup Python sera présent le jeudi 13 novembre à 16h05 en salle Occitanie au Centre de Congrès Diagora.</p>
+  <p class="mb-4"><strong>🎟️ Cette session est réservée aux visiteurs munis d’un billet pour le DevFest Toulouse 2025.</strong></p>
+  <p class="mb-4">🧠 LangGraph &amp; le benchmark GAIA - par Florian Marc<br>
+  Cette session reprend la même talk que celle présentée le 12 novembre à La Cantine by La Mêlée :</p>
+  <p class="mb-4">On y construit un agent IA avec LangGraph, puis on le teste sur le benchmark GAIA de Hugging Face pour voir comment l’orchestration par graphes améliore les performances sur des cas réels.</p>
+  <p class="mb-4"><strong>Si vous participez à l’événement, c’est une excellente occasion de (re)découvrir la talk dans un cadre encore plus large !</strong></p>
+  <p class="mb-4">Merci à l’équipe du DevFest pour l’invitation 🙏</p></div><button class="inline-flex items-center justify-center rounded-ds2-max max-w-full relative data-[disabled=false]:active:scale-98 transition-all duration-150 before:absolute before:rounded-ds2-max before:z-0 before:opacity-0 data-[disabled=false]:hover:before:opacity-100 before:transition-opacity before:duration-150 data-[disabled=true]:cursor-not-allowed data-[disabled=true]:pointer-events-none hover:no-underline text-ds2-text_button-content-fill-brand_primary-enabled hover:text-ds2-text_button-content-fill-brand_primary-hover before:bg-ds2-text_button-base-fill-shared-hover data-[disabled=true]:text-ds2-text_button-content-fill-brand_primary-disabled gap-ds2-6 ds2-m16 before:-inset-x-ds2-12 before:-inset-y-ds2-6 w-fit" type="button" data-disabled="false"><span class="relative z-10 flex min-w-0 max-w-full items-center justify-center" style="gap: inherit;"><span class="relative z-10 flex min-w-0 max-w-full items-center justify-center truncate" style="gap: inherit;"><span class="min-w-0 max-w-full truncate">Lire plus</span></span></span></button>
+
