@@ -4731,6 +4731,25 @@
     "LocalImgSrc": "event-imgs/meetup-311588382.webp"
   },
   {
+    "Id": "meetup-311839738",
+    "PublishedOn": "2025-11-04T17:21:48.1542998+00:00",
+    "Href": "https://www.meetup.com/fr-FR/agile-toulouse/events/311839738/",
+    "Title": "Édition spéciale : DevFest x Agile Toulouse",
+    "Start": "2025-11-13T13:55:00+01:00",
+    "ImgSrc": "https://secure.meetupstatic.com/photos/event/b/c/b/2/highres_531108306.jpeg",
+    "Group": "Agile Toulouse",
+    "GroupId": "agile",
+    "Duration": null,
+    "FullImgSrc": "https://secure.meetupstatic.com/photos/event/b/c/b/2/highres_531108306.webp?w=3840",
+    "HtmlDescription": "<div class=\"w-full break-words transition-all duration-300 line-clamp-[15]\" style=\"font-family:NeuSans, Inter, system-ui, sans-serif\"><p class=\"mb-4\">Le DevFest Toulouse nous invite à participer à sa track Communautés, une superbe initiative qui met à l’honneur les meetups et groupes tech de la région \uD83D\uDE4C</p>\n<p class=\"mb-4\">Toute une journée dédiée aux communautés locales, avec des talks portés par celles et ceux qui font vivre la scène toulousaine\u202F!</p>\n<p class=\"mb-4\">Agile Toulouse sera présent le jeudi 13\u202Fnovembre à\u202F14h55 en salle\u202FOccitanie au Centre de Congrès Diagora.</p>\n<p class=\"mb-4\"><strong>\uD83C\uDF9F️ Cette session est réservée aux visiteurs munis d’un billet pour le\u202FDevFest\u202FToulouse\u202F2025.</strong></p>\n<p class=\"mb-4\">\uD83E\uDDE0\uD83D\uDCAC Agile Toulouse - Agile et DDD : quand devs et métiers partagent enfin la même langue et les mêmes pratiques par Guillaume Saint-Étienne</p>\n<p class=\"mb-4\">Cette session reprend des éléments vu pendant notre cycle de meetups sur le DDD.</p>\n<p class=\"mb-4\">Merci à l’équipe du\u202FDevFest\u202Fpour l’invitation\u202F\uD83D\uDE4F</p></div>",
+    "TextDescription": "Le DevFest Toulouse nous invite à participer à sa track Communautés, une superbe initiative qui met à l’honneur les meetups et groupes tech de la région \uD83D\uDE4C\nToute une journée dédiée aux communautés locales, avec des talks portés par celles et ceux qui font vivre la scène toulousaine\u202F!\nAgile Toulouse sera présent le jeudi 13\u202Fnovembre à\u202F14h55 en salle\u202FOccitanie au Centre de Congrès Diagora.\n\uD83C\uDF9F️ Cette session est réservée aux visiteurs munis d’un billet pour le\u202FDevFest\u202FToulouse\u202F2025.\n\uD83E\uDDE0\uD83D\uDCAC Agile Toulouse - Agile et DDD : quand devs et métiers partagent enfin la même langue et les mêmes pratiques par Guillaume Saint-Étienne\nCette session reprend des éléments vu pendant notre cycle de meetups sur le DDD.\nMerci à l’équipe du\u202FDevFest\u202Fpour l’invitation\u202F\uD83D\uDE4F",
+    "VenueName": "Centre de Congrès et d’Exposition Diagora",
+    "VenueAddr": "150 Rue Pierre Gilles de Gennes Labège",
+    "Latitude": null,
+    "Longitude": null,
+    "LocalImgSrc": "event-imgs/meetup-311839738.webp"
+  },
+  {
     "Id": "meetup-311746637",
     "PublishedOn": "2025-11-03T17:22:30.0101313+00:00",
     "Href": "https://www.meetup.com/fr-FR/python-toulouse/events/311746637/",
