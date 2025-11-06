@@ -4940,6 +4940,25 @@
     "LocalImgSrc": "event-imgs/meetup-311852752.webp"
   },
   {
+    "Id": "meetup-311885142",
+    "PublishedOn": "2025-11-06T17:23:17.2276358+00:00",
+    "Href": "https://www.meetup.com/fr-FR/agile-toulouse/events/311885142/",
+    "Title": "Klub de lecture le jeudi 11 Décembre 2025",
+    "Start": "2025-12-11T17:00:00+01:00",
+    "ImgSrc": "https://secure.meetupstatic.com/photos/event/2/e/c/9/highres_526571977.jpeg",
+    "Group": "Agile Toulouse",
+    "GroupId": "agile",
+    "Duration": null,
+    "FullImgSrc": "https://secure.meetupstatic.com/photos/event/2/e/c/9/highres_526571977.webp?w=3840",
+    "HtmlDescription": "<div class=\"w-full break-words transition-all duration-300 line-clamp-[15]\" style=\"font-family:NeuSans, Inter, system-ui, sans-serif\"><p class=\"mb-4\">Bonjour,</p>\n<p class=\"mb-4\">Le prochain Klub de lecture se tiendra le <strong>jeudi 11 décembre 2025.</strong></p>\n<p class=\"mb-4\">Les propositions de livres sont en cours. Ajoutez le votre en commentaire !</p>\n<p class=\"mb-4\">Le lieu présentiel reste à définir (probablement maison des associations Toulouse) , même si l'on conserve l'opportunité de se retrouver à distance.</p>\n<p class=\"mb-4\">Les votes démarreront ce dimanche 9 à midi ici :<br>\n<a href=\"https://pollen.cl/#poll/cQUJHnrVQmS94GBigL4nOw/result\" target=\"_blank\" class=\"!text-viridian\" rel=\"nofollow ugc\">https://pollen.cl/#poll/cQUJHnrVQmS94GBigL4nOw/result</a></p>\n<p class=\"mb-4\">@AgileToulouse.</p></div>",
+    "TextDescription": "Bonjour,\nLe prochain Klub de lecture se tiendra le jeudi 11 décembre 2025.\nLes propositions de livres sont en cours. Ajoutez le votre en commentaire !\nLe lieu présentiel reste à définir (probablement maison des associations Toulouse) , même si l'on conserve l'opportunité de se retrouver à distance.\nLes votes démarreront ce dimanche 9 à midi ici :\nhttps://pollen.cl/#poll/cQUJHnrVQmS94GBigL4nOw/result\n@AgileToulouse.",
+    "VenueName": null,
+    "VenueAddr": null,
+    "Latitude": null,
+    "Longitude": null,
+    "LocalImgSrc": "event-imgs/meetup-311885142.webp"
+  },
+  {
     "Id": "meetup-311744824",
     "PublishedOn": "2025-10-29T09:27:34.5067402+00:00",
     "Href": "https://www.meetup.com/fr-FR/postgres-toulouse/events/311744824/",
