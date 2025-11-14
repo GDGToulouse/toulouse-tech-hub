@@ -11,7 +11,7 @@ link: https://www.meetup.com/fr-FR/agile-toulouse/events/311533275/
 img: https://secure.meetupstatic.com/photos/event/7/e/c/1/highres_530732449.webp?w=3840
 localImg: event-imgs/meetup-311533275.webp
 description: >
-  <div class="w-full break-words transition-all duration-300 line-clamp-[15]" style="font-family:NeuSans, Inter, system-ui, sans-serif"><p class="mb-4"><strong>Événement Payant : <a href="https://www.billetweb.fr/coaching-dojo-2025" target="_blank" class="!text-ds2-text-fill-brand_primary-enabled hover:!text-ds2-text-fill-brand_primary-hover" rel="nofollow ugc">https://www.billetweb.fr/coaching-dojo-2025</a></strong></p>
+  <div class="w-full break-words transition-all duration-300 line-clamp-[15]" style="font-family: NeuSans, Inter, system-ui, sans-serif;"><p class="mb-4"><strong>Événement Payant : <a href="https://www.billetweb.fr/coaching-dojo-2025" target="_blank" class="!text-ds2-text-fill-brand_primary-enabled hover:!text-ds2-text-fill-brand_primary-hover" rel="nofollow ugc">https://www.billetweb.fr/coaching-dojo-2025</a></strong></p>
   <p class="mb-4"><strong>Attention, seules les inscriptions par BilletWeb seront pris en compte.</strong></p>
   <p class="mb-4">---------------------------------------------------------<br>
   Rejoignez-nous pour une expérience unique de coaching en groupe à Toulouse le samedi 6 décembre 2025<br>
@@ -28,5 +28,5 @@ description: >
   Tarif : comprenant les ateliers, le déjeuner du samedi (entrée, plat,dessert, café), les pauses café/ thé.<br>
   L'association Agile Toulouse est une association 1901 à but non lucratif : les intervenant(e)s sont bénévoles et non rémunéré(e)s, la recette de la vente des billets couvre uniquement la logistique et restauration.</p>
   <p class="mb-4">Une partie du billet est subventionné par l'association.<br>
-  Ne manquez pas cette journée enrichissante dans un cadre convivial, pour apprendre, partager et grandir ensemble !</p></div><button class="inline-flex items-center justify-center rounded-ds2-max max-w-full relative data-[disabled=false]:active:scale-98 transition-all duration-150 before:absolute before:rounded-ds2-max before:z-0 before:opacity-0 data-[disabled=false]:hover:before:opacity-100 before:transition-opacity before:duration-150 data-[disabled=true]:cursor-not-allowed data-[disabled=true]:pointer-events-none hover:no-underline text-ds2-text_button-content-fill-brand_primary-enabled hover:text-ds2-text_button-content-fill-brand_primary-hover before:bg-ds2-text_button-base-fill-shared-hover data-[disabled=true]:text-ds2-text_button-content-fill-brand_primary-disabled gap-ds2-6 ds2-m16 before:-inset-x-ds2-12 before:-inset-y-ds2-6 w-fit" type="button" data-disabled="false"><span class="relative z-10 flex min-w-0 max-w-full items-center justify-center" style="gap: inherit;"><span class="relative z-10 flex min-w-0 max-w-full items-center justify-center truncate" style="gap: inherit;"><span class="min-w-0 max-w-full truncate">Lire plus</span></span></span></button>
+  Ne manquez pas cette journée enrichissante dans un cadre convivial, pour apprendre, partager et grandir ensemble !</p></div>
 
