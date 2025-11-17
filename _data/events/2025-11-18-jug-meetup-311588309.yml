@@ -11,28 +11,45 @@ link: https://www.meetup.com/fr-FR/toulouse-java-user-group/events/311588309/
 img: https://secure.meetupstatic.com/photos/event/9/e/f/7/highres_531160695.webp?w=3840
 localImg: event-imgs/meetup-311588309.webp
 description: >
-  <div class="w-full break-words transition-all duration-300 line-clamp-[15]" style="font-family: NeuSans, Inter, system-ui, sans-serif;"><p class="mb-4">Le <strong>mardi 18 novembre à 19h</strong>, Stephane Nicoll reviendra au Toulouse JUG pour nous parler des nouveautés de Spring Boot 4 et ça se passera chez <strong>Epitech</strong> <strong>Toulouse</strong>.</p>
-  <p class="mb-4">***</p>
-  <p class="mb-4"><strong>== Spring Boot: Chapitre 4</strong><br>
-  Speaker : <strong>Stéphane Nicoll</strong></p>
-  <p class="mb-4">Spring Boot 4.0 est prévu pour novembre prochain. Même si la baseline reste toujours à Java 17, c’est l’occasion idéale de profiter des nouveautés du langage et du framework. Stéphane commencera par mettre à jour une application existante vers Spring Boot 4.0.</p>
-  <p class="mb-4">En chemin, nous verrons comment éviter à l’avenir les NullPointerExceptions en production grâce aux null checks ajoutés dans les projets Spring avec JSpecify. Nous en profiterons aussi pour revoir l’organisation des dépendances : Spring Boot propose désormais des modules plus fins qui offrent davantage de souplesse. L’intégration de Jackson 3.0 simplifie la configuration et apporte des réglages plus modernes. Enfin, nous découvrirons comment utiliser un RestClient dans des scénarios asynchrones, sans avoir recours aux types réactifs.</p>
-  <p class="mb-4">Bio:</p>
-  <p class="mb-4">Stéphane a plus de 20 ans d’expérience en ingénierie logicielle, avec une spécialisation marquée dans le développement d’API sur la JVM. Après avoir passé plus d’une décennie à concevoir des applications Java d’envergure dans les secteurs de la géomatique, de la finance et de la logistique, il a rejoint l’équipe cœur de Spring en 2014.</p>
-  <p class="mb-4">Au sein de l’équipe Spring, Stéphane a eu le privilège de travailler sur différents aspects de Spring Boot et du Spring Framework, en cherchant à en comprendre les rouages internes et en collaborant étroitement avec une communauté de contributeurs exceptionnelle.</p>
-  <p class="mb-4">Retrouvez Stéphane (« snicoll ») sur Bsky et GitHub pour suivre son parcours dans l’univers du développement Java.</p>
-  <p class="mb-4">***</p>
-  <p class="mb-4">Comme d'habitude, la soirée sera suivie d'un apéro (pizza, bières et softs) où nous pourrons nous retrouver pour réseauter et discuter de Java et d'autres sujets !</p>
-  <p class="mb-4">Et en parlant de sujets, notre <a href="https://bit.ly/toulousejug-cfp" target="_blank" class="!text-ds2-text-fill-brand_primary-enabled hover:!text-ds2-text-fill-brand_primary-hover" rel="nofollow ugc">CFP</a> est ouvert 24h/24, 7j/7, toute l'année, n'hésitez pas à aller voter sur vos sujets préférés, proposer des idées, des thèmes et même proposer vos propres présentations !<br>
-  <a href="https://bit.ly/toulousejug-cfp" target="_blank" class="!text-ds2-text-fill-brand_primary-enabled hover:!text-ds2-text-fill-brand_primary-hover" rel="nofollow ugc">https://bit.ly/toulousejug-cfp</a></p>
-  <p class="mb-4">***</p>
-  <p class="mb-4">Merci à nos sponsors : <strong>MonkeyPatch</strong> et <strong>OpenAirlines</strong>.</p>
-  <p class="mb-4">***</p>
-  <p class="mb-4"><strong>Nous recherchons activement des volontaires pour s'impliquer dans l'organisation du JUG.</strong></p>
-  <p class="mb-4">Nos besoins :<br>
+  <div class="w-full break-words transition-all duration-300 line-clamp-[15]" style="font-family: NeuSans, Inter, system-ui, sans-serif;"><p class="mb-4">Le <strong>mardi 18 novembre à 19h</strong>, Stephane Nicoll reviendra au Toulouse JUG pour nous parler des nouveautés de Spring Boot 4 et ça se passera chez <strong>Epitech</strong> <strong>Toulouse</strong>.<br>
+  <br>
+  ***<br>
+  <br>
+  <strong>== Spring Boot: Chapitre 4</strong><br>
+  Speaker : <strong>Stéphane Nicoll</strong><br>
+  <br>
+  Spring Boot 4.0 est prévu pour novembre prochain. Même si la baseline reste toujours à Java 17, c’est l’occasion idéale de profiter des nouveautés du langage et du framework. Stéphane commencera par mettre à jour une application existante vers Spring Boot 4.0.<br>
+  <br>
+  En chemin, nous verrons comment éviter à l’avenir les NullPointerExceptions en production grâce aux null checks ajoutés dans les projets Spring avec JSpecify. Nous en profiterons aussi pour revoir l’organisation des dépendances : Spring Boot propose désormais des modules plus fins qui offrent davantage de souplesse. L’intégration de Jackson 3.0 simplifie la configuration et apporte des réglages plus modernes. Enfin, nous découvrirons comment utiliser un RestClient dans des scénarios asynchrones, sans avoir recours aux types réactifs.<br>
+  <br>
+  Bio:<br>
+  <br>
+  Stéphane a plus de 20 ans d’expérience en ingénierie logicielle, avec une spécialisation marquée dans le développement d’API sur la JVM. Après avoir passé plus d’une décennie à concevoir des applications Java d’envergure dans les secteurs de la géomatique, de la finance et de la logistique, il a rejoint l’équipe cœur de Spring en 2014.<br>
+  <br>
+  Au sein de l’équipe Spring, Stéphane a eu le privilège de travailler sur différents aspects de Spring Boot et du Spring Framework, en cherchant à en comprendre les rouages internes et en collaborant étroitement avec une communauté de contributeurs exceptionnelle.<br>
+  <br>
+  Retrouvez Stéphane (« snicoll ») sur Bsky et GitHub pour suivre son parcours dans l’univers du développement Java.<br>
+  <br>
+  ***<br>
+  <br>
+  Comme d'habitude, la soirée sera suivie d'un apéro (pizza, bières et softs) où nous pourrons nous retrouver pour réseauter et discuter de Java et d'autres sujets !<br>
+  <br>
+  Et en parlant de sujets, notre <a href="https://bit.ly/toulousejug-cfp" target="_blank" class="!text-ds2-text-fill-brand_primary-enabled hover:!text-ds2-text-fill-brand_primary-hover" rel="nofollow ugc">CFP</a> est ouvert 24h/24, 7j/7, toute l'année, n'hésitez pas à aller voter sur vos sujets préférés, proposer des idées, des thèmes et même proposer vos propres présentations !<br>
+  <a href="https://bit.ly/toulousejug-cfp" target="_blank" class="!text-ds2-text-fill-brand_primary-enabled hover:!text-ds2-text-fill-brand_primary-hover" rel="nofollow ugc">https://bit.ly/toulousejug-cfp</a><br>
+  <br>
+  ***<br>
+  <br>
+  Merci à nos sponsors : <strong>MonkeyPatch</strong> et <strong>OpenAirlines</strong>.<br>
+  <br>
+  ***<br>
+  <br>
+  <strong>Nous recherchons activement des volontaires pour s'impliquer dans l'organisation du JUG.</strong><br>
+  <br>
+  Nos besoins :<br>
   * Récupération et installation des pizzas/boissons ;<br>
   * Aide à la planification des prochains sujets ;<br>
   * Création de supports graphiques et visuels, communication ;<br>
-  * Gestion de la captation son/vidéo ;</p>
-  <p class="mb-4">Si un de ces sujets vous intéresse (ou d'autres), n'hésitez pas à nous contacter !</p></div><button class="inline-flex items-center justify-center rounded-ds2-max max-w-full relative data-[disabled=false]:active:scale-98 transition-all duration-150 before:absolute before:rounded-ds2-max before:z-0 before:opacity-0 data-[disabled=false]:hover:before:opacity-100 before:transition-opacity before:duration-150 data-[disabled=true]:cursor-not-allowed data-[disabled=true]:pointer-events-none hover:no-underline text-ds2-text_button-content-fill-brand_primary-enabled hover:text-ds2-text_button-content-fill-brand_primary-hover before:bg-ds2-text_button-base-fill-shared-hover data-[disabled=true]:text-ds2-text_button-content-fill-brand_primary-disabled gap-ds2-6 ds2-m16 before:-inset-x-ds2-12 before:-inset-y-ds2-6 w-fit" type="button" data-disabled="false"><span class="relative z-10 flex min-w-0 max-w-full items-center justify-center" style="gap: inherit;"><span class="relative z-10 flex min-w-0 max-w-full items-center justify-center truncate" style="gap: inherit;"><span class="min-w-0 max-w-full truncate">Lire plus</span></span></span></button>
+  * Gestion de la captation son/vidéo ;<br>
+  <br>
+  Si un de ces sujets vous intéresse (ou d'autres), n'hésitez pas à nous contacter !</p></div><button class="inline-flex items-center justify-center rounded-ds2-max max-w-full relative data-[disabled=false]:active:scale-98 transition-all duration-150 before:absolute before:rounded-ds2-max before:z-0 before:opacity-0 data-[disabled=false]:hover:before:opacity-100 before:transition-opacity before:duration-150 data-[disabled=true]:cursor-not-allowed data-[disabled=true]:pointer-events-none hover:no-underline text-ds2-text_button-content-fill-brand_primary-enabled hover:text-ds2-text_button-content-fill-brand_primary-hover before:bg-ds2-text_button-base-fill-shared-hover data-[disabled=true]:text-ds2-text_button-content-fill-brand_primary-disabled gap-ds2-6 ds2-m16 before:-inset-x-ds2-12 before:-inset-y-ds2-6 w-fit" type="button" data-disabled="false"><span class="relative z-10 flex min-w-0 max-w-full items-center justify-center" style="gap: inherit;"><span class="relative z-10 flex min-w-0 max-w-full items-center justify-center truncate" style="gap: inherit;"><span class="min-w-0 max-w-full truncate">Lire plus</span></span></span></button>
 
