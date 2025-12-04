@@ -79,11 +79,11 @@ layout: default
 
 {%- assign now_time = site.time | date: "%s" | plus: 0 -%}
 {%- for event_hash in site.data.events -%}
-{%- assign event = event_hash[1] -%}
-{%- assign event_time = event.dateIso | date:"%s" | plus: 0 -%}
-{%- if event_time < now_time -%}
-  {%- continue -%}
-{%- endif -%}
+  {%- assign event = event_hash[1] -%}
+  {%- assign event_time = event.dateIso | date:"%s" | plus: 0 -%}
+  {%- if event_time < now_time -%}
+    {%- continue -%}
+  {%- endif -%}
 
   <div class="col">
     <div class="card shadow">
