@@ -14,7 +14,7 @@ VERSION:2.0
 BEGIN:VEVENT
 DTSTAMP;VALUE=DATE:{{ event.dateIso | date: "%Y%m%d" }}
 DTSTART:{{ event.dateIso | date: "%Y%m%d" }}T{{ event.dateIso | date: "%H%M" }}00
-DTEND:{{ event.dateIso | date: "%Y%m%d" }}T{{ event.dateIso | date: "%s" | plus: 7200 | date: "%H%M" }}00
+DTEND:{%- if event.dateIsoEnd -%}{{ event.dateIsoEnd | date: "%Y%m%d" }}T{{ event.dateIsoEnd | date: "%H%M" }}00{%- else -%}{{ event.dateIso | date: "%Y%m%d" }}T{{ event.dateIso | date: "%s" | plus: 7200 | date: "%H%M" }}00{%- endif -%}
 SEQUENCE:0
 SUMMARY:{{ event.title }}
 UID:{{ event.id }}
