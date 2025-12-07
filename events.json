@@ -12,12 +12,12 @@ layout: null
   {
     "Id": "{{ event.id }}",
     "Href": "{{ event.link }}",
-    "Title": "{{ event.title }}",
+    "Title": "{{ event.title | replace: '"', '\\"' | strip }}",
     "Start": "{{ event.dateIso | date:"%Y-%m-%dT%T" }}",
     "Img": "{{ site.site }}/{{ site.baseurl }}/{{ event.localImg }}",
-    "Group": "{{ event.community }}",
-    "Venue": "{{ event.place }}",
-    "VenueAddr": "{{ event.placeAddr }}",
+    "Group": "{{ event.community | replace: '"', '\\"' | strip }}",
+    "Venue": "{{ event.place | replace: '"', '\\"' | strip }}",
+    "VenueAddr": "{{ event.placeAddr | replace: '"', '\\"' | strip }}",
     "HtmlDescription": "{{ event.description | replace: '"', '\\"' | strip }}"
   }{% unless forloop.last %},{% endunless %}
 {% endfor %}
