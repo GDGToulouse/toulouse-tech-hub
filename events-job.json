@@ -5134,7 +5134,7 @@
     "PublishedOn": "2025-11-06T17:23:17.2276358+00:00",
     "Href": "https://www.meetup.com/fr-FR/agile-toulouse/events/311885142/",
     "Title": "Klub de lecture le jeudi 11 Décembre 2025",
-    "Start": "2025-12-11T17:00:00+01:00",
+    "Start": "2025-12-11T17:30:00+01:00",
     "ImgSrc": "https://secure.meetupstatic.com/photos/event/6/4/0/1/highres_531265601.jpeg",
     "Group": "Agile Toulouse",
     "GroupId": "agile",
@@ -5242,5 +5242,24 @@
     "Latitude": null,
     "Longitude": null,
     "LocalImgSrc": "event-imgs/meetup-311852752.webp"
+  },
+  {
+    "Id": "meetup-312343838",
+    "PublishedOn": "2025-12-08T17:24:13.0530676+00:00",
+    "Href": "https://www.meetup.com/fr-FR/javascript-and-co/events/312343838/",
+    "Title": "Double Meetup tech : le dev avec Expo JS et le Pentesting par IA",
+    "Start": "2026-01-29T18:00:00+01:00",
+    "ImgSrc": "https://secure.meetupstatic.com/photos/event/3/e/8/6/highres_531676006.jpeg",
+    "Group": "Association JS & Co Toulouse",
+    "GroupId": "js-and-co",
+    "Duration": null,
+    "FullImgSrc": "https://secure.meetupstatic.com/photos/event/3/e/8/6/highres_531676006.webp?w=3840",
+    "HtmlDescription": "<div class=\"w-full break-words transition-all duration-300 line-clamp-[15]\" style=\"font-family: NeuSans, Inter, system-ui, sans-serif;\"><p class=\"mb-4\">Pour célébrer cette nouvelle année qui commence, ce n'est pas un mais 2 meetups techniques que nous aurons l'occasion de faire dans la même soirée.<br>\n<br>\nVenez nous retrouver au Campus Media School Toulouse, où l'IRIS, l'ECS et TSS sont situées.<br>\n<br>\nVous pourrez assiter à une double conférence dans les locaux de l'école.<br>\n<br>\n- Le dévellopement avec Expos JS avec Jérémy Simonklein Angély<br>\n- Le Pentesting par IA avec Alexandre Oda<br>\n<br>\nS'en suivra ensuite notre traditionnel cocktail pour échanger entre pros !<br>\n<br>\nIl nous tarde de vous revoir,<br>\n- Jeudi 29 janvier<br>\n- 19h<br>\n- Campus Mediaschool, 9 rue des Amidonniers<br>\n<br>\nÀ bientôt chers amis,<br>\nL'équipe de JS&amp;Co - Jérémy Simonklein Angély et Simon Faux</p></div><button class=\"inline-flex items-center justify-center rounded-ds2-max max-w-full relative select-none data-[disabled=false]:active:scale-98 transition-all duration-150 before:absolute before:rounded-ds2-max before:z-0 before:opacity-0 data-[disabled=false]:hover:before:opacity-100 before:transition-opacity before:duration-150 data-[disabled=true]:cursor-not-allowed data-[disabled=true]:pointer-events-none hover:no-underline text-ds2-text_button-content-fill-brand_primary-enabled hover:text-ds2-text_button-content-fill-brand_primary-hover before:bg-ds2-text_button-base-fill-shared-hover data-[disabled=true]:text-ds2-text_button-content-fill-brand_primary-disabled gap-ds2-6 ds2-m16 before:-inset-x-ds2-12 before:-inset-y-ds2-6 w-fit\" type=\"button\" data-disabled=\"false\"><span class=\"relative z-10 flex min-w-0 max-w-full items-center justify-center\" style=\"gap: inherit;\"><span class=\"relative z-10 flex min-w-0 max-w-full items-center justify-center truncate\" style=\"gap: inherit;\"><span class=\"min-w-0 max-w-full truncate\">Lire plus</span></span></span></button>",
+    "TextDescription": "Pour célébrer cette nouvelle année qui commence, ce n'est pas un mais 2 meetups techniques que nous aurons l'occasion de faire dans la même soirée.\n\nVenez nous retrouver au Campus Media School Toulouse, où l'IRIS, l'ECS et TSS sont situées.\n\nVous pourrez assiter à une double conférence dans les locaux de l'école.\n\n- Le dévellopement avec Expos JS avec Jérémy Simonklein Angély\n- Le Pentesting par IA avec Alexandre Oda\n\nS'en suivra ensuite notre traditionnel cocktail pour échanger entre pros !\n\nIl nous tarde de vous revoir,\n- Jeudi 29 janvier\n- 19h\n- Campus Mediaschool, 9 rue des Amidonniers\n\nÀ bientôt chers amis,\nL'équipe de JS&Co - Jérémy Simonklein Angély et Simon FauxLire plus",
+    "VenueName": "Campus Media School Toulouse",
+    "VenueAddr": "9 rue des amidonniers Toulouse",
+    "Latitude": null,
+    "Longitude": null,
+    "LocalImgSrc": "event-imgs/meetup-312343838.webp"
   }
 ]
