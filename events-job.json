@@ -5206,6 +5206,25 @@
     "LocalImgSrc": "event-imgs/meetup-312060401.webp"
   },
   {
+    "Id": "meetup-312458469",
+    "PublishedOn": "2025-12-16T17:27:44.6860294+00:00",
+    "Href": "https://www.meetup.com/fr-FR/javascript-and-co/events/312458469/",
+    "Title": "Le Tech PAF de JS&Co - Janvier 2026 et Voeux de JS&Co",
+    "Start": "2026-01-08T17:30:00+01:00",
+    "ImgSrc": "https://secure.meetupstatic.com/photos/event/b/9/e/2/highres_531827586.jpeg",
+    "Group": "Association JS & Co Toulouse",
+    "GroupId": "js-and-co",
+    "Duration": null,
+    "FullImgSrc": "https://secure.meetupstatic.com/photos/event/b/9/e/2/highres_531827586.webp?w=3840",
+    "HtmlDescription": "<div class=\"w-full break-words transition-all duration-300 line-clamp-[15]\" style=\"font-family: NeuSans, Inter, system-ui, sans-serif;\"><p class=\"mb-4\">Chers amis,<br>\n<br>\nNous vous convions à notre Tech PAF de janvier 2026 et notre soirée des voeux pour cette nouvelle année !<br>\n<br>\nNous aurons le plaisir de vous parler de notre évolution, les projets projets et évènements qui sont dans les cartons.<br>\n<br>\nPour ce faire, nous aurons le plaisir d'être reçus au bar-cave La Nouvelle Lune, bar bien connu des habitués du quartier des Allées Jules Guesdes et de La Mêlée du Quai des Savoirs !<br>\n<br>\nVenez échanger sur vos actualités du moment, de vos projets, et de parler de vos développements pour 2026.<br>\n<br>\nNous sommes bientôt 2000 talents sur le meetup alors venez proposer vos services ou en acheter et trouver des stagiaires, alternants et salariés pour vos projets à venir.<br>\n<br>\nVenez profiter de leur carte de cocktails, bières artisanales, de vins de vignerons et de spiritueux et de leurs délices !<br>\n<br>\nSi tout ceci vous plaît, rendez-vous :<br>\n- Jeudi 8 janvier<br>\n- La Nouvelle Lune<br>\n- 18h30<br>\n<br>\nÀ bientôt chers amis,<br>\nL'équipe de JS&amp;Co - Jérémy Simonklein Angély &amp; Simon Faux</p></div><button class=\"inline-flex items-center justify-center rounded-ds2-max max-w-full relative select-none data-[disabled=false]:active:scale-98 transition-all duration-150 before:absolute before:rounded-ds2-max before:z-0 before:opacity-0 data-[disabled=false]:hover:before:opacity-100 before:transition-opacity before:duration-150 data-[disabled=true]:cursor-not-allowed data-[disabled=true]:pointer-events-none hover:no-underline text-ds2-text_button-content-fill-brand_primary-enabled hover:text-ds2-text_button-content-fill-brand_primary-hover before:bg-ds2-text_button-base-fill-shared-hover data-[disabled=true]:text-ds2-text_button-content-fill-brand_primary-disabled gap-ds2-6 ds2-m16 before:-inset-x-ds2-12 before:-inset-y-ds2-6 w-fit\" type=\"button\" data-disabled=\"false\"><span class=\"relative z-10 flex min-w-0 max-w-full items-center justify-center\" style=\"gap: inherit;\"><span class=\"relative z-10 flex min-w-0 max-w-full items-center justify-center truncate\" style=\"gap: inherit;\"><span class=\"min-w-0 max-w-full truncate\">Lire plus</span></span></span></button>",
+    "TextDescription": "Chers amis,\n\nNous vous convions à notre Tech PAF de janvier 2026 et notre soirée des voeux pour cette nouvelle année !\n\nNous aurons le plaisir de vous parler de notre évolution, les projets projets et évènements qui sont dans les cartons.\n\nPour ce faire, nous aurons le plaisir d'être reçus au bar-cave La Nouvelle Lune, bar bien connu des habitués du quartier des Allées Jules Guesdes et de La Mêlée du Quai des Savoirs !\n\nVenez échanger sur vos actualités du moment, de vos projets, et de parler de vos développements pour 2026.\n\nNous sommes bientôt 2000 talents sur le meetup alors venez proposer vos services ou en acheter et trouver des stagiaires, alternants et salariés pour vos projets à venir.\n\nVenez profiter de leur carte de cocktails, bières artisanales, de vins de vignerons et de spiritueux et de leurs délices !\n\nSi tout ceci vous plaît, rendez-vous :\n- Jeudi 8 janvier\n- La Nouvelle Lune\n- 18h30\n\nÀ bientôt chers amis,\nL'équipe de JS&Co - Jérémy Simonklein Angély & Simon FauxLire plus",
+    "VenueName": "La nouvelle lune",
+    "VenueAddr": "14 Rue Alfred Dumeril Toulouse",
+    "Latitude": null,
+    "Longitude": null,
+    "LocalImgSrc": "event-imgs/meetup-312458469.webp"
+  },
+  {
     "Id": "meetup-311744824",
     "PublishedOn": "2025-10-29T09:27:34.5067402+00:00",
     "Href": "https://www.meetup.com/fr-FR/postgres-toulouse/events/311744824/",
