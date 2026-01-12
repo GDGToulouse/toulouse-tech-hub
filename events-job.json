@@ -5282,6 +5282,25 @@
     "LocalImgSrc": "event-imgs/meetup-312417935.webp"
   },
   {
+    "Id": "meetup-312846843",
+    "PublishedOn": "2026-01-12T17:26:31.3124621+00:00",
+    "Href": "https://www.meetup.com/fr-FR/python-toulouse/events/312846843/",
+    "Title": "Casu' Python - Afterwork & échanges",
+    "Start": "2026-01-27T17:30:00+01:00",
+    "ImgSrc": "https://secure.meetupstatic.com/photos/event/5/3/5/4/highres_532221332.jpeg",
+    "Group": "Python Toulouse",
+    "GroupId": "python",
+    "Duration": null,
+    "FullImgSrc": "https://secure.meetupstatic.com/photos/event/5/3/5/4/highres_532221332.webp?w=3840",
+    "HtmlDescription": "<div class=\"w-full break-words transition-all duration-300 line-clamp-[15]\" style=\"font-family: NeuSans, Inter, system-ui, sans-serif;\"><p class=\"mb-4\"><strong>Le Casu’ Python c'est le 27 Janvier \uD83C\uDF7B</strong> Un rendez-vous régulier à Toulouse, chaque dernier mardi du mois !<br>\n<br>\nOn privatise un bar pour discuter tranquillement, et échanger autour d'un verre !<br>\n<br>\nC'est un format simple à organiser, pour qu’on puisse se voir plus souvent. Au programme : parfois des mini-talks de 10 min, des jeux, un quiz… jamais de planning fixe !<br>\n<br>\n\uD83C\uDF7B Chacun consomme directement au bar <a href=\"https://www.roosterandbeer.fr/menu/\" target=\"_blank\" class=\"!text-ds2-text-fill-brand_primary-enabled hover:!text-ds2-text-fill-brand_primary-hover\" rel=\"nofollow ugc\">https://www.roosterandbeer.fr/menu/</a></p></div>",
+    "TextDescription": "Le Casu’ Python c'est le 27 Janvier \uD83C\uDF7B Un rendez-vous régulier à Toulouse, chaque dernier mardi du mois !\n\nOn privatise un bar pour discuter tranquillement, et échanger autour d'un verre !\n\nC'est un format simple à organiser, pour qu’on puisse se voir plus souvent. Au programme : parfois des mini-talks de 10 min, des jeux, un quiz… jamais de planning fixe !\n\n\uD83C\uDF7B Chacun consomme directement au bar https://www.roosterandbeer.fr/menu/",
+    "VenueName": "Rooster & Beer",
+    "VenueAddr": "100 Rue Riquet Toulouse",
+    "Latitude": null,
+    "Longitude": null,
+    "LocalImgSrc": "event-imgs/meetup-312846843.webp"
+  },
+  {
     "Id": "meetup-311852752",
     "PublishedOn": "2025-11-04T09:28:08.3485051+00:00",
     "Href": "https://www.meetup.com/fr-FR/latoulboxducloudnatif/events/311852752/",
@@ -5318,5 +5337,24 @@
     "Latitude": null,
     "Longitude": null,
     "LocalImgSrc": "event-imgs/meetup-312343838.webp"
+  },
+  {
+    "Id": "meetup-312848028",
+    "PublishedOn": "2026-01-12T17:28:01.951389+00:00",
+    "Href": "https://www.meetup.com/fr-FR/javascript-and-co/events/312848028/",
+    "Title": "Meetup JS&Co : le dévellopement continu avec Sami Touihri",
+    "Start": "2026-02-03T18:00:00+01:00",
+    "ImgSrc": "https://secure.meetupstatic.com/photos/event/5/6/e/d/highres_532222253.jpeg",
+    "Group": "Association JS & Co Toulouse",
+    "GroupId": "js-and-co",
+    "Duration": null,
+    "FullImgSrc": "https://secure.meetupstatic.com/photos/event/5/6/e/d/highres_532222253.webp?w=3840",
+    "HtmlDescription": "<div class=\"w-full break-words transition-all duration-300 line-clamp-[15]\" style=\"font-family: NeuSans, Inter, system-ui, sans-serif;\"><p class=\"mb-4\">Bonjour à tous chers amis,<br>\n<br>\nMardi 3 février 2026,<br>\nnous aurons le plaisir d'être reçus au campus Holberton School Toulouse 37 rue des marchands (proche de la place de la Trinité) pour un meetup sur le développement continu suivi d'un cocktail.<br>\n<br>\nHolberton School est une école informatique qui enseigne le développement informatique selon 2 spécialités :<br>\n- la cybersécurité<br>\n- l'IA<br>\n<br>\nNous aurons le plaisir d'avoir comme intervenant Sami Touihri, développeur web et administrateur Atlassian, Jira et Confluence.<br>\nIl est le directeur et fondateur d'une studio de développement informatique, PX Studio.<br>\n<br>\nAprès notre meetup s'en suivra notre traditionnel cocktail où nous pourrons échanger autour du sujet et de bien d'autres choses à bâton rompu.<br>\n<br>\nÀ bientôt chers amis,<br>\nl'équipe de JS&amp;Co - Jérémy Simonklein Angély &amp; Simon Faux</p></div><button class=\"inline-flex items-center justify-center rounded-ds2-max max-w-full relative select-none data-[disabled=false]:active:scale-98 transition-all duration-150 before:absolute before:rounded-ds2-max before:z-0 before:opacity-0 data-[disabled=false]:hover:before:opacity-100 before:transition-opacity before:duration-150 data-[disabled=true]:cursor-not-allowed data-[disabled=true]:pointer-events-none hover:no-underline text-ds2-text_button-content-fill-brand_primary-enabled hover:text-ds2-text_button-content-fill-brand_primary-hover before:bg-ds2-text_button-base-fill-shared-hover data-[disabled=true]:text-ds2-text_button-content-fill-brand_primary-disabled gap-ds2-6 ds2-m16 before:-inset-x-ds2-12 before:-inset-y-ds2-6 w-fit\" type=\"button\" data-disabled=\"false\"><span class=\"relative z-10 flex min-w-0 max-w-full items-center justify-center\" style=\"gap: inherit;\"><span class=\"relative z-10 flex min-w-0 max-w-full items-center justify-center truncate\" style=\"gap: inherit;\"><span class=\"min-w-0 max-w-full truncate\">Lire plus</span></span></span></button>",
+    "TextDescription": "Bonjour à tous chers amis,\n\nMardi 3 février 2026,\nnous aurons le plaisir d'être reçus au campus Holberton School Toulouse 37 rue des marchands (proche de la place de la Trinité) pour un meetup sur le développement continu suivi d'un cocktail.\n\nHolberton School est une école informatique qui enseigne le développement informatique selon 2 spécialités :\n- la cybersécurité\n- l'IA\n\nNous aurons le plaisir d'avoir comme intervenant Sami Touihri, développeur web et administrateur Atlassian, Jira et Confluence.\nIl est le directeur et fondateur d'une studio de développement informatique, PX Studio.\n\nAprès notre meetup s'en suivra notre traditionnel cocktail où nous pourrons échanger autour du sujet et de bien d'autres choses à bâton rompu.\n\nÀ bientôt chers amis,\nl'équipe de JS&Co - Jérémy Simonklein Angély & Simon FauxLire plus",
+    "VenueName": "Holberton School Toulouse",
+    "VenueAddr": "37 rue des marchands Toulouse",
+    "Latitude": null,
+    "Longitude": null,
+    "LocalImgSrc": "event-imgs/meetup-312848028.webp"
   }
 ]
