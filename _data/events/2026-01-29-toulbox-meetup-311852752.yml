@@ -11,7 +11,7 @@ link: https://www.meetup.com/fr-FR/latoulboxducloudnatif/events/311852752/
 img: https://secure.meetupstatic.com/photos/event/5/a/1/highres_531121441.webp?w=3840
 localImg: event-imgs/meetup-311852752.webp
 description: >
-  <div class="w-full break-words transition-all duration-300 line-clamp-[15]" style="font-family: NeuSans, Inter, system-ui, sans-serif;"><p class="mb-4"><strong>Et voici le programme de votre prochaine soirée :</strong><br>
+  <div class="w-full break-words transition-all duration-300 line-clamp-[15]" style="font-family: NeuSans, Inter, system-ui, sans-serif;"><p class="mb-ds2-10"><strong>Et voici le programme de votre prochaine soirée :</strong><br>
   <br>
   # Du chaos au workflow zen : Argo Workflows à la rescousse de nos données satellites !<br>
   <br>
@@ -26,5 +26,5 @@ description: >
   <br>
   Cet événement sera suivi d'un apéritif dînatoire bien évidemment :-)<br>
   <br>
-  Nous avons hâte de vous retrouver !</p></div><button class="inline-flex items-center justify-center rounded-ds2-max max-w-full relative select-none data-[disabled=false]:active:scale-98 transition-all duration-150 before:absolute before:rounded-ds2-max before:z-0 before:opacity-0 data-[disabled=false]:hover:before:opacity-100 before:transition-opacity before:duration-150 data-[disabled=true]:cursor-not-allowed data-[disabled=true]:pointer-events-none hover:no-underline text-ds2-text_button-content-fill-brand_primary-enabled hover:text-ds2-text_button-content-fill-brand_primary-hover before:bg-ds2-text_button-base-fill-shared-hover data-[disabled=true]:text-ds2-text_button-content-fill-brand_primary-disabled gap-ds2-6 ds2-m16 before:-inset-x-ds2-12 before:-inset-y-ds2-6 w-fit" type="button" data-disabled="false"><span class="relative z-10 flex min-w-0 max-w-full items-center justify-center" style="gap: inherit;"><span class="relative z-10 flex min-w-0 max-w-full items-center justify-center truncate" style="gap: inherit;"><span class="min-w-0 max-w-full truncate">Lire plus</span></span></span></button>
+  Nous avons hâte de vous retrouver !</p></div><button class="inline-flex items-center justify-center rounded-ds2-max max-w-full relative select-none data-[disabled=false]:active:scale-98 transition-all duration-150 before:absolute before:rounded-ds2-max before:z-0 before:opacity-0 data-[disabled=false]:hover:before:opacity-100 before:transition-opacity before:duration-150 data-[disabled=true]:cursor-not-allowed data-[disabled=true]:pointer-events-none hover:no-underline text-ds2-text_button-content-fill-brand_primary-enabled hover:text-ds2-text_button-content-fill-brand_primary-hover before:bg-ds2-text_button-base-fill-shared-hover data-[disabled=true]:text-ds2-text_button-content-fill-brand_primary-disabled gap-ds2-6 ds2-m16 before:-inset-x-ds2-12 before:-inset-y-ds2-6 w-fit" type="button" data-disabled="false"><span class="relative z-10 flex min-w-0 max-w-full items-center justify-center" style="gap: inherit;"><span class="relative z-10 flex min-w-0 max-w-full items-center justify-center truncate" style="gap: inherit;"><span class="min-w-0 max-w-full truncate px-ds2-2">Lire plus</span></span></span></button>
 
