@@ -5263,6 +5263,25 @@
     "LocalImgSrc": "event-imgs/meetup-312767821.webp"
   },
   {
+    "Id": "meetup-312917900",
+    "PublishedOn": "2026-01-17T09:23:46.9805914+00:00",
+    "Href": "https://www.meetup.com/fr-FR/tlse-data-science/events/312917900/",
+    "Title": "Data Mojito 2026",
+    "Start": "2026-01-22T18:00:00+01:00",
+    "ImgSrc": "https://secure.meetupstatic.com/photos/event/4/a/8/c/highres_532279084.jpeg",
+    "Group": "Toulouse Data Science",
+    "GroupId": "tds",
+    "Duration": null,
+    "FullImgSrc": "https://secure.meetupstatic.com/photos/event/4/a/8/c/highres_532279084.webp?w=3840",
+    "HtmlDescription": "<div class=\"w-full break-words transition-all duration-300 line-clamp-[15]\" style=\"font-family: NeuSans, Inter, system-ui, sans-serif;\"><p class=\"mb-ds2-10\">C’est le début d’année pour les data passionnés ! Et pour bien la commencer, l’équipe TDS vous propose un <strong>\"Data Mojito\"</strong> le <strong>jeudi 22 janvier à partir de 19h</strong> au <strong>Delirium Café Toulouse</strong> \uD83C\uDF7B<br>\nComme toujours, ce sera l’occasion d’échanger autour d’un verre sur vos projets, vos idées, et l’actualité Data Science dans une ambiance détendue et conviviale.<br>\nLe bureau de l’association sera là pour discuter des événements à venir (conférences, ateliers, rencontres...) et pour entendre vos suggestions ou propositions si vous souhaitez vous impliquer dans la communauté.<br>\n\uD83D\uDCCD <strong>Lieu</strong> : <a href=\"https://www.google.com/maps/place/Delirium+Caf%C3%A9+Toulouse/@43.607009,1.4487632,17z/data=!3m1!4b1!4m6!3m5!1s0x12aebc984df129cd:0x4fe24e2a5bd2d576!8m2!3d43.6070051!4d1.4513435!16s%2Fg%2F11h9rf36sm?entry=ttu&amp;g_ep=EgoyMDI2MDExMy4wIKXMDSoASAFQAw%3D%3D\" target=\"_blank\" class=\"!text-ds2-text-fill-brand_primary-enabled hover:!text-ds2-text-fill-brand_primary-hover\" rel=\"ugc\">Delirium Café Toulouse – Google Maps</a><br>\n\uD83D\uDCC5 <strong>Date</strong> : Jeudi 22 janvier<br>\n⏰ <strong>Heure</strong> : 19h<br>\nVenez nombreux pour trinquer à la data et lancer 2026 du bon pied ! \uD83C\uDF79\uD83D\uDCC8</p></div>",
+    "TextDescription": "C’est le début d’année pour les data passionnés ! Et pour bien la commencer, l’équipe TDS vous propose un \"Data Mojito\" le jeudi 22 janvier à partir de 19h au Delirium Café Toulouse \uD83C\uDF7B\nComme toujours, ce sera l’occasion d’échanger autour d’un verre sur vos projets, vos idées, et l’actualité Data Science dans une ambiance détendue et conviviale.\nLe bureau de l’association sera là pour discuter des événements à venir (conférences, ateliers, rencontres...) et pour entendre vos suggestions ou propositions si vous souhaitez vous impliquer dans la communauté.\n\uD83D\uDCCD Lieu : Delirium Café Toulouse – Google Maps\n\uD83D\uDCC5 Date : Jeudi 22 janvier\n⏰ Heure : 19h\nVenez nombreux pour trinquer à la data et lancer 2026 du bon pied ! \uD83C\uDF79\uD83D\uDCC8",
+    "VenueName": "Un lieu est nécessaire",
+    "VenueAddr": "",
+    "Latitude": null,
+    "Longitude": null,
+    "LocalImgSrc": "event-imgs/meetup-312917900.webp"
+  },
+  {
     "Id": "meetup-312417935",
     "PublishedOn": "2025-12-13T17:20:27.3676254+00:00",
     "Href": "https://www.meetup.com/fr-FR/agile-toulouse/events/312417935/",
