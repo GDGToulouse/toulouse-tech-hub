@@ -8,6 +8,6 @@ place: 'Epitech Toulouse'
 placeAddr: '40 boulevard de la Marquette, 31000 Toulouse'
 link: https://www.meetup.com/fr-fr/rust-community-toulouse/events/312782796/
 img: https://secure.meetupstatic.com/photos/event/2/7/a/0/highres_532150144.webp
-localImg: event-imgs/meetup-312782796.png
+localImg: event-imgs/meetup-312782796.webp
 description: >
   On se retrouve le mercredi 28 janvier 2026 à 18h45 pour le retour du Meetup Rust Toulouse, à Epitech Toulouse (40 boulevard de la Marquette, 31000 Toulouse). Accueil à 18:45, talks à 19:00, puis apéro & échanges à partir de 20:15. Pizzas & boissons offertes par Bashroom.
