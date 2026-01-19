@@ -25,6 +25,7 @@ Les pages suivantes sont automatiquement surveillées et ajoutées :
 - [La "Toul Box" du Cloud Natif](https://www.meetup.com/latoulboxducloudnatif/)
 - [Artilect FabLab](https://www.meetup.com/artilect-fablab/)
 - [Postgres Toulouse](https://www.meetup.com/postgres-toulouse/)
+- [Rust Toulouse](https://www.meetup.com/fr-fr/rust-community-toulouse/)
 
 Il existe une page pour les organisateurs, permettant de gérer une image à inclure dans vos diapos de meetup pour faire la pub pour les prochains évènements, elle se trouve à l'adresse <https://toulouse-tech-hub.fr/orgas.html>.
 
