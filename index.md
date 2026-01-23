@@ -86,7 +86,7 @@ layout: default
   {%- endif -%}
 
   <div class="col">
-    <div class="card shadow">
+    <div class="card shadow h-100">
       <div class="card-header">🧑‍💻 {{ event.community }}</div>
       <a href="{{ event.link }}">
         <img width="100%" style="aspect-ratio: 16/9" src="{{ site.baseurl }}/{{ event.localImg }}" />
