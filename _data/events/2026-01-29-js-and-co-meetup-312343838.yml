@@ -1,5 +1,5 @@
 id: 'meetup-312343838'
-title: 'Double Meetup tech : le dev avec Expo JS et le Pentesting par IA'
+title: 'Double Meetup : le Secure Vibe Coding et le Pentesting par IA'
 community: 'Association JS & Co Toulouse'
 datePublished: '2025-12-08 17:24'
 dateIso: '2026-01-29 19:00'
@@ -8,7 +8,7 @@ timeFr: '19:00'
 place: "Campus Media School Toulouse"
 placeAddr: "9 rue des amidonniers Toulouse"
 link: https://www.meetup.com/fr-FR/javascript-and-co/events/312343838/
-img: https://secure.meetupstatic.com/photos/event/3/e/8/6/highres_531676006.webp?w=3840
+img: https://secure.meetupstatic.com/photos/event/9/d/b/6/highres_532480374.webp?w=3840
 localImg: event-imgs/meetup-312343838.webp
 description: >
   <div class="w-full break-words transition-all duration-300 line-clamp-[15]" style="font-family: NeuSans, Inter, system-ui, sans-serif;"><p class="mb-ds2-10">Pour célébrer cette nouvelle année qui commence, ce n'est pas un mais 2 meetups techniques que nous aurons l'occasion de faire dans la même soirée.<br>
@@ -18,12 +18,16 @@ description: >
   - ECS, pour la communication et le marketing - https://ecole-ecs.com/<br>
   - TSS, pour le management du sport - https://mediaschool-sports.com/campus/toulouse<br>
   <br>
-  Nous aurons le plaisir d'écouter deux intervenants pour 2 conférences :<br>
-  - Le dévelopement avec Expos JS avec Jérémy Simonklein Angély, ingénieur logiciel de chez Devaxis.<br>
+  Le programme change un peu car un de nos intervenants est indisponible pour des raisons personnelles.<br>
   <br>
-  - Le Pentesting par IA avec Alexandre Oda, consultant en cybersécurité et DevOps SecOps freelance.<br>
+  Nous aurons le plaisir d'écouter Alexandre Oda, consultant en cybersécurité et DevOps SecOps freelance.<br>
   <br>
-  S'en suivra ensuite notre traditionnel cocktail pour échanger entre pros !<br>
+  Secure Vibe Coding : L’art de coder à l’instinct sans briser la prod<br>
+  Le "Vibe Coding" transforme notre façon de créer, mais comment garder le contrôle quand l'IA dicte le rythme ? Découvrez comment allier la fluidité du développement par intention à une sécurité intransigeante. À travers une démo mêlant Antigravity, SonarLint, Trivy et Dev Containers, on verra comment garder un "vibe" impeccable tout en produisant un code robuste et audité en temps réel.<br>
+  <br>
+  - Le Pentesting par IA où nous aurons une démonstration en live de ce que l'on peut faire sur ce sujet.<br>
+  <br>
+  S'en suivra ensuite notre traditionnel cocktail participatif, pour des raisons de moyens, chacun ramène quelque chose.<br>
   <br>
   Si tout ceci vous plait :<br>
   - Jeudi 29 janvier<br>

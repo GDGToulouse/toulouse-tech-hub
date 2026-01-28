@@ -1,0 +1,41 @@
+id: 'meetup-313063018'
+title: 'Tech a Break #12: Du Python pour les devs Java !'
+community: 'Tech a break'
+datePublished: '2026-01-28 17:35'
+dateIso: '2026-02-19 18:30'
+dateFr: 'jeudi 19 février'
+timeFr: '18:30'
+place: "1 Pl. de la Bourse"
+placeAddr: "1 Pl. de la Bourse Toulouse"
+link: https://www.meetup.com/fr-FR/tech-a-break/events/313063018/
+img: https://secure.meetupstatic.com/photos/event/1/f/6/2/highres_532448034.webp?w=3840
+localImg: event-imgs/meetup-313063018.webp
+description: >
+  <div class="w-full break-words transition-all duration-300 line-clamp-[15]" style="font-family: NeuSans, Inter, system-ui, sans-serif;"><p class="mb-ds2-10"><strong>Tech a break #12</strong><br>
+  <br>
+  Les meet'up toulousains autour de sujets techniques de l'IT vous intéressent ?<br>
+  Une communauté de passionnés vous présente le onzième événement de cette série, par les techs pour les techs !<br>
+  Ici on aime parler de nos métiers, de nos quotidiens et on souhaite en savoir plus sur ce que font nos collègues de tous bords : Cloud, Data, Craft, Agile, Mobile, Architecture...<br>
+  <br>
+  <strong>Programme du meetup :</strong><br>
+  18h30 - Accueil des personnes<br>
+  19h00 - Début du talk (1h + questions de l'audience)<br>
+  20h30 - Echanges autour de pizzas &amp; bières<br>
+  <strong>Où ?</strong><br>
+  1 pl. de la Bourse 31000 Toulouse<br>
+  <strong>Quand ?</strong><br>
+  le 19 février 2026 à 18h30<br>
+  ------------------------------------<br>
+  <br>
+  <strong>Du Python pour les devs Java !</strong><br>
+  <br>
+  Après plusieurs années passées à développer en Java, j’ai rejoint une entreprise en tant que dev Python. En discutant avec un ancien collègue à propos de mon nouveau travail, sa première question a été: “Mais comment tu fais pour faire de l’injection de dépendance en Python ?”<br>
+  <br>
+  Je me suis rendu compte qu’en tant que dev Java, travaillant principalement avec Spring Boot, beaucoup de concepts et patterns sont utilisés et mis en place pour nous: IoC, injection de dépendances, ORM, repository pattern.<br>
+  Nous allons rentrer (un peu) dans les détails sur ces patterns et les mettre en place dans un projet Python qui reprend tous les concepts familiers des devs Java ! Nous en profiterons pour présenter les spécificités de Python qui peuvent dérouter les développeurs qui arrivent depuis l'écosystème Java.<br>
+  <br>
+  &gt;_ <strong>Paul AMBLARD :</strong> Après plusieurs années en ESN, j'ai rejoint MeetCheck, une start-up dans le milieu de la visioconférence. Adepte du clean code et des bonnes pratiques, je cherche toujours comment améliorer la qualité de mes développements.<br>
+  ------------------------------------<br>
+  <br>
+  Bon meetup à toutes et à tous !</p></div><button class="inline-flex items-center justify-center rounded-ds2-max max-w-full relative select-none data-[disabled=false]:active:scale-98 transition-all duration-150 before:absolute before:rounded-ds2-max before:z-0 before:opacity-0 data-[disabled=false]:hover:before:opacity-100 before:transition-opacity before:duration-150 data-[disabled=true]:cursor-not-allowed data-[disabled=true]:pointer-events-none hover:no-underline text-ds2-text_button-content-fill-brand_primary-enabled hover:text-ds2-text_button-content-fill-brand_primary-hover before:bg-ds2-text_button-base-fill-shared-hover data-[disabled=true]:text-ds2-text_button-content-fill-brand_primary-disabled gap-ds2-6 ds2-m16 before:-inset-x-ds2-12 before:-inset-y-ds2-6 w-fit" type="button" data-disabled="false"><span class="relative z-10 flex min-w-0 max-w-full items-center justify-center" style="gap: inherit;"><span class="relative z-10 flex min-w-0 max-w-full items-center justify-center truncate" style="gap: inherit;"><span class="min-w-0 max-w-full truncate px-ds2-2">Lire plus</span></span></span></button>
+
