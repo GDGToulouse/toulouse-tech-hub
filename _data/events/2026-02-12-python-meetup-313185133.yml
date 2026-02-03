@@ -1,0 +1,36 @@
+id: 'meetup-313185133'
+title: 'Modèles IA open source & Insertions massives dans PostgreSQL'
+community: 'Python Toulouse'
+datePublished: '2026-02-03 09:44'
+dateIso: '2026-02-12 18:45'
+dateFr: 'jeudi 12 février'
+timeFr: '18:45'
+place: "La Cantine"
+placeAddr: "27 rue d'Aubuisson Toulouse"
+link: https://www.meetup.com/fr-FR/python-toulouse/events/313185133/
+img: https://secure.meetupstatic.com/photos/event/1/7/0/6/highres_532565894.webp?w=3840
+localImg: event-imgs/meetup-313185133.webp
+description: >
+  <div class="w-full break-words transition-all duration-300 line-clamp-[15]" style="font-family: NeuSans, Inter, system-ui, sans-serif;"><p class="mb-ds2-10">On se retrouve le <strong>jeudi 12 février</strong> pour un meetup <strong>Python</strong> 🐍</p>
+  <p class="mb-ds2-10">Deux sujets au programme :<br>
+  - des <strong>modèles</strong> <strong>Open Source</strong> qui font autre chose que <strong>générer du texte</strong> 🤖<br>
+  - de <strong>l’insertion en masse performante</strong> avec <strong>Django &amp; PostgreSQL</strong> 🚀</p>
+  <p class="mb-ds2-10">🙂 Rejoignez-nous !</p>
+  <p class="mb-ds2-10"><strong>Pizzas &amp; boissons offertes par le DevFest</strong><br>
+  📍 La Cantine by La Mêlée, 27 rue d’Aubuisson</p>
+  <p class="mb-ds2-10"><strong>📆 Agenda</strong><br>
+  19:00 → Accueil<br>
+  19:15 → Talks<br>
+  20:30+ → Questions &amp; discussions</p>
+  <p class="mb-ds2-10"><strong>🧠 Talks</strong><br>
+  <strong>Au-delà des ChatBots : découverte de modèles Open-Source</strong><br>
+  Florian Marc &amp; Jérôme Garcia</p>
+  <p class="mb-ds2-10">Nous proposons un tour d’horizon des catégories de modèles Open Source disponibles sur Hugging Face : audio, vision par ordinateur, robotique… Un sujet vaste qui devrait inspirer de nombreuses idées de projets 🤗</p>
+  <p class="mb-ds2-10"><strong>Insertion en masse rapide et efficace avec Django et PostgreSQL</strong> Mohamed Nossirat</p>
+  <p class="mb-ds2-10">Pourquoi bulk_create() atteint ses limites et comment exploiter la commande native COPY de PostgreSQL pour accélérer drastiquement l’insertion de gros volumes de données. Démo pratique avec code et profiling temps/mémoire.</p>
+  <p class="mb-ds2-10">Merci au DevFest et à La Cantine by La Mêlée de rendre cet événement possible ! 🙏</p>
+  <p class="mb-ds2-10"><strong>Speakers / Orgas:</strong></p>
+  <p class="mb-ds2-10"><strong>Florian Marc :</strong> Architecte Cloud &amp; Ingénieur R&amp;D. Développe son expertise autour du Machine Learning.</p>
+  <p class="mb-ds2-10"><strong>Jérôme Garcia :</strong> CTO de Bashroom. Ingénieur R&amp;D passionné par l’architecture logicielle, les environnements Cloud Native et le Rust.</p>
+  <p class="mb-ds2-10"><strong>Mohamed Nossirat :</strong> Ingénieur R&amp;D E-Santé, Spécialisé dans le développement d’application Web dans les environnement Python et Go.</p></div><button class="inline-flex items-center justify-center rounded-ds2-max max-w-full relative select-none data-[disabled=false]:active:scale-98 transition-all duration-150 before:absolute before:rounded-ds2-max before:z-0 before:opacity-0 data-[disabled=false]:hover:before:opacity-100 before:transition-opacity before:duration-150 data-[disabled=true]:cursor-not-allowed data-[disabled=true]:pointer-events-none hover:no-underline text-ds2-text_button-content-fill-brand_primary-enabled hover:text-ds2-text_button-content-fill-brand_primary-hover before:bg-ds2-text_button-base-fill-shared-hover data-[disabled=true]:text-ds2-text_button-content-fill-brand_primary-disabled gap-ds2-6 ds2-m16 before:-inset-x-ds2-12 before:-inset-y-ds2-6 w-fit" type="button" data-disabled="false"><span class="relative z-10 flex min-w-0 max-w-full items-center justify-center" style="gap: inherit;"><span class="relative z-10 flex min-w-0 max-w-full items-center justify-center truncate" style="gap: inherit;"><span class="min-w-0 max-w-full truncate px-ds2-2">Lire plus</span></span></span></button>
+
