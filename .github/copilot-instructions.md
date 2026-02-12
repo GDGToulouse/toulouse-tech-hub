@@ -131,6 +131,65 @@ jekyll serve
 # View at http://localhost:4000
 ```
 
+## MCP Visual Workflow (Playwright)
+
+### Purpose
+Use a local MCP server to automate browser navigation and capture screenshots while iterating on visual changes.
+
+### Prerequisites (WSL)
+- Node.js with `npx` available.
+- Jekyll running locally (`jekyll serve`).
+
+### MCP Server Choice
+- **Playwright MCP** (local-only) for browser automation + screenshots.
+
+### VS Code Setup
+
+#### Step 1: Add MCP Server to VS Code Settings
+1. Open VS Code user settings: `Ctrl+Shift+P` → "Preferences: Open User Settings (JSON)"
+2. Add the server config under `"servers"`:
+```json
+{
+  "playwright": {
+    "type": "stdio",
+    "command": "npx",
+    "args": [
+      "@playwright/mcp@latest",
+      "--browser", "chromium",
+      "--headless",
+      "--vision"
+    ]
+  }
+}
+```
+3. Save and restart Copilot or VS Code.
+
+#### Step 2: Install Browser Binaries
+When you first run a Playwright MCP tool, Chromium may not be installed. Call:
+- Open Copilot Chat and use: `@playwright Installe le navigateur`
+- Or trigger any MCP browser action, it will prompt you to install.
+- This runs `browser_install` once to download Chromium binaries.
+
+### Interactive Workflow
+
+1. **Start the site**: `jekyll serve` in the terminal (it auto-regenerates on file changes).
+2. **Open Copilot Chat**: Ensure Playwright MCP is connected (check MCP status in Chat panel).
+3. **Navigate and capture**:
+   - `browser_navigate` to `http://localhost:4000`
+   - `browser_snapshot` to get an accessibility snapshot (human-readable structure)
+   - `browser_take_screenshot` with `filename: "home.png"` to save a visual screenshot
+4. **Verify changes**: Screenshot file appears in the working directory.
+
+### Output & Artifacts
+- Screenshots are saved to the working directory (e.g., `home.png`).
+- If using `--output-dir mcp-output`, files go to `mcp-output/`.
+- Keep these out of git via `.gitignore` (already configured).
+
+### Troubleshooting
+- **Browser not installed**: Run `@playwright Installe le navigateur` in Copilot Chat.
+- **MCP server won't connect**: Restart Copilot Chat or VS Code.
+- **Screenshots not appearing**: Check the output directory path in settings.
+
 ## Deployment
 
 Automatic via `.github/workflows/jekyll-gh-pages.yml`:
