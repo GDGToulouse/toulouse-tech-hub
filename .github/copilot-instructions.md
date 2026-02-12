@@ -95,6 +95,24 @@ Add to `_data/groups.yml`:
 ## Working with Jekyll Locally
 
 No build commands - Jekyll runs via GitHub Actions only. To test locally:
+
+### Windows Developers (Recommended)
+- Use Ubuntu via WSL for the development environment.
+- Install Jekyll inside the Ubuntu (WSL) distro.
+- Use VS Code with the WSL extension to work in the Linux filesystem.
+
+### WSL Prerequisites (Ubuntu)
+```bash
+sudo apt update
+sudo apt install -y ruby-full build-essential zlib1g-dev
+
+gem install jekyll bundler
+
+ruby -v
+jekyll -v
+```
+
+### Local Testing (All Platforms)
 ```bash
 # Install Jekyll (if needed)
 gem install jekyll bundler
