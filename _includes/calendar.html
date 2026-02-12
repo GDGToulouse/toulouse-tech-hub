@@ -1,0 +1,101 @@
+{% comment %}
+Calendar include that displays a month grid with event counts
+Params: month (1-12), year (YYYY), today (1-31, or 0 if not current month)
+{% endcomment %}
+
+{% assign months = "January,February,March,April,May,June,July,August,September,October,November,December" | split: "," %}
+{% assign days_in_month = "31,28,31,30,31,30,31,31,30,31,30,31" | split: "," %}
+
+{% comment %} Calculate whether leap year {% endcomment %}
+{% assign year_int = include.year | plus: 0 %}
+{% assign is_leap = year_int | modulo: 4 %}
+{% if is_leap == 0 %}
+  {% assign days_in_month = "31,29,31,30,31,30,31,31,30,31,30,31" | split: "," %}
+{% endif %}
+
+{% assign month_int = include.month | plus: 0 %}
+{% assign month_idx = month_int | minus: 1 %}
+{% assign num_days = days_in_month[month_idx] | plus: 0 %}
+{% assign month_name = months[month_idx] %}
+
+{% comment %} Format month with leading zero {% endcomment %}
+{% if month_int < 10 %}
+  {% assign month_str = month_int | prepend: '0' | slice: -2,2 %}
+{% else %}
+  {% assign month_str = month_int | convert: "string" %}
+{% endif %}
+
+{% comment %} First day of month (0=Sunday, 6=Saturday) {% endcomment %}
+{% capture first_date %}{{ include.year }}-{{ include.month | prepend: '0' | slice: -2,2 }}-01{% endcapture %}
+{% assign first_day_obj = first_date | date: "%w" %}
+{% assign first_day = first_day_obj | plus: 0 %}
+
+{% comment %} Build event count map {% endcomment %}
+{% assign event_counts = "" | split: "" %}
+{% assign now_time = site.time | date: "%s" | plus: 0 %}
+
+{% for i in (1..num_days) %}
+  {% capture date_str %}{{ include.year }}-{{ month_str }}-{{ i | prepend: '0' | slice: -2,2 }}{% endcapture %}
+  {% assign count = 0 %}
+  
+  {% for event_hash in site.data.events %}
+    {% assign event = event_hash[1] %}
+    {% assign event_date = event.dateIso | date: "%Y-%m-%d" %}
+    {% if event_date == date_str %}
+      {% assign event_time = event.dateIso | date: "%s" | plus: 0 %}
+      {% if event_time >= now_time %}
+        {% assign count = count | plus: 1 %}
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+  
+  {% assign event_counts = event_counts | push: count %}
+{% endfor %}
+
+{% comment %} Render calendar {% endcomment %}
+<div class="calendar-month">
+  <div class="calendar-month-title">{{ month_name }} {{ include.year }}</div>
+  
+  <div class="calendar-grid">
+    {% comment %} Day headers {% endcomment %}
+    <div class="calendar-day-header">Sun</div>
+    <div class="calendar-day-header">Mon</div>
+    <div class="calendar-day-header">Tue</div>
+    <div class="calendar-day-header">Wed</div>
+    <div class="calendar-day-header">Thu</div>
+    <div class="calendar-day-header">Fri</div>
+    <div class="calendar-day-header">Sat</div>
+    
+    {% comment %} Empty cells before first day {% endcomment %}
+    {% for i in (0..first_day | minus: 1) %}
+      <div class="calendar-day calendar-empty"></div>
+    {% endfor %}
+    
+    {% comment %} Days of month {% endcomment %}
+    {% for i in (1..num_days) %}
+      {% assign count = event_counts[i | minus: 1] | plus: 0 %}
+      {% assign is_today = false %}
+      {% if include.today == i %}
+        {% assign is_today = true %}
+      {% endif %}
+      
+      {% capture day_class %}calendar-day{% endcapture %}
+      {% if is_today %}
+        {% capture day_class %}{{ day_class }} calendar-today{% endcapture %}
+      {% endif %}
+      
+      <div class="{{ day_class }}" data-date="{{ include.year }}-{{ month_str }}-{{ i | prepend: '0' | slice: -2,2 }}">
+        <div class="calendar-day-number">{{ i }}</div>
+        {% if count > 0 %}
+          {% assign badge_class = "calendar-badge-1" %}
+          {% if count >= 2 %}{% assign badge_class = "calendar-badge-2" %}{% endif %}
+          {% if count >= 4 %}{% assign badge_class = "calendar-badge-4" %}{% endif %}
+          {% if count >= 7 %}{% assign badge_class = "calendar-badge-7" %}{% endif %}
+          <div class="calendar-badge {{ badge_class }}">{{ count }}</div>
+        {% else %}
+          <div class="calendar-badge calendar-badge-empty"></div>
+        {% endif %}
+      </div>
+    {% endfor %}
+  </div>
+</div>

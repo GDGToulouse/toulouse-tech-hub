@@ -188,3 +188,129 @@ a.muted {
 .community-default {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 }
+
+/* Calendar Styles */
+.calendar-month {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+}
+
+.calendar-month:hover {
+    box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+}
+
+.calendar-month-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 16px;
+    color: #212529;
+}
+
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 8px;
+}
+
+.calendar-day-header {
+    text-align: center;
+    font-weight: 600;
+    font-size: 0.85rem;
+    color: #666;
+    padding: 8px 0;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.calendar-day {
+    aspect-ratio: 1;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    padding: 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    min-height: 70px;
+}
+
+.calendar-day:hover {
+    border-color: #ff8952;
+    background: #fff8f5;
+    transform: translateY(-2px);
+}
+
+.calendar-day.calendar-empty {
+    background: #f8f9fa;
+    border: 1px solid #e9ecef;
+    cursor: default;
+    opacity: 0.5;
+}
+
+.calendar-day.calendar-empty:hover {
+    border-color: #e9ecef;
+    background: #f8f9fa;
+    transform: none;
+}
+
+.calendar-day.calendar-today {
+    border: 2px solid #ff8952;
+    background: #fffbf5;
+    box-shadow: 0 0 0 3px rgba(255, 137, 74, 0.1);
+}
+
+.calendar-day-number {
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: #212529;
+}
+
+.calendar-badge {
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 2px 6px;
+    border-radius: 50%;
+    min-width: 22px;
+    height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.calendar-badge-empty {
+    display: none;
+}
+
+.calendar-badge-1 {
+    background: #90EE90;
+    color: #1c5e20;
+}
+
+.calendar-badge-2,
+.calendar-badge-3 {
+    background: #FFB84D;
+    color: #8B4513;
+}
+
+.calendar-badge-4,
+.calendar-badge-5,
+.calendar-badge-6 {
+    background: #FF6B6B;
+    color: white;
+}
+
+.calendar-badge-7,
+.calendar-badge-8,
+.calendar-badge-9,
+.calendar-badge-10 {
+    background: #C92A2A;
+    color: white;
+}

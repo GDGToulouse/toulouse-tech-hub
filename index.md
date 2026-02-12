@@ -74,6 +74,26 @@ layout: default
     </div>
   </div>
 
+  <!-- calendars -->
+  <div class="row my-4 gy-3">
+    <div class="col-lg-6">
+      {% assign current_month = site.time | date: "%m" %}
+      {% assign current_year = site.time | date: "%Y" %}
+      {% assign current_day = site.time | date: "%d" %}
+      {% include calendar.html month=current_month year=current_year today=current_day %}
+    </div>
+    <div class="col-lg-6">
+      {% assign next_month = site.time | date: "%m" | plus: 1 %}
+      {% assign next_year = site.time | date: "%Y" %}
+      {% if next_month > 12 %}
+        {% assign next_month = 1 %}
+        {% assign next_year = current_year | plus: 1 %}
+      {% endif %}
+      {% assign next_day = 0 %}
+      {% include calendar.html month=next_month year=next_year today=next_day %}
+    </div>
+  </div>
+
   <!-- grid -->
   <div class="row row-cols-1 row-cols-md-2 row-cols-xxl-3 g-3 agenda my-2">
 
@@ -85,7 +105,8 @@ layout: default
     {%- continue -%}
   {%- endif -%}
 
-  <div class="col">
+  {%- assign event_date = event.dateIso | date: "%Y-%m-%d" -%}
+  <div class="col" data-event-date="{{ event_date }}">
     <div class="card shadow h-100">
       <div class="card-header">🧑‍💻 {{ event.community }}</div>
       <a href="{{ event.link }}">
