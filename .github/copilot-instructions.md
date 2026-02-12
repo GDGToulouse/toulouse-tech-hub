@@ -205,3 +205,66 @@ Automatic via `.github/workflows/jekyll-gh-pages.yml`:
 - Removes unwanted events with × button
 - Captures visible cards as PNG using html2canvas library
 - Designed for meetup organizers to create promotional slides
+## Development Notes & Lessons Learned
+
+### Liquid Template Gotchas
+When working with Liquid filters in loops and ranges:
+
+1. **Filters in range loops don't evaluate inline**
+   - ❌ `{% for i in (0..first_day | minus: 1) %}` - the filter isn't evaluated before creating the range
+   - ✅ `{% assign empty_cells = first_day | minus: 1 %}` then `{% for i in (0..empty_cells) %}`
+   - This affects loops spawning empty calendar cells and similar constructs
+
+2. **Array access with filters requires variable assignment**
+   - ❌ `{{ event_counts[i | minus: 1] }}` - returns nil, filter not evaluated in bracket notation
+   - ✅ `{% assign idx = i | minus: 1 %}` then `{{ event_counts[idx] }}`
+   - Always assign computed indices to a variable before array access
+
+**Impact**: Calendar and event loops must pre-compute loop variables to avoid silent failures
+
+### Data-Driven Architecture Pattern
+Recent refactors established this pattern for dynamic content:
+
+- **`_data/confs.yml`** - Conferences now use YAML instead of hardcoded HTML cards
+- **`_includes/conferences.html`** - Renders conferences from YAML data
+- **`_includes/calendar.html`** - Generates month grids dynamically with event counting
+- Same pattern should be applied to other static/semi-static content (groups cards already do this)
+
+**Benefits**: Easy to add/update content without touching templates, single source of truth per component
+
+### Bootstrap Icons in YAML
+Simplified social links structure:
+
+- ❌ Old: `name: "globe"` → if/elif in template to map names to `bi-globe` classes
+- ✅ New: `icon: "bi-globe"` → directly render `<i class="bi {{ social.icon }}"></i>`
+
+This reduces template logic and makes icon codes visible in YAML data
+
+### Calendar Implementation Notes
+- Week starts Monday (France convention) - Sunday is column 7 (Dim)
+- Event counting filters future events using `site.time` as Unix timestamp
+- Badge colors: green (1), orange (2-3), red (4-6), dark red (7+)
+- Dates use `{{ conf.date | date: "%d %B %Y" }}` format for display
+- Date-range support: if `end` field exists, display as "01 Jan - 02 Jan"
+
+## Git Workflow
+
+### Development Process
+1. **Make changes**: Edit files, create new files, modify configuration
+2. **Build & validate**: Run `jekyll build` to check for errors, verify output
+3. **Review**: Test visually with browser or MCP if needed
+4. **Stop and wait**: Do NOT commit automatically - wait for user validation
+5. **User approval**: User reviews changes and indicates approval
+6. **Commit only then**: Run `git add`, `git commit`, `git push` only after explicit approval
+
+### Key Rules
+- ⛔ **Never auto-commit** - Always wait for explicit user approval
+- ⛔ **Never git push** until user validates the changes
+- ✅ **Do test locally** - Run `jekyll build` to verify no errors before stopping
+- ✅ **Do show the work** - Report what was changed and where
+- ✅ **Do suggest commit message** - Describe changes in a clear message when ready to commit
+
+### Branch Strategy
+- Current development branch: `copilot` (for experimental features)
+- Target for merging: `main` (production)
+- Always push to the feature/current branch, never directly to `main`
