@@ -7,6 +7,13 @@ body {
     padding-top: 60px;
 }
 
+/* Hide third calendar on screens smaller than 1400px */
+@media (max-width: 1399px) {
+    .calendar-third {
+        display: none;
+    }
+}
+
 /* Sticky Navigation Bar */
 .navbar-sticky {
     background: linear-gradient(135deg, rgba(255,137,74,0.95) 0%, rgba(38,166,154,0.95) 100%);

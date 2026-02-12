@@ -76,13 +76,13 @@ layout: default
 
   <!-- calendars -->
   <div class="row my-4 gy-3">
-    <div class="col-lg-6">
+    <div class="col-lg-6 col-xxl-4">
       {% assign current_month = site.time | date: "%m" %}
       {% assign current_year = site.time | date: "%Y" %}
       {% assign current_day = site.time | date: "%d" %}
       {% include calendar.html month=current_month year=current_year today=current_day %}
     </div>
-    <div class="col-lg-6">
+    <div class="col-lg-6 col-xxl-4">
       {% assign next_month = site.time | date: "%m" | plus: 1 %}
       {% assign next_year = site.time | date: "%Y" %}
       {% if next_month > 12 %}
@@ -91,6 +91,16 @@ layout: default
       {% endif %}
       {% assign next_day = 0 %}
       {% include calendar.html month=next_month year=next_year today=next_day %}
+    </div>
+    <div class="col-lg-6 col-xxl-4 calendar-third">
+      {% assign third_month = site.time | date: "%m" | plus: 2 %}
+      {% assign third_year = site.time | date: "%Y" %}
+      {% if third_month > 12 %}
+        {% assign third_month = third_month | minus: 12 %}
+        {% assign third_year = current_year | plus: 1 %}
+      {% endif %}
+      {% assign third_day = 0 %}
+      {% include calendar.html month=third_month year=third_year today=third_day %}
     </div>
   </div>
 
