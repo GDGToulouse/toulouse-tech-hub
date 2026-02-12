@@ -163,7 +163,7 @@ layout: default
           <div class="d-flex align-items-left">
             <a href="https://cloudtoulouse.com/" title="Site Officiel" class="mx-1 link-secondary"><i class="bi bi-globe"></i></a>
             <a href="https://www.linkedin.com/company/cloud-toulouse/" title="Page LinkedIn" class="mx-1 link-secondary"><i class="bi bi-linkedin"></i></a>
-            <a href="https://bsky.app/profile/cloud-toulouse.bsky.social" title="Page Bluesky" class="mx-1 link-secondary"><i class="bi bi-stars"></i></a>
+            <a href="https://bsky.app/profile/cloud-toulouse.bsky.social" title="Page Bluesky" class="mx-1 link-secondary"><i class="bi bi-bluesky"></i></a>
             <a href="https://x.com/cloud_toulouse" title="Page X / Twitter" class="mx-1 link-secondary"><i class="bi bi-twitter-x"></i></a>
           </div>
         </div>
@@ -198,7 +198,7 @@ layout: default
           <div class="d-flex align-items-left">
             <a href="https://devfesttoulouse.fr/" title="Site Officiel" class="mx-1 link-secondary"><i class="bi bi-globe"></i></a>
             <a href="https://www.linkedin.com/company/devfesttoulous" title="Page LinkedIn" class="mx-1 link-secondary"><i class="bi bi-linkedin"></i></a>
-            <a href="https://bsky.app/profile/devfesttoulouse.fr" title="Page Bluesky" class="mx-1 link-secondary"><i class="bi bi-stars"></i></a>
+            <a href="https://bsky.app/profile/devfesttoulouse.fr" title="Page Bluesky" class="mx-1 link-secondary"><i class="bi bi-bluesky"></i></a>
             <a href="https://twitter.com/devfesttoulouse" title="Page X / Twitter" class="mx-1 link-secondary"><i class="bi bi-twitter-x"></i></a>
           </div>
         </div>
@@ -217,7 +217,7 @@ layout: default
             <a href="https://capitoledulibre.org/" title="Site Officiel" class="mx-1 link-secondary"><i class="bi bi-globe"></i></a>
             <a href="https://linkedin.com/company/capitole-du-libre" title="Page LinkedIn" class="mx-1 link-secondary"><i class="bi bi-linkedin"></i></a>
             <a href="https://framapiaf.org/@capitoledulibre" title="Page Mastodon" class="mx-1 link-secondary"><i class="bi bi-mastodon"></i></a>
-            <a href="https://bsky.app/profile/capitoledulibre.org" title="Page Bluesky" class="mx-1 link-secondary"><i class="bi bi-stars"></i></a>
+            <a href="https://bsky.app/profile/capitoledulibre.org" title="Page Bluesky" class="mx-1 link-secondary"><i class="bi bi-bluesky"></i></a>
             <a href="https://x.com/capitoledulibre" title="Page X / Twitter" class="mx-1 link-secondary"><i class="bi bi-twitter-x"></i></a>
           </div>
         </div>
