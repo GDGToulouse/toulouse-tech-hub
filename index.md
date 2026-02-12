@@ -33,7 +33,7 @@ layout: default
 </section>
 
 <!-- agenda -->
-<div class="container">
+<section class="container" id="agenda">
 
   <!-- title -->
   <div class="row">
@@ -115,7 +115,7 @@ layout: default
 </div>
 
 <!-- conférences -->
-<section class="container my-2">
+<section class="container my-2" id="conferences">
 
   <!-- title -->
   <div class="row">
@@ -229,7 +229,7 @@ layout: default
 </section>
 
 <!-- communautés -->
-<section class="container my-2">
+<section class="container my-2" id="communautes">
 
   <!-- title -->
   <div class="row ">
@@ -242,14 +242,45 @@ layout: default
   </div>
 
   <!-- list -->
-  <div class="row row-cols-1 row-cols-md-2 row-cols-xxl-3">
+  <div class="row row-cols-1 row-cols-md-2 row-cols-xxl-3 g-4 my-3">
   {% assign groups_by_name = site.data.groups | sort: "name" %}
   {% for group in groups_by_name %}
-  <div class="my-2 col">
-    <div class="card shadow">
-    <div class="card-body">
-      🧑‍💻 <a href="{{ group.url }}">{{ group.name }}</a>
-    </div>
+  {%- capture gradient_class -%}
+    {%- if group.id == "gdg" -%}community-gdg
+    {%- elsif group.id == "mtg" -%}community-mtg
+    {%- elsif group.id == "agile" -%}community-agile
+    {%- elsif group.id == "tgd" -%}community-tgd
+    {%- elsif group.id == "ruby" -%}community-ruby
+    {%- elsif group.id == "jug" -%}community-jug
+    {%- elsif group.id == "python" -%}community-python
+    {%- elsif group.id == "js" -%}community-js
+    {%- else -%}community-default
+    {%- endif -%}
+  {%- endcapture -%}
+  <div class="col">
+    <div class="card community-card shadow-sm {{ gradient_class | strip }}">
+      <div class="community-card-body">
+        <h5 class="community-card-title">{{ group.name }}</h5>
+        {% if group.description %}
+        <p class="community-card-desc">{{ group.description | strip_html | truncatewords: 15 }}</p>
+        {% endif %}
+        <div class="community-card-links">
+          <a href="{{ group.url }}" title="Site Web" target="_blank"><i class="bi bi-globe"></i></a>
+          {% if group.social %}
+            {% for social in group.social %}
+              {% if social.name == "x" %}
+              <a href="{{ social.url }}" title="X / Twitter" target="_blank"><i class="bi bi-twitter-x"></i></a>
+              {% elsif social.name == "linkedin" %}
+              <a href="{{ social.url }}" title="LinkedIn" target="_blank"><i class="bi bi-linkedin"></i></a>
+              {% elsif social.name == "github" %}
+              <a href="{{ social.url }}" title="GitHub" target="_blank"><i class="bi bi-github"></i></a>
+              {% elsif social.name == "mastodon" %}
+              <a href="{{ social.url }}" title="Mastodon" target="_blank"><i class="bi bi-mastodon"></i></a>
+              {% endif %}
+            {% endfor %}
+          {% endif %}
+        </div>
+      </div>
     </div>
   </div>
   {% endfor %}

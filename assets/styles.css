@@ -1,0 +1,190 @@
+/* Smooth scrolling for navigation */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    padding-top: 60px;
+}
+
+/* Sticky Navigation Bar */
+.navbar-sticky {
+    background: linear-gradient(135deg, rgba(255,137,74,0.95) 0%, rgba(38,166,154,0.95) 100%);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    backdrop-filter: blur(10px);
+}
+
+.navbar-sticky .nav-link {
+    color: white !important;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.navbar-sticky .nav-link:hover {
+    color: #fff !important;
+    transform: translateY(-2px);
+}
+
+.navbar-sticky .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width 0.3s ease;
+}
+
+.navbar-sticky .nav-link:hover::after {
+    width: 100%;
+}
+
+/* Original card styles */
+.card > a {
+    text-decoration: none;
+    color: #212529;
+}
+
+a.muted {
+    text-decoration: none;
+    color: #212529;
+}
+
+.card .place {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.card .time {
+    white-space: nowrap;
+}
+
+/* Community Card Styles */
+.community-card {
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    border: none;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    background-position: center;
+    min-height: 250px;
+    position: relative;
+}
+
+.community-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.6) 100%);
+    z-index: 1;
+    transition: opacity 0.3s ease;
+}
+
+.community-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.2);
+}
+
+.community-card:hover::before {
+    opacity: 0.5;
+}
+
+.community-card-body {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex-grow: 1;
+    padding: 20px;
+    color: white;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.community-card-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    transition: all 0.3s ease;
+    color: white !important;
+}
+
+.community-card-desc {
+    font-size: 0.9rem;
+    opacity: 0.95;
+    margin-bottom: 12px;
+    line-height: 1.4;
+    color: white !important;
+}
+
+.community-card-links {
+    display: flex;
+    gap: 12px;
+}
+
+.community-card-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.2);
+    border: 1px solid rgba(255,255,255,0.3);
+}
+
+.community-card-links a:hover {
+    background: rgba(255,255,255,0.4);
+    transform: scale(1.15);
+    color: white !important;
+}
+
+/* Gradient backgrounds for specific communities */
+.community-gdg {
+    background: linear-gradient(135deg, #EA4435 0%, #FBBC04 100%);
+}
+
+.community-mtg {
+    background: linear-gradient(135deg, #0078D4 0%, #50E6FF 100%);
+}
+
+.community-agile {
+    background: linear-gradient(135deg, #FF6B6B 0%, #C92A2A 100%);
+}
+
+.community-tgd {
+    background: linear-gradient(135deg, #76FF03 0%, #00E676 100%);
+}
+
+.community-ruby {
+    background: linear-gradient(135deg, #CC342D 0%, #FF6B6B 100%);
+}
+
+.community-jug {
+    background: linear-gradient(135deg, #FF6B35 0%, #004E89 100%);
+}
+
+.community-python {
+    background: linear-gradient(135deg, #3776AB 0%, #FFD43B 100%);
+}
+
+.community-js {
+    background: linear-gradient(135deg, #F7DF1E 0%, #000000 100%);
+}
+
+.community-default {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
