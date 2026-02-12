@@ -3,3 +3,4 @@ obj/
 .vs/
 screen*.jpg
 _site/
+mcp-output/

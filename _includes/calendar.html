@@ -1,0 +1,132 @@
+{% comment %}
+Calendar include that displays a month grid with event counts
+Params: month (1-12), year (YYYY), today (1-31, or 0 if not current month)
+{% endcomment %}
+
+{% assign months = "Janvier,Février,Mars,Avril,Mai,Juin,Juillet,Août,Septembre,Octobre,Novembre,Décembre" | split: "," %}
+{% assign days_in_month = "31,28,31,30,31,30,31,31,30,31,30,31" | split: "," %}
+
+{% comment %} Calculate whether leap year {% endcomment %}
+{% assign year_int = include.year | plus: 0 %}
+{% assign is_leap = year_int | modulo: 4 %}
+{% if is_leap == 0 %}
+  {% assign days_in_month = "31,29,31,30,31,30,31,31,30,31,30,31" | split: "," %}
+{% endif %}
+
+{% assign month_int = include.month | plus: 0 %}
+{% assign month_idx = month_int | minus: 1 %}
+{% assign num_days = days_in_month[month_idx] | plus: 0 %}
+{% assign month_name = months[month_idx] %}
+
+{% comment %} Format month with leading zero {% endcomment %}
+{% if month_int < 10 %}
+  {% assign month_str = month_int | prepend: '0' | slice: -2,2 %}
+{% else %}
+  {% assign month_str = month_int | convert: "string" %}
+{% endif %}
+
+{% comment %} First day of month (0=Sunday, 6=Saturday) in %w format
+Adjust to start week on Monday: subtract 1 (mod 7) {% endcomment %}
+{% capture first_date %}{{ include.year }}-{{ month_str }}-01{% endcapture %}
+{% assign first_day_obj = first_date | date: "%w" | plus: 0 %}
+{% assign first_day = first_day_obj | minus: 1 %}
+{% if first_day < 0 %}
+  {% assign first_day = 6 %}
+{% endif %}
+
+{% comment %} Build event count map {% endcomment %}
+{% assign event_counts = "" | split: "" %}
+{% assign now_time = site.time | date: "%s" | plus: 0 %}
+
+{% for i in (1..num_days) %}
+  {% capture date_str %}{{ include.year }}-{{ month_str }}-{{ i | prepend: '0' | slice: -2,2 }}{% endcapture %}
+  {% assign count = 0 %}
+  
+  {% for event_hash in site.data.events %}
+    {% assign event = event_hash[1] %}
+    {% assign event_date = event.dateIso | date: "%Y-%m-%d" %}
+    {% if event_date == date_str %}
+      {% assign event_time = event.dateIso | date: "%s" | plus: 0 %}
+      {% if event_time >= now_time %}
+        {% assign count = count | plus: 1 %}
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+  
+  {% assign event_counts = event_counts | push: count %}
+{% endfor %}
+
+{% comment %} Render calendar {% endcomment %}
+<div class="calendar-month">
+  <div class="calendar-month-title">{{ month_name }} {{ include.year }}</div>
+  
+  <div class="calendar-grid">
+    {% comment %} Day headers - French, starting Monday {% endcomment %}
+    <div class="calendar-day-header">Lun</div>
+    <div class="calendar-day-header">Mar</div>
+    <div class="calendar-day-header">Mer</div>
+    <div class="calendar-day-header">Jeu</div>
+    <div class="calendar-day-header">Ven</div>
+    <div class="calendar-day-header">Sam</div>
+    <div class="calendar-day-header">Dim</div>
+    
+    {% comment %} Empty cells before first day {% endcomment %}
+    {% assign empty_cells = first_day | minus: 1 %}
+    {% for i in (0..empty_cells) %}
+      <div class="calendar-day calendar-empty"></div>
+    {% endfor %}
+    
+    {% comment %} Days of month {% endcomment %}
+    {% for i in (1..num_days) %}
+      {% assign idx = i | minus: 1 %}
+      {% assign count = event_counts[idx] | plus: 0 %}
+      {% assign is_today = false %}
+      {% assign today_int = include.today | plus: 0 %}
+      {% if today_int == i %}
+        {% assign is_today = true %}
+      {% endif %}
+      
+      {% comment %} Calculate day of week (1=Mon, 7=Sun) {% endcomment %}
+      {% assign day_of_week = first_day | plus: i | minus: 1 | modulo: 7 | plus: 1 %}
+      {% assign is_weekend = false %}
+      {% if day_of_week == 6 or day_of_week == 7 %}
+        {% assign is_weekend = true %}
+      {% endif %}
+      
+      {% capture day_class %}calendar-day{% endcapture %}
+      {% if is_today %}
+        {% capture day_class %}{{ day_class }} calendar-today{% endcapture %}
+      {% elsif is_weekend %}
+        {% capture day_class %}{{ day_class }} calendar-weekend{% endcapture %}
+      {% endif %}
+      {% if count == 1 %}
+        {% capture day_class %}{{ day_class }} calendar-events-1{% endcapture %}
+      {% elsif count >= 2 and count <= 3 %}
+        {% capture day_class %}{{ day_class }} calendar-events-2{% endcapture %}
+      {% elsif count >= 4 and count <= 6 %}
+        {% capture day_class %}{{ day_class }} calendar-events-4{% endcapture %}
+      {% elsif count >= 7 %}
+        {% capture day_class %}{{ day_class }} calendar-events-7{% endcapture %}
+      {% endif %}
+      
+      <div class="{{ day_class }}" data-date="{{ include.year }}-{{ month_str }}-{{ i | prepend: '0' | slice: -2,2 }}" data-count="{{ count }}">
+        <div class="calendar-day-number">{{ i }}</div>
+        {% if count > 0 %}
+          {% assign badge_class = "calendar-badge-1" %}
+          {% if count >= 2 %}{% assign badge_class = "calendar-badge-2" %}{% endif %}
+          {% if count >= 4 %}{% assign badge_class = "calendar-badge-4" %}{% endif %}
+          {% if count >= 7 %}{% assign badge_class = "calendar-badge-7" %}{% endif %}
+          <div class="calendar-badge {{ badge_class }}">{{ count }}</div>
+        {% endif %}
+      </div>
+    {% endfor %}
+    
+    {% comment %} Empty cells after last day of month {% endcomment %}
+    {% assign total_cells = first_day | plus: num_days %}
+    {% assign remaining_cells = 7 | minus: total_cells | modulo: 7 %}
+    {% assign end_idx = remaining_cells | minus: 1 %}
+    {% for i in (0..end_idx) %}
+      <div class="calendar-day calendar-empty"></div>
+    {% endfor %}
+  </div>
+</div>

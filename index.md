@@ -33,7 +33,7 @@ layout: default
 </section>
 
 <!-- agenda -->
-<div class="container">
+<section class="container" id="agenda">
 
   <!-- title -->
   <div class="row">
@@ -74,6 +74,36 @@ layout: default
     </div>
   </div>
 
+  <!-- calendars -->
+  <div class="row my-4 gy-3">
+    <div class="col-lg-6 col-xxl-4">
+      {% assign current_month = site.time | date: "%m" %}
+      {% assign current_year = site.time | date: "%Y" %}
+      {% assign current_day = site.time | date: "%d" %}
+      {% include calendar.html month=current_month year=current_year today=current_day %}
+    </div>
+    <div class="col-lg-6 col-xxl-4">
+      {% assign next_month = site.time | date: "%m" | plus: 1 %}
+      {% assign next_year = site.time | date: "%Y" %}
+      {% if next_month > 12 %}
+        {% assign next_month = 1 %}
+        {% assign next_year = current_year | plus: 1 %}
+      {% endif %}
+      {% assign next_day = 0 %}
+      {% include calendar.html month=next_month year=next_year today=next_day %}
+    </div>
+    <div class="col-lg-6 col-xxl-4 calendar-third">
+      {% assign third_month = site.time | date: "%m" | plus: 2 %}
+      {% assign third_year = site.time | date: "%Y" %}
+      {% if third_month > 12 %}
+        {% assign third_month = third_month | minus: 12 %}
+        {% assign third_year = current_year | plus: 1 %}
+      {% endif %}
+      {% assign third_day = 0 %}
+      {% include calendar.html month=third_month year=third_year today=third_day %}
+    </div>
+  </div>
+
   <!-- grid -->
   <div class="row row-cols-1 row-cols-md-2 row-cols-xxl-3 g-3 agenda my-2">
 
@@ -85,7 +115,8 @@ layout: default
     {%- continue -%}
   {%- endif -%}
 
-  <div class="col">
+  {%- assign event_date = event.dateIso | date: "%Y-%m-%d" -%}
+  <div class="col" data-event-date="{{ event_date }}">
     <div class="card shadow h-100">
       <div class="card-header">🧑‍💻 {{ event.community }}</div>
       <a href="{{ event.link }}">
@@ -115,7 +146,7 @@ layout: default
 </div>
 
 <!-- conférences -->
-<section class="container my-2">
+<section class="container my-2" id="conferences">
 
   <!-- title -->
   <div class="row">
@@ -127,109 +158,12 @@ layout: default
     </div>
   </div>
 
-  <div class="row row-cols-1 row-cols-md-2 row-cols-xxl-4">
-    <!-- Cloud Toulouse -->
-    <div class="my-2 col">    
-      <div class="card shadow">
-        <div class="card-header">📢 Cloud Toulouse</div>
-        <a href="https://cloudtoulouse.com/" class="muted">
-          <img width="100%" style="aspect-ratio: 16/9" src="{{ site.baseurl }}/confs-imgs/cloud-toulouse.jpg" />
-        </a>
-        <div class="card-body">
-          <a href="https://cloudtoulouse.com/" class="muted">
-            <h5 class="card-title">15 mai 2025</h5>
-          </a>
-          <div class="d-flex align-items-left">
-            <a href="https://cloudtoulouse.com/" title="Site Officiel" class="mx-1 link-secondary"><i class="bi bi-globe"></i></a>
-            <a href="https://www.linkedin.com/company/cloud-toulouse/" title="Page LinkedIn" class="mx-1 link-secondary"><i class="bi bi-linkedin"></i></a>
-            <a href="https://bsky.app/profile/cloud-toulouse.bsky.social" title="Page Bluesky" class="mx-1 link-secondary"><i class="bi bi-stars"></i></a>
-            <a href="https://x.com/cloud_toulouse" title="Page X / Twitter" class="mx-1 link-secondary"><i class="bi bi-twitter-x"></i></a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Agile Tour Toulouse -->
-    <div class="my-2 col">
-      <div class="card shadow">
-        <div class="card-header">📢 Agile Tour Toulouse</div>
-        <a href="https://tour.agiletoulouse.fr/"><img width="100%" style="aspect-ratio: 16/9" src="{{ site.baseurl }}/confs-imgs/agile-tour.jpg" /></a>
-        <div class="card-body">
-          <a href="https://tour.agiletoulouse.fr/" class="muted">
-            <h5 class="card-title">12 et 13 juin 2025</h5>
-          </a>
-          <div class="d-flex align-items-left">
-            <a href="https://tour.agiletoulouse.fr/" title="Site Officiel" class="mx-1 link-secondary"><i class="bi bi-globe"></i></a>
-            <a href="https://www.linkedin.com/company/agile-toulouse" title="Page LinkedIn" class="mx-1 link-secondary"><i class="bi bi-linkedin"></i></a>
-            <a href="https://twitter.com/agiletoulouse" title="Page X / Twitter" class="mx-1 link-secondary"><i class="bi bi-twitter-x"></i></a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- DevFest Toulouse -->
-    <div class="my-2 col">
-      <div class="card shadow">
-        <div class="card-header">📢 DevFest Toulouse</div>
-        <a href="https://devfesttoulouse.fr/"><img width="100%" style="aspect-ratio: 16/9" src="{{ site.baseurl }}/confs-imgs/devfest.jpg" /></a>
-        <div class="card-body">
-          <a href="https://devfesttoulouse.fr/" class="muted">
-            <h5 class="card-title">13 novembre 2025</h5>
-          </a>
-          <div class="d-flex align-items-left">
-            <a href="https://devfesttoulouse.fr/" title="Site Officiel" class="mx-1 link-secondary"><i class="bi bi-globe"></i></a>
-            <a href="https://www.linkedin.com/company/devfesttoulous" title="Page LinkedIn" class="mx-1 link-secondary"><i class="bi bi-linkedin"></i></a>
-            <a href="https://bsky.app/profile/devfesttoulouse.fr" title="Page Bluesky" class="mx-1 link-secondary"><i class="bi bi-stars"></i></a>
-            <a href="https://twitter.com/devfesttoulouse" title="Page X / Twitter" class="mx-1 link-secondary"><i class="bi bi-twitter-x"></i></a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Capitole du Libre -->
-    <div class="my-2 col">
-      <div class="card shadow">
-        <div class="card-header">📢 Le Capitole du Libre</div>
-        <a href="https://capitoledulibre.org/"><img width="100%" style="aspect-ratio: 16/9" src="{{ site.baseurl }}/confs-imgs/capitole-du-libre.jpg" /></a>
-        <div class="card-body">
-          <a href="https://capitoledulibre.org/" class="muted">
-            <h5 class="card-title">15 et 16 novembre 2025</h5>
-          </a>
-          <div class="d-flex align-items-left">
-            <a href="https://capitoledulibre.org/" title="Site Officiel" class="mx-1 link-secondary"><i class="bi bi-globe"></i></a>
-            <a href="https://linkedin.com/company/capitole-du-libre" title="Page LinkedIn" class="mx-1 link-secondary"><i class="bi bi-linkedin"></i></a>
-            <a href="https://framapiaf.org/@capitoledulibre" title="Page Mastodon" class="mx-1 link-secondary"><i class="bi bi-mastodon"></i></a>
-            <a href="https://bsky.app/profile/capitoledulibre.org" title="Page Bluesky" class="mx-1 link-secondary"><i class="bi bi-stars"></i></a>
-            <a href="https://x.com/capitoledulibre" title="Page X / Twitter" class="mx-1 link-secondary"><i class="bi bi-twitter-x"></i></a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- list automatique (obsolete) -->
-  <!--
-  <div class="row">
-  {% assign months = "janvier|février|mars|avril|mai|juin|juillet|août|septembre|octobre|novembre|décembre" | split: "|" %}
-  {% assign confs_by_date = site.data.confs | sort: "date" %}
-  {% for conf in confs_by_date %}
-  <div class="my-2 col-4">
-    <div class="card shadow">
-      <div class="card-header">📢 {{ conf.name }}</div>
-      <a href="{{ conf.url }}">
-        <div class="card-body">
-          {% assign mi = conf.date | date: "%m" | minus: 1 %}
-          {% assign month = months[mi] %}
-          <h5 class="card-title">{{ conf.date | date: "%d" }} {{ month }} {{ conf.date | date: "%Y" }}</h5>
-        </div>
-      </a>
-    </div>
-  </div>
-  {% endfor %}
-  </div>
-  -->
+  {% include conferences.html %}
 
 </section>
 
 <!-- communautés -->
-<section class="container my-2">
+<section class="container my-2" id="communautes">
 
   <!-- title -->
   <div class="row ">
@@ -242,14 +176,45 @@ layout: default
   </div>
 
   <!-- list -->
-  <div class="row row-cols-1 row-cols-md-2 row-cols-xxl-3">
+  <div class="row row-cols-1 row-cols-md-2 row-cols-xxl-3 g-4 my-3">
   {% assign groups_by_name = site.data.groups | sort: "name" %}
   {% for group in groups_by_name %}
-  <div class="my-2 col">
-    <div class="card shadow">
-    <div class="card-body">
-      🧑‍💻 <a href="{{ group.url }}">{{ group.name }}</a>
-    </div>
+  {%- capture gradient_class -%}
+    {%- if group.id == "gdg" -%}community-gdg
+    {%- elsif group.id == "mtg" -%}community-mtg
+    {%- elsif group.id == "agile" -%}community-agile
+    {%- elsif group.id == "tgd" -%}community-tgd
+    {%- elsif group.id == "ruby" -%}community-ruby
+    {%- elsif group.id == "jug" -%}community-jug
+    {%- elsif group.id == "python" -%}community-python
+    {%- elsif group.id == "js" -%}community-js
+    {%- else -%}community-default
+    {%- endif -%}
+  {%- endcapture -%}
+  <div class="col">
+    <div class="card community-card shadow-sm {{ gradient_class | strip }}">
+      <div class="community-card-body">
+        <h5 class="community-card-title">{{ group.name }}</h5>
+        {% if group.description %}
+        <p class="community-card-desc">{{ group.description | strip_html | truncatewords: 15 }}</p>
+        {% endif %}
+        <div class="community-card-links">
+          <a href="{{ group.url }}" title="Site Web" target="_blank"><i class="bi bi-globe"></i></a>
+          {% if group.social %}
+            {% for social in group.social %}
+              {% if social.name == "x" %}
+              <a href="{{ social.url }}" title="X / Twitter" target="_blank"><i class="bi bi-twitter-x"></i></a>
+              {% elsif social.name == "linkedin" %}
+              <a href="{{ social.url }}" title="LinkedIn" target="_blank"><i class="bi bi-linkedin"></i></a>
+              {% elsif social.name == "github" %}
+              <a href="{{ social.url }}" title="GitHub" target="_blank"><i class="bi bi-github"></i></a>
+              {% elsif social.name == "mastodon" %}
+              <a href="{{ social.url }}" title="Mastodon" target="_blank"><i class="bi bi-mastodon"></i></a>
+              {% endif %}
+            {% endfor %}
+          {% endif %}
+        </div>
+      </div>
     </div>
   </div>
   {% endfor %}
