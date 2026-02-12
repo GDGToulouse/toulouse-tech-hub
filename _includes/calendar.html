@@ -3,7 +3,7 @@ Calendar include that displays a month grid with event counts
 Params: month (1-12), year (YYYY), today (1-31, or 0 if not current month)
 {% endcomment %}
 
-{% assign months = "January,February,March,April,May,June,July,August,September,October,November,December" | split: "," %}
+{% assign months = "Janvier,Février,Mars,Avril,Mai,Juin,Juillet,Août,Septembre,Octobre,Novembre,Décembre" | split: "," %}
 {% assign days_in_month = "31,28,31,30,31,30,31,31,30,31,30,31" | split: "," %}
 
 {% comment %} Calculate whether leap year {% endcomment %}
@@ -25,10 +25,14 @@ Params: month (1-12), year (YYYY), today (1-31, or 0 if not current month)
   {% assign month_str = month_int | convert: "string" %}
 {% endif %}
 
-{% comment %} First day of month (0=Sunday, 6=Saturday) {% endcomment %}
-{% capture first_date %}{{ include.year }}-{{ include.month | prepend: '0' | slice: -2,2 }}-01{% endcapture %}
-{% assign first_day_obj = first_date | date: "%w" %}
-{% assign first_day = first_day_obj | plus: 0 %}
+{% comment %} First day of month (0=Sunday, 6=Saturday) in %w format
+Adjust to start week on Monday: subtract 1 (mod 7) {% endcomment %}
+{% capture first_date %}{{ include.year }}-{{ month_str }}-01{% endcapture %}
+{% assign first_day_obj = first_date | date: "%w" | plus: 0 %}
+{% assign first_day = first_day_obj | minus: 1 %}
+{% if first_day < 0 %}
+  {% assign first_day = 6 %}
+{% endif %}
 
 {% comment %} Build event count map {% endcomment %}
 {% assign event_counts = "" | split: "" %}
@@ -57,14 +61,14 @@ Params: month (1-12), year (YYYY), today (1-31, or 0 if not current month)
   <div class="calendar-month-title">{{ month_name }} {{ include.year }}</div>
   
   <div class="calendar-grid">
-    {% comment %} Day headers {% endcomment %}
-    <div class="calendar-day-header">Sun</div>
-    <div class="calendar-day-header">Mon</div>
-    <div class="calendar-day-header">Tue</div>
-    <div class="calendar-day-header">Wed</div>
-    <div class="calendar-day-header">Thu</div>
-    <div class="calendar-day-header">Fri</div>
-    <div class="calendar-day-header">Sat</div>
+    {% comment %} Day headers - French, starting Monday {% endcomment %}
+    <div class="calendar-day-header">Lun</div>
+    <div class="calendar-day-header">Mar</div>
+    <div class="calendar-day-header">Mer</div>
+    <div class="calendar-day-header">Jeu</div>
+    <div class="calendar-day-header">Ven</div>
+    <div class="calendar-day-header">Sam</div>
+    <div class="calendar-day-header">Dim</div>
     
     {% comment %} Empty cells before first day {% endcomment %}
     {% for i in (0..first_day | minus: 1) %}
@@ -73,7 +77,8 @@ Params: month (1-12), year (YYYY), today (1-31, or 0 if not current month)
     
     {% comment %} Days of month {% endcomment %}
     {% for i in (1..num_days) %}
-      {% assign count = event_counts[i | minus: 1] | plus: 0 %}
+      {% assign idx = i | minus: 1 %}
+      {% assign count = event_counts[idx] | plus: 0 %}
       {% assign is_today = false %}
       {% if include.today == i %}
         {% assign is_today = true %}
@@ -84,7 +89,7 @@ Params: month (1-12), year (YYYY), today (1-31, or 0 if not current month)
         {% capture day_class %}{{ day_class }} calendar-today{% endcapture %}
       {% endif %}
       
-      <div class="{{ day_class }}" data-date="{{ include.year }}-{{ month_str }}-{{ i | prepend: '0' | slice: -2,2 }}">
+      <div class="{{ day_class }}" data-date="{{ include.year }}-{{ month_str }}-{{ i | prepend: '0' | slice: -2,2 }}" data-count="{{ count }}">
         <div class="calendar-day-number">{{ i }}</div>
         {% if count > 0 %}
           {% assign badge_class = "calendar-badge-1" %}
