@@ -71,7 +71,8 @@ Adjust to start week on Monday: subtract 1 (mod 7) {% endcomment %}
     <div class="calendar-day-header">Dim</div>
     
     {% comment %} Empty cells before first day {% endcomment %}
-    {% for i in (0..first_day | minus: 1) %}
+    {% assign empty_cells = first_day | minus: 1 %}
+    {% for i in (0..empty_cells) %}
       <div class="calendar-day calendar-empty"></div>
     {% endfor %}
     
