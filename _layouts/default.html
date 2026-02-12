@@ -50,6 +50,26 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <script type="text/javascript">
+      // Dynamically apply today indicator to calendar
+      function setTodayIndicator() {
+        const today = new Date();
+        const year = today.getFullYear();
+        const month = String(today.getMonth() + 1).padStart(2, '0');
+        const day = String(today.getDate()).padStart(2, '0');
+        const todayString = year + '-' + month + '-' + day;
+        
+        const todayElement = document.querySelector('[data-date="' + todayString + '"]');
+        if (todayElement) {
+          todayElement.classList.add('calendar-today');
+        }
+      }
+      
+      // Apply today indicator when DOM is ready
+      document.addEventListener('DOMContentLoaded', setTodayIndicator);
+      // Also apply immediately in case DOM is already loaded
+      setTodayIndicator();
+      
+      // Calendar day click handler for smooth scrolling
       document.querySelectorAll('.calendar-day[data-date]:not(.calendar-empty)').forEach(function(el) {
         el.addEventListener('click', function() {
           var date = this.getAttribute('data-date');
