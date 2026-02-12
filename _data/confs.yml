@@ -4,16 +4,16 @@
   url: https://cloudtoulouse.com/
   image: confs-imgs/cloud-toulouse.jpg
   social:
-    - name: globe
+    - icon: bi-globe
       url: https://cloudtoulouse.com/
       title: Site Officiel
-    - name: linkedin
+    - icon: bi-linkedin
       url: https://www.linkedin.com/company/cloud-toulouse/
       title: Page LinkedIn
-    - name: bluesky
+    - icon: bi-bluesky
       url: https://bsky.app/profile/cloud-toulouse.bsky.social
       title: Page Bluesky
-    - name: x
+    - icon: bi-twitter-x
       url: https://x.com/cloud_toulouse
       title: Page X / Twitter
 
@@ -24,13 +24,13 @@
   url: https://tour.agiletoulouse.fr/
   image: confs-imgs/agile-tour.jpg
   social:
-    - name: globe
+    - icon: bi-globe
       url: https://tour.agiletoulouse.fr/
       title: Site Officiel
-    - name: linkedin
+    - icon: bi-linkedin
       url: https://www.linkedin.com/company/agile-toulouse
       title: Page LinkedIn
-    - name: x
+    - icon: bi-twitter-x
       url: https://twitter.com/agiletoulouse
       title: Page X / Twitter
 
@@ -40,16 +40,16 @@
   url: https://devfesttoulouse.fr/
   image: confs-imgs/devfest.jpg
   social:
-    - name: globe
+    - icon: bi-globe
       url: https://devfesttoulouse.fr/
       title: Site Officiel
-    - name: linkedin
+    - icon: bi-linkedin
       url: https://www.linkedin.com/company/devfesttoulous
       title: Page LinkedIn
-    - name: bluesky
+    - icon: bi-bluesky
       url: https://bsky.app/profile/devfesttoulouse.fr
       title: Page Bluesky
-    - name: x
+    - icon: bi-twitter-x
       url: https://twitter.com/devfesttoulouse
       title: Page X / Twitter
 
@@ -60,18 +60,18 @@
   url: https://capitoledulibre.org/
   image: confs-imgs/capitole-du-libre.jpg
   social:
-    - name: globe
+    - icon: bi-globe
       url: https://capitoledulibre.org/
       title: Site Officiel
-    - name: linkedin
+    - icon: bi-linkedin
       url: https://linkedin.com/company/capitole-du-libre
       title: Page LinkedIn
-    - name: mastodon
+    - icon: bi-mastodon
       url: https://framapiaf.org/@capitoledulibre
       title: Page Mastodon
-    - name: bluesky
+    - icon: bi-bluesky
       url: https://bsky.app/profile/capitoledulibre.org
       title: Page Bluesky
-    - name: x
+    - icon: bi-twitter-x
       url: https://x.com/capitoledulibre
       title: Page X / Twitter
