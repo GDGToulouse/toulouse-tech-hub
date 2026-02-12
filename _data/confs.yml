@@ -1,13 +1,77 @@
-- name: DevFest Toulouse 2025
-  date: 2025-11-13
-  url: https://devfesttoulouse.fr/
-
-- name: Cloud Toulouse 2025
+- id: cloud-toulouse
+  name: Cloud Toulouse
   date: 2025-05-15
   url: https://cloudtoulouse.com/
+  image: confs-imgs/cloud-toulouse.jpg
+  social:
+    - name: globe
+      url: https://cloudtoulouse.com/
+      title: Site Officiel
+    - name: linkedin
+      url: https://www.linkedin.com/company/cloud-toulouse/
+      title: Page LinkedIn
+    - name: bluesky
+      url: https://bsky.app/profile/cloud-toulouse.bsky.social
+      title: Page Bluesky
+    - name: x
+      url: https://x.com/cloud_toulouse
+      title: Page X / Twitter
 
-- name: Agile Tour Toulouse 2025
+- id: agile-tour
+  name: Agile Tour Toulouse
   date: 2025-06-12
   end: 2025-06-13
   url: https://tour.agiletoulouse.fr/
-  logo: https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/268073/6743_584019.png
+  image: confs-imgs/agile-tour.jpg
+  social:
+    - name: globe
+      url: https://tour.agiletoulouse.fr/
+      title: Site Officiel
+    - name: linkedin
+      url: https://www.linkedin.com/company/agile-toulouse
+      title: Page LinkedIn
+    - name: x
+      url: https://twitter.com/agiletoulouse
+      title: Page X / Twitter
+
+- id: devfest
+  name: DevFest Toulouse
+  date: 2025-11-13
+  url: https://devfesttoulouse.fr/
+  image: confs-imgs/devfest.jpg
+  social:
+    - name: globe
+      url: https://devfesttoulouse.fr/
+      title: Site Officiel
+    - name: linkedin
+      url: https://www.linkedin.com/company/devfesttoulous
+      title: Page LinkedIn
+    - name: bluesky
+      url: https://bsky.app/profile/devfesttoulouse.fr
+      title: Page Bluesky
+    - name: x
+      url: https://twitter.com/devfesttoulouse
+      title: Page X / Twitter
+
+- id: capitole-du-libre
+  name: Le Capitole du Libre
+  date: 2025-11-15
+  end: 2025-11-16
+  url: https://capitoledulibre.org/
+  image: confs-imgs/capitole-du-libre.jpg
+  social:
+    - name: globe
+      url: https://capitoledulibre.org/
+      title: Site Officiel
+    - name: linkedin
+      url: https://linkedin.com/company/capitole-du-libre
+      title: Page LinkedIn
+    - name: mastodon
+      url: https://framapiaf.org/@capitoledulibre
+      title: Page Mastodon
+    - name: bluesky
+      url: https://bsky.app/profile/capitoledulibre.org
+      title: Page Bluesky
+    - name: x
+      url: https://x.com/capitoledulibre
+      title: Page X / Twitter
