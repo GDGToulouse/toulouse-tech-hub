@@ -81,13 +81,32 @@ Adjust to start week on Monday: subtract 1 (mod 7) {% endcomment %}
       {% assign idx = i | minus: 1 %}
       {% assign count = event_counts[idx] | plus: 0 %}
       {% assign is_today = false %}
-      {% if include.today == i %}
+      {% assign today_int = include.today | plus: 0 %}
+      {% if today_int == i %}
         {% assign is_today = true %}
+      {% endif %}
+      
+      {% comment %} Calculate day of week (1=Mon, 7=Sun) {% endcomment %}
+      {% assign day_of_week = first_day | plus: i | minus: 1 | modulo: 7 | plus: 1 %}
+      {% assign is_weekend = false %}
+      {% if day_of_week == 6 or day_of_week == 7 %}
+        {% assign is_weekend = true %}
       {% endif %}
       
       {% capture day_class %}calendar-day{% endcapture %}
       {% if is_today %}
         {% capture day_class %}{{ day_class }} calendar-today{% endcapture %}
+      {% elsif is_weekend %}
+        {% capture day_class %}{{ day_class }} calendar-weekend{% endcapture %}
+      {% endif %}
+      {% if count == 1 %}
+        {% capture day_class %}{{ day_class }} calendar-events-1{% endcapture %}
+      {% elsif count >= 2 and count <= 3 %}
+        {% capture day_class %}{{ day_class }} calendar-events-2{% endcapture %}
+      {% elsif count >= 4 and count <= 6 %}
+        {% capture day_class %}{{ day_class }} calendar-events-4{% endcapture %}
+      {% elsif count >= 7 %}
+        {% capture day_class %}{{ day_class }} calendar-events-7{% endcapture %}
       {% endif %}
       
       <div class="{{ day_class }}" data-date="{{ include.year }}-{{ month_str }}-{{ i | prepend: '0' | slice: -2,2 }}" data-count="{{ count }}">
@@ -98,10 +117,16 @@ Adjust to start week on Monday: subtract 1 (mod 7) {% endcomment %}
           {% if count >= 4 %}{% assign badge_class = "calendar-badge-4" %}{% endif %}
           {% if count >= 7 %}{% assign badge_class = "calendar-badge-7" %}{% endif %}
           <div class="calendar-badge {{ badge_class }}">{{ count }}</div>
-        {% else %}
-          <div class="calendar-badge calendar-badge-empty"></div>
         {% endif %}
       </div>
+    {% endfor %}
+    
+    {% comment %} Empty cells after last day of month {% endcomment %}
+    {% assign total_cells = first_day | plus: num_days %}
+    {% assign remaining_cells = 7 | minus: total_cells | modulo: 7 %}
+    {% assign end_idx = remaining_cells | minus: 1 %}
+    {% for i in (0..end_idx) %}
+      <div class="calendar-day calendar-empty"></div>
     {% endfor %}
   </div>
 </div>
