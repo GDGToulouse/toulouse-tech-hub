@@ -12,21 +12,15 @@ img: https://secure.meetupstatic.com/photos/event/5/c/a/3/highres_532703715.webp
 localImg: event-imgs/meetup-313325443.webp
 description: >
   <div class="w-full break-words transition-all duration-300 line-clamp-[15]" style="font-family: NeuSans, Inter, system-ui, sans-serif;"><p class="mb-ds2-10"><strong>Le cycle DDD par Agile Toulouse reprend tout à zéro pour cette nouvelle série d'atelier.</strong></p>
-  <p class="mb-ds2-10">Avec un nouveau fil rouge, nous allons découvrir, re-découvrir, approfondir nos connaissances dans le DDD.</p>
+  <p class="mb-ds2-10">Avec un nouveau fil rouge, nous allons découvrir, re-découvrir, approfondir nos connaissances dans le DDD, Domain Driven Design.</p>
   <p class="mb-ds2-10">Au programme de ce premier atelier après une brève introduction sur l'association, un moment de networking et d'échange nous allons avoir :</p>
   <p class="mb-ds2-10"><strong>Aligner &amp; Découvrir le domaine</strong> (2h)<br>
   <strong>Focus DDD : Understand + Discover</strong></p>
   <p class="mb-ds2-10">Understand - Comprendre le business (30min)</p>
   <ul class="pl-5 list-disc mb-4">
-  <li>
-  <p class="mb-ds2-10"><strong>Impact Mapping</strong> : Pourquoi ce produit ? Pour qui ? Quel impact business attendu ?</p>
-  </li>
-  <li>
-  <p class="mb-ds2-10">Identification de l’objectif, des acteurs, des impacts et des livrables</p>
-  </li>
-  <li>
-  <p class="mb-ds2-10">Alignement sur la vision produit</p>
-  </li>
+  <li><strong>Impact Mapping</strong> : Pourquoi ce produit ? Pour qui ? Quel impact business attendu ?</li>
+  <li>Identification de l’objectif, des acteurs, des impacts et des livrables</li>
+  <li>Alignement sur la vision produit</li>
   </ul>
   <p class="mb-ds2-10">Discover - Event Storming Big Picture (1h20)</p>
   <ul class="pl-5 list-disc mb-4">
@@ -41,6 +35,7 @@ description: >
   </ul>
   <p class="mb-ds2-10"><strong>Outils PO</strong> : Impact Mapping, Event Storming<br>
   <strong>Livrables</strong> : Impact Map + Timeline Event Storm avec hot spots identifiés</p>
+  <p class="mb-ds2-10">plus d'info sur: <a href="https://guillaumeagile.github.io/ateliers-DDD-2026/" target="_blank" class="!text-ds2-text-fill-brand_primary-enabled hover:!text-ds2-text-fill-brand_primary-hover" rel="nofollow ugc">https://guillaumeagile.github.io/ateliers-DDD-2026/</a></p>
   <p class="mb-ds2-10">Nous demanderons aux venants d'être membres de l'association Agile Toulouse.<br>
   Pour rappel, c'est gratuit et faisable ici en 1 minute sur téléphone : <a href="https://www.helloasso.com/associations/agile-toulouse/adhesions/adhesion-agile-toulouse-1" target="_blank" class="!text-ds2-text-fill-brand_primary-enabled hover:!text-ds2-text-fill-brand_primary-hover" rel="nofollow ugc">https://www.helloasso.com/associations/agile-toulouse/adhesions/adhesion-agile-toulouse-1</a><br>
   Si vous êtes inscrits, mais que cela n'est plus possible pour vous de venir, merci de vous désinscrire pour informer qu'il reste de la place :)<br>
