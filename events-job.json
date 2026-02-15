@@ -5472,6 +5472,25 @@
     "LocalImgSrc": "event-imgs/meetup-313063018.webp"
   },
   {
+    "Id": "meetup-313369368",
+    "PublishedOn": "2026-02-15T17:28:48.4235921+00:00",
+    "Href": "https://www.meetup.com/fr-FR/agile-toulouse/events/313369368/",
+    "Title": "Café Agile [Distanciel]",
+    "Start": "2026-02-24T13:00:00+01:00",
+    "ImgSrc": "https://secure.meetupstatic.com/photos/event/2/e/5/b/highres_532751867.jpeg",
+    "Group": "Agile Toulouse",
+    "GroupId": "agile",
+    "Duration": null,
+    "FullImgSrc": "https://secure.meetupstatic.com/photos/event/2/e/5/b/highres_532751867.webp?w=3840",
+    "HtmlDescription": "<div class=\"w-full break-words transition-all duration-300 line-clamp-[15]\" style=\"font-family: NeuSans, Inter, system-ui, sans-serif;\"><p class=\"mb-ds2-10\">Le mardi 14 février aura lieu de 13h à 14h le café Agile.<br>\nAgile Toulouse propose pour sa deuxième année le café agile.</p>\n<p class=\"mb-ds2-10\">En mode Lean Coffee, venez discuter, échanger, trouver des conseils ou simples vous détendre.</p>\n<p class=\"mb-ds2-10\">Le café agile est en remote sur discord.</p></div>",
+    "TextDescription": "Le mardi 14 février aura lieu de 13h à 14h le café Agile.\nAgile Toulouse propose pour sa deuxième année le café agile.\nEn mode Lean Coffee, venez discuter, échanger, trouver des conseils ou simples vous détendre.\nLe café agile est en remote sur discord.",
+    "VenueName": null,
+    "VenueAddr": null,
+    "Latitude": null,
+    "Longitude": null,
+    "LocalImgSrc": "event-imgs/meetup-313369368.webp"
+  },
+  {
     "Id": "meetup-313325443",
     "PublishedOn": "2026-02-13T09:48:00.4907192+00:00",
     "Href": "https://www.meetup.com/fr-FR/agile-toulouse/events/313325443/",
