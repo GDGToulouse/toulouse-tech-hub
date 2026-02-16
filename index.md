@@ -143,7 +143,7 @@ layout: default
 {%- endfor -%}
 
   </div>
-</div>
+</section>
 
 <!-- conférences -->
 <section class="container my-2" id="conferences">
