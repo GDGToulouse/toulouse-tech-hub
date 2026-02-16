@@ -245,7 +245,7 @@ a.muted {
     background: white;
     cursor: pointer;
     transition: all 0.2s ease;
-    min-height: 50px;
+    /*min-height: 50px; casse la vue mobile */
     position: relative;
 }
 
