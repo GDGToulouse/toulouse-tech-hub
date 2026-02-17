@@ -1,6 +1,6 @@
 - id: cloud-toulouse
   name: Cloud Toulouse
-  date: 2025-05-15
+  date: 2026-05-28
   url: https://cloudtoulouse.com/
   image: confs-imgs/cloud-toulouse.jpg
   social:
@@ -19,8 +19,7 @@
 
 - id: agile-tour
   name: Agile Tour Toulouse
-  date: 2025-06-12
-  end: 2025-06-13
+  date: 2026-??-??
   url: https://tour.agiletoulouse.fr/
   image: confs-imgs/agile-tour.jpg
   social:
@@ -36,7 +35,7 @@
 
 - id: devfest
   name: DevFest Toulouse
-  date: 2025-11-13
+  date: 2026-11-??
   url: https://devfesttoulouse.fr/
   image: confs-imgs/devfest.jpg
   social:
@@ -55,8 +54,7 @@
 
 - id: capitole-du-libre
   name: Le Capitole du Libre
-  date: 2025-11-15
-  end: 2025-11-16
+  date: 2026-11-??
   url: https://capitoledulibre.org/
   image: confs-imgs/capitole-du-libre.jpg
   social:
