@@ -17,9 +17,26 @@
       url: https://x.com/cloud_toulouse
       title: Page X / Twitter
 
+- id: pgday
+  name: PGDay Toulouse
+  date: 2026-06-03
+  end: 2026-06-04
+  url: https://pgday.fr/
+  image: https://pgday.fr/img/pgday_2026_bandeau.png
+  social:
+    - icon: bi-globe
+      url: https://pgday.fr/
+      title: Site Officiel
+    - icon: bi-linkedin
+      url: https://www.linkedin.com/company/postgresqlfr
+      title: Page LinkedIn
+    - icon: bi-youtube
+      url: https://www.youtube.com/channel/UCR7skKC85Zn6p7fJ-lW7G8g
+      title: Chaîne YouTube
+
 - id: agile-tour
   name: Agile Tour Toulouse
-  date: 2026-??-??
+  date: Juin 2026
   url: https://tour.agiletoulouse.fr/
   image: confs-imgs/agile-tour.jpg
   social:
@@ -35,7 +52,7 @@
 
 - id: devfest
   name: DevFest Toulouse
-  date: 2026-11-??
+  date: Novembre 2026
   url: https://devfesttoulouse.fr/
   image: confs-imgs/devfest.jpg
   social:
@@ -54,7 +71,7 @@
 
 - id: capitole-du-libre
   name: Le Capitole du Libre
-  date: 2026-11-??
+  date: Novembre 2026
   url: https://capitoledulibre.org/
   image: confs-imgs/capitole-du-libre.jpg
   social:
