@@ -22,7 +22,7 @@
   date: 2026-06-03
   end: 2026-06-04
   url: https://pgday.fr/
-  image: https://pgday.fr/img/pgday_2026_bandeau.png
+  image: confs-imgs/pgday.png
   social:
     - icon: bi-globe
       url: https://pgday.fr/
