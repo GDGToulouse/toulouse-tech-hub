@@ -52,8 +52,7 @@
 
 - id: devfest
   name: DevFest Toulouse
-  date: Novembre 2026
-  url: https://devfesttoulouse.fr/
+  date: TBA
   image: confs-imgs/devfest.jpg
   social:
     - icon: bi-globe
@@ -74,7 +73,7 @@
 
 - id: capitole-du-libre
   name: Le Capitole du Libre
-  date: Novembre 2026
+  date: TBA
   url: https://capitoledulibre.org/
   image: confs-imgs/capitole-du-libre.jpg
   social:
