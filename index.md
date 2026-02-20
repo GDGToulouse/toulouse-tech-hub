@@ -192,7 +192,15 @@ layout: default
     {%- endif -%}
   {%- endcapture -%}
   <div class="col">
-    <div class="card community-card shadow-sm {{ gradient_class | strip }}">
+    {%- assign group_img_url = "" -%}
+    {%- if group.img -%}
+      {%- if group.img contains '://' -%}
+        {%- assign group_img_url = group.img -%}
+      {%- else -%}
+        {%- assign group_img_url = site.baseurl | append: group.img -%}
+      {%- endif -%}
+    {%- endif -%}
+    <div class="card community-card shadow-sm {{ gradient_class | strip }}{% if group_img_url != "" %} community-card-with-img{% endif %}"{% if group_img_url != "" %} style="background-image: url('{{ group_img_url }}');"{% endif %}>
       <div class="community-card-body">
         <h5 class="community-card-title">{{ group.name }}</h5>
         {% if group.description %}

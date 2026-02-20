@@ -84,6 +84,13 @@ a.muted {
     position: relative;
 }
 
+.community-card-with-img {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: #1f2937;
+}
+
 .community-card::before {
     content: '';
     position: absolute;
@@ -94,6 +101,10 @@ a.muted {
     background: linear-gradient(135deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.6) 100%);
     z-index: 1;
     transition: opacity 0.3s ease;
+}
+
+.community-card-with-img::before {
+    background: linear-gradient(135deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.55) 100%);
 }
 
 .community-card:hover {
