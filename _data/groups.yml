@@ -18,22 +18,8 @@
   img: /groups-imgs/mtg.jpg
   registration: https://www.meetup.com/mtg-toulouse/
   description: |
-    <p>Le MTG:Toulouse (Microsoft Tech Group) est une association dont le but est de créer un espace d’apprentissage
-    et de partage technique dans la région Toulousaine, centré autour des technologies et plateformes Microsoft,
-    plus particulièrement .NET et Azure.</p>
-    <p>Nous sommes aussi intéressés par le développement logiciel en général, et les différents langages de programmation.</p>
-    <p>Nous souhaitons créer un espace convivial pour se retrouver, rencontrer d’autres développeurs et techniques
-    venant de tous horizons. Un espace pour apprendre de nouvelles choses et pour partager ses connaissances dans un
-    environnement fun, inclusif et bienveillant.</p>
-    <p>Nous organisons des évènements de manière régulière :
-    <ul>
-    <li>Conférences sur les technologies Microsoft (.NET et Azure principalement)</li>
-    <li>Conférences découvertes et ouverture d’esprit sur d’autres technologies</li>
-    <li>Conférences sur les techniques de développement logiciel</li>
-    <li>Apéros à la suite des conférences pour se rencontrer et boire un verre ensemble</li>
-    <li>Le groupe existe depuis 2017 et a à son actif plus d’une cinquantaine d’événements.</li>
-    </ul>
-    </p>
+    <p>MTG:Toulouse (Microsoft Tech Group) est une communauté toulousaine centrée sur .NET, Azure et le développement logiciel au sens large.</p>
+    <p>Le groupe organise des conférences régulières et des moments conviviaux pour apprendre, partager et rencontrer d’autres profils techniques.</p>
   social:
   - name: x
     url: https://twitter.com/mtg_toulouse
@@ -44,19 +30,9 @@
   name: Agile Toulouse
   url: https://www.agiletoulouse.fr/
   img: /groups-imgs/agile.avif
-  description: |    
-    <p>Le but de l’association Agile Toulouse est de développer une communauté d’agilistes <em>-personnes qui s’intéressent
-    aux méthodes agiles-</em>, à Toulouse et dans le Sud-Ouest, par des actions diverses de promotion, de rencontre
-    et de communication.</p>
-    <p>L’association propose des ateliers pratiques et thématiques, et aussi, avec une fréquence mensuelle, les Klubs :</p>
-    <ul>
-    <li>ShuHaRi Klub</li>
-    <li>Klub de lecture</a></li>
-    <li>La bière agile</li>
-    </ul>
-    <p>L’association dispose d’un bureau à la Maison des Associations de Toulouse.</p>
-    <p>Pour les événements prévus prochainement et éventuellement vous y inscrire, RDV sur <a href="https://www.meetup.com/fr-FR/Agile-Toulouse/">meetup</a>.</p>
-    <p>Le plus gros événement de l’année étant l’Agile Tour Toulouse qui rassemble environ 500 personnes sur 2 jours au troisième trimestre.</p>
+  description: |
+    <p>Agile Toulouse anime la communauté agile à Toulouse et dans le Sud-Ouest à travers des rencontres, des ateliers et des événements thématiques.</p>
+    <p>L’association organise notamment des rendez-vous réguliers (ShuHaRi Klub, klub de lecture, bière agile) ainsi que l’Agile Tour Toulouse.</p>
 
 - name: JUG Toulouse
   url: https://www.meetup.com/toulouse-java-user-group/
@@ -147,22 +123,15 @@
   url: https://www.meetup.com/artilect-fablab/
   img: /groups-imgs/artilect-fablab.jpg
   description: |
-    <p>Artilect est un tiers-lieu collaboratif comprenant un Fab Lab, un espace de coworking, un café et des salles dédiées à l'événementiel, le tout situé dans l'hyper-centre de Toulouse.
-    Nous sommes ouverts à tous, et nous disposons d'une large communauté d'indépendants, de makers, de startups, de développeurs, d'ingénieurs, de designers, de créatifs, d'entrepreneurs, etc.</p>
-    <p>Nous organisons régulièrement des événements : ateliers, meetups, workshops, formations, petits-déjeuners, after-work...</p>
-    <p>Vous pouvez nous rejoindre pour prendre un café, coworker avec nous ou pour organiser vos événements...</p>
-    <p><a href="https://artilect.fr/" target="_blank">https://artilect.fr/</a></p>
+    <p>Artilect est un tiers-lieu collaboratif en centre-ville de Toulouse, avec Fab Lab, coworking, café et espaces événementiels.</p>
+    <p>La communauté organise régulièrement des ateliers, meetups, workshops et formations, ouverts aux makers, développeurs, designers et entrepreneurs.</p>
 
 - name: Postgres Toulouse
   url: https://www.meetup.com/postgres-toulouse
   img: /groups-imgs/postgres-toulouse.jpg
   description: |
-    <p>Venez partager vos expériences et apprendre des autres dans ce groupe d'utilisateurs de PostgreSQL.
-    Véritable reboot du groupe existant précédemment, nous nous voulons ouverts à toutes celles et ceux qui veulent en savoir plus sur notre SGBD relationnel préféré.
-    Alors à bientôt pour une rencontre ?</p>
-    <p>Les évènements de ce groupe adhèrent au <a href="https://2025.pgconf.eu/code-of-conduct/" target="_blank">code de conduite</a> de la PostgreSQL Conference 2025.
-    Si vous êtes victimes ou témoins de comportements inappropriés, signalez-le immédiatement à l'équipe d'organisation.</p>
-
+    <p>Postgres Toulouse est une communauté pour partager autour du moteur de base de données relationnel PostgreSQL, progresser ensemble et découvrir des retours d’expérience concrets.</p>
+  
 - name: Rust Toulouse
   url: https://www.meetup.com/fr-FR/rust-community-toulouse/
   img: /groups-imgs/rust-toulouse.webp
