@@ -41,6 +41,7 @@
 - id: agile
   name: Agile Toulouse
   url: https://www.agiletoulouse.fr/
+  img: /groups-imgs/agile.avif
   description: |    
     <p>Le but de l’association Agile Toulouse est de développer une communauté d’agilistes <em>-personnes qui s’intéressent
     aux méthodes agiles-</em>, à Toulouse et dans le Sud-Ouest, par des actions diverses de promotion, de rencontre
@@ -69,6 +70,9 @@
 
 - name: Toulouse Game Dev
   url: https://toulousegamedev.fr/
+  description: |
+    <p>Le Toulouse Game Dev est créé en 2014 pour aider à l’émergence d’une industrie du jeu vidéo sur Toulouse.
+    Une décennie plus tard, forts de nos rencontres et de nos actions, nous avons fédéré une grande partie des entreprises, indépendant·e·s, étudiant·e·s et amateur·ices de jeux vidéo à Toulouse.</p>
 
 - name: Toulouse Data-Viz
   url: https://www.meetup.com/meetup-visualisation-des-donnees-toulouse/
@@ -78,6 +82,10 @@
 
 - name: AWS User Group Toulouse
   url: https://www.meetup.com/toulouse-amazon-web-services/
+  description: |
+    <p>User Group AWS : groupe géographique qui se réunit pour apprendre et discuter d'AWS, lors de réunions régulières.
+    Les meetups AWS sont des réunions informelles, centrées sur le cloud AWS, ses services et la façon dont ils sont mis en place dans différents environnements.</p>
+  img: /groups-imgs/aws.avif
 
 - name: Swift Toulouse
   url: https://www.meetup.com/swift-toulouse/
