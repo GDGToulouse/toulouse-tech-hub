@@ -183,7 +183,7 @@ layout: default
     {%- if group.id == "gdg" -%}community-gdg
     {%- elsif group.id == "mtg" -%}community-mtg
     {%- elsif group.id == "agile" -%}community-agile
-    {%- elsif group.id == "tgd" -%}community-tgd
+    {%- elsif group.id == "tgd" or group.name == "Toulouse Game Dev" -%}community-tgd
     {%- elsif group.id == "ruby" -%}community-ruby
     {%- elsif group.id == "jug" -%}community-jug
     {%- elsif group.id == "python" -%}community-python
@@ -200,7 +200,7 @@ layout: default
         {%- assign group_img_url = site.baseurl | append: group.img -%}
       {%- endif -%}
     {%- endif -%}
-    <div class="card community-card shadow-sm {{ gradient_class | strip }}{% if group_img_url != "" %} community-card-with-img{% endif %}"{% if group_img_url != "" %} style="background-image: url('{{ group_img_url }}');"{% endif %}>
+    <div class="card community-card{% if group_img_url == "" %} {{ gradient_class | strip }}{% endif %}{% if group_img_url != "" %} community-card-with-img{% endif %}"{% if group_img_url != "" %} style="background-image: url('{{ group_img_url }}');"{% endif %}>
       <div class="community-card-body">
         <h5 class="community-card-title">{{ group.name }}</h5>
         {% if group.description %}
