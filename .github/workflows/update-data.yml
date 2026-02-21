@@ -1,0 +1,60 @@
+name: Update Data
+
+on:
+  schedule:
+    - cron: "0 9,17 * * *"
+  push:
+    branches: ["main"]
+    paths:
+      - '.github/workflows/update.cs'
+      - '.github/workflows/update-data.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    outputs:
+      is_changed: ${{ steps.check_file_changed.outputs.hasDiff == 'True' }}
+
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        fetch-depth: 2
+    - uses: actions/setup-node@v3
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: 10.0.x
+    - name: Install playwright browsers
+      run: npx playwright@1.50.0 install --only-shell --with-deps
+    - name: Restore dependencies
+      run: dotnet restore .github/workflows/update.cs
+    - name: Run
+      run: dotnet run --no-restore .github/workflows/update.cs
+    - name: Check file changed
+      shell: pwsh
+      id: check_file_changed
+      run: |
+        $diff = git status --porcelain
+        Write-Output "diff=$diff"
+        $diff = $diff | Where-Object { $_ -match '^(\?\?| M) (events-job.json|_data/events/|event-imgs/)' }
+        $hasDiff = $diff.Length -gt 0
+        Write-Output "hasDiff=$hasDiff"
+        "hasDiff=$hasDiff" >> $env:GITHUB_OUTPUT
+    - name: Commit updates
+      if: steps.check_file_changed.outputs.hasDiff == 'True'
+      run: |
+        git config --global user.name 'tbolon'
+        git config --global user.email 'tbolon@users.noreply.github.com'
+        git add --all
+        git commit -m "Update data" || true
+        git push || true
+    - uses: actions/upload-artifact@v4
+      name: Upload Screenshot
+      if: failure()
+      with:
+        path: screen*.jpg
