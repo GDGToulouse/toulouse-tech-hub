@@ -3,8 +3,7 @@ layout: null
 ---
 [
 {%- assign now_time = site.time | date: "%s" | plus: 0 -%}
-{% for event_hash in site.data.events %}
-{%- assign event = event_hash[1] -%}
+{% for event in site.events %}
 {%- assign event_time = event.dateIso | date:"%s" | plus: 0 -%}
 {%- if event_time < now_time -%}
   {%- continue -%}
@@ -18,7 +17,7 @@ layout: null
     "Group": "{{ event.community | replace: '"', '\\"' | strip }}",
     "Venue": "{{ event.place | replace: '"', '\\"' | strip }}",
     "VenueAddr": "{{ event.placeAddr | replace: '"', '\\"' | strip }}",
-    "HtmlDescription": "{{ event.description | replace: '"', '\\"' | strip }}"
+    "HtmlDescription": "{{ event.content | replace: '"', '\\"' | strip }}"
   }{% unless forloop.last %},{% endunless %}
 {% endfor %}
 ]

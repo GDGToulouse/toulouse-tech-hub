@@ -5,7 +5,8 @@ Merci de contribuer a Toulouse Tech Hub ! Ce projet est un site Jekyll qui agreg
 ## Vue d'ensemble
 
 - Source Jekyll (pages + templates) dans ce repo.
-- Les donnees d'evenements sont dans `_data/events/` et `events-job.json`.
+- Les donnees sont organisees en collections Jekyll : `_groups/`, `_confs/`, `_events/`.
+- Les donnees d'evenements sont dans `_events/` (fichiers `.html`) et `events-job.json`.
 - Les images d'evenements sont dans `event-imgs/`.
 - Les sorties generees sont dans `_site/`.
 
@@ -60,34 +61,40 @@ Le workflow `Update Data` (fichier `.github/workflows/update-data.yml`) peut etr
 Le job Update Data génère automatiquement des fichiers YAML pour les événements Meetup et Toulouse Game Dev. **Ces fichiers générés sont écrasés à chaque exécution du job.**
 
 Pour créer un événement manuel qui **ne sera pas écrasé** :
-- Utilisez un nom de fichier qui ne suit **pas** le pattern généré : `custom-{name}.yml` ou `YYYY-MM-DD-custom-{name}.yml`
-- Le pattern généré est : `YYYY-MM-DD-{community-slug}-{event-id}.yml` (ex: `2025-03-04-agile-meetup-305839478.yml`)
+- Utilisez un nom de fichier qui ne suit **pas** le pattern généré : `custom-{name}.html` ou `YYYY-MM-DD-custom-{name}.html`
+- Le pattern généré est : `YYYY-MM-DD-{community-slug}-{event-id}.html` (ex: `2025-03-04-agile-meetup-305839478.html`)
 
 Alternativement, si vous devez modifier un événement généré temporairement, utilisez le mécanisme `.skip` :
 ```bash
-touch _data/events/2025-03-04-agile-meetup-305839478.yml.skip
+touch _events/2025-03-04-agile-meetup-305839478.html.skip
 ```
 Cela empêchera la régénération du fichier, mais il faudra mettre à jour/nettoyer manuellement au prochain cycle.
 
 ### Créer un événement manuel
 
-Créer un fichier YAML dans `_data/events/` avec le format suivant :
+Créer un fichier HTML dans `_events/` avec le format suivant :
 
+**Front matter (YAML entre `---` delimiters):**
 ```yaml
-id: 'unique-id'
+---
+id: unique-id
 title: 'Event Title'
-community: 'Community Name'
-datePublished: 'YYYY-MM-DD HH:MM'
-dateIso: 'YYYY-MM-DD HH:MM'
-dateFr: 'jour DD mois'
+community: Community Name
+datePublished: YYYY-MM-DD HH:MM
+dateIso: YYYY-MM-DD HH:MM
+dateFr: jour DD mois
 timeFr: 'HH:MM'
-place: "Venue Name"
-placeAddr: "Address"
+place: Venue Name
+placeAddr: Address
 link: https://example.com
 img: https://example.com/image.jpg
 localImg: event-imgs/unique-id.webp
-description: >
-  HTML description
+---
+```
+
+**Contenu (HTML après `---`):**
+```html
+<p>Event description in HTML format</p>
 ```
 
 ## Bonnes pratiques

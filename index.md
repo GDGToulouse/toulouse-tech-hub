@@ -108,8 +108,7 @@ layout: default
   <div class="row row-cols-1 row-cols-md-2 row-cols-xxl-3 g-3 agenda my-2">
 
 {%- assign now_time = site.time | date: "%s" | plus: 0 -%}
-{%- for event_hash in site.data.events -%}
-  {%- assign event = event_hash[1] -%}
+{%- for event in site.events -%}
   {%- assign event_time = event.dateIso | date:"%s" | plus: 0 -%}
   {%- if event_time < now_time -%}
     {%- continue -%}
@@ -177,7 +176,7 @@ layout: default
 
   <!-- list -->
   <div class="row row-cols-1 row-cols-md-2 row-cols-xxl-3 g-4 my-3">
-  {% assign groups_by_name = site.data.groups | sort: "name" %}
+  {% assign groups_by_name = site.groups | sort: "name" %}
   {% for group in groups_by_name %}
   {%- capture gradient_class -%}
     {%- if group.id == "gdg" -%}community-gdg
@@ -203,7 +202,9 @@ layout: default
     <div class="card community-card{% if group_img_url == "" %} {{ gradient_class | strip }}{% endif %}{% if group_img_url != "" %} community-card-with-img{% endif %}"{% if group_img_url != "" %} style="background-image: url('{{ group_img_url }}');"{% endif %}>
       <div class="community-card-body">
         <h5 class="community-card-title">{{ group.name }}</h5>
-        {% if group.description %}
+        {% if group.content %}
+        <p class="community-card-desc">{{ group.content | strip_html | truncatewords: 15 }}</p>
+        {% elsif group.description %}
         <p class="community-card-desc">{{ group.description | strip_html | truncatewords: 15 }}</p>
         {% endif %}
         <div class="community-card-links">

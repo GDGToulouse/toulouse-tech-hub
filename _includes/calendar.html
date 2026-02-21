@@ -42,8 +42,7 @@ Adjust to start week on Monday: subtract 1 (mod 7) {% endcomment %}
   {% capture date_str %}{{ include.year }}-{{ month_str }}-{{ i | prepend: '0' | slice: -2,2 }}{% endcapture %}
   {% assign count = 0 %}
   
-  {% for event_hash in site.data.events %}
-    {% assign event = event_hash[1] %}
+  {% for event in site.events %}
     {% assign event_date = event.dateIso | date: "%Y-%m-%d" %}
     {% if event_date == date_str %}
       {% assign event_time = event.dateIso | date: "%s" | plus: 0 %}

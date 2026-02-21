@@ -11,8 +11,7 @@ layout: null
   <updated>{{ site.time | date:"%Y-%m-%dT%T" }}+01:00</updated>
 
 {%- assign now_time = site.time | date: "%s" | plus: 0 -%}
-{% for event_hash in site.data.events reversed %}
-{%- assign event = event_hash[1] -%}
+{% for event in site.events reversed %}
 {%- assign event_time = event.datePublished | date:"%s" | plus: 0 -%}
 {%- if event_time > now_time -%}
   {%- continue -%}
@@ -27,7 +26,7 @@ layout: null
     <author><name>{{ event.community | replace: "&", "&amp;" | replace: "<", "&lt;" }}</name></author>
     <media:thumbnail url="{{ site.site }}{{ site.baseurl }}/{{ event.localImg }}" />
     <link rel="enclosure" type="image/webp" href="{{ site.site }}{{ site.baseurl }}/{{ event.localImg }}" />
-    <content type="html">{{ event.description | replace: "&", "&amp;" | replace: "<", "&lt;" | replace: ">", "&gt;" }}</content>
+    <content type="html">{{ event.content | replace: "&", "&amp;" | replace: "<", "&lt;" | replace: ">", "&gt;" }}</content>
   </entry>
 
 {% endfor %}

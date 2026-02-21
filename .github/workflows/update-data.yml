@@ -36,7 +36,7 @@ jobs:
       run: |
         $diff = git status --porcelain
         Write-Output "diff=$diff"
-        $diff = $diff | Where-Object { $_ -match '^(?:\?\?|[ MADRCU?!]{2}) (events-job.json|_data/events/|event-imgs/)' }
+        $diff = $diff | Where-Object { $_ -match '^(?:\?\?|[ MADRCU?!]{2}) (events-job.json|_events/|event-imgs/)' }
         $hasDiff = $diff.Length -gt 0
         Write-Output "hasDiff=$hasDiff"
         "hasDiff=$hasDiff" >> $env:GITHUB_OUTPUT
