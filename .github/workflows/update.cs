@@ -198,7 +198,8 @@ List<Event> evts = [];
             }
         }
 
-#pragma warning disable CA1869 // Cache and reuse 'JsonSerializerOptions' instances : ce code ne s'exécute qu'une seule fois
+#pragma warning disable CA1869 // Cache and reuse 'JsonSerializerOptions' instances
+        // Note: This block executes once per workflow run. JsonSerializerOptions allocation is acceptable here.
         var json = JsonSerializer.Serialize(knownEvts, new JsonSerializerOptions
         {
             WriteIndented = true,
@@ -443,7 +444,11 @@ partial class MeetupGroup : IGroup
         var timeAttr = await timeElt.GetAttributeAsync("datetime") ?? string.Empty;
         var regexMatch = false;
 
-        if (timeAttr.Length >= 25 && DateTimeOffset.TryParse(timeAttr.Substring(0, 25), out var time))
+        // Extract datetime before optional [Europe/Paris] suffix
+        var bracketIndex = timeAttr.IndexOf('[');
+        var coreTimeAttr = bracketIndex >= 0 ? timeAttr[..bracketIndex].Trim() : timeAttr;
+
+        if (coreTimeAttr.Length > 0 && DateTimeOffset.TryParse(coreTimeAttr, out var time))
         {
             // success
             if (timeAttr.EndsWith("[Europe/Paris]") && !FrenchLocales.ParisTimeZone.IsDaylightSavingTime(time))
@@ -640,7 +645,9 @@ partial class ToulouseGameDevGroup : IGroup
                 {
                     var text = await paragraph.InnerTextAsync();
 
-                    text = text.Replace("Mars2025", "Mars 2025"); // HACK fix erreur de date sur évènement mars 2025
+                    // HACK: Fix source data formatting issues in Toulouse Game Dev website
+                    // Remove when source website fixes these specific errors
+                    text = text.Replace("Mars2025", "Mars 2025"); // Missing space between month and year
 
                     // Jeudi 17 Avril 2025: 18h30-22h30 => OK [ "Jeudi", "17", "Avril", "2025" "18h30-22h30" ]
                     // Mardi 21 Janvier 2024 : 18h30-22h30 => OK [ "Mardi", "21", "Janvier", "2024", ":", "18h30-22h30" ]
@@ -651,7 +658,9 @@ partial class ToulouseGameDevGroup : IGroup
                     // [ "Mardi", "21", "Janvier", "2024" ]
                     var datePart = string.Join(' ', words.Take(4));
 
-                    datePart = datePart.Replace("2024", "2025"); // HACK fix erreur de date sur évènement de janvier 2025
+                    // HACK: Fix incorrect year in source website (January 2025 events labeled as 2024)
+                    // Monitor for correction at source; can be removed when fixed
+                    datePart = datePart.Replace("2024", "2025");
 
                     if (DateTimeOffset.TryParseExact(datePart.ToLowerInvariant(), "dddd dd MMMM yyyy", FrenchLocales.FrenchCultureInfo, DateTimeStyles.AssumeLocal, out var dateOnly))
                     {
