@@ -1,0 +1,19 @@
+---
+id: meetup-lkmdrtyhcjbmb
+title: 'Meetup IA: Un sujet Facinant sur l''IA'
+community: 'Artilect : FabLab, Coworking, FabCafé'
+datePublished: 2025-04-26 09:22
+dateIso: 2025-06-09 19:00
+dateFr: lundi 09 juin
+timeFr: '19:00'
+place: Artilect FabLab Toulouse
+placeAddr: 10 Rue Tripière Toulouse
+link: https://www.meetup.com/fr-FR/artilect-fablab/events/lkmdrtyhcjbmb/
+img: https://secure.meetupstatic.com/photos/event/d/7/2/4/highres_527575076.webp?w=750
+localImg: event-imgs/meetup-lkmdrtyhcjbmb.webp
+description: '<p class="mb-4">Le FabLab Artilect est heureux de vous convier à son
+  prochain Meetup dédié à l''Intelligence Artificielle !<br> Ce mois-ci, nous plongeons
+  dans un sujet a definir...</p>
+
+  '
+---

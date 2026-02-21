@@ -108,8 +108,7 @@ layout: default
   <div class="row row-cols-1 row-cols-md-2 row-cols-xxl-3 g-3 agenda my-2">
 
 {%- assign now_time = site.time | date: "%s" | plus: 0 -%}
-{%- for event_hash in site.data.events -%}
-  {%- assign event = event_hash[1] -%}
+{%- for event in site.events -%}
   {%- assign event_time = event.dateIso | date:"%s" | plus: 0 -%}
   {%- if event_time < now_time -%}
     {%- continue -%}
