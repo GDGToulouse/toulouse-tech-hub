@@ -20,6 +20,9 @@ Gemfile.lock
 screen*.jpg
 AI_PLAN.md
 
+# Playwright CLI output
+.playwright-cli/
+
 # OS
 .DS_Store
 Thumbs.db
