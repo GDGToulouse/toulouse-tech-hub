@@ -1,6 +1,7 @@
 ---
 name: Toulouse Game Dev
 url: https://toulousegamedev.fr/
+img: none
 ---
 
 Le Toulouse Game Dev est créé en 2014 pour aider à l'émergence d'une industrie du jeu vidéo sur Toulouse.

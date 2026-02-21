@@ -1,7 +1,6 @@
 ---
 name: GDG Toulouse
 url: https://www.gdgtoulouse.fr/
-img: /groups-imgs/gdg.jpg
 registration: https://www.meetup.com/gdg-toulouse/
 social:
   - name: x

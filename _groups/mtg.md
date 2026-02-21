@@ -1,7 +1,6 @@
 ---
 name: MTG:Toulouse
 url: https://www.meetup.com/mtg-toulouse/
-img: /groups-imgs/mtg.jpg
 registration: https://www.meetup.com/mtg-toulouse/
 social:
   - name: x

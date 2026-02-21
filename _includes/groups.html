@@ -5,13 +5,9 @@
 {%- capture gradient_class -%}community-{{ group.slug }}{%- endcapture -%}
 <div class="col">
   {%- assign group_img_url = "" -%}
-  {%- if group.img -%}
-    {%- if group.img contains '://' -%}
-      {%- assign group_img_url = group.img -%}
-    {%- else -%}
-      {%- assign group_img_url = site.baseurl | append: group.img -%}
-    {%- endif -%}
-  {%- endif -%}
+  {%- unless group.img == "none" -%}
+    {%- capture group_img_url -%}{{ site.baseurl }}/groups-imgs/{{ group.slug }}.jpg{%- endcapture -%}
+  {%- endunless -%}
   <div class="card community-card{% if group_img_url == "" %} {{ gradient_class | strip }}{% endif %}{% if group_img_url != "" %} community-card-with-img{% endif %}"{% if group_img_url != "" %} style="background-image: url('{{ group_img_url }}');"{% endif %}>
     <div class="community-card-body">
       <h5 class="community-card-title">{{ group.name }}</h5>
