@@ -2,7 +2,7 @@
 id: artilect
 name: Artilect FabLab
 url: https://www.meetup.com/artilect-fablab/
-img: /groups-imgs/artilect-fablab.jpg
+img: /groups-imgs/artilect.jpg
 ---
 
 Artilect est un tiers-lieu collaboratif en centre-ville de Toulouse, avec Fab Lab, coworking, café et espaces événementiels.
