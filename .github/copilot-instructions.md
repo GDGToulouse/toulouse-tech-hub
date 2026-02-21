@@ -487,6 +487,30 @@ This reduces template logic and makes icon codes visible in YAML data
 - Dates use `{{ conf.date | date: "%d %B %Y" }}` format for display
 - Date-range support: if `end` field exists, display as "01 Jan - 02 Jan"
 
+## Documentation Structure
+
+### README.md vs CONTRIBUTING.md
+
+The project separates documentation by audience:
+
+**README.md** (~70 lines) - For community organizers and event participants
+- What the project is and what it does
+- List of followed communities
+- How to contribute via GitHub issue templates (no technical details)
+- Tech stack overview (names only)
+- Table of contents for quick navigation
+
+**CONTRIBUTING.md** (.github/CONTRIBUTING.md) - For developers wanting to modify the code
+- Complete architecture explanation (collections, workflows)
+- Event update flow and generated formats
+- Jekyll installation and local setup
+- How to run the update job manually
+- Detailed contribution guidelines for developers
+
+**Result:**
+- Users and organizers read **README** → understand what the site does → create issues to contribute
+- Developers read **CONTRIBUTING** → understand internals → deploy changes via PR
+
 ## GitHub Issue Templates
 
 The project uses GitHub Issue Forms (YAML templates) to streamline contributions. Each template has an associated Copilot workflow guide for automated processing.
