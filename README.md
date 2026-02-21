@@ -6,7 +6,16 @@
 [![GitHub Issues](https://img.shields.io/github/issues/GDGToulouse/toulouse-tech-hub)](https://github.com/GDGToulouse/toulouse-tech-hub/issues)
 [![Contributions bienvenues](https://img.shields.io/badge/contributions-bienvenues-brightgreen.svg)](https://github.com/GDGToulouse/toulouse-tech-hub/issues/new/choose)
 
-## 📅 À propos
+## � Table des matières
+
+- [À propos](#-à-propos)
+- [Communautés suivies](#-communautés-suivies)
+- [Comment contribuer ?](#-comment-contribuer-)
+- [Tech Stack](#-tech-stack)
+- [Architecture](#-architecture)
+- [Développement local](#-développement-local)
+
+## �📅 À propos
 
 Ce site liste tous les événements tech à venir organisés par les communautés toulousaines, en un seul endroit.
 
@@ -95,3 +104,52 @@ jekyll serve
 
 # Le site est accessible sur http://localhost:4000
 ```
+
+## 🛠️ Tech Stack
+
+- **[Jekyll 4.4](https://jekyllrb.com/)** - Static site generator
+- **[Liquid](https://shopify.github.io/liquid/)** - Templating engine
+- **[Bootstrap 5](https://getbootstrap.com/)** - UI framework
+- **[Bootstrap Icons](https://icons.getbootstrap.com/)** - Icon library
+- **[GitHub Actions](https://github.com/features/actions)** - CI/CD automation
+- **[GitHub Pages](https://pages.github.com/)** - Hosting
+
+## 📁 Architecture
+
+Le projet utilise les **collections Jekyll** pour organiser les données :
+
+- **`_groups/`** (20 fichiers) - Définitions des communautés tech
+  - Un fichier `.md` par communauté avec logo, description et réseaux sociaux
+  - Images dans `groups-imgs/{slug}.jpg`
+
+- **`_confs/`** (5 fichiers) - Conférences annuelles (DevFest, PGDay, etc.)
+  - Un fichier `.md` par conférence avec dates et liens
+  - Images dans `confs-imgs/{slug}.jpg`
+
+- **`_events/`** (136+ fichiers) - Événements individuels
+  - Fichiers `.html` générés automatiquement par le job d'update
+  - Nommage : `YYYY-MM-DD-{community-slug}-{event-id}.html`
+  - Images dans `event-imgs/`
+
+- **`.github/`** - Configuration GitHub
+  - `ISSUE_TEMPLATE/` - Templates d'issues pour les contributions
+  - `COPILOT_*.md` - Guides utilisables par Copilot pour traiter les issues
+  - `workflows/` - Workflows GitHub Actions
+
+### Flux de Mise à Jour des Événements
+
+1. **Job quotidien** (9h00 et 17h00 UTC)
+2. **Script C#** (`.github/workflows/update.cs`) scan les pages Meetup
+3. **Générer YAML** pour chaque nouvel événement
+4. **Télécharger images** dans `event-imgs/`
+5. **Jekyll build** génère l'HTML et les formats (iCal, JSON, Atom)
+
+### Formats Générés
+
+Le site produit plusieurs formats à partir des mêmes données :
+
+- **HTML** - Page web avec calendrier Bootstrap Cards
+- **iCal** - `events.ics` (compatible Google Cal, Apple Cal, Outlook)
+- **Atom/RSS** - `events.atom.xml` (agrégateurs de flux)
+- **JSON** - `events.json` (API)
+- **PNG** - Outil organisateurs (`orgas.html`)
