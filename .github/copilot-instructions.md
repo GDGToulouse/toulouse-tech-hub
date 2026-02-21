@@ -17,7 +17,9 @@ This is a **Jekyll-based static site** that aggregates tech events and communiti
 All data lives in `_data/` as YAML files:
 
 - **`_data/events/*.yml`** - Individual event files (one per event)
-  - Naming convention: `YYYY-MM-DD-{community}-{identifier}.yml`
+  - Naming convention: `YYYY-MM-DD-{group-slug}-{event-id}.yml` (e.g. `2025-03-04-agile-meetup-305839478.yml`)
+    - `{group-slug}`: Short slug from `_data/groups.yml` `id` field (e.g. `agile`, `jug`, `dataviz`), not the full group name
+    - `{event-id}`: Meetup ID or ToulouseGameDev date
   - Required fields: `id`, `title`, `community`, `datePublished`, `dateIso`, `dateFr`, `timeFr`, `link`, `img`, `localImg`
   - Optional fields: `place`, `placeAddr`, `description`, `dateIsoEnd`
   
@@ -79,7 +81,7 @@ All formats filter future events only using Liquid's date comparison: `{%- if ev
 - The script resolves the repo root by walking up to find `events-job.json`
 
 ### Adding a New Event Manually
-Create `_data/events/YYYY-MM-DD-{community}-{title}.yml`:
+Create `_data/events/custom-{name}.yml` (use `custom-` prefix to avoid being overwritten by the auto-scraper):
 ```yaml
 id: 'unique-id'
 title: 'Event Title'
