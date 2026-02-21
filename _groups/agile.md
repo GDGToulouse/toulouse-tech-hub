@@ -1,6 +1,6 @@
 ---
 name: Agile Toulouse
-url: https://www.agiletoulouse.fr/
+link: https://www.agiletoulouse.fr/
 ---
 
 Agile Toulouse anime la communauté agile à Toulouse et dans le Sud-Ouest à travers des rencontres, des ateliers et des événements thématiques.

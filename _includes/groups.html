@@ -17,7 +17,7 @@
       <p class="community-card-desc">{{ group.description | strip_html | truncatewords: 15 }}</p>
       {% endif %}
       <div class="community-card-links">
-        <a href="{{ group.url }}" title="Site Web" target="_blank"><i class="bi bi-globe"></i></a>
+        <a href="{{ group.link }}" title="Site Web" target="_blank"><i class="bi bi-globe"></i></a>
         {%- if group.social -%}
           {%- for social in group.social -%}
           <a href="{{ social.url }}" title="{{ social.title }}" target="_blank"><i class="bi {{ social.icon }}"></i></a>

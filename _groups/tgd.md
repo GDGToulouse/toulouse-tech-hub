@@ -1,6 +1,6 @@
 ---
 name: Toulouse Game Dev
-url: https://toulousegamedev.fr/
+link: https://toulousegamedev.fr/
 img: none
 ---
 

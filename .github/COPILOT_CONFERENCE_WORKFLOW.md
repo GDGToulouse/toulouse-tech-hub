@@ -35,7 +35,7 @@ id: {conference-slug}
 name: {conference-name}
 date: {conference-date}  # Optional: YYYY-MM-DD format
 end: {conference-end-date}  # Optional: YYYY-MM-DD format if multi-day
-url: {conference-url}  # Optional
+link: {conference-url}  # Optional
 image: confs-imgs/{conference-slug}.jpg  # Or .png/.webp depending on logo format
 social:
   - icon: bi-globe
@@ -188,11 +188,11 @@ Closes #{issue-number}
 ```
 conference-name: PG Day Toulouse
 conference-slug: pgday
-conference-url: https://pgday.fr/
+conference-link: https://pgday.fr/
 conference-date: 2026-06-03
 conference-end-date: 2026-06-04
 description: Conférence PostgreSQL francophone. Deux jours de conférences et ateliers autour de PostgreSQL et des bases de données relationnelles.
-logo-url: https://pgday.fr/static/logo-pgday.png
+logo-link: https://pgday.fr/static/logo-pgday.png
 social-links:
 Site web: https://pgday.fr/
 LinkedIn: https://www.linkedin.com/company/postgresqlfr
@@ -209,7 +209,7 @@ id: pgday
 name: PGDay Toulouse
 date: 2026-06-03
 end: 2026-06-04
-url: https://pgday.fr/
+link: https://pgday.fr/
 image: confs-imgs/pgday.jpg
 social:
   - icon: bi-globe

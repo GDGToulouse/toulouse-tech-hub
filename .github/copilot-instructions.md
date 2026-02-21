@@ -123,7 +123,7 @@ Create a markdown file in `_groups/` named `{community-slug}.md`:
 ```yaml
 ---
 name: Full Name
-url: https://website.com
+link: https://website.com
 description: |
   <p>HTML description</p>
 social:
@@ -136,7 +136,7 @@ social:
 ---
 ```
 
-**Note:** `social` array uses `icon` (Bootstrap class), `url`, and `title`. No `id` field (slug is derived from filename).
+**Note:** `link` property is for the main website. `social` array uses `icon`, `url` (for social profiles), and `title`. No `id` field (slug is derived from filename).
 
 ### Adding a New Conference
 Create a markdown file in `_confs/` named `{conference-slug}.md`:
@@ -145,7 +145,7 @@ Create a markdown file in `_confs/` named `{conference-slug}.md`:
 id: slug
 name: Conference Name
 date: YYYY-MM-DD
-url: https://example.com
+link: https://example.com
 image: confs-imgs/slug.jpg
 social:
   - icon: bi-globe
@@ -153,6 +153,8 @@ social:
     title: Official Site
 ---
 ```
+
+**Note:** `link` property is for the main website. `social` array uses `icon`, `url` (for social profiles), and `title`.
 
 ## Working with Jekyll Locally
 
@@ -342,7 +344,7 @@ The `.playwright-cli/` directory is already in `.gitignore`, so all files inside
 Snapshot YAML contains element refs for interactions:
 ```yaml
 - link "📢 Conférences" [ref=e10] [cursor=pointer]:
-  - /url: "#conferences"
+  - /link: "#conferences"
 ```
 Use `ref=e10` in commands: `playwright-cli click e10`
 

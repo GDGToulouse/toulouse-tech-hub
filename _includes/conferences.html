@@ -3,11 +3,11 @@
   <div class="my-2 col">
     <div class="card shadow">
       <div class="card-header">📢 {{ conf.name }}</div>
-      <a href="{{ conf.url }}" class="muted">
+      <a href="{{ conf.link }}" class="muted">
         <img width="100%" style="aspect-ratio: 16/9" src="{{ site.baseurl }}/{{ conf.image }}" alt="{{ conf.name }}" />
       </a>
       <div class="card-body">
-        <a href="{{ conf.url }}" class="muted">
+        <a href="{{ conf.link }}" class="muted">
           {% if conf.date %}
           <h5 class="card-title">
             {{ conf.date | date: "%d %B %Y" }}

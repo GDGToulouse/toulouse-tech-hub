@@ -35,7 +35,7 @@ Exemples de détection :
 ```yaml
 ---
 name: {community-name}
-url: {community-url}
+link: {community-url}
 img: none  # ou supprimer si un logo est fourni
 ---
 
@@ -157,10 +157,10 @@ Avant de créer la PR, vérifier :
 Issue contenant :
 - community-name: "Rust Toulouse"
 - community-slug: "rust"
-- community-url: "https://www.meetup.com/fr-FR/rust-community-toulouse/"
-- registration-url: (vide, même URL que community-url)
+- community-link: "https://www.meetup.com/fr-FR/rust-community-toulouse/"
+- registration-link: (vide, même URL que community-url)
 - description: "Communauté des développeurs Rust à Toulouse..."
-- logo-url: "https://example.com/rust-logo.png"
+- logo-link: "https://example.com/rust-logo.png"
 - social-links: 
   ```
   twitter: https://x.com/rust_tlse
@@ -175,13 +175,13 @@ Résultat :
 ```yaml
 ---
 name: Rust Toulouse
-url: https://www.meetup.com/fr-FR/rust-community-toulouse/
+link: https://www.meetup.com/fr-FR/rust-community-toulouse/
 social:
   - icon: bi-twitter-x
-    url: https://x.com/rust_tlse
+    link: https://x.com/rust_tlse
     title: Page X / Twitter
   - icon: bi-github
-    url: https://github.com/rust-toulouse
+    link: https://github.com/rust-toulouse
     title: GitHub
 ---
 

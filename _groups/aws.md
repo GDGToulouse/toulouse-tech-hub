@@ -1,6 +1,6 @@
 ---
 name: AWS User Group Toulouse
-url: https://www.meetup.com/toulouse-amazon-web-services/
+link: https://www.meetup.com/toulouse-amazon-web-services/
 ---
 
 User Group AWS : groupe géographique qui se réunit pour apprendre et discuter d'AWS, lors de réunions régulières.
