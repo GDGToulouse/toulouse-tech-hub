@@ -12,8 +12,6 @@
 - [Communautés suivies](#-communautés-suivies)
 - [Comment contribuer ?](#-comment-contribuer-)
 - [Tech Stack](#-tech-stack)
-- [Architecture](#-architecture)
-- [Développement local](#-développement-local)
 
 ## 📅 À propos
 
@@ -51,15 +49,15 @@ Il existe une page pour les organisateurs, permettant de gérer une image à inc
 
 ## 🤝 Comment contribuer ?
 
-Le projet utilise des **templates d'issues GitHub** pour simplifier les contributions. Consultez [CONTRIBUTING.md](.github/CONTRIBUTING.md) pour les détails.
+Voici comment interagir avec le projet :
 
 - **Ajouter une communauté** : [Créer une issue](https://github.com/GDGToulouse/toulouse-tech-hub/issues/new?template=add-community.yml) - Les événements Meetup se synchronisent automatiquement !
 - **Ajouter une conférence** : [Créer une issue](https://github.com/GDGToulouse/toulouse-tech-hub/issues/new?template=add-conference.yml)
-- **Ajouter un événement** : [Créer une issue](https://github.com/GDGToulouse/toulouse-tech-hub/issues/new?template=add-event.yml) - Ou directement via PR
+- **Ajouter un événement** : [Créer une issue](https://github.com/GDGToulouse/toulouse-tech-hub/issues/new?template=add-event.yml)
 - **Signaler un bug** : [Créer une issue](https://github.com/GDGToulouse/toulouse-tech-hub/issues/new?template=bug-report.yml)
 - **Proposer une amélioration** : [Créer une issue](https://github.com/GDGToulouse/toulouse-tech-hub/issues/new?template=feature-request.yml)
 
-**Note :** Les fichiers `_groups/`, `_confs/`, et `_events/` sont de simples fichiers markdown/HTML - vous pouvez aussi proposer directement une PR !
+**Vous voulez modifier le code ?** Consultez [CONTRIBUTING.md](.github/CONTRIBUTING.md) pour l'architecture technique, l'installation locale et les guides de développement.
 
 ## 🛠️ Tech Stack
 
@@ -68,18 +66,3 @@ Le projet utilise des **templates d'issues GitHub** pour simplifier les contribu
 - **[Bootstrap 5](https://getbootstrap.com/)** - UI framework
 - **[GitHub Actions](https://github.com/features/actions)** - CI/CD automation
 - **[GitHub Pages](https://pages.github.com/)** - Hosting
-
-## 📁 Architecture
-
-Le projet utilise les **collections Jekyll** pour organiser les données :
-
-- **`_groups/`** - Définitions des communautés tech (logo, description, réseaux)
-- **`_confs/`** - Conférences annuelles (DevFest, PGDay, Capitole du Libre, etc.)
-- **`_events/`** - Événements individuels (auto-générés et manuels)
-- **`.github/`** - Configuration GitHub (templates, workflows, guides)
-
-Pour plus de détails sur l'architecture, l'update workflow et les formats générés, consulte [CONTRIBUTING.md](.github/CONTRIBUTING.md).
-
-## 🚀 Développement local
-
-Vois [CONTRIBUTING.md](.github/CONTRIBUTING.md) pour les instructions d'installation de Jekyll et de lancement local.

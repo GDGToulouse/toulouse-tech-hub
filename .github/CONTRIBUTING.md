@@ -1,14 +1,41 @@
 # Contribuer au projet
 
-Merci de contribuer a Toulouse Tech Hub ! Ce projet est un site Jekyll qui agreges les evenements tech de Toulouse et publie plusieurs formats (site web, JSON, Atom, iCal).
+Merci de contribuer à Toulouse Tech Hub ! Ce projet est un site Jekyll qui agrèges les événements tech de Toulouse et publie plusieurs formats (site web, JSON, Atom, iCal).
+
+## Architecture
+
+Le projet utilise les **collections Jekyll** pour organiser les données :
+
+- **`_groups/`** - Définitions des communautés tech (logo, description, réseaux)
+- **`_confs/`** - Conférences annuelles (DevFest, PGDay, Capitole du Libre, etc.)
+- **`_events/`** - Événements individuels (auto-générés et manuels)
+- **`.github/`** - Configuration GitHub (templates, workflows, guides)
+
+### Flux de Mise à Jour des Événements
+
+1. **Job quotidien** (9h00 et 17h00 UTC)
+2. **Script C#** (`.github/workflows/update.cs`) scan les pages Meetup
+3. **Générer YAML** pour chaque nouvel événement
+4. **Télécharger images** dans `event-imgs/`
+5. **Jekyll build** génère l'HTML et les formats (iCal, JSON, Atom)
+
+### Formats Générés
+
+Le site produit plusieurs formats à partir des mêmes données :
+
+- **HTML** - Page web avec calendrier Bootstrap Cards
+- **iCal** - `events.ics` (compatible Google Cal, Apple Cal, Outlook)
+- **Atom/RSS** - `events.atom.xml` (agrégateurs de flux)
+- **JSON** - `events.json` (API)
+- **PNG** - Outil organisateurs (`orgas.html`)
 
 ## Vue d'ensemble
 
 - Source Jekyll (pages + templates) dans ce repo.
-- Les donnees sont organisees en collections Jekyll : `_groups/`, `_confs/`, `_events/`.
-- Les donnees d'evenements sont dans `_events/` (fichiers `.html`) et `events-job.json`.
-- Les images d'evenements sont dans `event-imgs/`.
-- Les sorties generees sont dans `_site/`.
+- Les données sont organisées en collections Jekyll : `_groups/`, `_confs/`, `_events/`.
+- Les données d'événements sont dans `_events/` (fichiers `.html`) et `events-job.json`.
+- Les images d'événements sont dans `event-imgs/`.
+- Les sorties générées sont dans `_site/`.
 
 ## Installation de Jekyll (local)
 
