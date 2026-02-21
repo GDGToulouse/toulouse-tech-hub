@@ -55,7 +55,23 @@ Le workflow `Update Data` (fichier `.github/workflows/update-data.yml`) peut etr
 
 ## Ajouter / modifier un evenement
 
-Pour un ajout manuel, creer un fichier YAML dans `_data/events/` avec le format suivant :
+### ⚠️ Politique de génération des fichiers YAML
+
+Le job Update Data génère automatiquement des fichiers YAML pour les événements Meetup et Toulouse Game Dev. **Ces fichiers générés sont écrasés à chaque exécution du job.**
+
+Pour créer un événement manuel qui **ne sera pas écrasé** :
+- Utilisez un nom de fichier qui ne suit **pas** le pattern généré : `custom-{name}.yml` ou `YYYY-MM-DD-custom-{name}.yml`
+- Le pattern généré est : `YYYY-MM-DD-{community-slug}-{event-id}.yml` (ex: `2025-03-04-agile-meetup-305839478.yml`)
+
+Alternativement, si vous devez modifier un événement généré temporairement, utilisez le mécanisme `.skip` :
+```bash
+touch _data/events/2025-03-04-agile-meetup-305839478.yml.skip
+```
+Cela empêchera la régénération du fichier, mais il faudra mettre à jour/nettoyer manuellement au prochain cycle.
+
+### Créer un événement manuel
+
+Créer un fichier YAML dans `_data/events/` avec le format suivant :
 
 ```yaml
 id: 'unique-id'
@@ -79,6 +95,8 @@ description: >
 - Les fichiers doivent etre en UTF-8 (voir `.editorconfig`).
 - Verifier `jekyll serve` en local apres une grosse modification.
 - Ne pas committer `_site/`.
+- **Événements manuels** : nommez les fichiers en dehors du pattern généré pour éviter qu'ils soient écrasés.
+- **Appels du job** : relancer manuellement `dotnet run .github/workflows/update.cs` après le `jekyll serve` pour vérifier que la génération YAML fonctionne correctement.
 
 ## Reglages d'edition
 
