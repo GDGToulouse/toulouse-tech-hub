@@ -2,14 +2,14 @@
 #:property TargetFramework=net10.0
 #:property ImplicitUsings=enable
 #:property Nullable=enable
-
 #:property PublishTrimmed=false
+#:property PublishAot=false
 #:property EnableTrimAnalyzer=false
+
 #:package Microsoft.Playwright@1.50.0
 #:package System.Linq.Async@6.0.1
 
 using Microsoft.Playwright;
-using System.Diagnostics;
 using System.Globalization;
 using System.Text;
 using System.Text.Encodings.Web;
@@ -65,7 +65,21 @@ var groups = new IGroup[] {
 /****************************/
 /*   load events-job.json   */
 /****************************/
-var repoRoot = Directory.GetCurrentDirectory();
+static string ResolveRepoRoot(string startDir)
+{
+    var current = startDir;
+    while (!string.IsNullOrEmpty(current))
+    {
+        if (File.Exists(Path.Combine(current, "events-job.json")))
+            return current;
+
+        current = Directory.GetParent(current)?.FullName;
+    }
+
+    return startDir;
+}
+
+var repoRoot = ResolveRepoRoot(Directory.GetCurrentDirectory());
 var jsonPath = Path.Combine(repoRoot, "events-job.json");
 List<Event> knownEvts = [];
 {
