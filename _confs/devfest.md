@@ -1,5 +1,4 @@
 ---
-slug: devfest
 name: DevFest Toulouse
 link: https://devfesttoulouse.fr/
 social:

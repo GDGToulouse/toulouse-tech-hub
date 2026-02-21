@@ -1,5 +1,4 @@
 ---
-slug: pgday
 name: PGDay Toulouse
 date: 2026-06-03
 end: 2026-06-04

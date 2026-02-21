@@ -31,7 +31,6 @@ Create a new markdown file in `_confs/` named `{slug}.md`:
 
 ```yaml
 ---
-slug: {conference-slug}
 name: {conference-name}
 date: {conference-date}  # Optional: YYYY-MM-DD format
 end: {conference-end-date}  # Optional: YYYY-MM-DD format if multi-day
@@ -48,11 +47,11 @@ social:
 ```
 
 **Important notes:**
-- `id` field uses the slug (image path is automatically computed: `confs-imgs/{slug}.jpg`)
+- No `slug` field needed - Jekyll auto-generates it from filename (e.g., `capitole-du-libre.md` → slug is `capitole-du-libre`)
+- Image path is automatically computed: `confs-imgs/{slug}.jpg` (based on filename)
 - `date` field is optional - only include if next edition date is known
 - `end` field is optional - only include for multi-day conferences
 - `link` field is optional - only include if provided
-- `image` path uses convention: `confs-imgs/{slug}.{ext}`
 - Social links array uses Bootstrap Icons class names
 
 ### Step 3: Social Links Mapping
@@ -115,7 +114,7 @@ If a logo URL is provided:
    rm confs-imgs/{slug}.png
    ```
 
-**Note:** The image path will be automatically computed from the `id` field: `confs-imgs/{slug}.jpg`. No need to add an `image:` field to YAML. If no logo is provided, you can:
+**Note:** The image path will be automatically computed from the filename: `confs-imgs/{slug}.jpg`. No need to add an `image:` field to YAML. If no logo is provided, you can:
 - Search online for the conference official logo
 - Ask the issue author to provide one
 - Create a placeholder or skip providing an image
@@ -199,12 +198,10 @@ YouTube: https://www.youtube.com/channel/UCR7skKC85Zn6p7fJ-lW7G8g
 
 ```yaml
 ---
-slug: pgday
 name: PGDay Toulouse
 date: 2026-06-03
 end: 2026-06-04
 link: https://pgday.fr/
-image: confs-imgs/pgday.jpg
 social:
   - icon: bi-globe
     url: https://pgday.fr/

@@ -1,5 +1,4 @@
 ---
-slug: capitole-du-libre
 name: Le Capitole du Libre
 link: https://capitoledulibre.org/
 social:

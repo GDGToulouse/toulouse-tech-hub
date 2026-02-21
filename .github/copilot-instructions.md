@@ -142,7 +142,6 @@ social:
 Create a markdown file in `_confs/` named `{conference-slug}.md`:
 ```yaml
 ---
-slug: slug
 name: Conference Name
 date: YYYY-MM-DD
 link: https://example.com
@@ -153,7 +152,7 @@ social:
 ---
 ```
 
-**Note:** `link` property is for the main website. `social` array uses `icon`, `url` (for social profiles), and `title`. Image path is automatically computed: `confs-imgs/{slug}.jpg` (upload image file with this name).
+**Note:** `link` property is for the main website. `social` array uses `icon`, `url` (for social profiles), and `title`. Image path is automatically computed from filename: `confs-imgs/{conference-slug}.jpg` (upload image file with this name). The slug itself is auto-generated from the filename and should not be declared in front matter.
 
 ## Working with Jekyll Locally
 

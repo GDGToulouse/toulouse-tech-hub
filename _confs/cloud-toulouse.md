@@ -1,5 +1,4 @@
 ---
-slug: cloud-toulouse
 name: Cloud Toulouse
 date: 2026-05-28
 link: https://cloudtoulouse.com/
