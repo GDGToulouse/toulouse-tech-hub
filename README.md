@@ -6,7 +6,7 @@
 [![GitHub Issues](https://img.shields.io/github/issues/GDGToulouse/toulouse-tech-hub)](https://github.com/GDGToulouse/toulouse-tech-hub/issues)
 [![Contributions bienvenues](https://img.shields.io/badge/contributions-bienvenues-brightgreen.svg)](https://github.com/GDGToulouse/toulouse-tech-hub/issues/new/choose)
 
-## � Table des matières
+## 📚 Table des matières
 
 - [À propos](#-à-propos)
 - [Communautés suivies](#-communautés-suivies)
@@ -15,7 +15,7 @@
 - [Architecture](#-architecture)
 - [Développement local](#-développement-local)
 
-## �📅 À propos
+## 📅 À propos
 
 Ce site liste tous les événements tech à venir organisés par les communautés toulousaines, en un seul endroit.
 
