@@ -51,66 +51,21 @@ Il existe une page pour les organisateurs, permettant de gérer une image à inc
 
 ## 🤝 Comment contribuer ?
 
-### Ajouter une communauté
+Le projet utilise des **templates d'issues GitHub** pour simplifier les contributions. Consultez [CONTRIBUTING.md](.github/CONTRIBUTING.md) pour les détails.
 
-Votre communauté tech toulousaine n'est pas encore listée ? 
+- **Ajouter une communauté** : [Créer une issue](https://github.com/GDGToulouse/toulouse-tech-hub/issues/new?template=add-community.yml) - Les événements Meetup se synchronisent automatiquement !
+- **Ajouter une conférence** : [Créer une issue](https://github.com/GDGToulouse/toulouse-tech-hub/issues/new?template=add-conference.yml)
+- **Ajouter un événement** : [Créer une issue](https://github.com/GDGToulouse/toulouse-tech-hub/issues/new?template=add-event.yml) - Ou directement via PR
+- **Signaler un bug** : [Créer une issue](https://github.com/GDGToulouse/toulouse-tech-hub/issues/new?template=bug-report.yml)
+- **Proposer une amélioration** : [Créer une issue](https://github.com/GDGToulouse/toulouse-tech-hub/issues/new?template=feature-request.yml)
 
-👉 [Créez une issue "Ajouter une communauté"](https://github.com/GDGToulouse/toulouse-tech-hub/issues/new?template=add-community.yml)
-
-Remplissez simplement le formulaire avec les informations de votre communauté (nom, site web, description). Si vous avez une page Meetup, les événements seront automatiquement synchronisés !
-
-### Ajouter une conférence
-
-Vous organisez une conférence tech annuelle ou régulière à Toulouse ?
-
-👉 [Créez une issue "Ajouter une conférence"](https://github.com/GDGToulouse/toulouse-tech-hub/issues/new?template=add-conference.yml)
-
-Les conférences apparaissent dans la section spéciale des grands événements annuels (DevFest, PGDay, Capitole du Libre, etc.).
-
-### Ajouter un événement ponctuel
-
-Vous organisez un événement tech qui n'est pas sur Meetup ou qui nécessite une annonce spéciale ?
-
-👉 [Créez une issue "Ajouter un événement"](https://github.com/GDGToulouse/toulouse-tech-hub/issues/new?template=add-event.yml)
-
-*Note : Les événements Meetup des communautés listées sont déjà synchronisés automatiquement, pas besoin de les ajouter manuellement.*
-
-### Signaler un problème
-
-Vous avez remarqué une erreur (événement manquant, lien cassé, information incorrecte) ?
-
-👉 [Créez une issue "Signaler un bug"](https://github.com/GDGToulouse/toulouse-tech-hub/issues/new?template=bug-report.yml)
-
-### Proposer une amélioration
-
-Vous avez une idée pour améliorer le site ?
-
-👉 [Créez une issue "Suggestion d'amélioration"](https://github.com/GDGToulouse/toulouse-tech-hub/issues/new?template=feature-request.yml)
-
-### Contribuer directement au code
-
-Les événements et communautés sont de simples fichiers dans les dossiers `_events/` et `_groups/`. Vous pouvez également proposer vos modifications via pull request directement !
-
-## 🛠️ Développement local
-
-Ce site est généré avec Jekyll. Pour le tester localement :
-
-```bash
-# Installer Jekyll (si nécessaire)
-gem install jekyll bundler
-
-# Lancer le serveur local
-jekyll serve
-
-# Le site est accessible sur http://localhost:4000
-```
+**Note :** Les fichiers `_groups/`, `_confs/`, et `_events/` sont de simples fichiers markdown/HTML - vous pouvez aussi proposer directement une PR !
 
 ## 🛠️ Tech Stack
 
 - **[Jekyll 4.4](https://jekyllrb.com/)** - Static site generator
 - **[Liquid](https://shopify.github.io/liquid/)** - Templating engine
 - **[Bootstrap 5](https://getbootstrap.com/)** - UI framework
-- **[Bootstrap Icons](https://icons.getbootstrap.com/)** - Icon library
 - **[GitHub Actions](https://github.com/features/actions)** - CI/CD automation
 - **[GitHub Pages](https://pages.github.com/)** - Hosting
 
@@ -118,38 +73,13 @@ jekyll serve
 
 Le projet utilise les **collections Jekyll** pour organiser les données :
 
-- **`_groups/`** (20 fichiers) - Définitions des communautés tech
-  - Un fichier `.md` par communauté avec logo, description et réseaux sociaux
-  - Images dans `groups-imgs/{slug}.jpg`
+- **`_groups/`** - Définitions des communautés tech (logo, description, réseaux)
+- **`_confs/`** - Conférences annuelles (DevFest, PGDay, Capitole du Libre, etc.)
+- **`_events/`** - Événements individuels (auto-générés et manuels)
+- **`.github/`** - Configuration GitHub (templates, workflows, guides)
 
-- **`_confs/`** (5 fichiers) - Conférences annuelles (DevFest, PGDay, etc.)
-  - Un fichier `.md` par conférence avec dates et liens
-  - Images dans `confs-imgs/{slug}.jpg`
+Pour plus de détails sur l'architecture, l'update workflow et les formats générés, consulte [CONTRIBUTING.md](.github/CONTRIBUTING.md).
 
-- **`_events/`** (136+ fichiers) - Événements individuels
-  - Fichiers `.html` générés automatiquement par le job d'update
-  - Nommage : `YYYY-MM-DD-{community-slug}-{event-id}.html`
-  - Images dans `event-imgs/`
+## 🚀 Développement local
 
-- **`.github/`** - Configuration GitHub
-  - `ISSUE_TEMPLATE/` - Templates d'issues pour les contributions
-  - `COPILOT_*.md` - Guides utilisables par Copilot pour traiter les issues
-  - `workflows/` - Workflows GitHub Actions
-
-### Flux de Mise à Jour des Événements
-
-1. **Job quotidien** (9h00 et 17h00 UTC)
-2. **Script C#** (`.github/workflows/update.cs`) scan les pages Meetup
-3. **Générer YAML** pour chaque nouvel événement
-4. **Télécharger images** dans `event-imgs/`
-5. **Jekyll build** génère l'HTML et les formats (iCal, JSON, Atom)
-
-### Formats Générés
-
-Le site produit plusieurs formats à partir des mêmes données :
-
-- **HTML** - Page web avec calendrier Bootstrap Cards
-- **iCal** - `events.ics` (compatible Google Cal, Apple Cal, Outlook)
-- **Atom/RSS** - `events.atom.xml` (agrégateurs de flux)
-- **JSON** - `events.json` (API)
-- **PNG** - Outil organisateurs (`orgas.html`)
+Vois [CONTRIBUTING.md](.github/CONTRIBUTING.md) pour les instructions d'installation de Jekyll et de lancement local.
