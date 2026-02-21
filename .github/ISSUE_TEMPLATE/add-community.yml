@@ -32,29 +32,21 @@ body:
     id: community-url
     attributes:
       label: Site web principal
-      description: URL du site officiel de la communauté
-      placeholder: https://example.com
-    validations:
-      required: true
-
-  - type: dropdown
-    id: event-source
-    attributes:
-      label: Source des événements
-      description: Comment récupérer automatiquement vos événements ?
-      options:
-        - Meetup.com (page meetup existante)
-        - Site web custom (scraping possible)
-        - Manuel (ajout d'événements à la main)
+      description: |
+        URL du site officiel de la communauté (peut être une page Meetup.com).
+        Copilot détectera automatiquement s'il s'agit d'une page Meetup pour synchroniser les événements.
+      placeholder: ex. https://www.meetup.com/python-toulouse/ ou https://toulousegamedev.fr/
     validations:
       required: true
 
   - type: input
-    id: meetup-url
+    id: registration-url
     attributes:
-      label: URL Meetup (si applicable)
-      description: Si vous utilisez Meetup.com, indiquez l'URL de votre groupe
-      placeholder: https://www.meetup.com/votre-groupe/
+      label: Site d'inscription aux événements (optionnel)
+      description: |
+        Si différent du site principal, indiquez où les utilisateurs peuvent s'inscrire aux événements.
+        Laissez vide si c'est le même que le site principal.
+      placeholder: ex. https://www.eventbrite.com/o/votre-orga ou https://forms.gle/...
 
   - type: textarea
     id: description

@@ -9,12 +9,24 @@ Quand quelqu'un crée une issue via le template `add-community.yml`, GitHub Copi
 L'issue contient les champs suivants :
 - **community-name** : Nom complet de la communauté
 - **community-slug** : Identifiant court (ex: `python`, `js-and-co`)
-- **community-url** : URL du site principal
-- **event-source** : Type de source (Meetup.com, Site web custom, Manuel)
-- **meetup-url** : URL Meetup (si applicable)
+- **community-url** : URL du site principal (peut être une page Meetup)
+- **registration-url** : URL d'inscription aux événements (optionnel, si différent de community-url)
 - **description** : Description de la communauté
 - **logo-url** : URL du logo (optionnel)
 - **social-links** : Liste de liens sociaux (optionnel)
+
+## Détection automatique de Meetup
+
+Si `community-url` contient `meetup.com`, c'est une page Meetup :
+1. Extraire le slug Meetup de l'URL (ex: `https://www.meetup.com/python-toulouse/` → `python-toulouse`)
+2. Ajouter automatiquement dans `.github/workflows/update.cs`
+3. Les événements seront synchronisés automatiquement
+
+Exemples de détection :
+- `https://www.meetup.com/python-toulouse/` → Meetup (slug: `python-toulouse`)
+- `https://www.meetup.com/fr-FR/rust-community-toulouse/` → Meetup (slug: `rust-community-toulouse`)
+- `https://toulousegamedev.fr/` → Site custom (pas de synchronisation auto)
+- `https://www.agiletoulouse.fr/` → Site custom (pas de synchronisation auto)
 
 ## Étapes pour créer la PR
 
@@ -57,11 +69,15 @@ Mapping des types :
 
 ### 3. Ajouter dans `.github/workflows/update.cs` (si Meetup)
 
-Si `event-source` == "Meetup.com" et `meetup-url` est fourni :
+**Détection automatique :** Si `community-url` contient `meetup.com` :
 
-Extraire le slug Meetup de l'URL (ex: `https://www.meetup.com/python-toulouse/` → `python-toulouse`)
+1. Extraire le slug Meetup de l'URL
+   - Regex : `meetup\.com/(?:fr-FR/)?([^/]+)`
+   - Exemples :
+     - `https://www.meetup.com/python-toulouse/` → `python-toulouse`
+     - `https://www.meetup.com/fr-FR/rust-community-toulouse/` → `rust-community-toulouse`
 
-Ajouter dans le tableau `groups` (ligne ~37) :
+2. Ajouter dans le tableau `groups` (ligne ~37) :
 
 ```csharp
 new MeetupGroup("{meetup-slug}", "{community-slug}"),
@@ -88,8 +104,8 @@ Adds {community-name} to the Toulouse Tech Hub.
 **Community details:**
 - Name: {community-name}
 - Website: {community-url}
-- Event source: {event-source}
-{- Meetup: {meetup-url} (si applicable)}
+{- Registration: {registration-url} (si différent)}
+{- Meetup sync: Yes (slug: {meetup-slug}) (si détecté)}
 
 **Changes:**
 - ✅ Created `_groups/{slug}.md`
@@ -141,8 +157,7 @@ Issue contenant :
 - community-name: "Rust Toulouse"
 - community-slug: "rust"
 - community-url: "https://www.meetup.com/fr-FR/rust-community-toulouse/"
-- event-source: "Meetup.com"
-- meetup-url: "https://www.meetup.com/rust-community-toulouse/"
+- registration-url: (vide, même URL que community-url)
 - description: "Communauté des développeurs Rust à Toulouse..."
 - logo-url: "https://example.com/rust-logo.png"
 - social-links: 
@@ -150,6 +165,8 @@ Issue contenant :
   twitter: https://x.com/rust_tlse
   github: https://github.com/rust-toulouse
   ```
+
+**Détection automatique :** URL contient `meetup.com` → slug Meetup extrait = `rust-community-toulouse`
 
 Résultat :
 
@@ -191,8 +208,7 @@ Adds Rust Toulouse to the Toulouse Tech Hub.
 **Community details:**
 - Name: Rust Toulouse
 - Website: https://www.meetup.com/fr-FR/rust-community-toulouse/
-- Event source: Meetup.com
-- Meetup: https://www.meetup.com/rust-community-toulouse/
+- Meetup sync: Yes (slug: rust-community-toulouse)
 
 **Changes:**
 - ✅ Created `_groups/rust.md`
