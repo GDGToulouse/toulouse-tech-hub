@@ -2524,7 +2524,7 @@
     "VenueAddr": null,
     "Latitude": null,
     "Longitude": null,
-    "LocalImgSrc": null
+    "LocalImgSrc": "event-imgs/2026-02-24-agile-meetup-313369368.webp"
   },
   {
     "Id": "meetup-313372936",
@@ -2543,7 +2543,7 @@
     "VenueAddr": "36 boulevard de Strasbourg TOULOUSE",
     "Latitude": null,
     "Longitude": null,
-    "LocalImgSrc": null
+    "LocalImgSrc": "event-imgs/2026-03-05-js-and-co-meetup-313372936.webp"
   },
   {
     "Id": "meetup-313325443",
@@ -2562,7 +2562,7 @@
     "VenueAddr": "3 Pl. Guy Hersant Toulouse",
     "Latitude": null,
     "Longitude": null,
-    "LocalImgSrc": null
+    "LocalImgSrc": "event-imgs/2026-03-12-agile-meetup-313325443.webp"
   },
   {
     "Id": "meetup-312901216",
@@ -2581,6 +2581,6 @@
     "VenueAddr": "46 Rue Marco Polo Labège",
     "Latitude": null,
     "Longitude": null,
-    "LocalImgSrc": null
+    "LocalImgSrc": "event-imgs/2026-04-07-postgres-meetup-312901216.webp"
   }
 ]

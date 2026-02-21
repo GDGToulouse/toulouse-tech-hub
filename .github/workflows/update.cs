@@ -139,6 +139,13 @@ List<Event> evts = [];
             {
                 Console.WriteLine($"💥 [{evt.Start:dd/MM/yyyy HH:mm}] {evt.Group} - {evt.Title}");
 
+                // Set LocalImgSrc using the filename prefix convention
+                if (!string.IsNullOrEmpty(evt.ImgSrc) || !string.IsNullOrEmpty(evt.FullImgSrc))
+                {
+                    var fileNamePrefix = $"{evt.Start:yyyy-MM-dd}-{evt.GroupId}-{evt.Id}";
+                    evt.SetLocalImgSrcWithNamePrefix(fileNamePrefix);
+                }
+
                 evts.Add(evt);
 
                 // téléchargement de l'image => event-imgs/meetup-xxx.webp
@@ -174,7 +181,7 @@ List<Event> evts = [];
                                     }
                                 }
                             }
-                            catch
+                            catch (Exception ex)
                             {
                                 // If we can't determine modification time, don't update to avoid unnecessary downloads
                                 shouldDownload = false;
