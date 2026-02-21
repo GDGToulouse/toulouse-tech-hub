@@ -153,11 +153,14 @@ List<Event> evts = [];
                                 var headRequest = new HttpRequestMessage(HttpMethod.Head, imgSource);
                                 var response = await http.SendAsync(headRequest);
 
-                                if (response.Content.Headers.LastContentModified.HasValue)
+                                // Try to get Last-Modified from response headers (generic headers, not content-specific)
+                                if (response.Headers.TryGetValues("Last-Modified", out var lastModifiedValues) && lastModifiedValues.FirstOrDefault() is string lastModStr)
                                 {
-                                    var localFileTime = File.GetLastWriteTimeUtc(imgPath);
-                                    var remoteFileTime = response.Content.Headers.LastContentModified.Value.UtcDateTime;
-                                    shouldDownload = remoteFileTime > localFileTime;
+                                    if (DateTimeOffset.TryParse(lastModStr, out var remoteFileTime))
+                                    {
+                                        var localFileTime = File.GetLastWriteTimeUtc(imgPath);
+                                        shouldDownload = remoteFileTime.UtcDateTime > localFileTime;
+                                    }
                                 }
                             }
                             catch
