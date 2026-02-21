@@ -18,7 +18,7 @@ SEQUENCE:0
 SUMMARY:{{ event.title }}
 UID:{{ event.id }}
 URL:{{ event.link }}
-X-ALT-DESC:{{ event.description }}
+X-ALT-DESC:{{ event.content }}
 END:VEVENT
 {% endfor %}
 BEGIN:VTIMEZONE

@@ -17,7 +17,7 @@ layout: null
     "Group": "{{ event.community | replace: '"', '\\"' | strip }}",
     "Venue": "{{ event.place | replace: '"', '\\"' | strip }}",
     "VenueAddr": "{{ event.placeAddr | replace: '"', '\\"' | strip }}",
-    "HtmlDescription": "{{ event.description | replace: '"', '\\"' | strip }}"
+    "HtmlDescription": "{{ event.content | replace: '"', '\\"' | strip }}"
   }{% unless forloop.last %},{% endunless %}
 {% endfor %}
 ]

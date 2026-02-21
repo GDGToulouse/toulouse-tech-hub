@@ -26,7 +26,7 @@ layout: null
     <author><name>{{ event.community | replace: "&", "&amp;" | replace: "<", "&lt;" }}</name></author>
     <media:thumbnail url="{{ site.site }}{{ site.baseurl }}/{{ event.localImg }}" />
     <link rel="enclosure" type="image/webp" href="{{ site.site }}{{ site.baseurl }}/{{ event.localImg }}" />
-    <content type="html">{{ event.description | replace: "&", "&amp;" | replace: "<", "&lt;" | replace: ">", "&gt;" }}</content>
+    <content type="html">{{ event.content | replace: "&", "&amp;" | replace: "<", "&lt;" | replace: ">", "&gt;" }}</content>
   </entry>
 
 {% endfor %}
