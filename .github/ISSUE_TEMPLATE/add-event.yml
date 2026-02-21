@@ -1,0 +1,116 @@
+name: 📅 Ajouter un événement
+description: Proposer l'ajout d'un événement tech à venir
+title: "[Event] "
+labels: ["event"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Ajoutez un événement tech toulousain au calendrier ! 🎉
+        
+        Pour les événements récurrents ou synchronisés automatiquement (Meetup), pas besoin de cette issue - ils sont ajoutés automatiquement.
+
+  - type: input
+    id: event-title
+    attributes:
+      label: Titre de l'événement
+      placeholder: ex. Workshop React avancé, Soirée DevOps & Pizza
+    validations:
+      required: true
+
+  - type: dropdown
+    id: community
+    attributes:
+      label: Communauté organisatrice
+      description: Si votre communauté n'est pas dans la liste, créez d'abord une issue "Ajouter une communauté"
+      options:
+        - Agile Toulouse
+        - Artilect FabLab
+        - AWS User Group Toulouse
+        - C++ Toulouse
+        - Devops & Cloud Toulouse
+        - GDG Toulouse
+        - JS & Co Toulouse
+        - JUG Toulouse
+        - La "Toul Box" du Cloud Natif
+        - MTG:Toulouse
+        - Postgres Toulouse
+        - Python Toulouse
+        - Rust Toulouse
+        - Swift Toulouse
+        - Tech a Break
+        - Toulouse Data Science
+        - Toulouse Data-Viz
+        - Toulouse DevOps
+        - Toulouse Game Dev
+        - Toulouse Ruby and Friends
+        - Autre (préciser en description)
+    validations:
+      required: true
+
+  - type: input
+    id: event-date
+    attributes:
+      label: Date et heure
+      description: Format YYYY-MM-DD HH:MM (ex. 2026-03-15 18:30)
+      placeholder: 2026-03-15 18:30
+    validations:
+      required: true
+
+  - type: input
+    id: event-link
+    attributes:
+      label: Lien d'inscription
+      description: Où s'inscrire pour participer à l'événement
+      placeholder: https://www.meetup.com/.../events/... ou https://www.eventbrite.com/...
+    validations:
+      required: true
+
+  - type: textarea
+    id: event-description
+    attributes:
+      label: Description
+      description: Décrivez l'événement (thème, speakers, programme, etc.)
+      placeholder: |
+        Au programme de cette soirée :
+        - 18h30 : Accueil
+        - 19h00 : Talk principal sur...
+        - 20h00 : Questions et networking
+        
+        Speakers : ...
+    validations:
+      required: true
+
+  - type: input
+    id: event-location
+    attributes:
+      label: Lieu (optionnel)
+      description: Nom du lieu où se déroule l'événement
+      placeholder: ex. La Cantine, Artilect, Campus d'Entiore
+
+  - type: input
+    id: event-address
+    attributes:
+      label: Adresse (optionnel)
+      placeholder: ex. 27 Rue d'Aubuisson, 31000 Toulouse
+
+  - type: input
+    id: event-image
+    attributes:
+      label: Image de l'événement (optionnel)
+      description: URL d'une image pour illustrer l'événement
+      placeholder: https://example.com/event-image.jpg
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+        
+        ### 🤖 Automatisation
+        
+        GitHub Copilot pourra générer automatiquement le fichier `_events/{date}-{community}-{id}.html` avec les informations fournies.
+        
+        **Prochaines étapes :**
+        1. Validez cette issue
+        2. Un mainteneur créera le fichier d'événement
+        3. L'événement apparaîtra sur le site ! 📆
