@@ -1,0 +1,35 @@
+id: 'meetup-312061009'
+title: 'Virtualenv & RAG Moderne'
+community: 'Python Toulouse'
+datePublished: '2025-11-18 17:21'
+dateIso: '2025-12-04 18:00'
+dateFr: 'jeudi 04 décembre'
+timeFr: '18:00'
+place: "Web-atrio"
+placeAddr: "2 rue Marcel Doret Blagnac"
+link: https://www.meetup.com/fr-FR/python-toulouse/events/312061009/
+img: https://secure.meetupstatic.com/photos/event/2/a/9/d/highres_531370909.webp?w=3840
+localImg: events/imgs/meetup-312061009.webp
+description: >
+  <div class="w-full break-words transition-all duration-300 line-clamp-[15]" style="font-family: NeuSans, Inter, system-ui, sans-serif;"><p class="mb-4">On se retrouve le <strong>Jeudi 4 décembre</strong> pour un meetup Python ! Deux sujets : la mécanique interne des virtualenvs et les bases d’une architecture RAG moderne !<br>
+  <br>
+  🙂 Rejoignez-nous ! Pizzas &amp; boissons offertes par <strong>Web Atrio</strong> 🍕🍻<br>
+  <br>
+  📍 <strong>Web Atrio :</strong> 2 rue Marcel Doret, Burolines 2, 31700 Blagnac<br>
+  🕓 <strong>Accueil : 19h00</strong> (parking gratuit disponible)<br>
+  <br>
+  📆 <strong>Agenda</strong><br>
+  19:00 → Accueil<br>
+  19:15 → Talks<br>
+  20:30+ → Échanges &amp; apéro<br>
+  <br>
+  🧠 <strong>Talks</strong><br>
+  <br>
+  <strong>Eldana : La structure d’un RAG moderne</strong>, <em>Matthias HUDELOT</em><br>
+  Comment construire un RAG moderne : mémoire, recherche, outils et orchestrateurs. Une vue claire des briques qui rendent l’IA réellement opérationnelle, stable et utile en conditions réelles.<br>
+  <br>
+  <strong>Qu’est-ce qu’il y a dans un virtualenv</strong>, <em>Denis Viviès</em><br>
+  Après un rappel sur l’usage des virtualenvs, le talk décortique leur fonctionnement interne : ce que fait `source venv/bin/activate`, comment l’environnement isole les dépendances, et un aperçu d’alternatives comme Anaconda ou pex.<br>
+  <br>
+  🙏 Merci à <strong>Web Atrio</strong> pour l’accueil et le sponsoring.</p></div><button class="inline-flex items-center justify-center rounded-ds2-max max-w-full relative select-none data-[disabled=false]:active:scale-98 transition-all duration-150 before:absolute before:rounded-ds2-max before:z-0 before:opacity-0 data-[disabled=false]:hover:before:opacity-100 before:transition-opacity before:duration-150 data-[disabled=true]:cursor-not-allowed data-[disabled=true]:pointer-events-none hover:no-underline text-ds2-text_button-content-fill-brand_primary-enabled hover:text-ds2-text_button-content-fill-brand_primary-hover before:bg-ds2-text_button-base-fill-shared-hover data-[disabled=true]:text-ds2-text_button-content-fill-brand_primary-disabled gap-ds2-6 ds2-m16 before:-inset-x-ds2-12 before:-inset-y-ds2-6 w-fit" type="button" data-disabled="false"><span class="relative z-10 flex min-w-0 max-w-full items-center justify-center" style="gap: inherit;"><span class="relative z-10 flex min-w-0 max-w-full items-center justify-center truncate" style="gap: inherit;"><span class="min-w-0 max-w-full truncate">Lire plus</span></span></span></button>
+

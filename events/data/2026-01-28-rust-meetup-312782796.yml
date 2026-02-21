@@ -1,0 +1,49 @@
+id: 'meetup-312782796'
+title: 'Soirée Rust - WASM & CLI élégante'
+community: 'Rust Toulouse'
+datePublished: '2026-01-19 07:54'
+dateIso: '2026-01-28 18:45'
+dateFr: 'mercredi 28 janvier'
+timeFr: '18:45'
+place: "Epitech Toulouse"
+placeAddr: "40 boulevard de la Marquette Toulouse"
+link: https://www.meetup.com/fr-FR/rust-community-toulouse/events/312782796/
+img: https://secure.meetupstatic.com/photos/event/2/7/a/0/highres_532150144.webp?w=3840
+localImg: events/imgs/meetup-312782796.webp
+description: >
+  <div class="w-full break-words transition-all duration-300 line-clamp-[15]" style="font-family: NeuSans, Inter, system-ui, sans-serif;"><p class="mb-ds2-10">On se retrouve le <strong>mercredi 28 janvier 18h45</strong> pour le retour du <strong>Meetup Rust Toulouse</strong> !<br>
+  <br>
+  🙂 <strong>Rejoignez-nous !</strong> <strong>Pizzas &amp; boissons offertes par Bashroom</strong> 🍕🍻 Venez apprendre, discuter et boire un verre avec la communauté !<br>
+  <br>
+  📆 <strong>Mercredi 28 janvier</strong><br>
+  <strong>📍 Epitech Toulouse - 40 Bd de la Marquette, 31000 Toulouse</strong><br>
+  18:45 → Accueil<br>
+  19:00 → Talks<br>
+  20:15+ → Apéro &amp; échanges<br>
+  <br>
+  🦀 <strong>Les pinces du métier: 5min de trucs &amp; astuces en Rust - par Igor Laborie, Senior Rust developer</strong><br>
+  <br>
+  Chaque meetup, un membre partage ses coups de coeur<br>
+  <br>
+  🦀 <strong>Coder en Rust dans une appli Node (Intermédiaire) - par Sylvain WALLEZ, Principal Engineer at Elastic</strong><br>
+  <br>
+  Et si on intégrait du Rust dans notre appli Node ? Les motivations sont multiples : améliorer les performances sur des parties critiques, utiliser un langage plus strict sur des parties complexes, ou plus simplement introduire Rust en douceur (voire en douce) sans tout casser.<br>
+  <br>
+  Chez Elastic nous avons introduit Rust dans une application Node pour des transformations de données complexes en utilisant Web Assembly. Nous verrons comment wasm-bindgen rend ça presque trop facile, comment appeler du Rust depuis JavaScript, et comment appeler la librairie standard de Node depuis le code Rust.<br>
+  <br>
+  À la fin de cette présentation, vous aurez toute la boîte à outil pour ajouter du Rust en douce(ur) dans votre appli Node !<br>
+  <br>
+  🦀 <strong>De la spec à la CLI : retour d’expérience en Rust</strong> <strong>(Avancé)</strong> <strong>- par Laurent Saint-Félix, Principal Engineer at Elastic</strong><br>
+  <br>
+  Comment transformer une API monstrueuse en CLI élégante (sans perdre son âme en chemin) ?<br>
+  <br>
+  Dans ce talk, nous explorerons comment générer automatiquement une CLI en Rust à partir de la spécification officielle de l’API Elasticsearch. Vous découvrirez comment mapper des patterns HTTP et POSIX pour offrir une expérience utilisateur intuitive, tout en réutilisant au maximum les composants existants.<br>
+  <br>
+  Nous ferons un tour d’horizon des outils clés de l’écosystème Rust—comme Clap pour le parsing d’arguments et Tokio pour l’asynchrone—et partagerons les défis rencontrés : gestion de l’async, interaction avec stdin/stdout, et optimisation des performances. À la fin de cette session, vous repartirez avec des idées concrètes pour simplifier vos interactions avec Elasticsearch, et peut-être l’envie de contribuer à l’outil !<br>
+  <br>
+  <strong>Merci à Bashroom et à Epitech Toulouse de rendre cet événement possible ! 🙏</strong><br>
+  <br>
+  <strong>Et merci à Otso (Adrian Tombu) pour le sponsoring des meetups !</strong><br>
+  <br>
+  <strong>Orgas:</strong> Florian MARC, Jad CHAHED, Jérôme GARCIA, Sylvain WALLEZ, Igor LABORIE</p></div><button class="inline-flex items-center justify-center rounded-ds2-max max-w-full relative select-none data-[disabled=false]:active:scale-98 transition-all duration-150 before:absolute before:rounded-ds2-max before:z-0 before:opacity-0 data-[disabled=false]:hover:before:opacity-100 before:transition-opacity before:duration-150 data-[disabled=true]:cursor-not-allowed data-[disabled=true]:pointer-events-none hover:no-underline text-ds2-text_button-content-fill-brand_primary-enabled hover:text-ds2-text_button-content-fill-brand_primary-hover before:bg-ds2-text_button-base-fill-shared-hover data-[disabled=true]:text-ds2-text_button-content-fill-brand_primary-disabled gap-ds2-6 ds2-m16 before:-inset-x-ds2-12 before:-inset-y-ds2-6 w-fit" type="button" data-disabled="false"><span class="relative z-10 flex min-w-0 max-w-full items-center justify-center" style="gap: inherit;"><span class="relative z-10 flex min-w-0 max-w-full items-center justify-center truncate" style="gap: inherit;"><span class="min-w-0 max-w-full truncate px-ds2-2">Lire plus</span></span></span></button>
+

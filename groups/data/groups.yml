@@ -1,0 +1,140 @@
+- id: gdg
+  name: GDG Toulouse
+  url: https://www.gdgtoulouse.fr/
+  img: /groups/imgs/gdg.jpg
+  registration: https://www.meetup.com/gdg-toulouse/
+  description: |
+    <p>Les Google Developers Groups (GDGs) sont des regroupements de personnes intéressées par les technologies
+    et plateformes de Google: Android, Angular, Chrome, Google Apps, GWT, Cloud Platform… mais pas que !</p>
+  social:
+  - name: x
+    url: https://x.com/gdgtoulouse
+  - name: linkedin
+    url: https://www.linkedin.com/company/gdg-toulouse
+
+- id: mtg
+  name: MTG:Toulouse
+  url: https://www.meetup.com/mtg-toulouse/
+  img: /groups/imgs/mtg.jpg
+  registration: https://www.meetup.com/mtg-toulouse/
+  description: |
+    <p>MTG:Toulouse (Microsoft Tech Group) est une communauté toulousaine centrée sur .NET, Azure et le développement logiciel au sens large.</p>
+    <p>Le groupe organise des conférences régulières et des moments conviviaux pour apprendre, partager et rencontrer d’autres profils techniques.</p>
+  social:
+  - name: x
+    url: https://twitter.com/mtg_toulouse
+  - name: linkedin
+    url: https://www.linkedin.com/company/mtg-toulouse/
+
+- id: agile
+  name: Agile Toulouse
+  url: https://www.agiletoulouse.fr/
+  img: /groups/imgs/agile.avif
+  description: |
+    <p>Agile Toulouse anime la communauté agile à Toulouse et dans le Sud-Ouest à travers des rencontres, des ateliers et des événements thématiques.</p>
+    <p>L’association organise notamment des rendez-vous réguliers (ShuHaRi Klub, klub de lecture, bière agile) ainsi que l’Agile Tour Toulouse.</p>
+
+- name: JUG Toulouse
+  url: https://www.meetup.com/toulouse-java-user-group/
+  img: /groups/imgs/jug-toulouse.jpg
+  description: |
+    <p>Le Toulouse JUG est un groupe d'utilisateurs Java destiné à échanger des idées et de discuter des avancées technologiques de la JVM.</p>
+
+- name: Toulouse Ruby and Friends
+  url: https://www.meetup.com/toulouse-ruby-friends/
+  description: |
+    <p>Événements (talks, café, boissons) autour de Ruby (principalement) et d’autres langages.</p>
+  img: /groups/imgs/toulouse-ruby-and-friends.jpg
+
+- name: Python Toulouse
+  url: https://www.meetup.com/python-toulouse/
+  img: /groups/imgs/python-toulouse.png
+  description: |
+    <p>On échange autour de Python, de son écosystème, et autour de pizzas 😊 Que ce soit des scripts, des apps, de la data science, de l'IA, ... on en parle !</p>
+
+- name: Toulouse Data Science
+  url: https://www.meetup.com/tlse-data-science/
+  img: /groups/imgs/toulouse-data-science.jpg
+  description: |
+    <p>Le TDS (Toulouse Data Science) est l'association des data héros Toulousains.</p>
+
+- name: Toulouse Game Dev
+  url: https://toulousegamedev.fr/
+  description: |
+    <p>Le Toulouse Game Dev est créé en 2014 pour aider à l’émergence d’une industrie du jeu vidéo sur Toulouse.
+    Une décennie plus tard, forts de nos rencontres et de nos actions, nous avons fédéré une grande partie des entreprises, indépendant·e·s, étudiant·e·s et amateur·ices de jeux vidéo à Toulouse.</p>
+
+- name: Toulouse Data-Viz
+  url: https://www.meetup.com/meetup-visualisation-des-donnees-toulouse/
+  img: /groups/imgs/toulouse-data-viz.jpg
+  description: |
+    <p>Ce groupe rassemble les personnes intéressées par la data visualisation pour échanger, découvrir des réalisations concrètes et s’approprier les outils de dataviz.</p>
+
+- name: C++ Toulouse
+  url: https://www.meetup.com/ateliers-cpp-toulouse/
+  img: /groups/imgs/c-toulouse.png
+  description: |
+    <p>Conférences et ateliers en région toulousaine autour du développement en langage C++ . Ces rencontres sont organisées par l'association Toulibre .</p>
+
+- name: AWS User Group Toulouse
+  url: https://www.meetup.com/toulouse-amazon-web-services/
+  description: |
+    <p>User Group AWS : groupe géographique qui se réunit pour apprendre et discuter d'AWS, lors de réunions régulières.
+    Les meetups AWS sont des réunions informelles, centrées sur le cloud AWS, ses services et la façon dont ils sont mis en place dans différents environnements.</p>
+  img: /groups/imgs/aws-user-group-toulouse.jpg
+
+- name: Swift Toulouse
+  url: https://www.meetup.com/swift-toulouse/
+  description: |
+    <p>Bienvenue aux Meetup Swift Toulouse ! Parlons développement iOS tous les 2 mois autour de présentations centrées sur le language Swift.</p>
+  img: /groups/imgs/swift-toulouse.png
+
+- name: Tech a Break
+  url: https://www.meetup.com/tech-a-break/
+  img: /groups/imgs/tech-a-break.jpg
+  description: |
+    <p>On aime la tech et on aime en parler, toi aussi ? Rejoins-nous chez Tech a break !</p>
+
+- name: Toulouse DevOps
+  url: https://www.meetup.com/toulouse-devops/
+  description: |
+    <p>Ce groupe s’adresse à toutes les personnes intéressées par le DevOps. Nous y parlons d’automatisation du déploiement, de livraison continue, de cloud et de sujets associés.</p>
+  img: /groups/imgs/toulouse-devops.jpg
+
+- name: Devops & Cloud Toulouse
+  url: https://www.meetup.com/devops-cloud-toulouse/
+  img: /groups/imgs/devops-cloud-toulouse.jpg
+  description: |
+    <p>Discussions, échanges et rencontres sur les sujets DevOps et Cloud.</p>
+
+- name: JS & Co Toulouse
+  url: https://www.meetup.com/javascript-and-co/
+  img: /groups/imgs/js-co-toulouse.jpg
+  description: |
+    <p>JS&Co est une communauté tech et entrepreneuriale pour apprendre, s’inspirer et échanger autour du développement logiciel et de l’entrepreneuriat.</p>
+
+- name: La "Toul Box" du Cloud Natif
+  url: https://www.meetup.com/latoulboxducloudnatif/
+  img: /groups/imgs/la-toul-box-du-cloud-natif.jpg
+  description: |
+    <p>Groupe toulousain dédié au Cloud Native, avec des retours d’expérience concrets autour du cloud public/hybride, des containers et de l’automatisation.</p>
+
+- name: Artilect FabLab
+  url: https://www.meetup.com/artilect-fablab/
+  img: /groups/imgs/artilect-fablab.jpg
+  description: |
+    <p>Artilect est un tiers-lieu collaboratif en centre-ville de Toulouse, avec Fab Lab, coworking, café et espaces événementiels.</p>
+    <p>La communauté organise régulièrement des ateliers, meetups, workshops et formations, ouverts aux makers, développeurs, designers et entrepreneurs.</p>
+
+- name: Postgres Toulouse
+  url: https://www.meetup.com/postgres-toulouse
+  img: /groups/imgs/postgres-toulouse.jpg
+  description: |
+    <p>Postgres Toulouse est une communauté pour partager autour du moteur de base de données relationnel PostgreSQL, progresser ensemble et découvrir des retours d’expérience concrets.</p>
+  
+- name: Rust Toulouse
+  url: https://www.meetup.com/fr-FR/rust-community-toulouse/
+  img: /groups/imgs/rust-toulouse.webp
+  description: |
+    <p>Un groupe convivial pour échanger autour de Rust et de son écosystème, des bases aux usages plus avancés, avec ce qu'il faut pour alimenter les idées 🍕🍻</p>
+  

@@ -1,0 +1,25 @@
+id: 'meetup-306929707'
+title: 'Atelier Ecriture en travail collaboratif (GIT pour tous)'
+community: 'Agile Toulouse'
+datePublished: '2025-04-03 09:22'
+dateIso: '2025-04-18 18:30'
+dateFr: 'vendredi 18 avril'
+timeFr: '18:30'
+place: "Etincelle (Alsace-lorraine)"
+placeAddr: "36, rue d'alsace-lorraine Toulouse"
+link: https://www.meetup.com/fr-FR/agile-toulouse/events/306929707/
+img: https://secure.meetupstatic.com/photos/event/3/d/f/6/highres_526995862.webp?w=750
+localImg: events/imgs/meetup-306929707.webp
+description: >
+  <p class="mb-4">Jeu de mise en situation : nous allons rédiger un ouvrage collectif de manière "asynchrone" et discuter des avantages et inconvénients à procéder de la sorte (avec ce qu'on appelle le git flow).</p>
+  <p class="mb-4">C'est un serious game avec des tours et des cartes et.... un seul outil : GIT (aucune connaissance n'est requise, je vous montre 3 commandes de base au début du jeu, et c'est parti 🤓)</p>
+  <p class="mb-4">Se joue en groupe (4 à 5 groupes de 1 à 3 personnes chacun), il y a des groupes qui sont les rédacteurs, 1 groupe qui est le QA et un groupe de PO.<br>
+  L'objectif est d'écrire un ouvrage (en langage naturel, donc en français) à plusieurs mains, de manière collaborative, en plusieurs sprints; évidemment avec des embuches (vous verrez lesquelles, mais ça va vous rappeler quelque chose 😁).</p>
+  <p class="mb-4">Nous n'allons pas coder, juste rédiger.<br>
+  Et bien sûr analyser notre façon de travailler.</p>
+  <p class="mb-4"><strong>Pré-requis :</strong> avoir un compte ouvert sur github (c'est gratuit), et un ordi par groupe avec VS Code installé (ou tout autre outil git de votre choix) et un accès réseau.</p>
+  <p class="mb-4">Pour rappel, l'adhésion à l'asso est nécessaire pour participer, gratuite et faisable ici en 1 minute sur téléphone : <a href="https://www.helloasso.com/associations/agile-toulouse/adhesions/adhesion-agile-toulouse-1" target="_blank" class="!text-viridian" rel="nofollow ugc">https://www.helloasso.com/associations/agile-toulouse/adhesions/adhesion-agile-toulouse-1</a></p>
+  <p class="mb-4">Si vous êtes inscrits, mais que cela n'est plus possible pour vous de venir, merci de vous désinscrire pour informer qu'il reste de la place :)</p>
+  <p class="mb-4">Bonne journée !<br>
+  Agile Toulouse</p>
+

@@ -1,0 +1,37 @@
+id: 'meetup-310709130'
+title: 'Soirée lampes à lave et Intro Cloud Run'
+community: 'GDG Toulouse'
+datePublished: '2025-08-26 09:24'
+dateIso: '2025-09-18 18:30'
+dateFr: 'jeudi 18 septembre'
+timeFr: '18:30'
+place: "HarryCow Coworking"
+placeAddr: "13 Rue Sainte-Ursule Toulouse"
+link: https://www.meetup.com/fr-FR/gdg-toulouse/events/310709130/
+img: https://secure.meetupstatic.com/photos/event/a/6/7/9/highres_529842617.webp?w=750
+localImg: events/imgs/meetup-310709130.webp
+description: >
+  <p class="mb-4">Bienvenue à cette nouvelle édition des meetups GDG Toulouse !<br>
+  Comme d'habitude, les présentations seront disponibles sur <a href="https://www.youtube.com/playlist?list=PLuZ_sYdawLiW6peh0Q__Nhx6wsnkeeI64" target="_blank" class="!text-viridian" rel="ugc">notre chaine Youtube</a> !<br>
+  Par contre en video il n'y a pas les discussions et les pizzas 🍕 alors si tu es disponible rejoins nous !</p>
+  <p class="mb-4"><strong><em>Des lampes à lave pour sécuriser Internet</em> par Thibault MEUNIER</strong><br>
+  Depuis 2017, l'entreprise Cloudflare utilise des lampes à lave pour renforcer la sécurité de ses connexions Internet. L'idée paraît insolite : en quoi le mouvement aléatoire de bulles colorées peut-il contribuer à protéger un réseau mondial ?</p>
+  <p class="mb-4">Aujourd’hui, avec la généralisation de HTTPS, la sécurité des échanges en ligne repose notamment sur la qualité des nombres aléatoires, utilisés dans les algorithmes de chiffrement. Les lampes à lave, par leur comportement imprévisible, en offrent une excellente source.</p>
+  <p class="mb-4">Dans cette présentation, nous explorerons les bases de la cryptographie appliquée : entropie, chiffrement symétrique et asymétrique, fonctions de hachage, et nous verrons comment ces concepts se traduisent concrètement dans l’architecture de Cloudflare, avec ses fameuses lampes à lave.</p>
+  <p class="mb-4"><strong><em>Introduction à Google Coud RUN</em> par Néhémie BARKIA</strong><br>
+  Google Cloud Run est un service d'hébergement de conteneurs sans serveur (serverless). Comment déployer une application dans cet environnement ?</p>
+  <p class="mb-4">Durant ce talk, nous allons parcourir plusieurs services de Google Cloud pour pouvoir déployer notre application. Nous verrons la construction et l'envoie d'une image docker sur le Container Registry. Puis le déploiement de cette image dans Google Cloud Run. Enfin, nous parlerons Sécurité et Tarification.</p>
+  <p class="mb-4"><strong>Agenda</strong></p>
+  <ul class="pl-5 list-disc mb-4">
+  <li>18h30: Accueil des participants</li>
+  <li>18h45: Debut des présentations</li>
+  <li>20h15: Pizza et Networking</li>
+  </ul>
+  <p class="mb-4"><strong>Speakers</strong></p>
+  <p class="mb-4">Thibault Meunier - Cloudflare (Research Engineer)</p>
+  <p class="mb-4">Néhémie Barkia - Itrust (DevOps Engineer)</p>
+  <p class="mb-4"><strong>Hosted By</strong></p>
+  <p class="mb-4">Julien Faixo,</p>
+  <p class="mb-4">Samir Bouhassoun, GDG Organizer</p>
+  <p class="mb-4">Complete your event RSVP here: <a href="https://gdg.community.dev/events/details/google-gdg-toulouse-presents-soiree-lampes-a-lave-et-intro-cloud-run/." target="_blank" class="!text-viridian" rel="nofollow ugc">https://gdg.community.dev/events/details/google-gdg-toulouse-presents-soiree-lampes-a-lave-et-intro-cloud-run/.</a></p>
+
