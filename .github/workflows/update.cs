@@ -12,8 +12,6 @@
 using Microsoft.Playwright;
 using System.Globalization;
 using System.Text;
-using System.Text.Encodings.Web;
-using System.Text.Json;
 using System.Text.RegularExpressions;
 
 // gestion des emoticons
@@ -62,74 +60,26 @@ var groups = new IGroup[] {
     new MeetupGroup("rust-community-toulouse", "rust")
 };
 
-/****************************/
-/*   load events from YAML  */
-/****************************/
-static string ResolveRepoRoot(string startDir)
+/************************/
+/* find root directory  */
+/************************/
+var repoRoot = Directory.GetCurrentDirectory();
 {
-    var current = startDir;
+    var current = repoRoot;
     while (!string.IsNullOrEmpty(current))
     {
         if (Directory.Exists(Path.Combine(current, "_events")))
-            return current;
+            break;
 
         current = Directory.GetParent(current)?.FullName;
     }
 
-    return startDir;
+    repoRoot = current ?? repoRoot;
 }
 
-static Event? ParseEventFromYaml(string filePath)
-{
-    try
-    {
-        var lines = File.ReadAllLines(filePath);
-        if (lines.Length < 3 || lines[0] != "---")
-            return null;
-
-        var yamlEnd = Array.IndexOf(lines, "---", 1);
-        if (yamlEnd == -1)
-            return null;
-
-        var yaml = new Dictionary<string, string>();
-        for (int i = 1; i < yamlEnd; i++)
-        {
-            var line = lines[i];
-            var colonIndex = line.IndexOf(':');
-            if (colonIndex > 0)
-            {
-                var key = line.Substring(0, colonIndex).Trim();
-                var value = line.Substring(colonIndex + 1).Trim().Trim('"', '\'');
-                yaml[key] = value;
-            }
-        }
-
-        // Extract HTML content after second ---
-        var htmlContent = string.Join("\n", lines.Skip(yamlEnd + 1));
-
-        return new Event
-        {
-            Id = yaml.GetValueOrDefault("eventId", ""),
-            GroupId = yaml.GetValueOrDefault("groupId", ""),
-            Title = yaml.GetValueOrDefault("title", ""),
-            Group = yaml.GetValueOrDefault("community", ""),
-            Href = yaml.GetValueOrDefault("link", ""),
-            ImgSrc = yaml.GetValueOrDefault("img", ""),
-            VenueName = yaml.GetValueOrDefault("place", ""),
-            VenueAddr = yaml.GetValueOrDefault("placeAddr", ""),
-            Start = DateTimeOffset.TryParse(yaml.GetValueOrDefault("dateIso", ""), out var start) ? start : DateTimeOffset.MinValue,
-            PublishedOn = DateTimeOffset.TryParse(yaml.GetValueOrDefault("datePublished", ""), out var pub) ? pub : DateTimeOffset.MinValue,
-            HtmlDescription = htmlContent
-        };
-    }
-    catch (Exception ex)
-    {
-        Console.WriteLine($"⚠️ Erreur lors du parsing de {Path.GetFileName(filePath)}: {ex.Message}");
-        return null;
-    }
-}
-
-var repoRoot = ResolveRepoRoot(Directory.GetCurrentDirectory());
+/****************************/
+/*   load events from YAML  */
+/****************************/
 List<Event> knownEvts = [];
 {
     var eventsDir = Path.Combine(repoRoot, "_events");
@@ -143,6 +93,56 @@ List<Event> knownEvts = [];
                 knownEvts.Add(evt);
         }
         Console.WriteLine($"⚗️ {knownEvts.Count} événements lus depuis fichiers YAML");
+    }
+
+    static Event? ParseEventFromYaml(string filePath)
+    {
+        try
+        {
+            var lines = File.ReadAllLines(filePath);
+            if (lines.Length < 3 || lines[0] != "---")
+                return null;
+
+            var yamlEnd = Array.IndexOf(lines, "---", 1);
+            if (yamlEnd == -1)
+                return null;
+
+            var yaml = new Dictionary<string, string>();
+            for (int i = 1; i < yamlEnd; i++)
+            {
+                var line = lines[i];
+                var colonIndex = line.IndexOf(':');
+                if (colonIndex > 0)
+                {
+                    var key = line.Substring(0, colonIndex).Trim();
+                    var value = line.Substring(colonIndex + 1).Trim().Trim('"', '\'');
+                    yaml[key] = value;
+                }
+            }
+
+            // Extract HTML content after second ---
+            var htmlContent = string.Join("\n", lines.Skip(yamlEnd + 1));
+
+            return new Event
+            {
+                Id = yaml.GetValueOrDefault("eventId", ""),
+                GroupId = yaml.GetValueOrDefault("groupId", ""),
+                Title = yaml.GetValueOrDefault("title", ""),
+                Group = yaml.GetValueOrDefault("community", ""),
+                Href = yaml.GetValueOrDefault("link", ""),
+                ImgSrc = yaml.GetValueOrDefault("img", ""),
+                VenueName = yaml.GetValueOrDefault("place", ""),
+                VenueAddr = yaml.GetValueOrDefault("placeAddr", ""),
+                Start = DateTimeOffset.TryParse(yaml.GetValueOrDefault("dateIso", ""), out var start) ? start : DateTimeOffset.MinValue,
+                PublishedOn = DateTimeOffset.TryParse(yaml.GetValueOrDefault("datePublished", ""), out var pub) ? pub : DateTimeOffset.MinValue,
+                HtmlDescription = htmlContent
+            };
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"⚠️ Erreur lors du parsing de {Path.GetFileName(filePath)}: {ex.Message}");
+            return null;
+        }
     }
 }
 
@@ -169,18 +169,16 @@ List<Event> evts = [];
 
                 // téléchargement de l'image => event-imgs/YYYY-MM-DD-groupId-eventId.webp
                 // Mise à jour basée sur Last-Modified: télécharge si source plus récente que le fichier local
-                if (!string.IsNullOrEmpty(evt.ImgSrc) || !string.IsNullOrEmpty(evt.FullImgSrc))
+                if (!string.IsNullOrEmpty(evt.ImgSrc))
                 {
                     var fileNamePrefix = $"{evt.Start:yyyy-MM-dd}-{evt.GroupId}-{evt.Id}";
-                    var localImgPath = $"event-imgs/{fileNamePrefix}.webp";
-                    var imgPath = Path.Combine(repoRoot, localImgPath);
-                    var imgSource = evt.FullImgSrc ?? evt.ImgSrc;
+                    var localPath = Path.Combine(repoRoot, $"event-imgs/{fileNamePrefix}.webp");
+                    var imgUrl = evt.ImgSrc;
 
-                    if (imgSource != null)
+                    if (imgUrl != null)
                     {
-                        bool shouldDownload = false;
-
-                        if (!File.Exists(imgPath))
+                        var shouldDownload = false;
+                        if (!File.Exists(localPath))
                         {
                             shouldDownload = true;
                         }
@@ -189,7 +187,7 @@ List<Event> evts = [];
                             // Check if source image has been updated by comparing Last-Modified headers
                             try
                             {
-                                var headRequest = new HttpRequestMessage(HttpMethod.Head, imgSource);
+                                var headRequest = new HttpRequestMessage(HttpMethod.Head, imgUrl);
                                 var response = await http.SendAsync(headRequest);
 
                                 // Try to get Last-Modified from response headers (generic headers, not content-specific)
@@ -197,7 +195,7 @@ List<Event> evts = [];
                                 {
                                     if (DateTimeOffset.TryParse(lastModStr, out var remoteFileTime))
                                     {
-                                        var localFileTime = File.GetLastWriteTimeUtc(imgPath);
+                                        var localFileTime = File.GetLastWriteTimeUtc(localPath);
                                         shouldDownload = remoteFileTime.UtcDateTime > localFileTime;
                                     }
                                 }
@@ -211,8 +209,8 @@ List<Event> evts = [];
 
                         if (shouldDownload)
                         {
-                            Directory.CreateDirectory(Path.GetDirectoryName(imgPath)!);
-                            await File.WriteAllBytesAsync(imgPath, await http.GetByteArrayAsync(imgSource));
+                            Directory.CreateDirectory(Path.GetDirectoryName(localPath)!);
+                            await File.WriteAllBytesAsync(localPath, await http.GetByteArrayAsync(imgUrl));
                         }
                     }
                 }
@@ -241,13 +239,13 @@ List<Event> evts = [];
         foreach (var file in allHtmlFiles)
         {
             var filename = Path.GetFileName(file);
-            
+
             // Parse date from filename (YYYY-MM-DD-...)
             if (filename.Length >= 10 && DateOnly.TryParse(filename.Substring(0, 10), out var fileDate))
             {
                 // Convert DateOnly to DateTimeOffset for comparison
                 var fileDateOffset = new DateTimeOffset(fileDate.ToDateTime(TimeOnly.MinValue), FrenchLocales.ParisTimeZone.GetUtcOffset(DateTime.Now));
-                
+
                 if (fileDateOffset < oneYearAgo)
                 {
                     filesToArchive.Add(file);
@@ -259,25 +257,25 @@ List<Event> evts = [];
         {
             Directory.CreateDirectory(archiveDir);
             Console.WriteLine($"📦 Archivage de {filesToArchive.Count} fichiers HTML anciens :");
-            
+
             var eventImgsDir = Path.Combine(repoRoot, "event-imgs");
-            
+
             foreach (var file in filesToArchive)
             {
                 var filename = Path.GetFileName(file);
                 var destPath = Path.Combine(archiveDir, filename);
-                
+
                 // If file already exists in archive, delete it first
                 if (File.Exists(destPath))
                     File.Delete(destPath);
-                
+
                 File.Move(file, destPath);
                 Console.WriteLine($"📦 Archivé: {filename}");
-                
+
                 // Extract image filename prefix from HTML filename (remove .html/.skip extension)
                 // Image files now use the same naming convention: YYYY-MM-DD-groupId-eventId.*
                 var imageFilePrefix = filename.Replace(".html", "").Replace(".skip", "");
-                    
+
                 // Delete associated images in event-imgs/
                 if (Directory.Exists(eventImgsDir))
                 {
@@ -322,7 +320,7 @@ List<Event> evts = [];
         writer.WriteLine($"place: \"{(evt.VenueName ?? "").Replace("\\", "\\\\").Replace("\"", "\\\"")}\"");
         writer.WriteLine($"placeAddr: \"{(evt.VenueAddr ?? "").Replace("\\", "\\\\").Replace("\"", "\\\"")}\"");
         writer.WriteLine($"link: {evt.Href}");
-        writer.WriteLine($"img: {evt.FullImgSrc}");
+        writer.WriteLine($"img: {evt.ImgSrc}");
         writer.WriteLine("---");
         // Write HTML content
         if (evt.HtmlDescription != null)
@@ -637,7 +635,7 @@ partial class MeetupGroup : IGroup
         var imgs = evtPage.Locator("main aside img[fetchpriority='high'].object-center");
         if (await imgs.CountAsync() != 0)
         {
-            evt.FullImgSrc = await imgs.First.GetAttributeAsync("src");
+            evt.ImgSrc = await imgs.First.GetAttributeAsync("src");
         }
 
         var loc = evtPage.Locator("main section div.flex.flex-col.items-start.gap-ds2-16");
@@ -783,10 +781,6 @@ partial class ToulouseGameDevGroup : IGroup
 
 sealed class Event : IComparable<Event>
 {
-    private string? _smallImgSrc;
-
-    private string? _largeImgSrc;
-
     /// <summary>Id unique interne.</summary>
     public required string Id { get; set; }
 
@@ -801,17 +795,7 @@ sealed class Event : IComparable<Event>
     public required DateTimeOffset Start { get; set; }
 
     /// <summary>URL de l'image par défaut de l'évènement.</summary>
-    public required string? ImgSrc
-    {
-        get => _smallImgSrc;
-        set
-        {
-            if (_smallImgSrc != value)
-            {
-                _smallImgSrc = value;
-            }
-        }
-    }
+    public required string? ImgSrc { get; set; }
 
     /// <summary>Nom public du groupe.</summary>
     public required string Group { get; set; }
@@ -827,19 +811,6 @@ sealed class Event : IComparable<Event>
 
     /// <summary>Durée de l'évènement si dispo.</summary>
     public TimeSpan? Duration { get; set; }
-
-    /// <summary>URL de l'image de grande taille associée, si dispo en plus de l'image par défaut <see cref="ImgSrc"/>.</summary>
-    public string? FullImgSrc
-    {
-        get => _largeImgSrc;
-        set
-        {
-            if (_largeImgSrc != value)
-            {
-                _largeImgSrc = value;
-            }
-        }
-    }
 
     /// <summary>Description HTML de l'évènement.</summary>
     public string? HtmlDescription { get; set; }
@@ -877,27 +848,4 @@ static class FrenchLocales
     public static readonly TimeZoneInfo ParisTimeZone = TimeZoneInfo.FromSerializedString("Romance Standard Time;60;(UTC+01:00) Brussels, Copenhagen, Madrid, Paris;Romance Standard Time;Romance Daylight Time;[01:01:0001;12:31:9999;60;[0;02:00:00;3;5;0;];[0;03:00:00;10;5;0;];];");
 
     public static DateTimeOffset ParisNow => TimeZoneInfo.ConvertTime(DateTimeOffset.UtcNow, ParisTimeZone);
-}
-
-static class Extensions
-{
-    public static IEnumerable<T> AppendIf<T>(this IEnumerable<T> @this, Func<bool> predicate, T obj)
-    {
-        if (!predicate())
-        {
-            return @this;
-        }
-
-        return @this.Append(obj);
-    }
-
-    public static IEnumerable<T> AppendIf<T>(this IEnumerable<T> @this, Func<bool> predicate, Func<T> obj)
-    {
-        if (!predicate())
-        {
-            return @this;
-        }
-
-        return @this.Append(obj());
-    }
 }
