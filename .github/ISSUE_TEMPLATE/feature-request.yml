@@ -1,7 +1,7 @@
 name: 💡 Suggestion d'amélioration
 description: Proposer une nouvelle fonctionnalité ou amélioration
 title: "[Feature] "
-labels: ["enhancement"]
+labels: ["💡 suggestion"]
 body:
   - type: markdown
     attributes:

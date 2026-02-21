@@ -521,7 +521,7 @@ The project uses GitHub Issue Forms (YAML templates) to streamline contributions
 - **Simplified:** 2 fields only for accessibility
 
 **5. Feature Request** (`.github/ISSUE_TEMPLATE/feature-request.yml`)
-- **Label:** None (no matching GitHub label)
+- **Label:** 💡 suggestion
 - **Purpose:** Suggest new features or improvements
 - **Fields:** Description (required), Contribution checkbox (optional)
 - **Simplified:** 1 main field for accessibility
