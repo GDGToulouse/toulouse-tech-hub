@@ -2,18 +2,7 @@
 <div class="row row-cols-1 row-cols-md-2 row-cols-xxl-3 g-4 my-3">
 {% assign groups_by_name = site.groups | sort: "name" %}
 {% for group in groups_by_name %}
-{%- capture gradient_class -%}
-  {%- if group.slug == "gdg" -%}community-gdg
-  {%- elsif group.slug == "mtg" -%}community-mtg
-  {%- elsif group.slug == "agile" -%}community-agile
-  {%- elsif group.slug == "tgd" or group.name == "Toulouse Game Dev" -%}community-tgd
-  {%- elsif group.slug == "ruby" -%}community-ruby
-  {%- elsif group.slug == "jug" -%}community-jug
-  {%- elsif group.slug == "python" -%}community-python
-  {%- elsif group.slug == "js-and-co" -%}community-js
-  {%- else -%}community-default
-  {%- endif -%}
-{%- endcapture -%}
+{%- capture gradient_class -%}community-{{ group.slug }}{%- endcapture -%}
 <div class="col">
   {%- assign group_img_url = "" -%}
   {%- if group.img -%}
