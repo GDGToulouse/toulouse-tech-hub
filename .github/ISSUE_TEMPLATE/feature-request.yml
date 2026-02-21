@@ -6,54 +6,21 @@ body:
   - type: markdown
     attributes:
       value: |
-        Partagez votre idée pour améliorer le Toulouse Tech Hub !
+        Une idée pour améliorer le site ? On est tout ouïe ! 👂
 
   - type: textarea
-    id: problem
+    id: description
     attributes:
-      label: Problème ou besoin
-      description: Décrivez le problème que cette fonctionnalité résoudrait
+      label: Votre idée
+      description: Décrivez librement votre suggestion. Pas besoin de formalisme, expliquez juste ce qui serait cool d'avoir !
       placeholder: |
-        En tant qu'utilisateur/organisateur, j'aimerais...
-        Actuellement, il est difficile de...
-    validations:
-      required: true
-
-  - type: textarea
-    id: solution
-    attributes:
-      label: Solution proposée
-      description: Décrivez comment vous imaginez la fonctionnalité
-      placeholder: |
-        Il serait utile d'avoir...
-        Ça pourrait fonctionner comme...
-    validations:
-      required: true
-
-  - type: textarea
-    id: alternatives
-    attributes:
-      label: Alternatives envisagées (optionnel)
-      description: Avez-vous pensé à d'autres façons de résoudre ce problème ?
-      placeholder: Une autre approche pourrait être...
-
-  - type: textarea
-    id: examples
-    attributes:
-      label: Exemples ou références (optionnel)
-      description: Des sites similaires qui font cela bien ?
-      placeholder: |
-        Par exemple, le site X fait...
-        https://example.com
-
-  - type: dropdown
-    id: priority
-    attributes:
-      label: Importance pour vous
-      options:
-        - Critique (bloquant)
-        - Important (amélioration significative)
-        - Nice to have (amélioration mineure)
+        Exemple :
+        - Ce serait super d'avoir un filtre par type de techno (JavaScript, Python, etc.)
+        - J'aimerais pouvoir m'abonner uniquement aux événements d'une communauté spécifique
+        - Une carte interactive avec les lieux des événements serait pratique
+        - Ajouter un mode sombre pour le site
+        
+        N'hésitez pas à mentionner des exemples de sites qui font ça bien si vous en connaissez !
     validations:
       required: true
 
@@ -62,4 +29,4 @@ body:
     attributes:
       label: Contribution
       options:
-        - label: Je suis prêt(e) à contribuer au développement de cette fonctionnalité
+        - label: Je peux contribuer au développement si besoin

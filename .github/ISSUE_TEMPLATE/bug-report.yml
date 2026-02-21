@@ -6,53 +6,24 @@ body:
   - type: markdown
     attributes:
       value: |
-        Merci de prendre le temps de signaler ce bug !
-
-  - type: dropdown
-    id: bug-type
-    attributes:
-      label: Type de problème
-      options:
-        - Événement incorrect ou manquant
-        - Informations de communauté incorrectes
-        - Lien cassé
-        - Problème d'affichage
-        - Autre
-    validations:
-      required: true
+        Décrivez simplement ce qui ne va pas, on s'occupe du reste ! 👍
 
   - type: textarea
     id: description
     attributes:
-      label: Description du problème
-      description: Décrivez le bug de manière claire et concise
-      placeholder: Qu'est-ce qui ne fonctionne pas comme attendu ?
+      label: Quel est le problème ?
+      description: Expliquez ce qui ne fonctionne pas. N'hésitez pas à ajouter des captures d'écran en les glissant-déposant ici.
+      placeholder: |
+        Exemple :
+        - L'événement "Python Meetup" du 15 mars n'apparaît pas sur le calendrier
+        - Le lien vers la page Meetup de GDG Toulouse est cassé
+        - Le logo de la communauté Rust n'apparaît pas sur mobile
+        - Il manque une communauté dans la liste : ...
     validations:
       required: true
 
   - type: input
     id: url
     attributes:
-      label: URL concernée (si applicable)
-      description: Lien vers la page où le problème apparaît
+      label: Lien concerné (si applicable)
       placeholder: https://toulouse-tech-hub.fr/...
-
-  - type: textarea
-    id: expected
-    attributes:
-      label: Comportement attendu
-      description: Qu'est-ce qui devrait se passer ?
-      placeholder: Je m'attendais à voir...
-
-  - type: textarea
-    id: screenshots
-    attributes:
-      label: Captures d'écran (optionnel)
-      description: Si applicable, ajoutez des captures d'écran pour illustrer le problème
-      placeholder: Glissez-déposez vos images ici
-
-  - type: input
-    id: browser
-    attributes:
-      label: Navigateur (si problème d'affichage)
-      placeholder: ex. Chrome 120, Firefox 121, Safari 17
