@@ -1,7 +1,7 @@
 name: 🐛 Signaler un bug
 description: Signaler une erreur sur le site ou dans les données
 title: "[Bug] "
-labels: ["bug"]
+labels: ["🐞 erreur"]
 body:
   - type: markdown
     attributes:

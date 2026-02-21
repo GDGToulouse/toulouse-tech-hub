@@ -1,7 +1,7 @@
 name: 📅 Ajouter un événement
 description: Proposer l'ajout d'un événement tech à venir
 title: "[Event] "
-labels: ["event"]
+labels: ["📅 évènement"]
 body:
   - type: markdown
     attributes:

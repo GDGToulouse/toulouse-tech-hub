@@ -1,7 +1,7 @@
 name: 🏘️ Ajouter une communauté
 description: Proposer l'ajout d'une nouvelle communauté tech toulousaine au site
 title: "[Community] "
-labels: ["community", "enhancement"]
+labels: ["🧑‍💻 communauté"]
 body:
   - type: markdown
     attributes:
