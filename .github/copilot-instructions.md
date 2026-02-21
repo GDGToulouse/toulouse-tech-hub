@@ -129,12 +129,14 @@ description: |
 social:
   - icon: bi-globe
     url: https://website.com
+    title: "Site Web"
   - icon: bi-twitter-x
     url: https://x.com/handle
+    title: "Page X / Twitter"
 ---
 ```
 
-**Note:** `social` array uses simplified format with `icon` (Bootstrap class) and `url` only. No `id` field (slug is derived from filename).
+**Note:** `social` array uses `icon` (Bootstrap class), `url`, and `title`. No `id` field (slug is derived from filename).
 
 ### Adding a New Conference
 Create a markdown file in `_confs/` named `{conference-slug}.md`:

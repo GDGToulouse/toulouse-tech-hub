@@ -55,17 +55,18 @@ Si `social-links` est renseigné, ajouter au front matter :
 social:
   - icon: bi-{type}
     url: {url}
+    title: "{Title}"
 ```
 
-Mapping des types sociaux (icon Bootstrap) :
-- `website` → `bi-globe`
-- `twitter` → `bi-twitter-x`
-- `linkedin` → `bi-linkedin`
-- `github` → `bi-github`
-- `youtube` → `bi-youtube`
-- `discord` → `bi-discord`
-- `slack` → `bi-slack`
-- `mastodon` → `bi-mastodon`
+Mapping des types sociaux (icon Bootstrap et titre) :
+- `website` → `bi-globe` (title: "Site Web")
+- `twitter` → `bi-twitter-x` (title: "Page X / Twitter")
+- `linkedin` → `bi-linkedin` (title: "Page LinkedIn")
+- `github` → `bi-github` (title: "GitHub")
+- `youtube` → `bi-youtube` (title: "YouTube")
+- `discord` → `bi-discord` (title: "Discord")
+- `slack` → `bi-slack` (title: "Slack")
+- `mastodon` → `bi-mastodon` (title: "Mastodon")
 
 ### 3. Ajouter dans `.github/workflows/update.cs` (si Meetup)
 
