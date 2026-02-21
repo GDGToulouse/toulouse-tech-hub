@@ -50,6 +50,14 @@ Votre communauté tech toulousaine n'est pas encore listée ?
 
 Remplissez simplement le formulaire avec les informations de votre communauté (nom, site web, description). Si vous avez une page Meetup, les événements seront automatiquement synchronisés !
 
+### Ajouter une conférence
+
+Vous organisez une conférence tech annuelle ou régulière à Toulouse ?
+
+👉 [Créez une issue "Ajouter une conférence"](https://github.com/GDGToulouse/toulouse-tech-hub/issues/new?template=add-conference.yml)
+
+Les conférences apparaissent dans la section spéciale des grands événements annuels (DevFest, PGDay, Capitole du Libre, etc.).
+
 ### Ajouter un événement ponctuel
 
 Vous organisez un événement tech qui n'est pas sur Meetup ou qui nécessite une annonce spéciale ?

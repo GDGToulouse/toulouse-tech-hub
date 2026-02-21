@@ -487,6 +487,77 @@ This reduces template logic and makes icon codes visible in YAML data
 - Dates use `{{ conf.date | date: "%d %B %Y" }}` format for display
 - Date-range support: if `end` field exists, display as "01 Jan - 02 Jan"
 
+## GitHub Issue Templates
+
+The project uses GitHub Issue Forms (YAML templates) to streamline contributions. Each template has an associated Copilot workflow guide for automated processing.
+
+### Available Templates
+
+**1. Add Community** (`.github/ISSUE_TEMPLATE/add-community.yml`)
+- **Label:** 🧑‍💻 communauté
+- **Purpose:** Add a new tech community to the site
+- **Workflow Guide:** `.github/COPILOT_COMMUNITY_WORKFLOW.md`
+- **Auto-detection:** If community URL is a Meetup page, automatically extract slug and add to `update.cs` for event sync
+- **Files created:** `_groups/{slug}.md`, `groups-imgs/{slug}.jpg` (optional)
+
+**2. Add Conference** (`.github/ISSUE_TEMPLATE/add-conference.yml`)
+- **Label:** 📢 conférence
+- **Purpose:** Add an annual/recurring tech conference
+- **Workflow Guide:** `.github/COPILOT_CONFERENCE_WORKFLOW.md`
+- **Examples:** DevFest, PGDay, Capitole du Libre, Agile Tour
+- **Files created:** `_confs/{slug}.md`, `confs-imgs/{slug}.jpg` (optional)
+
+**3. Add Event** (`.github/ISSUE_TEMPLATE/add-event.yml`)
+- **Label:** 📅 évènement
+- **Purpose:** Add a one-time event (not auto-synced from Meetup)
+- **Workflow Guide:** `.github/COPILOT_EVENT_WORKFLOW.md`
+- **EventId format:** `manual-{unix-timestamp}`
+- **Files created:** `_events/{date}-{slug}-{eventId}.html`, `event-imgs/` (optional)
+
+**4. Bug Report** (`.github/ISSUE_TEMPLATE/bug-report.yml`)
+- **Label:** 🐞 erreur
+- **Purpose:** Report errors (missing event, broken link, incorrect info)
+- **Fields:** Description (required), URL (optional)
+- **Simplified:** 2 fields only for accessibility
+
+**5. Feature Request** (`.github/ISSUE_TEMPLATE/feature-request.yml`)
+- **Label:** None (no matching GitHub label)
+- **Purpose:** Suggest new features or improvements
+- **Fields:** Description (required), Contribution checkbox (optional)
+- **Simplified:** 1 main field for accessibility
+
+### Template Design Principles
+
+- **Simplified forms:** 1-3 required fields to reduce friction (user feedback: "ne pas rendre le process trop complexe")
+- **Casual tone:** Friendly French with emojis ("Décrivez simplement ce qui ne va pas, on s'occupe du reste ! 👍")
+- **Auto-detection:** Extract structured data from URLs (e.g., Meetup slug from URL)
+- **Validation checkboxes:** Ensure data quality (e.g., "J'ai vérifié qu'elle n'est pas déjà listée")
+- **GitHub labels:** Use existing labels with emojis (🧑‍💻, 📢, 📅, 🐞)
+
+### Processing Workflow
+
+**Community Addition:**
+1. Extract fields from issue
+2. Create `_groups/{slug}.md` with front matter
+3. If Meetup URL detected, add to `update.cs`
+4. Download and convert logo to JPG
+5. Create PR with template
+
+**Conference Addition:**
+1. Extract fields from issue
+2. Create `_confs/{slug}.md` with front matter
+3. Download and convert logo to JPG
+4. Validate date format (YYYY-MM-DD)
+5. Create PR with template
+
+**Event Addition:**
+1. Extract fields from issue
+2. Map community name to slug (20 communities table)
+3. Generate `manual-{timestamp}` eventId
+4. Format dates: dateIso, dateFr, timeFr
+5. Create `_events/{date}-{slug}-{eventId}.html`
+6. Create PR with template
+
 ## Git Workflow
 
 ### Development Process

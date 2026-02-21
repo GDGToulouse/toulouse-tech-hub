@@ -1,0 +1,107 @@
+name: 📢 Ajouter une conférence
+description: Proposer l'ajout d'une conférence tech toulousaine annuelle
+title: "[Conference] "
+labels: ["📢 conférence"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Merci de vouloir ajouter une conférence au Toulouse Tech Hub ! 
+        
+        Les conférences sont des événements tech annuels ou réguliers organisés à Toulouse.
+        Exemples : DevFest, Capitole du Libre, PGDay, Agile Tour, etc.
+        
+        **Note :** Pour un événement ponctuel (meetup, workshop unique), utilisez plutôt le template "Ajouter un événement".
+
+  - type: input
+    id: conference-name
+    attributes:
+      label: Nom de la conférence
+      description: Le nom complet de la conférence
+      placeholder: ex. DevFest Toulouse, PGDay Toulouse, Capitole du Libre
+    validations:
+      required: true
+
+  - type: input
+    id: conference-slug
+    attributes:
+      label: Identifiant unique (slug)
+      description: Identifiant court en minuscules, sans espaces (utilisé dans l'URL et le nom de fichier)
+      placeholder: ex. devfest, pgday, capitole-du-libre
+    validations:
+      required: true
+
+  - type: input
+    id: conference-url
+    attributes:
+      label: Site web de la conférence
+      description: URL du site officiel
+      placeholder: https://example.com
+    validations:
+      required: false
+
+  - type: input
+    id: conference-date
+    attributes:
+      label: Date de la prochaine édition
+      description: Au format AAAA-MM-JJ (optionnel)
+      placeholder: 2026-10-15
+    validations:
+      required: false
+
+  - type: input
+    id: conference-end-date
+    attributes:
+      label: Date de fin (si plusieurs jours)
+      description: Au format AAAA-MM-JJ (optionnel)
+      placeholder: 2026-10-16
+    validations:
+      required: false
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Courte description de la conférence (thématiques, public cible, format)
+      placeholder: |
+        Conférence annuelle de la communauté Google Developers Group Toulouse.
+        Deux jours de conférences et ateliers sur le web, le mobile, le cloud et l'IA.
+    validations:
+      required: true
+
+  - type: input
+    id: logo-url
+    attributes:
+      label: Logo (URL)
+      description: URL du logo de la conférence (format JPG, PNG ou WebP recommandé)
+      placeholder: https://example.com/logo.png
+    validations:
+      required: false
+
+  - type: textarea
+    id: social-links
+    attributes:
+      label: Réseaux sociaux et liens complémentaires
+      description: |
+        Listez les liens vers les réseaux sociaux, chaîne YouTube, etc.
+        Un lien par ligne, format : `Type: URL`
+      placeholder: |
+        Site web: https://devfesttoulouse.fr/
+        LinkedIn: https://www.linkedin.com/company/devfesttoulous
+        X/Twitter: https://twitter.com/devfesttoulouse
+        YouTube: https://www.youtube.com/channel/...
+        Bluesky: https://bsky.app/profile/...
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Conditions
+      options:
+        - label: La conférence est bien une conférence tech annuelle/régulière toulousaine
+          required: true
+        - label: J'ai vérifié qu'elle n'est pas déjà listée sur le site
+          required: true
+        - label: Les informations fournies sont exactes et à jour
+          required: true
