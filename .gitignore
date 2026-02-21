@@ -1,6 +1,25 @@
+# C# / .NET
 bin/
 obj/
 .vs/
-screen*.jpg
+
+# Jekyll
 _site/
+.jekyll-cache/
+.jekyll-metadata
+
+# Gemfile lock (Ruby dependencies)
+Gemfile.lock
+
+# IDE / Editor
+.vscode/
+*.swp
+*.swo
+
+# Screenshots / Temporary files
+screen*.jpg
 AI_PLAN.md
+
+# OS
+.DS_Store
+Thumbs.db
