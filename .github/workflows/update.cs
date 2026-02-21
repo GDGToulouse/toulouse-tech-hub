@@ -284,9 +284,9 @@ List<Event> evts = [];
 
     if (Directory.Exists(eventsDir))
     {
-        // Find all .html and .html.skip files
+        // Find all .html files and .html.skip files
         var allHtmlFiles = Directory.GetFiles(eventsDir, "*.html")
-            .Concat(Directory.GetFiles(eventsDir, "*.skip"))
+            .Concat(Directory.GetFiles(eventsDir, "*.html.skip"))
             .ToList();
 
         var filesToArchive = new List<string>();
@@ -924,13 +924,21 @@ sealed class Event : IComparable<Event>
     /// <summary>Set LocalImgSrc using a filename prefix (typically YYYY-MM-DD-groupId-eventId)</summary>
     public void SetLocalImgSrcWithNamePrefix(string prefix)
     {
-        if (!string.IsNullOrEmpty(_largeImgSrc))
+        try
         {
-            LocalImgSrc = $"event-imgs/{prefix}{Path.GetExtension(new Uri(_largeImgSrc).AbsolutePath)}";
+            if (!string.IsNullOrEmpty(_largeImgSrc))
+            {
+                LocalImgSrc = $"event-imgs/{prefix}{Path.GetExtension(new Uri(_largeImgSrc).AbsolutePath)}";
+            }
+            else if (!string.IsNullOrEmpty(_smallImgSrc))
+            {
+                LocalImgSrc = $"event-imgs/{prefix}{Path.GetExtension(new Uri(_smallImgSrc).AbsolutePath)}";
+            }
         }
-        else if (!string.IsNullOrEmpty(_smallImgSrc))
+        catch
         {
-            LocalImgSrc = $"event-imgs/{prefix}{Path.GetExtension(new Uri(_smallImgSrc).AbsolutePath)}";
+            // Invalid URL format - skip image handling for this event
+            LocalImgSrc = null;
         }
     }
 
