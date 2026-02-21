@@ -116,27 +116,25 @@ img: https://example.com/image.jpg
 - Use `eventId` not `id` (Jekyll reserves `.id` for collection URLs)
 - Always use double quotes for string values (handles special chars like `:`)
 - `groupId` is used to compute image path and group association
-- Image path is automatically computed: no need for `localImg` fieldEvent description in HTML format</p>
-```
+- Image path is automatically computed: no need for `localImg` field
 
 ### Adding a New Community
 Create a markdown file in `_groups/` named `{community-slug}.md`:
 ```yaml
 ---
-id: slug
 name: Full Name
 url: https://website.com
 description: |
   <p>HTML description</p>
 social:
   - icon: bi-globe
-    url: https://example.com
-    title: Website
+    url: https://website.com
   - icon: bi-twitter-x
     url: https://x.com/handle
-    title: Page X / Twitter
 ---
 ```
+
+**Note:** `social` array uses simplified format with `icon` (Bootstrap class) and `url` only. No `id` field (slug is derived from filename).
 
 ### Adding a New Conference
 Create a markdown file in `_confs/` named `{conference-slug}.md`:
