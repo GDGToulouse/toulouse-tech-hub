@@ -106,6 +106,17 @@ List<Event> knownEvts = [];
                 evt.PublishedOn = evt.Start.AddMonths(-1);
             }
         }
+
+        // Re-calculate LocalImgSrc for all events to use the filename prefix
+        // This makes it easier to connect images with their corresponding event files
+        foreach (var evt in knownEvts)
+        {
+            if (!string.IsNullOrEmpty(evt.ImgSrc) || !string.IsNullOrEmpty(evt.FullImgSrc))
+            {
+                var fileNamePrefix = $"{evt.Start:yyyy-MM-dd}-{evt.GroupId}-{evt.Id}";
+                evt.SetLocalImgSrcWithNamePrefix(fileNamePrefix);
+            }
+        }
     }
 }
 
@@ -316,28 +327,18 @@ List<Event> evts = [];
                 File.Move(file, destPath);
                 Console.WriteLine($"📦 Archivé: {filename}");
                 
-                // Extract event ID from filename (format: YYYY-MM-DD-groupId-eventId.html)
-                // Get everything after the second dash (after the date)
-                var parts = filename.Split('-');
-                if (parts.Length >= 4)
-                {
-                    // Join all parts from index 3 onwards, removing .html/.skip extension
-                    var eventId = string.Join('-', parts.Skip(3));
-                    if (eventId.EndsWith(".html"))
-                        eventId = eventId.Substring(0, eventId.Length - 5);
-                    else if (eventId.EndsWith(".skip"))
-                        eventId = eventId.Substring(0, eventId.Length - 5);
+                // Extract image filename prefix from HTML filename (remove .html/.skip extension)
+                // Image files now use the same naming convention: YYYY-MM-DD-groupId-eventId.*
+                var imageFilePrefix = filename.Replace(".html", "").Replace(".skip", "");
                     
-                    // Delete associated images in event-imgs/
-                    if (Directory.Exists(eventImgsDir))
+                // Delete associated images in event-imgs/
+                if (Directory.Exists(eventImgsDir))
+                {
+                    var imagesToDelete = Directory.GetFiles(eventImgsDir, imageFilePrefix + ".*");
+                    foreach (var imgFile in imagesToDelete)
                     {
-                        var imagePattern = eventId + ".*";
-                        var imagesToDelete = Directory.GetFiles(eventImgsDir, imagePattern);
-                        foreach (var imgFile in imagesToDelete)
-                        {
-                            File.Delete(imgFile);
-                            Console.WriteLine($"🗑️ Image supprimée: {Path.GetFileName(imgFile)}");
-                        }
+                        File.Delete(imgFile);
+                        Console.WriteLine($"🗑️ Image supprimée: {Path.GetFileName(imgFile)}");
                     }
                 }
             }
@@ -353,11 +354,15 @@ List<Event> evts = [];
     Directory.CreateDirectory(eventsDir);
     foreach (var evt in knownEvts.Where(e => e.Start >= DateTime.Today).OrderBy(e => e.Start).ThenBy(e => e.Id))
     {
-        var fileName = Path.Combine(eventsDir, $"{evt.Start:yyyy-MM-dd}-{evt.GroupId}-{evt.Id}.html");
+        var fileNamePrefix = $"{evt.Start:yyyy-MM-dd}-{evt.GroupId}-{evt.Id}";
+        var fileName = Path.Combine(eventsDir, $"{fileNamePrefix}.html");
 
         // on ignore tous les évènements marqués comme "skip"
         if (File.Exists(fileName + ".skip"))
             continue;
+
+        // Ensure LocalImgSrc uses the same naming convention as the HTML file
+        evt.SetLocalImgSrcWithNamePrefix(fileNamePrefix);
 
         using var writer = new StreamWriter(fileName);
         // Write YAML front matter
@@ -852,6 +857,7 @@ sealed class Event : IComparable<Event>
     public required DateTimeOffset Start { get; set; }
 
     /// <summary>URL de l'image par défaut de l'évènement.</summary>
+    /// <remarks>LocalImgSrc will be computed using SetLocalImgSrcWithNamePrefix() with the filename prefix</remarks>
     public required string? ImgSrc
     {
         get => _smallImgSrc;
@@ -860,8 +866,7 @@ sealed class Event : IComparable<Event>
             if (_smallImgSrc != value)
             {
                 _smallImgSrc = value;
-                if (_smallImgSrc != null)
-                    LocalImgSrc = $"event-imgs/{Id}{Path.GetExtension(new Uri(_smallImgSrc).AbsolutePath)}";
+                // Note: LocalImgSrc will be set properly using SetLocalImgSrcWithNamePrefix() with the filename prefix
             }
         }
     }
@@ -882,6 +887,7 @@ sealed class Event : IComparable<Event>
     public TimeSpan? Duration { get; set; }
 
     /// <summary>URL de l'image de grande taille associée, si dispo en plus de l'image par défaut <see cref="ImgSrc"/>.</summary>
+    /// <remarks>LocalImgSrc will be computed using SetLocalImgSrcWithNamePrefix() with the filename prefix</remarks>
     public string? FullImgSrc
     {
         get => _largeImgSrc;
@@ -890,8 +896,7 @@ sealed class Event : IComparable<Event>
             if (_largeImgSrc != value)
             {
                 _largeImgSrc = value;
-                if (_largeImgSrc != null)
-                    LocalImgSrc = $"event-imgs/{Id}{Path.GetExtension(new Uri(_largeImgSrc).AbsolutePath)}";
+                // Note: LocalImgSrc will be set properly using SetLocalImgSrcWithNamePrefix() with the filename prefix
             }
         }
     }
@@ -915,6 +920,19 @@ sealed class Event : IComparable<Event>
 
     /// <summary>URL du fichier local contenant l'image de l'évènement.</summary>
     public string? LocalImgSrc { get; set; }
+
+    /// <summary>Set LocalImgSrc using a filename prefix (typically YYYY-MM-DD-groupId-eventId)</summary>
+    public void SetLocalImgSrcWithNamePrefix(string prefix)
+    {
+        if (!string.IsNullOrEmpty(_largeImgSrc))
+        {
+            LocalImgSrc = $"event-imgs/{prefix}{Path.GetExtension(new Uri(_largeImgSrc).AbsolutePath)}";
+        }
+        else if (!string.IsNullOrEmpty(_smallImgSrc))
+        {
+            LocalImgSrc = $"event-imgs/{prefix}{Path.GetExtension(new Uri(_smallImgSrc).AbsolutePath)}";
+        }
+    }
 
     public int CompareTo(Event? other)
     {
