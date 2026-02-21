@@ -2,14 +2,14 @@
 #:property TargetFramework=net10.0
 #:property ImplicitUsings=enable
 #:property Nullable=enable
-
 #:property PublishTrimmed=false
+#:property PublishAot=false
 #:property EnableTrimAnalyzer=false
+
 #:package Microsoft.Playwright@1.50.0
 #:package System.Linq.Async@6.0.1
 
 using Microsoft.Playwright;
-using System.Diagnostics;
 using System.Globalization;
 using System.Text;
 using System.Text.Encodings.Web;
@@ -65,7 +65,21 @@ var groups = new IGroup[] {
 /****************************/
 /*   load events-job.json   */
 /****************************/
-var repoRoot = Directory.GetCurrentDirectory();
+static string ResolveRepoRoot(string startDir)
+{
+    var current = startDir;
+    while (!string.IsNullOrEmpty(current))
+    {
+        if (File.Exists(Path.Combine(current, "events-job.json")))
+            return current;
+
+        current = Directory.GetParent(current)?.FullName;
+    }
+
+    return startDir;
+}
+
+var repoRoot = ResolveRepoRoot(Directory.GetCurrentDirectory());
 var jsonPath = Path.Combine(repoRoot, "events-job.json");
 List<Event> knownEvts = [];
 {
@@ -117,17 +131,50 @@ List<Event> evts = [];
                 evts.Add(evt);
 
                 // téléchargement de l'image => event-imgs/meetup-xxx.webp
-                // TODO : gérer le cas d'images mises à jour ??
+                // Mise à jour basée sur Last-Modified: télécharge si source plus récente que le fichier local
                 if (evt.LocalImgSrc != null)
                 {
                     var imgPath = Path.Combine(repoRoot, evt.LocalImgSrc);
-                    if (!File.Exists(imgPath) && (evt.FullImgSrc != null || evt.ImgSrc != null))
+                    var imgSource = evt.FullImgSrc ?? evt.ImgSrc;
+
+                    if (imgSource != null)
                     {
-                        Directory.CreateDirectory(Path.GetDirectoryName(imgPath)!);
-                        if (evt.FullImgSrc != null)
-                            await File.WriteAllBytesAsync(imgPath, await http.GetByteArrayAsync(evt.FullImgSrc));
-                        else if (evt.ImgSrc != null)
-                            await File.WriteAllBytesAsync(imgPath, await http.GetByteArrayAsync(evt.ImgSrc));
+                        bool shouldDownload = false;
+
+                        if (!File.Exists(imgPath))
+                        {
+                            shouldDownload = true;
+                        }
+                        else
+                        {
+                            // Check if source image has been updated by comparing Last-Modified headers
+                            try
+                            {
+                                var headRequest = new HttpRequestMessage(HttpMethod.Head, imgSource);
+                                var response = await http.SendAsync(headRequest);
+
+                                // Try to get Last-Modified from response headers (generic headers, not content-specific)
+                                if (response.Headers.TryGetValues("Last-Modified", out var lastModifiedValues) && lastModifiedValues.FirstOrDefault() is string lastModStr)
+                                {
+                                    if (DateTimeOffset.TryParse(lastModStr, out var remoteFileTime))
+                                    {
+                                        var localFileTime = File.GetLastWriteTimeUtc(imgPath);
+                                        shouldDownload = remoteFileTime.UtcDateTime > localFileTime;
+                                    }
+                                }
+                            }
+                            catch
+                            {
+                                // If we can't determine modification time, don't update to avoid unnecessary downloads
+                                shouldDownload = false;
+                            }
+                        }
+
+                        if (shouldDownload)
+                        {
+                            Directory.CreateDirectory(Path.GetDirectoryName(imgPath)!);
+                            await File.WriteAllBytesAsync(imgPath, await http.GetByteArrayAsync(imgSource));
+                        }
                     }
                 }
             }
@@ -184,7 +231,8 @@ List<Event> evts = [];
             }
         }
 
-#pragma warning disable CA1869 // Cache and reuse 'JsonSerializerOptions' instances : ce code ne s'exécute qu'une seule fois
+#pragma warning disable CA1869 // Cache and reuse 'JsonSerializerOptions' instances
+        // Note: This block executes once per workflow run. JsonSerializerOptions allocation is acceptable here.
         var json = JsonSerializer.Serialize(knownEvts, new JsonSerializerOptions
         {
             WriteIndented = true,
@@ -429,7 +477,11 @@ partial class MeetupGroup : IGroup
         var timeAttr = await timeElt.GetAttributeAsync("datetime") ?? string.Empty;
         var regexMatch = false;
 
-        if (timeAttr.Length >= 25 && DateTimeOffset.TryParse(timeAttr.Substring(0, 25), out var time))
+        // Extract datetime before optional [Europe/Paris] suffix
+        var bracketIndex = timeAttr.IndexOf('[');
+        var coreTimeAttr = bracketIndex >= 0 ? timeAttr[..bracketIndex].Trim() : timeAttr;
+
+        if (coreTimeAttr.Length > 0 && DateTimeOffset.TryParse(coreTimeAttr, out var time))
         {
             // success
             if (timeAttr.EndsWith("[Europe/Paris]") && !FrenchLocales.ParisTimeZone.IsDaylightSavingTime(time))
@@ -626,8 +678,6 @@ partial class ToulouseGameDevGroup : IGroup
                 {
                     var text = await paragraph.InnerTextAsync();
 
-                    text = text.Replace("Mars2025", "Mars 2025"); // HACK fix erreur de date sur évènement mars 2025
-
                     // Jeudi 17 Avril 2025: 18h30-22h30 => OK [ "Jeudi", "17", "Avril", "2025" "18h30-22h30" ]
                     // Mardi 21 Janvier 2024 : 18h30-22h30 => OK [ "Mardi", "21", "Janvier", "2024", ":", "18h30-22h30" ]
                     // Jeudi 12 Décembre 2024 : 18h30-22h30 => OK
@@ -636,8 +686,6 @@ partial class ToulouseGameDevGroup : IGroup
 
                     // [ "Mardi", "21", "Janvier", "2024" ]
                     var datePart = string.Join(' ', words.Take(4));
-
-                    datePart = datePart.Replace("2024", "2025"); // HACK fix erreur de date sur évènement de janvier 2025
 
                     if (DateTimeOffset.TryParseExact(datePart.ToLowerInvariant(), "dddd dd MMMM yyyy", FrenchLocales.FrenchCultureInfo, DateTimeStyles.AssumeLocal, out var dateOnly))
                     {
