@@ -1,0 +1,96 @@
+<!-- ics / atom / json -->
+<div class="row justify-content-center">
+  <div class="my-2 col-lg-4 col-md-8">
+    <div class="input-group">
+      <span class="input-group-text"><i class="bi bi-calendar2-week"></i>&nbsp;iCal</span>
+      <input id="icsInput" type="text" value="{{ site.site }}{{ site.baseurl }}/events.ics" data-url="{{ site.site }}{{ site.baseurl }}/events.ics" readonly class="form-control" style="background-color:#fff" onfocus="this.select()">
+      <button class="btn btn-outline-secondary" type="button" id="button-addon-ics" title="Copier l'URL dans le presse-papier" onclick="copyToClipboard('icsInput')"><i class="bi bi-clipboard-check"></i></button>
+    </div>
+  </div>
+  <div class="my-2 col-lg-4 col-md-8">
+    <div class="input-group">
+      <span class="input-group-text"><i class="bi bi-rss"></i>&nbsp;Rss/Atom</span>
+      <input id="atomInput" type="text" value="{{ site.site }}{{ site.baseurl }}/events.atom.xml" data-url="{{ site.site }}{{ site.baseurl }}/events.atom.xml" readonly class="form-control" style="background-color:#fff" onfocus="this.select()">
+      <button class="btn btn-outline-secondary" type="button" id="button-addon-atom" title="Copier l'URL dans le presse-papier" onclick="copyToClipboard('atomInput')"><i class="bi bi-clipboard-check"></i></button>
+    </div>
+  </div>
+</div>
+
+<div class="row justify-content-center">
+  <div class="my-2 col-lg-4 col-md-8">
+    <div class="input-group">
+      <span class="input-group-text"><i class="bi bi-braces"></i>&nbsp;Json</span>
+      <input id="jsonInput" type="text" value="{{ site.site }}{{ site.baseurl }}/events.json" data-url="{{ site.site }}{{ site.baseurl }}/events.json" readonly class="form-control" style="background-color:#fff" onfocus="this.select()">
+      <button class="btn btn-outline-secondary" type="button" id="button-addon-json" title="Copier l'URL dans le presse-papier" onclick="copyToClipboard('jsonInput')"><i class="bi bi-braces"></i></button>
+    </div>
+  </div>
+</div>
+
+<!-- calendars -->
+<div class="row my-4 gy-3">
+  <div class="col-lg-6 col-xxl-4">
+    {% assign current_month = site.time | date: "%m" %}
+    {% assign current_year = site.time | date: "%Y" %}
+    {% assign current_day = site.time | date: "%d" %}
+    {% include calendar.html month=current_month year=current_year today=current_day %}
+  </div>
+  <div class="col-lg-6 col-xxl-4">
+    {% assign next_month = site.time | date: "%m" | plus: 1 %}
+    {% assign next_year = site.time | date: "%Y" %}
+    {% if next_month > 12 %}
+      {% assign next_month = 1 %}
+      {% assign next_year = current_year | plus: 1 %}
+    {% endif %}
+    {% assign next_day = 0 %}
+    {% include calendar.html month=next_month year=next_year today=next_day %}
+  </div>
+  <div class="col-lg-6 col-xxl-4 calendar-third">
+    {% assign third_month = site.time | date: "%m" | plus: 2 %}
+    {% assign third_year = site.time | date: "%Y" %}
+    {% if third_month > 12 %}
+      {% assign third_month = third_month | minus: 12 %}
+      {% assign third_year = current_year | plus: 1 %}
+    {% endif %}
+    {% assign third_day = 0 %}
+    {% include calendar.html month=third_month year=third_year today=third_day %}
+  </div>
+</div>
+
+<!-- grid -->
+<div class="row row-cols-1 row-cols-md-2 row-cols-xxl-3 g-3 agenda my-2">
+
+{%- assign now_time = site.time | date: "%s" | plus: 0 -%}
+{%- for event in site.events -%}
+  {%- assign event_time = event.dateIso | date:"%s" | plus: 0 -%}
+  {%- if event_time < now_time -%}
+    {%- continue -%}
+  {%- endif -%}
+
+  {%- assign event_date = event.dateIso | date: "%Y-%m-%d" -%}
+  <div class="col" data-event-date="{{ event_date }}">
+    <div class="card shadow h-100">
+      <div class="card-header">🧑‍💻 {{ event.community }}</div>
+      <a href="{{ event.link }}">
+        <img width="100%" style="aspect-ratio: 16/9" src="{{ site.baseurl }}/{{ event.localImg }}" />
+        <div class="card-body">
+          <h5 class="card-title">{{ event.title }}</h5>
+          <p class="card-text">
+          </p>
+          <div class="d-flex justify-content-between align-items-center text-right">
+            <small class="text-muted place">
+            {%- if event.place != null and event.place != "" -%}
+            🏠 {{ event.place }}<br>📍 {{ event.placeAddr }}
+            {%- else −%}
+            🌍 en ligne
+            {%- endif -%}
+            </small>
+            <small class="text-muted text-end time">{{ event.dateFr }}📅<br>{{ event.timeFr }}⌚</small>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+{%- endfor -%}
+
+</div>
