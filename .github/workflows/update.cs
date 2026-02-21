@@ -302,6 +302,8 @@ List<Event> evts = [];
             Directory.CreateDirectory(archiveDir);
             Console.WriteLine($"📦 Archivage de {filesToArchive.Count} fichiers HTML anciens :");
             
+            var eventImgsDir = Path.Combine(repoRoot, "event-imgs");
+            
             foreach (var file in filesToArchive)
             {
                 var filename = Path.GetFileName(file);
@@ -313,6 +315,31 @@ List<Event> evts = [];
                 
                 File.Move(file, destPath);
                 Console.WriteLine($"📦 Archivé: {filename}");
+                
+                // Extract event ID from filename (format: YYYY-MM-DD-groupId-eventId.html)
+                // Get everything after the second dash (after the date)
+                var parts = filename.Split('-');
+                if (parts.Length >= 4)
+                {
+                    // Join all parts from index 3 onwards, removing .html/.skip extension
+                    var eventId = string.Join('-', parts.Skip(3));
+                    if (eventId.EndsWith(".html"))
+                        eventId = eventId.Substring(0, eventId.Length - 5);
+                    else if (eventId.EndsWith(".skip"))
+                        eventId = eventId.Substring(0, eventId.Length - 5);
+                    
+                    // Delete associated images in event-imgs/
+                    if (Directory.Exists(eventImgsDir))
+                    {
+                        var imagePattern = eventId + ".*";
+                        var imagesToDelete = Directory.GetFiles(eventImgsDir, imagePattern);
+                        foreach (var imgFile in imagesToDelete)
+                        {
+                            File.Delete(imgFile);
+                            Console.WriteLine($"🗑️ Image supprimée: {Path.GetFileName(imgFile)}");
+                        }
+                    }
+                }
             }
         }
     }
