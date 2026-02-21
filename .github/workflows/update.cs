@@ -231,6 +231,19 @@ List<Event> evts = [];
             }
         }
 
+        // 🗑️ Purge events older than 1 year
+        var oneYearAgo = FrenchLocales.ParisNow.AddYears(-1);
+        var oldEvents = knownEvts.Where(e => e.Start < oneYearAgo).ToList();
+        if (oldEvents.Any())
+        {
+            Console.WriteLine($"🗑️ Suppression de {oldEvents.Count} événements passés depuis plus d'un an :");
+            foreach (var evt in oldEvents)
+            {
+                Console.WriteLine($"🗑️ [{evt.Start:dd/MM/yyyy HH:mm}] {evt.Group} - {evt.Title}");
+                knownEvts.Remove(evt);
+            }
+        }
+
 #pragma warning disable CA1869 // Cache and reuse 'JsonSerializerOptions' instances
         // Note: This block executes once per workflow run. JsonSerializerOptions allocation is acceptable here.
         var json = JsonSerializer.Serialize(knownEvts, new JsonSerializerOptions
@@ -247,6 +260,61 @@ List<Event> evts = [];
             Directory.CreateDirectory(dir);
 
         File.WriteAllText(jsonPath, json);
+    }
+}
+
+/*******************************/
+/* Archive old _events/*.html */
+/*******************************/
+{
+    var eventsDir = Path.Combine(repoRoot, "_events");
+    var archiveDir = Path.Combine(eventsDir, "archives");
+    var oneYearAgo = FrenchLocales.ParisNow.AddYears(-1);
+
+    if (Directory.Exists(eventsDir))
+    {
+        // Find all .html and .html.skip files
+        var allHtmlFiles = Directory.GetFiles(eventsDir, "*.html")
+            .Concat(Directory.GetFiles(eventsDir, "*.skip"))
+            .ToList();
+
+        var filesToArchive = new List<string>();
+
+        foreach (var file in allHtmlFiles)
+        {
+            var filename = Path.GetFileName(file);
+            
+            // Parse date from filename (YYYY-MM-DD-...)
+            if (filename.Length >= 10 && DateOnly.TryParse(filename.Substring(0, 10), out var fileDate))
+            {
+                // Convert DateOnly to DateTimeOffset for comparison
+                var fileDateOffset = new DateTimeOffset(fileDate.ToDateTime(TimeOnly.MinValue), FrenchLocales.ParisTimeZone.GetUtcOffset(DateTime.Now));
+                
+                if (fileDateOffset < oneYearAgo)
+                {
+                    filesToArchive.Add(file);
+                }
+            }
+        }
+
+        if (filesToArchive.Any())
+        {
+            Directory.CreateDirectory(archiveDir);
+            Console.WriteLine($"📦 Archivage de {filesToArchive.Count} fichiers HTML anciens :");
+            
+            foreach (var file in filesToArchive)
+            {
+                var filename = Path.GetFileName(file);
+                var destPath = Path.Combine(archiveDir, filename);
+                
+                // If file already exists in archive, delete it first
+                if (File.Exists(destPath))
+                    File.Delete(destPath);
+                
+                File.Move(file, destPath);
+                Console.WriteLine($"📦 Archivé: {filename}");
+            }
+        }
     }
 }
 
