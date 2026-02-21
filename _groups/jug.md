@@ -1,5 +1,4 @@
 ---
-id: jug
 name: JUG Toulouse
 url: https://www.meetup.com/toulouse-java-user-group/
 img: /groups-imgs/jug.jpg

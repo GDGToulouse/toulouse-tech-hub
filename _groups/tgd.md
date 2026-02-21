@@ -1,5 +1,4 @@
 ---
-id: tgd
 name: Toulouse Game Dev
 url: https://toulousegamedev.fr/
 ---

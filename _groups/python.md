@@ -1,5 +1,4 @@
 ---
-id: python
 name: Python Toulouse
 url: https://www.meetup.com/python-toulouse/
 img: /groups-imgs/python.png

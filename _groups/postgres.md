@@ -1,5 +1,4 @@
 ---
-id: postgres
 name: Postgres Toulouse
 url: https://www.meetup.com/postgres-toulouse
 img: /groups-imgs/postgres.jpg

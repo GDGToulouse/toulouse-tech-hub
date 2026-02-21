@@ -1,5 +1,4 @@
 ---
-id: toulbox
 name: La "Toul Box" du Cloud Natif
 url: https://www.meetup.com/latoulboxducloudnatif/
 img: /groups-imgs/toulbox.jpg

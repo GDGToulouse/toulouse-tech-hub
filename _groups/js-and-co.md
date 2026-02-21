@@ -1,5 +1,4 @@
 ---
-id: js-and-co
 name: JS & Co Toulouse
 url: https://www.meetup.com/javascript-and-co/
 img: /groups-imgs/js-and-co.jpg

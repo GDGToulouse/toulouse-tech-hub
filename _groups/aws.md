@@ -1,5 +1,4 @@
 ---
-id: aws
 name: AWS User Group Toulouse
 url: https://www.meetup.com/toulouse-amazon-web-services/
 img: /groups-imgs/aws.jpg

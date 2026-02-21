@@ -1,5 +1,4 @@
 ---
-id: agile
 name: Agile Toulouse
 url: https://www.agiletoulouse.fr/
 img: /groups-imgs/agile.avif

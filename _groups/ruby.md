@@ -1,5 +1,4 @@
 ---
-id: ruby
 name: Toulouse Ruby and Friends
 url: https://www.meetup.com/toulouse-ruby-friends/
 img: /groups-imgs/ruby.jpg

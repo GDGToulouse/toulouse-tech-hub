@@ -1,5 +1,4 @@
 ---
-id: tech-a-break
 name: Tech a Break
 url: https://www.meetup.com/tech-a-break/
 img: /groups-imgs/tech-a-break.jpg

@@ -1,5 +1,4 @@
 ---
-id: rust
 name: Rust Toulouse
 url: https://www.meetup.com/fr-FR/rust-community-toulouse/
 img: /groups-imgs/rust.webp

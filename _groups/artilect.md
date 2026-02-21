@@ -1,5 +1,4 @@
 ---
-id: artilect
 name: Artilect FabLab
 url: https://www.meetup.com/artilect-fablab/
 img: /groups-imgs/artilect.jpg

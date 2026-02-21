@@ -1,5 +1,4 @@
 ---
-id: dataviz
 name: Toulouse Data-Viz
 url: https://www.meetup.com/meetup-visualisation-des-donnees-toulouse/
 img: /groups-imgs/dataviz.jpg

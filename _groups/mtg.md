@@ -1,5 +1,4 @@
 ---
-id: mtg
 name: MTG:Toulouse
 url: https://www.meetup.com/mtg-toulouse/
 img: /groups-imgs/mtg.jpg

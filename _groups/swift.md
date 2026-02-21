@@ -1,5 +1,4 @@
 ---
-id: swift
 name: Swift Toulouse
 url: https://www.meetup.com/swift-toulouse/
 img: /groups-imgs/swift.png

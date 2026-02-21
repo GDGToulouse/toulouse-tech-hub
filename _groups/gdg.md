@@ -1,5 +1,4 @@
 ---
-id: gdg
 name: GDG Toulouse
 url: https://www.gdgtoulouse.fr/
 img: /groups-imgs/gdg.jpg

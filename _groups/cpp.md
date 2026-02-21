@@ -1,5 +1,4 @@
 ---
-id: cpp
 name: C++ Toulouse
 url: https://www.meetup.com/ateliers-cpp-toulouse/
 img: /groups-imgs/cpp.png

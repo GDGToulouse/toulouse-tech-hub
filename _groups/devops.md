@@ -1,5 +1,4 @@
 ---
-id: devops
 name: Toulouse DevOps
 url: https://www.meetup.com/toulouse-devops/
 img: /groups-imgs/devops.jpg
