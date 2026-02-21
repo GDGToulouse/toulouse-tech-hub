@@ -251,38 +251,39 @@ List<Event> evts = [];
 }
 
 /*******************************/
-/* Generate _data/events/*.yml */
+/* Generate _events/*.html */
 /*******************************/
 {
-    var dataDir = Path.Combine(repoRoot, "_data", "events");
-    Directory.CreateDirectory(dataDir);
+    var eventsDir = Path.Combine(repoRoot, "_events");
+    Directory.CreateDirectory(eventsDir);
     foreach (var evt in knownEvts.Where(e => e.Start >= DateTime.Today).OrderBy(e => e.Start).ThenBy(e => e.Id))
     {
-        var fileName = Path.Combine(dataDir, $"{evt.Start:yyyy-MM-dd}-{evt.GroupId}-{evt.Id}.yml");
+        var fileName = Path.Combine(eventsDir, $"{evt.Start:yyyy-MM-dd}-{evt.GroupId}-{evt.Id}.html");
 
         // on ignore tous les évènements marqués comme "skip"
         if (File.Exists(fileName + ".skip"))
             continue;
 
         using var writer = new StreamWriter(fileName);
-        writer.WriteLine($"id: '{evt.Id}'");
+        // Write YAML front matter
+        writer.WriteLine("---");
+        writer.WriteLine($"id: {evt.Id}");
         writer.WriteLine($"title: '{evt.Title.Replace("'", "''")}'");
-        writer.WriteLine($"community: '{evt.Group}'");
-        writer.WriteLine($"datePublished: '{evt.PublishedOn:yyyy-MM-dd HH:mm}'");
-        writer.WriteLine($"dateIso: '{evt.Start:yyyy-MM-dd HH:mm}'");
-        writer.WriteLine($"dateFr: '{evt.Start:dddd dd MMMM}'");
+        writer.WriteLine($"community: {evt.Group}");
+        writer.WriteLine($"datePublished: {evt.PublishedOn:yyyy-MM-dd HH:mm}");
+        writer.WriteLine($"dateIso: {evt.Start:yyyy-MM-dd HH:mm}");
+        writer.WriteLine($"dateFr: {evt.Start:dddd dd MMMM}");
         writer.WriteLine($"timeFr: '{evt.Start:HH:mm}'");
-        writer.WriteLine($"place: \"{evt.VenueName}\"");
-        writer.WriteLine($"placeAddr: \"{evt.VenueAddr}\"");
+        writer.WriteLine($"place: {evt.VenueName}");
+        writer.WriteLine($"placeAddr: {evt.VenueAddr}");
         writer.WriteLine($"link: {evt.Href}");
         writer.WriteLine($"img: {evt.FullImgSrc}");
         writer.WriteLine($"localImg: {evt.LocalImgSrc}");
-        writer.WriteLine($"description: >");
+        writer.WriteLine("---");
+        // Write HTML content
         if (evt.HtmlDescription != null)
         {
-            writer.Write("  ");
-            writer.WriteLine(string.Join("\n  ", evt.HtmlDescription.Split('\n')));
-            writer.WriteLine();
+            writer.Write(evt.HtmlDescription);
         }
     }
 }
