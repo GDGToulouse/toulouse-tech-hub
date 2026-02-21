@@ -3,3 +3,11 @@ lang: fr-FR
 site: https://toulouse-tech-hub.fr
 baseurl: 
 #theme: 
+
+collections:
+  groups:
+    output: false
+  confs:
+    output: false
+  events:
+    output: false
