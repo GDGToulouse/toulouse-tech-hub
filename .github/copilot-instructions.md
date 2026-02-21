@@ -63,11 +63,20 @@ All formats filter future events only using Liquid's date comparison: `{%- if ev
 - Images should be WebP format when possible
 - Cards use `aspect-ratio: 16/9` CSS for consistent display
 
+### File Encoding
+- Files should be UTF-8; see `.editorconfig`
+
 ### Event Lifecycle
-1. **Automated**: Scraper job (`toulouse-tech-hub-job`) runs every 4 hours via workflow, scrapes Meetup/community sites, updates `events-job.json`, downloads images into `event-imgs/`, and generates `_data/events/*.yml`
+1. **Automated**: Update Data workflow runs at 9:00 and 17:00 UTC, executes `.github/workflows/update.cs`, updates `events-job.json`, downloads images into `event-imgs/`, and generates `_data/events/*.yml`
 2. **Manual**: Create YAML file following the convention, submit PR
 3. **Build**: Jekyll generates all output formats on every build
 4. **Display**: Only future events appear (past events are filtered by Liquid templates)
+
+### Data Update Job
+- Script: `.github/workflows/update.cs`
+- Workflow: `.github/workflows/update-data.yml`
+- Schedule: runs at 9:00 and 17:00 UTC, plus manual dispatch
+- The script resolves the repo root by walking up to find `events-job.json`
 
 ### Adding a New Event Manually
 Create `_data/events/YYYY-MM-DD-{community}-{title}.yml`:
@@ -131,64 +140,48 @@ jekyll serve
 # View at http://localhost:4000
 ```
 
-## MCP Visual Workflow (Playwright)
+## Visual Workflow (playwright-cli)
 
 ### Purpose
-Use a local MCP server to automate browser navigation and capture screenshots while iterating on visual changes.
+Use `playwright-cli` to automate browser navigation and capture snapshots/screenshots while iterating on visual changes.
 
 ### Prerequisites (WSL)
 - Node.js with `npx` available.
+- `playwright-cli` available (install globally or use `npx playwright-cli`).
 - Jekyll running locally (`jekyll serve`).
 
-### MCP Server Choice
-- **Playwright MCP** (local-only) for browser automation + screenshots.
+### Installation rapide
 
-### VS Code Setup
-
-#### Step 1: Add MCP Server to VS Code Settings
-1. Open VS Code user settings: `Ctrl+Shift+P` → "Preferences: Open User Settings (JSON)"
-2. Add the server config under `"servers"`:
-```json
-{
-  "playwright": {
-    "type": "stdio",
-    "command": "npx",
-    "args": [
-      "@playwright/mcp@latest",
-      "--browser", "chromium",
-      "--headless",
-      "--vision"
-    ]
-  }
-}
+```bash
+npm install -g playwright-cli
+playwright-cli open --browser=chromium https://example.com
 ```
-3. Save and restart Copilot or VS Code.
 
-#### Step 2: Install Browser Binaries
-When you first run a Playwright MCP tool, Chromium may not be installed. Call:
-- Open Copilot Chat and use: `@playwright Installe le navigateur`
-- Or trigger any MCP browser action, it will prompt you to install.
-- This runs `browser_install` once to download Chromium binaries.
+Alternative sans installation globale:
+
+```bash
+npx playwright-cli open --browser=chromium https://example.com
+```
 
 ### Interactive Workflow
 
 1. **Start the site**: `jekyll serve` in the terminal (it auto-regenerates on file changes).
-2. **Open Copilot Chat**: Ensure Playwright MCP is connected (check MCP status in Chat panel).
+2. **Open a browser session**:
+  - `playwright-cli open --browser=chromium http://localhost:4000`
 3. **Navigate and capture**:
-   - `browser_navigate` to `http://localhost:4000`
-   - `browser_snapshot` to get an accessibility snapshot (human-readable structure)
-   - `browser_take_screenshot` with `filename: "home.png"` to save a visual screenshot
+  - `playwright-cli snapshot`
+  - `playwright-cli screenshot --filename=home.png`
 4. **Verify changes**: Screenshot file appears in the working directory.
 
 ### Output & Artifacts
 - Screenshots are saved to the working directory (e.g., `home.png`).
-- If using `--output-dir mcp-output`, files go to `mcp-output/`.
+- Snapshot files are saved in `.playwright-cli/` by default.
 - Keep these out of git via `.gitignore` (already configured).
 
 ### Troubleshooting
-- **Browser not installed**: Run `@playwright Installe le navigateur` in Copilot Chat.
-- **MCP server won't connect**: Restart Copilot Chat or VS Code.
-- **Screenshots not appearing**: Check the output directory path in settings.
+- **Browser not installed**: Run `playwright-cli open --browser=chromium` once or use `npx playwright-cli`.
+- **Command not found**: Install with `npm install -g playwright-cli` or use `npx playwright-cli`.
+- **Screenshots not appearing**: Check the working directory and `.playwright-cli/` output.
 
 ## Deployment
 
