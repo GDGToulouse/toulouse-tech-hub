@@ -63,14 +63,14 @@ var groups = new IGroup[] {
 };
 
 /****************************/
-/*   load events-job.json   */
+/*   load events from YAML  */
 /****************************/
 static string ResolveRepoRoot(string startDir)
 {
     var current = startDir;
     while (!string.IsNullOrEmpty(current))
     {
-        if (File.Exists(Path.Combine(current, "events-job.json")))
+        if (Directory.Exists(Path.Combine(current, "_events")))
             return current;
 
         current = Directory.GetParent(current)?.FullName;
@@ -79,33 +79,70 @@ static string ResolveRepoRoot(string startDir)
     return startDir;
 }
 
-var repoRoot = ResolveRepoRoot(Directory.GetCurrentDirectory());
-var jsonPath = Path.Combine(repoRoot, "events-job.json");
-List<Event> knownEvts = [];
+static Event? ParseEventFromYaml(string filePath)
 {
-    if (File.Exists(jsonPath))
+    try
     {
-        knownEvts = JsonSerializer.Deserialize<List<Event>>(File.ReadAllText(jsonPath)) ?? [];
-        Console.WriteLine($"⚗️ {knownEvts.Count} événements lus depuis fichier json");
+        var lines = File.ReadAllLines(filePath);
+        if (lines.Length < 3 || lines[0] != "---")
+            return null;
 
-        // gestion migration des évènements
-        foreach (var evt in knownEvts)
+        var yamlEnd = Array.IndexOf(lines, "---", 1);
+        if (yamlEnd == -1)
+            return null;
+
+        var yaml = new Dictionary<string, string>();
+        for (int i = 1; i < yamlEnd; i++)
         {
-            // on essaie de renseigner le groupId en recherchant un autre évènement où le même groupe a cette info pour la recopier
-            // il suffirait de renseigner cette info sur qq évènements de chaque groupe manquant pour que l'info s'ajoute toute seule partout
-            if (string.IsNullOrEmpty(evt.GroupId))
+            var line = lines[i];
+            var colonIndex = line.IndexOf(':');
+            if (colonIndex > 0)
             {
-                var other = knownEvts.FirstOrDefault(e => !string.IsNullOrEmpty(e.GroupId) && e.Group == evt.Group);
-                if (other != null)
-                    evt.GroupId = other.GroupId;
-            }
-
-            // on essaie de renseigner les dates de publication manquantes en supposant qu'elles ont été publiées 1 mois avant leur déclenchement
-            if (evt.PublishedOn == DateTimeOffset.MinValue)
-            {
-                evt.PublishedOn = evt.Start.AddMonths(-1);
+                var key = line.Substring(0, colonIndex).Trim();
+                var value = line.Substring(colonIndex + 1).Trim().Trim('"', '\'');
+                yaml[key] = value;
             }
         }
+
+        // Extract HTML content after second ---
+        var htmlContent = string.Join("\n", lines.Skip(yamlEnd + 1));
+
+        return new Event
+        {
+            Id = yaml.GetValueOrDefault("eventId", ""),
+            GroupId = yaml.GetValueOrDefault("groupId", ""),
+            Title = yaml.GetValueOrDefault("title", ""),
+            Group = yaml.GetValueOrDefault("community", ""),
+            Href = yaml.GetValueOrDefault("link", ""),
+            ImgSrc = yaml.GetValueOrDefault("img", ""),
+            VenueName = yaml.GetValueOrDefault("place", ""),
+            VenueAddr = yaml.GetValueOrDefault("placeAddr", ""),
+            Start = DateTimeOffset.TryParse(yaml.GetValueOrDefault("dateIso", ""), out var start) ? start : DateTimeOffset.MinValue,
+            PublishedOn = DateTimeOffset.TryParse(yaml.GetValueOrDefault("datePublished", ""), out var pub) ? pub : DateTimeOffset.MinValue,
+            HtmlDescription = htmlContent
+        };
+    }
+    catch (Exception ex)
+    {
+        Console.WriteLine($"⚠️ Erreur lors du parsing de {Path.GetFileName(filePath)}: {ex.Message}");
+        return null;
+    }
+}
+
+var repoRoot = ResolveRepoRoot(Directory.GetCurrentDirectory());
+List<Event> knownEvts = [];
+{
+    var eventsDir = Path.Combine(repoRoot, "_events");
+    if (Directory.Exists(eventsDir))
+    {
+        var eventFiles = Directory.GetFiles(eventsDir, "*.html");
+        foreach (var file in eventFiles)
+        {
+            var evt = ParseEventFromYaml(file);
+            if (evt != null)
+                knownEvts.Add(evt);
+        }
+        Console.WriteLine($"⚗️ {knownEvts.Count} événements lus depuis fichiers YAML");
     }
 }
 
@@ -188,6 +225,8 @@ List<Event> evts = [];
 /*   save events-job.json   */
 /****************************/
 {
+    var jsonPath = Path.Combine(repoRoot, "events-job.json");
+    
     // update events when asked for loading
     if (loadEvents)
     {
