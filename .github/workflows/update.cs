@@ -106,17 +106,6 @@ List<Event> knownEvts = [];
                 evt.PublishedOn = evt.Start.AddMonths(-1);
             }
         }
-
-        // Re-calculate LocalImgSrc for all events to use the filename prefix
-        // This makes it easier to connect images with their corresponding event files
-        foreach (var evt in knownEvts)
-        {
-            if (!string.IsNullOrEmpty(evt.ImgSrc) || !string.IsNullOrEmpty(evt.FullImgSrc))
-            {
-                var fileNamePrefix = $"{evt.Start:yyyy-MM-dd}-{evt.GroupId}-{evt.Id}";
-                evt.SetLocalImgSrcWithNamePrefix(fileNamePrefix);
-            }
-        }
     }
 }
 
@@ -139,20 +128,15 @@ List<Event> evts = [];
             {
                 Console.WriteLine($"💥 [{evt.Start:dd/MM/yyyy HH:mm}] {evt.Group} - {evt.Title}");
 
-                // Set LocalImgSrc using the filename prefix convention
+                evts.Add(evt);
+
+                // téléchargement de l'image => event-imgs/YYYY-MM-DD-groupId-eventId.webp
+                // Mise à jour basée sur Last-Modified: télécharge si source plus récente que le fichier local
                 if (!string.IsNullOrEmpty(evt.ImgSrc) || !string.IsNullOrEmpty(evt.FullImgSrc))
                 {
                     var fileNamePrefix = $"{evt.Start:yyyy-MM-dd}-{evt.GroupId}-{evt.Id}";
-                    evt.SetLocalImgSrcWithNamePrefix(fileNamePrefix);
-                }
-
-                evts.Add(evt);
-
-                // téléchargement de l'image => event-imgs/meetup-xxx.webp
-                // Mise à jour basée sur Last-Modified: télécharge si source plus récente que le fichier local
-                if (evt.LocalImgSrc != null)
-                {
-                    var imgPath = Path.Combine(repoRoot, evt.LocalImgSrc);
+                    var localImgPath = $"event-imgs/{fileNamePrefix}.webp";
+                    var imgPath = Path.Combine(repoRoot, localImgPath);
                     var imgSource = evt.FullImgSrc ?? evt.ImgSrc;
 
                     if (imgSource != null)
@@ -181,7 +165,7 @@ List<Event> evts = [];
                                     }
                                 }
                             }
-                            catch (Exception ex)
+                            catch
                             {
                                 // If we can't determine modification time, don't update to avoid unnecessary downloads
                                 shouldDownload = false;
@@ -368,24 +352,21 @@ List<Event> evts = [];
         if (File.Exists(fileName + ".skip"))
             continue;
 
-        // Ensure LocalImgSrc uses the same naming convention as the HTML file
-        evt.SetLocalImgSrcWithNamePrefix(fileNamePrefix);
-
         using var writer = new StreamWriter(fileName);
         // Write YAML front matter
         writer.WriteLine("---");
-        writer.WriteLine($"id: {evt.Id}");
-        writer.WriteLine($"title: '{evt.Title.Replace("'", "''")}'");
-        writer.WriteLine($"community: {evt.Group}");
+        writer.WriteLine($"eventId: {evt.Id}");
+        writer.WriteLine($"groupId: {evt.GroupId}");
+        writer.WriteLine($"title: \"{evt.Title.Replace("\\", "\\\\").Replace("\"", "\\\"")}\"");
+        writer.WriteLine($"community: \"{evt.Group.Replace("\\", "\\\\").Replace("\"", "\\\"")}\"");
         writer.WriteLine($"datePublished: {evt.PublishedOn:yyyy-MM-dd HH:mm}");
         writer.WriteLine($"dateIso: {evt.Start:yyyy-MM-dd HH:mm}");
         writer.WriteLine($"dateFr: {evt.Start:dddd dd MMMM}");
         writer.WriteLine($"timeFr: '{evt.Start:HH:mm}'");
-        writer.WriteLine($"place: {evt.VenueName}");
-        writer.WriteLine($"placeAddr: {evt.VenueAddr}");
+        writer.WriteLine($"place: \"{(evt.VenueName ?? "").Replace("\\", "\\\\").Replace("\"", "\\\"")}\"");
+        writer.WriteLine($"placeAddr: \"{(evt.VenueAddr ?? "").Replace("\\", "\\\\").Replace("\"", "\\\"")}\"");
         writer.WriteLine($"link: {evt.Href}");
         writer.WriteLine($"img: {evt.FullImgSrc}");
-        writer.WriteLine($"localImg: {evt.LocalImgSrc}");
         writer.WriteLine("---");
         // Write HTML content
         if (evt.HtmlDescription != null)
@@ -864,7 +845,6 @@ sealed class Event : IComparable<Event>
     public required DateTimeOffset Start { get; set; }
 
     /// <summary>URL de l'image par défaut de l'évènement.</summary>
-    /// <remarks>LocalImgSrc will be computed using SetLocalImgSrcWithNamePrefix() with the filename prefix</remarks>
     public required string? ImgSrc
     {
         get => _smallImgSrc;
@@ -873,7 +853,6 @@ sealed class Event : IComparable<Event>
             if (_smallImgSrc != value)
             {
                 _smallImgSrc = value;
-                // Note: LocalImgSrc will be set properly using SetLocalImgSrcWithNamePrefix() with the filename prefix
             }
         }
     }
@@ -894,7 +873,6 @@ sealed class Event : IComparable<Event>
     public TimeSpan? Duration { get; set; }
 
     /// <summary>URL de l'image de grande taille associée, si dispo en plus de l'image par défaut <see cref="ImgSrc"/>.</summary>
-    /// <remarks>LocalImgSrc will be computed using SetLocalImgSrcWithNamePrefix() with the filename prefix</remarks>
     public string? FullImgSrc
     {
         get => _largeImgSrc;
@@ -903,7 +881,6 @@ sealed class Event : IComparable<Event>
             if (_largeImgSrc != value)
             {
                 _largeImgSrc = value;
-                // Note: LocalImgSrc will be set properly using SetLocalImgSrcWithNamePrefix() with the filename prefix
             }
         }
     }
@@ -924,30 +901,6 @@ sealed class Event : IComparable<Event>
 
     /// <summary>Coordonnées GPS Longitude</summary>
     public float? Longitude { get; set; }
-
-    /// <summary>URL du fichier local contenant l'image de l'évènement.</summary>
-    public string? LocalImgSrc { get; set; }
-
-    /// <summary>Set LocalImgSrc using a filename prefix (typically YYYY-MM-DD-groupId-eventId)</summary>
-    public void SetLocalImgSrcWithNamePrefix(string prefix)
-    {
-        try
-        {
-            if (!string.IsNullOrEmpty(_largeImgSrc))
-            {
-                LocalImgSrc = $"event-imgs/{prefix}{Path.GetExtension(new Uri(_largeImgSrc).AbsolutePath)}";
-            }
-            else if (!string.IsNullOrEmpty(_smallImgSrc))
-            {
-                LocalImgSrc = $"event-imgs/{prefix}{Path.GetExtension(new Uri(_smallImgSrc).AbsolutePath)}";
-            }
-        }
-        catch
-        {
-            // Invalid URL format - skip image handling for this event
-            LocalImgSrc = null;
-        }
-    }
 
     public int CompareTo(Event? other)
     {

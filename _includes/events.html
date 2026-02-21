@@ -71,7 +71,9 @@
     <div class="card shadow h-100">
       <div class="card-header">🧑‍💻 {{ event.community }}</div>
       <a href="{{ event.link }}">
-        <img width="100%" style="aspect-ratio: 16/9" src="{{ site.baseurl }}/{{ event.localImg }}" />
+        {%- assign date_part = event.dateIso | date: "%Y-%m-%d" -%}
+        {%- capture image_path %}event-imgs/{{ date_part }}-{{ event.groupId }}-{{ event.eventId }}.webp{% endcapture -%}
+        <img width="100%" style="aspect-ratio: 16/9" src="{{ site.baseurl }}/{{ image_path }}" />
         <div class="card-body">
           <h5 class="card-title">{{ event.title }}</h5>
           <p class="card-text">

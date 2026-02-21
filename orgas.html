@@ -49,12 +49,14 @@ layout: null
           {%- continue -%}
         {%- endif -%}
 
-        <div class="col" id="card-{{ event.id }}">
+        <div class="col" id="card-{{ event.eventId }}">
           <div class="card shadow">
             <div class="card-header d-flex justify-content-between align-items-center">🧑‍💻 {{ event.community }}
-              <button type="button" class="btn-close pull-right" aria-label="Masquer" style="display: none" onclick="removeCard('{{ event.id }}')"></button>
+              <button type="button" class="btn-close pull-right" aria-label="Masquer" style="display: none" onclick="removeCard('{{ event.eventId }}')"></button>
             </div>
-              <img width="100%" style="aspect-ratio: 16/9" src="{{ site.baseurl }}/{{ event.localImg }}" />
+              {%- assign date_part = event.dateIso | date: "%Y-%m-%d" -%}
+              {%- capture image_path %}event-imgs/{{ date_part }}-{{ event.groupId }}-{{ event.eventId }}.webp{% endcapture -%}
+              <img width="100%" style="aspect-ratio: 16/9" src="{{ site.baseurl }}/{{ image_path }}" />
               <div class="card-body text-center">
                 <h5 class="card-title">{{ event.title }}</h5>
                 <p class="card-text">
