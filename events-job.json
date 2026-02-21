@@ -15,8 +15,7 @@
     "VenueName": "Maison des Associations",
     "VenueAddr": "3 Pl. Guy Hersant Toulouse",
     "Latitude": 43.5775,
-    "Longitude": 1.444116,
-    "LocalImgSrc": "event-imgs/2025-02-24-agile-meetup-305839504.webp"
+    "Longitude": 1.444116
   },
   {
     "Id": "meetup-305752126",
@@ -34,8 +33,7 @@
     "VenueName": "HarryCow Coworking",
     "VenueAddr": "13 Rue Sainte-Ursule Toulouse",
     "Latitude": 43.602283,
-    "Longitude": 1.441679,
-    "LocalImgSrc": "event-imgs/2025-02-25-ruby-meetup-305752126.webp"
+    "Longitude": 1.441679
   },
   {
     "Id": "meetup-305750119",
@@ -53,8 +51,7 @@
     "VenueName": null,
     "VenueAddr": null,
     "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": "event-imgs/2025-02-28-agile-meetup-305750119.webp"
+    "Longitude": null
   },
   {
     "Id": "meetup-305839478",
@@ -72,8 +69,7 @@
     "VenueName": "Maison des Associations",
     "VenueAddr": "3 Pl. Guy Hersant Toulouse",
     "Latitude": 43.5775,
-    "Longitude": 1.444116,
-    "LocalImgSrc": "event-imgs/2025-03-04-agile-meetup-305839478.webp"
+    "Longitude": 1.444116
   },
   {
     "Id": "meetup-306206046",
@@ -91,8 +87,7 @@
     "VenueName": "The London Town",
     "VenueAddr": "14 Rue des Prêtres, 31000 Toulouse Toulouse",
     "Latitude": 43.59745,
-    "Longitude": 1.443843,
-    "LocalImgSrc": "event-imgs/2025-03-06-js-and-co-meetup-306206046.webp"
+    "Longitude": 1.443843
   },
   {
     "Id": "meetup-306407965",
@@ -110,8 +105,7 @@
     "VenueName": "Tito mojito",
     "VenueAddr": "51 All. Jean Jaurès, 31000 Toulouse Toulouse",
     "Latitude": 43.6079,
-    "Longitude": 1.451229,
-    "LocalImgSrc": "event-imgs/2025-03-06-tds-meetup-306407965.webp"
+    "Longitude": 1.451229
   },
   {
     "Id": "meetup-306421959",
@@ -129,8 +123,7 @@
     "VenueName": null,
     "VenueAddr": null,
     "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": "event-imgs/2025-03-10-agile-meetup-306421959.webp"
+    "Longitude": null
   },
   {
     "Id": "meetup-305897754",
@@ -148,8 +141,7 @@
     "VenueName": "Les halles de la transition",
     "VenueAddr": "Rue du canon d'arcole, Toulouse",
     "Latitude": 43.61285,
-    "Longitude": 1.435785,
-    "LocalImgSrc": "event-imgs/2025-03-11-agile-meetup-305897754.webp"
+    "Longitude": 1.435785
   },
   {
     "Id": "meetup-306134791",
@@ -167,8 +159,7 @@
     "VenueName": "2 Chem. de Tréville",
     "VenueAddr": "2 Chem. de Tréville Frouzins",
     "Latitude": 43.524384,
-    "Longitude": 1.312094,
-    "LocalImgSrc": "event-imgs/2025-03-12-devops-cloud-meetup-306134791.webp"
+    "Longitude": 1.312094
   },
   {
     "Id": "meetup-306435624",
@@ -186,8 +177,7 @@
     "VenueName": "EPITECH - Amphi rez-de-chaussée",
     "VenueAddr": "40 Boulevard de la Marquette Toulouse",
     "Latitude": 43.61244,
-    "Longitude": 1.429108,
-    "LocalImgSrc": "event-imgs/2025-03-12-jug-meetup-306435624.webp"
+    "Longitude": 1.429108
   },
   {
     "Id": "tgd-2025-03-20",
@@ -205,8 +195,7 @@
     "VenueName": null,
     "VenueAddr": null,
     "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": "event-imgs/2025-03-20-tgd-tgd-2025-03-20.png"
+    "Longitude": null
   },
   {
     "Id": "meetup-306253496",
@@ -224,8 +213,7 @@
     "VenueName": "Maison des Associations",
     "VenueAddr": "3 Pl. Guy Hersant Toulouse",
     "Latitude": 43.5775,
-    "Longitude": 1.444116,
-    "LocalImgSrc": "event-imgs/2025-03-21-agile-meetup-306253496.webp"
+    "Longitude": 1.444116
   },
   {
     "Id": "meetup-306394593",
@@ -243,8 +231,7 @@
     "VenueName": null,
     "VenueAddr": null,
     "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": "event-imgs/2025-03-25-agile-meetup-306394593.webp"
+    "Longitude": null
   },
   {
     "Id": "meetup-306548583",
@@ -262,8 +249,7 @@
     "VenueName": "1 Pl. de la Bourse",
     "VenueAddr": "1 Pl. de la Bourse Toulouse",
     "Latitude": 43.601437,
-    "Longitude": 1.442047,
-    "LocalImgSrc": "event-imgs/2025-03-27-tech-a-break-meetup-306548583.webp"
+    "Longitude": 1.442047
   },
   {
     "Id": "meetup-306556883",
@@ -281,8 +267,7 @@
     "VenueName": "La Cantine by La Mêlée",
     "VenueAddr": "27 Rue d'Aubuisson Toulouse",
     "Latitude": 43.602695,
-    "Longitude": 1.454208,
-    "LocalImgSrc": "event-imgs/2025-04-02-mtg-meetup-306556883.webp"
+    "Longitude": 1.454208
   },
   {
     "Id": "meetup-306364724",
@@ -300,8 +285,7 @@
     "VenueName": "Pub O'Clock",
     "VenueAddr": "21 Boulevard de Strasbourg, 31000 Toulouse Toulouse",
     "Latitude": 43.606956,
-    "Longitude": 1.447069,
-    "LocalImgSrc": "event-imgs/2025-04-03-js-and-co-meetup-306364724.webp"
+    "Longitude": 1.447069
   },
   {
     "Id": "meetup-306770114",
@@ -319,8 +303,7 @@
     "VenueName": "HarryCow Coworking",
     "VenueAddr": "13 Rue Sainte-Ursule Toulouse",
     "Latitude": 43.602283,
-    "Longitude": 1.441679,
-    "LocalImgSrc": "event-imgs/2025-04-03-dataviz-meetup-306770114.webp"
+    "Longitude": 1.441679
   },
   {
     "Id": "meetup-306513726",
@@ -338,8 +321,7 @@
     "VenueName": null,
     "VenueAddr": null,
     "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": "event-imgs/2025-04-08-agile-meetup-306513726.webp"
+    "Longitude": null
   },
   {
     "Id": "meetup-305897764",
@@ -357,8 +339,7 @@
     "VenueName": "Les halles de la transition",
     "VenueAddr": "Rue du canon d'arcole, Toulouse",
     "Latitude": 43.61285,
-    "Longitude": 1.435785,
-    "LocalImgSrc": "event-imgs/2025-04-08-agile-meetup-305897764.webp"
+    "Longitude": 1.435785
   },
   {
     "Id": "meetup-306826511",
@@ -376,8 +357,7 @@
     "VenueName": "8 Imp. Bonnet",
     "VenueAddr": "8 Imp. Bonnet Toulouse",
     "Latitude": 43.599613,
-    "Longitude": 1.457047,
-    "LocalImgSrc": "event-imgs/2025-04-10-toulbox-meetup-306826511.webp"
+    "Longitude": 1.457047
   },
   {
     "Id": "meetup-306803179",
@@ -395,8 +375,7 @@
     "VenueName": "Etincelle Coworking - Alsace-Lorraine",
     "VenueAddr": "36 Rue d'Alsace Lorraine Toulouse",
     "Latitude": 43.605507,
-    "Longitude": 1.445923,
-    "LocalImgSrc": "event-imgs/2025-04-10-dataviz-meetup-306803179.webp"
+    "Longitude": 1.445923
   },
   {
     "Id": "meetup-306929707",
@@ -414,8 +393,7 @@
     "VenueName": "Etincelle (Alsace-lorraine)",
     "VenueAddr": "36, rue d'alsace-lorraine Toulouse",
     "Latitude": 43.605507,
-    "Longitude": 1.445922,
-    "LocalImgSrc": "event-imgs/2025-04-18-agile-meetup-306929707.webp"
+    "Longitude": 1.445922
   },
   {
     "Id": "meetup-307293899",
@@ -433,8 +411,7 @@
     "VenueName": null,
     "VenueAddr": null,
     "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": "event-imgs/2025-04-22-agile-meetup-307293899.webp"
+    "Longitude": null
   },
   {
     "Id": "meetup-306759466",
@@ -452,8 +429,7 @@
     "VenueName": "La Cantine Toulouse",
     "VenueAddr": "27 rue d’Aubuisson Toulouse",
     "Latitude": 43.602768,
-    "Longitude": 1.454036,
-    "LocalImgSrc": "event-imgs/2025-04-24-js-and-co-meetup-306759466.webp"
+    "Longitude": 1.454036
   },
   {
     "Id": "meetup-306847089",
@@ -471,8 +447,7 @@
     "VenueName": "Etincelle (Alsace-lorraine)",
     "VenueAddr": "36, rue d'alsace-lorraine Toulouse",
     "Latitude": 43.605507,
-    "Longitude": 1.445922,
-    "LocalImgSrc": "event-imgs/2025-04-24-agile-meetup-306847089.webp"
+    "Longitude": 1.445922
   },
   {
     "Id": "meetup-306950448",
@@ -490,8 +465,7 @@
     "VenueName": "HarryCow Coworking",
     "VenueAddr": "13 Rue Sainte-Ursule Toulouse",
     "Latitude": 43.602283,
-    "Longitude": 1.441679,
-    "LocalImgSrc": "event-imgs/2025-04-28-gdg-meetup-306950448.webp"
+    "Longitude": 1.441679
   },
   {
     "Id": "meetup-306951336",
@@ -509,8 +483,7 @@
     "VenueName": "HarryCow Coworking",
     "VenueAddr": "13 Rue Sainte-Ursule Toulouse",
     "Latitude": 43.602283,
-    "Longitude": 1.441679,
-    "LocalImgSrc": "event-imgs/2025-04-28-mtg-meetup-306951336.webp"
+    "Longitude": 1.441679
   },
   {
     "Id": "meetup-306970894",
@@ -528,8 +501,7 @@
     "VenueName": "HarryCow Coworking",
     "VenueAddr": "13 rue Sainte Ursule Toulouse",
     "Latitude": 43.60222,
-    "Longitude": 1.442048,
-    "LocalImgSrc": "event-imgs/2025-04-28-jug-meetup-306970894.webp"
+    "Longitude": 1.442048
   },
   {
     "Id": "meetup-307416389",
@@ -547,8 +519,7 @@
     "VenueName": "Etincelle (Alsace-lorraine)",
     "VenueAddr": "36, rue d'alsace-lorraine Toulouse",
     "Latitude": 43.605507,
-    "Longitude": 1.445922,
-    "LocalImgSrc": "event-imgs/2025-04-30-agile-meetup-307416389.webp"
+    "Longitude": 1.445922
   },
   {
     "Id": "meetup-307405202",
@@ -566,8 +537,7 @@
     "VenueName": "De Danu",
     "VenueAddr": "9 Rue du pont Guilhemery Toulouse",
     "Latitude": 43.600674,
-    "Longitude": 1.455908,
-    "LocalImgSrc": "event-imgs/2025-05-01-js-and-co-meetup-307405202.webp"
+    "Longitude": 1.455908
   },
   {
     "Id": "meetup-305897774",
@@ -585,8 +555,7 @@
     "VenueName": "Les halles de la transition",
     "VenueAddr": "Rue du canon d'arcole, Toulouse",
     "Latitude": 43.61285,
-    "Longitude": 1.435785,
-    "LocalImgSrc": "event-imgs/2025-05-06-agile-meetup-305897774.webp"
+    "Longitude": 1.435785
   },
   {
     "Id": "meetup-306422374",
@@ -604,8 +573,7 @@
     "VenueName": "Artilect FabLab Toulouse",
     "VenueAddr": "10 Rue Tripière Toulouse",
     "Latitude": 43.60174,
-    "Longitude": 1.442948,
-    "LocalImgSrc": "event-imgs/2025-05-12-artilect-meetup-306422374.webp"
+    "Longitude": 1.442948
   },
   {
     "Id": "meetup-307351763",
@@ -623,8 +591,7 @@
     "VenueName": "La Cantine by La Mêlée",
     "VenueAddr": "27 Rue d'Aubuisson Toulouse",
     "Latitude": 43.602695,
-    "Longitude": 1.454208,
-    "LocalImgSrc": "event-imgs/2025-05-12-mtg-meetup-307351763.webp"
+    "Longitude": 1.454208
   },
   {
     "Id": "meetup-307492131",
@@ -642,8 +609,7 @@
     "VenueName": "3 Rue Albert Lautman",
     "VenueAddr": "3 Rue Albert Lautman Toulouse",
     "Latitude": 43.606495,
-    "Longitude": 1.439052,
-    "LocalImgSrc": "event-imgs/2025-05-20-ruby-meetup-307492131.webp"
+    "Longitude": 1.439052
   },
   {
     "Id": "meetup-307529722",
@@ -661,8 +627,7 @@
     "VenueName": "EPITECH - Amphi rez-de-chaussée",
     "VenueAddr": "40 Boulevard de la Marquette Toulouse",
     "Latitude": 43.61244,
-    "Longitude": 1.429108,
-    "LocalImgSrc": "event-imgs/2025-05-20-jug-meetup-307529722.webp"
+    "Longitude": 1.429108
   },
   {
     "Id": "meetup-307533011",
@@ -680,8 +645,7 @@
     "VenueName": "Etincelle Coworking - Alsace-Lorraine",
     "VenueAddr": "36 Rue d'Alsace Lorraine Toulouse",
     "Latitude": 43.605507,
-    "Longitude": 1.445923,
-    "LocalImgSrc": "event-imgs/2025-05-22-dataviz-meetup-307533011.webp"
+    "Longitude": 1.445923
   },
   {
     "Id": "meetup-307533870",
@@ -699,8 +663,7 @@
     "VenueName": "Artilect FabLab Toulouse",
     "VenueAddr": "10 Rue Tripière Toulouse",
     "Latitude": 43.60174,
-    "Longitude": 1.442948,
-    "LocalImgSrc": "event-imgs/2025-05-22-artilect-meetup-307533870.webp"
+    "Longitude": 1.442948
   },
   {
     "Id": "meetup-307914366",
@@ -718,8 +681,7 @@
     "VenueName": "Maison des Associations",
     "VenueAddr": "3 Pl. Guy Hersant Toulouse",
     "Latitude": 43.5775,
-    "Longitude": 1.444116,
-    "LocalImgSrc": "event-imgs/2025-05-23-agile-meetup-307914366.webp"
+    "Longitude": 1.444116
   },
   {
     "Id": "meetup-307289521",
@@ -737,8 +699,7 @@
     "VenueName": null,
     "VenueAddr": null,
     "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": "event-imgs/2025-05-26-agile-meetup-307289521.webp"
+    "Longitude": null
   },
   {
     "Id": "meetup-307964761",
@@ -756,8 +717,7 @@
     "VenueName": null,
     "VenueAddr": null,
     "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": "event-imgs/2025-05-27-agile-meetup-307964761.webp"
+    "Longitude": null
   },
   {
     "Id": "meetup-307602307",
@@ -775,8 +735,7 @@
     "VenueName": "The Black Owl pub",
     "VenueAddr": "29 boulevard de Strasbourg TOULOUSE",
     "Latitude": 43.607563,
-    "Longitude": 1.44645,
-    "LocalImgSrc": "event-imgs/2025-06-05-js-and-co-meetup-307602307.webp"
+    "Longitude": 1.44645
   },
   {
     "Id": "meetup-307723256",
@@ -794,8 +753,7 @@
     "VenueName": "Artilect FabLab Toulouse",
     "VenueAddr": "10 Rue Tripière Toulouse",
     "Latitude": 43.60174,
-    "Longitude": 1.442948,
-    "LocalImgSrc": "event-imgs/2025-06-09-artilect-meetup-307723256.webp"
+    "Longitude": 1.442948
   },
   {
     "Id": "meetup-lkmdrtyhcjbmb",
@@ -813,8 +771,7 @@
     "VenueName": "Artilect FabLab Toulouse",
     "VenueAddr": "10 Rue Tripière Toulouse",
     "Latitude": 43.60174,
-    "Longitude": 1.442948,
-    "LocalImgSrc": "event-imgs/2025-06-09-artilect-meetup-lkmdrtyhcjbmb.webp"
+    "Longitude": 1.442948
   },
   {
     "Id": "meetup-308157535",
@@ -832,8 +789,7 @@
     "VenueName": "Les halles de la transition",
     "VenueAddr": "Rue du canon d'arcole, Toulouse",
     "Latitude": 43.61285,
-    "Longitude": 1.435785,
-    "LocalImgSrc": "event-imgs/2025-06-10-agile-meetup-308157535.webp"
+    "Longitude": 1.435785
   },
   {
     "Id": "meetup-307842478",
@@ -851,8 +807,7 @@
     "VenueName": "HarryCow Coworking",
     "VenueAddr": "13 Rue Sainte-Ursule Toulouse",
     "Latitude": 43.602283,
-    "Longitude": 1.441679,
-    "LocalImgSrc": "event-imgs/2025-06-11-gdg-meetup-307842478.webp"
+    "Longitude": 1.441679
   },
   {
     "Id": "meetup-308061160",
@@ -870,8 +825,7 @@
     "VenueName": "Maison des Associations",
     "VenueAddr": "3 Pl. Guy Hersant Toulouse",
     "Latitude": 43.5775,
-    "Longitude": 1.444116,
-    "LocalImgSrc": "event-imgs/2025-06-17-agile-meetup-308061160.webp"
+    "Longitude": 1.444116
   },
   {
     "Id": "meetup-307661560",
@@ -889,8 +843,7 @@
     "VenueName": "EPITECH",
     "VenueAddr": "40 Boulevard de la Marquette, 7eme étage Toulouse",
     "Latitude": 43.612465,
-    "Longitude": 1.428924,
-    "LocalImgSrc": "event-imgs/2025-06-17-ruby-meetup-307661560.webp"
+    "Longitude": 1.428924
   },
   {
     "Id": "meetup-308236480",
@@ -908,8 +861,7 @@
     "VenueName": "Artilect FabLab Toulouse",
     "VenueAddr": "10 Rue Tripière Toulouse",
     "Latitude": 43.60174,
-    "Longitude": 1.442948,
-    "LocalImgSrc": "event-imgs/2025-06-19-artilect-meetup-308236480.webp"
+    "Longitude": 1.442948
   },
   {
     "Id": "meetup-308458519",
@@ -927,8 +879,7 @@
     "VenueName": "La Cantine Toulouse",
     "VenueAddr": "27 rue d’Aubuisson Toulouse",
     "Latitude": 43.602768,
-    "Longitude": 1.454036,
-    "LocalImgSrc": "event-imgs/2025-06-26-js-and-co-meetup-308458519.webp"
+    "Longitude": 1.454036
   },
   {
     "Id": "meetup-308389146",
@@ -946,8 +897,7 @@
     "VenueName": "La cité des startups",
     "VenueAddr": "55 avenue Louis Breguet Toulouse",
     "Latitude": 43.57781,
-    "Longitude": 1.47574,
-    "LocalImgSrc": "event-imgs/2025-07-01-js-and-co-meetup-308389146.webp"
+    "Longitude": 1.47574
   },
   {
     "Id": "meetup-308516768",
@@ -965,8 +915,7 @@
     "VenueName": "Au Poêle de la Bête",
     "VenueAddr": "56, rue d'Aubuisson Toulouse",
     "Latitude": 43.602737,
-    "Longitude": 1.454317,
-    "LocalImgSrc": "event-imgs/2025-07-03-js-and-co-meetup-308516768.webp"
+    "Longitude": 1.454317
   },
   {
     "Id": "meetup-308424578",
@@ -984,8 +933,7 @@
     "VenueName": "Etincelle Coworking - Alsace-Lorraine",
     "VenueAddr": "36 Rue d'Alsace Lorraine Toulouse",
     "Latitude": 43.605507,
-    "Longitude": 1.445923,
-    "LocalImgSrc": "event-imgs/2025-07-03-dataviz-meetup-308424578.webp"
+    "Longitude": 1.445923
   },
   {
     "Id": "meetup-308252516",
@@ -1003,8 +951,7 @@
     "VenueName": null,
     "VenueAddr": null,
     "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": "event-imgs/2025-07-07-agile-meetup-308252516.webp"
+    "Longitude": null
   },
   {
     "Id": "meetup-308783275",
@@ -1022,8 +969,7 @@
     "VenueName": "Les halles de la transition",
     "VenueAddr": "Rue du canon d'arcole, Toulouse",
     "Latitude": 43.61285,
-    "Longitude": 1.435785,
-    "LocalImgSrc": "event-imgs/2025-07-08-agile-meetup-308783275.webp"
+    "Longitude": 1.435785
   },
   {
     "Id": "meetup-308804426",
@@ -1041,8 +987,7 @@
     "VenueName": "Etincelle (Alsace-lorraine)",
     "VenueAddr": "36, rue d'alsace-lorraine Toulouse",
     "Latitude": 43.605507,
-    "Longitude": 1.445922,
-    "LocalImgSrc": "event-imgs/2025-07-23-agile-meetup-308804426.webp"
+    "Longitude": 1.445922
   },
   {
     "Id": "meetup-309120692",
@@ -1060,8 +1005,7 @@
     "VenueName": null,
     "VenueAddr": null,
     "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": "event-imgs/2025-07-29-agile-meetup-309120692.webp"
+    "Longitude": null
   },
   {
     "Id": "meetup-310077898",
@@ -1079,8 +1023,7 @@
     "VenueName": "Black Lion pub",
     "VenueAddr": "4 Allées Paul Feuga, 31400 Toulouse Toulouse",
     "Latitude": 43.592327,
-    "Longitude": 1.443878,
-    "LocalImgSrc": "event-imgs/2025-07-29-ruby-meetup-310077898.webp"
+    "Longitude": 1.443878
   },
   {
     "Id": "meetup-310009384",
@@ -1098,8 +1041,7 @@
     "VenueName": "Les halles de la transition",
     "VenueAddr": "Rue du canon d'arcole, Toulouse",
     "Latitude": 43.61285,
-    "Longitude": 1.435785,
-    "LocalImgSrc": "event-imgs/2025-08-05-agile-meetup-310009384.webp"
+    "Longitude": 1.435785
   },
   {
     "Id": "meetup-310465250",
@@ -1117,8 +1059,7 @@
     "VenueName": "Etincelle (Alsace-lorraine)",
     "VenueAddr": "36, rue d'alsace-lorraine Toulouse",
     "Latitude": 43.605507,
-    "Longitude": 1.445922,
-    "LocalImgSrc": "event-imgs/2025-08-21-agile-meetup-310465250.webp"
+    "Longitude": 1.445922
   },
   {
     "Id": "meetup-310501979",
@@ -1136,8 +1077,7 @@
     "VenueName": null,
     "VenueAddr": null,
     "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": "event-imgs/2025-08-26-agile-meetup-310501979.webp"
+    "Longitude": null
   },
   {
     "Id": "meetup-308624569",
@@ -1155,8 +1095,7 @@
     "VenueName": "De Danu",
     "VenueAddr": "9 Rue du pont Guilhemery Toulouse",
     "Latitude": 43.600674,
-    "Longitude": 1.455908,
-    "LocalImgSrc": "event-imgs/2025-09-04-js-and-co-meetup-308624569.webp"
+    "Longitude": 1.455908
   },
   {
     "Id": "meetup-310578772",
@@ -1174,8 +1113,7 @@
     "VenueName": "Artilect FabLab Toulouse",
     "VenueAddr": "10 Rue Tripière Toulouse",
     "Latitude": 43.60174,
-    "Longitude": 1.442948,
-    "LocalImgSrc": "event-imgs/2025-09-08-artilect-meetup-310578772.webp"
+    "Longitude": 1.442948
   },
   {
     "Id": "meetup-qmzpstyhcmblb",
@@ -1193,8 +1131,7 @@
     "VenueName": "Artilect FabLab Toulouse",
     "VenueAddr": "10 Rue Tripière Toulouse",
     "Latitude": 43.60174,
-    "Longitude": 1.442948,
-    "LocalImgSrc": "event-imgs/2025-09-08-artilect-meetup-qmzpstyhcmblb.webp"
+    "Longitude": 1.442948
   },
   {
     "Id": "meetup-310610875",
@@ -1212,8 +1149,7 @@
     "VenueName": "Les halles de la transition",
     "VenueAddr": "Rue du canon d'arcole, Toulouse",
     "Latitude": 43.61285,
-    "Longitude": 1.435785,
-    "LocalImgSrc": "event-imgs/2025-09-09-agile-meetup-310610875.webp"
+    "Longitude": 1.435785
   },
   {
     "Id": "meetup-310827071",
@@ -1231,8 +1167,7 @@
     "VenueName": "1 Pl. de la Bourse",
     "VenueAddr": "1 Pl. de la Bourse Toulouse",
     "Latitude": 43.601437,
-    "Longitude": 1.442047,
-    "LocalImgSrc": "event-imgs/2025-09-11-tech-a-break-meetup-310827071.webp"
+    "Longitude": 1.442047
   },
   {
     "Id": "meetup-310709130",
@@ -1250,8 +1185,7 @@
     "VenueName": "HarryCow Coworking",
     "VenueAddr": "13 Rue Sainte-Ursule Toulouse",
     "Latitude": 43.602283,
-    "Longitude": 1.441679,
-    "LocalImgSrc": "event-imgs/2025-09-18-gdg-meetup-310709130.webp"
+    "Longitude": 1.441679
   },
   {
     "Id": "meetup-310812277",
@@ -1269,8 +1203,7 @@
     "VenueName": "3 Rue Albert Lautman",
     "VenueAddr": "3 Rue Albert Lautman Toulouse",
     "Latitude": 43.606495,
-    "Longitude": 1.439052,
-    "LocalImgSrc": "event-imgs/2025-09-23-ruby-meetup-310812277.webp"
+    "Longitude": 1.439052
   },
   {
     "Id": "meetup-308526249",
@@ -1288,8 +1221,7 @@
     "VenueName": "La Cantine du Quai",
     "VenueAddr": "39 allée Jules Guesde Toulouse",
     "Latitude": 43.594585,
-    "Longitude": 1.450255,
-    "LocalImgSrc": "event-imgs/2025-09-26-js-and-co-meetup-308526249.webp"
+    "Longitude": 1.450255
   },
   {
     "Id": "meetup-311059325",
@@ -1307,8 +1239,7 @@
     "VenueName": null,
     "VenueAddr": null,
     "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": "event-imgs/2025-09-30-agile-meetup-311059325.webp"
+    "Longitude": null
   },
   {
     "Id": "meetup-311118535",
@@ -1326,8 +1257,7 @@
     "VenueName": "Maison des Associations",
     "VenueAddr": "3 Pl. Guy Hersant Toulouse",
     "Latitude": 43.5775,
-    "Longitude": 1.444116,
-    "LocalImgSrc": "event-imgs/2025-10-02-agile-meetup-311118535.webp"
+    "Longitude": 1.444116
   },
   {
     "Id": "meetup-311023008",
@@ -1345,8 +1275,7 @@
     "VenueName": "Le péry",
     "VenueAddr": "22 Rue Gabriel Péri Toulouse",
     "Latitude": 43.606,
-    "Longitude": 1.453156,
-    "LocalImgSrc": "event-imgs/2025-10-02-js-and-co-meetup-311023008.webp"
+    "Longitude": 1.453156
   },
   {
     "Id": "meetup-311218736",
@@ -1364,8 +1293,7 @@
     "VenueName": "Les halles de la transition",
     "VenueAddr": "Rue du canon d'arcole, Toulouse",
     "Latitude": 43.61285,
-    "Longitude": 1.435785,
-    "LocalImgSrc": "event-imgs/2025-10-07-agile-meetup-311218736.webp"
+    "Longitude": 1.435785
   },
   {
     "Id": "meetup-310951200",
@@ -1383,8 +1311,7 @@
     "VenueName": "HarryCow Coworking",
     "VenueAddr": "13 Rue Sainte-Ursule Toulouse",
     "Latitude": 43.602283,
-    "Longitude": 1.441679,
-    "LocalImgSrc": "event-imgs/2025-10-10-gdg-meetup-310951200.webp"
+    "Longitude": 1.441679
   },
   {
     "Id": "meetup-310709345",
@@ -1402,8 +1329,7 @@
     "VenueName": "Artilect FabLab Toulouse",
     "VenueAddr": "10 Rue Tripière Toulouse",
     "Latitude": 43.60174,
-    "Longitude": 1.442948,
-    "LocalImgSrc": "event-imgs/2025-10-13-artilect-meetup-310709345.webp"
+    "Longitude": 1.442948
   },
   {
     "Id": "meetup-qmzpstyhcnbrb",
@@ -1421,8 +1347,7 @@
     "VenueName": "Artilect FabLab Toulouse",
     "VenueAddr": "10 Rue Tripière Toulouse",
     "Latitude": 43.60174,
-    "Longitude": 1.442948,
-    "LocalImgSrc": "event-imgs/2025-10-13-artilect-meetup-qmzpstyhcnbrb.webp"
+    "Longitude": 1.442948
   },
   {
     "Id": "meetup-311291429",
@@ -1440,8 +1365,7 @@
     "VenueName": "Etincelle Coworking - Alsace-Lorraine",
     "VenueAddr": "36 Rue d'Alsace Lorraine Toulouse",
     "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": "event-imgs/2025-10-16-dataviz-meetup-311291429.webp"
+    "Longitude": null
   },
   {
     "Id": "meetup-311403934",
@@ -1459,8 +1383,7 @@
     "VenueName": "Maison des Associations",
     "VenueAddr": "3 Pl. Guy Hersant Toulouse",
     "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": "event-imgs/2025-10-17-agile-meetup-311403934.webp"
+    "Longitude": null
   },
   {
     "Id": "meetup-310579893",
@@ -1478,8 +1401,7 @@
     "VenueName": "Maison des Associations",
     "VenueAddr": "3 Pl. Guy Hersant Toulouse",
     "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": "event-imgs/2025-10-18-agile-meetup-310579893.webp"
+    "Longitude": null
   },
   {
     "Id": "meetup-311104672",
@@ -1497,8 +1419,7 @@
     "VenueName": "Ô Local",
     "VenueAddr": "8 Impasse Bonnet Toulouse",
     "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": "event-imgs/2025-10-21-ruby-meetup-311104672.webp"
+    "Longitude": null
   },
   {
     "Id": "meetup-311127705",
@@ -1516,8 +1437,7 @@
     "VenueName": "EPITECH - Amphi rez-de-chaussée",
     "VenueAddr": "40 Boulevard de la Marquette Toulouse",
     "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": "event-imgs/2025-10-21-jug-meetup-311127705.webp"
+    "Longitude": null
   },
   {
     "Id": "meetup-311403976",
@@ -1535,8 +1455,7 @@
     "VenueName": "Maison des Associations",
     "VenueAddr": "3 Pl. Guy Hersant Toulouse",
     "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": "event-imgs/2025-10-24-agile-meetup-311403976.webp"
+    "Longitude": null
   },
   {
     "Id": "meetup-311393131",
@@ -1554,8 +1473,7 @@
     "VenueName": null,
     "VenueAddr": null,
     "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": "event-imgs/2025-10-28-agile-meetup-311393131.webp"
+    "Longitude": null
   },
   {
     "Id": "meetup-311548562",
@@ -1573,8 +1491,7 @@
     "VenueName": "the Frog and Rosbif",
     "VenueAddr": "14 Rue de l'Industrie Toulouse",
     "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": "event-imgs/2025-10-28-mtg-meetup-311548562.jpeg"
+    "Longitude": null
   },
   {
     "Id": "meetup-311729829",
@@ -1592,8 +1509,7 @@
     "VenueName": "Les halles de la transition",
     "VenueAddr": "Rue du canon d'arcole, Toulouse",
     "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": "event-imgs/2025-11-04-agile-meetup-311729829.webp"
+    "Longitude": null
   },
   {
     "Id": "meetup-311471410",
@@ -1611,8 +1527,7 @@
     "VenueName": "Maison des Associations",
     "VenueAddr": "3 Pl. Guy Hersant Toulouse",
     "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": "event-imgs/2025-11-05-agile-meetup-311471410.webp"
+    "Longitude": null
   },
   {
     "Id": "meetup-311360142",
@@ -1630,8 +1545,7 @@
     "VenueName": "Les Tilleuls",
     "VenueAddr": "34, avenue du Cimetière Toulouse",
     "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": "event-imgs/2025-11-06-js-and-co-meetup-311360142.webp"
+    "Longitude": null
   },
   {
     "Id": "meetup-311629203",
@@ -1649,8 +1563,7 @@
     "VenueName": "1 Pl. de la Bourse",
     "VenueAddr": "1 Pl. de la Bourse Toulouse",
     "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": "event-imgs/2025-11-06-tech-a-break-meetup-311629203.webp"
+    "Longitude": null
   },
   {
     "Id": "meetup-310709347",
@@ -1668,8 +1581,7 @@
     "VenueName": "Artilect FabLab Toulouse",
     "VenueAddr": "10 Rue Tripière Toulouse",
     "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": "event-imgs/2025-11-10-artilect-meetup-310709347.webp"
+    "Longitude": null
   },
   {
     "Id": "meetup-qmzpstyhcpbnb",
@@ -1687,8 +1599,7 @@
     "VenueName": "Artilect FabLab Toulouse",
     "VenueAddr": "10 Rue Tripière Toulouse",
     "Latitude": 43.60174,
-    "Longitude": 1.442948,
-    "LocalImgSrc": "event-imgs/2025-11-10-artilect-meetup-qmzpstyhcpbnb.webp"
+    "Longitude": 1.442948
   },
   {
     "Id": "meetup-311588275",
@@ -1706,8 +1617,7 @@
     "VenueName": "EPITECH - Amphi rez-de-chaussée",
     "VenueAddr": "40 Boulevard de la Marquette Toulouse",
     "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": "event-imgs/2025-11-12-jug-meetup-311588275.webp"
+    "Longitude": null
   },
   {
     "Id": "meetup-311746436",
@@ -1725,8 +1635,7 @@
     "VenueName": "La Cantine",
     "VenueAddr": "27 rue d'Aubuisson Toulouse",
     "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": "event-imgs/2025-11-12-python-meetup-311746436.webp"
+    "Longitude": null
   },
   {
     "Id": "meetup-310725403",
@@ -1744,8 +1653,7 @@
     "VenueName": "Diagora, Centre de Congrès et d'Exposition",
     "VenueAddr": "150, rue Pierre Gilles de Gennes LABEGE",
     "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": "event-imgs/2025-11-13-gdg-meetup-310725403.webp"
+    "Longitude": null
   },
   {
     "Id": "meetup-311728486",
@@ -1763,8 +1671,7 @@
     "VenueName": "Diagora, Centre de Congrès et d'Exposition",
     "VenueAddr": "150, rue Pierre Gilles de Gennes LABEGE",
     "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": "event-imgs/2025-11-13-ruby-meetup-311728486.webp"
+    "Longitude": null
   },
   {
     "Id": "meetup-311860557",
@@ -1782,8 +1689,7 @@
     "VenueName": "Diagora",
     "VenueAddr": "150 Rue Pierre Gilles de Gennes Labège",
     "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": "event-imgs/2025-11-13-mtg-meetup-311860557.webp"
+    "Longitude": null
   },
   {
     "Id": "meetup-311588382",
@@ -1801,8 +1707,7 @@
     "VenueName": "Diagora",
     "VenueAddr": "150 Rue Pierre Gilles de Gennes Labège",
     "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": "event-imgs/2025-11-13-jug-meetup-311588382.webp"
+    "Longitude": null
   },
   {
     "Id": "meetup-311839738",
@@ -1820,8 +1725,7 @@
     "VenueName": "Centre de Congrès et d’Exposition Diagora",
     "VenueAddr": "150 Rue Pierre Gilles de Gennes Labège",
     "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": "event-imgs/2025-11-13-agile-meetup-311839738.webp"
+    "Longitude": null
   },
   {
     "Id": "meetup-311746637",
@@ -1839,8 +1743,7 @@
     "VenueName": "Diagora",
     "VenueAddr": "150 Rue Pierre Gilles de Gennes Labège",
     "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": "event-imgs/2025-11-13-python-meetup-311746637.webp"
+    "Longitude": null
   },
   {
     "Id": "meetup-311713217",
@@ -1858,8 +1761,7 @@
     "VenueName": "Etincelle (Alsace-lorraine)",
     "VenueAddr": "36, rue d'alsace-lorraine Toulouse",
     "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": "event-imgs/2025-11-17-agile-meetup-311713217.webp"
+    "Longitude": null
   },
   {
     "Id": "meetup-311588309",
@@ -1877,8 +1779,7 @@
     "VenueName": "EPITECH - Amphi rez-de-chaussée",
     "VenueAddr": "40 Boulevard de la Marquette Toulouse",
     "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": "event-imgs/2025-11-18-jug-meetup-311588309.webp"
+    "Longitude": null
   },
   {
     "Id": "meetup-311776489",
@@ -1896,8 +1797,7 @@
     "VenueName": "3 Rue Albert Lautman",
     "VenueAddr": "3 Rue Albert Lautman Toulouse",
     "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": "event-imgs/2025-11-18-ruby-meetup-311776489.webp"
+    "Longitude": null
   },
   {
     "Id": "meetup-311798497",
@@ -1915,8 +1815,7 @@
     "VenueName": "Etincelle Coworking - Alsace-Lorraine",
     "VenueAddr": "36 Rue d'Alsace Lorraine Toulouse",
     "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": "event-imgs/2025-11-20-dataviz-meetup-311798497.webp"
+    "Longitude": null
   },
   {
     "Id": "meetup-312080364",
@@ -1934,8 +1833,7 @@
     "VenueName": null,
     "VenueAddr": null,
     "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": "event-imgs/2025-11-24-agile-meetup-312080364.webp"
+    "Longitude": null
   },
   {
     "Id": "meetup-311992603",
@@ -1953,8 +1851,7 @@
     "VenueName": null,
     "VenueAddr": null,
     "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": "event-imgs/2025-11-25-agile-meetup-311992603.webp"
+    "Longitude": null
   },
   {
     "Id": "meetup-311974162",
@@ -1972,8 +1869,7 @@
     "VenueName": "Rooster & Beer",
     "VenueAddr": "100 Rue Riquet Toulouse",
     "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": "event-imgs/2025-11-25-python-meetup-311974162.webp"
+    "Longitude": null
   },
   {
     "Id": "meetup-311988561",
@@ -1991,8 +1887,7 @@
     "VenueName": "Harry Cow",
     "VenueAddr": "13 rue Sainte Ursule Toulouse",
     "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": "event-imgs/2025-11-27-tds-meetup-311988561.webp"
+    "Longitude": null
   },
   {
     "Id": "meetup-312061214",
@@ -2010,8 +1905,7 @@
     "VenueName": "Artilect FabLab Toulouse",
     "VenueAddr": "10 Rue Tripière Toulouse",
     "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": "event-imgs/2025-12-01-artilect-meetup-312061214.webp"
+    "Longitude": null
   },
   {
     "Id": "meetup-312052903",
@@ -2029,8 +1923,7 @@
     "VenueName": "Maison des Associations",
     "VenueAddr": "3 Pl. Guy Hersant Toulouse",
     "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": "event-imgs/2025-12-04-agile-meetup-312052903.webp"
+    "Longitude": null
   },
   {
     "Id": "meetup-312046832",
@@ -2048,8 +1941,7 @@
     "VenueName": "Pompette bar",
     "VenueAddr": "27 rue Gabriel Péri Toulouse",
     "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": "event-imgs/2025-12-04-js-and-co-meetup-312046832.webp"
+    "Longitude": null
   },
   {
     "Id": "meetup-312061009",
@@ -2067,8 +1959,7 @@
     "VenueName": "Web-atrio",
     "VenueAddr": "2 rue Marcel Doret Blagnac",
     "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": "event-imgs/2025-12-04-python-meetup-312061009.webp"
+    "Longitude": null
   },
   {
     "Id": "meetup-311533275",
@@ -2086,8 +1977,7 @@
     "VenueName": "L'Initial",
     "VenueAddr": "1 rue boudeville Toulouse",
     "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": "event-imgs/2025-12-06-agile-meetup-311533275.webp"
+    "Longitude": null
   },
   {
     "Id": "meetup-310709348",
@@ -2105,8 +1995,7 @@
     "VenueName": "Artilect FabLab Toulouse",
     "VenueAddr": "10 Rue Tripière Toulouse",
     "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": "event-imgs/2025-12-08-artilect-meetup-310709348.webp"
+    "Longitude": null
   },
   {
     "Id": "meetup-311902027",
@@ -2124,8 +2013,7 @@
     "VenueName": "Artilect FabLab Toulouse",
     "VenueAddr": "10 Rue Tripière Toulouse",
     "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": "event-imgs/2025-12-08-artilect-meetup-311902027.webp"
+    "Longitude": null
   },
   {
     "Id": "meetup-qmzpstyhcqblb",
@@ -2143,8 +2031,7 @@
     "VenueName": "Artilect FabLab Toulouse",
     "VenueAddr": "10 Rue Tripière Toulouse",
     "Latitude": 43.60174,
-    "Longitude": 1.442948,
-    "LocalImgSrc": "event-imgs/2025-12-08-artilect-meetup-qmzpstyhcqblb.webp"
+    "Longitude": 1.442948
   },
   {
     "Id": "meetup-312060430",
@@ -2162,8 +2049,7 @@
     "VenueName": "Maison des Associations",
     "VenueAddr": "3 Pl. Guy Hersant Toulouse",
     "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": "event-imgs/2025-12-09-agile-meetup-312060430.webp"
+    "Longitude": null
   },
   {
     "Id": "meetup-311885142",
@@ -2181,8 +2067,7 @@
     "VenueName": null,
     "VenueAddr": null,
     "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": "event-imgs/2025-12-11-agile-meetup-311885142.webp"
+    "Longitude": null
   },
   {
     "Id": "meetup-304384746",
@@ -2200,8 +2085,7 @@
     "VenueName": "EPITECH - Amphi rez-de-chaussée",
     "VenueAddr": "40 Boulevard de la Marquette Toulouse",
     "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": "event-imgs/2025-12-11-jug-meetup-304384746.webp"
+    "Longitude": null
   },
   {
     "Id": "meetup-312156265",
@@ -2219,8 +2103,7 @@
     "VenueName": "Black Lion pub",
     "VenueAddr": "4 Allées Paul Feuga, 31400 Toulouse Toulouse",
     "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": "event-imgs/2025-12-16-ruby-meetup-312156265.webp"
+    "Longitude": null
   },
   {
     "Id": "meetup-312060401",
@@ -2238,8 +2121,7 @@
     "VenueName": "Maison des Associations",
     "VenueAddr": "3 Pl. Guy Hersant Toulouse",
     "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": "event-imgs/2025-12-18-agile-meetup-312060401.webp"
+    "Longitude": null
   },
   {
     "Id": "meetup-312458469",
@@ -2257,8 +2139,7 @@
     "VenueName": "La nouvelle lune",
     "VenueAddr": "14 Rue Alfred Dumeril Toulouse",
     "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": "event-imgs/2026-01-08-js-and-co-meetup-312458469.webp"
+    "Longitude": null
   },
   {
     "Id": "meetup-311744824",
@@ -2276,8 +2157,7 @@
     "VenueName": "Centre international de conférence de Météo France",
     "VenueAddr": "42 Avenue Gaspard Coriolis Toulouse",
     "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": "event-imgs/2026-01-13-postgres-meetup-311744824.webp"
+    "Longitude": null
   },
   {
     "Id": "meetup-312767821",
@@ -2295,8 +2175,7 @@
     "VenueName": "Epitech Toulouse",
     "VenueAddr": "40 boulevard de la Marquette Toulouse",
     "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": "event-imgs/2026-01-20-ruby-meetup-312767821.webp"
+    "Longitude": null
   },
   {
     "Id": "meetup-312917900",
@@ -2314,8 +2193,7 @@
     "VenueName": "Delirium café",
     "VenueAddr": "54 Allée Jean Jaurès, 31000 Toulouse",
     "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": "event-imgs/2026-01-22-tds-meetup-312917900.webp"
+    "Longitude": null
   },
   {
     "Id": "meetup-312417935",
@@ -2333,8 +2211,7 @@
     "VenueName": "Maison des Associations",
     "VenueAddr": "3 Pl. Guy Hersant Toulouse",
     "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": "event-imgs/2026-01-27-agile-meetup-312417935.webp"
+    "Longitude": null
   },
   {
     "Id": "meetup-312846843",
@@ -2352,8 +2229,7 @@
     "VenueName": "Rooster & Beer",
     "VenueAddr": "100 Rue Riquet Toulouse",
     "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": "event-imgs/2026-01-27-python-meetup-312846843.webp"
+    "Longitude": null
   },
   {
     "Id": "meetup-312782796",
@@ -2371,8 +2247,7 @@
     "VenueName": "Epitech Toulouse",
     "VenueAddr": "40 boulevard de la Marquette Toulouse",
     "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": "event-imgs/2026-01-28-rust-meetup-312782796.webp"
+    "Longitude": null
   },
   {
     "Id": "meetup-311852752",
@@ -2390,8 +2265,7 @@
     "VenueName": "8 Imp. Bonnet",
     "VenueAddr": "8 Imp. Bonnet Toulouse",
     "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": "event-imgs/2026-01-29-toulbox-meetup-311852752.webp"
+    "Longitude": null
   },
   {
     "Id": "meetup-312343838",
@@ -2409,8 +2283,7 @@
     "VenueName": "Campus Media School Toulouse",
     "VenueAddr": "9 rue des amidonniers Toulouse",
     "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": "event-imgs/2026-01-29-js-and-co-meetup-312343838.webp"
+    "Longitude": null
   },
   {
     "Id": "meetup-312848028",
@@ -2428,8 +2301,7 @@
     "VenueName": "Holberton School Toulouse",
     "VenueAddr": "37 rue des marchands Toulouse",
     "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": "event-imgs/2026-02-03-js-and-co-meetup-312848028.webp"
+    "Longitude": null
   },
   {
     "Id": "meetup-313111706",
@@ -2447,8 +2319,7 @@
     "VenueName": "L'Atelier de l'Echarpe",
     "VenueAddr": "8 rue de l'echarpe Toulouse",
     "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": "event-imgs/2026-02-12-js-and-co-meetup-313111706.webp"
+    "Longitude": null
   },
   {
     "Id": "meetup-313185133",
@@ -2466,8 +2337,7 @@
     "VenueName": "La Cantine",
     "VenueAddr": "27 rue d'Aubuisson Toulouse",
     "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": "event-imgs/2026-02-12-python-meetup-313185133.webp"
+    "Longitude": null
   },
   {
     "Id": "meetup-313126427",
@@ -2485,8 +2355,7 @@
     "VenueName": "At Home - Campus Médéric",
     "VenueAddr": "3 Rue Alaric II Toulouse",
     "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": "event-imgs/2026-02-17-ruby-meetup-313126427.webp"
+    "Longitude": null
   },
   {
     "Id": "meetup-313063018",
@@ -2504,8 +2373,7 @@
     "VenueName": "1 Pl. de la Bourse",
     "VenueAddr": "1 Pl. de la Bourse Toulouse",
     "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": "event-imgs/2026-02-19-tech-a-break-meetup-313063018.webp"
+    "Longitude": null
   },
   {
     "Id": "meetup-313369368",
@@ -2523,8 +2391,7 @@
     "VenueName": null,
     "VenueAddr": null,
     "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": "event-imgs/2026-02-24-agile-meetup-313369368.webp"
+    "Longitude": null
   },
   {
     "Id": "meetup-313372936",
@@ -2542,8 +2409,7 @@
     "VenueName": "Boulevard 36",
     "VenueAddr": "36 boulevard de Strasbourg TOULOUSE",
     "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": "event-imgs/2026-03-05-js-and-co-meetup-313372936.webp"
+    "Longitude": null
   },
   {
     "Id": "meetup-313325443",
@@ -2561,8 +2427,7 @@
     "VenueName": "Maison des Associations",
     "VenueAddr": "3 Pl. Guy Hersant Toulouse",
     "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": "event-imgs/2026-03-12-agile-meetup-313325443.webp"
+    "Longitude": null
   },
   {
     "Id": "meetup-312901216",
@@ -2580,7 +2445,6 @@
     "VenueName": "Pictarine",
     "VenueAddr": "46 Rue Marco Polo Labège",
     "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": "event-imgs/2026-04-07-postgres-meetup-312901216.webp"
+    "Longitude": null
   }
 ]
