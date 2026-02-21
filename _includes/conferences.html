@@ -1,5 +1,5 @@
 <div class="row row-cols-1 row-cols-md-2 row-cols-xxl-4">
-  {% for conf in site.data.confs %}
+  {% for conf in site.confs %}
   <div class="my-2 col">
     <div class="card shadow">
       <div class="card-header">📢 {{ conf.name }}</div>
@@ -8,12 +8,14 @@
       </a>
       <div class="card-body">
         <a href="{{ conf.url }}" class="muted">
+          {% if conf.date %}
           <h5 class="card-title">
             {{ conf.date | date: "%d %B %Y" }}
             {% if conf.end %}
               - {{ conf.end | date: "%d %B %Y" }}
             {% endif %}
           </h5>
+          {% endif %}
         </a>
         <div class="d-flex align-items-left">
           {% for social in conf.social %}
