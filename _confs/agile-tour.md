@@ -1,10 +1,9 @@
 ---
-id: agile-tour
+slug: agile-tour
 name: Agile Tour Toulouse
 date: 2026-06-25
 end: 2026-06-26
 link: https://tour.agiletoulouse.fr/
-image: confs-imgs/agile-tour.jpg
 social:
   - icon: bi-globe
     url: https://tour.agiletoulouse.fr/

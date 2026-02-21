@@ -1,8 +1,7 @@
 ---
-id: capitole-du-libre
+slug: capitole-du-libre
 name: Le Capitole du Libre
 link: https://capitoledulibre.org/
-image: confs-imgs/capitole-du-libre.jpg
 social:
   - icon: bi-globe
     url: https://capitoledulibre.org/

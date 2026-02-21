@@ -31,12 +31,11 @@ Create a new markdown file in `_confs/` named `{slug}.md`:
 
 ```yaml
 ---
-id: {conference-slug}
+slug: {conference-slug}
 name: {conference-name}
 date: {conference-date}  # Optional: YYYY-MM-DD format
 end: {conference-end-date}  # Optional: YYYY-MM-DD format if multi-day
 link: {conference-url}  # Optional
-image: confs-imgs/{conference-slug}.jpg  # Or .png/.webp depending on logo format
 social:
   - icon: bi-globe
     url: {website-url}
@@ -49,10 +48,10 @@ social:
 ```
 
 **Important notes:**
-- `id` field uses the slug (no front matter ID needed, use `.slug` in templates)
+- `id` field uses the slug (image path is automatically computed: `confs-imgs/{slug}.jpg`)
 - `date` field is optional - only include if next edition date is known
 - `end` field is optional - only include for multi-day conferences
-- `url` field is optional - only include if provided
+- `link` field is optional - only include if provided
 - `image` path uses convention: `confs-imgs/{slug}.{ext}`
 - Social links array uses Bootstrap Icons class names
 
@@ -106,7 +105,7 @@ If a logo URL is provided:
 
 1. **Download the logo:**
    ```bash
-   wget -O confs-imgs/{slug}.{ext} "{logo-url}"
+   wget -O confs-imgs/{slug}.jpg "{logo-url}"
    ```
 
 2. **Convert to JPG if needed (recommended for consistency):**
@@ -116,15 +115,10 @@ If a logo URL is provided:
    rm confs-imgs/{slug}.png
    ```
 
-3. **Update image path in YAML:**
-   ```yaml
-   image: confs-imgs/{slug}.jpg
-   ```
-
-**Note:** If no logo is provided, you can:
+**Note:** The image path will be automatically computed from the `id` field: `confs-imgs/{slug}.jpg`. No need to add an `image:` field to YAML. If no logo is provided, you can:
 - Search online for the conference official logo
 - Ask the issue author to provide one
-- Create a placeholder or skip the image field
+- Create a placeholder or skip providing an image
 
 ### Step 5: Validate Conference File
 
@@ -142,7 +136,7 @@ Before creating a PR, validate:
    # Should return empty if no errors
    ```
 
-3. **Image exists:** If image path specified, verify file exists
+3. **Image exists:** Verify image file exists
    ```bash
    ls confs-imgs/{slug}.jpg
    ```
@@ -205,7 +199,7 @@ YouTube: https://www.youtube.com/channel/UCR7skKC85Zn6p7fJ-lW7G8g
 
 ```yaml
 ---
-id: pgday
+slug: pgday
 name: PGDay Toulouse
 date: 2026-06-03
 end: 2026-06-04

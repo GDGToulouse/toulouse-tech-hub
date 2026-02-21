@@ -1,9 +1,8 @@
 ---
-id: cloud-toulouse
+slug: cloud-toulouse
 name: Cloud Toulouse
 date: 2026-05-28
 link: https://cloudtoulouse.com/
-image: confs-imgs/cloud-toulouse.jpg
 social:
   - icon: bi-globe
     url: https://cloudtoulouse.com/

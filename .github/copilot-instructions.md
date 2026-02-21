@@ -142,11 +142,10 @@ social:
 Create a markdown file in `_confs/` named `{conference-slug}.md`:
 ```yaml
 ---
-id: slug
+slug: slug
 name: Conference Name
 date: YYYY-MM-DD
 link: https://example.com
-image: confs-imgs/slug.jpg
 social:
   - icon: bi-globe
     url: https://example.com
@@ -154,7 +153,7 @@ social:
 ---
 ```
 
-**Note:** `link` property is for the main website. `social` array uses `icon`, `url` (for social profiles), and `title`.
+**Note:** `link` property is for the main website. `social` array uses `icon`, `url` (for social profiles), and `title`. Image path is automatically computed: `confs-imgs/{slug}.jpg` (upload image file with this name).
 
 ## Working with Jekyll Locally
 

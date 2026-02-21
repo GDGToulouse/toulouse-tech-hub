@@ -1,10 +1,11 @@
 <div class="row row-cols-1 row-cols-md-2 row-cols-xxl-4">
   {% for conf in site.confs %}
+  {%- capture conf_img_url -%}/confs-imgs/{{ conf.slug }}.jpg{%- endcapture -%}
   <div class="my-2 col">
     <div class="card shadow">
       <div class="card-header">📢 {{ conf.name }}</div>
       <a href="{{ conf.link }}" class="muted">
-        <img width="100%" style="aspect-ratio: 16/9" src="{{ site.baseurl }}/{{ conf.image }}" alt="{{ conf.name }}" />
+        <img width="100%" style="aspect-ratio: 16/9" src="{{ conf_img_url }}" alt="{{ conf.name }}" />
       </a>
       <div class="card-body">
         <a href="{{ conf.link }}" class="muted">

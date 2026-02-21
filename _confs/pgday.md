@@ -1,10 +1,9 @@
 ---
-id: pgday
+slug: pgday
 name: PGDay Toulouse
 date: 2026-06-03
 end: 2026-06-04
 link: https://pgday.fr/
-image: confs-imgs/pgday.png
 social:
   - icon: bi-globe
     url: https://pgday.fr/

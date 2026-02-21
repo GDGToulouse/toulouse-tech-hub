@@ -1,8 +1,7 @@
 ---
-id: devfest
+slug: devfest
 name: DevFest Toulouse
 link: https://devfesttoulouse.fr/
-image: confs-imgs/devfest.jpg
 social:
   - icon: bi-globe
     url: https://devfesttoulouse.fr/
