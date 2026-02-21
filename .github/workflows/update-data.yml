@@ -14,14 +14,13 @@ permissions:
   contents: write
 
 jobs:
-  build:
+  update-data:
     runs-on: ubuntu-latest
-
-    outputs:
-      is_changed: ${{ steps.check_file_changed.outputs.hasDiff == 'True' }}
 
     steps:
     - uses: actions/checkout@v4
+      with:
+        fetch-depth: 2
       with:
         fetch-depth: 2
     - uses: actions/setup-node@v3
@@ -41,20 +40,27 @@ jobs:
       run: |
         $diff = git status --porcelain
         Write-Output "diff=$diff"
-        $diff = $diff | Where-Object { $_ -match '^(\?\?| M) (events-job.json|_data/events/|event-imgs/)' }
+        $diff = $diff | Where-Object { $_ -match '^(?:\?\?|[ MADRCU?!]{2}) (events-job.json|_data/events/|event-imgs/)' }
         $hasDiff = $diff.Length -gt 0
         Write-Output "hasDiff=$hasDiff"
         "hasDiff=$hasDiff" >> $env:GITHUB_OUTPUT
     - name: Commit updates
       if: steps.check_file_changed.outputs.hasDiff == 'True'
       run: |
-        git config --global user.name 'tbolon'
-        git config --global user.email 'tbolon@users.noreply.github.com'
+        git config user.name 'github-actions[bot]'
+        git config user.email 'github-actions[bot]@users.noreply.github.com'
         git add --all
-        git commit -m "Update data" || true
-        git push || true
+        if ! git commit -m "Update data"; then
+          echo "git commit failed. Check the repository state." >&2
+          git status >&2
+          exit 1
+        fi
+        if ! git push; then
+          echo "git push failed. Changes were not pushed to the remote." >&2
+          exit 1
+        fi
     - uses: actions/upload-artifact@v4
-      name: Upload Screenshot
+      name: Upload screenshots on failure
       if: failure()
       with:
         path: screen*.jpg

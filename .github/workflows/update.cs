@@ -121,7 +121,7 @@ List<Event> evts = [];
                 if (evt.LocalImgSrc != null)
                 {
                     var imgPath = Path.Combine(repoRoot, evt.LocalImgSrc);
-                    if (imgPath != null && !File.Exists(imgPath))
+                    if (!File.Exists(imgPath) && (evt.FullImgSrc != null || evt.ImgSrc != null))
                     {
                         Directory.CreateDirectory(Path.GetDirectoryName(imgPath)!);
                         if (evt.FullImgSrc != null)
@@ -345,7 +345,7 @@ partial class MeetupGroup : IGroup
             await foreach (var evt in ScanEventPageItems(page, past))
             {
                 // on scanne la page de chaque évènement pour obtenir des infos complémentaires
-                // UNIQUEMENT sur les évènements à venir : meetup bloque l'afficahge des évènements passés pour les non membres
+                // UNIQUEMENT sur les évènements à venir : meetup bloque l'affichage des évènements passés pour les non membres
                 if (!past)
                 {
                     await ScanDetailPage(evtPage, evt);
@@ -536,7 +536,7 @@ partial class MeetupGroup : IGroup
             }
         }
 
-        // full image, optionel
+        // full image, optionnel
         var imgs = evtPage.Locator("main aside img[fetchpriority='high'].object-center");
         if (await imgs.CountAsync() != 0)
         {
@@ -582,7 +582,7 @@ partial class MeetupGroup : IGroup
     [GeneratedRegex(@"query=(-?[\d\.]+)%2C%20(-?[\d\.]+)$", RegexOptions.IgnoreCase, "fr-FR")]
     private static partial Regex GoogleMapsCoordsRegex();
 
-    [GeneratedRegex(@" UTC\+([12])$", RegexOptions.CultureInvariant | RegexOptions.IgnoreCase)]
+    [GeneratedRegex(@" UTC([+-]\d{1,2})$", RegexOptions.CultureInvariant | RegexOptions.IgnoreCase)]
     private static partial Regex TimeZoneRegex();
 }
 
