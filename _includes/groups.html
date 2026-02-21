@@ -18,19 +18,11 @@
       {% endif %}
       <div class="community-card-links">
         <a href="{{ group.url }}" title="Site Web" target="_blank"><i class="bi bi-globe"></i></a>
-        {% if group.social %}
-          {% for social in group.social %}
-            {% if social.name == "x" %}
-            <a href="{{ social.url }}" title="X / Twitter" target="_blank"><i class="bi bi-twitter-x"></i></a>
-            {% elsif social.name == "linkedin" %}
-            <a href="{{ social.url }}" title="LinkedIn" target="_blank"><i class="bi bi-linkedin"></i></a>
-            {% elsif social.name == "github" %}
-            <a href="{{ social.url }}" title="GitHub" target="_blank"><i class="bi bi-github"></i></a>
-            {% elsif social.name == "mastodon" %}
-            <a href="{{ social.url }}" title="Mastodon" target="_blank"><i class="bi bi-mastodon"></i></a>
-            {% endif %}
-          {% endfor %}
-        {% endif %}
+        {%- if group.social -%}
+          {%- for social in group.social -%}
+          <a href="{{ social.url }}" target="_blank"><i class="bi {{ social.icon }}"></i></a>
+          {%- endfor -%}
+        {%- endif -%}
       </div>
     </div>
   </div>

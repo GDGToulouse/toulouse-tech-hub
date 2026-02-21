@@ -3,9 +3,9 @@ name: MTG:Toulouse
 url: https://www.meetup.com/mtg-toulouse/
 registration: https://www.meetup.com/mtg-toulouse/
 social:
-  - name: x
+  - icon: bi-twitter-x
     url: https://twitter.com/mtg_toulouse
-  - name: linkedin
+  - icon: bi-linkedin
     url: https://www.linkedin.com/company/mtg-toulouse/
 ---
 
