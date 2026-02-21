@@ -131,17 +131,47 @@ List<Event> evts = [];
                 evts.Add(evt);
 
                 // téléchargement de l'image => event-imgs/meetup-xxx.webp
-                // TODO : gérer le cas d'images mises à jour ??
+                // Mise à jour basée sur Last-Modified: télécharge si source plus récente que le fichier local
                 if (evt.LocalImgSrc != null)
                 {
                     var imgPath = Path.Combine(repoRoot, evt.LocalImgSrc);
-                    if (!File.Exists(imgPath) && (evt.FullImgSrc != null || evt.ImgSrc != null))
+                    var imgSource = evt.FullImgSrc ?? evt.ImgSrc;
+
+                    if (imgSource != null)
                     {
-                        Directory.CreateDirectory(Path.GetDirectoryName(imgPath)!);
-                        if (evt.FullImgSrc != null)
-                            await File.WriteAllBytesAsync(imgPath, await http.GetByteArrayAsync(evt.FullImgSrc));
-                        else if (evt.ImgSrc != null)
-                            await File.WriteAllBytesAsync(imgPath, await http.GetByteArrayAsync(evt.ImgSrc));
+                        bool shouldDownload = false;
+
+                        if (!File.Exists(imgPath))
+                        {
+                            shouldDownload = true;
+                        }
+                        else
+                        {
+                            // Check if source image has been updated by comparing Last-Modified headers
+                            try
+                            {
+                                var headRequest = new HttpRequestMessage(HttpMethod.Head, imgSource);
+                                var response = await http.SendAsync(headRequest);
+
+                                if (response.Content.Headers.LastContentModified.HasValue)
+                                {
+                                    var localFileTime = File.GetLastWriteTimeUtc(imgPath);
+                                    var remoteFileTime = response.Content.Headers.LastContentModified.Value.UtcDateTime;
+                                    shouldDownload = remoteFileTime > localFileTime;
+                                }
+                            }
+                            catch
+                            {
+                                // If we can't determine modification time, don't update to avoid unnecessary downloads
+                                shouldDownload = false;
+                            }
+                        }
+
+                        if (shouldDownload)
+                        {
+                            Directory.CreateDirectory(Path.GetDirectoryName(imgPath)!);
+                            await File.WriteAllBytesAsync(imgPath, await http.GetByteArrayAsync(imgSource));
+                        }
                     }
                 }
             }
