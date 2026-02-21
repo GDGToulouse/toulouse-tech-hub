@@ -645,10 +645,6 @@ partial class ToulouseGameDevGroup : IGroup
                 {
                     var text = await paragraph.InnerTextAsync();
 
-                    // HACK: Fix source data formatting issues in Toulouse Game Dev website
-                    // Remove when source website fixes these specific errors
-                    text = text.Replace("Mars2025", "Mars 2025"); // Missing space between month and year
-
                     // Jeudi 17 Avril 2025: 18h30-22h30 => OK [ "Jeudi", "17", "Avril", "2025" "18h30-22h30" ]
                     // Mardi 21 Janvier 2024 : 18h30-22h30 => OK [ "Mardi", "21", "Janvier", "2024", ":", "18h30-22h30" ]
                     // Jeudi 12 Décembre 2024 : 18h30-22h30 => OK
@@ -657,10 +653,6 @@ partial class ToulouseGameDevGroup : IGroup
 
                     // [ "Mardi", "21", "Janvier", "2024" ]
                     var datePart = string.Join(' ', words.Take(4));
-
-                    // HACK: Fix incorrect year in source website (January 2025 events labeled as 2024)
-                    // Monitor for correction at source; can be removed when fixed
-                    datePart = datePart.Replace("2024", "2025");
 
                     if (DateTimeOffset.TryParseExact(datePart.ToLowerInvariant(), "dddd dd MMMM yyyy", FrenchLocales.FrenchCultureInfo, DateTimeStyles.AssumeLocal, out var dateOnly))
                     {
