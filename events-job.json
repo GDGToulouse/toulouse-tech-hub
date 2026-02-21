@@ -1,2969 +1,5 @@
 [
   {
-    "Id": "meetup-251544549",
-    "PublishedOn": "2018-05-28T19:00:00+02:00",
-    "Href": "https://www.meetup.com/fr-FR/toulouse-devops/events/251544549/",
-    "Title": "Un peu de craft dans l'Infra as Code",
-    "Start": "2018-06-28T19:00:00+02:00",
-    "ImgSrc": null,
-    "Group": "Toulouse DevOps",
-    "GroupId": null,
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-255364794",
-    "PublishedOn": "2018-09-18T19:00:00+02:00",
-    "Href": "https://www.meetup.com/fr-FR/toulouse-devops/events/255364794/",
-    "Title": "Introduction à Docker et aux containers",
-    "Start": "2018-10-18T19:00:00+02:00",
-    "ImgSrc": null,
-    "Group": "Toulouse DevOps",
-    "GroupId": null,
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-261314071",
-    "PublishedOn": "2019-04-21T19:00:00+02:00",
-    "Href": "https://www.meetup.com/fr-FR/toulouse-devops/events/261314071/",
-    "Title": "Mise en place de l'observabilité sur une architecture serverless AWS",
-    "Start": "2019-05-21T19:00:00+02:00",
-    "ImgSrc": null,
-    "Group": "Toulouse DevOps",
-    "GroupId": null,
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-262199370",
-    "PublishedOn": "2019-05-13T19:00:00+02:00",
-    "Href": "https://www.meetup.com/fr-FR/toulouse-devops/events/262199370/",
-    "Title": "Retour d'expérience : management des équipes tech chez un GAFA",
-    "Start": "2019-06-13T19:00:00+02:00",
-    "ImgSrc": null,
-    "Group": "Toulouse DevOps",
-    "GroupId": null,
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-264545373",
-    "PublishedOn": "2019-08-12T19:00:00+02:00",
-    "Href": "https://www.meetup.com/fr-FR/toulouse-devops/events/264545373/",
-    "Title": "Comment exploiter à fond GitLab",
-    "Start": "2019-09-12T19:00:00+02:00",
-    "ImgSrc": null,
-    "Group": "Toulouse DevOps",
-    "GroupId": null,
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-264545407",
-    "PublishedOn": "2019-08-13T09:30:00+02:00",
-    "Href": "https://www.meetup.com/fr-FR/toulouse-devops/events/264545407/",
-    "Title": "Découverte de GitLab par la pratique (Workshop)",
-    "Start": "2019-09-13T09:30:00+02:00",
-    "ImgSrc": null,
-    "Group": "Toulouse DevOps",
-    "GroupId": null,
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-265278248",
-    "PublishedOn": "2019-09-17T19:00:00+02:00",
-    "Href": "https://www.meetup.com/fr-FR/toulouse-devops/events/265278248/",
-    "Title": "Quoi de neuf avec Traefik 2.0, le edge router à 1 milliard de téléchargements?",
-    "Start": "2019-10-17T19:00:00+02:00",
-    "ImgSrc": null,
-    "Group": "Toulouse DevOps",
-    "GroupId": null,
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-266389436",
-    "PublishedOn": "2019-10-16T10:30:00+01:00",
-    "Href": "https://www.meetup.com/fr-FR/toulouse-devops/events/266389436/",
-    "Title": "Track DevOps du Capitole du Libre",
-    "Start": "2019-11-16T10:30:00+01:00",
-    "ImgSrc": null,
-    "Group": "Toulouse DevOps",
-    "GroupId": null,
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-266603880",
-    "PublishedOn": "2019-11-03T19:00:00+01:00",
-    "Href": "https://www.meetup.com/fr-FR/toulouse-devops/events/266603880/",
-    "Title": "Construire une banque pour 3,5 millions d'utilisateurs",
-    "Start": "2019-12-03T19:00:00+01:00",
-    "ImgSrc": null,
-    "Group": "Toulouse DevOps",
-    "GroupId": null,
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-278383578",
-    "PublishedOn": "2021-05-23T18:00:00+02:00",
-    "Href": "https://www.meetup.com/fr-FR/javascript-and-co/events/278383578/",
-    "Title": "Vis ma vie de Dev #1",
-    "Start": "2021-06-23T18:00:00+02:00",
-    "ImgSrc": null,
-    "Group": "Association JS & Co. Toulouse",
-    "GroupId": "js-and-co",
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-280770230",
-    "PublishedOn": "2021-09-06T18:00:00+02:00",
-    "Href": "https://www.meetup.com/fr-FR/javascript-and-co/events/280770230/",
-    "Title": "Pourquoi n'êtes-vous pas encore passé à GraphQL ?",
-    "Start": "2021-10-06T18:00:00+02:00",
-    "ImgSrc": null,
-    "Group": "Association JS & Co. Toulouse",
-    "GroupId": "js-and-co",
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-281823523",
-    "PublishedOn": "2021-10-24T18:30:00+01:00",
-    "Href": "https://www.meetup.com/fr-FR/javascript-and-co/events/281823523/",
-    "Title": "Vis ma vie de Dev #2",
-    "Start": "2021-11-24T18:30:00+01:00",
-    "ImgSrc": null,
-    "Group": "Association JS & Co. Toulouse",
-    "GroupId": "js-and-co",
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-283340737",
-    "PublishedOn": "2021-12-18T18:30:00+01:00",
-    "Href": "https://www.meetup.com/fr-FR/toulouse-amazon-web-services/events/283340737/",
-    "Title": "AWS re:Invent 2021 re:Cap pour les architectes de solutions",
-    "Start": "2022-01-18T18:30:00+01:00",
-    "ImgSrc": null,
-    "Group": "AWS User Group France - Toulouse",
-    "GroupId": "aws",
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-283340759",
-    "PublishedOn": "2021-12-19T18:30:00+01:00",
-    "Href": "https://www.meetup.com/fr-FR/toulouse-amazon-web-services/events/283340759/",
-    "Title": "AWS re:Invent 2021 re:Cap pour les DevOps (Dev et/ou Ops)",
-    "Start": "2022-01-19T18:30:00+01:00",
-    "ImgSrc": null,
-    "Group": "AWS User Group France - Toulouse",
-    "GroupId": "aws",
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-283340781",
-    "PublishedOn": "2021-12-26T19:00:00+01:00",
-    "Href": "https://www.meetup.com/fr-FR/toulouse-amazon-web-services/events/283340781/",
-    "Title": "Meetup AWS virtuel #13 - Serverless",
-    "Start": "2022-01-26T19:00:00+01:00",
-    "ImgSrc": null,
-    "Group": "AWS User Group France - Toulouse",
-    "GroupId": "aws",
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-283456438",
-    "PublishedOn": "2022-04-04T18:30:00+02:00",
-    "Href": "https://www.meetup.com/fr-FR/javascript-and-co/events/283456438/",
-    "Title": "Vis ma vie de Dev #4",
-    "Start": "2022-05-04T18:30:00+02:00",
-    "ImgSrc": null,
-    "Group": "Association JS & Co. Toulouse",
-    "GroupId": "js-and-co",
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-285796096",
-    "PublishedOn": "2022-04-30T19:00:00+02:00",
-    "Href": "https://www.meetup.com/fr-FR/toulouse-amazon-web-services/events/285796096/",
-    "Title": "Meetup AWS @Toulouse",
-    "Start": "2022-05-31T19:00:00+02:00",
-    "ImgSrc": null,
-    "Group": "AWS User Group France - Toulouse",
-    "GroupId": "aws",
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-286415090",
-    "PublishedOn": "2022-05-14T19:00:00+02:00",
-    "Href": "https://www.meetup.com/fr-FR/toulouse-java-user-group/events/286415090/",
-    "Title": "Soirée retour du JUG",
-    "Start": "2022-06-14T19:00:00+02:00",
-    "ImgSrc": null,
-    "Group": "Toulouse Java User Group",
-    "GroupId": "jug",
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-288352766",
-    "PublishedOn": "2022-09-06T18:30:00+02:00",
-    "Href": "https://www.meetup.com/fr-FR/python-toulouse/events/288352766/",
-    "Title": "Meetup de rentrée !",
-    "Start": "2022-10-06T18:30:00+02:00",
-    "ImgSrc": null,
-    "Group": "Python Toulouse",
-    "GroupId": "python",
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-288942074",
-    "PublishedOn": "2022-09-17T19:00:00+02:00",
-    "Href": "https://www.meetup.com/fr-FR/mtg-toulouse/events/288942074/",
-    "Title": "Les nouveautés de .NET 7 et C# 11",
-    "Start": "2022-10-17T19:00:00+02:00",
-    "ImgSrc": null,
-    "Group": "MTG:Toulouse",
-    "GroupId": "mtg",
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-289084601",
-    "PublishedOn": "2022-09-20T09:30:00+02:00",
-    "Href": "https://www.meetup.com/fr-FR/toulouse-amazon-web-services/events/289084601/",
-    "Title": "AWS - Tour du Cloud Roadshow 2022",
-    "Start": "2022-10-20T09:30:00+02:00",
-    "ImgSrc": null,
-    "Group": "AWS User Group France - Toulouse",
-    "GroupId": "aws",
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-289496428",
-    "PublishedOn": "2022-10-17T19:00:00+01:00",
-    "Href": "https://www.meetup.com/fr-FR/swift-toulouse/events/289496428/",
-    "Title": "Swift Meetup Toulouse Novembre",
-    "Start": "2022-11-17T19:00:00+01:00",
-    "ImgSrc": null,
-    "Group": "Swift Toulouse",
-    "GroupId": "swift",
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-289650437",
-    "PublishedOn": "2022-10-23T18:30:00+01:00",
-    "Href": "https://www.meetup.com/fr-FR/mtg-toulouse/events/289650437/",
-    "Title": "2 sessions - Cosmos DB puis Intelligence Artificielle",
-    "Start": "2022-11-23T18:30:00+01:00",
-    "ImgSrc": null,
-    "Group": "MTG:Toulouse",
-    "GroupId": "mtg",
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-289395782",
-    "PublishedOn": "2022-10-24T18:30:00+01:00",
-    "Href": "https://www.meetup.com/fr-FR/latoulboxducloudnatif/events/289395782/",
-    "Title": "Participez à notre 1er meetup Cloud Natif : microservices, Crossplane et ACK !",
-    "Start": "2022-11-24T18:30:00+01:00",
-    "ImgSrc": null,
-    "Group": "La \"Toul Box\" du Cloud Natif",
-    "GroupId": "toulbox",
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-289897955",
-    "PublishedOn": "2022-11-03T14:00:00+01:00",
-    "Href": "https://www.meetup.com/fr-FR/ateliers-cpp-toulouse/events/289897955/",
-    "Title": "Comment structurer le code d’un test\u00A0?",
-    "Start": "2022-12-03T14:00:00+01:00",
-    "ImgSrc": null,
-    "Group": "C++ Toulouse",
-    "GroupId": "cpp",
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-289767749",
-    "PublishedOn": "2022-11-06T18:55:00+01:00",
-    "Href": "https://www.meetup.com/fr-FR/python-toulouse/events/289767749/",
-    "Title": "Introduction to ReactiveX & RxPY",
-    "Start": "2022-12-06T18:55:00+01:00",
-    "ImgSrc": null,
-    "Group": "Python Toulouse",
-    "GroupId": "python",
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-290308037",
-    "PublishedOn": "2022-11-19T19:00:00+01:00",
-    "Href": "https://www.meetup.com/fr-FR/mtg-toulouse/events/290308037/",
-    "Title": "Apéro/Networking de Noël",
-    "Start": "2022-12-19T19:00:00+01:00",
-    "ImgSrc": null,
-    "Group": "MTG:Toulouse",
-    "GroupId": "mtg",
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-290724795",
-    "PublishedOn": "2022-12-07T14:00:00+01:00",
-    "Href": "https://www.meetup.com/fr-FR/ateliers-cpp-toulouse/events/290724795/",
-    "Title": "Introduction à l'environnement Arduino",
-    "Start": "2023-01-07T14:00:00+01:00",
-    "ImgSrc": null,
-    "Group": "C++ Toulouse",
-    "GroupId": "cpp",
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-290871570",
-    "PublishedOn": "2022-12-26T18:30:00+01:00",
-    "Href": "https://www.meetup.com/fr-FR/tech-a-break/events/290871570/",
-    "Title": "Tech a break #1",
-    "Start": "2023-01-26T18:30:00+01:00",
-    "ImgSrc": null,
-    "Group": "Tech a break",
-    "GroupId": "tech-a-break",
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-291257151",
-    "PublishedOn": "2023-01-04T14:00:00+01:00",
-    "Href": "https://www.meetup.com/fr-FR/ateliers-cpp-toulouse/events/291257151/",
-    "Title": "Initiation à la programmation de carte ESP32",
-    "Start": "2023-02-04T14:00:00+01:00",
-    "ImgSrc": null,
-    "Group": "C++ Toulouse",
-    "GroupId": "cpp",
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-290998878",
-    "PublishedOn": "2023-01-16T18:45:00+01:00",
-    "Href": "https://www.meetup.com/fr-FR/toulouse-amazon-web-services/events/290998878/",
-    "Title": "Meetup AWS - re:Cap AWS re:Invent en présentiel",
-    "Start": "2023-02-16T18:45:00+01:00",
-    "ImgSrc": null,
-    "Group": "AWS User Group France - Toulouse",
-    "GroupId": "aws",
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-291754954",
-    "PublishedOn": "2023-02-04T14:00:00+01:00",
-    "Href": "https://www.meetup.com/fr-FR/ateliers-cpp-toulouse/events/291754954/",
-    "Title": "Comment travailler avec une base de code legacy ?",
-    "Start": "2023-03-04T14:00:00+01:00",
-    "ImgSrc": null,
-    "Group": "C++ Toulouse",
-    "GroupId": "cpp",
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-291633163",
-    "PublishedOn": "2023-02-07T19:00:00+01:00",
-    "Href": "https://www.meetup.com/fr-FR/toulouse-java-user-group/events/291633163/",
-    "Title": "Soirée SDKMan & Architecture Hexagonale",
-    "Start": "2023-03-07T19:00:00+01:00",
-    "ImgSrc": null,
-    "Group": "Toulouse Java User Group",
-    "GroupId": "jug",
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-291683371",
-    "PublishedOn": "2023-02-09T18:30:00+01:00",
-    "Href": "https://www.meetup.com/fr-FR/tech-a-break/events/291683371/",
-    "Title": "Tech a break #2",
-    "Start": "2023-03-09T18:30:00+01:00",
-    "ImgSrc": null,
-    "Group": "Tech a break",
-    "GroupId": "tech-a-break",
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-291814671",
-    "PublishedOn": "2023-02-16T18:30:00+01:00",
-    "Href": "https://www.meetup.com/fr-FR/latoulboxducloudnatif/events/291814671/",
-    "Title": "Un afterwork autour de Vault et Kubeflow !",
-    "Start": "2023-03-16T18:30:00+01:00",
-    "ImgSrc": null,
-    "Group": "La \"Toul Box\" du Cloud Natif",
-    "GroupId": "toulbox",
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-291814452",
-    "PublishedOn": "2023-02-23T18:30:00+01:00",
-    "Href": "https://www.meetup.com/fr-FR/toulouse-amazon-web-services/events/291814452/",
-    "Title": "Partez à la découverte des services Data AWS",
-    "Start": "2023-03-23T18:30:00+01:00",
-    "ImgSrc": null,
-    "Group": "AWS User Group France - Toulouse",
-    "GroupId": "aws",
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-292069741",
-    "PublishedOn": "2023-02-23T19:00:00+01:00",
-    "Href": "https://www.meetup.com/fr-FR/swift-toulouse/events/292069741/",
-    "Title": "Swift Toulouse Meetup mars",
-    "Start": "2023-03-23T19:00:00+01:00",
-    "ImgSrc": null,
-    "Group": "Swift Toulouse",
-    "GroupId": "swift",
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-292726756",
-    "PublishedOn": "2023-03-17T19:00:00+02:00",
-    "Href": "https://www.meetup.com/fr-FR/mtg-toulouse/events/292726756/",
-    "Title": "Dev mobile avec .NET MAUI, Web API, émulateur et mode déconnecté",
-    "Start": "2023-04-17T19:00:00+02:00",
-    "ImgSrc": null,
-    "Group": "MTG:Toulouse",
-    "GroupId": "mtg",
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-292705633",
-    "PublishedOn": "2023-03-20T12:15:00+02:00",
-    "Href": "https://www.meetup.com/fr-FR/swift-toulouse/events/292705633/",
-    "Title": "Swift Lunch #1",
-    "Start": "2023-04-20T12:15:00+02:00",
-    "ImgSrc": null,
-    "Group": "Swift Toulouse",
-    "GroupId": "swift",
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-292578223",
-    "PublishedOn": "2023-03-27T18:30:00+02:00",
-    "Href": "https://www.meetup.com/fr-FR/tech-a-break/events/292578223/",
-    "Title": "Tech a break #3",
-    "Start": "2023-04-27T18:30:00+02:00",
-    "ImgSrc": null,
-    "Group": "Tech a break",
-    "GroupId": "tech-a-break",
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-293293519",
-    "PublishedOn": "2023-04-25T18:30:00+02:00",
-    "Href": "https://www.meetup.com/fr-FR/toulouse-devops/events/293293519/",
-    "Title": "Reprise avec une soirée dédiée au DevSecOps",
-    "Start": "2023-05-25T18:30:00+02:00",
-    "ImgSrc": null,
-    "Group": "Toulouse DevOps",
-    "GroupId": null,
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-292896472",
-    "PublishedOn": "2023-05-08T18:30:00+02:00",
-    "Href": "https://www.meetup.com/fr-FR/gdg-toulouse/events/292896472/",
-    "Title": "Soirée IA et DDD",
-    "Start": "2023-06-08T18:30:00+02:00",
-    "ImgSrc": null,
-    "Group": "GDG Toulouse",
-    "GroupId": "gdg",
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-292996600",
-    "PublishedOn": "2023-05-08T18:30:00+02:00",
-    "Href": "https://www.meetup.com/fr-FR/mtg-toulouse/events/292996600/",
-    "Title": "Co-Event GDG Toulouse : Talks Intelligence Artificielle et Domain Driven Design",
-    "Start": "2023-06-08T18:30:00+02:00",
-    "ImgSrc": null,
-    "Group": "MTG:Toulouse",
-    "GroupId": "mtg",
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-293988838",
-    "PublishedOn": "2023-05-14T18:30:00+02:00",
-    "Href": "https://www.meetup.com/fr-FR/toulouse-java-user-group/events/293988838/",
-    "Title": "Soirée Spring Boot 3 & Bilan JUG",
-    "Start": "2023-06-14T18:30:00+02:00",
-    "ImgSrc": null,
-    "Group": "Toulouse Java User Group",
-    "GroupId": "jug",
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-293861305",
-    "PublishedOn": "2023-05-15T18:30:00+02:00",
-    "Href": "https://www.meetup.com/fr-FR/tech-a-break/events/293861305/",
-    "Title": "Tech a break #4",
-    "Start": "2023-06-15T18:30:00+02:00",
-    "ImgSrc": null,
-    "Group": "Tech a break",
-    "GroupId": "tech-a-break",
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-294181363",
-    "PublishedOn": "2023-05-27T18:30:00+02:00",
-    "Href": "https://www.meetup.com/fr-FR/latoulboxducloudnatif/events/294181363/",
-    "Title": "Hashicorp x CNF : Actu Hashicorp, dev Air-Gap, CI∕CD & Serverless au programme !",
-    "Start": "2023-06-27T18:30:00+02:00",
-    "ImgSrc": null,
-    "Group": "La \"Toul Box\" du Cloud Natif",
-    "GroupId": "toulbox",
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-294323300",
-    "PublishedOn": "2023-06-06T18:30:00+02:00",
-    "Href": "https://www.meetup.com/fr-FR/tech-a-break/events/294323300/",
-    "Title": "Tech a break #5",
-    "Start": "2023-07-06T18:30:00+02:00",
-    "ImgSrc": null,
-    "Group": "Tech a break",
-    "GroupId": "tech-a-break",
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-294640420",
-    "PublishedOn": "2023-06-11T19:30:00+02:00",
-    "Href": "https://www.meetup.com/fr-FR/mtg-toulouse/events/294640420/",
-    "Title": "Bière de fin d'année au Biergarten Toulouse Saint-Michel",
-    "Start": "2023-07-11T19:30:00+02:00",
-    "ImgSrc": null,
-    "Group": "MTG:Toulouse",
-    "GroupId": "mtg",
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-295802711",
-    "PublishedOn": "2023-08-12T18:00:00+02:00",
-    "Href": "https://www.meetup.com/fr-FR/swift-toulouse/events/295802711/",
-    "Title": "Apple Event",
-    "Start": "2023-09-12T18:00:00+02:00",
-    "ImgSrc": null,
-    "Group": "Swift Toulouse",
-    "GroupId": "swift",
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-295971713",
-    "PublishedOn": "2023-08-21T18:30:00+02:00",
-    "Href": "https://www.meetup.com/fr-FR/tech-a-break/events/295971713/",
-    "Title": "Tech a break #6",
-    "Start": "2023-09-21T18:30:00+02:00",
-    "ImgSrc": null,
-    "Group": "Tech a break",
-    "GroupId": "tech-a-break",
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-295802294",
-    "PublishedOn": "2023-08-26T19:00:00+02:00",
-    "Href": "https://www.meetup.com/fr-FR/gdg-toulouse/events/295802294/",
-    "Title": "TypeScript &amp; Angular",
-    "Start": "2023-09-26T19:00:00+02:00",
-    "ImgSrc": null,
-    "Group": "GDG Toulouse",
-    "GroupId": "gdg",
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-296292829",
-    "PublishedOn": "2023-09-03T19:00:00+02:00",
-    "Href": "https://www.meetup.com/fr-FR/swift-toulouse/events/296292829/",
-    "Title": "Swift Toulouse × Liberty Rider : RoomPlan et Shaders",
-    "Start": "2023-10-03T19:00:00+02:00",
-    "ImgSrc": null,
-    "Group": "Swift Toulouse",
-    "GroupId": "swift",
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-296096699",
-    "PublishedOn": "2023-09-05T19:00:00+02:00",
-    "Href": "https://www.meetup.com/fr-FR/meetup-visualisation-des-donnees-toulouse/events/296096699/",
-    "Title": "Le guide TDV de la datavisualisation",
-    "Start": "2023-10-05T19:00:00+02:00",
-    "ImgSrc": null,
-    "Group": "Meetup Toulouse-DataViz",
-    "GroupId": "dataviz",
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-296387001",
-    "PublishedOn": "2023-09-07T14:00:00+02:00",
-    "Href": "https://www.meetup.com/fr-FR/ateliers-cpp-toulouse/events/296387001/",
-    "Title": "Présentation de la stack KDE",
-    "Start": "2023-10-07T14:00:00+02:00",
-    "ImgSrc": null,
-    "Group": "C++ Toulouse",
-    "GroupId": "cpp",
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-295978349",
-    "PublishedOn": "2023-09-19T18:00:00+02:00",
-    "Href": "https://www.meetup.com/fr-FR/python-toulouse/events/295978349/",
-    "Title": "Python’s Datamodel: From Scripts to Applications.",
-    "Start": "2023-10-19T18:00:00+02:00",
-    "ImgSrc": null,
-    "Group": "Python Toulouse",
-    "GroupId": "python",
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-296540389",
-    "PublishedOn": "2023-09-24T19:00:00+02:00",
-    "Href": "https://www.meetup.com/fr-FR/tlse-data-science/events/296540389/",
-    "Title": "#58 - Large Language Models and Their Applications [Distanciel]",
-    "Start": "2023-10-24T19:00:00+02:00",
-    "ImgSrc": null,
-    "Group": "Toulouse Data Science",
-    "GroupId": "tds",
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-296717550",
-    "PublishedOn": "2023-09-26T12:15:00+02:00",
-    "Href": "https://www.meetup.com/fr-FR/swift-toulouse/events/296717550/",
-    "Title": "Swift Lunch #2",
-    "Start": "2023-10-26T12:15:00+02:00",
-    "ImgSrc": null,
-    "Group": "Swift Toulouse",
-    "GroupId": "swift",
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-297093390",
-    "PublishedOn": "2023-10-04T14:00:00+01:00",
-    "Href": "https://www.meetup.com/fr-FR/ateliers-cpp-toulouse/events/297093390/",
-    "Title": "Création de modèle de projet C++ via Cookiecutter",
-    "Start": "2023-11-04T14:00:00+01:00",
-    "ImgSrc": null,
-    "Group": "C++ Toulouse",
-    "GroupId": "cpp",
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-296656327",
-    "PublishedOn": "2023-10-09T18:15:00+01:00",
-    "Href": "https://www.meetup.com/fr-FR/latoulboxducloudnatif/events/296656327/",
-    "Title": "Meetup Cloud Native Toul'Box : GitOps, ArgoCD & Chatbot au programme !",
-    "Start": "2023-11-09T18:15:00+01:00",
-    "ImgSrc": null,
-    "Group": "La \"Toul Box\" du Cloud Natif",
-    "GroupId": "toulbox",
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-297241609",
-    "PublishedOn": "2023-10-22T19:00:00+01:00",
-    "Href": "https://www.meetup.com/fr-FR/tlse-data-science/events/297241609/",
-    "Title": "#59 - Génération d'images et ses applications [Présentiel]",
-    "Start": "2023-11-22T19:00:00+01:00",
-    "ImgSrc": null,
-    "Group": "Toulouse Data Science",
-    "GroupId": "tds",
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-297241624",
-    "PublishedOn": "2023-10-22T19:00:00+01:00",
-    "Href": "https://www.meetup.com/fr-FR/tlse-data-science/events/297241624/",
-    "Title": "#59 - Génération d'images et ses applications [Distanciel]",
-    "Start": "2023-11-22T19:00:00+01:00",
-    "ImgSrc": null,
-    "Group": "Toulouse Data Science",
-    "GroupId": "tds",
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-297195999",
-    "PublishedOn": "2023-10-23T18:30:00+01:00",
-    "Href": "https://www.meetup.com/fr-FR/tech-a-break/events/297195999/",
-    "Title": "Tech A Break #7 - Fall edition",
-    "Start": "2023-11-23T18:30:00+01:00",
-    "ImgSrc": null,
-    "Group": "Tech a break",
-    "GroupId": "tech-a-break",
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-296876148",
-    "PublishedOn": "2023-10-23T19:00:00+01:00",
-    "Href": "https://www.meetup.com/fr-FR/meetup-visualisation-des-donnees-toulouse/events/296876148/",
-    "Title": "Outils de visualisation de données génériques pour Python",
-    "Start": "2023-11-23T19:00:00+01:00",
-    "ImgSrc": null,
-    "Group": "Meetup Toulouse-DataViz",
-    "GroupId": "dataviz",
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-297547827",
-    "PublishedOn": "2023-11-02T14:00:00+01:00",
-    "Href": "https://www.meetup.com/fr-FR/ateliers-cpp-toulouse/events/297547827/",
-    "Title": "Conteneurisez vos environnements de développement avec les devcontainers",
-    "Start": "2023-12-02T14:00:00+01:00",
-    "ImgSrc": null,
-    "Group": "C++ Toulouse",
-    "GroupId": "cpp",
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-297333521",
-    "PublishedOn": "2023-11-06T18:45:00+01:00",
-    "Href": "https://www.meetup.com/fr-FR/python-toulouse/events/297333521/",
-    "Title": "Cosmic Python: Manage Complexity",
-    "Start": "2023-12-06T18:45:00+01:00",
-    "ImgSrc": null,
-    "Group": "Python Toulouse",
-    "GroupId": "python",
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-297373454",
-    "PublishedOn": "2023-11-07T19:00:00+01:00",
-    "Href": "https://www.meetup.com/fr-FR/swift-toulouse/events/297373454/",
-    "Title": "Swift Toulouse × Lyra Network : 2 talks pour finir l'année",
-    "Start": "2023-12-07T19:00:00+01:00",
-    "ImgSrc": null,
-    "Group": "Swift Toulouse",
-    "GroupId": "swift",
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-297720964",
-    "PublishedOn": "2023-11-16T10:00:00+01:00",
-    "Href": "https://www.meetup.com/fr-FR/tlse-data-science/events/297720964/",
-    "Title": "Data NoBlaBla: Créez Votre Assistant Conversationnel ...",
-    "Start": "2023-12-16T10:00:00+01:00",
-    "ImgSrc": null,
-    "Group": "Toulouse Data Science",
-    "GroupId": "tds",
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-297831603",
-    "PublishedOn": "2023-12-18T18:00:00+01:00",
-    "Href": "https://www.meetup.com/fr-FR/toulouse-amazon-web-services/events/297831603/",
-    "Title": "Re:Cap : le résumé des annonces du AWS re:Invent",
-    "Start": "2024-01-18T18:00:00+01:00",
-    "ImgSrc": null,
-    "Group": "AWS User Group France - Toulouse",
-    "GroupId": "aws",
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-298560429",
-    "PublishedOn": "2023-12-22T19:00:00+01:00",
-    "Href": "https://www.meetup.com/fr-FR/mtg-toulouse/events/298560429/",
-    "Title": "Comprendre CQRS avec MediatR : simplicité et efficacité",
-    "Start": "2024-01-22T19:00:00+01:00",
-    "ImgSrc": null,
-    "Group": "MTG:Toulouse",
-    "GroupId": "mtg",
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-298562945",
-    "PublishedOn": "2023-12-23T19:00:00+01:00",
-    "Href": "https://www.meetup.com/fr-FR/toulouse-java-user-group/events/298562945/",
-    "Title": "Soirée Pattern Matching + Amazing PostgreSQL",
-    "Start": "2024-01-23T19:00:00+01:00",
-    "ImgSrc": null,
-    "Group": "Toulouse Java User Group",
-    "GroupId": "jug",
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-298570635",
-    "PublishedOn": "2023-12-25T18:45:00+01:00",
-    "Href": "https://www.meetup.com/fr-FR/python-toulouse/events/298570635/",
-    "Title": "Meetup de rentrée : Python dans le monde du réseau / Bytecode & introspection",
-    "Start": "2024-01-25T18:45:00+01:00",
-    "ImgSrc": null,
-    "Group": "Python Toulouse",
-    "GroupId": "python",
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-298356121",
-    "PublishedOn": "2023-12-25T19:00:00+01:00",
-    "Href": "https://www.meetup.com/fr-FR/meetup-visualisation-des-donnees-toulouse/events/298356121/",
-    "Title": "Avec DuckDB, gavez-vous d'open data !",
-    "Start": "2024-01-25T19:00:00+01:00",
-    "ImgSrc": null,
-    "Group": "Meetup Toulouse-DataViz",
-    "GroupId": "dataviz",
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-299009412",
-    "PublishedOn": "2024-01-15T18:30:00+01:00",
-    "Href": "https://www.meetup.com/fr-FR/tech-a-break/events/299009412/",
-    "Title": "TECH A BREAK#8",
-    "Start": "2024-02-15T18:30:00+01:00",
-    "ImgSrc": null,
-    "Group": "Tech a break",
-    "GroupId": "tech-a-break",
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-299212998",
-    "PublishedOn": "2024-01-24T10:00:00+01:00",
-    "Href": "https://www.meetup.com/fr-FR/tlse-data-science/events/299212998/",
-    "Title": "Data NoBlaBla : La génération d'image par diffusion en pratique",
-    "Start": "2024-02-24T10:00:00+01:00",
-    "ImgSrc": null,
-    "Group": "Toulouse Data Science",
-    "GroupId": "tds",
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-298730868",
-    "PublishedOn": "2024-01-27T18:30:00+01:00",
-    "Href": "https://www.meetup.com/fr-FR/toulouse-amazon-web-services/events/298730868/",
-    "Title": "Comment automatiser votre cloud AWS pour vos équipes de dév?",
-    "Start": "2024-02-27T18:30:00+01:00",
-    "ImgSrc": null,
-    "Group": "AWS User Group France - Toulouse",
-    "GroupId": "aws",
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-299154543",
-    "PublishedOn": "2024-01-28T18:45:00+01:00",
-    "Href": "https://www.meetup.com/fr-FR/python-toulouse/events/299154543/",
-    "Title": "Python Moderne : Packaging & AsyncIO",
-    "Start": "2024-02-28T18:45:00+01:00",
-    "ImgSrc": null,
-    "Group": "Python Toulouse",
-    "GroupId": "python",
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-299213586",
-    "PublishedOn": "2024-02-12T18:30:00+01:00",
-    "Href": "https://www.meetup.com/fr-FR/latoulboxducloudnatif/events/299213586/",
-    "Title": "Découvrez Karpenter et le continuous profiling avec Pyroscope !",
-    "Start": "2024-03-12T18:30:00+01:00",
-    "ImgSrc": null,
-    "Group": "La \"Toul Box\" du Cloud Natif",
-    "GroupId": "toulbox",
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-299527644",
-    "PublishedOn": "2024-02-14T18:00:00+01:00",
-    "Href": "https://www.meetup.com/fr-FR/toulouse-amazon-web-services/events/299527644/",
-    "Title": "CHAOS NIGHT INTERVILLES",
-    "Start": "2024-03-14T18:00:00+01:00",
-    "ImgSrc": null,
-    "Group": "AWS User Group France - Toulouse",
-    "GroupId": "aws",
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-298750956",
-    "PublishedOn": "2024-02-14T19:00:00+01:00",
-    "Href": "https://www.meetup.com/fr-FR/swift-toulouse/events/298750956/",
-    "Title": "Swift Toulouse de Mars 2024 chez Pictarine",
-    "Start": "2024-03-14T19:00:00+01:00",
-    "ImgSrc": null,
-    "Group": "Swift Toulouse",
-    "GroupId": "swift",
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-299588978",
-    "PublishedOn": "2024-02-18T18:30:00+01:00",
-    "Href": "https://www.meetup.com/fr-FR/toulouse-java-user-group/events/299588978/",
-    "Title": "Soirée Spring Boot 3.2",
-    "Start": "2024-03-18T18:30:00+01:00",
-    "ImgSrc": null,
-    "Group": "Toulouse Java User Group",
-    "GroupId": "jug",
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-299378166",
-    "PublishedOn": "2024-02-19T19:00:00+01:00",
-    "Href": "https://www.meetup.com/fr-FR/mtg-toulouse/events/299378166/",
-    "Title": "Dev et IA Génératives: fantasmes et réalité + Monads without Maths but with Cats",
-    "Start": "2024-03-19T19:00:00+01:00",
-    "ImgSrc": null,
-    "Group": "MTG:Toulouse",
-    "GroupId": "mtg",
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-298755919",
-    "PublishedOn": "2024-02-21T18:30:00+01:00",
-    "Href": "https://www.meetup.com/fr-FR/toulouse-ruby-friends/events/298755919/",
-    "Title": "Toulouse.rb - Conf & Apéro - Mars",
-    "Start": "2024-03-21T18:30:00+01:00",
-    "ImgSrc": null,
-    "Group": "Toulouse Ruby and Friends",
-    "GroupId": "ruby",
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-300032840",
-    "PublishedOn": "2024-03-03T19:00:00+02:00",
-    "Href": "https://www.meetup.com/fr-FR/tlse-data-science/events/300032840/",
-    "Title": "De la recherche à la prod : les secrets des pipelines RAG et du déploiement NLP",
-    "Start": "2024-04-03T19:00:00+02:00",
-    "ImgSrc": null,
-    "Group": "Toulouse Data Science",
-    "GroupId": "tds",
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-299770145",
-    "PublishedOn": "2024-03-04T19:00:00+02:00",
-    "Href": "https://www.meetup.com/fr-FR/meetup-visualisation-des-donnees-toulouse/events/299770145/",
-    "Title": "Hackaviz party 2024",
-    "Start": "2024-04-04T19:00:00+02:00",
-    "ImgSrc": null,
-    "Group": "Meetup Toulouse-DataViz",
-    "GroupId": "dataviz",
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-300028706",
-    "PublishedOn": "2024-03-24T19:00:00+02:00",
-    "Href": "https://www.meetup.com/fr-FR/gdg-toulouse/events/300028706/",
-    "Title": "Meet up 100% Cloud - Google Cloud Next 24",
-    "Start": "2024-04-24T19:00:00+02:00",
-    "ImgSrc": null,
-    "Group": "GDG Toulouse",
-    "GroupId": "gdg",
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-300034707",
-    "PublishedOn": "2024-03-25T18:30:00+02:00",
-    "Href": "https://www.meetup.com/fr-FR/toulouse-java-user-group/events/300034707/",
-    "Title": "Soirée Change Data Capture + OpenAPI",
-    "Start": "2024-04-25T18:30:00+02:00",
-    "ImgSrc": null,
-    "Group": "Toulouse Java User Group",
-    "GroupId": "jug",
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-300324780",
-    "PublishedOn": "2024-03-25T18:45:00+02:00",
-    "Href": "https://www.meetup.com/fr-FR/python-toulouse/events/300324780/",
-    "Title": "Python 3, depuis l'temps ...",
-    "Start": "2024-04-25T18:45:00+02:00",
-    "ImgSrc": null,
-    "Group": "Python Toulouse",
-    "GroupId": "python",
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-299949106",
-    "PublishedOn": "2024-03-25T19:00:00+02:00",
-    "Href": "https://www.meetup.com/fr-FR/swift-toulouse/events/299949106/",
-    "Title": "Swift Toulouse d'Avril 2024 chez Atecna",
-    "Start": "2024-04-25T19:00:00+02:00",
-    "ImgSrc": null,
-    "Group": "Swift Toulouse",
-    "GroupId": "swift",
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-300391052",
-    "PublishedOn": "2024-03-25T19:00:00+02:00",
-    "Href": "https://www.meetup.com/fr-FR/meetup-visualisation-des-donnees-toulouse/events/300391052/",
-    "Title": "Explorez l'univers d'OpenStreetMap",
-    "Start": "2024-04-25T19:00:00+02:00",
-    "ImgSrc": null,
-    "Group": "Meetup Toulouse-DataViz",
-    "GroupId": "dataviz",
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-300477819",
-    "PublishedOn": "2024-03-29T19:00:00+02:00",
-    "Href": "https://www.meetup.com/fr-FR/mtg-toulouse/events/300477819/",
-    "Title": "AvaloniaUI : des UI (enfin) réellement multi-plateformes pour .NET",
-    "Start": "2024-04-29T19:00:00+02:00",
-    "ImgSrc": null,
-    "Group": "MTG:Toulouse",
-    "GroupId": "mtg",
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-299328457",
-    "PublishedOn": "2024-03-30T18:00:00+02:00",
-    "Href": "https://www.meetup.com/fr-FR/toulouse-ruby-friends/events/299328457/",
-    "Title": "Toulouse.rb - Conf & Apéro - Avril",
-    "Start": "2024-04-30T18:00:00+02:00",
-    "ImgSrc": null,
-    "Group": "Toulouse Ruby and Friends",
-    "GroupId": "ruby",
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-300684820",
-    "PublishedOn": "2024-04-04T14:00:00+02:00",
-    "Href": "https://www.meetup.com/fr-FR/ateliers-cpp-toulouse/events/300684820/",
-    "Title": "Fonctions avancées de CMake : Presets, FetchContent et Unity Builds",
-    "Start": "2024-05-04T14:00:00+02:00",
-    "ImgSrc": null,
-    "Group": "C++ Toulouse",
-    "GroupId": "cpp",
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-300742264",
-    "PublishedOn": "2024-04-14T18:45:00+02:00",
-    "Href": "https://www.meetup.com/fr-FR/gdg-toulouse/events/300742264/",
-    "Title": "Google I/O 2024 - Watch Party à Toulouse !",
-    "Start": "2024-05-14T18:45:00+02:00",
-    "ImgSrc": null,
-    "Group": "GDG Toulouse",
-    "GroupId": "gdg",
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-300675629",
-    "PublishedOn": "2024-04-16T19:00:00+02:00",
-    "Href": "https://www.meetup.com/fr-FR/meetup-visualisation-des-donnees-toulouse/events/300675629/",
-    "Title": "Direction Artistique pour la visualisation de données",
-    "Start": "2024-05-16T19:00:00+02:00",
-    "ImgSrc": null,
-    "Group": "Meetup Toulouse-DataViz",
-    "GroupId": "dataviz",
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-300713703",
-    "PublishedOn": "2024-04-21T18:30:00+02:00",
-    "Href": "https://www.meetup.com/fr-FR/toulouse-java-user-group/events/300713703/",
-    "Title": "Soirée Kafka + GraphQL",
-    "Start": "2024-05-21T18:30:00+02:00",
-    "ImgSrc": null,
-    "Group": "Toulouse Java User Group",
-    "GroupId": "jug",
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-299948241",
-    "PublishedOn": "2024-04-28T18:30:00+02:00",
-    "Href": "https://www.meetup.com/fr-FR/toulouse-ruby-friends/events/299948241/",
-    "Title": "Toulouse.rb - Conf & Apéro - Mai",
-    "Start": "2024-05-28T18:30:00+02:00",
-    "ImgSrc": null,
-    "Group": "Toulouse Ruby and Friends",
-    "GroupId": "ruby",
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-301014214",
-    "PublishedOn": "2024-05-06T19:00:00+02:00",
-    "Href": "https://www.meetup.com/fr-FR/gdg-toulouse/events/301014214/",
-    "Title": "Soirée Dependency Injection",
-    "Start": "2024-06-06T19:00:00+02:00",
-    "ImgSrc": null,
-    "Group": "GDG Toulouse",
-    "GroupId": "gdg",
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-301194229",
-    "PublishedOn": "2024-05-10T18:30:00+02:00",
-    "Href": "https://www.meetup.com/fr-FR/swift-toulouse/events/301194229/",
-    "Title": "Keynote WWDC24 @ Epitech",
-    "Start": "2024-06-10T18:30:00+02:00",
-    "ImgSrc": null,
-    "Group": "Swift Toulouse",
-    "GroupId": "swift",
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-300756493",
-    "PublishedOn": "2024-05-18T18:30:00+02:00",
-    "Href": "https://www.meetup.com/fr-FR/toulouse-ruby-friends/events/300756493/",
-    "Title": "Toulouse.rb - Conf & Apéro - Juin",
-    "Start": "2024-06-18T18:30:00+02:00",
-    "ImgSrc": null,
-    "Group": "Toulouse Ruby and Friends",
-    "GroupId": "ruby",
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-301436201",
-    "PublishedOn": "2024-05-18T18:30:00+02:00",
-    "Href": "https://www.meetup.com/fr-FR/toulouse-java-user-group/events/301436201/",
-    "Title": "Soirée Java 22 & Bilan JUG",
-    "Start": "2024-06-18T18:30:00+02:00",
-    "ImgSrc": null,
-    "Group": "Toulouse Java User Group",
-    "GroupId": "jug",
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-301597710",
-    "PublishedOn": "2024-05-20T19:00:00+02:00",
-    "Href": "https://www.meetup.com/fr-FR/meetup-visualisation-des-donnees-toulouse/events/301597710/",
-    "Title": "Mettre sur le web votre TdB, rapport et appli efficacement et gratuitement",
-    "Start": "2024-06-20T19:00:00+02:00",
-    "ImgSrc": null,
-    "Group": "Meetup Toulouse-DataViz",
-    "GroupId": "dataviz",
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-301421255",
-    "PublishedOn": "2024-06-16T18:30:00+02:00",
-    "Href": "https://www.meetup.com/fr-FR/toulouse-ruby-friends/events/301421255/",
-    "Title": "Toulouse.rb - Conf & Apéro - Juillet",
-    "Start": "2024-07-16T18:30:00+02:00",
-    "ImgSrc": null,
-    "Group": "Toulouse Ruby and Friends",
-    "GroupId": "ruby",
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-302386245",
-    "PublishedOn": "2024-07-01T18:30:00+02:00",
-    "Href": "https://www.meetup.com/fr-FR/javascript-and-co/events/302386245/",
-    "Title": "Tech PAF - Le retour de JS&Co",
-    "Start": "2024-08-01T18:30:00+02:00",
-    "ImgSrc": null,
-    "Group": "Association JS & Co. Toulouse",
-    "GroupId": "js-and-co",
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-302649911",
-    "PublishedOn": "2024-08-05T18:30:00+02:00",
-    "Href": "https://www.meetup.com/fr-FR/javascript-and-co/events/302649911/",
-    "Title": "Tech PAF - JS&Co - Septembre",
-    "Start": "2024-09-05T18:30:00+02:00",
-    "ImgSrc": null,
-    "Group": "Association JS & Co. Toulouse",
-    "GroupId": "js-and-co",
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-301636995",
-    "PublishedOn": "2024-08-10T19:00:00+02:00",
-    "Href": "https://www.meetup.com/fr-FR/gdg-toulouse/events/301636995/",
-    "Title": "Soirée Kubernetes",
-    "Start": "2024-09-10T19:00:00+02:00",
-    "ImgSrc": null,
-    "Group": "GDG Toulouse",
-    "GroupId": "gdg",
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-301833528",
-    "PublishedOn": "2024-08-17T18:30:00+02:00",
-    "Href": "https://www.meetup.com/fr-FR/toulouse-ruby-friends/events/301833528/",
-    "Title": "Toulouse.rb - Conf & Apéro - Septembre",
-    "Start": "2024-09-17T18:30:00+02:00",
-    "ImgSrc": null,
-    "Group": "Toulouse Ruby and Friends",
-    "GroupId": "ruby",
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-300566088",
-    "PublishedOn": "2024-08-17T19:00:00+02:00",
-    "Href": "https://www.meetup.com/fr-FR/devops-cloud-toulouse/events/300566088/",
-    "Title": "Code Café #1 : le meetup DevOps et Cloud à Toulouse",
-    "Start": "2024-09-17T19:00:00+02:00",
-    "ImgSrc": null,
-    "Group": "DevOps & Cloud Toulouse",
-    "GroupId": "devops-cloud",
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-302453867",
-    "PublishedOn": "2024-08-19T18:30:00+02:00",
-    "Href": "https://www.meetup.com/fr-FR/latoulboxducloudnatif/events/302453867/",
-    "Title": "Shift Left, Speech-to-Text & Multi-Cloud",
-    "Start": "2024-09-19T18:30:00+02:00",
-    "ImgSrc": null,
-    "Group": "La \"Toul Box\" du Cloud Natif",
-    "GroupId": "toulbox",
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-303255376",
-    "PublishedOn": "2024-09-02T19:00:00+02:00",
-    "Href": "https://www.meetup.com/fr-FR/gdg-toulouse/events/303255376/",
-    "Title": "Soirée Rust",
-    "Start": "2024-10-02T19:00:00+02:00",
-    "ImgSrc": null,
-    "Group": "GDG Toulouse",
-    "GroupId": "gdg",
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-303664085",
-    "PublishedOn": "2024-09-03T18:30:00+02:00",
-    "Href": "https://www.meetup.com/fr-FR/javascript-and-co/events/303664085/",
-    "Title": "Tech PAF - JS&Co - Octobre",
-    "Start": "2024-10-03T18:30:00+02:00",
-    "ImgSrc": null,
-    "Group": "Association JS & Co. Toulouse",
-    "GroupId": "js-and-co",
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-303598680",
-    "PublishedOn": "2024-09-03T19:00:00+02:00",
-    "Href": "https://www.meetup.com/fr-FR/meetup-visualisation-des-donnees-toulouse/events/303598680/",
-    "Title": "Témoignages d’utilisateurs de visualisations de données",
-    "Start": "2024-10-03T19:00:00+02:00",
-    "ImgSrc": null,
-    "Group": "Meetup Toulouse-DataViz",
-    "GroupId": "dataviz",
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-303600904",
-    "PublishedOn": "2024-09-08T18:30:00+02:00",
-    "Href": "https://www.meetup.com/fr-FR/toulouse-java-user-group/events/303600904/",
-    "Title": "Soirée High-Performance Kotlin + Glitchage de microcontroleur",
-    "Start": "2024-10-08T18:30:00+02:00",
-    "ImgSrc": null,
-    "Group": "Toulouse Java User Group",
-    "GroupId": "jug",
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-303524813",
-    "PublishedOn": "2024-09-17T19:00:00+02:00",
-    "Href": "https://www.meetup.com/fr-FR/mtg-toulouse/events/303524813/",
-    "Title": "Workshop : Découvrons ensemble .NET Aspire",
-    "Start": "2024-10-17T19:00:00+02:00",
-    "ImgSrc": null,
-    "Group": "MTG:Toulouse",
-    "GroupId": "mtg",
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-303871289",
-    "PublishedOn": "2024-09-17T19:00:00+02:00",
-    "Href": "https://www.meetup.com/fr-FR/tlse-data-science/events/303871289/",
-    "Title": "L'IA de confiance : Explicabilité et Quantification d'incertitudes avec l'IRT",
-    "Start": "2024-10-17T19:00:00+02:00",
-    "ImgSrc": null,
-    "Group": "Toulouse Data Science",
-    "GroupId": "tds",
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-304058706",
-    "PublishedOn": "2024-09-17T19:00:00+02:00",
-    "Href": "https://www.meetup.com/fr-FR/tlse-data-science/events/304058706/",
-    "Title": "[ONLINE] L'IA de confiance : Explicabilité et Quantification d'incertitudes",
-    "Start": "2024-10-17T19:00:00+02:00",
-    "ImgSrc": null,
-    "Group": "Toulouse Data Science",
-    "GroupId": "tds",
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-303370450",
-    "PublishedOn": "2024-09-22T19:00:00+02:00",
-    "Href": "https://www.meetup.com/fr-FR/toulouse-ruby-friends/events/303370450/",
-    "Title": "Toulouse.rb - Conf & Apéro - Octobre",
-    "Start": "2024-10-22T19:00:00+02:00",
-    "ImgSrc": null,
-    "Group": "Toulouse Ruby and Friends",
-    "GroupId": "ruby",
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-304265660",
-    "PublishedOn": "2024-09-30T18:30:00+01:00",
-    "Href": "https://www.meetup.com/fr-FR/python-toulouse/events/304265660/",
-    "Title": "Ce soir : Afterwork Python",
-    "Start": "2024-10-30T18:30:00+01:00",
-    "ImgSrc": null,
-    "Group": "Python Toulouse",
-    "GroupId": "python",
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-303863847",
-    "PublishedOn": "2024-10-07T18:30:00+01:00",
-    "Href": "https://www.meetup.com/fr-FR/javascript-and-co/events/303863847/",
-    "Title": "Le Tech PAF de JS&Co - Novembre",
-    "Start": "2024-11-07T18:30:00+01:00",
-    "ImgSrc": null,
-    "Group": "Association JS & Co. Toulouse",
-    "GroupId": "js-and-co",
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-304416126",
-    "PublishedOn": "2024-10-19T18:30:00+01:00",
-    "Href": "https://www.meetup.com/fr-FR/toulouse-ruby-friends/events/304416126/",
-    "Title": "Toulouse.rb - Conf & Apéro - Novembre",
-    "Start": "2024-11-19T18:30:00+01:00",
-    "ImgSrc": null,
-    "Group": "Toulouse Ruby and Friends",
-    "GroupId": "ruby",
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-304376293",
-    "PublishedOn": "2024-10-21T19:00:00+01:00",
-    "Href": "https://www.meetup.com/fr-FR/meetup-visualisation-des-donnees-toulouse/events/304376293/",
-    "Title": "L’abc du X,Y : rendre accessibles les données aux non experts grâce à la dataviz",
-    "Start": "2024-11-21T19:00:00+01:00",
-    "ImgSrc": null,
-    "Group": "Meetup Toulouse-DataViz",
-    "GroupId": "dataviz",
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-304393622",
-    "PublishedOn": "2024-10-26T19:00:00+01:00",
-    "Href": "https://www.meetup.com/fr-FR/gdg-toulouse/events/304393622/",
-    "Title": "Soirée CI/CD et Observabilité",
-    "Start": "2024-11-26T19:00:00+01:00",
-    "ImgSrc": null,
-    "Group": "GDG Toulouse",
-    "GroupId": "gdg",
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-304144204",
-    "PublishedOn": "2024-10-28T18:00:00+01:00",
-    "Href": "https://www.meetup.com/fr-FR/agile-toulouse/events/304144204/",
-    "Title": "L'atelier 404 ou Comment échouer de manière productive",
-    "Start": "2024-11-28T18:00:00+01:00",
-    "ImgSrc": null,
-    "Group": "Agile Toulouse",
-    "GroupId": "agile",
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-304602272",
-    "PublishedOn": "2024-10-28T19:00:00+01:00",
-    "Href": "https://www.meetup.com/fr-FR/tlse-data-science/events/304602272/",
-    "Title": "#62 : 2 Cas d'usages de l'IA appliqués à la vision par ordinateur chez Aqsone",
-    "Start": "2024-11-28T19:00:00+01:00",
-    "ImgSrc": null,
-    "Group": "Toulouse Data Science",
-    "GroupId": "tds",
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-304635219",
-    "PublishedOn": "2024-10-28T19:00:00+01:00",
-    "Href": "https://www.meetup.com/fr-FR/tlse-data-science/events/304635219/",
-    "Title": "#62 [REMOTE] : 2 Cas d'usages de l'IA chez Aqsone",
-    "Start": "2024-11-28T19:00:00+01:00",
-    "ImgSrc": null,
-    "Group": "Toulouse Data Science",
-    "GroupId": "tds",
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-304563208",
-    "PublishedOn": "2024-11-03T18:30:00+01:00",
-    "Href": "https://www.meetup.com/fr-FR/agile-toulouse/events/304563208/",
-    "Title": "\uD83C\uDF7B Bière Agile - Mesurer la réussite Agile ?",
-    "Start": "2024-12-03T18:30:00+01:00",
-    "ImgSrc": null,
-    "Group": "Agile Toulouse",
-    "GroupId": "agile",
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-304433354",
-    "PublishedOn": "2024-11-04T18:45:00+01:00",
-    "Href": "https://www.meetup.com/fr-FR/python-toulouse/events/304433354/",
-    "Title": "Django DRF et Zig : des APIs simples et du Python rapide \uD83E\uDD2F",
-    "Start": "2024-12-04T18:45:00+01:00",
-    "ImgSrc": null,
-    "Group": "Python Toulouse",
-    "GroupId": "python",
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-304453195",
-    "PublishedOn": "2024-11-05T18:30:00+01:00",
-    "Href": "https://www.meetup.com/fr-FR/javascript-and-co/events/304453195/",
-    "Title": "Le Tech PAF de JS&Co - Décembre",
-    "Start": "2024-12-05T18:30:00+01:00",
-    "ImgSrc": null,
-    "Group": "Association JS & Co. Toulouse",
-    "GroupId": "js-and-co",
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-304627925",
-    "PublishedOn": "2024-11-05T18:30:00+01:00",
-    "Href": "https://www.meetup.com/fr-FR/tech-a-break/events/304627925/",
-    "Title": "TECH A BREAK #9",
-    "Start": "2024-12-05T18:30:00+01:00",
-    "ImgSrc": null,
-    "Group": "Tech a break",
-    "GroupId": "tech-a-break",
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-304666961",
-    "PublishedOn": "2024-11-05T18:45:00+01:00",
-    "Href": "https://www.meetup.com/fr-FR/gdg-toulouse/events/304666961/",
-    "Title": "Microservices et Google Apps Script",
-    "Start": "2024-12-05T18:45:00+01:00",
-    "ImgSrc": null,
-    "Group": "GDG Toulouse",
-    "GroupId": "gdg",
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-304954807",
-    "PublishedOn": "2024-11-07T14:00:00+01:00",
-    "Href": "https://www.meetup.com/fr-FR/ateliers-cpp-toulouse/events/304954807/",
-    "Title": "Introduction au pipeline graphique du GPU",
-    "Start": "2024-12-07T14:00:00+01:00",
-    "ImgSrc": null,
-    "Group": "C++ Toulouse",
-    "GroupId": "cpp",
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-304896637",
-    "PublishedOn": "2024-11-10T18:30:00+01:00",
-    "Href": "https://www.meetup.com/fr-FR/toulouse-java-user-group/events/304896637/",
-    "Title": "Soirée Sécurité",
-    "Start": "2024-12-10T18:30:00+01:00",
-    "ImgSrc": null,
-    "Group": "Toulouse Java User Group",
-    "GroupId": "jug",
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-304321428",
-    "PublishedOn": "2024-11-12T18:00:00+01:00",
-    "Href": "https://www.meetup.com/fr-FR/agile-toulouse/events/304321428/",
-    "Title": "Diamond Path - Serious Game autour du Design Thinking",
-    "Start": "2024-12-12T18:00:00+01:00",
-    "ImgSrc": null,
-    "Group": "Agile Toulouse",
-    "GroupId": "agile",
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-304321417",
-    "PublishedOn": "2024-11-16T18:00:00+01:00",
-    "Href": "https://www.meetup.com/fr-FR/agile-toulouse/events/304321417/",
-    "Title": "Pratiquons unFIX ensemble - Introduction Général et Structural Patterns",
-    "Start": "2024-12-16T18:00:00+01:00",
-    "ImgSrc": null,
-    "Group": "Agile Toulouse",
-    "GroupId": "agile",
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-304627678",
-    "PublishedOn": "2024-11-17T18:30:00+01:00",
-    "Href": "https://www.meetup.com/fr-FR/toulouse-ruby-friends/events/304627678/",
-    "Title": "Toulouse.rb - Conf & Apéro - Décembre",
-    "Start": "2024-12-17T18:30:00+01:00",
-    "ImgSrc": null,
-    "Group": "Toulouse Ruby and Friends",
-    "GroupId": "ruby",
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-304758201",
-    "PublishedOn": "2024-11-19T18:00:00+01:00",
-    "Href": "https://www.meetup.com/fr-FR/agile-toulouse/events/304758201/",
-    "Title": "Assemblée Générale : Bilan 2024 & Élection du Bureau & Présentation projet/idée",
-    "Start": "2024-12-19T18:00:00+01:00",
-    "ImgSrc": null,
-    "Group": "Agile Toulouse",
-    "GroupId": "agile",
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-304563242",
-    "PublishedOn": "2024-12-07T18:30:00+01:00",
-    "Href": "https://www.meetup.com/fr-FR/agile-toulouse/events/304563242/",
-    "Title": "\uD83C\uDF7B Bière Agile - Agilité dans tous les secteurs ?",
-    "Start": "2025-01-07T18:30:00+01:00",
-    "ImgSrc": null,
-    "Group": "Agile Toulouse",
-    "GroupId": "agile",
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-304876429",
-    "PublishedOn": "2024-12-09T18:30:00+01:00",
-    "Href": "https://www.meetup.com/fr-FR/agile-toulouse/events/304876429/",
-    "Title": "Klub de lecture janvier 2025",
-    "Start": "2025-01-09T18:30:00+01:00",
-    "ImgSrc": null,
-    "Group": "Agile Toulouse",
-    "GroupId": "agile",
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-304988989",
-    "PublishedOn": "2024-12-09T18:30:00+01:00",
-    "Href": "https://www.meetup.com/fr-FR/javascript-and-co/events/304988989/",
-    "Title": "Le Tech PAF de JS&Co - Janvier",
-    "Start": "2025-01-09T18:30:00+01:00",
-    "ImgSrc": null,
-    "Group": "Association JS & Co. Toulouse",
-    "GroupId": "js-and-co",
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-305473927",
-    "PublishedOn": "2024-12-11T14:00:00+01:00",
-    "Href": "https://www.meetup.com/fr-FR/ateliers-cpp-toulouse/events/305473927/",
-    "Title": "Introduction à la Clean Architecture : concevoir du code modulaire et évolutif",
-    "Start": "2025-01-11T14:00:00+01:00",
-    "ImgSrc": null,
-    "Group": "C++ Toulouse",
-    "GroupId": "cpp",
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-305226325",
-    "PublishedOn": "2024-12-14T18:00:00+01:00",
-    "Href": "https://www.meetup.com/fr-FR/agile-toulouse/events/305226325/",
-    "Title": "Venez expérimenter la puissance des Legos lors d'un atelier découverte.",
-    "Start": "2025-01-14T18:00:00+01:00",
-    "ImgSrc": null,
-    "Group": "Agile Toulouse",
-    "GroupId": "agile",
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-304850183",
-    "PublishedOn": "2024-12-16T19:00:00+01:00",
-    "Href": "https://www.meetup.com/fr-FR/meetup-visualisation-des-donnees-toulouse/events/304850183/",
-    "Title": "Explorer, échouer, innover : le cercle vertueux des petits projets",
-    "Start": "2025-01-16T19:00:00+01:00",
-    "ImgSrc": null,
-    "Group": "Meetup Toulouse-DataViz",
-    "GroupId": "dataviz",
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-304913013",
-    "PublishedOn": "2024-12-16T19:00:00+01:00",
-    "Href": "https://www.meetup.com/fr-FR/gdg-toulouse/events/304913013/",
-    "Title": "Soirée IA",
-    "Start": "2025-01-16T19:00:00+01:00",
-    "ImgSrc": null,
-    "Group": "GDG Toulouse",
-    "GroupId": "gdg",
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "tgd-2025-01-21",
-    "PublishedOn": "2024-12-21T18:30:00+01:00",
-    "Href": "https://toulousegamedev.fr/evenements/",
-    "Title": "Meet-up de Janvier",
-    "Start": "2025-01-21T18:30:00+01:00",
-    "ImgSrc": "https://toulousegamedev.fr/wp-content/uploads/2025/01/21-01-25_Carre.png",
-    "Group": "Toulouse Game Dev",
-    "GroupId": "tgd",
-    "Duration": "04:00:00",
-    "FullImgSrc": null,
-    "HtmlDescription": "<p>Ce mois-ci nous accueillons <strong>Danís Chadeuil est ingénieur, promoteur et acteur culturel, spécialiste de langue et culture occitanes. </strong></p>\n<p>Lors de cette conférence, <strong>il reviendra sur ses expériences et livrera quelques pistes et opportunités autour de la valorisation des langues et cultures minoritaires du monde entier dans le jeu vidéo.</strong></p>\n<p>Le planning du Meet-up sera le suivant :<br><strong>18h30</strong> : Accueil des personnes ne connaissant pas le TGD</p>\n<p><strong>18h45 </strong>: Ouverture des portes<br><strong>19h00</strong>: Lancement de la session <strong>Open Mics</strong><br><strong>19h15</strong> : Début de la conférence de <strong>Danís Chadeuil</strong></p>\n<p>En direct sur la chaine Twitch du TGD à 19h00 : <a rel=\"noreferrer noopener\" href=\"https://www.twitch.tv/toulousegamedev\" target=\"_blank\">ici</a></p>",
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": "event-imgs/tgd-2025-01-21.png"
-  },
-  {
-    "Id": "meetup-304951231",
-    "PublishedOn": "2024-12-21T19:00:00+01:00",
-    "Href": "https://www.meetup.com/fr-FR/toulouse-ruby-friends/events/304951231/",
-    "Title": "Toulouse.rb - Conf & Apéro - Janvier",
-    "Start": "2025-01-21T19:00:00+01:00",
-    "ImgSrc": null,
-    "Group": "Toulouse Ruby and Friends",
-    "GroupId": "ruby",
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-305592922",
-    "PublishedOn": "2024-12-22T19:00:00+01:00",
-    "Href": "https://www.meetup.com/fr-FR/python-toulouse/events/305592922/",
-    "Title": "Les frameworks Gen AI - LLM",
-    "Start": "2025-01-22T19:00:00+01:00",
-    "ImgSrc": null,
-    "Group": "Python Toulouse",
-    "GroupId": "python",
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-304773963",
-    "PublishedOn": "2024-12-23T18:00:00+01:00",
-    "Href": "https://www.meetup.com/fr-FR/agile-toulouse/events/304773963/",
-    "Title": "Introduction à Org Topologies",
-    "Start": "2025-01-23T18:00:00+01:00",
-    "ImgSrc": null,
-    "Group": "Agile Toulouse",
-    "GroupId": "agile",
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-305148947",
-    "PublishedOn": "2024-12-24T18:00:00+01:00",
-    "Href": "https://www.meetup.com/fr-FR/agile-toulouse/events/305148947/",
-    "Title": "Apprenez l'essentiel de \"Accelerate\" / DORA, le pied au plancher",
-    "Start": "2025-01-24T18:00:00+01:00",
-    "ImgSrc": null,
-    "Group": "Agile Toulouse",
-    "GroupId": "agile",
-    "Duration": null,
-    "FullImgSrc": null,
-    "HtmlDescription": null,
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": null
-  },
-  {
-    "Id": "meetup-305226338",
-    "PublishedOn": "2024-12-31T18:00:00+01:00",
-    "Href": "https://www.meetup.com/fr-FR/agile-toulouse/events/305226338/",
-    "Title": "Agile Game Labs #3",
-    "Start": "2025-01-31T18:00:00+01:00",
-    "ImgSrc": "https://secure.meetupstatic.com/photos/event/6/3/f/e/event_525745598.webp",
-    "Group": "Agile Toulouse",
-    "GroupId": "agile",
-    "Duration": null,
-    "FullImgSrc": "https://secure.meetupstatic.com/photos/event/6/3/f/e/600_525745598.webp?w=750",
-    "HtmlDescription": "<p class=\"mb-4\">Agile Toulouse vous propose sa troisième édition de l'Agile Game Labs !</p>\n<p class=\"mb-4\">Que tu souhaites animer ou t'entrainer à l'animation d'un serious game agile ou simplement participer, cet événement est fait pour toi !</p>\n<p class=\"mb-4\">L'événement sera donc en <strong>Open Forum</strong> : cela veut dire que chacun pourra présenter un serious game et l'ajouter à l'agenda du meetup. Nous vous conseillons cependant que celui-ci se limite à une heure si vous souhaitez le terminer.</p>\n<p class=\"mb-4\">Nous demanderons aux venants d'être membres de l'association Agile Toulouse.<br>\nPour rappel, c'est gratuit et faisable ici en 1 minute sur téléphone : [<a href=\"https://www.helloasso.com/associations/agile-toulouse/adhesions/adhesion-agile-toulouse-1\" target=\"_blank\" class=\"!text-viridian\" rel=\"nofollow ugc\">https://www.helloasso.com/associations/agile-toulouse/adhesions/adhesion-agile-toulouse-1</a>](https://www.helloasso.com/associations/agile-toulouse/adhesions/adhesion-agile-toulouse-1)</p>\n<p class=\"mb-4\">Si vous êtes inscrits, mais que cela n'est plus possible pour vous de venir, merci de vous désinscrire pour informer qu'il reste de la place :)</p>\n<p class=\"mb-4\">Bonne journée !<br>\nAgile Toulouse</p>",
-    "TextDescription": "Agile Toulouse vous propose sa troisième édition de l'Agile Game Labs !\nQue tu souhaites animer ou t'entrainer à l'animation d'un serious game agile ou simplement participer, cet événement est fait pour toi !\nL'événement sera donc en Open Forum : cela veut dire que chacun pourra présenter un serious game et l'ajouter à l'agenda du meetup. Nous vous conseillons cependant que celui-ci se limite à une heure si vous souhaitez le terminer.\nNous demanderons aux venants d'être membres de l'association Agile Toulouse.\nPour rappel, c'est gratuit et faisable ici en 1 minute sur téléphone : [https://www.helloasso.com/associations/agile-toulouse/adhesions/adhesion-agile-toulouse-1](https://www.helloasso.com/associations/agile-toulouse/adhesions/adhesion-agile-toulouse-1)\nSi vous êtes inscrits, mais que cela n'est plus possible pour vous de venir, merci de vous désinscrire pour informer qu'il reste de la place :)\nBonne journée !\nAgile Toulouse",
-    "VenueName": "Maison des Associations",
-    "VenueAddr": "3 Pl. Guy Hersant Toulouse",
-    "Latitude": 43.5775,
-    "Longitude": 1.444116,
-    "LocalImgSrc": "event-imgs/meetup-305226338.webp"
-  },
-  {
-    "Id": "meetup-305840851",
-    "PublishedOn": "2025-01-01T14:00:00+01:00",
-    "Href": "https://www.meetup.com/fr-FR/ateliers-cpp-toulouse/events/305840851/",
-    "Title": "Introduction à CMake",
-    "Start": "2025-02-01T14:00:00+01:00",
-    "ImgSrc": "https://secure.meetupstatic.com/photos/event/a/9/1/5/event_525943285.webp",
-    "Group": "C++ Toulouse",
-    "GroupId": "cpp",
-    "Duration": null,
-    "FullImgSrc": "https://secure.meetupstatic.com/photos/event/a/9/1/5/600_525943285.webp?w=750",
-    "HtmlDescription": "<p class=\"mb-4\">Dans le cadre des ateliers C++ de Toulibre, nous vous proposons le <strong>samedi 1er février 2025 à 14 heures</strong> une présentation sur le thème suivant :</p>\n<p class=\"mb-4\"><em><strong>Introduction à CMake</strong></em></p>\n<p class=\"mb-4\">CMake est un système de configuration de la compilation de logiciels. Cet outil multiplateforme, qui adresse essentiellement les logiciels développés en C++, s'est considérablement enrichi au fil du temps. Cyril Jacquet nous en fera découvrir les principales facettes, en ponctuant notre cheminement d'exemples concrets.<br>\nAu programme\u202F:</p>\n<ul class=\"pl-5 list-disc mb-4\">\n<li>Introduction à CMake pour le C++</li>\n<li>Base de la gestion des dépendances (find_package, linking et include)</li>\n<li>Gestion des dépendances via FetchContent</li>\n<li>Gestion des dépendances via VCPKG</li>\n<li>Génération de paquet via CPack</li>\n<li>CMake et Qt</li>\n</ul>\n<p class=\"mb-4\"><strong>Pour qui ?</strong></p>\n<p class=\"mb-4\">Cet événement s’adresse aux développeurs curieux, quel que soit leur niveau, à condition d’avoir quelques notions de C++. Apportez éventuellement un ordinateur portable pour pouvoir reproduire les exercices.</p>\n<p class=\"mb-4\"><strong>À propos de l’intervenant :</strong></p>\n<p class=\"mb-4\">Avec 15 ans d’expérience dans le domaine du développement logiciel, <strong>Cyril Jacquet</strong> a occupé de nombreux rôles chez des clients toulousains : ingénieur DevOps, développeur C++, Rust et Python et formateur.</p>\n<p class=\"mb-4\">Ayant conçu plusieurs architectures logicielles en s’inspirant de la Clean Architecture, Cyril partagera avec vous des exemples concrets et ses astuces pour tirer le meilleur de cette approche.</p>\n<p class=\"mb-4\"><strong>Un rendez-vous régulier autour du C++</strong></p>\n<p class=\"mb-4\">Les ateliers C++ de Toulibre se déroulent le premier samedi de chaque mois dans les locaux du fablab Artilect, que nous remercions chaleureusement pour son accueil.</p>\n<p class=\"mb-4\">La présentation démarrera à 14 heures, mais <strong>les passionnés de C++ pourront nous rejoindre dès 12 heures</strong> pour échanger librement ou s’octroyer un temps dédié au développement de leur projet.</p>\n<p class=\"mb-4\">La participation est gratuite et ouverte. N’hésitez pas à entrer et à découvrir le lieu. :)</p>",
-    "TextDescription": "Dans le cadre des ateliers C++ de Toulibre, nous vous proposons le samedi 1er février 2025 à 14 heures une présentation sur le thème suivant :\nIntroduction à CMake\nCMake est un système de configuration de la compilation de logiciels. Cet outil multiplateforme, qui adresse essentiellement les logiciels développés en C++, s'est considérablement enrichi au fil du temps. Cyril Jacquet nous en fera découvrir les principales facettes, en ponctuant notre cheminement d'exemples concrets.\nAu programme\u202F:\n\nIntroduction à CMake pour le C++\nBase de la gestion des dépendances (find_package, linking et include)\nGestion des dépendances via FetchContent\nGestion des dépendances via VCPKG\nGénération de paquet via CPack\nCMake et Qt\n\nPour qui ?\nCet événement s’adresse aux développeurs curieux, quel que soit leur niveau, à condition d’avoir quelques notions de C++. Apportez éventuellement un ordinateur portable pour pouvoir reproduire les exercices.\nÀ propos de l’intervenant :\nAvec 15 ans d’expérience dans le domaine du développement logiciel, Cyril Jacquet a occupé de nombreux rôles chez des clients toulousains : ingénieur DevOps, développeur C++, Rust et Python et formateur.\nAyant conçu plusieurs architectures logicielles en s’inspirant de la Clean Architecture, Cyril partagera avec vous des exemples concrets et ses astuces pour tirer le meilleur de cette approche.\nUn rendez-vous régulier autour du C++\nLes ateliers C++ de Toulibre se déroulent le premier samedi de chaque mois dans les locaux du fablab Artilect, que nous remercions chaleureusement pour son accueil.\nLa présentation démarrera à 14 heures, mais les passionnés de C++ pourront nous rejoindre dès 12 heures pour échanger librement ou s’octroyer un temps dédié au développement de leur projet.\nLa participation est gratuite et ouverte. N’hésitez pas à entrer et à découvrir le lieu. :)",
-    "VenueName": "Artilect FabLab Toulouse",
-    "VenueAddr": "10 Rue Tripière Toulouse",
-    "Latitude": 43.60174,
-    "Longitude": 1.442948,
-    "LocalImgSrc": "event-imgs/meetup-305840851.webp"
-  },
-  {
-    "Id": "meetup-304563258",
-    "PublishedOn": "2025-01-04T18:30:00+01:00",
-    "Href": "https://www.meetup.com/fr-FR/agile-toulouse/events/304563258/",
-    "Title": "\uD83C\uDF7B Bière Agile - Agilité à l'échelle",
-    "Start": "2025-02-04T18:30:00+01:00",
-    "ImgSrc": "https://secure.meetupstatic.com/photos/event/d/e/3/2/event_524696882.webp",
-    "Group": "Agile Toulouse",
-    "GroupId": "agile",
-    "Duration": null,
-    "FullImgSrc": "https://secure.meetupstatic.com/photos/event/d/e/3/2/600_524696882.webp?w=750",
-    "HtmlDescription": "<p class=\"mb-4\">\uD83C\uDF7B La bière Agile est toujours là mais nous avons changé de lieu !</p>\n<p class=\"mb-4\">\uD83D\uDC4B Agile Toulouse vous propose de venir échanger autour d'une bière (ou autre) une fois par mois à partir de 18h30 aux Halles de la Transition.</p>\n<p class=\"mb-4\">\uD83D\uDCCD Le bar est situé au <a href=\"http://%5Bhttps://www.google.com/maps/place//data=%5D(https://www.google.com/maps/place//data=)!4m2!3m1!1s0x12aebba55bacefef:0x8ba0091967492853?sa=X&amp;ved=1t:8290&amp;ictx=111\" target=\"_blank\" class=\"!text-viridian\" rel=\"ugc\">7 Rue du Canon d'Arcole, 31000 Toulouse</a><br>\nVu la taille du bar, qui permet de bien s'entendre en parlant, nous limitons les places à 12.</p>\n<p class=\"mb-4\">\uD83E\uDD13 C'est un événement à destination de tous les profils (plus ou moins expérimentés, plus ou moins dans l'agilité, plus ou moins dans l'informatique…bref vous avez compris l'idée :) ).</p>\n<p class=\"mb-4\">⚠️ Nous demanderons aux participants d'être membre de l'association. Pour rappel, c'est gratuit et faisable ici en 1 minute sur téléphone : [<a href=\"https://www.helloasso.com/associations/agile-toulouse/adhesions/adhesion-agile-toulouse-1\" target=\"_blank\" class=\"!text-viridian\" rel=\"nofollow ugc\">https://www.helloasso.com/associations/agile-toulouse/adhesions/adhesion-agile-toulouse-1</a>](https://www.helloasso.com/associations/agile-toulouse/adhesions/adhesion-agile-toulouse-1)</p>\n<p class=\"mb-4\">\uD83D\uDDEB Les sujets de discussion pourront suivre un thème (plus ou moins) mais libre à chacun d'introduire son sujet - cette fois-ci, on pourra discuter des avatanges et inconvénients des framework à l'échelle... ou nous pouvons parler de tout autre chose qui pique votre intérêt :)</p>\n<p class=\"mb-4\">\uD83C\uDFAFL'objectif étant de passer un bon moment, d'échanger librement et de repartir avec le sourire.</p>\n<p class=\"mb-4\">Si vous êtes inscrits mais que cela n'est plus possible pour vous de venir, merci de vous désinscrire pour informer qu'il reste de la place.</p>\n<p class=\"mb-4\">Bonne journée !<br>\nSarah &amp; Agile Toulouse</p>",
-    "TextDescription": "\uD83C\uDF7B La bière Agile est toujours là mais nous avons changé de lieu !\n\uD83D\uDC4B Agile Toulouse vous propose de venir échanger autour d'une bière (ou autre) une fois par mois à partir de 18h30 aux Halles de la Transition.\n\uD83D\uDCCD Le bar est situé au 7 Rue du Canon d'Arcole, 31000 Toulouse\nVu la taille du bar, qui permet de bien s'entendre en parlant, nous limitons les places à 12.\n\uD83E\uDD13 C'est un événement à destination de tous les profils (plus ou moins expérimentés, plus ou moins dans l'agilité, plus ou moins dans l'informatique…bref vous avez compris l'idée :) ).\n⚠️ Nous demanderons aux participants d'être membre de l'association. Pour rappel, c'est gratuit et faisable ici en 1 minute sur téléphone : [https://www.helloasso.com/associations/agile-toulouse/adhesions/adhesion-agile-toulouse-1](https://www.helloasso.com/associations/agile-toulouse/adhesions/adhesion-agile-toulouse-1)\n\uD83D\uDDEB Les sujets de discussion pourront suivre un thème (plus ou moins) mais libre à chacun d'introduire son sujet - cette fois-ci, on pourra discuter des avatanges et inconvénients des framework à l'échelle... ou nous pouvons parler de tout autre chose qui pique votre intérêt :)\n\uD83C\uDFAFL'objectif étant de passer un bon moment, d'échanger librement et de repartir avec le sourire.\nSi vous êtes inscrits mais que cela n'est plus possible pour vous de venir, merci de vous désinscrire pour informer qu'il reste de la place.\nBonne journée !\nSarah & Agile Toulouse",
-    "VenueName": "Les halles de la transition",
-    "VenueAddr": "Rue du canon d'arcole, Toulouse",
-    "Latitude": 43.61285,
-    "Longitude": 1.435785,
-    "LocalImgSrc": "event-imgs/meetup-304563258.webp"
-  },
-  {
-    "Id": "meetup-305479083",
-    "PublishedOn": "2025-01-06T18:30:00+01:00",
-    "Href": "https://www.meetup.com/fr-FR/javascript-and-co/events/305479083/",
-    "Title": "Le Tech PAF de JS&Co - Février avec Moovers et Neptune Club",
-    "Start": "2025-02-06T18:30:00+01:00",
-    "ImgSrc": "https://secure.meetupstatic.com/photos/event/1/1/1/1/event_525604369.webp",
-    "Group": "Association JS & Co. Toulouse",
-    "GroupId": "js-and-co",
-    "Duration": null,
-    "FullImgSrc": "https://secure.meetupstatic.com/photos/event/1/1/1/1/600_525604369.webp?w=750",
-    "HtmlDescription": "<p class=\"mb-4\">Qui dit nouvelle année, dit nouvelles rencontres et nouvelles ambitions !</p>\n<p class=\"mb-4\">C'est pour cela qu'en février, notre Tech PAF sera une collab interclub avec Moovers et Neptune Business Club.</p>\n<p class=\"mb-4\">Ce sont des réseaux qui partagent nos valeurs et notre vision des affaires et dont les rencontres ne peuvent qu'être passionnantes !</p>\n<p class=\"mb-4\">Moovers, c'est le collectif des solopreneurs qui réseautent et sortent entre eux à Toulouse.<br>\n<a href=\"https://moovers.biz/\" target=\"_blank\" class=\"!text-viridian\" rel=\"nofollow ugc\">https://moovers.biz/</a></p>\n<p class=\"mb-4\">Neptune Club, c'est le club d'affaire à Toulouse et Carcassonne qui met des solutions à disposition des entrepreneurs par les échanges.<br>\n<a href=\"https://www.neptunebusiness.com/\" target=\"_blank\" class=\"!text-viridian\" rel=\"nofollow ugc\">https://www.neptunebusiness.com/</a></p>\n<p class=\"mb-4\">Et nous JS&amp;Co, nous sommes le réseau qui rassemble les techs et les entrepreneurs pour créer des synergies et des rencontres professionnelles.</p>\n<p class=\"mb-4\">Nous organisons notamment les fameux Tech PAF, l'afterwork des techs et des entrepreneurs tous les premiers jeudi du mois.<br>\n<a href=\"https://www.meetup.com/fr-FR/javascript-and-co/\" target=\"_blank\" class=\"!text-viridian\">https://www.meetup.com/fr-FR/javascript-and-co/</a></p>\n<p class=\"mb-4\">Au programme ?<br>\nVenez échanger à bâton rompu entre personnes passionnantes sur vos sujets du moment : tech, business, staffing, astuces, opérationnel ou autre !</p>\n<p class=\"mb-4\">Si tout ceci vous plait, venez \"parler boutique\" autour d'un verre au Bièrographe, 12 rue des Paradoux.</p>\n<p class=\"mb-4\">Jeudi 6 février<br>\nBièrographe<br>\n18h30</p>",
-    "TextDescription": "Qui dit nouvelle année, dit nouvelles rencontres et nouvelles ambitions !\nC'est pour cela qu'en février, notre Tech PAF sera une collab interclub avec Moovers et Neptune Business Club.\nCe sont des réseaux qui partagent nos valeurs et notre vision des affaires et dont les rencontres ne peuvent qu'être passionnantes !\nMoovers, c'est le collectif des solopreneurs qui réseautent et sortent entre eux à Toulouse.\nhttps://moovers.biz/\nNeptune Club, c'est le club d'affaire à Toulouse et Carcassonne qui met des solutions à disposition des entrepreneurs par les échanges.\nhttps://www.neptunebusiness.com/\nEt nous JS&Co, nous sommes le réseau qui rassemble les techs et les entrepreneurs pour créer des synergies et des rencontres professionnelles.\nNous organisons notamment les fameux Tech PAF, l'afterwork des techs et des entrepreneurs tous les premiers jeudi du mois.\nhttps://www.meetup.com/fr-FR/javascript-and-co/\nAu programme ?\nVenez échanger à bâton rompu entre personnes passionnantes sur vos sujets du moment : tech, business, staffing, astuces, opérationnel ou autre !\nSi tout ceci vous plait, venez \"parler boutique\" autour d'un verre au Bièrographe, 12 rue des Paradoux.\nJeudi 6 février\nBièrographe\n18h30",
-    "VenueName": "Bierographe toulouse",
-    "VenueAddr": "12 Rue des Paradoux, Toulouse",
-    "Latitude": 43.598682,
-    "Longitude": 1.442878,
-    "LocalImgSrc": "event-imgs/meetup-305479083.webp"
-  },
-  {
-    "Id": "meetup-305735655",
-    "PublishedOn": "2025-01-06T18:30:00+01:00",
-    "Href": "https://www.meetup.com/fr-FR/toulouse-amazon-web-services/events/305735655/",
-    "Title": "Re:Cap 2025 : le résumé des annonces du AWS re:Invent",
-    "Start": "2025-02-06T18:30:00+01:00",
-    "ImgSrc": "https://secure.meetupstatic.com/photos/event/e/2/9/2/event_525838002.webp",
-    "Group": "AWS User Group France - Toulouse",
-    "GroupId": "aws",
-    "Duration": null,
-    "FullImgSrc": "https://secure.meetupstatic.com/photos/event/e/2/9/2/600_525838002.webp?w=750",
-    "HtmlDescription": "<p class=\"mb-4\">L'AWS User Group Toulouse revient le <strong>jeudi 6 février 2025</strong> avec une soirée <strong>re:Cap</strong> en français du <strong>AWS Re:Invent 2024</strong> à partir de 18h30 dans les locaux de <strong>onepoint Toulouse</strong>.</p>\n<p class=\"mb-4\">La treizième conférence annuelle AWS re:Invent s'est tenue à Las Vegas en décembre 2024. Cette conférence a cette année encore été l'occasion de donner le ton de 2025 et d'annoncer de nouvelles fonctionnalités et services.</p>\n<p class=\"mb-4\">Quelles sont les annonces à ne pas rater ? Comment ces nouveautés peuvent vous simplifier la tâche ? Pendant ce meetup, <strong>Lior et Nicolas (Solution architects chez AWS) passeront en revue les principales annonces</strong>. Ils vous montreront également, à l'aide de plusieurs <strong>démonstrations</strong> comment tirer le meilleur parti des nouvelles fonctions.</p>\n<p class=\"mb-4\">Nous finirons la soirée autour de quelques bières et pizzas, l'occasion de poser toutes vos questions et d'échanger sur ce qui a été présenté.</p>\n<p class=\"mb-4\">En résumé :<br>\n- \uD83D\uDCC6 <strong>Date</strong> : Jeudi 6 février 2025 à partir de 18h30<br>\n- \uD83C\uDFE1 <strong>Lieu</strong> : Onepoint <a href=\"http://%5Bhttps://www.google.com/maps/place//data=%5D(https://www.google.com/maps/place//data=)!4m2!3m1!1s0x12aebd4ddb5b3867:0xe25fa7262523fab4?sa=X&amp;ved=1t:8290&amp;ictx=111\" target=\"_blank\" class=\"!text-viridian\" rel=\"ugc\">3 Rue Lapeyrouse, 31000 Toulouse</a></p>\n<ul class=\"pl-5 list-disc mb-4\">\n<li><strong>Programme</strong> :</li>\n<li><strong>18h30-18h45</strong> : Accueil</li>\n<li><strong>18h45 -20h</strong> : Re:Cap du AWS re:Invent 2024 par Lior PEREZ et Nicolas de PLACE d'AWS</li>\n<li><strong>20h - 21h30</strong> : Echanges, Questions et Réponses autour de bières et pizzas</li>\n</ul>\n<p class=\"mb-4\">Nous avons hâte de vous accueillir pour cet événement.</p>",
-    "TextDescription": "L'AWS User Group Toulouse revient le jeudi 6 février 2025 avec une soirée re:Cap en français du AWS Re:Invent 2024 à partir de 18h30 dans les locaux de onepoint Toulouse.\nLa treizième conférence annuelle AWS re:Invent s'est tenue à Las Vegas en décembre 2024. Cette conférence a cette année encore été l'occasion de donner le ton de 2025 et d'annoncer de nouvelles fonctionnalités et services.\nQuelles sont les annonces à ne pas rater ? Comment ces nouveautés peuvent vous simplifier la tâche ? Pendant ce meetup, Lior et Nicolas (Solution architects chez AWS) passeront en revue les principales annonces. Ils vous montreront également, à l'aide de plusieurs démonstrations comment tirer le meilleur parti des nouvelles fonctions.\nNous finirons la soirée autour de quelques bières et pizzas, l'occasion de poser toutes vos questions et d'échanger sur ce qui a été présenté.\nEn résumé :\n- \uD83D\uDCC6 Date : Jeudi 6 février 2025 à partir de 18h30\n- \uD83C\uDFE1 Lieu : Onepoint 3 Rue Lapeyrouse, 31000 Toulouse\n\nProgramme :\n18h30-18h45 : Accueil\n18h45 -20h : Re:Cap du AWS re:Invent 2024 par Lior PEREZ et Nicolas de PLACE d'AWS\n20h - 21h30 : Echanges, Questions et Réponses autour de bières et pizzas\n\nNous avons hâte de vous accueillir pour cet événement.",
-    "VenueName": "Onepoint Toulouse - Transformation Digital",
-    "VenueAddr": "3 Rue Lapeyrouse Toulouse",
-    "Latitude": 43.604053,
-    "Longitude": 1.446064,
-    "LocalImgSrc": "event-imgs/meetup-305735655.webp"
-  },
-  {
-    "Id": "meetup-305714647",
-    "PublishedOn": "2025-01-11T19:00:00+01:00",
-    "Href": "https://www.meetup.com/fr-FR/toulouse-java-user-group/events/305714647/",
-    "Title": "Soirée SSO (Single Sign-On)",
-    "Start": "2025-02-11T19:00:00+01:00",
-    "ImgSrc": "https://secure.meetupstatic.com/photos/event/9/d/d/2/event_525820402.webp",
-    "Group": "Toulouse Java User Group",
-    "GroupId": "jug",
-    "Duration": null,
-    "FullImgSrc": "https://secure.meetupstatic.com/photos/event/9/d/d/2/600_525820402.webp?w=750",
-    "HtmlDescription": "<p class=\"mb-4\">La prochaine soirée du Java User Group Toulousain aura lieu le <strong>mardi 11 février à 19h</strong> !</p>\n<p class=\"mb-4\">Pour cette occasion, nous nous retrouverons chez <strong>Epitech</strong> <strong>Toulouse</strong>.</p>\n<p class=\"mb-4\">***</p>\n<p class=\"mb-4\"><strong>== Retour aux sources de l'authentification unique : Kerberos</strong><br>\nSpeaker : Frédéric Cabestre</p>\n<p class=\"mb-4\">Dans l'univers du Web les solutions permettant l'authentification unique (ou Single Sign On) sont pléthoriques. On pourrait ne retenir que CAS, SAML ou OIDC qui sont les plus fréquemment utilisées. Mais elles on un ancêtre commun dans le domaine des réseaux locaux : Kerberos. Développé initialement par le MIT, souvent réputé complexe, Kerberos est plus qu'une curiosité d'institut de recherche. Ce protocole à connu ses heures de gloires quand Microsoft l'a adopté en remplacement de NTLM pour Active Directory et même adapté au monde du Web à travers SPNEGO.</p>\n<p class=\"mb-4\">Si nombre de ces acronymes vous échappent cette présentation est faite pour vous. Nous y parlerons bien sûr de l'histoire de Kerberos, de ses principes de fonctionnement au sein d'un LAN, mais aussi de la filiation qui peut exister avec certaines méthodes d'authentification unique du web moderne.</p>\n<p class=\"mb-4\"><strong>== Single Sign On en 15mn sans modifier son code</strong><br>\nSpeaker : Florian Bernard</p>\n<p class=\"mb-4\">Ajouter le support du SSO (Single Sign On) dans une application web peut être parfois compliqué et nécessite de la rigueur et de respecter les bonnes pratiques pour assurer la sécurité. En 15 minutes, nous allons voir comment construire un portail SSO qui vous permettra de sécuriser n'importe quelle application web avec OpenID Connect sans modifier une ligne de code ! Le tout grâce à des composants libres et gratuits (Apache, Keycloak, Docker...).</p>\n<p class=\"mb-4\">***</p>\n<p class=\"mb-4\">Comme d'habitude, la soirée sera suivie d'un apéro (pizza, bières et softs offerts par nos généreux sponsors : <strong>Lyra Network</strong> et <strong>MonkeyPatch</strong>.<br>\nMerci à eux !</p>\n<p class=\"mb-4\">***</p>\n<p class=\"mb-4\"><strong>Nous recherchons activement des volontaires et petites mains pour s'impliquer dans l'organisation du JUG.</strong></p>\n<p class=\"mb-4\">Nos besoins :<br>\n* Récupération et installation des pizzas/boissons pendant la soirée ;<br>\n* Création des visuels et slides d'intro à partir de templates ;<br>\n* Aide à la planification des prochains sujets ;<br>\n* Installation du/des speakers et accueil/aiguillage du public.</p>\n<p class=\"mb-4\">Si un de ces sujets vous intéresse (ou d'autres), n'hésitez pas à nous contacter !</p>",
-    "TextDescription": "La prochaine soirée du Java User Group Toulousain aura lieu le mardi 11 février à 19h !\nPour cette occasion, nous nous retrouverons chez Epitech Toulouse.\n***\n== Retour aux sources de l'authentification unique : Kerberos\nSpeaker : Frédéric Cabestre\nDans l'univers du Web les solutions permettant l'authentification unique (ou Single Sign On) sont pléthoriques. On pourrait ne retenir que CAS, SAML ou OIDC qui sont les plus fréquemment utilisées. Mais elles on un ancêtre commun dans le domaine des réseaux locaux : Kerberos. Développé initialement par le MIT, souvent réputé complexe, Kerberos est plus qu'une curiosité d'institut de recherche. Ce protocole à connu ses heures de gloires quand Microsoft l'a adopté en remplacement de NTLM pour Active Directory et même adapté au monde du Web à travers SPNEGO.\nSi nombre de ces acronymes vous échappent cette présentation est faite pour vous. Nous y parlerons bien sûr de l'histoire de Kerberos, de ses principes de fonctionnement au sein d'un LAN, mais aussi de la filiation qui peut exister avec certaines méthodes d'authentification unique du web moderne.\n== Single Sign On en 15mn sans modifier son code\nSpeaker : Florian Bernard\nAjouter le support du SSO (Single Sign On) dans une application web peut être parfois compliqué et nécessite de la rigueur et de respecter les bonnes pratiques pour assurer la sécurité. En 15 minutes, nous allons voir comment construire un portail SSO qui vous permettra de sécuriser n'importe quelle application web avec OpenID Connect sans modifier une ligne de code ! Le tout grâce à des composants libres et gratuits (Apache, Keycloak, Docker...).\n***\nComme d'habitude, la soirée sera suivie d'un apéro (pizza, bières et softs offerts par nos généreux sponsors : Lyra Network et MonkeyPatch.\nMerci à eux !\n***\nNous recherchons activement des volontaires et petites mains pour s'impliquer dans l'organisation du JUG.\nNos besoins :\n* Récupération et installation des pizzas/boissons pendant la soirée ;\n* Création des visuels et slides d'intro à partir de templates ;\n* Aide à la planification des prochains sujets ;\n* Installation du/des speakers et accueil/aiguillage du public.\nSi un de ces sujets vous intéresse (ou d'autres), n'hésitez pas à nous contacter !",
-    "VenueName": "EPITECH - Amphi rez-de-chaussée",
-    "VenueAddr": "40 Boulevard de la Marquette Toulouse",
-    "Latitude": 43.61244,
-    "Longitude": 1.429108,
-    "LocalImgSrc": "event-imgs/meetup-305714647.webp"
-  },
-  {
-    "Id": "meetup-306012404",
-    "PublishedOn": "2025-01-18T18:30:00+01:00",
-    "Href": "https://www.meetup.com/fr-FR/tech-a-break/events/306012404/",
-    "Title": "SELF-SERVICE & PLATEFORMISATION",
-    "Start": "2025-02-18T18:30:00+01:00",
-    "ImgSrc": "https://secure.meetupstatic.com/photos/event/5/0/3/c/event_526100540.webp",
-    "Group": "Tech a break",
-    "GroupId": "tech-a-break",
-    "Duration": null,
-    "FullImgSrc": "https://secure.meetupstatic.com/photos/event/5/0/3/c/600_526100540.webp?w=750",
-    "HtmlDescription": "<p class=\"mb-4\">\uD83D\uDE80 <strong>TOULOUSE | TABLE RONDE INCOMING</strong> \uD83D\uDE80</p>\n<p class=\"mb-4\">La <strong>plateformisation</strong> est sur toutes les lèvres, mais comment s’assurer de cibler les bonnes problématiques et de livrer un produit réellement <strong>adopté</strong>, utile et utilisable ?</p>\n<p class=\"mb-4\">Nous aborderons 3 volets :<br>\n<strong>\uD83D\uDD39 Le Product Marketing : clé d’une plateformisation réussie</strong><br>\n<strong>\uD83D\uDD39 Team Topologies : un accélérateur de la culture plateforme</strong><br>\n<strong>\uD83D\uDD39 Self-service : le nerf de la guerre des services API, Data &amp; Ops</strong></p>\n<p class=\"mb-4\">Rejoignez-nous pour une <strong>table ronde réellement participative</strong>, où experts et praticiens partageront <strong>leurs retours d’expérience concrets</strong> et les <strong>facteurs clés de succès</strong> !</p>\n<p class=\"mb-4\"><strong>\uD83D\uDCC5 Mardi 18 février</strong><br>\n\uD83D\uDCCD 1 Place de la Bourse au cœur de <strong>Toulouse</strong><br>\n\uD83D\uDC49 Inscrivez-vous dès maintenant !</p>\n<p class=\"mb-4\">#Plateformisation #SelfService</p>",
-    "TextDescription": "\uD83D\uDE80 TOULOUSE | TABLE RONDE INCOMING \uD83D\uDE80\nLa plateformisation est sur toutes les lèvres, mais comment s’assurer de cibler les bonnes problématiques et de livrer un produit réellement adopté, utile et utilisable ?\nNous aborderons 3 volets :\n\uD83D\uDD39 Le Product Marketing : clé d’une plateformisation réussie\n\uD83D\uDD39 Team Topologies : un accélérateur de la culture plateforme\n\uD83D\uDD39 Self-service : le nerf de la guerre des services API, Data & Ops\nRejoignez-nous pour une table ronde réellement participative, où experts et praticiens partageront leurs retours d’expérience concrets et les facteurs clés de succès !\n\uD83D\uDCC5 Mardi 18 février\n\uD83D\uDCCD 1 Place de la Bourse au cœur de Toulouse\n\uD83D\uDC49 Inscrivez-vous dès maintenant !\n#Plateformisation #SelfService",
-    "VenueName": "1 Pl. de la Bourse",
-    "VenueAddr": "1 Pl. de la Bourse Toulouse",
-    "Latitude": 43.601437,
-    "Longitude": 1.442047,
-    "LocalImgSrc": "event-imgs/meetup-306012404.webp"
-  },
-  {
-    "Id": "tgd-2025-02-18",
-    "PublishedOn": "2025-01-18T18:30:00+01:00",
-    "Href": "https://toulousegamedev.fr/evenements/",
-    "Title": "Meet-up de Février",
-    "Start": "2025-02-18T18:30:00+01:00",
-    "ImgSrc": "https://toulousegamedev.fr/wp-content/uploads/2025/02/18-02-25_carre.png",
-    "Group": "Toulouse Game Dev",
-    "GroupId": "tgd",
-    "Duration": "04:00:00",
-    "FullImgSrc": null,
-    "HtmlDescription": "<p>Ce mois-ci nous vous proposons <strong>une table ronde</strong> sur le sujet suivant : <strong>Jeu de réflexion, comment concurrencer Jonathan Blow ?</strong></p>\n<p><strong>Pour cette table ronde, nous aurons le plaisir d’accueillir : </strong></p>\n<p><strong>William David</strong>, Game Designer,<strong> qui est en train de travailler sur le jeu de réflexion «&nbsp;</strong>Looking for Faël<strong>«&nbsp;. </strong></p>\n<p><strong>Lénophie, </strong>Game Designer<strong>, qui a sorti le jeu de réflexion </strong>Paquerette Down the Bunburrows <strong>. Thibault Barbaroux</strong>, Game Designer,<strong> qui a sorti le jeu de réflexion </strong>Wise Garden<strong> et travaille actuellement sur </strong>Our Journey.<strong> </strong></p>\n<p>Le planning du Meet-up sera le suivant :<br><strong>18h30</strong> : Accueil des personnes ne connaissant pas le TGD</p>\n<p><strong>18h45 </strong>: Ouverture des portes<br><strong>19h00</strong>: Lancement de la session <strong>Open Mics</strong><br><strong>19h15</strong> : Début de table ronde</p>\n<p>En direct sur la chaine Twitch du TGD à 19h00 : <a rel=\"noreferrer noopener\" href=\"https://www.twitch.tv/toulousegamedev\" target=\"_blank\">ici</a></p>",
-    "TextDescription": null,
-    "VenueName": null,
-    "VenueAddr": null,
-    "Latitude": null,
-    "Longitude": null,
-    "LocalImgSrc": "event-imgs/tgd-2025-02-18.png"
-  },
-  {
-    "Id": "meetup-306035801",
-    "PublishedOn": "2025-01-21T18:00:00+01:00",
-    "Href": "https://www.meetup.com/fr-FR/agile-toulouse/events/306035801/",
-    "Title": "Développer le collaboratif dans les équipes - Klub Liberating Structure",
-    "Start": "2025-02-21T18:00:00+01:00",
-    "ImgSrc": "https://secure.meetupstatic.com/photos/event/9/3/c/6/event_526117830.webp",
-    "Group": "Agile Toulouse",
-    "GroupId": "agile",
-    "Duration": null,
-    "FullImgSrc": "https://secure.meetupstatic.com/photos/event/9/3/c/6/600_526117830.webp?w=750",
-    "HtmlDescription": "<p class=\"mb-4\">Venez expérimenter quelques Liberatings Structures lors de cet atelier expérientiel. Pour explorer leur pouvoir, nous créons une situation fictive qui vous permettra une utilisation contextualisée. Cependant, si vous souhaitez venir avec une problématique de votre équipe, nous essaierons de l'intégrer dans notre déroulé.<br>\nCe n'est pas encore confirmé à cette heure, mais la présence d'Henri Lipmanowicz, le cofondateur des LS, est envisagée..</p>\n<p class=\"mb-4\">Alors si vous voulez expérimenter le pouvoir surprenant des LS, venez nous rejoindre .... à la maison des associations <a href=\"http://....le\" target=\"_blank\" class=\"!text-viridian\" rel=\"nofollow ugc\">....le</a> vendredi 21 février de 18h à 20h.<br>\nPhilippe &amp; Sam Agile Toulouse</p>\n<p class=\"mb-4\">⚠️ Nous demanderons aux participants d'être membre de l'association. Pour rappel, c'est gratuit et faisable ici en 1 minute sur téléphone : [<a href=\"https://www.helloasso.com/associations/agile-toulouse/adhesions/adhesion-agile-toulouse-1\" target=\"_blank\" class=\"!text-viridian\" rel=\"nofollow ugc\">https://www.helloasso.com/associations/agile-toulouse/adhesions/adhesion-agile-toulouse-1</a>](https://www.helloasso.com/associations/agile-toulouse/adhesions/adhesion-agile-toulouse-1)</p>",
-    "TextDescription": "Venez expérimenter quelques Liberatings Structures lors de cet atelier expérientiel. Pour explorer leur pouvoir, nous créons une situation fictive qui vous permettra une utilisation contextualisée. Cependant, si vous souhaitez venir avec une problématique de votre équipe, nous essaierons de l'intégrer dans notre déroulé.\nCe n'est pas encore confirmé à cette heure, mais la présence d'Henri Lipmanowicz, le cofondateur des LS, est envisagée..\nAlors si vous voulez expérimenter le pouvoir surprenant des LS, venez nous rejoindre .... à la maison des associations ....le vendredi 21 février de 18h à 20h.\nPhilippe & Sam Agile Toulouse\n⚠️ Nous demanderons aux participants d'être membre de l'association. Pour rappel, c'est gratuit et faisable ici en 1 minute sur téléphone : [https://www.helloasso.com/associations/agile-toulouse/adhesions/adhesion-agile-toulouse-1](https://www.helloasso.com/associations/agile-toulouse/adhesions/adhesion-agile-toulouse-1)",
-    "VenueName": "Maison des associations",
-    "VenueAddr": "Ancienne caserne Niel - 3 place Guy Hersant Toulouse",
-    "Latitude": 43.577038,
-    "Longitude": 1.444239,
-    "LocalImgSrc": "event-imgs/meetup-306035801.webp"
-  },
-  {
     "Id": "meetup-305839504",
     "PublishedOn": "2025-01-24T18:00:00+01:00",
     "Href": "https://www.meetup.com/fr-FR/agile-toulouse/events/305839504/",
@@ -2980,7 +16,7 @@
     "VenueAddr": "3 Pl. Guy Hersant Toulouse",
     "Latitude": 43.5775,
     "Longitude": 1.444116,
-    "LocalImgSrc": "event-imgs/meetup-305839504.webp"
+    "LocalImgSrc": "event-imgs/2025-02-24-agile-meetup-305839504.webp"
   },
   {
     "Id": "meetup-305752126",
@@ -2999,7 +35,7 @@
     "VenueAddr": "13 Rue Sainte-Ursule Toulouse",
     "Latitude": 43.602283,
     "Longitude": 1.441679,
-    "LocalImgSrc": "event-imgs/meetup-305752126.webp"
+    "LocalImgSrc": "event-imgs/2025-02-25-ruby-meetup-305752126.webp"
   },
   {
     "Id": "meetup-305750119",
@@ -3018,7 +54,7 @@
     "VenueAddr": null,
     "Latitude": null,
     "Longitude": null,
-    "LocalImgSrc": "event-imgs/meetup-305750119.webp"
+    "LocalImgSrc": "event-imgs/2025-02-28-agile-meetup-305750119.webp"
   },
   {
     "Id": "meetup-305839478",
@@ -3037,7 +73,7 @@
     "VenueAddr": "3 Pl. Guy Hersant Toulouse",
     "Latitude": 43.5775,
     "Longitude": 1.444116,
-    "LocalImgSrc": "event-imgs/meetup-305839478.webp"
+    "LocalImgSrc": "event-imgs/2025-03-04-agile-meetup-305839478.webp"
   },
   {
     "Id": "meetup-306206046",
@@ -3056,7 +92,7 @@
     "VenueAddr": "14 Rue des Prêtres, 31000 Toulouse Toulouse",
     "Latitude": 43.59745,
     "Longitude": 1.443843,
-    "LocalImgSrc": "event-imgs/meetup-306206046.webp"
+    "LocalImgSrc": "event-imgs/2025-03-06-js-and-co-meetup-306206046.webp"
   },
   {
     "Id": "meetup-306407965",
@@ -3075,7 +111,7 @@
     "VenueAddr": "51 All. Jean Jaurès, 31000 Toulouse Toulouse",
     "Latitude": 43.6079,
     "Longitude": 1.451229,
-    "LocalImgSrc": "event-imgs/meetup-306407965.webp"
+    "LocalImgSrc": "event-imgs/2025-03-06-tds-meetup-306407965.webp"
   },
   {
     "Id": "meetup-306421959",
@@ -3094,7 +130,7 @@
     "VenueAddr": null,
     "Latitude": null,
     "Longitude": null,
-    "LocalImgSrc": "event-imgs/meetup-306421959.webp"
+    "LocalImgSrc": "event-imgs/2025-03-10-agile-meetup-306421959.webp"
   },
   {
     "Id": "meetup-305897754",
@@ -3113,7 +149,7 @@
     "VenueAddr": "Rue du canon d'arcole, Toulouse",
     "Latitude": 43.61285,
     "Longitude": 1.435785,
-    "LocalImgSrc": "event-imgs/meetup-305897754.webp"
+    "LocalImgSrc": "event-imgs/2025-03-11-agile-meetup-305897754.webp"
   },
   {
     "Id": "meetup-306134791",
@@ -3132,7 +168,7 @@
     "VenueAddr": "2 Chem. de Tréville Frouzins",
     "Latitude": 43.524384,
     "Longitude": 1.312094,
-    "LocalImgSrc": "event-imgs/meetup-306134791.webp"
+    "LocalImgSrc": "event-imgs/2025-03-12-devops-cloud-meetup-306134791.webp"
   },
   {
     "Id": "meetup-306435624",
@@ -3151,7 +187,7 @@
     "VenueAddr": "40 Boulevard de la Marquette Toulouse",
     "Latitude": 43.61244,
     "Longitude": 1.429108,
-    "LocalImgSrc": "event-imgs/meetup-306435624.webp"
+    "LocalImgSrc": "event-imgs/2025-03-12-jug-meetup-306435624.webp"
   },
   {
     "Id": "tgd-2025-03-20",
@@ -3170,7 +206,7 @@
     "VenueAddr": null,
     "Latitude": null,
     "Longitude": null,
-    "LocalImgSrc": "event-imgs/tgd-2025-03-20.png"
+    "LocalImgSrc": "event-imgs/2025-03-20-tgd-tgd-2025-03-20.png"
   },
   {
     "Id": "meetup-306253496",
@@ -3189,7 +225,7 @@
     "VenueAddr": "3 Pl. Guy Hersant Toulouse",
     "Latitude": 43.5775,
     "Longitude": 1.444116,
-    "LocalImgSrc": "event-imgs/meetup-306253496.webp"
+    "LocalImgSrc": "event-imgs/2025-03-21-agile-meetup-306253496.webp"
   },
   {
     "Id": "meetup-306394593",
@@ -3208,7 +244,7 @@
     "VenueAddr": null,
     "Latitude": null,
     "Longitude": null,
-    "LocalImgSrc": "event-imgs/meetup-306394593.webp"
+    "LocalImgSrc": "event-imgs/2025-03-25-agile-meetup-306394593.webp"
   },
   {
     "Id": "meetup-306548583",
@@ -3227,7 +263,7 @@
     "VenueAddr": "1 Pl. de la Bourse Toulouse",
     "Latitude": 43.601437,
     "Longitude": 1.442047,
-    "LocalImgSrc": "event-imgs/meetup-306548583.webp"
+    "LocalImgSrc": "event-imgs/2025-03-27-tech-a-break-meetup-306548583.webp"
   },
   {
     "Id": "meetup-306556883",
@@ -3246,7 +282,7 @@
     "VenueAddr": "27 Rue d'Aubuisson Toulouse",
     "Latitude": 43.602695,
     "Longitude": 1.454208,
-    "LocalImgSrc": "event-imgs/meetup-306556883.webp"
+    "LocalImgSrc": "event-imgs/2025-04-02-mtg-meetup-306556883.webp"
   },
   {
     "Id": "meetup-306364724",
@@ -3265,7 +301,7 @@
     "VenueAddr": "21 Boulevard de Strasbourg, 31000 Toulouse Toulouse",
     "Latitude": 43.606956,
     "Longitude": 1.447069,
-    "LocalImgSrc": "event-imgs/meetup-306364724.webp"
+    "LocalImgSrc": "event-imgs/2025-04-03-js-and-co-meetup-306364724.webp"
   },
   {
     "Id": "meetup-306770114",
@@ -3284,7 +320,7 @@
     "VenueAddr": "13 Rue Sainte-Ursule Toulouse",
     "Latitude": 43.602283,
     "Longitude": 1.441679,
-    "LocalImgSrc": "event-imgs/meetup-306770114.webp"
+    "LocalImgSrc": "event-imgs/2025-04-03-dataviz-meetup-306770114.webp"
   },
   {
     "Id": "meetup-306513726",
@@ -3303,7 +339,7 @@
     "VenueAddr": null,
     "Latitude": null,
     "Longitude": null,
-    "LocalImgSrc": "event-imgs/meetup-306513726.webp"
+    "LocalImgSrc": "event-imgs/2025-04-08-agile-meetup-306513726.webp"
   },
   {
     "Id": "meetup-305897764",
@@ -3322,7 +358,7 @@
     "VenueAddr": "Rue du canon d'arcole, Toulouse",
     "Latitude": 43.61285,
     "Longitude": 1.435785,
-    "LocalImgSrc": "event-imgs/meetup-305897764.webp"
+    "LocalImgSrc": "event-imgs/2025-04-08-agile-meetup-305897764.webp"
   },
   {
     "Id": "meetup-306826511",
@@ -3341,7 +377,7 @@
     "VenueAddr": "8 Imp. Bonnet Toulouse",
     "Latitude": 43.599613,
     "Longitude": 1.457047,
-    "LocalImgSrc": "event-imgs/meetup-306826511.webp"
+    "LocalImgSrc": "event-imgs/2025-04-10-toulbox-meetup-306826511.webp"
   },
   {
     "Id": "meetup-306803179",
@@ -3360,7 +396,7 @@
     "VenueAddr": "36 Rue d'Alsace Lorraine Toulouse",
     "Latitude": 43.605507,
     "Longitude": 1.445923,
-    "LocalImgSrc": "event-imgs/meetup-306803179.webp"
+    "LocalImgSrc": "event-imgs/2025-04-10-dataviz-meetup-306803179.webp"
   },
   {
     "Id": "meetup-306929707",
@@ -3379,7 +415,7 @@
     "VenueAddr": "36, rue d'alsace-lorraine Toulouse",
     "Latitude": 43.605507,
     "Longitude": 1.445922,
-    "LocalImgSrc": "event-imgs/meetup-306929707.webp"
+    "LocalImgSrc": "event-imgs/2025-04-18-agile-meetup-306929707.webp"
   },
   {
     "Id": "meetup-307293899",
@@ -3398,7 +434,7 @@
     "VenueAddr": null,
     "Latitude": null,
     "Longitude": null,
-    "LocalImgSrc": "event-imgs/meetup-307293899.webp"
+    "LocalImgSrc": "event-imgs/2025-04-22-agile-meetup-307293899.webp"
   },
   {
     "Id": "meetup-306759466",
@@ -3417,7 +453,7 @@
     "VenueAddr": "27 rue d’Aubuisson Toulouse",
     "Latitude": 43.602768,
     "Longitude": 1.454036,
-    "LocalImgSrc": "event-imgs/meetup-306759466.webp"
+    "LocalImgSrc": "event-imgs/2025-04-24-js-and-co-meetup-306759466.webp"
   },
   {
     "Id": "meetup-306847089",
@@ -3436,7 +472,7 @@
     "VenueAddr": "36, rue d'alsace-lorraine Toulouse",
     "Latitude": 43.605507,
     "Longitude": 1.445922,
-    "LocalImgSrc": "event-imgs/meetup-306847089.webp"
+    "LocalImgSrc": "event-imgs/2025-04-24-agile-meetup-306847089.webp"
   },
   {
     "Id": "meetup-306950448",
@@ -3455,7 +491,7 @@
     "VenueAddr": "13 Rue Sainte-Ursule Toulouse",
     "Latitude": 43.602283,
     "Longitude": 1.441679,
-    "LocalImgSrc": "event-imgs/meetup-306950448.webp"
+    "LocalImgSrc": "event-imgs/2025-04-28-gdg-meetup-306950448.webp"
   },
   {
     "Id": "meetup-306951336",
@@ -3474,7 +510,7 @@
     "VenueAddr": "13 Rue Sainte-Ursule Toulouse",
     "Latitude": 43.602283,
     "Longitude": 1.441679,
-    "LocalImgSrc": "event-imgs/meetup-306951336.webp"
+    "LocalImgSrc": "event-imgs/2025-04-28-mtg-meetup-306951336.webp"
   },
   {
     "Id": "meetup-306970894",
@@ -3493,7 +529,7 @@
     "VenueAddr": "13 rue Sainte Ursule Toulouse",
     "Latitude": 43.60222,
     "Longitude": 1.442048,
-    "LocalImgSrc": "event-imgs/meetup-306970894.webp"
+    "LocalImgSrc": "event-imgs/2025-04-28-jug-meetup-306970894.webp"
   },
   {
     "Id": "meetup-307416389",
@@ -3512,7 +548,7 @@
     "VenueAddr": "36, rue d'alsace-lorraine Toulouse",
     "Latitude": 43.605507,
     "Longitude": 1.445922,
-    "LocalImgSrc": "event-imgs/meetup-307416389.webp"
+    "LocalImgSrc": "event-imgs/2025-04-30-agile-meetup-307416389.webp"
   },
   {
     "Id": "meetup-307405202",
@@ -3531,7 +567,7 @@
     "VenueAddr": "9 Rue du pont Guilhemery Toulouse",
     "Latitude": 43.600674,
     "Longitude": 1.455908,
-    "LocalImgSrc": "event-imgs/meetup-307405202.webp"
+    "LocalImgSrc": "event-imgs/2025-05-01-js-and-co-meetup-307405202.webp"
   },
   {
     "Id": "meetup-305897774",
@@ -3550,7 +586,7 @@
     "VenueAddr": "Rue du canon d'arcole, Toulouse",
     "Latitude": 43.61285,
     "Longitude": 1.435785,
-    "LocalImgSrc": "event-imgs/meetup-305897774.webp"
+    "LocalImgSrc": "event-imgs/2025-05-06-agile-meetup-305897774.webp"
   },
   {
     "Id": "meetup-306422374",
@@ -3569,7 +605,7 @@
     "VenueAddr": "10 Rue Tripière Toulouse",
     "Latitude": 43.60174,
     "Longitude": 1.442948,
-    "LocalImgSrc": "event-imgs/meetup-306422374.webp"
+    "LocalImgSrc": "event-imgs/2025-05-12-artilect-meetup-306422374.webp"
   },
   {
     "Id": "meetup-307351763",
@@ -3588,7 +624,7 @@
     "VenueAddr": "27 Rue d'Aubuisson Toulouse",
     "Latitude": 43.602695,
     "Longitude": 1.454208,
-    "LocalImgSrc": "event-imgs/meetup-307351763.webp"
+    "LocalImgSrc": "event-imgs/2025-05-12-mtg-meetup-307351763.webp"
   },
   {
     "Id": "meetup-307492131",
@@ -3607,7 +643,7 @@
     "VenueAddr": "3 Rue Albert Lautman Toulouse",
     "Latitude": 43.606495,
     "Longitude": 1.439052,
-    "LocalImgSrc": "event-imgs/meetup-307492131.webp"
+    "LocalImgSrc": "event-imgs/2025-05-20-ruby-meetup-307492131.webp"
   },
   {
     "Id": "meetup-307529722",
@@ -3626,7 +662,7 @@
     "VenueAddr": "40 Boulevard de la Marquette Toulouse",
     "Latitude": 43.61244,
     "Longitude": 1.429108,
-    "LocalImgSrc": "event-imgs/meetup-307529722.webp"
+    "LocalImgSrc": "event-imgs/2025-05-20-jug-meetup-307529722.webp"
   },
   {
     "Id": "meetup-307533011",
@@ -3645,7 +681,7 @@
     "VenueAddr": "36 Rue d'Alsace Lorraine Toulouse",
     "Latitude": 43.605507,
     "Longitude": 1.445923,
-    "LocalImgSrc": "event-imgs/meetup-307533011.webp"
+    "LocalImgSrc": "event-imgs/2025-05-22-dataviz-meetup-307533011.webp"
   },
   {
     "Id": "meetup-307533870",
@@ -3664,7 +700,7 @@
     "VenueAddr": "10 Rue Tripière Toulouse",
     "Latitude": 43.60174,
     "Longitude": 1.442948,
-    "LocalImgSrc": "event-imgs/meetup-307533870.webp"
+    "LocalImgSrc": "event-imgs/2025-05-22-artilect-meetup-307533870.webp"
   },
   {
     "Id": "meetup-307914366",
@@ -3683,7 +719,7 @@
     "VenueAddr": "3 Pl. Guy Hersant Toulouse",
     "Latitude": 43.5775,
     "Longitude": 1.444116,
-    "LocalImgSrc": "event-imgs/meetup-307914366.webp"
+    "LocalImgSrc": "event-imgs/2025-05-23-agile-meetup-307914366.webp"
   },
   {
     "Id": "meetup-307289521",
@@ -3702,7 +738,7 @@
     "VenueAddr": null,
     "Latitude": null,
     "Longitude": null,
-    "LocalImgSrc": "event-imgs/meetup-307289521.webp"
+    "LocalImgSrc": "event-imgs/2025-05-26-agile-meetup-307289521.webp"
   },
   {
     "Id": "meetup-307964761",
@@ -3721,7 +757,7 @@
     "VenueAddr": null,
     "Latitude": null,
     "Longitude": null,
-    "LocalImgSrc": "event-imgs/meetup-307964761.webp"
+    "LocalImgSrc": "event-imgs/2025-05-27-agile-meetup-307964761.webp"
   },
   {
     "Id": "meetup-307602307",
@@ -3740,7 +776,7 @@
     "VenueAddr": "29 boulevard de Strasbourg TOULOUSE",
     "Latitude": 43.607563,
     "Longitude": 1.44645,
-    "LocalImgSrc": "event-imgs/meetup-307602307.webp"
+    "LocalImgSrc": "event-imgs/2025-06-05-js-and-co-meetup-307602307.webp"
   },
   {
     "Id": "meetup-307723256",
@@ -3759,7 +795,7 @@
     "VenueAddr": "10 Rue Tripière Toulouse",
     "Latitude": 43.60174,
     "Longitude": 1.442948,
-    "LocalImgSrc": "event-imgs/meetup-307723256.webp"
+    "LocalImgSrc": "event-imgs/2025-06-09-artilect-meetup-307723256.webp"
   },
   {
     "Id": "meetup-lkmdrtyhcjbmb",
@@ -3778,7 +814,7 @@
     "VenueAddr": "10 Rue Tripière Toulouse",
     "Latitude": 43.60174,
     "Longitude": 1.442948,
-    "LocalImgSrc": "event-imgs/meetup-lkmdrtyhcjbmb.webp"
+    "LocalImgSrc": "event-imgs/2025-06-09-artilect-meetup-lkmdrtyhcjbmb.webp"
   },
   {
     "Id": "meetup-308157535",
@@ -3797,7 +833,7 @@
     "VenueAddr": "Rue du canon d'arcole, Toulouse",
     "Latitude": 43.61285,
     "Longitude": 1.435785,
-    "LocalImgSrc": "event-imgs/meetup-308157535.webp"
+    "LocalImgSrc": "event-imgs/2025-06-10-agile-meetup-308157535.webp"
   },
   {
     "Id": "meetup-307842478",
@@ -3816,7 +852,7 @@
     "VenueAddr": "13 Rue Sainte-Ursule Toulouse",
     "Latitude": 43.602283,
     "Longitude": 1.441679,
-    "LocalImgSrc": "event-imgs/meetup-307842478.webp"
+    "LocalImgSrc": "event-imgs/2025-06-11-gdg-meetup-307842478.webp"
   },
   {
     "Id": "meetup-308061160",
@@ -3835,7 +871,7 @@
     "VenueAddr": "3 Pl. Guy Hersant Toulouse",
     "Latitude": 43.5775,
     "Longitude": 1.444116,
-    "LocalImgSrc": "event-imgs/meetup-308061160.webp"
+    "LocalImgSrc": "event-imgs/2025-06-17-agile-meetup-308061160.webp"
   },
   {
     "Id": "meetup-307661560",
@@ -3854,7 +890,7 @@
     "VenueAddr": "40 Boulevard de la Marquette, 7eme étage Toulouse",
     "Latitude": 43.612465,
     "Longitude": 1.428924,
-    "LocalImgSrc": "event-imgs/meetup-307661560.webp"
+    "LocalImgSrc": "event-imgs/2025-06-17-ruby-meetup-307661560.webp"
   },
   {
     "Id": "meetup-308236480",
@@ -3873,7 +909,7 @@
     "VenueAddr": "10 Rue Tripière Toulouse",
     "Latitude": 43.60174,
     "Longitude": 1.442948,
-    "LocalImgSrc": "event-imgs/meetup-308236480.webp"
+    "LocalImgSrc": "event-imgs/2025-06-19-artilect-meetup-308236480.webp"
   },
   {
     "Id": "meetup-308458519",
@@ -3892,7 +928,7 @@
     "VenueAddr": "27 rue d’Aubuisson Toulouse",
     "Latitude": 43.602768,
     "Longitude": 1.454036,
-    "LocalImgSrc": "event-imgs/meetup-308458519.webp"
+    "LocalImgSrc": "event-imgs/2025-06-26-js-and-co-meetup-308458519.webp"
   },
   {
     "Id": "meetup-308389146",
@@ -3911,7 +947,7 @@
     "VenueAddr": "55 avenue Louis Breguet Toulouse",
     "Latitude": 43.57781,
     "Longitude": 1.47574,
-    "LocalImgSrc": "event-imgs/meetup-308389146.webp"
+    "LocalImgSrc": "event-imgs/2025-07-01-js-and-co-meetup-308389146.webp"
   },
   {
     "Id": "meetup-308516768",
@@ -3930,7 +966,7 @@
     "VenueAddr": "56, rue d'Aubuisson Toulouse",
     "Latitude": 43.602737,
     "Longitude": 1.454317,
-    "LocalImgSrc": "event-imgs/meetup-308516768.webp"
+    "LocalImgSrc": "event-imgs/2025-07-03-js-and-co-meetup-308516768.webp"
   },
   {
     "Id": "meetup-308424578",
@@ -3949,7 +985,7 @@
     "VenueAddr": "36 Rue d'Alsace Lorraine Toulouse",
     "Latitude": 43.605507,
     "Longitude": 1.445923,
-    "LocalImgSrc": "event-imgs/meetup-308424578.webp"
+    "LocalImgSrc": "event-imgs/2025-07-03-dataviz-meetup-308424578.webp"
   },
   {
     "Id": "meetup-308252516",
@@ -3968,7 +1004,7 @@
     "VenueAddr": null,
     "Latitude": null,
     "Longitude": null,
-    "LocalImgSrc": "event-imgs/meetup-308252516.webp"
+    "LocalImgSrc": "event-imgs/2025-07-07-agile-meetup-308252516.webp"
   },
   {
     "Id": "meetup-308783275",
@@ -3987,7 +1023,7 @@
     "VenueAddr": "Rue du canon d'arcole, Toulouse",
     "Latitude": 43.61285,
     "Longitude": 1.435785,
-    "LocalImgSrc": "event-imgs/meetup-308783275.webp"
+    "LocalImgSrc": "event-imgs/2025-07-08-agile-meetup-308783275.webp"
   },
   {
     "Id": "meetup-308804426",
@@ -4006,7 +1042,7 @@
     "VenueAddr": "36, rue d'alsace-lorraine Toulouse",
     "Latitude": 43.605507,
     "Longitude": 1.445922,
-    "LocalImgSrc": "event-imgs/meetup-308804426.webp"
+    "LocalImgSrc": "event-imgs/2025-07-23-agile-meetup-308804426.webp"
   },
   {
     "Id": "meetup-309120692",
@@ -4025,7 +1061,7 @@
     "VenueAddr": null,
     "Latitude": null,
     "Longitude": null,
-    "LocalImgSrc": "event-imgs/meetup-309120692.webp"
+    "LocalImgSrc": "event-imgs/2025-07-29-agile-meetup-309120692.webp"
   },
   {
     "Id": "meetup-310077898",
@@ -4044,7 +1080,7 @@
     "VenueAddr": "4 Allées Paul Feuga, 31400 Toulouse Toulouse",
     "Latitude": 43.592327,
     "Longitude": 1.443878,
-    "LocalImgSrc": "event-imgs/meetup-310077898.webp"
+    "LocalImgSrc": "event-imgs/2025-07-29-ruby-meetup-310077898.webp"
   },
   {
     "Id": "meetup-310009384",
@@ -4063,7 +1099,7 @@
     "VenueAddr": "Rue du canon d'arcole, Toulouse",
     "Latitude": 43.61285,
     "Longitude": 1.435785,
-    "LocalImgSrc": "event-imgs/meetup-310009384.webp"
+    "LocalImgSrc": "event-imgs/2025-08-05-agile-meetup-310009384.webp"
   },
   {
     "Id": "meetup-310465250",
@@ -4082,7 +1118,7 @@
     "VenueAddr": "36, rue d'alsace-lorraine Toulouse",
     "Latitude": 43.605507,
     "Longitude": 1.445922,
-    "LocalImgSrc": "event-imgs/meetup-310465250.webp"
+    "LocalImgSrc": "event-imgs/2025-08-21-agile-meetup-310465250.webp"
   },
   {
     "Id": "meetup-310501979",
@@ -4101,7 +1137,7 @@
     "VenueAddr": null,
     "Latitude": null,
     "Longitude": null,
-    "LocalImgSrc": "event-imgs/meetup-310501979.webp"
+    "LocalImgSrc": "event-imgs/2025-08-26-agile-meetup-310501979.webp"
   },
   {
     "Id": "meetup-308624569",
@@ -4120,7 +1156,7 @@
     "VenueAddr": "9 Rue du pont Guilhemery Toulouse",
     "Latitude": 43.600674,
     "Longitude": 1.455908,
-    "LocalImgSrc": "event-imgs/meetup-308624569.webp"
+    "LocalImgSrc": "event-imgs/2025-09-04-js-and-co-meetup-308624569.webp"
   },
   {
     "Id": "meetup-310578772",
@@ -4139,7 +1175,7 @@
     "VenueAddr": "10 Rue Tripière Toulouse",
     "Latitude": 43.60174,
     "Longitude": 1.442948,
-    "LocalImgSrc": "event-imgs/meetup-310578772.webp"
+    "LocalImgSrc": "event-imgs/2025-09-08-artilect-meetup-310578772.webp"
   },
   {
     "Id": "meetup-qmzpstyhcmblb",
@@ -4158,7 +1194,7 @@
     "VenueAddr": "10 Rue Tripière Toulouse",
     "Latitude": 43.60174,
     "Longitude": 1.442948,
-    "LocalImgSrc": "event-imgs/meetup-qmzpstyhcmblb.webp"
+    "LocalImgSrc": "event-imgs/2025-09-08-artilect-meetup-qmzpstyhcmblb.webp"
   },
   {
     "Id": "meetup-310610875",
@@ -4177,7 +1213,7 @@
     "VenueAddr": "Rue du canon d'arcole, Toulouse",
     "Latitude": 43.61285,
     "Longitude": 1.435785,
-    "LocalImgSrc": "event-imgs/meetup-310610875.webp"
+    "LocalImgSrc": "event-imgs/2025-09-09-agile-meetup-310610875.webp"
   },
   {
     "Id": "meetup-310827071",
@@ -4196,7 +1232,7 @@
     "VenueAddr": "1 Pl. de la Bourse Toulouse",
     "Latitude": 43.601437,
     "Longitude": 1.442047,
-    "LocalImgSrc": "event-imgs/meetup-310827071.webp"
+    "LocalImgSrc": "event-imgs/2025-09-11-tech-a-break-meetup-310827071.webp"
   },
   {
     "Id": "meetup-310709130",
@@ -4215,7 +1251,7 @@
     "VenueAddr": "13 Rue Sainte-Ursule Toulouse",
     "Latitude": 43.602283,
     "Longitude": 1.441679,
-    "LocalImgSrc": "event-imgs/meetup-310709130.webp"
+    "LocalImgSrc": "event-imgs/2025-09-18-gdg-meetup-310709130.webp"
   },
   {
     "Id": "meetup-310812277",
@@ -4234,7 +1270,7 @@
     "VenueAddr": "3 Rue Albert Lautman Toulouse",
     "Latitude": 43.606495,
     "Longitude": 1.439052,
-    "LocalImgSrc": "event-imgs/meetup-310812277.webp"
+    "LocalImgSrc": "event-imgs/2025-09-23-ruby-meetup-310812277.webp"
   },
   {
     "Id": "meetup-308526249",
@@ -4253,7 +1289,7 @@
     "VenueAddr": "39 allée Jules Guesde Toulouse",
     "Latitude": 43.594585,
     "Longitude": 1.450255,
-    "LocalImgSrc": "event-imgs/meetup-308526249.webp"
+    "LocalImgSrc": "event-imgs/2025-09-26-js-and-co-meetup-308526249.webp"
   },
   {
     "Id": "meetup-311059325",
@@ -4272,7 +1308,7 @@
     "VenueAddr": null,
     "Latitude": null,
     "Longitude": null,
-    "LocalImgSrc": "event-imgs/meetup-311059325.webp"
+    "LocalImgSrc": "event-imgs/2025-09-30-agile-meetup-311059325.webp"
   },
   {
     "Id": "meetup-311118535",
@@ -4291,7 +1327,7 @@
     "VenueAddr": "3 Pl. Guy Hersant Toulouse",
     "Latitude": 43.5775,
     "Longitude": 1.444116,
-    "LocalImgSrc": "event-imgs/meetup-311118535.webp"
+    "LocalImgSrc": "event-imgs/2025-10-02-agile-meetup-311118535.webp"
   },
   {
     "Id": "meetup-311023008",
@@ -4310,7 +1346,7 @@
     "VenueAddr": "22 Rue Gabriel Péri Toulouse",
     "Latitude": 43.606,
     "Longitude": 1.453156,
-    "LocalImgSrc": "event-imgs/meetup-311023008.webp"
+    "LocalImgSrc": "event-imgs/2025-10-02-js-and-co-meetup-311023008.webp"
   },
   {
     "Id": "meetup-311218736",
@@ -4329,7 +1365,7 @@
     "VenueAddr": "Rue du canon d'arcole, Toulouse",
     "Latitude": 43.61285,
     "Longitude": 1.435785,
-    "LocalImgSrc": "event-imgs/meetup-311218736.webp"
+    "LocalImgSrc": "event-imgs/2025-10-07-agile-meetup-311218736.webp"
   },
   {
     "Id": "meetup-310951200",
@@ -4348,7 +1384,7 @@
     "VenueAddr": "13 Rue Sainte-Ursule Toulouse",
     "Latitude": 43.602283,
     "Longitude": 1.441679,
-    "LocalImgSrc": "event-imgs/meetup-310951200.webp"
+    "LocalImgSrc": "event-imgs/2025-10-10-gdg-meetup-310951200.webp"
   },
   {
     "Id": "meetup-310709345",
@@ -4367,7 +1403,7 @@
     "VenueAddr": "10 Rue Tripière Toulouse",
     "Latitude": 43.60174,
     "Longitude": 1.442948,
-    "LocalImgSrc": "event-imgs/meetup-310709345.webp"
+    "LocalImgSrc": "event-imgs/2025-10-13-artilect-meetup-310709345.webp"
   },
   {
     "Id": "meetup-qmzpstyhcnbrb",
@@ -4386,7 +1422,7 @@
     "VenueAddr": "10 Rue Tripière Toulouse",
     "Latitude": 43.60174,
     "Longitude": 1.442948,
-    "LocalImgSrc": "event-imgs/meetup-qmzpstyhcnbrb.webp"
+    "LocalImgSrc": "event-imgs/2025-10-13-artilect-meetup-qmzpstyhcnbrb.webp"
   },
   {
     "Id": "meetup-311291429",
@@ -4405,7 +1441,7 @@
     "VenueAddr": "36 Rue d'Alsace Lorraine Toulouse",
     "Latitude": null,
     "Longitude": null,
-    "LocalImgSrc": "event-imgs/meetup-311291429.webp"
+    "LocalImgSrc": "event-imgs/2025-10-16-dataviz-meetup-311291429.webp"
   },
   {
     "Id": "meetup-311403934",
@@ -4424,7 +1460,7 @@
     "VenueAddr": "3 Pl. Guy Hersant Toulouse",
     "Latitude": null,
     "Longitude": null,
-    "LocalImgSrc": "event-imgs/meetup-311403934.webp"
+    "LocalImgSrc": "event-imgs/2025-10-17-agile-meetup-311403934.webp"
   },
   {
     "Id": "meetup-310579893",
@@ -4443,7 +1479,7 @@
     "VenueAddr": "3 Pl. Guy Hersant Toulouse",
     "Latitude": null,
     "Longitude": null,
-    "LocalImgSrc": "event-imgs/meetup-310579893.webp"
+    "LocalImgSrc": "event-imgs/2025-10-18-agile-meetup-310579893.webp"
   },
   {
     "Id": "meetup-311104672",
@@ -4462,7 +1498,7 @@
     "VenueAddr": "8 Impasse Bonnet Toulouse",
     "Latitude": null,
     "Longitude": null,
-    "LocalImgSrc": "event-imgs/meetup-311104672.webp"
+    "LocalImgSrc": "event-imgs/2025-10-21-ruby-meetup-311104672.webp"
   },
   {
     "Id": "meetup-311127705",
@@ -4481,7 +1517,7 @@
     "VenueAddr": "40 Boulevard de la Marquette Toulouse",
     "Latitude": null,
     "Longitude": null,
-    "LocalImgSrc": "event-imgs/meetup-311127705.webp"
+    "LocalImgSrc": "event-imgs/2025-10-21-jug-meetup-311127705.webp"
   },
   {
     "Id": "meetup-311403976",
@@ -4500,7 +1536,7 @@
     "VenueAddr": "3 Pl. Guy Hersant Toulouse",
     "Latitude": null,
     "Longitude": null,
-    "LocalImgSrc": "event-imgs/meetup-311403976.webp"
+    "LocalImgSrc": "event-imgs/2025-10-24-agile-meetup-311403976.webp"
   },
   {
     "Id": "meetup-311393131",
@@ -4519,7 +1555,7 @@
     "VenueAddr": null,
     "Latitude": null,
     "Longitude": null,
-    "LocalImgSrc": "event-imgs/meetup-311393131.webp"
+    "LocalImgSrc": "event-imgs/2025-10-28-agile-meetup-311393131.webp"
   },
   {
     "Id": "meetup-311548562",
@@ -4538,7 +1574,7 @@
     "VenueAddr": "14 Rue de l'Industrie Toulouse",
     "Latitude": null,
     "Longitude": null,
-    "LocalImgSrc": "event-imgs/meetup-311548562.jpeg"
+    "LocalImgSrc": "event-imgs/2025-10-28-mtg-meetup-311548562.jpeg"
   },
   {
     "Id": "meetup-311729829",
@@ -4557,7 +1593,7 @@
     "VenueAddr": "Rue du canon d'arcole, Toulouse",
     "Latitude": null,
     "Longitude": null,
-    "LocalImgSrc": "event-imgs/meetup-311729829.webp"
+    "LocalImgSrc": "event-imgs/2025-11-04-agile-meetup-311729829.webp"
   },
   {
     "Id": "meetup-311471410",
@@ -4576,7 +1612,7 @@
     "VenueAddr": "3 Pl. Guy Hersant Toulouse",
     "Latitude": null,
     "Longitude": null,
-    "LocalImgSrc": "event-imgs/meetup-311471410.webp"
+    "LocalImgSrc": "event-imgs/2025-11-05-agile-meetup-311471410.webp"
   },
   {
     "Id": "meetup-311360142",
@@ -4595,7 +1631,7 @@
     "VenueAddr": "34, avenue du Cimetière Toulouse",
     "Latitude": null,
     "Longitude": null,
-    "LocalImgSrc": "event-imgs/meetup-311360142.webp"
+    "LocalImgSrc": "event-imgs/2025-11-06-js-and-co-meetup-311360142.webp"
   },
   {
     "Id": "meetup-311629203",
@@ -4614,7 +1650,7 @@
     "VenueAddr": "1 Pl. de la Bourse Toulouse",
     "Latitude": null,
     "Longitude": null,
-    "LocalImgSrc": "event-imgs/meetup-311629203.webp"
+    "LocalImgSrc": "event-imgs/2025-11-06-tech-a-break-meetup-311629203.webp"
   },
   {
     "Id": "meetup-310709347",
@@ -4633,7 +1669,7 @@
     "VenueAddr": "10 Rue Tripière Toulouse",
     "Latitude": null,
     "Longitude": null,
-    "LocalImgSrc": "event-imgs/meetup-310709347.webp"
+    "LocalImgSrc": "event-imgs/2025-11-10-artilect-meetup-310709347.webp"
   },
   {
     "Id": "meetup-qmzpstyhcpbnb",
@@ -4652,7 +1688,7 @@
     "VenueAddr": "10 Rue Tripière Toulouse",
     "Latitude": 43.60174,
     "Longitude": 1.442948,
-    "LocalImgSrc": "event-imgs/meetup-qmzpstyhcpbnb.webp"
+    "LocalImgSrc": "event-imgs/2025-11-10-artilect-meetup-qmzpstyhcpbnb.webp"
   },
   {
     "Id": "meetup-311588275",
@@ -4671,7 +1707,7 @@
     "VenueAddr": "40 Boulevard de la Marquette Toulouse",
     "Latitude": null,
     "Longitude": null,
-    "LocalImgSrc": "event-imgs/meetup-311588275.webp"
+    "LocalImgSrc": "event-imgs/2025-11-12-jug-meetup-311588275.webp"
   },
   {
     "Id": "meetup-311746436",
@@ -4690,7 +1726,7 @@
     "VenueAddr": "27 rue d'Aubuisson Toulouse",
     "Latitude": null,
     "Longitude": null,
-    "LocalImgSrc": "event-imgs/meetup-311746436.webp"
+    "LocalImgSrc": "event-imgs/2025-11-12-python-meetup-311746436.webp"
   },
   {
     "Id": "meetup-310725403",
@@ -4709,7 +1745,7 @@
     "VenueAddr": "150, rue Pierre Gilles de Gennes LABEGE",
     "Latitude": null,
     "Longitude": null,
-    "LocalImgSrc": "event-imgs/meetup-310725403.webp"
+    "LocalImgSrc": "event-imgs/2025-11-13-gdg-meetup-310725403.webp"
   },
   {
     "Id": "meetup-311728486",
@@ -4728,7 +1764,7 @@
     "VenueAddr": "150, rue Pierre Gilles de Gennes LABEGE",
     "Latitude": null,
     "Longitude": null,
-    "LocalImgSrc": "event-imgs/meetup-311728486.webp"
+    "LocalImgSrc": "event-imgs/2025-11-13-ruby-meetup-311728486.webp"
   },
   {
     "Id": "meetup-311860557",
@@ -4747,7 +1783,7 @@
     "VenueAddr": "150 Rue Pierre Gilles de Gennes Labège",
     "Latitude": null,
     "Longitude": null,
-    "LocalImgSrc": "event-imgs/meetup-311860557.webp"
+    "LocalImgSrc": "event-imgs/2025-11-13-mtg-meetup-311860557.webp"
   },
   {
     "Id": "meetup-311588382",
@@ -4766,7 +1802,7 @@
     "VenueAddr": "150 Rue Pierre Gilles de Gennes Labège",
     "Latitude": null,
     "Longitude": null,
-    "LocalImgSrc": "event-imgs/meetup-311588382.webp"
+    "LocalImgSrc": "event-imgs/2025-11-13-jug-meetup-311588382.webp"
   },
   {
     "Id": "meetup-311839738",
@@ -4785,7 +1821,7 @@
     "VenueAddr": "150 Rue Pierre Gilles de Gennes Labège",
     "Latitude": null,
     "Longitude": null,
-    "LocalImgSrc": "event-imgs/meetup-311839738.webp"
+    "LocalImgSrc": "event-imgs/2025-11-13-agile-meetup-311839738.webp"
   },
   {
     "Id": "meetup-311746637",
@@ -4804,7 +1840,7 @@
     "VenueAddr": "150 Rue Pierre Gilles de Gennes Labège",
     "Latitude": null,
     "Longitude": null,
-    "LocalImgSrc": "event-imgs/meetup-311746637.webp"
+    "LocalImgSrc": "event-imgs/2025-11-13-python-meetup-311746637.webp"
   },
   {
     "Id": "meetup-311713217",
@@ -4823,7 +1859,7 @@
     "VenueAddr": "36, rue d'alsace-lorraine Toulouse",
     "Latitude": null,
     "Longitude": null,
-    "LocalImgSrc": "event-imgs/meetup-311713217.webp"
+    "LocalImgSrc": "event-imgs/2025-11-17-agile-meetup-311713217.webp"
   },
   {
     "Id": "meetup-311588309",
@@ -4842,7 +1878,7 @@
     "VenueAddr": "40 Boulevard de la Marquette Toulouse",
     "Latitude": null,
     "Longitude": null,
-    "LocalImgSrc": "event-imgs/meetup-311588309.webp"
+    "LocalImgSrc": "event-imgs/2025-11-18-jug-meetup-311588309.webp"
   },
   {
     "Id": "meetup-311776489",
@@ -4861,7 +1897,7 @@
     "VenueAddr": "3 Rue Albert Lautman Toulouse",
     "Latitude": null,
     "Longitude": null,
-    "LocalImgSrc": "event-imgs/meetup-311776489.webp"
+    "LocalImgSrc": "event-imgs/2025-11-18-ruby-meetup-311776489.webp"
   },
   {
     "Id": "meetup-311798497",
@@ -4880,7 +1916,7 @@
     "VenueAddr": "36 Rue d'Alsace Lorraine Toulouse",
     "Latitude": null,
     "Longitude": null,
-    "LocalImgSrc": "event-imgs/meetup-311798497.webp"
+    "LocalImgSrc": "event-imgs/2025-11-20-dataviz-meetup-311798497.webp"
   },
   {
     "Id": "meetup-312080364",
@@ -4899,7 +1935,7 @@
     "VenueAddr": null,
     "Latitude": null,
     "Longitude": null,
-    "LocalImgSrc": "event-imgs/meetup-312080364.webp"
+    "LocalImgSrc": "event-imgs/2025-11-24-agile-meetup-312080364.webp"
   },
   {
     "Id": "meetup-311992603",
@@ -4918,7 +1954,7 @@
     "VenueAddr": null,
     "Latitude": null,
     "Longitude": null,
-    "LocalImgSrc": "event-imgs/meetup-311992603.webp"
+    "LocalImgSrc": "event-imgs/2025-11-25-agile-meetup-311992603.webp"
   },
   {
     "Id": "meetup-311974162",
@@ -4937,7 +1973,7 @@
     "VenueAddr": "100 Rue Riquet Toulouse",
     "Latitude": null,
     "Longitude": null,
-    "LocalImgSrc": "event-imgs/meetup-311974162.webp"
+    "LocalImgSrc": "event-imgs/2025-11-25-python-meetup-311974162.webp"
   },
   {
     "Id": "meetup-311988561",
@@ -4956,7 +1992,7 @@
     "VenueAddr": "13 rue Sainte Ursule Toulouse",
     "Latitude": null,
     "Longitude": null,
-    "LocalImgSrc": "event-imgs/meetup-311988561.webp"
+    "LocalImgSrc": "event-imgs/2025-11-27-tds-meetup-311988561.webp"
   },
   {
     "Id": "meetup-312061214",
@@ -4975,7 +2011,7 @@
     "VenueAddr": "10 Rue Tripière Toulouse",
     "Latitude": null,
     "Longitude": null,
-    "LocalImgSrc": "event-imgs/meetup-312061214.webp"
+    "LocalImgSrc": "event-imgs/2025-12-01-artilect-meetup-312061214.webp"
   },
   {
     "Id": "meetup-312052903",
@@ -4994,7 +2030,7 @@
     "VenueAddr": "3 Pl. Guy Hersant Toulouse",
     "Latitude": null,
     "Longitude": null,
-    "LocalImgSrc": "event-imgs/meetup-312052903.webp"
+    "LocalImgSrc": "event-imgs/2025-12-04-agile-meetup-312052903.webp"
   },
   {
     "Id": "meetup-312046832",
@@ -5013,7 +2049,7 @@
     "VenueAddr": "27 rue Gabriel Péri Toulouse",
     "Latitude": null,
     "Longitude": null,
-    "LocalImgSrc": "event-imgs/meetup-312046832.webp"
+    "LocalImgSrc": "event-imgs/2025-12-04-js-and-co-meetup-312046832.webp"
   },
   {
     "Id": "meetup-312061009",
@@ -5032,7 +2068,7 @@
     "VenueAddr": "2 rue Marcel Doret Blagnac",
     "Latitude": null,
     "Longitude": null,
-    "LocalImgSrc": "event-imgs/meetup-312061009.webp"
+    "LocalImgSrc": "event-imgs/2025-12-04-python-meetup-312061009.webp"
   },
   {
     "Id": "meetup-311533275",
@@ -5051,7 +2087,7 @@
     "VenueAddr": "1 rue boudeville Toulouse",
     "Latitude": null,
     "Longitude": null,
-    "LocalImgSrc": "event-imgs/meetup-311533275.webp"
+    "LocalImgSrc": "event-imgs/2025-12-06-agile-meetup-311533275.webp"
   },
   {
     "Id": "meetup-310709348",
@@ -5070,7 +2106,7 @@
     "VenueAddr": "10 Rue Tripière Toulouse",
     "Latitude": null,
     "Longitude": null,
-    "LocalImgSrc": "event-imgs/meetup-310709348.webp"
+    "LocalImgSrc": "event-imgs/2025-12-08-artilect-meetup-310709348.webp"
   },
   {
     "Id": "meetup-311902027",
@@ -5089,7 +2125,7 @@
     "VenueAddr": "10 Rue Tripière Toulouse",
     "Latitude": null,
     "Longitude": null,
-    "LocalImgSrc": "event-imgs/meetup-311902027.webp"
+    "LocalImgSrc": "event-imgs/2025-12-08-artilect-meetup-311902027.webp"
   },
   {
     "Id": "meetup-qmzpstyhcqblb",
@@ -5108,7 +2144,7 @@
     "VenueAddr": "10 Rue Tripière Toulouse",
     "Latitude": 43.60174,
     "Longitude": 1.442948,
-    "LocalImgSrc": "event-imgs/meetup-qmzpstyhcqblb.webp"
+    "LocalImgSrc": "event-imgs/2025-12-08-artilect-meetup-qmzpstyhcqblb.webp"
   },
   {
     "Id": "meetup-312060430",
@@ -5127,7 +2163,7 @@
     "VenueAddr": "3 Pl. Guy Hersant Toulouse",
     "Latitude": null,
     "Longitude": null,
-    "LocalImgSrc": "event-imgs/meetup-312060430.webp"
+    "LocalImgSrc": "event-imgs/2025-12-09-agile-meetup-312060430.webp"
   },
   {
     "Id": "meetup-311885142",
@@ -5146,7 +2182,7 @@
     "VenueAddr": null,
     "Latitude": null,
     "Longitude": null,
-    "LocalImgSrc": "event-imgs/meetup-311885142.webp"
+    "LocalImgSrc": "event-imgs/2025-12-11-agile-meetup-311885142.webp"
   },
   {
     "Id": "meetup-304384746",
@@ -5165,7 +2201,7 @@
     "VenueAddr": "40 Boulevard de la Marquette Toulouse",
     "Latitude": null,
     "Longitude": null,
-    "LocalImgSrc": "event-imgs/meetup-304384746.webp"
+    "LocalImgSrc": "event-imgs/2025-12-11-jug-meetup-304384746.webp"
   },
   {
     "Id": "meetup-312156265",
@@ -5184,7 +2220,7 @@
     "VenueAddr": "4 Allées Paul Feuga, 31400 Toulouse Toulouse",
     "Latitude": null,
     "Longitude": null,
-    "LocalImgSrc": "event-imgs/meetup-312156265.webp"
+    "LocalImgSrc": "event-imgs/2025-12-16-ruby-meetup-312156265.webp"
   },
   {
     "Id": "meetup-312060401",
@@ -5203,7 +2239,7 @@
     "VenueAddr": "3 Pl. Guy Hersant Toulouse",
     "Latitude": null,
     "Longitude": null,
-    "LocalImgSrc": "event-imgs/meetup-312060401.webp"
+    "LocalImgSrc": "event-imgs/2025-12-18-agile-meetup-312060401.webp"
   },
   {
     "Id": "meetup-312458469",
@@ -5222,7 +2258,7 @@
     "VenueAddr": "14 Rue Alfred Dumeril Toulouse",
     "Latitude": null,
     "Longitude": null,
-    "LocalImgSrc": "event-imgs/meetup-312458469.webp"
+    "LocalImgSrc": "event-imgs/2026-01-08-js-and-co-meetup-312458469.webp"
   },
   {
     "Id": "meetup-311744824",
@@ -5241,7 +2277,7 @@
     "VenueAddr": "42 Avenue Gaspard Coriolis Toulouse",
     "Latitude": null,
     "Longitude": null,
-    "LocalImgSrc": "event-imgs/meetup-311744824.webp"
+    "LocalImgSrc": "event-imgs/2026-01-13-postgres-meetup-311744824.webp"
   },
   {
     "Id": "meetup-312767821",
@@ -5260,7 +2296,7 @@
     "VenueAddr": "40 boulevard de la Marquette Toulouse",
     "Latitude": null,
     "Longitude": null,
-    "LocalImgSrc": "event-imgs/meetup-312767821.webp"
+    "LocalImgSrc": "event-imgs/2026-01-20-ruby-meetup-312767821.webp"
   },
   {
     "Id": "meetup-312917900",
@@ -5279,7 +2315,7 @@
     "VenueAddr": "54 Allée Jean Jaurès, 31000 Toulouse",
     "Latitude": null,
     "Longitude": null,
-    "LocalImgSrc": "event-imgs/meetup-312917900.webp"
+    "LocalImgSrc": "event-imgs/2026-01-22-tds-meetup-312917900.webp"
   },
   {
     "Id": "meetup-312417935",
@@ -5298,7 +2334,7 @@
     "VenueAddr": "3 Pl. Guy Hersant Toulouse",
     "Latitude": null,
     "Longitude": null,
-    "LocalImgSrc": "event-imgs/meetup-312417935.webp"
+    "LocalImgSrc": "event-imgs/2026-01-27-agile-meetup-312417935.webp"
   },
   {
     "Id": "meetup-312846843",
@@ -5317,7 +2353,7 @@
     "VenueAddr": "100 Rue Riquet Toulouse",
     "Latitude": null,
     "Longitude": null,
-    "LocalImgSrc": "event-imgs/meetup-312846843.webp"
+    "LocalImgSrc": "event-imgs/2026-01-27-python-meetup-312846843.webp"
   },
   {
     "Id": "meetup-312782796",
@@ -5336,7 +2372,7 @@
     "VenueAddr": "40 boulevard de la Marquette Toulouse",
     "Latitude": null,
     "Longitude": null,
-    "LocalImgSrc": "event-imgs/meetup-312782796.webp"
+    "LocalImgSrc": "event-imgs/2026-01-28-rust-meetup-312782796.webp"
   },
   {
     "Id": "meetup-311852752",
@@ -5355,7 +2391,7 @@
     "VenueAddr": "8 Imp. Bonnet Toulouse",
     "Latitude": null,
     "Longitude": null,
-    "LocalImgSrc": "event-imgs/meetup-311852752.webp"
+    "LocalImgSrc": "event-imgs/2026-01-29-toulbox-meetup-311852752.webp"
   },
   {
     "Id": "meetup-312343838",
@@ -5374,7 +2410,7 @@
     "VenueAddr": "9 rue des amidonniers Toulouse",
     "Latitude": null,
     "Longitude": null,
-    "LocalImgSrc": "event-imgs/meetup-312343838.webp"
+    "LocalImgSrc": "event-imgs/2026-01-29-js-and-co-meetup-312343838.webp"
   },
   {
     "Id": "meetup-312848028",
@@ -5393,7 +2429,7 @@
     "VenueAddr": "37 rue des marchands Toulouse",
     "Latitude": null,
     "Longitude": null,
-    "LocalImgSrc": "event-imgs/meetup-312848028.webp"
+    "LocalImgSrc": "event-imgs/2026-02-03-js-and-co-meetup-312848028.webp"
   },
   {
     "Id": "meetup-313111706",
@@ -5412,7 +2448,7 @@
     "VenueAddr": "8 rue de l'echarpe Toulouse",
     "Latitude": null,
     "Longitude": null,
-    "LocalImgSrc": "event-imgs/meetup-313111706.webp"
+    "LocalImgSrc": "event-imgs/2026-02-12-js-and-co-meetup-313111706.webp"
   },
   {
     "Id": "meetup-313185133",
@@ -5431,7 +2467,7 @@
     "VenueAddr": "27 rue d'Aubuisson Toulouse",
     "Latitude": null,
     "Longitude": null,
-    "LocalImgSrc": "event-imgs/meetup-313185133.webp"
+    "LocalImgSrc": "event-imgs/2026-02-12-python-meetup-313185133.webp"
   },
   {
     "Id": "meetup-313126427",
@@ -5450,7 +2486,7 @@
     "VenueAddr": "3 Rue Alaric II Toulouse",
     "Latitude": null,
     "Longitude": null,
-    "LocalImgSrc": "event-imgs/meetup-313126427.webp"
+    "LocalImgSrc": "event-imgs/2026-02-17-ruby-meetup-313126427.webp"
   },
   {
     "Id": "meetup-313063018",
@@ -5469,7 +2505,7 @@
     "VenueAddr": "1 Pl. de la Bourse Toulouse",
     "Latitude": null,
     "Longitude": null,
-    "LocalImgSrc": "event-imgs/meetup-313063018.webp"
+    "LocalImgSrc": "event-imgs/2026-02-19-tech-a-break-meetup-313063018.webp"
   },
   {
     "Id": "meetup-313369368",
@@ -5488,7 +2524,7 @@
     "VenueAddr": null,
     "Latitude": null,
     "Longitude": null,
-    "LocalImgSrc": "event-imgs/meetup-313369368.webp"
+    "LocalImgSrc": null
   },
   {
     "Id": "meetup-313372936",
@@ -5507,7 +2543,7 @@
     "VenueAddr": "36 boulevard de Strasbourg TOULOUSE",
     "Latitude": null,
     "Longitude": null,
-    "LocalImgSrc": "event-imgs/meetup-313372936.webp"
+    "LocalImgSrc": null
   },
   {
     "Id": "meetup-313325443",
@@ -5526,7 +2562,7 @@
     "VenueAddr": "3 Pl. Guy Hersant Toulouse",
     "Latitude": null,
     "Longitude": null,
-    "LocalImgSrc": "event-imgs/meetup-313325443.webp"
+    "LocalImgSrc": null
   },
   {
     "Id": "meetup-312901216",
@@ -5545,6 +2581,6 @@
     "VenueAddr": "46 Rue Marco Polo Labège",
     "Latitude": null,
     "Longitude": null,
-    "LocalImgSrc": "event-imgs/meetup-312901216.webp"
+    "LocalImgSrc": null
   }
 ]
