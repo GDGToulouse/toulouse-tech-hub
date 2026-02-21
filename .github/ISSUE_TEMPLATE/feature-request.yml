@@ -1,0 +1,65 @@
+name: 💡 Suggestion d'amélioration
+description: Proposer une nouvelle fonctionnalité ou amélioration
+title: "[Feature] "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Partagez votre idée pour améliorer le Toulouse Tech Hub !
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problème ou besoin
+      description: Décrivez le problème que cette fonctionnalité résoudrait
+      placeholder: |
+        En tant qu'utilisateur/organisateur, j'aimerais...
+        Actuellement, il est difficile de...
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Solution proposée
+      description: Décrivez comment vous imaginez la fonctionnalité
+      placeholder: |
+        Il serait utile d'avoir...
+        Ça pourrait fonctionner comme...
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives envisagées (optionnel)
+      description: Avez-vous pensé à d'autres façons de résoudre ce problème ?
+      placeholder: Une autre approche pourrait être...
+
+  - type: textarea
+    id: examples
+    attributes:
+      label: Exemples ou références (optionnel)
+      description: Des sites similaires qui font cela bien ?
+      placeholder: |
+        Par exemple, le site X fait...
+        https://example.com
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Importance pour vous
+      options:
+        - Critique (bloquant)
+        - Important (amélioration significative)
+        - Nice to have (amélioration mineure)
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: contribution
+    attributes:
+      label: Contribution
+      options:
+        - label: Je suis prêt(e) à contribuer au développement de cette fonctionnalité

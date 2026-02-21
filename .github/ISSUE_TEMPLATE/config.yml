@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: 💬 Discussion générale
+    url: https://github.com/GDGToulouse/toulouse-tech-hub/discussions
+    about: Posez des questions ou discutez d'idées pour améliorer le site
+  - name: 🌐 Site web
+    url: https://toulouse-tech-hub.fr
+    about: Consultez le site Toulouse Tech Hub

@@ -1,0 +1,58 @@
+name: 🐛 Signaler un bug
+description: Signaler une erreur sur le site ou dans les données
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Merci de prendre le temps de signaler ce bug !
+
+  - type: dropdown
+    id: bug-type
+    attributes:
+      label: Type de problème
+      options:
+        - Événement incorrect ou manquant
+        - Informations de communauté incorrectes
+        - Lien cassé
+        - Problème d'affichage
+        - Autre
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description du problème
+      description: Décrivez le bug de manière claire et concise
+      placeholder: Qu'est-ce qui ne fonctionne pas comme attendu ?
+    validations:
+      required: true
+
+  - type: input
+    id: url
+    attributes:
+      label: URL concernée (si applicable)
+      description: Lien vers la page où le problème apparaît
+      placeholder: https://toulouse-tech-hub.fr/...
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Comportement attendu
+      description: Qu'est-ce qui devrait se passer ?
+      placeholder: Je m'attendais à voir...
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Captures d'écran (optionnel)
+      description: Si applicable, ajoutez des captures d'écran pour illustrer le problème
+      placeholder: Glissez-déposez vos images ici
+
+  - type: input
+    id: browser
+    attributes:
+      label: Navigateur (si problème d'affichage)
+      placeholder: ex. Chrome 120, Firefox 121, Safari 17

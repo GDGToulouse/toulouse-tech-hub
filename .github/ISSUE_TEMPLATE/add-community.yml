@@ -1,0 +1,121 @@
+name: 🏘️ Ajouter une communauté
+description: Proposer l'ajout d'une nouvelle communauté tech toulousaine au site
+title: "[Community] "
+labels: ["community", "enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Merci de vouloir ajouter votre communauté au Toulouse Tech Hub ! 
+        
+        Remplissez les informations ci-dessous pour nous aider à créer votre page automatiquement.
+
+  - type: input
+    id: community-name
+    attributes:
+      label: Nom de la communauté
+      description: Le nom complet de votre communauté
+      placeholder: ex. Python Toulouse
+    validations:
+      required: true
+
+  - type: input
+    id: community-slug
+    attributes:
+      label: Identifiant court (slug)
+      description: Un identifiant court en minuscules, sans espaces ni accents (utilisé pour les URLs et fichiers)
+      placeholder: ex. python, js-and-co, devops-cloud
+    validations:
+      required: true
+
+  - type: input
+    id: community-url
+    attributes:
+      label: Site web principal
+      description: URL du site officiel de la communauté
+      placeholder: https://example.com
+    validations:
+      required: true
+
+  - type: dropdown
+    id: event-source
+    attributes:
+      label: Source des événements
+      description: Comment récupérer automatiquement vos événements ?
+      options:
+        - Meetup.com (page meetup existante)
+        - Site web custom (scraping possible)
+        - Manuel (ajout d'événements à la main)
+    validations:
+      required: true
+
+  - type: input
+    id: meetup-url
+    attributes:
+      label: URL Meetup (si applicable)
+      description: Si vous utilisez Meetup.com, indiquez l'URL de votre groupe
+      placeholder: https://www.meetup.com/votre-groupe/
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Une description courte de votre communauté (2-3 phrases)
+      placeholder: |
+        Nous organisons des rencontres mensuelles autour de...
+        
+        Notre communauté rassemble...
+    validations:
+      required: true
+
+  - type: input
+    id: logo-url
+    attributes:
+      label: Logo (optionnel)
+      description: URL d'un logo/image représentant votre communauté (JPG, PNG, WebP ou AVIF - sera converti en JPG)
+      placeholder: https://example.com/logo.png
+
+  - type: textarea
+    id: social-links
+    attributes:
+      label: Liens sociaux (optionnel)
+      description: |
+        Listez vos réseaux sociaux (un par ligne)
+        Format: `type: url` où type peut être: website, twitter, linkedin, github, youtube, discord, slack
+      placeholder: |
+        twitter: https://x.com/votre-compte
+        linkedin: https://www.linkedin.com/company/votre-page
+        github: https://github.com/votre-org
+      render: text
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Conditions
+      description: En soumettant cette issue, vous confirmez que
+      options:
+        - label: Ma communauté est basée à Toulouse ou dans sa région
+          required: true
+        - label: Ma communauté est orientée tech/numérique
+          required: true
+        - label: J'autorise l'ajout des informations fournies sur toulouse-tech-hub.fr
+          required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+        
+        ### 🤖 Automatisation
+        
+        Une fois cette issue créée, GitHub Copilot pourra générer automatiquement :
+        - Le fichier `_groups/{slug}.md` avec vos informations
+        - L'ajout dans `.github/workflows/update.cs` si vous utilisez Meetup
+        - La mise à jour du README.md
+        - Une pull request prête à être mergée
+        
+        **Prochaines étapes :**
+        1. Validez cette issue
+        2. Un mainteneur ou Copilot créera une PR
+        3. Nous vérifierons et mergerons la PR
+        4. Votre communauté apparaîtra sur le site ! 🎉
