@@ -6,26 +6,27 @@ Les évènements des communautés connues sont automatiquement ajoutés via un s
 
 Les pages suivantes sont automatiquement surveillées et ajoutées :
 
-- [GDG Toulouse](https://www.meetup.com/gdg-toulouse/)
-- [JUG Toulouse](https://www.meetup.com/toulouse-java-user-group/)
-- [Toulouse Ruby And Friends](https://www.meetup.com/toulouse-ruby-friends/)
-- [Python Toulouse](https://www.meetup.com/python-toulouse/)
-- [Toulouse Data Science](https://www.meetup.com/tlse-data-science/)
-- [Agile Toulouse](https://www.meetup.com/agile-toulouse/)
-- [Toulouse Game Dev](https://toulousegamedev.fr/)
-- [MTG:Toulouse](https://www.meetup.com/mtg-toulouse/)
-- [Toulouse-DataViz](https://www.meetup.com/meetup-visualisation-des-donnees-toulouse/)
+
+- [Agile Toulouse](https://www.agiletoulouse.fr/)
+- [Artilect FabLab](https://www.meetup.com/artilect-fablab/)
+- [AWS User Group Toulouse](https://www.meetup.com/toulouse-amazon-web-services/)
 - [C++ Toulouse](https://www.meetup.com/ateliers-cpp-toulouse/)
-- [AWS User Group France - Toulouse](https://www.meetup.com/toulouse-amazon-web-services/)
+- [Devops & Cloud Toulouse](https://www.meetup.com/devops-cloud-toulouse/)
+- [GDG Toulouse](https://www.gdgtoulouse.fr/)
+- [JS & Co Toulouse](https://www.meetup.com/javascript-and-co/)
+- [JUG Toulouse](https://www.meetup.com/toulouse-java-user-group/)
+- [La "Toul Box" du Cloud Natif](https://www.meetup.com/latoulboxducloudnatif/)
+- [MTG:Toulouse](https://www.meetup.com/mtg-toulouse/)
+- [Postgres Toulouse](https://www.meetup.com/postgres-toulouse)
+- [Python Toulouse](https://www.meetup.com/python-toulouse/)
+- [Rust Toulouse](https://www.meetup.com/fr-FR/rust-community-toulouse/)
 - [Swift Toulouse](https://www.meetup.com/swift-toulouse/)
 - [Tech a Break](https://www.meetup.com/tech-a-break/)
+- [Toulouse Data Science](https://www.meetup.com/tlse-data-science/)
+- [Toulouse Data-Viz](https://www.meetup.com/meetup-visualisation-des-donnees-toulouse/)
 - [Toulouse DevOps](https://www.meetup.com/toulouse-devops/)
-- [Devops & Cloud Toulouse](https://www.meetup.com/devops-cloud-toulouse/)
-- [JS & Co. Toulouse](https://www.meetup.com/javascript-and-co/)
-- [La "Toul Box" du Cloud Natif](https://www.meetup.com/latoulboxducloudnatif/)
-- [Artilect FabLab](https://www.meetup.com/artilect-fablab/)
-- [Postgres Toulouse](https://www.meetup.com/postgres-toulouse/)
-- [Rust Toulouse](https://www.meetup.com/fr-fr/rust-community-toulouse/)
+- [Toulouse Game Dev](https://toulousegamedev.fr/)
+- [Toulouse Ruby and Friends](https://www.meetup.com/toulouse-ruby-friends/)
 
 Il existe une page pour les organisateurs, permettant de gérer une image à inclure dans vos diapos de meetup pour faire la pub pour les prochains évènements, elle se trouve à l'adresse <https://toulouse-tech-hub.fr/orgas.html>.
 
