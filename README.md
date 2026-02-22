@@ -39,6 +39,7 @@ Ce site liste tous les événements tech à venir organisés par les communauté
 - [Rust Toulouse](https://www.meetup.com/fr-FR/rust-community-toulouse/)
 - [Swift Toulouse](https://www.meetup.com/swift-toulouse/)
 - [Tech a Break](https://www.meetup.com/tech-a-break/)
+- [Tech Speak'her](https://www.linkedin.com/company/tech-speak-her)
 - [Toulouse Data Science](https://www.meetup.com/tlse-data-science/)
 - [Toulouse Data-Viz](https://www.meetup.com/meetup-visualisation-des-donnees-toulouse/)
 - [Toulouse DevOps](https://www.meetup.com/toulouse-devops/)
