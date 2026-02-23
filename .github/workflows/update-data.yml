@@ -29,7 +29,7 @@ jobs:
       with:
         dotnet-version: 10.0.x
     - name: Install playwright browsers
-      run: npx playwright install --with-deps
+      run: npx playwright install --only-shell --with-deps
     - name: Run
       run: dotnet run .github/workflows/update.cs
     - name: Check file changed
