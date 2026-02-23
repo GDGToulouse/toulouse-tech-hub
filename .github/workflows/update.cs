@@ -163,7 +163,7 @@ List<Event> evts = [];
         {
             await foreach (var evt in group.Scan(ctx, defaultPage, loadPastEvents))
             {
-                Console.WriteLine($"💥 [{evt.Start:dd/MM/yyyy HH:mm}] {evt.Group} - {evt.Title}");
+                Console.WriteLine($"🔹💥 [{evt.Start:dd/MM/yyyy HH:mm}] {evt.Group} - {evt.Title}");
 
                 evts.Add(evt);
 
@@ -270,7 +270,7 @@ List<Event> evts = [];
                     File.Delete(destPath);
 
                 File.Move(file, destPath);
-                Console.WriteLine($"📦 Archivé: {filename}");
+                Console.WriteLine($"🔹📦 Archivé: {filename}");
 
                 // Extract image filename prefix from HTML filename (remove .html/.skip extension)
                 // Image files now use the same naming convention: YYYY-MM-DD-groupId-eventId.*
@@ -283,7 +283,7 @@ List<Event> evts = [];
                     foreach (var imgFile in imagesToDelete)
                     {
                         File.Delete(imgFile);
-                        Console.WriteLine($"🗑️ Image supprimée: {Path.GetFileName(imgFile)}");
+                        Console.WriteLine($"🔹🗑️ Image supprimée: {Path.GetFileName(imgFile)}");
                     }
                 }
             }
@@ -320,7 +320,7 @@ List<Event> evts = [];
                 // le nom du fichier à changé (ex: date modifiée), on renomme l'ancien fichier pour éviter les doublons
                 var knownFileName = Path.Combine(eventsDir, $"{knownFileNamePrefix}.html");
                 File.Move(knownFileName, fileName);
-                Console.WriteLine($"🔄 Renommé: {Path.GetFileName(knownFileName)} -> {Path.GetFileName(fileName)}");
+                Console.WriteLine($"🔹🔄 Renommé: {Path.GetFileName(knownFileName)} -> {Path.GetFileName(fileName)}");
             }
 
             evt.PublishedOn = knownEvt.PublishedOn; // on conserve la date de publication initiale pour éviter les changements inutiles dans le YAML
@@ -519,7 +519,7 @@ partial class MeetupGroup : IGroup
         var url = await link.GetAttributeAsync("href");
         if (url == null)
         {
-            Console.WriteLine($"⚠️ Impossible de détecter l'url, abandon...");
+            Console.WriteLine($"🔹⚠️ Impossible de détecter l'url, abandon...");
             return null;
         }
 
@@ -532,7 +532,7 @@ partial class MeetupGroup : IGroup
 
         // Titre
         var title = await item.Locator("h3").InnerTextAsync();
-        Console.WriteLine($"🤖 Titre = {title}");
+        Console.WriteLine($"🔹🤖 Titre = {title}");
 
         // 2025-10-07T18:30:00+02:00[Europe/Paris]
         // 2025-11-10T19:00:00+01:00
@@ -551,13 +551,15 @@ partial class MeetupGroup : IGroup
             // success
             if (timeAttr.EndsWith("[Europe/Paris]") && !FrenchLocales.ParisTimeZone.IsDaylightSavingTime(time))
             {
-                // viré, à priori ça ne sert à rien...
-                
-                //// Meetup renvoie la mauvaise timezone pour les dates hors DST, on corrige en ajoutant une heure
-                //// ex: 2026-01-28T17:45:00+01:00[Europe/Paris] pour un évènement à 18h45 heure locale paris
-                //// à priori cela ne bug que pour l'hiver (heure standard)
-                Console.WriteLine($"⌚ Fuseau courant : {TimeZoneInfo.Local.BaseUtcOffset} / {TimeZoneInfo.Local.Id}");
-                time = time.AddHours(1);
+                // affichage du fuseau courant
+                Console.WriteLine($"🔹⌚ Fuseau courant : {TimeZoneInfo.Local.BaseUtcOffset} / {TimeZoneInfo.Local.Id}");
+                if (TimeZoneInfo.Local.Id == "Etc/UTC")
+                {
+                    // Meetup renvoie la mauvaise timezone pour les dates hors DST, on corrige en ajoutant une heure
+                    // ex: 2026-01-28T17:45:00+01:00[Europe/Paris] pour un évènement à 18h45 heure locale paris
+                    // (à priori cela ne bug que pour l'hiver (heure standard) ?)
+                    time = time.AddHours(1);
+                }
             }
 
             regexMatch = true;
@@ -568,7 +570,7 @@ partial class MeetupGroup : IGroup
             // ex: JEU. 6 FÉVR. 2025, 18:30 CEST
             // ex: JEU. 6 FÉVR. 2025, 18:30 UTC+1
             // ex: JEU. 6 FÉVR. 2025, 18:30 UTC+2
-            Console.WriteLine($"⚠️ Impossible de détecter la date/heure dans l'attribut {timeAttr}, parsing alternatif...");
+            Console.WriteLine($"🔹⚠️ Impossible de détecter la date/heure dans l'attribut {timeAttr}, parsing alternatif...");
             var dateTimeText = await timeElt.InnerTextAsync();
             var match = TimeZoneRegex().Match(dateTimeText);
             int offset;
@@ -599,7 +601,7 @@ partial class MeetupGroup : IGroup
             }
             else
             {
-                Console.WriteLine($"⚠️ Impossible de parser la date/heure {dateTimeText}, abandon...");
+                Console.WriteLine($"🔹⚠️ Impossible de parser la date/heure {dateTimeText}, abandon...");
                 return null;
             }
 
@@ -610,7 +612,7 @@ partial class MeetupGroup : IGroup
             time = time.ToOffset(FrenchLocales.ParisTimeZone.GetUtcOffset(time.UtcDateTime));
         }
 
-        Console.WriteLine($"🤖 Date/heure = {time} (raw {timeAttr}, regex? {regexMatch})");
+        Console.WriteLine($"🔹🤖 Date/heure = {time} (raw {timeAttr}, regex? {regexMatch})");
 
         // try find image
         var imgs = item.Locator($"img[fetchpriority='high']");
@@ -635,7 +637,7 @@ partial class MeetupGroup : IGroup
 
     private static async Task ScanDetailPage(IPage evtPage, Event evt)
     {
-        Console.Write($"⏳ Chargement page détail évènement {evt.Title}...");
+        Console.Write($"🔹⏳ Chargement page détail évènement {evt.Title}...");
         await evtPage.GotoAsync(evt.Href);
         try
         {
