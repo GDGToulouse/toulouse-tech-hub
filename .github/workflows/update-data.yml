@@ -18,16 +18,20 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v5
       with:
         fetch-depth: 2
-    - uses: actions/setup-node@v3
+    - uses: actions/setup-node@v5
+      with:
+        node-version: lts/*
     - name: Setup .NET
       uses: actions/setup-dotnet@v4
       with:
         dotnet-version: 10.0.x
+    - name: Install dependencies
+      run: npm ci
     - name: Install playwright browsers
-      run: npx playwright@1.50.0 install --only-shell --with-deps
+      run: npx playwright install --with-deps
     - name: Run
       run: dotnet run .github/workflows/update.cs
     - name: Check file changed
