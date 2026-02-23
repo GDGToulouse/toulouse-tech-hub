@@ -8,6 +8,7 @@ on:
     paths:
       - '.github/workflows/update.cs'
       - '.github/workflows/update-data.yml'
+  # permet de lancer le workflow manuellement
   workflow_dispatch:
 
 permissions:

@@ -1,12 +1,20 @@
-# Sample workflow for building and deploying a Jekyll site to GitHub Pages
+# Publish Jekyll website
 name: Update Website
 
 on:
+  # se déclenche à chaque push sur la branche main, sauf si les changements concernent uniquement les fichiers de workflow d'update
   push:
     branches: ["main"]
-  schedule:
-    - cron: "0 4 * * *"
+    paths-ignore:
+      - '.github/workflows/update.cs'
+      - '.github/workflows/update-data.yml'
+  # permet de lancer le workflow manuellement
   workflow_dispatch:
+  # se déclenche à la fin du workflow "Update Data" pour déployer les changements sur GitHub Pages
+  workflow_run:
+    workflows: [Update Data]
+    types:
+      - completed
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
