@@ -297,7 +297,7 @@ List<Event> evts = [];
 {
     var eventsDir = Path.Combine(repoRoot, "_events");
     Directory.CreateDirectory(eventsDir);
-    foreach (var evt in knownEvts.Where(e => e.Start >= DateTime.Today).OrderBy(e => e.Start).ThenBy(e => e.Id))
+    foreach (var evt in evts.Where(e => e.Start >= DateTime.Today).OrderBy(e => e.Start).ThenBy(e => e.Id))
     {
         var fileNamePrefix = $"{evt.Start:yyyy-MM-dd}-{evt.GroupId}-{evt.Id}";
         var fileName = Path.Combine(eventsDir, $"{fileNamePrefix}.html");
@@ -305,6 +305,26 @@ List<Event> evts = [];
         // on ignore tous les évènements marqués comme "skip"
         if (File.Exists(fileName + ".skip"))
             continue;
+
+        var knownEvt = knownEvts.FirstOrDefault(e => e.Id == evt.Id);
+        if (knownEvt != null)
+        {
+            var knownFileNamePrefix = $"{knownEvt.Start:yyyy-MM-dd}-{knownEvt.GroupId}-{knownEvt.Id}";
+
+            if (knownFileNamePrefix != fileNamePrefix)
+            {
+                // on ignore tous les évènements marqués comme "skip"
+                if (File.Exists(knownFileNamePrefix + ".skip"))
+                    continue;
+
+                // le nom du fichier à changé (ex: date modifiée), on renomme l'ancien fichier pour éviter les doublons
+                var knownFileName = Path.Combine(eventsDir, $"{knownFileNamePrefix}.html");
+                File.Move(knownFileName, fileName);
+                Console.WriteLine($"🔄 Renommé: {Path.GetFileName(knownFileName)} -> {Path.GetFileName(fileName)}");
+            }
+
+            evt.PublishedOn = knownEvt.PublishedOn; // on conserve la date de publication initiale pour éviter les changements inutiles dans le YAML
+        }
 
         using var writer = new StreamWriter(fileName);
         // Write YAML front matter
@@ -327,6 +347,8 @@ List<Event> evts = [];
         {
             writer.Write(evt.HtmlDescription);
         }
+
+        Console.WriteLine($"🛒 Généré: {fileName}");
     }
 }
 
@@ -529,9 +551,12 @@ partial class MeetupGroup : IGroup
             // success
             if (timeAttr.EndsWith("[Europe/Paris]") && !FrenchLocales.ParisTimeZone.IsDaylightSavingTime(time))
             {
-                // Meetup renvoie la mauvaise timezone pour les dates hors DST, on corrige en ajoutant une heure
-                // ex: 2026-01-28T17:45:00+01:00[Europe/Paris] pour un évènement à 18h45 heure locale paris
-                // à priori cela ne bug que pour l'hiver (heure standard)
+                // viré, à priori ça ne sert à rien...
+                
+                //// Meetup renvoie la mauvaise timezone pour les dates hors DST, on corrige en ajoutant une heure
+                //// ex: 2026-01-28T17:45:00+01:00[Europe/Paris] pour un évènement à 18h45 heure locale paris
+                //// à priori cela ne bug que pour l'hiver (heure standard)
+                Console.WriteLine($"⌚ Fuseau courant : {TimeZoneInfo.Local.BaseUtcOffset} / {TimeZoneInfo.Local.Id}");
                 time = time.AddHours(1);
             }
 
