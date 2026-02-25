@@ -29,6 +29,7 @@ Mapper le nom de communauté vers son slug en consultant `_groups/` :
 | AWS User Group Toulouse | aws |
 | C++ Toulouse | cpp |
 | Devops & Cloud Toulouse | devops-cloud |
+| Embedded Meetup Toulouse | embedded |
 | GDG Toulouse | gdg |
 | JS & Co Toulouse | js-and-co |
 | JUG Toulouse | jug |
