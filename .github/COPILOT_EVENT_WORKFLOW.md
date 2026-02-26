@@ -40,6 +40,7 @@ Mapper le nom de communauté vers son slug en consultant `_groups/` :
 | Rust Toulouse | rust |
 | Swift Toulouse | swift |
 | Tech a Break | tech-a-break |
+| Tech Speak'her | tech-speak-her |
 | Toulouse Data Science | tds |
 | Toulouse Data-Viz | dataviz |
 | Toulouse DevOps | devops |
