@@ -29,6 +29,7 @@ Ce site liste tous les événements tech à venir organisés par les communauté
 - [AWS User Group Toulouse](https://www.meetup.com/toulouse-amazon-web-services/)
 - [C++ Toulouse](https://www.meetup.com/ateliers-cpp-toulouse/)
 - [Devops & Cloud Toulouse](https://www.meetup.com/devops-cloud-toulouse/)
+- [Embedded Meetup Toulouse](https://www.linkedin.com/company/embedded-meetup-toulouse/)
 - [GDG Toulouse](https://www.gdgtoulouse.fr/)
 - [JS & Co Toulouse](https://www.meetup.com/javascript-and-co/)
 - [JUG Toulouse](https://www.meetup.com/toulouse-java-user-group/)
