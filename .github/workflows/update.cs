@@ -7,7 +7,6 @@
 #:property EnableTrimAnalyzer=false
 
 #:package Microsoft.Playwright@1.50.0
-#:package System.Linq.Async@6.0.1
 
 using Microsoft.Playwright;
 using System.Globalization;
@@ -58,6 +57,7 @@ var groups = new IGroup[] {
     new MeetupGroup("artilect-fablab", "artilect"),
     new MeetupGroup("postgres-toulouse", "postgres"),
     new MeetupGroup("rust-community-toulouse", "rust")
+    //new LinkedInGroup("embedded-meetup-toulouse", "embedded") non fonctionnel car pages non visibles sans compte
 };
 
 /************************/
@@ -706,6 +706,68 @@ partial class MeetupGroup : IGroup
 
     [GeneratedRegex(@" UTC([+-]\d{1,2})$", RegexOptions.CultureInvariant | RegexOptions.IgnoreCase)]
     private static partial Regex TimeZoneRegex();
+}
+
+partial class LinkedInGroup : IGroup
+{
+    private readonly string _slug;
+
+    private readonly string _url;
+
+    public LinkedInGroup(string slug, string id)
+    {
+        _slug = slug;
+        Name = slug;
+        Id = id;
+        _url = $"https://www.linkedin.com/company/{slug}/events/";
+    }
+
+    public string Id { get; }
+
+    public string Name { get; private set; }
+
+    public async IAsyncEnumerable<Event> Scan(IBrowserContext browserContext, IPage page, bool loadPast)
+    {
+        Console.WriteLine($"🤖 Début scan page LinkedIn {_slug}");
+        await page.GotoAsync(_url);
+        await page.WaitForLoadStateAsync(LoadState.NetworkIdle, new PageWaitForLoadStateOptions { Timeout = 15 * 1000 });
+
+        // ☠️ ne fonctionne pas car LinkedIn nécessite d'être connecté pour visualiser les pages
+        yield break;
+
+        // on récupère le nom du groupe
+        Name = await page.TitleAsync();
+        Console.WriteLine("🤖 Titre de la page = " + Name);
+
+        foreach (var section in (await page.Locator("section.artdeco-card").AllAsync()).ToList())
+        {
+            var heading = await section.Locator("h4").InnerTextAsync();
+            if (heading == "Événements à venir")
+            {
+                Console.WriteLine($"🤖 Section évènements à venir détectée, scan en cours...");
+                foreach (var li in (await section.Locator("li").AllAsync()).ToList())
+                {
+                    var link = await li.Locator("a").First.GetAttributeAsync("href"); // ex: /events/toulouseembeddedmeetup-31mars207431788648037199872/
+                    var img = await li.Locator("img").First.GetAttributeAsync("src"); // ex: https://media.licdn.com/dms/image/v2/D4E1EAQH4QTd5VjFTpQ/event-background-image-crop_270_480/B4EZyMEX3THoAQ-/0/1771876489167?e=1772697600&v=beta&t=CkDSaTI1pxDRSxp8ppZgmQsd4D7nYUE7fIjo_PI04r0
+                    var title = await li.Locator("span.events-components-shared-event-card__event-title").First.InnerTextAsync(); // ex: Toulouse Embedded Meetup: 31 mars 2026
+                    var timeText = await li.Locator("span.events-components-shared-event-card__text-single-line").First.InnerTextAsync(); // ex: mar., 31 mars 2026, 19:00
+
+                    Console.WriteLine("🤖 Évènement détecté :");
+                    Console.WriteLine($"🔹 Titre : {title}");
+                    Console.WriteLine($"🔹 Date : {timeText}");
+                    Console.WriteLine($"🔹 Lien : {link}");
+                    Console.WriteLine($"🔹 Image : {img}");
+
+                }
+            }
+            else
+            {
+                Console.WriteLine($"🤖 Section avec heading '{heading}' ignorée");
+            }
+        }
+
+        yield break;
+    }
 }
 
 partial class ToulouseGameDevGroup : IGroup
