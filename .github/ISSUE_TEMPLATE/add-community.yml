@@ -23,7 +23,9 @@ body:
     id: community-slug
     attributes:
       label: Identifiant court (slug)
-      description: Un identifiant court en minuscules, sans espaces ni accents (utilisé pour les URLs et fichiers)
+      description: |
+        Un identifiant court en minuscules, sans espaces ni accents (utilisé pour les URLs et fichiers).
+        Si votre communauté existe déjà sur Meetup, utilisez le même slug que sur Meetup pour une synchronisation facile.
       placeholder: ex. python, js-and-co, devops-cloud
     validations:
       required: true
@@ -103,6 +105,7 @@ body:
         Une fois cette issue créée, GitHub Copilot pourra générer automatiquement :
         - Le fichier `_groups/{slug}.md` avec vos informations
         - L'ajout dans `.github/workflows/update.cs` si vous utilisez Meetup
+        - La mise à jour des templates d'issue et du worflow pour l'ajout manuel d'évènements
         - La mise à jour du README.md
         - Une pull request prête à être mergée
         

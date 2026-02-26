@@ -86,7 +86,15 @@ new MeetupGroup("{meetup-slug}", "{community-slug}"),
 
 Maintenir l'ordre alphabétique par `community-slug`.
 
-### 4. Mettre à jour `README.md`
+### 4. Mettre à jour le template des issues et instructions workflow
+
+1. Mettre à jour le fichier `.github/ISSUE_TEMPLATE/add-event.yml` pour ajouter le nom de la
+   communauté dans les choix possibles des communautés organisatrices
+
+2. Mettre à jour le tableau de la section "Trouver le slug de la communauté" des instructions
+   `.github/COPILOT_EVENT_WORKFLOW.md` en ajoutant le slug et le nom de la communauté renseigné au point 1.
+
+### 5. Mettre à jour `README.md`
 
 Ajouter la communauté dans la liste (maintenir l'ordre alphabétique) :
 
@@ -94,7 +102,7 @@ Ajouter la communauté dans la liste (maintenir l'ordre alphabétique) :
 - [{community-name}]({community-url})
 ```
 
-### 5. Créer la Pull Request
+### 6. Créer la Pull Request
 
 **Titre :** `Add {community-name} community`
 
@@ -149,6 +157,8 @@ Avant de créer la PR, vérifier :
 - [ ] Le logo (si fourni) a été converti en JPG
 - [ ] Le fichier YAML est valid (front matter bien formé)
 - [ ] Jekyll build réussit sans erreur
+- [ ] Le template des issues a été mis à jour
+- [ ] Les instructions de workflow ont été mises à jour
 - [ ] Le README est à jour et trié alphabétiquement
 - [ ] Si Meetup : le slug Meetup est bien extrait de l'URL
 
@@ -215,6 +225,8 @@ Adds Rust Toulouse to the Toulouse Tech Hub.
 - ✅ Created `_groups/rust.md`
 - ✅ Added logo `groups-imgs/rust.jpg`
 - ✅ Updated `.github/workflows/update.cs`
+- ✅ Updated `.github/ISSUE_TEMPLATE/add-event.yml`
+- ✅ Updated `.github/COPILOT_EVENT_WORKFLOW.md`
 - ✅ Updated `README.md`
 
 Closes #42
