@@ -25,6 +25,7 @@ body:
       description: Si votre communauté n'est pas dans la liste, créez d'abord une issue "Ajouter une communauté"
       options:
         - Agile Toulouse
+        - AI-ficionados
         - Artilect FabLab
         - AWS User Group Toulouse
         - C++ Toulouse

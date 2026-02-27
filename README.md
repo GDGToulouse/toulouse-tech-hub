@@ -25,6 +25,7 @@ Ce site liste tous les événements tech à venir organisés par les communauté
 
 
 - [Agile Toulouse](https://www.agiletoulouse.fr/)
+- [AI-ficionados](https://aificionados.com/)
 - [Artilect FabLab](https://www.meetup.com/artilect-fablab/)
 - [AWS User Group Toulouse](https://www.meetup.com/toulouse-amazon-web-services/)
 - [C++ Toulouse](https://www.meetup.com/ateliers-cpp-toulouse/)
