@@ -1,6 +1,6 @@
 <!-- list -->
 <div class="row row-cols-1 row-cols-md-2 row-cols-xxl-3 g-4 my-3">
-{% assign groups_by_name = site.groups | sort: "name" %}
+{% assign groups_by_name = site.groups | sort_natural: "name" %}
 {% for group in groups_by_name %}
 {%- capture gradient_class -%}community-{{ group.slug }}{%- endcapture -%}
 <div class="col">
