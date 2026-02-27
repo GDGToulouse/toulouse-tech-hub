@@ -25,6 +25,7 @@ Mapper le nom de communauté vers son slug en consultant `_groups/` :
 | Nom (dropdown) | Slug |
 |----------------|------|
 | Agile Toulouse | agile |
+| AI-ficionados | aificionados |
 | Artilect FabLab | artilect |
 | AWS User Group Toulouse | aws |
 | C++ Toulouse | cpp |
