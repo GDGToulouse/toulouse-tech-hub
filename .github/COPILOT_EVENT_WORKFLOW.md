@@ -36,6 +36,7 @@ Mapper le nom de communauté vers son slug en consultant `_groups/` :
 | JUG Toulouse | jug |
 | La "Toul Box" du Cloud Natif | toulbox |
 | MTG:Toulouse | mtg |
+| MUG Toulouse | mug-toulouse |
 | Postgres Toulouse | postgres |
 | Python Toulouse | python |
 | Rust Toulouse | rust |
