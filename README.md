@@ -36,6 +36,7 @@ Ce site liste tous les événements tech à venir organisés par les communauté
 - [JUG Toulouse](https://www.meetup.com/toulouse-java-user-group/)
 - [La "Toul Box" du Cloud Natif](https://www.meetup.com/latoulboxducloudnatif/)
 - [MTG:Toulouse](https://www.meetup.com/mtg-toulouse/)
+- [MUG Toulouse](https://www.meetup.com/mug-toulouse-mobile-user-group/)
 - [Postgres Toulouse](https://www.meetup.com/postgres-toulouse)
 - [Python Toulouse](https://www.meetup.com/python-toulouse/)
 - [Rust Toulouse](https://www.meetup.com/fr-FR/rust-community-toulouse/)
