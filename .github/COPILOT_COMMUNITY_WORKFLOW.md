@@ -43,9 +43,29 @@ img: none  # ou supprimer si un logo est fourni
 ```
 
 **Notes :**
-- Si un logo est fourni (`logo-url`), télécharger l'image, la convertir en JPG avec ImageMagick, et la placer dans `groups-imgs/{slug}.jpg`
+- Si un logo est fourni (`logo-url`), télécharger l'image, la traiter avec ImageMagick, et la placer dans `groups-imgs/{slug}.jpg`
 - Si un logo existe, supprimer la ligne `img: none`
 - Convertir la description en HTML si elle contient du Markdown
+
+**Traitement du logo avec ImageMagick (fond blanc, format 16:9, marges) :**
+
+```bash
+# Télécharger l'image originale
+wget -O /tmp/logo-original.png "{logo-url}"
+
+# Convertir en JPG avec fond blanc, ratio 16:9 (1200×675), 15% de padding
+convert /tmp/logo-original.png \
+  -background white \
+  -gravity center \
+  -resize 1020x573 \
+  -extent 1200x675 \
+  groups-imgs/{slug}.jpg
+```
+
+Cette commande garantit :
+- Fond blanc (important pour les logos transparents)
+- Dimensions 1200×675 (ratio 16:9 requis pour les cartes)
+- 15% de marge autour du logo pour une meilleure présentation
 
 ### 2. Ajouter les liens sociaux (si fournis)
 
@@ -88,15 +108,17 @@ Maintenir l'ordre alphabétique par `community-slug`.
 
 ### 4. Mettre à jour le template des issues et instructions workflow
 
+> ⚠️ **Ordre alphabétique obligatoire :** Toutes les listes ci-dessous doivent être maintenues dans l'ordre alphabétique. Vérifier la position correcte avant d'insérer.
+
 1. Mettre à jour le fichier `.github/ISSUE_TEMPLATE/add-event.yml` pour ajouter le nom de la
-   communauté dans les choix possibles des communautés organisatrices
+   communauté dans les choix possibles des communautés organisatrices **(ordre alphabétique)**
 
 2. Mettre à jour le tableau de la section "Trouver le slug de la communauté" des instructions
-   `.github/COPILOT_EVENT_WORKFLOW.md` en ajoutant le slug et le nom de la communauté renseigné au point 1.
+   `.github/COPILOT_EVENT_WORKFLOW.md` en ajoutant le slug et le nom de la communauté renseigné au point 1 **(ordre alphabétique)**
 
 ### 5. Mettre à jour `README.md`
 
-Ajouter la communauté dans la liste (maintenir l'ordre alphabétique) :
+Ajouter la communauté dans la liste **(maintenir l'ordre alphabétique)** :
 
 ```markdown
 - [{community-name}]({community-url})
@@ -132,9 +154,14 @@ Closes #{issue-number}
 ## Commandes utiles
 
 ```bash
-# Télécharger et convertir un logo
-wget -O /tmp/logo.ext "{logo-url}"
-convert /tmp/logo.ext groups-imgs/{slug}.jpg
+# Télécharger et traiter un logo (fond blanc, 16:9, 15% de padding)
+wget -O /tmp/logo-original.png "{logo-url}"
+convert /tmp/logo-original.png \
+  -background white \
+  -gravity center \
+  -resize 1020x573 \
+  -extent 1200x675 \
+  groups-imgs/{slug}.jpg
 
 # Vérifier qu'aucun doublon n'existe
 ls _groups/{slug}.md  # ne doit pas exister
@@ -154,12 +181,13 @@ Avant de créer la PR, vérifier :
 - [ ] Le slug ne contient que des caractères alphanumériques et tirets
 - [ ] Le nom de la communauté n'existe pas déjà
 - [ ] L'URL est valide et accessible
-- [ ] Le logo (si fourni) a été converti en JPG
-- [ ] Le fichier YAML est valid (front matter bien formé)
+- [ ] Le logo (si fourni) a été traité avec fond blanc et dimensions 1200×675 (16:9)
+- [ ] Le fichier YAML est valide (front matter bien formé)
 - [ ] Jekyll build réussit sans erreur
-- [ ] Le template des issues a été mis à jour
-- [ ] Les instructions de workflow ont été mises à jour
-- [ ] Le README est à jour et trié alphabétiquement
+- [ ] `.github/ISSUE_TEMPLATE/add-event.yml` mis à jour **(ordre alphabétique respecté)**
+- [ ] `.github/COPILOT_EVENT_WORKFLOW.md` tableau de mapping mis à jour **(ordre alphabétique respecté)**
+- [ ] `README.md` mis à jour **(ordre alphabétique respecté)**
+- [ ] Si Meetup : `.github/workflows/update.cs` mis à jour **(ordre alphabétique par community-slug respecté)**
 - [ ] Si Meetup : le slug Meetup est bien extrait de l'URL
 
 ## Exemple complet
@@ -198,7 +226,17 @@ social:
 Communauté des développeurs Rust à Toulouse...
 ```
 
-**`groups-imgs/rust.jpg`** (logo converti)
+**`groups-imgs/rust.jpg`** (logo traité : fond blanc, 1200×675, 15% de padding)
+
+```bash
+wget -O /tmp/logo-original.png "https://example.com/rust-logo.png"
+convert /tmp/logo-original.png \
+  -background white \
+  -gravity center \
+  -resize 1020x573 \
+  -extent 1200x675 \
+  groups-imgs/rust.jpg
+```
 
 **`.github/workflows/update.cs`** (ajout ligne ~50)
 ```csharp
