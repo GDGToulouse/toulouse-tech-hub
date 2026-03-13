@@ -65,7 +65,7 @@ Alternative : utiliser un UUID court si préféré
 - **dateFr** : Convertir en français (ex: `"dimanche 15 mars"`)
   - Jours : lundi, mardi, mercredi, jeudi, vendredi, samedi, dimanche
   - Mois : janvier, février, mars, avril, mai, juin, juillet, août, septembre, octobre, novembre, décembre
-  - ⚠️ **Les jours de 1 à 9 doivent être sur deux chiffres** : `"samedi 07 mars"`, pas `"samedi 7 mars"`
+  - Le zero-padding des jours (ex: `"07 mars"`) n'est pas requis — `dateFr` est purement utilisé pour l'affichage
 - **timeFr** : `'18:30'` (entre quotes simples pour le YAML)
 - **datePublished** : Date/heure actuelle au format `YYYY-MM-DD HH:MM` — **doit être passée ou présente** (jamais dans le futur, le feed Atom l'exige)
 
@@ -85,7 +85,7 @@ title: "{event-title}"
 community: "{community-name}"
 datePublished: {current-datetime}
 dateIso: {event-date}
-dateFr: "{date-in-french}"  # ex: "samedi 07 mars" (jour sur 2 chiffres)
+dateFr: "{date-in-french}"  # ex: "dimanche 15 mars" ou "samedi 7 mars" (affichage seul)
 timeFr: '{time}'
 place: "{event-location}"
 placeAddr: "{event-address}"
@@ -99,7 +99,6 @@ img: {event-image}
 - Entourer le titre de guillemets doubles si contient `:` ou caractères spéciaux
 - `timeFr` doit être entre quotes simples (`'18:30'`)
 - Convertir la description en HTML (paragraphes → `<p>`, listes → `<ul>/<li>`, etc.)
-- **`dateFr` :** les jours de 1 à 9 doivent être sur deux chiffres (ex: `"samedi 07 mars"` et non `"samedi 7 mars"`)
 - **`datePublished` :** doit être une date passée ou présente (jamais dans le futur). Le feed Atom n'inclut que les événements dont le `datePublished` ≤ date de build. Utiliser la date et heure actuelles.
 - **`place` et `placeAddr` :** ces deux champs doivent toujours apparaître ensemble. Si le lieu est connu, remplir les deux. Si inconnu, inclure les deux avec des chaînes vides (`place: ""` et `placeAddr: ""`).
 - Si pas d'image fournie, omettre le champ `img:`
@@ -163,7 +162,6 @@ Avant de créer la PR, vérifier :
 - [ ] Le slug de communauté existe dans `_groups/`
 - [ ] Le format de date est correct (`YYYY-MM-DD HH:MM`)
 - [ ] `datePublished` est une date passée ou présente (jamais dans le futur)
-- [ ] `dateFr` utilise des jours sur deux chiffres (ex: `"samedi 07 mars"`)
 - [ ] `eventId` correspond exactement au segment après `{groupId}-` dans le nom de fichier
 - [ ] `place` et `placeAddr` sont tous les deux présents (même si vides)
 - [ ] L'image locale existe dans `event-imgs/{YYYY-MM-DD}-{groupId}-{eventId}.webp`

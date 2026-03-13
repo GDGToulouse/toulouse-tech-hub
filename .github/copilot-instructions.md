@@ -52,7 +52,7 @@ All formats filter future events only using Liquid's date comparison: `{%- if ev
 
 ### Date Handling
 - `dateIso`: ISO 8601 format (`YYYY-MM-DD HH:MM`) used for sorting and time math
-- `dateFr`: French display format (`"jeudi 12 février"`) — **always zero-pad single-digit days** (e.g., `"samedi 07 mars"` not `"samedi 7 mars"`)
+- `dateFr`: French display format (`"jeudi 12 février"`) — display only, no zero-padding required
 - `timeFr`: Time display (`"18:45"`)
 - `datePublished`: Must be a past or current date/time — the Atom feed skips events where `datePublished` is in the future
 - Jekyll's `site.time` is compared as Unix timestamps: `| date: "%s" | plus: 0`
@@ -125,7 +125,7 @@ convert /tmp/event-image.jpg event-imgs/2025-03-15-agile-manual-1709740200.webp
 - The `eventId` front matter must **exactly match** the event ID segment in the filename (the part after `{groupId}-`)
 - Always use double quotes for string values (handles special chars like `:`)
 - `place` and `placeAddr` must always appear together — if the venue is unknown, include both as empty strings
-- `dateFr`: zero-pad single-digit days (`"samedi 07 mars"` not `"samedi 7 mars"`)
+- `dateFr`: French day+month display text (e.g., `"samedi 7 mars"`) — display only, no zero-padding required
 - `datePublished` must be a past or current date (Atom feed skips future-dated entries)
 - The local image in `event-imgs/` is **mandatory** — the Atom feed has no fallback to the `img:` URL
 - Image path is automatically computed from the filename: no `localImg` field needed
