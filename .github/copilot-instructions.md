@@ -52,8 +52,9 @@ All formats filter future events only using Liquid's date comparison: `{%- if ev
 
 ### Date Handling
 - `dateIso`: ISO 8601 format (`YYYY-MM-DD HH:MM`) used for sorting and time math
-- `dateFr`: French display format (`"jeudi 12 février"`)
+- `dateFr`: French display format (`"jeudi 12 février"`) — display only, no zero-padding required
 - `timeFr`: Time display (`"18:45"`)
+- `datePublished`: Must be a past or current date/time — the Atom feed skips events where `datePublished` is in the future
 - Jekyll's `site.time` is compared as Unix timestamps: `| date: "%s" | plus: 0`
 
 ### Scraper Control
@@ -64,9 +65,10 @@ All formats filter future events only using Liquid's date comparison: `{%- if ev
 - Toulouse Game Dev events use `tgd-YYYY-MM-DD` based on the event date.
 
 ### Image Management
-- Event images are stored in `event-imgs/` with filename matching the event ID
+- Event images **must** be stored locally in `event-imgs/` with naming `{YYYY-MM-DD}-{groupId}-{eventId}.webp` — the Atom feed has no fallback to the `img:` URL, so a missing local image breaks the feed thumbnail
+- The `img:` front matter field is only used as a fallback in the HTML view (via `onerror`), not in feeds
+- Group/community images are in `groups-imgs/` named `{slug}.jpg`, processed with white background and 16:9 dimensions (1200×675)
 - Conference images are in `confs-imgs/`
-- Images should be WebP format when possible
 - Cards use `aspect-ratio: 16/9` CSS for consistent display
 
 ### File Encoding
@@ -85,12 +87,14 @@ All formats filter future events only using Liquid's date comparison: `{%- if ev
 - The script loads events directly from YAML front matter (no JSON cache)
 - Image paths are computed from event metadata: `{date}-{groupId}-{eventId}.webp`
 
-### Adding a New Event ManuallygroupId}-{eventId}.html`:
+### Adding a New Event Manually
+
+File naming: `_events/{YYYY-MM-DD}-{groupId}-{eventId}.html`
 
 **Front matter (YAML between `---` delimiters):**
 ```yaml
 ---
-eventId: "meetup-12345678"
+eventId: "manual-1709740200"
 groupId: "agile"
 title: "Event Title"
 community: "Community Name"
@@ -110,13 +114,21 @@ img: https://example.com/image.jpg
 <p>Event description in HTML format</p>
 ```
 
-**Image file:** Place image at `event-imgs/2025-03-15-agile-meetup-12345678.webp` (computed from filename)
+**Image file (required):** Download and place at `event-imgs/2025-03-15-agile-manual-1709740200.webp`
+```bash
+wget -O /tmp/event-image.jpg "https://example.com/image.jpg"
+convert /tmp/event-image.jpg event-imgs/2025-03-15-agile-manual-1709740200.webp
+```
 
 **Important Notes:**
 - Use `eventId` not `id` (Jekyll reserves `.id` for collection URLs)
+- The `eventId` front matter must **exactly match** the event ID segment in the filename (the part after `{groupId}-`)
 - Always use double quotes for string values (handles special chars like `:`)
-- `groupId` is used to compute image path and group association
-- Image path is automatically computed: no need for `localImg` field
+- `place` and `placeAddr` must always appear together — if the venue is unknown, include both as empty strings
+- `dateFr`: French day+month display text (e.g., `"samedi 7 mars"`) — display only, no zero-padding required
+- `datePublished` must be a past or current date (Atom feed skips future-dated entries)
+- The local image in `event-imgs/` is **mandatory** — the Atom feed has no fallback to the `img:` URL
+- Image path is automatically computed from the filename: no `localImg` field needed
 
 ### Adding a New Community
 Create a markdown file in `_groups/` named `{community-slug}.md`:
@@ -137,6 +149,14 @@ social:
 ```
 
 **Note:** `link` property is for the main website. `social` array uses `icon`, `url` (for social profiles), and `title`. No `id` field (slug is derived from filename).
+
+**When adding a new community, update these files (all lists in alphabetical order):**
+1. `_groups/{slug}.md` — new community file (create)
+2. `groups-imgs/{slug}.jpg` — logo (create, white background, 1200×675, 16:9 ratio)
+3. `.github/ISSUE_TEMPLATE/add-event.yml` — add community name to dropdown (alphabetical)
+4. `.github/COPILOT_EVENT_WORKFLOW.md` — add slug to mapping table (alphabetical)
+5. `README.md` — add community to list (alphabetical)
+6. `.github/workflows/update.cs` — add Meetup group entry (alphabetical by slug, if Meetup-based)
 
 ### Adding a New Conference
 Create a markdown file in `_confs/` named `{conference-slug}.md`:

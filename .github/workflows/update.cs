@@ -336,7 +336,7 @@ List<Event> evts = [];
         writer.WriteLine($"community: \"{evt.Group.Replace("\\", "\\\\").Replace("\"", "\\\"")}\"");
         writer.WriteLine($"datePublished: {evt.PublishedOn:yyyy-MM-dd HH:mm}");
         writer.WriteLine($"dateIso: {evt.Start:yyyy-MM-dd HH:mm}");
-        writer.WriteLine($"dateFr: {evt.Start:dddd dd MMMM}");
+        writer.WriteLine($"dateFr: {evt.Start:dddd d MMMM}");
         writer.WriteLine($"timeFr: '{evt.Start:HH:mm}'");
         writer.WriteLine($"place: \"{(evt.VenueName ?? "").Replace("\\", "\\\\").Replace("\"", "\\\"")}\"");
         writer.WriteLine($"placeAddr: \"{(evt.VenueAddr ?? "").Replace("\\", "\\\\").Replace("\"", "\\\"")}\"");

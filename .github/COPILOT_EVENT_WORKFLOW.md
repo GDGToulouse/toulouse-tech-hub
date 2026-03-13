@@ -65,12 +65,15 @@ Alternative : utiliser un UUID court si préféré
 - **dateFr** : Convertir en français (ex: `"dimanche 15 mars"`)
   - Jours : lundi, mardi, mercredi, jeudi, vendredi, samedi, dimanche
   - Mois : janvier, février, mars, avril, mai, juin, juillet, août, septembre, octobre, novembre, décembre
+  - Le zero-padding des jours (ex: `"07 mars"`) n'est pas requis — `dateFr` est purement utilisé pour l'affichage
 - **timeFr** : `'18:30'` (entre quotes simples pour le YAML)
-- **datePublished** : Date/heure actuelle au format `YYYY-MM-DD HH:MM`
+- **datePublished** : Date/heure actuelle au format `YYYY-MM-DD HH:MM` — **doit être passée ou présente** (jamais dans le futur, le feed Atom l'exige)
 
 ### 4. Créer le fichier `_events/{date}-{slug}-{eventId}.html`
 
 **Nom du fichier :** `_events/2026-03-15-{community-slug}-{eventId}.html`
+
+> ⚠️ **Important :** L'`eventId` dans le front matter doit correspondre exactement au segment après `{groupId}-` dans le nom de fichier. Par exemple, pour `_events/2026-03-15-js-and-co-manual-1709740200.html`, l'`eventId` doit être `manual-1709740200`.
 
 **Contenu :**
 
@@ -82,23 +85,48 @@ title: "{event-title}"
 community: "{community-name}"
 datePublished: {current-datetime}
 dateIso: {event-date}
-dateFr: {date-in-french}
+dateFr: "{date-in-french}"  # ex: "dimanche 15 mars" ou "samedi 7 mars" (affichage seul)
 timeFr: '{time}'
-{place: "{event-location}" (si fourni)}
-{placeAddr: "{event-address}" (si fourni)}
+place: "{event-location}"
+placeAddr: "{event-address}"
 link: {event-link}
-{img: {event-image} (si fourni)}
 ---
 {description-as-html}
+```
+
+Si une image est fournie dans l'issue, ajouter une ligne `img` dans le front matter :
+
+```yaml
+img: {event-image}
 ```
 
 **Notes importantes :**
 - Entourer le titre de guillemets doubles si contient `:` ou caractères spéciaux
 - `timeFr` doit être entre quotes simples (`'18:30'`)
 - Convertir la description en HTML (paragraphes → `<p>`, listes → `<ul>/<li>`, etc.)
+- **`datePublished` :** doit être une date passée ou présente (jamais dans le futur). Le feed Atom n'inclut que les événements dont le `datePublished` ≤ date de build. Utiliser la date et heure actuelles.
+- **`place` et `placeAddr` :** ces deux champs doivent toujours apparaître ensemble. Si le lieu est connu, remplir les deux. Si inconnu, inclure les deux avec des chaînes vides (`place: ""` et `placeAddr: ""`).
 - Si pas d'image fournie, omettre le champ `img:`
 
-### 5. Formater la description en HTML
+### 5. Télécharger l'image de l'événement
+
+> ⚠️ **Obligatoire :** Le site utilise en priorité une image locale dans `event-imgs/`. Le feed Atom et l’outil orgas (`orgas.html`) ne disposent d’aucun fallback : sans ce fichier local, la miniature sera cassée dans ces vues. Sur la page HTML principale, les cartes d’événements peuvent tomber en repli sur l’URL distante `img:`, mais il ne faut pas compter sur ce fallback : l’image locale reste requise.
+
+Le nom du fichier image suit la convention : `event-imgs/{YYYY-MM-DD}-{groupId}-{eventId}.webp`
+
+```bash
+# Télécharger et convertir en WebP
+wget -O /tmp/event-image.jpg "{event-image-url}"
+convert /tmp/event-image.jpg event-imgs/{YYYY-MM-DD}-{groupId}-{eventId}.webp
+
+# Exemple concret :
+# wget -O /tmp/event-image.jpg "https://example.com/workshop.jpg"
+# convert /tmp/event-image.jpg event-imgs/2026-03-15-js-and-co-manual-1709740200.webp
+```
+
+Si aucune image n'est fournie dans l'issue, chercher sur la page de l'événement ou utiliser le logo de la communauté depuis `groups-imgs/{groupId}.jpg` comme source.
+
+### 6. Formater la description en HTML
 
 Convertir le texte brut/markdown en HTML basique :
 - Paragraphes vides → séparation en `<p>` tags
@@ -109,7 +137,7 @@ Convertir le texte brut/markdown en HTML basique :
 
 Classe recommandée : `<p class="mb-4">` pour l'espacement
 
-### 6. Créer la Pull Request
+### 7. Créer la Pull Request
 
 **Titre :** `Add event: {event-title}`
 
@@ -125,6 +153,7 @@ Adds manual event "{event-title}" to the calendar.
 
 **Changes:**
 - ✅ Created `_events/{filename}.html`
+- ✅ Added `event-imgs/{YYYY-MM-DD}-{groupId}-{eventId}.webp`
 
 Closes #{issue-number}
 ```
@@ -137,6 +166,10 @@ Avant de créer la PR, vérifier :
 - [ ] La date est dans le futur (events passés ne s'affichent pas)
 - [ ] Le slug de communauté existe dans `_groups/`
 - [ ] Le format de date est correct (`YYYY-MM-DD HH:MM`)
+- [ ] `datePublished` est une date passée ou présente (jamais dans le futur)
+- [ ] `eventId` correspond exactement au segment après `{groupId}-` dans le nom de fichier
+- [ ] `place` et `placeAddr` sont tous les deux présents (même si vides)
+- [ ] L'image locale existe dans `event-imgs/{YYYY-MM-DD}-{groupId}-{eventId}.webp`
 - [ ] Le fichier YAML front matter est valide (quotes, indentation)
 - [ ] La description HTML est bien formée (tags fermés)
 - [ ] Jekyll build réussit : `jekyll build`
@@ -182,7 +215,7 @@ title: "Workshop React avancé"
 community: "JS & Co Toulouse"
 datePublished: 2026-02-21 21:30
 dateIso: 2026-03-15 14:00
-dateFr: dimanche 15 mars
+dateFr: "dimanche 15 mars"
 timeFr: '14:00'
 place: "La Cantine Toulouse"
 placeAddr: "27 Rue d'Aubuisson, 31000 Toulouse"
@@ -191,6 +224,8 @@ img: https://example.com/workshop.jpg
 ---
 <p class="mb-4">Venez apprendre React ! Au programme : hooks, context, suspense.</p>
 ```
+
+**Image :** `event-imgs/2026-03-15-js-and-co-manual-1709740200.webp` (téléchargée depuis l'URL de l'image)
 
 **PR Title:** `Add event: Workshop React avancé`
 
@@ -206,6 +241,7 @@ Adds manual event "Workshop React avancé" to the calendar.
 
 **Changes:**
 - ✅ Created `_events/2026-03-15-js-and-co-manual-1709740200.html`
+- ✅ Added `event-imgs/2026-03-15-js-and-co-manual-1709740200.webp`
 
 Closes #123
 ```
@@ -217,12 +253,6 @@ Closes #123
 - **Événements Meetup** : Ne PAS créer d'issue, ils sont synchronisés automatiquement par `.github/workflows/update.cs`
 - **Événements ponctuels** : Utiliser cette procédure
 - **Événements récurrents non-Meetup** : Envisager d'ajouter un scraper dans `update.cs` plutôt que de créer manuellement
-
-### Gestion des images
-
-- Si `event-image` est fourni, utiliser tel quel (pas de téléchargement/conversion nécessaire)
-- Les images sont chargées depuis leur URL d'origine
-- Pas de stockage local dans `event-imgs/` pour les événements manuels
 
 ### Format de l'eventId
 
