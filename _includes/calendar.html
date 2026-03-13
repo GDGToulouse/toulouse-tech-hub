@@ -1,6 +1,6 @@
 {% comment %}
 Calendar include that displays a month grid with event counts
-Params: month (1-12), year (YYYY), today (1-31, or 0 if not current month)
+Params: month (1-12), year (YYYY)
 {% endcomment %}
 
 {% assign months = "Janvier,Février,Mars,Avril,Mai,Juin,Juillet,Août,Septembre,Octobre,Novembre,Décembre" | split: "," %}
@@ -79,12 +79,6 @@ Adjust to start week on Monday: subtract 1 (mod 7) {% endcomment %}
     {% for i in (1..num_days) %}
       {% assign idx = i | minus: 1 %}
       {% assign count = event_counts[idx] | plus: 0 %}
-      {% assign is_today = false %}
-      {% assign today_int = include.today | plus: 0 %}
-      {% if today_int == i %}
-        {% assign is_today = true %}
-      {% endif %}
-      
       {% comment %} Calculate day of week (1=Mon, 7=Sun) {% endcomment %}
       {% assign day_of_week = first_day | plus: i | minus: 1 | modulo: 7 | plus: 1 %}
       {% assign is_weekend = false %}
@@ -93,9 +87,7 @@ Adjust to start week on Monday: subtract 1 (mod 7) {% endcomment %}
       {% endif %}
       
       {% capture day_class %}calendar-day{% endcapture %}
-      {% if is_today %}
-        {% capture day_class %}{{ day_class }} calendar-today{% endcapture %}
-      {% elsif is_weekend %}
+      {% if is_weekend %}
         {% capture day_class %}{{ day_class }} calendar-weekend{% endcapture %}
       {% endif %}
       {% if count == 1 %}
