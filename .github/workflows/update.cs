@@ -806,7 +806,7 @@ partial class ToulouseGameDevGroup : IGroup
                 // title
                 var titleLocator = item.Locator("css=.wp-block-media-text__content p.has-large-font-size");
                 if (await titleLocator.CountAsync() == 0) continue;
-                var title = await titleLocator.InnerTextAsync();
+                var title = await titleLocator.First.InnerTextAsync();
 
                 // description + date
                 List<string> descHtml = [];
