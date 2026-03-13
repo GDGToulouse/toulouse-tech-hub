@@ -208,6 +208,10 @@ a.muted {
     background: linear-gradient(135deg, #F7DF1E 0%, #000000 100%);
 }
 
+.community-afup-toulouse {
+    background: linear-gradient(135deg, #777BB3 0%, #4f3f9d 100%);
+}
+
 .community-default {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 }
