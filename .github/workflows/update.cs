@@ -775,6 +775,10 @@ partial class ToulouseGameDevGroup : IGroup
 {
     private const string Url = "https://toulousegamedev.fr/evenements/";
 
+    /// <summary>Lieu habituel des meet-ups TGD, utilisé par défaut si aucun autre lieu n'est mentionné.</summary>
+    private const string DefaultVenueName = "La Mêlée";
+    private const string DefaultVenueAddr = "27 rue d'Aubuisson, 31000 Toulouse";
+
     public string Id => "tgd";
 
     public string Name => "Toulouse Game Dev";
@@ -790,58 +794,117 @@ partial class ToulouseGameDevGroup : IGroup
             await page.GotoAsync(Url);
             await page.WaitForLoadStateAsync(LoadState.NetworkIdle, new PageWaitForLoadStateOptions { Timeout = 15 * 1000 });
 
-            // siblings blocks after the first h2
-            var loc = page.Locator("css=h2.wp-block-heading:nth-of-type(1) + div");
+            // Scan all media-text blocks to capture any number of upcoming event months
+            var loc = page.Locator("css=div.wp-block-media-text");
 
             foreach (var item in await loc.AllAsync())
             {
                 // figure > img
-                var img = await item.Locator("css=figure > img").GetAttributeAsync("src");
+                var imgLocator = item.Locator("css=figure img");
+                var img = await imgLocator.CountAsync() > 0 ? await imgLocator.First.GetAttributeAsync("src") : null;
 
                 // title
-                var title = await item.Locator("css=div > p.has-large-font-size").InnerTextAsync();
+                var titleLocator = item.Locator("css=.wp-block-media-text__content p.has-large-font-size");
+                if (await titleLocator.CountAsync() == 0) continue;
+                var title = await titleLocator.InnerTextAsync();
 
                 // description + date
                 List<string> descHtml = [];
-                List<string> destText = [];
                 DateTimeOffset? date = null;
                 TimeSpan? duration = null;
+                string? venueName = null;
+                string? venueAddr = null;
 
-                foreach (var paragraph in await item.Locator("css=div > p:not(.has-large-font-size)").AllAsync())
+                foreach (var paragraph in await item.Locator("css=.wp-block-media-text__content p:not(.has-large-font-size)").AllAsync())
                 {
                     var text = await paragraph.InnerTextAsync();
 
-                    // Jeudi 17 Avril 2025: 18h30-22h30 => OK [ "Jeudi", "17", "Avril", "2025" "18h30-22h30" ]
-                    // Mardi 21 Janvier 2024 : 18h30-22h30 => OK [ "Mardi", "21", "Janvier", "2024", ":", "18h30-22h30" ]
-                    // Jeudi 12 Décembre 2024 : 18h30-22h30 => OK
-                    // Les 20 et 21 Septembre 2024 => KO
+                    // Formats attendus (avec ou sans année) :
+                    // "Jeudi 17 Avril 2025: 18h30-22h30"  => OK [ "Jeudi", "17", "Avril", "2025", "18h30-22h30" ]
+                    // "Mardi 21 Janvier 2024 : 18h30-22h30" => OK [ "Mardi", "21", "Janvier", "2024", "18h30-22h30" ]
+                    // "Mardi 17 Mars : 18h30-22h30" (sans année) => OK [ "Mardi", "17", "Mars", "18h30-22h30" ]
+                    // "Les 20 et 21 Septembre 2024" => KO
                     var words = text.Trim().Split([' ', ':'], StringSplitOptions.RemoveEmptyEntries);
 
-                    // [ "Mardi", "21", "Janvier", "2024" ]
-                    var datePart = string.Join(' ', words.Take(4));
+                    bool parsedDate = false;
 
-                    if (DateTimeOffset.TryParseExact(datePart.ToLowerInvariant(), "dddd dd MMMM yyyy", FrenchLocales.FrenchCultureInfo, DateTimeStyles.AssumeLocal, out var dateOnly))
+                    // Essai avec année : "Mardi 17 Avril 2025" (4 mots)
+                    var datePart4 = string.Join(' ', words.Take(4));
+                    if (DateTimeOffset.TryParseExact(datePart4.ToLowerInvariant(), "dddd dd MMMM yyyy", FrenchLocales.FrenchCultureInfo, DateTimeStyles.AssumeLocal, out var dateWith4))
                     {
-                        // ex: 18h30-22h30 => [ "18", "30", "22", "30" ]
-                        var timeWord = words.Skip(5).FirstOrDefault() ?? "";
+                        // le mot suivant (index 4) contient l'horaire ex: 18h30-22h30
+                        var timeWord = words.Skip(4).FirstOrDefault() ?? "";
                         var timeMatch = DurationRegex().Match(timeWord);
                         if (timeMatch.Success)
                         {
-                            TimeSpan startTime = new(int.Parse(timeMatch.Groups[1].Value), int.Parse(timeMatch.Groups[2].Value), 0); // 18h30m00s
-                            TimeSpan endTime = new(int.Parse(timeMatch.Groups[3].Value), int.Parse(timeMatch.Groups[4].Value), 0); // 22h30m00s
-                            duration = endTime - startTime; // 4h
-                            date = new(dateOnly.Year, dateOnly.Month, dateOnly.Day, startTime.Hours, startTime.Minutes, 0, FrenchLocales.ParisTimeZone.GetUtcOffset(dateOnly));
+                            TimeSpan startTime = new(int.Parse(timeMatch.Groups[1].Value), int.Parse(timeMatch.Groups[2].Value), 0);
+                            TimeSpan endTime = new(int.Parse(timeMatch.Groups[3].Value), int.Parse(timeMatch.Groups[4].Value), 0);
+                            duration = endTime - startTime;
+                            date = new(dateWith4.Year, dateWith4.Month, dateWith4.Day, startTime.Hours, startTime.Minutes, 0, FrenchLocales.ParisTimeZone.GetUtcOffset(dateWith4));
+                        }
+                        parsedDate = true;
+                    }
+
+                    // Essai sans année : "Mardi 17 Mars" (3 mots) — inférer l'année courante
+                    if (!parsedDate)
+                    {
+                        var datePart3 = string.Join(' ', words.Take(3));
+                        if (DateTimeOffset.TryParseExact(datePart3.ToLowerInvariant(), "dddd dd MMMM", FrenchLocales.FrenchCultureInfo, DateTimeStyles.AssumeLocal, out var dateWith3))
+                        {
+                            // Inférer l'année : si la date est plus de 6 mois dans le passé, supposer l'année suivante.
+                            // Seuil de 6 mois pour tolérer les évènements récemment passés (ex : page TGD qui liste
+                            // encore les derniers mois) sans basculer trop tôt vers l'année suivante (ex : un évènement
+                            // de novembre/décembre scanné en janvier de l'année suivante reste correctement daté).
+                            int year = FrenchLocales.ParisNow.Year;
+                            var offset = FrenchLocales.ParisTimeZone.GetUtcOffset(FrenchLocales.ParisNow);
+                            var tentativeDate = new DateTimeOffset(year, dateWith3.Month, dateWith3.Day, 0, 0, 0, offset);
+                            if (tentativeDate < FrenchLocales.ParisNow.AddMonths(-6))
+                                year++;
+
+                            // le mot suivant (index 3) contient l'horaire ex: 18h30-22h30
+                            var timeWord = words.Skip(3).FirstOrDefault() ?? "";
+                            var timeMatch = DurationRegex().Match(timeWord);
+                            if (timeMatch.Success)
+                            {
+                                TimeSpan startTime = new(int.Parse(timeMatch.Groups[1].Value), int.Parse(timeMatch.Groups[2].Value), 0);
+                                TimeSpan endTime = new(int.Parse(timeMatch.Groups[3].Value), int.Parse(timeMatch.Groups[4].Value), 0);
+                                duration = endTime - startTime;
+                                date = new(year, dateWith3.Month, dateWith3.Day, startTime.Hours, startTime.Minutes, 0, offset);
+                            }
+                            parsedDate = true;
                         }
                     }
-                    else
+
+                    if (!parsedDate)
                     {
-                        destText.Add(text);
-                        var html = await paragraph.InnerHTMLAsync();
-                        descHtml.Add($"<p>{html}</p>");
+                        var trimmed = text.Trim();
+                        // Détection d'une ligne de lieu : ex. "Au LEVEL UP, 96 Bd Pierre et Marie Curie, Toulouse"
+                        // Indicateurs : début par "Au "/"À "/"Chez " ou présence d'un numéro de voirie
+                        if (venueName == null && VenueLineRegex().IsMatch(trimmed))
+                        {
+                            var commaIdx = trimmed.IndexOf(',');
+                            if (commaIdx > 0)
+                            {
+                                venueName = trimmed[..commaIdx].Trim();
+                                venueAddr = trimmed[(commaIdx + 1)..].Trim();
+                            }
+                            else
+                            {
+                                venueName = trimmed;
+                            }
+                            // La ligne de lieu fait aussi partie de la description
+                            var html = await paragraph.InnerHTMLAsync();
+                            descHtml.Add($"<p>{html}</p>");
+                        }
+                        else
+                        {
+                            var html = await paragraph.InnerHTMLAsync();
+                            descHtml.Add($"<p>{html}</p>");
+                        }
                     }
                 }
 
-                if (date != null)
+                if (date != null && (loadPast || date.Value > FrenchLocales.ParisNow))
                 {
                     yield return new()
                     {
@@ -854,6 +917,8 @@ partial class ToulouseGameDevGroup : IGroup
                         ImgSrc = img,
                         Start = date.Value,
                         Duration = duration,
+                        VenueName = venueName ?? DefaultVenueName,
+                        VenueAddr = venueAddr ?? DefaultVenueAddr,
                         HtmlDescription = string.Join('\n', descHtml)
                     };
                 }
@@ -867,6 +932,15 @@ partial class ToulouseGameDevGroup : IGroup
 
     [GeneratedRegex(@"(\d+)h(\d+)-(\d+)h(\d+)", RegexOptions.CultureInvariant | RegexOptions.IgnoreCase)]
     private static partial Regex DurationRegex();
+
+    /// <summary>
+    /// Détecte une ligne de lieu/adresse dans le texte de l'évènement.
+    /// Exemples reconnus : "Au LEVEL UP, 96 Bd Pierre et Marie Curie, Toulouse"
+    ///                     "27 rue d'Aubuisson, 31000 Toulouse"
+    /// Les deux alternatives sont ancrées en début de ligne pour éviter les faux positifs.
+    /// </summary>
+    [GeneratedRegex(@"^\s*(?:(Au |À |Chez )|\d+[\s,]+(rue|bd|boulevard|allée|av\.?|avenue|chemin|impasse|place|square)\b)", RegexOptions.IgnoreCase | RegexOptions.CultureInvariant)]
+    private static partial Regex VenueLineRegex();
 }
 
 sealed class Event : IComparable<Event>
