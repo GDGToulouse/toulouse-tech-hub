@@ -90,9 +90,14 @@ timeFr: '{time}'
 place: "{event-location}"
 placeAddr: "{event-address}"
 link: {event-link}
-img: {event-image}
 ---
 {description-as-html}
+```
+
+Si une image est fournie dans l'issue, ajouter une ligne `img` dans le front matter :
+
+```yaml
+img: {event-image}
 ```
 
 **Notes importantes :**
@@ -105,7 +110,7 @@ img: {event-image}
 
 ### 5. Télécharger l'image de l'événement
 
-> ⚠️ **Obligatoire :** Le site charge les images depuis un fichier local dans `event-imgs/`, pas depuis l'URL `img:`. Sans l'image locale, la miniature sera cassée dans le feed Atom (aucun fallback dans le feed).
+> ⚠️ **Obligatoire :** Le site utilise en priorité une image locale dans `event-imgs/`. Le feed Atom et l’outil orgas (`orgas.html`) ne disposent d’aucun fallback : sans ce fichier local, la miniature sera cassée dans ces vues. Sur la page HTML principale, les cartes d’événements peuvent tomber en repli sur l’URL distante `img:`, mais il ne faut pas compter sur ce fallback : l’image locale reste requise.
 
 Le nom du fichier image suit la convention : `event-imgs/{YYYY-MM-DD}-{groupId}-{eventId}.webp`
 
