@@ -856,10 +856,18 @@ partial class ToulouseGameDevGroup : IGroup
                             // encore les derniers mois) sans basculer trop tôt vers l'année suivante (ex : un évènement
                             // de novembre/décembre scanné en janvier de l'année suivante reste correctement daté).
                             int year = FrenchLocales.ParisNow.Year;
-                            var offset = FrenchLocales.ParisTimeZone.GetUtcOffset(FrenchLocales.ParisNow);
-                            var tentativeDate = new DateTimeOffset(year, dateWith3.Month, dateWith3.Day, 0, 0, 0, offset);
-                            if (tentativeDate < FrenchLocales.ParisNow.AddMonths(-6))
+                            int month = dateWith3.Month;
+                            int day = dateWith3.Day;
+
+                            // Comparaison pour l'heuristique d'année en date locale (sans dépendre du décalage de "now").
+                            var tentativeLocalDate = new DateTime(year, month, day);
+                            if (tentativeLocalDate < FrenchLocales.ParisNow.AddMonths(-6).Date)
                                 year++;
+
+                            // Maintenant que l'année est inférée, calculer le décalage UTC sur la date de l'évènement.
+                            var eventDateForOffset = new DateTimeOffset(year, month, day, 0, 0, 0, TimeSpan.Zero);
+                            var offset = FrenchLocales.ParisTimeZone.GetUtcOffset(eventDateForOffset);
+                            var tentativeDate = new DateTimeOffset(year, month, day, 0, 0, 0, offset);
 
                             // le mot suivant (index 3) contient l'horaire ex: 18h30-22h30
                             var timeWord = words.Skip(3).FirstOrDefault() ?? "";
@@ -869,7 +877,7 @@ partial class ToulouseGameDevGroup : IGroup
                                 TimeSpan startTime = new(int.Parse(timeMatch.Groups[1].Value), int.Parse(timeMatch.Groups[2].Value), 0);
                                 TimeSpan endTime = new(int.Parse(timeMatch.Groups[3].Value), int.Parse(timeMatch.Groups[4].Value), 0);
                                 duration = endTime - startTime;
-                                date = new(year, dateWith3.Month, dateWith3.Day, startTime.Hours, startTime.Minutes, 0, offset);
+                                date = new(year, month, day, startTime.Hours, startTime.Minutes, 0, offset);
                             }
                             parsedDate = true;
                         }
