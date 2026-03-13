@@ -38,27 +38,26 @@ var utf8CustomEncoder = Encoding.GetEncoding("UTF-8", new EncoderReplacementFall
 // liste des groupes connus
 var groups = new IGroup[] {
     new ToulouseGameDevGroup(),
-    new MeetupGroup("gdg-toulouse", "gdg"),
-    new MeetupGroup("toulouse-java-user-group", "jug"),
-    new MeetupGroup("toulouse-ruby-friends", "ruby"),
-    new MeetupGroup("python-toulouse", "python"),
-    new MeetupGroup("tlse-data-science", "tds"),
+    new MeetupGroup("afup-toulouse", "afup-toulouse"),
     new MeetupGroup("agile-toulouse", "agile"),
-    new MeetupGroup("mtg-toulouse", "mtg"),
-    new MeetupGroup("meetup-visualisation-des-donnees-toulouse", "dataviz"),
-    new MeetupGroup("ateliers-cpp-toulouse", "cpp"),
+    new MeetupGroup("artilect-fablab", "artilect"),
     new MeetupGroup("toulouse-amazon-web-services", "aws"),
-    new MeetupGroup("swift-toulouse", "swift"),
-    new MeetupGroup("tech-a-break", "tech-a-break"),
+    new MeetupGroup("ateliers-cpp-toulouse", "cpp"),
+    new MeetupGroup("meetup-visualisation-des-donnees-toulouse", "dataviz"),
     new MeetupGroup("toulouse-devops", "devops"),
     new MeetupGroup("devops-cloud-toulouse", "devops-cloud"),
+    new MeetupGroup("gdg-toulouse", "gdg"),
     new MeetupGroup("javascript-and-co", "js-and-co"),
-    new MeetupGroup("latoulboxducloudnatif", "toulbox"),
-    new MeetupGroup("artilect-fablab", "artilect"),
-    new MeetupGroup("postgres-toulouse", "postgres"),
-    new MeetupGroup("rust-community-toulouse", "rust"),
+    new MeetupGroup("toulouse-java-user-group", "jug"),
+    new MeetupGroup("mtg-toulouse", "mtg"),
     new MeetupGroup("mug-toulouse-mobile-user-group", "mug-toulouse"),
-    new MeetupGroup("afup-toulouse", "afup-toulouse")
+    new MeetupGroup("postgres-toulouse", "postgres"),
+    new MeetupGroup("python-toulouse", "python"),
+    new MeetupGroup("rust-community-toulouse", "rust"),
+    new MeetupGroup("swift-toulouse", "swift"),
+    new MeetupGroup("tlse-data-science", "tds"),
+    new MeetupGroup("tech-a-break", "tech-a-break"),
+    new MeetupGroup("latoulboxducloudnatif", "toulbox")
     //new LinkedInGroup("embedded-meetup-toulouse", "embedded") non fonctionnel car pages non visibles sans compte
 };
 
