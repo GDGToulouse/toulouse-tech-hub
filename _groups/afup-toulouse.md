@@ -1,7 +1,6 @@
 ---
 name: AFUP Toulouse
 link: https://www.meetup.com/afup-toulouse
-img: none
 social:
   - icon: bi-linkedin
     url: https://www.linkedin.com/company/afup-toulouse/

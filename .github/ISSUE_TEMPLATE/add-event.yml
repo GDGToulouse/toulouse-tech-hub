@@ -24,6 +24,7 @@ body:
       label: Communauté organisatrice
       description: Si votre communauté n'est pas dans la liste, créez d'abord une issue "Ajouter une communauté"
       options:
+        - AFUP Toulouse
         - Agile Toulouse
         - AI-ficionados
         - Artilect FabLab

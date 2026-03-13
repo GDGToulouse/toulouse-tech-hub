@@ -57,7 +57,8 @@ var groups = new IGroup[] {
     new MeetupGroup("artilect-fablab", "artilect"),
     new MeetupGroup("postgres-toulouse", "postgres"),
     new MeetupGroup("rust-community-toulouse", "rust"),
-    new MeetupGroup("mug-toulouse-mobile-user-group", "mug-toulouse")
+    new MeetupGroup("mug-toulouse-mobile-user-group", "mug-toulouse"),
+    new MeetupGroup("afup-toulouse", "afup-toulouse")
     //new LinkedInGroup("embedded-meetup-toulouse", "embedded") non fonctionnel car pages non visibles sans compte
 };
 

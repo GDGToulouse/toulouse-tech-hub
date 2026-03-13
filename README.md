@@ -24,6 +24,7 @@ Ce site liste tous les événements tech à venir organisés par les communauté
 ## 🎯 Communautés suivies
 
 
+- [AFUP Toulouse](https://www.meetup.com/afup-toulouse)
 - [Agile Toulouse](https://www.agiletoulouse.fr/)
 - [AI-ficionados](https://aificionados.com/)
 - [Artilect FabLab](https://www.meetup.com/artilect-fablab/)
