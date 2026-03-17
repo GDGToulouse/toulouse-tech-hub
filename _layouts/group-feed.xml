@@ -1,0 +1,4 @@
+---
+layout: null
+---
+{% include group-feed.xml group_slug=page.group_slug %}
