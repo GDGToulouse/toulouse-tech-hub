@@ -84,6 +84,18 @@ a.muted {
     position: relative;
 }
 
+.community-card-main-link {
+    position: absolute;
+    inset: 0;
+    z-index: 3;
+    border-radius: 12px;
+}
+
+.community-card-main-link:focus-visible {
+    outline: 3px solid rgba(255,255,255,0.9);
+    outline-offset: -4px;
+}
+
 .community-card-with-img {
     background-size: cover !important;
     background-repeat: no-repeat !important;
@@ -152,6 +164,8 @@ a.muted {
 .community-card-links {
     display: flex;
     gap: 12px;
+    position: relative;
+    z-index: 4;
 }
 
 .community-card-links a {
@@ -215,6 +229,48 @@ a.muted {
 
 .community-default {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+/* Group detail page */
+.group-hero {
+    border-radius: 16px;
+    overflow: hidden;
+    border: 6px solid #ffffff;
+    box-shadow: inset 0 0 0 1px rgba(255,255,255,0.68), 0 8px 16px rgba(0,0,0,0.22);
+}
+
+.group-title {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.group-description {
+    font-size: 1rem;
+    line-height: 1.65;
+}
+
+.group-social-links {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.group-social-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: white;
+    text-decoration: none;
+    background: linear-gradient(135deg, rgba(255,137,74,1) 0%, rgba(38,166,154,1) 100%);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.group-social-links a:hover {
+    color: white;
+    transform: translateY(-2px);
 }
 
 /* Calendar Styles */
