@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ page.name }} - Toulouse Tech Hub</title>
     <script type="text/javascript">
-      function copyToClipboard(name) {
+      function copyToClipboard(name, btn) {
         var elt = document.getElementById(name);
         if(!elt) return;
         var url = elt.getAttribute('data-url');
         navigator.clipboard.writeText(url);
-        var tooltip = bootstrap.Tooltip.getOrCreateInstance(elt, { title: 'URL copiée !', trigger: 'manual'});
+        var anchor = btn || elt;
+        var tooltip = bootstrap.Tooltip.getOrCreateInstance(anchor, { title: 'URL copiée !', trigger: 'manual'});
         tooltip.show();
         setTimeout(function() { tooltip.hide()}, 3000);
       }
@@ -72,10 +73,10 @@
                         <i class="bi bi-box-arrow-up-right me-2"></i>Site officiel
                     </a>
                     {% endif %}
-                    <button class="btn btn-outline-secondary" type="button" title="Copier l'URL du calendrier iCal" onclick="copyToClipboard('{{ group_ics_input_id }}')">
+                    <button class="btn btn-outline-secondary" type="button" title="Copier l'URL du calendrier iCal" onclick="copyToClipboard('{{ group_ics_input_id }}', this)">
                         <i class="bi bi-calendar2-week me-1"></i>iCal
                     </button>
-                    <button class="btn btn-outline-secondary" type="button" title="Copier l'URL du flux RSS/Atom" onclick="copyToClipboard('{{ group_rss_input_id }}')">
+                    <button class="btn btn-outline-secondary" type="button" title="Copier l'URL du flux RSS/Atom" onclick="copyToClipboard('{{ group_rss_input_id }}', this)">
                         <i class="bi bi-rss me-1"></i>RSS
                     </button>
                 </div>
