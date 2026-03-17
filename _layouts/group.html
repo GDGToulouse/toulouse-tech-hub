@@ -59,9 +59,12 @@
                 {% endif %}
             </div>
             <div class="col-lg-6">
-                {% assign group_ics_path = page.url | append: "calendar.ics" %}
-                {% assign group_ics_url = site.site | append: site.baseurl | append: group_ics_path %}
+                {% assign group_ics_url = site.site | append: site.baseurl | append: page.url | append: "calendar.ics" %}
+                {% assign group_rss_url = site.site | append: site.baseurl | append: "/groups/" | append: page.slug | append: "/feed.xml" %}
                 {% assign group_ics_input_id = "icsInput-" | append: page.slug %}
+                {% assign group_rss_input_id = "rssInput-" | append: page.slug %}
+                <span hidden id="{{ group_ics_input_id }}" data-url="{{ group_ics_url }}"></span>
+                <span hidden id="{{ group_rss_input_id }}" data-url="{{ group_rss_url }}"></span>
                 <h1 class="group-title mb-3">{{ page.name }}</h1>
                 <div class="d-flex flex-wrap gap-2 align-items-center mb-3">
                     {% if page.link %}
@@ -69,18 +72,12 @@
                         <i class="bi bi-box-arrow-up-right me-2"></i>Site officiel
                     </a>
                     {% endif %}
-                    <div class="input-group" style="max-width:420px">
-                        <span class="input-group-text"><i class="bi bi-calendar2-week"></i>&nbsp;iCal</span>
-                        <input id="{{ group_ics_input_id }}" type="text" value="{{ group_ics_url }}" data-url="{{ group_ics_url }}" readonly class="form-control" style="background-color:#fff" onfocus="this.select()">
-                        <button class="btn btn-outline-secondary" type="button" title="Copier l'URL dans le presse-papier" onclick="copyToClipboard('{{ group_ics_input_id }}')"><i class="bi bi-clipboard-check"></i></button>
-                    </div>
-                    {% assign group_rss_url = site.site | append: site.baseurl | append: "/groups/" | append: page.slug | append: "/feed.xml" %}
-                    {% assign group_rss_input_id = "rssInput-" | append: page.slug %}
-                    <div class="input-group" style="max-width:420px">
-                        <span class="input-group-text"><i class="bi bi-rss"></i>&nbsp;RSS</span>
-                        <input id="{{ group_rss_input_id }}" type="text" value="{{ group_rss_url }}" data-url="{{ group_rss_url }}" readonly class="form-control" style="background-color:#fff" onfocus="this.select()">
-                        <button class="btn btn-outline-secondary" type="button" title="Copier l'URL dans le presse-papier" onclick="copyToClipboard('{{ group_rss_input_id }}')"><i class="bi bi-clipboard-check"></i></button>
-                    </div>
+                    <button class="btn btn-outline-secondary" type="button" title="Copier l'URL du calendrier iCal" onclick="copyToClipboard('{{ group_ics_input_id }}')">
+                        <i class="bi bi-calendar2-week me-1"></i>iCal
+                    </button>
+                    <button class="btn btn-outline-secondary" type="button" title="Copier l'URL du flux RSS/Atom" onclick="copyToClipboard('{{ group_rss_input_id }}')">
+                        <i class="bi bi-rss me-1"></i>RSS
+                    </button>
                 </div>
                 {% if page.social %}
                 <div class="group-social-links mb-3">
