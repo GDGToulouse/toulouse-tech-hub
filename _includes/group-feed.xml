@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+{%- assign now_time = site.time | date: "%s" | plus: 0 -%}
+{%- assign current_group = site.groups | where: "slug", include.group_slug | first -%}
+{%- assign group_name = current_group.name | default: include.group_slug -%}
+{%- assign feed_url = site.site | append: site.baseurl | append: "/groups/" | append: include.group_slug | append: "/feed.xml" -%}
+<feed xmlns:media="http://search.yahoo.com/mrss/" xmlns="http://www.w3.org/2005/Atom">
+  <title>{{ group_name | replace: "&", "&amp;" }} - Toulouse Tech Hub</title>
+  <subtitle>Prochains évènements de {{ group_name | replace: "&", "&amp;" }} à Toulouse</subtitle>
+  <author><name>Toulouse Tech Hub</name></author>
+  <link rel="self" href="{{ feed_url }}" />
+  <link rel="alternate" href="{{ site.site }}{{ site.baseurl }}/groups/{{ include.group_slug }}/" />
+  <id>urn:toulouse-tech-hub:group:{{ include.group_slug }}</id>
+  <updated>{{ site.time | date: "%Y-%m-%dT%T" }}+01:00</updated>
+{%- for event in site.events reversed -%}
+{%- if event.groupId != include.group_slug -%}{%- continue -%}{%- endif -%}
+{%- assign event_time = event.datePublished | date: "%s" | plus: 0 -%}
+{%- if event_time > now_time -%}{%- continue -%}{%- endif -%}
+{%- assign tz = event.dateIso | date: "%z" -%}
+{%- assign date_part = event.dateIso | date: "%Y-%m-%d" -%}
+{%- capture image_path %}event-imgs/{{ date_part }}-{{ event.groupId }}-{{ event.eventId }}.webp{% endcapture -%}
+  <entry>
+    <id>urn:{{ event.eventId }}</id>
+    <published>{{ event.datePublished | date: "%Y-%m-%dT%T" }}{{ tz | slice: 0, 3 }}:00</published>
+    <title>{{ event.dateFr }} à {{ event.timeFr }} : {{ event.title | replace: "&", "&amp;" | replace: "<", "&lt;" }}</title>
+    <link rel="alternate" href="{{ event.link }}" />
+    <author><name>{{ event.community | replace: "&", "&amp;" | replace: "<", "&lt;" }}</name></author>
+    <media:thumbnail url="{{ site.site }}{{ site.baseurl }}/{{ image_path }}" />
+    <link rel="enclosure" type="image/webp" href="{{ site.site }}{{ site.baseurl }}/{{ image_path }}" />
+    <content type="html">{{ event.content | replace: "&", "&amp;" | replace: "<", "&lt;" | replace: ">", "&gt;" }}</content>
+  </entry>
+{%- endfor %}
+</feed>
