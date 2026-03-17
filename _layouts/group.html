@@ -49,11 +49,13 @@
     </nav>
 
     <main class="container py-4">
-        <div class="row g-4 align-items-center mt-2">
+        <div class="row g-4 align-items-start mt-2">
             <div class="col-lg-6">
-                {% unless page.img == "none" %}
-                <img src="{{ site.baseurl }}/groups-imgs/{{ page.slug }}.jpg" class="img-fluid group-hero" alt="Logo {{ page.name }}">
-                {% endunless %}
+                {% if page.img == "none" %}
+                <div class="group-hero community-default community-{{ page.slug }}" style="aspect-ratio: 16/9; width: 100%;"></div>
+                {% else %}
+                <img src="{{ site.baseurl }}/groups-imgs/{{ page.slug }}.jpg" class="img-fluid group-hero" alt="Logo {{ page.name }}" style="aspect-ratio: 16/9; object-fit: cover; width: 100%;" onerror="this.onerror=null; this.outerHTML='<div class=\'group-hero community-default community-{{ page.slug }}\' style=\'aspect-ratio:16/9;width:100%\'></div>';">
+                {% endif %}
             </div>
             <div class="col-lg-6">
                 {% assign group_ics_path = page.url | append: "calendar.ics" %}
@@ -73,7 +75,7 @@
                     </div>
                 </div>
                 {% if page.social %}
-                <div class="group-social-links">
+                <div class="group-social-links mb-3">
                     {% for social in page.social %}
                     <a href="{{ social.url }}" title="{{ social.title | escape }}" target="_blank" rel="noopener noreferrer">
                         <i class="bi {{ social.icon }}"></i>
@@ -81,12 +83,7 @@
                     {% endfor %}
                 </div>
                 {% endif %}
-            </div>
-        </div>
-
-        <section class="mt-4 mb-3">
-            <div class="card shadow-sm border-0">
-                <div class="card-body p-4 group-description">
+                <div class="group-description">
                     {% assign stripped_content = content | strip %}
                     {% if stripped_content != "" %}
                     {{ content }}
@@ -95,9 +92,9 @@
                     {% endif %}
                 </div>
             </div>
-        </section>
+        </div>
 
-        <p class="mb-4">
+        <p class="mt-4 mb-4">
             <a href="{{ site.baseurl }}/#communautes" class="muted">⬅️ Retour aux communautés</a>
         </p>
     </main>
