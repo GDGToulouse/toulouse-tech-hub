@@ -45,6 +45,8 @@
                 {% endunless %}
             </div>
             <div class="col-lg-6">
+                {% assign group_ics_path = page.url | append: "calendar.ics" %}
+                {% assign group_ics_url = site.site | append: site.baseurl | append: group_ics_path %}
                 <h1 class="group-title mb-3">{{ page.name }}</h1>
                 {% if page.link %}
                 <p class="mb-3">
@@ -54,9 +56,12 @@
                 </p>
                 {% endif %}
                 <p class="mb-3">
-                    <a class="btn btn-outline-secondary{% if page.link %} ms-2{% endif %}" href="{{ page.url | relative_url }}calendar.ics">
+                    <a class="btn btn-outline-secondary{% if page.link %} ms-2{% endif %}" href="{{ group_ics_path | relative_url }}">
                         <i class="bi bi-calendar-event me-2"></i>Calendrier iCal
                     </a>
+                </p>
+                <p class="mb-3 text-muted small">
+                    URL iCal directe: <a href="{{ group_ics_path | relative_url }}">{{ group_ics_url }}</a>
                 </p>
                 {% if page.social %}
                 <div class="group-social-links">
