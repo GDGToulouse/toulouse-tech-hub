@@ -23,6 +23,7 @@
     <meta property="og:title" content="{{ page.name }} - Toulouse Tech Hub" />
     <meta property="og:image" content="{{ site.site }}{{ site.baseurl }}/groups-imgs/{{ page.slug }}.jpg" />
     <meta property="og:link" content="{{ site.site }}{{ site.baseurl }}{{ page.url }}" />
+    <link rel="alternate" type="application/atom+xml" href="{{ site.site }}{{ site.baseurl }}/groups/{{ page.slug }}/feed.xml" />
 </head>
 
 <body>
@@ -72,6 +73,13 @@
                         <span class="input-group-text"><i class="bi bi-calendar2-week"></i>&nbsp;iCal</span>
                         <input id="{{ group_ics_input_id }}" type="text" value="{{ group_ics_url }}" data-url="{{ group_ics_url }}" readonly class="form-control" style="background-color:#fff" onfocus="this.select()">
                         <button class="btn btn-outline-secondary" type="button" title="Copier l'URL dans le presse-papier" onclick="copyToClipboard('{{ group_ics_input_id }}')"><i class="bi bi-clipboard-check"></i></button>
+                    </div>
+                    {% assign group_rss_url = site.site | append: site.baseurl | append: "/groups/" | append: page.slug | append: "/feed.xml" %}
+                    {% assign group_rss_input_id = "rssInput-" | append: page.slug %}
+                    <div class="input-group" style="max-width:420px">
+                        <span class="input-group-text"><i class="bi bi-rss"></i>&nbsp;RSS</span>
+                        <input id="{{ group_rss_input_id }}" type="text" value="{{ group_rss_url }}" data-url="{{ group_rss_url }}" readonly class="form-control" style="background-color:#fff" onfocus="this.select()">
+                        <button class="btn btn-outline-secondary" type="button" title="Copier l'URL dans le presse-papier" onclick="copyToClipboard('{{ group_rss_input_id }}')"><i class="bi bi-clipboard-check"></i></button>
                     </div>
                 </div>
                 {% if page.social %}
