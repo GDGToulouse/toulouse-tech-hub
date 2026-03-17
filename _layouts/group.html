@@ -53,6 +53,11 @@
                     </a>
                 </p>
                 {% endif %}
+                <p class="mb-3">
+                    <a class="btn btn-outline-secondary{% if page.link %} ms-2{% endif %}" href="{{ page.url | relative_url }}calendar.ics">
+                        <i class="bi bi-calendar-event me-2"></i>Calendrier iCal
+                    </a>
+                </p>
                 {% if page.social %}
                 <div class="group-social-links">
                     {% for social in page.social %}
