@@ -5,6 +5,17 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ page.name }} - Toulouse Tech Hub</title>
+    <script type="text/javascript">
+      function copyToClipboard(name) {
+        var elt = document.getElementById(name);
+        if(!elt) return;
+        var url = elt.getAttribute('data-url');
+        navigator.clipboard.writeText(url);
+        var tooltip = bootstrap.Tooltip.getOrCreateInstance(elt, { title: 'URL copiée !', trigger: 'manual'});
+        tooltip.show();
+        setTimeout(function() { tooltip.hide()}, 3000);
+      }
+    </script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
@@ -47,6 +58,7 @@
             <div class="col-lg-6">
                 {% assign group_ics_path = page.url | append: "calendar.ics" %}
                 {% assign group_ics_url = site.site | append: site.baseurl | append: group_ics_path %}
+                {% assign group_ics_input_id = "icsInput-" | append: page.slug %}
                 <h1 class="group-title mb-3">{{ page.name }}</h1>
                 {% if page.link %}
                 <p class="mb-3">
@@ -55,14 +67,11 @@
                     </a>
                 </p>
                 {% endif %}
-                <p class="mb-3">
-                    <a class="btn btn-outline-secondary{% if page.link %} ms-2{% endif %}" href="{{ group_ics_path | relative_url }}">
-                        <i class="bi bi-calendar-event me-2"></i>Calendrier iCal
-                    </a>
-                </p>
-                <p class="mb-3 text-muted small">
-                    URL iCal directe: <a href="{{ group_ics_path | relative_url }}">{{ group_ics_url }}</a>
-                </p>
+                <div class="input-group mb-3" style="max-width:520px">
+                    <span class="input-group-text"><i class="bi bi-calendar-event"></i></span>
+                    <input id="{{ group_ics_input_id }}" type="text" value="{{ group_ics_url }}" data-url="{{ group_ics_url }}" readonly class="form-control" style="background-color:#fff" onfocus="this.select()">
+                    <button class="btn btn-outline-secondary" type="button" title="Copier l'URL dans le presse-papier" onclick="copyToClipboard('{{ group_ics_input_id }}')"><i class="bi bi-clipboard-check"></i></button>
+                </div>
                 {% if page.social %}
                 <div class="group-social-links">
                     {% for social in page.social %}
