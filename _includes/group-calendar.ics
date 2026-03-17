@@ -1,0 +1,44 @@
+{% assign now_time = site.time | date: "%s" | plus: 0 -%}
+{% assign current_group = site.groups | where: "slug", include.group_slug | first -%}
+BEGIN:VCALENDAR
+PRODID:-//toulouse-tech-hub.fr//{{ include.group_slug }} calendar//FR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Toulouse Tech Hub - {{ current_group.name | default: include.group_slug }}
+X-WR-TIMEZONE:Europe/Paris
+{% for event in site.events reversed -%}
+{% assign event_time = event.dateIso | date: "%s" | plus: 0 -%}
+{% if event.groupId != include.group_slug or event_time < now_time -%}
+{% continue -%}
+{% endif -%}
+BEGIN:VEVENT
+DTSTAMP:{{ site.time | date: "%Y%m%dT%H%M%SZ" }}
+DTSTART;TZID=Europe/Paris:{{ event.dateIso | date: "%Y%m%d" }}T{{ event.dateIso | date: "%H%M" }}00
+DTEND;TZID=Europe/Paris:{% if event.dateIsoEnd %}{{ event.dateIsoEnd | date: "%Y%m%d" }}T{{ event.dateIsoEnd | date: "%H%M" }}00{% else %}{{ event.dateIso | date: "%Y%m%d" }}T{{ event.dateIso | date: "%s" | plus: 7200 | date: "%H%M" }}00{% endif %}
+SEQUENCE:0
+SUMMARY:{{ event.title | strip | replace: "\n", " " | replace: ",", "\\," | replace: ";", "\\;" }}
+UID:{{ event.eventId }}@toulouse-tech-hub.fr
+URL:{{ event.link }}
+DESCRIPTION:{{ event.community | strip | replace: "\n", " " }} - {{ event.link }}
+END:VEVENT
+{% endfor -%}
+BEGIN:VTIMEZONE
+TZID:Europe/Paris
+X-LIC-LOCATION:Europe/Paris
+BEGIN:STANDARD
+DTSTART:20231029T030000
+RRULE:FREQ=YEARLY;BYDAY=-1SU;BYMONTH=10
+TZNAME:CET
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:20240331T020000
+RRULE:FREQ=YEARLY;BYDAY=-1SU;BYMONTH=3
+TZNAME:CEST
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+END:DAYLIGHT
+END:VTIMEZONE
+END:VCALENDAR
