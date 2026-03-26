@@ -1,5 +1,6 @@
 ---
 name: DevFest Toulouse
+date: 2026-11-19
 link: https://devfesttoulouse.fr/
 social:
   - icon: bi-globe
