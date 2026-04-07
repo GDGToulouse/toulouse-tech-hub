@@ -1,6 +1,6 @@
 ---
 name: "Tech Speak'her"
-link: https://www.linkedin.com/company/tech-speak-her
+link: https://techspeakher.fr/
 social:
   - icon: bi-linkedin
     url: https://www.linkedin.com/company/tech-speak-her
