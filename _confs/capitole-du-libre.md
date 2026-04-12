@@ -1,5 +1,7 @@
 ---
 name: Le Capitole du Libre
+date: 2026-11-14
+end: 2026-11-15
 link: https://capitoledulibre.org/
 social:
   - icon: bi-globe
