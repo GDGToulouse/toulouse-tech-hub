@@ -49,6 +49,7 @@ Ce site liste tous les événements tech à venir organisés par les communauté
 - [Toulouse DevOps](https://www.meetup.com/toulouse-devops/)
 - [Toulouse Game Dev](https://toulousegamedev.fr/)
 - [Toulouse Ruby and Friends](https://www.meetup.com/toulouse-ruby-friends/)
+- [WordPress Toulouse](https://www.meetup.com/wptoulouse/)
 
 Il existe une page pour les organisateurs, permettant de gérer une image à inclure dans vos diapos de meetup pour faire la pub pour les prochains évènements : <https://toulouse-tech-hub.fr/orgas.html>
 

@@ -57,7 +57,8 @@ var groups = new IGroup[] {
     new MeetupGroup("swift-toulouse", "swift"),
     new MeetupGroup("tlse-data-science", "tds"),
     new MeetupGroup("tech-a-break", "tech-a-break"),
-    new MeetupGroup("latoulboxducloudnatif", "toulbox")
+    new MeetupGroup("latoulboxducloudnatif", "toulbox"),
+    new MeetupGroup("wptoulouse", "wordpress-toulouse")
     //new LinkedInGroup("embedded-meetup-toulouse", "embedded") non fonctionnel car pages non visibles sans compte
 };
 

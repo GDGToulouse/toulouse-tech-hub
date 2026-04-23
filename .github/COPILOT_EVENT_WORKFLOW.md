@@ -49,6 +49,7 @@ Mapper le nom de communauté vers son slug en consultant `_groups/` :
 | Toulouse DevOps | devops |
 | Toulouse Game Dev | tgd |
 | Toulouse Ruby and Friends | ruby |
+| WordPress Toulouse | wordpress-toulouse |
 
 ### 2. Générer l'eventId
 
