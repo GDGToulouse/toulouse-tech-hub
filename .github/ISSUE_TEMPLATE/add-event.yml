@@ -49,6 +49,7 @@ body:
         - Toulouse DevOps
         - Toulouse Game Dev
         - Toulouse Ruby and Friends
+        - WordPress Toulouse
         - Autre (préciser en description)
     validations:
       required: true
