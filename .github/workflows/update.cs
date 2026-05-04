@@ -20,12 +20,13 @@ Console.OutputEncoding = Encoding.UTF8;
 AppContext.SetSwitch("System.Text.Json.Serialization.EnableReflectionSerializer", true);
 
 // execution options
-var loadEvents = args.All(a => a != "--no-load"); // load next events
+var loadEvents = args.All(a => a != "--no-load");       // load next events
 var loadPastEvents = args.Any(a => a == "--load-past"); // load past events
+Options.Verbose = args.Any(a => a == "--verbose");      // debug
 var groupFilter = args.FirstOrDefault(a => !a.StartsWith("--"));
-MeetupGroup.loadTimeoutMs = 5 * 1000; // timeout waiting for network idling when loading meetup pages
-MeetupGroup.loadStateType = LoadState.NetworkIdle; // type of timeout, unreliable on meetup
-MeetupGroup.loadTimeoutScreenshots = false; // take screenshot in case of timeouts
+MeetupGroup.loadTimeoutMs = 5 * 1000;                   // timeout waiting for network idling when loading meetup pages
+MeetupGroup.loadStateType = LoadState.NetworkIdle;      // type of timeout, unreliable on meetup
+MeetupGroup.loadTimeoutScreenshots = false;             // take screenshot in case of timeouts
 
 // sets to french culture
 var french = CultureInfo.GetCultureInfo("fr-FR");
@@ -617,12 +618,18 @@ partial class MeetupGroup : IGroup
         Console.WriteLine($"🔹🤖 Date/heure = {time} (raw {timeAttr}, regex? {regexMatch})");
 
         // try find image
-        var imgs = item.Locator($"img.aspect-video.w-full");
+        var imgs = item.Locator($"img.size-full.object-cover.object-center");
         string? img = null;
         if (await imgs.CountAsync() != 0)
         {
             img = await imgs.GetAttributeAsync("src");
+            Console.WriteLine($"🔹🤖 Img = {img}");
         }
+        else if (Options.Verbose)
+        {
+            Console.WriteLine(await item.InnerHTMLAsync());
+        }
+
 
         return new()
         {
@@ -1021,4 +1028,9 @@ static class FrenchLocales
     public static readonly TimeZoneInfo ParisTimeZone = TimeZoneInfo.FromSerializedString("Romance Standard Time;60;(UTC+01:00) Brussels, Copenhagen, Madrid, Paris;Romance Standard Time;Romance Daylight Time;[01:01:0001;12:31:9999;60;[0;02:00:00;3;5;0;];[0;03:00:00;10;5;0;];];");
 
     public static DateTimeOffset ParisNow => TimeZoneInfo.ConvertTime(DateTimeOffset.UtcNow, ParisTimeZone);
+}
+
+static class Options
+{
+    public static bool Verbose = false;
 }
