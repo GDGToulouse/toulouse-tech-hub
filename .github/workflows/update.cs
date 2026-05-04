@@ -617,7 +617,7 @@ partial class MeetupGroup : IGroup
         Console.WriteLine($"🔹🤖 Date/heure = {time} (raw {timeAttr}, regex? {regexMatch})");
 
         // try find image
-        var imgs = item.Locator($"img[fetchpriority='high']");
+        var imgs = item.Locator($"img.aspect-video.w-full");
         string? img = null;
         if (await imgs.CountAsync() != 0)
         {
