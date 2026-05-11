@@ -1,7 +1,6 @@
 ---
 name: Agile Tour Toulouse
-date: 2026-06-25
-end: 2026-06-26
+date: 2027 TBA
 link: https://tour.agiletoulouse.fr/
 social:
   - icon: bi-globe
