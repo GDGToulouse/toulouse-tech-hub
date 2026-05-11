@@ -17,6 +17,9 @@
 
 Ce site liste tous les événements tech à venir organisés par les communautés toulousaines, en un seul endroit.
 
+Il s'agit d'une initiative bénévole centrée sur les communautés et les initiatives gratuites.
+Seuls les évènements gratuits et à but non commercial (hors sponsoring) sont relayés.
+
 **Comment ça marche ?** Les événements Meetup sont automatiquement synchronisés plusieurs fois par jour. Les événements sur d'autres plateformes peuvent être ajoutés manuellement via une simple issue GitHub.
 
 **Pour les organisateurs :** Une [page dédiée](https://toulouse-tech-hub.fr/orgas.html) permet de générer facilement une image avec les prochains événements, parfaite pour vos slides de présentation !
@@ -58,8 +61,8 @@ Il existe une page pour les organisateurs, permettant de gérer une image à inc
 Voici comment interagir avec le projet :
 
 - **Ajouter une communauté** : [Créer une issue](https://github.com/GDGToulouse/toulouse-tech-hub/issues/new?template=add-community.yml) - Les événements Meetup se synchronisent automatiquement !
-- **Ajouter une conférence** : [Créer une issue](https://github.com/GDGToulouse/toulouse-tech-hub/issues/new?template=add-conference.yml)
-- **Ajouter un événement** : [Créer une issue](https://github.com/GDGToulouse/toulouse-tech-hub/issues/new?template=add-event.yml)
+- **Ajouter une conférence** : [Créer une issue](https://github.com/GDGToulouse/toulouse-tech-hub/issues/new?template=add-conference.yml) - Si vous organisez un évènement d'une journée avec plusieurs intervenants, organisé par des bénévoles ou une association.
+- **Ajouter un événement** : [Créer une issue](https://github.com/GDGToulouse/toulouse-tech-hub/issues/new?template=add-event.yml) - Si votre évènenement est gratuit et à but non commercial (hors sponsoring).
 - **Signaler un bug** : [Créer une issue](https://github.com/GDGToulouse/toulouse-tech-hub/issues/new?template=bug-report.yml)
 - **Proposer une amélioration** : [Créer une issue](https://github.com/GDGToulouse/toulouse-tech-hub/issues/new?template=feature-request.yml)
 
