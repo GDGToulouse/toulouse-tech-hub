@@ -1,6 +1,5 @@
 ---
 name: Agile Tour Toulouse
-date: 2027 TBA
 link: https://tour.agiletoulouse.fr/
 social:
   - icon: bi-globe
