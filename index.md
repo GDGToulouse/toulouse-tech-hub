@@ -22,7 +22,7 @@ layout: default
     <div class="col-lg-6 col-md-8 mx-auto">
       <img src="logo.png" style="width: 100%" alt="Logo Toulouse Tech Hub" />
       <p class="lead text-muted">
-          Retrouvez toutes les informations sur les communautés tech toulousaines sur une seule page.
+          Retrouvez toutes les informations sur les communautés tech toulousaines bénévoles sur une seule page.
       </p>
     </div>
   </div>
@@ -70,7 +70,7 @@ layout: default
     <div class="mx-auto text-center">
       <h1 class="fw-light">Communautés</h1>
       <p class="lead text-muted">
-        La liste des communautés tech toulousaines référencées.
+        La liste des communautés tech toulousaines bénévoles référencées.
       </p>
     </div>
   </div>
