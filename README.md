@@ -18,7 +18,7 @@
 Ce site liste tous les événements tech à venir organisés par les communautés toulousaines, en un seul endroit.
 
 Il s'agit d'une initiative bénévole centrée sur les communautés et les initiatives gratuites.
-Seuls les évènements gratuits et à but non commercial (hors sponsoring) sont relayés.
+Seuls les évènements gratuits (ou organisés par une assocation à but non lucratif) et à objectif non commercial (hors sponsoring) sont relayés.
 
 **Comment ça marche ?** Les événements Meetup sont automatiquement synchronisés plusieurs fois par jour. Les événements sur d'autres plateformes peuvent être ajoutés manuellement via une simple issue GitHub.
 
