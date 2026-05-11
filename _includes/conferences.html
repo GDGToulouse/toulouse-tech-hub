@@ -15,6 +15,10 @@
             {% if conf.end %}
               - {{ conf.end | date: "%d %B %Y" }}
             {% endif %}
+          </h5>          
+          {% elif conf.dateText %>
+          <h5 class="card-title">
+            {{ conf.dateText }}
           </h5>
           {% endif %}
         </a>
