@@ -8,7 +8,8 @@ body:
       value: |
         Ajoutez un événement tech toulousain au calendrier ! 🎉
         
-        Pour les événements récurrents ou synchronisés automatiquement (Meetup), pas besoin de cette issue - ils sont ajoutés automatiquement.
+        Sont autorisés uniquement les évènements gratuits ou organisés par une association et à objectif non commercial (hors sponsoring).
+        Pour les événements récurrents ou synchronisés automatiquement (Meetup), pas besoin de créer une issue : ils sont ajoutés automatiquement.
 
   - type: input
     id: event-title
@@ -22,7 +23,7 @@ body:
     id: community
     attributes:
       label: Communauté organisatrice
-      description: Si votre communauté n'est pas dans la liste, créez d'abord une issue "Ajouter une communauté"
+      description: Si votre communauté n'est pas dans la liste, vous pouvez demander à l'ajouter avec une issue "Ajouter une communauté"
       options:
         - AFUP Toulouse
         - Agile Toulouse
