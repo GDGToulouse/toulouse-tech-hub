@@ -1,6 +1,7 @@
 ---
 name: Agile Tour Toulouse
 link: https://tour.agiletoulouse.fr/
+dateText: 2027
 social:
   - icon: bi-globe
     url: https://tour.agiletoulouse.fr/
