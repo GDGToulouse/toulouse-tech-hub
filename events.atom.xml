@@ -24,8 +24,8 @@ layout: null
     <title>{{ event.dateFr }} à {{ event.timeFr}} : {{ event.title | replace: "&", "&amp;" | replace: "<", "&lt;" }}</title>
     <link rel="alternate" href="{{ event.link }}" />
     <author><name>{{ event.community | replace: "&", "&amp;" | replace: "<", "&lt;" }}</name></author>
-    {%- assign date_part = event.dateIso | date: "%Y-%m-%d" -%}
-    {%- capture image_path %}event-imgs/{{ date_part }}-{{ event.groupId }}-{{ event.eventId }}.webp{% endcapture -%}
+    {%- assign event_source_name = event.path | split: "/" | last | split: "." | first -%}
+    {%- capture image_path %}event-imgs/{{ event_source_name }}.webp{% endcapture -%}
     <media:thumbnail url="{{ site.site }}{{ site.baseurl }}/{{ image_path }}" />
     <link rel="enclosure" type="image/webp" href="{{ site.site }}{{ site.baseurl }}/{{ image_path }}" />
     <content type="html">{{ event.content | replace: "&", "&amp;" | replace: "<", "&lt;" | replace: ">", "&gt;" }}</content>
