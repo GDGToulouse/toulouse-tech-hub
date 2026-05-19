@@ -54,8 +54,8 @@ layout: null
             <div class="card-header d-flex justify-content-between align-items-center">🧑‍💻 {{ event.community }}
               <button type="button" class="btn-close pull-right" aria-label="Masquer" style="display: none" onclick="removeCard('{{ event.eventId }}')"></button>
             </div>
-              {%- assign date_part = event.dateIso | date: "%Y-%m-%d" -%}
-              {%- capture image_path %}event-imgs/{{ date_part }}-{{ event.groupId }}-{{ event.eventId }}.webp{% endcapture -%}
+              {%- assign event_source_name = event.path | split: "/" | last | split: "." | first -%}
+              {%- capture image_path %}event-imgs/{{ event_source_name }}.webp{% endcapture -%}
               <img style="width: 100%; aspect-ratio: 16/9; object-fit: contain; background-color: #f8f9fa; display: block;" src="{{ site.baseurl }}/{{ image_path }}" alt="{{ event.title }}" />
               <div class="card-body text-center">
                 <h5 class="card-title">{{ event.title }}</h5>
