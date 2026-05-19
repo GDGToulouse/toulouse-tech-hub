@@ -1,5 +1,5 @@
 ---
-title: Agenda des communautés tech toulousaines
+title: Toulouse Tech Hub
 layout: default
 ---
 
@@ -22,7 +22,7 @@ layout: default
     <div class="col-lg-6 col-md-8 mx-auto">
       <img src="logo.png" style="width: 100%" alt="Logo Toulouse Tech Hub" />
       <p class="lead text-muted">
-          Retrouvez toutes les informations sur les communautés tech toulousaines bénévoles sur une seule page.
+          Retrouvez toutes les informations sur les communautés tech toulousaines sur une seule page.
       </p>
     </div>
   </div>
