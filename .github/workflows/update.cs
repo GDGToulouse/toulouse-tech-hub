@@ -6,7 +6,7 @@
 #:property PublishAot=false
 #:property EnableTrimAnalyzer=false
 
-#:package Microsoft.Playwright@1.50.0
+#:package Microsoft.Playwright@1.60.0
 
 using Microsoft.Playwright;
 using System.Globalization;
