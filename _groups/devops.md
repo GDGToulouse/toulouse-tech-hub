@@ -1,7 +1,16 @@
 ---
 name: Toulouse DevOps
-link: https://www.meetup.com/toulouse-devops/
+link: https://toulouse-devops.org/
+registration: https://www.meetup.com/toulouse-devops/
 social:
+  - url: https://www.meetup.com/toulouse-devops/
+    title: "Meetup"
+  - icon: bi-linkedin
+    url: https://linkedin.com/company/toulouse-devops
+    title: "Page LinkedIn"
+  - icon: bi-bluesky
+    url: https://bsky.app/profile/toulouse-devops.org
+    title: "Bluesky"
   - icon: bi-twitter-x
     url: http://twitter.com/toulousedevops
     title: "Page X / Twitter"
