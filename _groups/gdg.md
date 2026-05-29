@@ -1,8 +1,10 @@
 ---
 name: GDG Toulouse
 link: https://www.gdgtoulouse.fr/
-registration: https://www.meetup.com/gdg-toulouse/
 social:
+  - icon: bi-calendar-check
+    url: https://www.meetup.com/gdg-toulouse/
+    title: "Meetup"
   - icon: bi-twitter-x
     url: https://x.com/gdgtoulouse
     title: "Page X / Twitter"

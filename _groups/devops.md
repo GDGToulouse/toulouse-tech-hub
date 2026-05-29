@@ -1,9 +1,9 @@
 ---
 name: Toulouse DevOps
 link: https://toulouse-devops.org/
-registration: https://www.meetup.com/toulouse-devops/
 social:
-  - url: https://www.meetup.com/toulouse-devops/
+  - icon: bi-calendar-check
+    url: https://www.meetup.com/toulouse-devops/
     title: "Meetup"
   - icon: bi-linkedin
     url: https://linkedin.com/company/toulouse-devops
