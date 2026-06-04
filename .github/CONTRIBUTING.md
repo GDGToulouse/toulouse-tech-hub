@@ -33,7 +33,7 @@ Le site produit plusieurs formats à partir des mêmes données :
 
 - Source Jekyll (pages + templates) dans ce repo.
 - Les données sont organisées en collections Jekyll : `_groups/`, `_confs/`, `_events/`.
-- Les données d'événements sont dans `_events/` (fichiers `.html`) et `events-job.json`.
+- Les données d'événements sont dans `_events/` (fichiers `.html` ou `.md`) et `events-job.json`.
 - Les images d'événements sont dans `event-imgs/`.
 - Les sorties générées sont dans `_site/`.
 
@@ -88,18 +88,20 @@ Le workflow `Update Data` (fichier `.github/workflows/update-data.yml`) peut etr
 Le job Update Data génère automatiquement des fichiers YAML pour les événements Meetup et Toulouse Game Dev. **Ces fichiers générés sont écrasés à chaque exécution du job.**
 
 Pour créer un événement manuel qui **ne sera pas écrasé** :
-- Utilisez un nom de fichier qui ne suit **pas** le pattern généré : `custom-{name}.html` ou `YYYY-MM-DD-custom-{name}.html`
-- Le pattern généré est : `YYYY-MM-DD-{community-slug}-{event-id}.html` (ex: `2025-03-04-agile-meetup-305839478.html`)
+- Utilisez un nom de fichier qui ne suit **pas** le pattern généré : `custom-{name}.html`, `custom-{name}.md`, `YYYY-MM-DD-custom-{name}.html` ou `YYYY-MM-DD-custom-{name}.md`
+- Le pattern généré est : `YYYY-MM-DD-{community-slug}-{event-id}.html` (ex: `2025-03-04-agile-meetup-305839478.html`) ; le format `.md` est aussi accepté pour les événements manuels
 
 Alternativement, si vous devez modifier un événement généré temporairement, utilisez le mécanisme `.skip` :
 ```bash
 touch _events/2025-03-04-agile-meetup-305839478.html.skip
+# ou
+touch _events/2025-03-04-agile-meetup-305839478.md.skip
 ```
 Cela empêchera la régénération du fichier, mais il faudra mettre à jour/nettoyer manuellement au prochain cycle.
 
 ### Créer un événement manuel
 
-Créer un fichier HTML dans `_events/` avec le format suivant :
+Créer un fichier d'événement (`.html` recommandé, `.md` aussi accepté) dans `_events/` avec le format suivant :
 
 **Front matter (YAML entre `---` delimiters):**
 ```yaml

@@ -70,11 +70,11 @@ Alternative : utiliser un UUID court si préféré
 - **timeFr** : `'18:30'` (entre quotes simples pour le YAML)
 - **datePublished** : Date/heure actuelle au format `YYYY-MM-DD HH:MM` — **doit être passée ou présente** (jamais dans le futur, le feed Atom l'exige)
 
-### 4. Créer le fichier `_events/{date}-{slug}-{eventId}.html`
+### 4. Créer le fichier `_events/{date}-{slug}-{eventId}.html` (ou `.md`)
 
-**Nom du fichier :** `_events/2026-03-15-{community-slug}-{eventId}.html`
+**Nom du fichier :** `_events/2026-03-15-{community-slug}-{eventId}.html` (recommandé) ou `_events/2026-03-15-{community-slug}-{eventId}.md`
 
-> ⚠️ **Important :** L'`eventId` dans le front matter doit correspondre exactement au segment après `{groupId}-` dans le nom de fichier. Par exemple, pour `_events/2026-03-15-js-and-co-manual-1709740200.html`, l'`eventId` doit être `manual-1709740200`.
+> ⚠️ **Important :** L'`eventId` dans le front matter doit correspondre exactement au segment après `{groupId}-` dans le nom de fichier. Par exemple, pour `_events/2026-03-15-js-and-co-manual-1709740200.html` (ou `.md`), l'`eventId` doit être `manual-1709740200`.
 
 **Contenu :**
 
@@ -153,7 +153,7 @@ Adds manual event "{event-title}" to the calendar.
 - Registration: {event-link}
 
 **Changes:**
-- ✅ Created `_events/{filename}.html`
+- ✅ Created `_events/{filename}.html` (or `.md`)
 - ✅ Added `event-imgs/{YYYY-MM-DD}-{groupId}-{eventId}.webp`
 
 Closes #{issue-number}
@@ -206,7 +206,7 @@ date -d "2026-03-15" "+%A %d %B" | sed 's/Monday/lundi/; s/Tuesday/mardi/; ...'
 
 **Résultat :**
 
-**Fichier :** `_events/2026-03-15-js-and-co-manual-1709740200.html`
+**Fichier :** `_events/2026-03-15-js-and-co-manual-1709740200.html` (or `.md`)
 
 ```yaml
 ---
@@ -241,7 +241,7 @@ Adds manual event "Workshop React avancé" to the calendar.
 - Registration: https://www.eventbrite.com/e/workshop-react
 
 **Changes:**
-- ✅ Created `_events/2026-03-15-js-and-co-manual-1709740200.html`
+- ✅ Created `_events/2026-03-15-js-and-co-manual-1709740200.html` (or `.md`)
 - ✅ Added `event-imgs/2026-03-15-js-and-co-manual-1709740200.webp`
 
 Closes #123

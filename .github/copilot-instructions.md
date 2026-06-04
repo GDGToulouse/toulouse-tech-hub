@@ -27,7 +27,7 @@ All data lives as Jekyll collections (markdown files with YAML front matter):
   - Images in `confs-imgs/` named `{conf-id}.{ext}` (e.g., `devfest.jpg`)
 
 - **`_events/` collection** – Events (auto-generated from scraper)
-  - One `.html` file per event, named by date and source (e.g., `2025-03-04-agile-meetup-305839478.html`)
+  - One event file per event, named by date and source, with `.html` or `.md` extension (e.g., `2025-03-04-agile-meetup-305839478.html`)
   - Front matter fields (YAML): `eventId`, `groupId`, `title`, `community`, `datePublished`, `dateIso`, `dateFr`, `timeFr`, `link`, `img`, `place` (optional), `placeAddr` (optional), `dateIsoEnd` (optional)
   - Content (HTML): Event description fetched directly from Meetup (after `---` separator)
   - Images in `event-imgs/` computed from filename: `event-imgs/{date}-{groupId}-{eventId}.webp`
@@ -58,7 +58,7 @@ All formats filter future events only using Liquid's date comparison: `{%- if ev
 - Jekyll's `site.time` is compared as Unix timestamps: `| date: "%s" | plus: 0`
 
 ### Scraper Control
-- To suppress a scraper-generated event, add a `.skip` file next to the markdown file (example: `_events/2025-03-04-agile-meetup-305839478.md.skip`).
+- To suppress a scraper-generated event, add a `.skip` file next to the event file: both `.html.skip` and `.md.skip` are supported (examples: `_events/2025-03-04-agile-meetup-305839478.html.skip`, `_events/2025-03-04-agile-meetup-305839478.md.skip`).
 
 ### Event IDs
 - Meetup events use `meetup-<numericId>` (example: `meetup-305479083`).
@@ -75,8 +75,8 @@ All formats filter future events only using Liquid's date comparison: `{%- if ev
 - Files should be UTF-8; see `.editorconfig`
 
 ### Event Lifecycle
-1. **Automated**: Update Data workflow runs at 9:00 and 17:00 UTC, executes `.github/workflows/update.cs`, downloads images into `event-imgs/`, and generates `_events/*.html`
-2. **Manual**: Create HTML file in `_events/` following the convention, submit PR
+1. **Automated**: Update Data workflow runs at 9:00 and 17:00 UTC, executes `.github/workflows/update.cs`, downloads images into `event-imgs/`, and generates `_events/*.html` (legacy/manual events in `.md` are also supported by Jekyll)
+2. **Manual**: Create an event file in `_events/` following the convention (`.html` recommended, `.md` also accepted), submit PR
 3. **Build**: Jekyll generates all output formats on every build
 4. **Display**: Only future events appear (past events are filtered by Liquid templates)
 
@@ -89,7 +89,7 @@ All formats filter future events only using Liquid's date comparison: `{%- if ev
 
 ### Adding a New Event Manually
 
-File naming: `_events/{YYYY-MM-DD}-{groupId}-{eventId}.html`
+File naming: `_events/{YYYY-MM-DD}-{groupId}-{eventId}.html` (recommended) or `_events/{YYYY-MM-DD}-{groupId}-{eventId}.md`
 
 **Front matter (YAML between `---` delimiters):**
 ```yaml
@@ -556,7 +556,7 @@ The project uses GitHub Issue Forms (YAML templates) to streamline contributions
 - **Purpose:** Add a one-time event (not auto-synced from Meetup)
 - **Workflow Guide:** `.github/COPILOT_EVENT_WORKFLOW.md`
 - **EventId format:** `manual-{unix-timestamp}`
-- **Files created:** `_events/{date}-{slug}-{eventId}.html`, `event-imgs/` (optional)
+- **Files created:** `_events/{date}-{slug}-{eventId}.html` (recommended) or `_events/{date}-{slug}-{eventId}.md`, `event-imgs/` (optional)
 
 **4. Bug Report** (`.github/ISSUE_TEMPLATE/bug-report.yml`)
 - **Label:** 🐞 erreur
@@ -599,7 +599,7 @@ The project uses GitHub Issue Forms (YAML templates) to streamline contributions
 2. Map community name to slug (20 communities table)
 3. Generate `manual-{timestamp}` eventId
 4. Format dates: dateIso, dateFr, timeFr
-5. Create `_events/{date}-{slug}-{eventId}.html`
+5. Create `_events/{date}-{slug}-{eventId}.html` (recommended) or `.md`
 6. Create PR with template
 
 ## Git Workflow

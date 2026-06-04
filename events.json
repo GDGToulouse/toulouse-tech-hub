@@ -3,11 +3,19 @@ layout: null
 ---
 [
 {%- assign now_time = site.time | date: "%s" | plus: 0 -%}
+{%- assign skipped_event_paths = site.static_files | map: "path" -%}
+{%- assign is_first_item = true -%}
 {% for event in site.events %}
+{%- assign event_skip_path = event.path | append: ".skip" -%}
+{%- if skipped_event_paths contains event_skip_path -%}
+  {%- continue -%}
+{%- endif -%}
 {%- assign event_time = event.dateIso | date:"%s" | plus: 0 -%}
 {%- if event_time < now_time -%}
   {%- continue -%}
 {%- endif -%}
+  {%- unless is_first_item -%},{%- endunless -%}
+  {%- assign is_first_item = false -%}
   {
     "Id": "{{ event.id }}",
     "Href": "{{ event.link }}",
@@ -18,6 +26,6 @@ layout: null
     "Venue": "{{ event.place | replace: '"', '\\"' | strip }}",
     "VenueAddr": "{{ event.placeAddr | replace: '"', '\\"' | strip }}",
     "HtmlDescription": "{{ event.content | replace: '"', '\\"' | strip }}"
-  }{% unless forloop.last %},{% endunless %}
+  }
 {% endfor %}
 ]
