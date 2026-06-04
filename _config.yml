@@ -4,6 +4,9 @@ site: https://toulouse-tech-hub.fr
 baseurl: 
 #theme: 
 
+# Seuil d'archivage des évènements (en jours) - doit correspondre à la valeur dans update.cs
+archive_days: 365
+
 collections:
   groups:
     output: false

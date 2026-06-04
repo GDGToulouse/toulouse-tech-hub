@@ -228,7 +228,7 @@ List<Event> evts = [];
 {
     var eventsDir = Path.Combine(repoRoot, "_events");
     var archiveDir = Path.Combine(eventsDir, "archives");
-    var oneYearAgo = FrenchLocales.ParisNow.AddYears(-1);
+    var oneYearAgo = FrenchLocales.ParisNow.AddYears(-1); // si modifié, mettre à jour archive_days dans _config.yml
 
     if (Directory.Exists(eventsDir))
     {
