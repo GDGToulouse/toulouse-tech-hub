@@ -70,8 +70,11 @@
 <div class="row row-cols-1 row-cols-md-2 row-cols-xxl-3 g-3 agenda my-2">
 
 {%- assign now_time = site.time | date: "%s" | plus: 0 -%}
-{%- assign skipped_event_paths = site.static_files | map: "path" -%}
+{%- assign skipped_event_paths = site.events | where_exp: "e", "e.path contains '.skip'" | map: "path" -%}
 {%- for event in site.events -%}
+  {%- if event.path contains ".skip" -%}
+    {%- continue -%}
+  {%- endif -%}
   {%- assign event_skip_path = event.path | append: ".skip" -%}
   {%- if skipped_event_paths contains event_skip_path -%}
     {%- continue -%}
