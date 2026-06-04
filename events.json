@@ -20,15 +20,15 @@ layout: null
   {%- unless is_first_item -%},{%- endunless -%}
   {%- assign is_first_item = false -%}
   {
-    "Id": "{{ event.id }}",
-    "Href": "{{ event.link }}",
-    "Title": "{{ event.title | replace: '"', '\\"' | strip }}",
+    "Id": {{ event.id | jsonify }},
+    "Href": {{ event.link | jsonify }},
+    "Title": {{ event.title | strip | jsonify }},
     "Start": "{{ event.dateIso | date:"%Y-%m-%dT%T" }}",
-    "Img": "{{ site.site }}/{{ site.baseurl }}/{{ event.localImg }}",
-    "Group": "{{ event.community | replace: '"', '\\"' | strip }}",
-    "Venue": "{{ event.place | replace: '"', '\\"' | strip }}",
-    "VenueAddr": "{{ event.placeAddr | replace: '"', '\\"' | strip }}",
-    "HtmlDescription": "{{ event.content | replace: '"', '\\"' | strip }}"
+    "Img": {{ site.site | append: "/" | append: site.baseurl | append: "/" | append: event.localImg | jsonify }},
+    "Group": {{ event.community | strip | jsonify }},
+    "Venue": {{ event.place | strip | jsonify }},
+    "VenueAddr": {{ event.placeAddr | strip | jsonify }},
+    "HtmlDescription": {{ event.content | strip | jsonify }}
   }
 {% endfor %}
 ]
