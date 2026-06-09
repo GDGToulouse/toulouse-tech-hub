@@ -35,6 +35,7 @@ Seuls les communautés à but non lucratif sont référencées, et seuls les év
 - [Devops & Cloud Toulouse](https://www.meetup.com/devops-cloud-toulouse/)
 - [Embedded Meetup Toulouse](https://www.linkedin.com/company/embedded-meetup-toulouse/)
 - [GDG Toulouse](https://www.gdgtoulouse.fr/)
+- [IA Innovateurs Toulouse](https://www.meetup.com/ia-innovateurs/)
 - [JS & Co Toulouse](https://www.meetup.com/javascript-and-co/)
 - [JUG Toulouse](https://www.meetup.com/toulouse-java-user-group/)
 - [La "Toul Box" du Cloud Natif](https://www.meetup.com/latoulboxducloudnatif/)
