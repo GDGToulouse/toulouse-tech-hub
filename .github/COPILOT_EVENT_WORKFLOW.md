@@ -33,6 +33,7 @@ Mapper le nom de communauté vers son slug en consultant `_groups/` :
 | Devops & Cloud Toulouse | devops-cloud |
 | Embedded Meetup Toulouse | embedded |
 | GDG Toulouse | gdg |
+| IA Innovateurs Toulouse | ia-innovateurs |
 | JS & Co Toulouse | js-and-co |
 | JUG Toulouse | jug |
 | La "Toul Box" du Cloud Natif | toulbox |

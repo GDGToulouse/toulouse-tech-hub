@@ -48,6 +48,7 @@ var groups = new IGroup[] {
     new MeetupGroup("toulouse-devops", "devops"),
     new MeetupGroup("devops-cloud-toulouse", "devops-cloud"),
     new MeetupGroup("gdg-toulouse", "gdg"),
+    new MeetupGroup("ia-innovateurs", "ia-innovateurs"),
     new MeetupGroup("javascript-and-co", "js-and-co"),
     new MeetupGroup("toulouse-java-user-group", "jug"),
     new MeetupGroup("mtg-toulouse", "mtg"),
