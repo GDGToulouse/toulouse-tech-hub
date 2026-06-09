@@ -213,6 +213,10 @@ a.muted {
     background-color: #777BB3;
 }
 
+.community-ia-innovateurs {
+    background: linear-gradient(135deg, #6A0DAD 0%, #00BFFF 100%);
+}
+
 .community-default {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 }
