@@ -87,6 +87,7 @@ layout: default
     <p>
       ❓Votre communauté ou votre évènement n'est pas présent et vous souhaitez qu'il soit ajouté ?<br>
       👉Venez le signaler sur le <a href="https://github.com/GDGToulouse/toulouse-tech-hub">projet github.com</a>.<br>
+      ✉️Et sinon le mail : <a href="mailto:thomas.bolon@toulouse-tech-hub.fr">thomas.bolon@toulouse-tech-hub.fr</a>.<br>
       ⚖️<a href="mentions.html">Mentions légales</a>
     </p>
   </div>
