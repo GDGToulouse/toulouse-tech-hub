@@ -32,6 +32,7 @@ Mapper le nom de communauté vers son slug en consultant `_groups/` :
 | C++ Toulouse | cpp |
 | Devops & Cloud Toulouse | devops-cloud |
 | Embedded Meetup Toulouse | embedded |
+| FLUPA Toulouse | flupa |
 | GDG Toulouse | gdg |
 | IA Innovateurs Toulouse | ia-innovateurs |
 | JS & Co Toulouse | js-and-co |

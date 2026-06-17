@@ -34,6 +34,7 @@ Seuls les communautés à but non lucratif sont référencées, et seuls les év
 - [C++ Toulouse](https://www.meetup.com/ateliers-cpp-toulouse/)
 - [Devops & Cloud Toulouse](https://www.meetup.com/devops-cloud-toulouse/)
 - [Embedded Meetup Toulouse](https://www.linkedin.com/company/embedded-meetup-toulouse/)
+- [FLUPA Toulouse](http://flupa.eu/)
 - [GDG Toulouse](https://www.gdgtoulouse.fr/)
 - [IA Innovateurs Toulouse](https://www.meetup.com/ia-innovateurs/)
 - [JS & Co Toulouse](https://www.meetup.com/javascript-and-co/)
