@@ -2,9 +2,6 @@
 name: FLUPA Toulouse
 link: http://flupa.eu/
 social:
-  - icon: bi-globe
-    url: http://flupa.eu/
-    title: "Site Web"
   - icon: bi-linkedin
     url: https://www.linkedin.com/company/assoflupa/
     title: "Page LinkedIn"
