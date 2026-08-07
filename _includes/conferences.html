@@ -4,21 +4,25 @@
   <div class="my-2 col">
     <div class="card shadow">
       <div class="card-header">📢 {{ conf.name }}</div>
-      <a href="{{ conf.link }}" class="muted">
+      <a href="{{ conf.url | default: conf.link }}" class="muted">
         <img width="100%" style="aspect-ratio: 16/9" src="{{ conf_img_url }}" alt="{{ conf.name }}" />
       </a>
       <div class="card-body">
-        <a href="{{ conf.link }}" class="muted">
-          {% if conf.date %}
+        <a href="{{ conf.url | default: conf.link }}" class="muted">
+          {% if conf.dateDisplay %}
+          <h5 class="card-title">
+            {{ conf.dateDisplay }}
+          </h5>
+          {% elsif conf.dateText %}
+          <h5 class="card-title">
+            {{ conf.dateText }}
+          </h5>
+          {% elsif conf.date %}
           <h5 class="card-title">
             {{ conf.date | date: "%d %B %Y" }}
             {% if conf.end %}
               - {{ conf.end | date: "%d %B %Y" }}
             {% endif %}
-          </h5>          
-          {% elsif conf.dateText %}
-          <h5 class="card-title">
-            {{ conf.dateText }}
           </h5>
           {% endif %}
         </a>
