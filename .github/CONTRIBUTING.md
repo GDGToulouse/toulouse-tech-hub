@@ -12,8 +12,8 @@ Pourquoi : beaucoup d'outils d'agents (dont Copilot CLI en session locale Window
 Si vous travaillez avec un agent, demandez explicitement d'exécuter les commandes Jekyll via WSL, par exemple :
 
 ```powershell
-wsl bash -lc "cd /mnt/d/code/perso/GDGToulouse/toulouse-tech-hub && jekyll build"
-wsl bash -lc "cd /mnt/d/code/perso/GDGToulouse/toulouse-tech-hub && jekyll serve --livereload"
+wsl bash -lc "cd /mnt/path/to/toulouse-tech-hub && jekyll build"
+wsl bash -lc "cd /mnt/path/to/toulouse-tech-hub && jekyll serve --livereload"
 ```
 
 ## Installation locale (WSL Ubuntu)
@@ -110,7 +110,7 @@ title: "Event Title"
 community: "Community Name"
 dateIso: "2025-03-15 18:30"
 datePublished: "2025-03-01 10:00"
-dateFr: "vendredi 15 mars"
+dateFr: "samedi 15 mars"
 timeFr: "18:30"
 place: "Venue Name"
 placeAddr: "123 Avenue Example, Toulouse"

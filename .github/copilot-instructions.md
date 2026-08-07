@@ -182,7 +182,7 @@ No build commands - Jekyll runs via GitHub Actions only. To test locally:
 - Use Ubuntu via WSL for the development environment.
 - Install Jekyll inside the Ubuntu (WSL) distro.
 - Use VS Code with the WSL extension to work in the Linux filesystem.
-- **Important for Copilot sessions on Windows:** terminal commands may run in PowerShell by default. If Jekyll is installed only in WSL, explicitly run Jekyll commands through WSL (for example: `wsl bash -lc "cd /mnt/d/code/perso/GDGToulouse/toulouse-tech-hub && jekyll build"`).
+- **Important for Copilot sessions on Windows:** terminal commands may run in PowerShell by default. If Jekyll is installed only in WSL, explicitly run Jekyll commands through WSL (for example: `wsl bash -lc "cd /mnt/path/to/toulouse-tech-hub && jekyll build"`).
 
 ### WSL Prerequisites (Ubuntu)
 ```bash
@@ -210,8 +210,8 @@ jekyll serve
 If your current shell is Windows and Jekyll is installed in WSL, use:
 
 ```powershell
-wsl bash -lc "cd /mnt/d/code/perso/GDGToulouse/toulouse-tech-hub && jekyll build"
-wsl bash -lc "cd /mnt/d/code/perso/GDGToulouse/toulouse-tech-hub && jekyll serve --livereload"
+wsl bash -lc "cd /mnt/path/to/toulouse-tech-hub && jekyll build"
+wsl bash -lc "cd /mnt/path/to/toulouse-tech-hub && jekyll serve --livereload"
 ```
 
 ## Browser Testing with Playwright
