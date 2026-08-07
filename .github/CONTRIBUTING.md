@@ -1,45 +1,22 @@
 # Contribuer au projet
 
-Merci de contribuer à Toulouse Tech Hub ! Ce projet est un site Jekyll qui agrèges les événements tech de Toulouse et publie plusieurs formats (site web, JSON, Atom, iCal).
+Merci de contribuer à Toulouse Tech Hub. Ce projet est un site Jekyll qui agrège les événements tech de Toulouse et publie plusieurs formats (site web, JSON, Atom, iCal).
 
-## Architecture
+## Environnement de développement sous Windows
 
-Le projet utilise les **collections Jekyll** pour organiser les données :
+Sous Windows, le workflow recommandé est **WSL (Ubuntu)**.  
+**Jekyll doit être installé et exécuté dans WSL, pas dans PowerShell Windows.**
 
-- **`_groups/`** - Définitions des communautés tech (logo, description, réseaux)
-- **`_confs/`** - Conférences annuelles (DevFest, PGDay, Capitole du Libre, etc.)
-- **`_events/`** - Événements individuels (auto-générés et manuels)
-- **`.github/`** - Configuration GitHub (templates, workflows, guides)
+Pourquoi : beaucoup d'outils d'agents (dont Copilot CLI en session locale Windows) lancent des commandes côté Windows par défaut. Si Jekyll n'est installé que dans WSL, `jekyll serve` échoue côté Windows avec "commande introuvable".
 
-### Flux de Mise à Jour des Événements
+Si vous travaillez avec un agent, demandez explicitement d'exécuter les commandes Jekyll via WSL, par exemple :
 
-1. **Job quotidien** (9h00 et 17h00 UTC)
-2. **Script C#** (`.github/workflows/update.cs`) scan les pages Meetup
-3. **Générer YAML** pour chaque nouvel événement
-4. **Télécharger images** dans `event-imgs/`
-5. **Jekyll build** génère l'HTML et les formats (iCal, JSON, Atom)
+```powershell
+wsl bash -lc "cd /mnt/path/to/toulouse-tech-hub && jekyll build"
+wsl bash -lc "cd /mnt/path/to/toulouse-tech-hub && jekyll serve --livereload"
+```
 
-### Formats Générés
-
-Le site produit plusieurs formats à partir des mêmes données :
-
-- **HTML** - Page web avec calendrier Bootstrap Cards
-- **iCal** - `events.ics` (compatible Google Cal, Apple Cal, Outlook)
-- **Atom/RSS** - `events.atom.xml` (agrégateurs de flux)
-- **JSON** - `events.json` (API)
-- **PNG** - Outil organisateurs (`orgas.html`)
-
-## Vue d'ensemble
-
-- Source Jekyll (pages + templates) dans ce repo.
-- Les données sont organisées en collections Jekyll : `_groups/`, `_confs/`, `_events/`.
-- Les données d'événements sont dans `_events/` (fichiers `.html` ou `.md`) et `events-job.json`.
-- Les images d'événements sont dans `event-imgs/`.
-- Les sorties générées sont dans `_site/`.
-
-## Installation de Jekyll (local)
-
-### Prerequis (Ubuntu / WSL recommande)
+## Installation locale (WSL Ubuntu)
 
 Docs officielles Jekyll : https://jekyllrb.com/docs/ et https://jekyllrb.com/docs/installation/
 
@@ -47,13 +24,15 @@ Docs officielles Jekyll : https://jekyllrb.com/docs/ et https://jekyllrb.com/doc
 sudo apt update
 sudo apt install -y ruby-full build-essential zlib1g-dev
 
-sudo gem install jekyll bundler
+gem install jekyll bundler
 
 ruby -v
 jekyll -v
 ```
 
-### Lancer le site localement
+## Lancer le site en local
+
+Depuis un terminal WSL dans le repo :
 
 ```bash
 jekyll serve
@@ -61,70 +40,97 @@ jekyll serve
 
 Puis ouvrir http://localhost:4000
 
-## Lancer une mise a jour des donnees manuellement
+## Architecture
 
-Le job d'update est un script C# stocke dans `.github/workflows/update.cs`. Il detecte le repo racine via `events-job.json`.
+Le projet utilise les collections Jekyll :
 
-### Execution locale (sans chargement reseau)
+- **`_groups/`** - Définitions des communautés
+- **`_confs/`** - Conférences annuelles
+- **`_events/`** - Événements individuels (auto-générés et manuels)
+- **`.github/`** - Templates, workflows et guides
+
+### Flux de mise à jour des événements
+
+1. Job planifié (9h00 et 17h00 UTC)
+2. Script C# (`.github/workflows/update.cs`) qui lit les sources d'événements
+3. Génération/maj des fichiers `_events/`
+4. Téléchargement des images dans `event-imgs/`
+5. Génération Jekyll des sorties (HTML, iCal, Atom, JSON)
+
+### Formats générés
+
+- **HTML** : page principale
+- **iCal** : `events.ics`
+- **Atom/RSS** : `events.atom.xml`
+- **JSON** : `events.json`
+- **PNG** : outil organisateurs (`orgas.html`)
+
+## Lancer la mise à jour des données manuellement
+
+Le job d'update est le script C# `.github/workflows/update.cs`.
 
 ```bash
+# Sans chargement réseau
 dotnet run .github/workflows/update.cs --no-load
-```
 
-### Execution locale (avec chargement des evenements)
-
-```bash
+# Avec chargement des événements
 dotnet run .github/workflows/update.cs
 ```
 
-### Execution via GitHub Actions
+Le workflow GitHub correspondant est `.github/workflows/update-data.yml`.
 
-Le workflow `Update Data` (fichier `.github/workflows/update-data.yml`) peut etre lance manuellement depuis l'onglet Actions, ou via son cron.
+## Ajouter ou modifier un événement
 
-## Ajouter / modifier un evenement
+### Politique de génération
 
-### ⚠️ Politique de génération des fichiers YAML
+Le job Update Data génère automatiquement des événements (notamment Meetup et Toulouse Game Dev).  
+Ces fichiers peuvent être écrasés à la prochaine exécution.
 
-Le job Update Data génère automatiquement des fichiers YAML pour les événements Meetup et Toulouse Game Dev. **Ces fichiers générés sont écrasés à chaque exécution du job.**
+Pour désactiver la régénération d'un événement auto-généré, ajoutez un fichier `.skip` adjacent :
 
-Pour créer un événement manuel qui **ne sera pas écrasé** :
-- Utilisez un nom de fichier qui ne suit **pas** le pattern généré : `custom-{name}.html`, `custom-{name}.md`, `YYYY-MM-DD-custom-{name}.html` ou `YYYY-MM-DD-custom-{name}.md`
-- Le pattern généré est : `YYYY-MM-DD-{community-slug}-{event-id}.html` (ex: `2025-03-04-agile-meetup-305839478.html`) ; le format `.md` est aussi accepté pour les événements manuels
-
-Alternativement, si vous devez modifier un événement généré temporairement, utilisez le mécanisme `.skip` :
 ```bash
 touch _events/2025-03-04-agile-meetup-305839478.html.skip
 # ou
 touch _events/2025-03-04-agile-meetup-305839478.md.skip
 ```
-Cela empêchera la régénération du fichier, mais il faudra mettre à jour/nettoyer manuellement au prochain cycle.
 
 ### Créer un événement manuel
 
-Créer un fichier d'événement (`.html` recommandé, `.md` aussi accepté) dans `_events/` avec le format suivant :
+Nom de fichier recommandé :
 
-**Front matter (YAML entre `---` delimiters):**
+`_events/{YYYY-MM-DD}-{groupId}-{eventId}.html` (ou `.md`)
+
+Exemple de front matter :
+
 ```yaml
 ---
-id: unique-id
-title: 'Event Title'
-community: Community Name
-datePublished: YYYY-MM-DD HH:MM
-dateIso: YYYY-MM-DD HH:MM
-dateFr: jour DD mois
-timeFr: 'HH:MM'
-place: Venue Name
-placeAddr: Address
-link: https://example.com
+eventId: "manual-1709740200"
+groupId: "agile"
+title: "Event Title"
+community: "Community Name"
+dateIso: "2025-03-15 18:30"
+datePublished: "2025-03-01 10:00"
+dateFr: "samedi 15 mars"
+timeFr: "18:30"
+place: "Venue Name"
+placeAddr: "123 Avenue Example, Toulouse"
+link: https://example.com/event/12345678
 img: https://example.com/image.jpg
-localImg: event-imgs/unique-id.webp
 ---
 ```
 
-**Contenu (HTML après `---`):**
+Puis le contenu HTML après le front matter :
+
 ```html
 <p>Event description in HTML format</p>
 ```
+
+Important :
+
+- Utiliser `eventId` (pas `id`)
+- Le segment `eventId` du nom de fichier doit correspondre exactement au front matter
+- `place` et `placeAddr` doivent apparaître ensemble (ou être tous les deux vides)
+- L'image locale est requise pour les feeds : `event-imgs/{YYYY-MM-DD}-{groupId}-{eventId}.webp`
 
 ### Données structurées SEO des évènements
 
@@ -140,12 +146,10 @@ La page d'accueil publie aussi des données structurées `schema.org/Event` au f
 
 ## Bonnes pratiques
 
-- Les fichiers doivent etre en UTF-8 (voir `.editorconfig`).
-- Verifier `jekyll serve` en local apres une grosse modification.
-- Ne pas committer `_site/`.
-- **Événements manuels** : nommez les fichiers en dehors du pattern généré pour éviter qu'ils soient écrasés.
-- **Appels du job** : relancer manuellement `dotnet run .github/workflows/update.cs` après le `jekyll serve` pour vérifier que la génération YAML fonctionne correctement.
+- Fichiers en UTF-8 (voir `.editorconfig`)
+- Vérifier localement les changements Jekyll
+- Ne pas committer `_site/`
 
-## Reglages d'edition
+## Réglages d'édition
 
-Le fichier `.editorconfig` fixe les conventions d'edition : UTF-8, fins de ligne LF, 2 espaces par defaut, 4 espaces pour C#.
+`.editorconfig` fixe les conventions : UTF-8, fins de ligne LF, 2 espaces par défaut, 4 espaces pour C#.
