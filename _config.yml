@@ -1,6 +1,7 @@
 title: Agenda des communautés tech toulousaines
 lang: fr-FR
 site: https://toulouse-tech-hub.fr
+url: https://toulouse-tech-hub.fr
 baseurl: 
 #theme: 
 
@@ -28,3 +29,7 @@ defaults:
       type: confs
     values:
       layout: conference
+  - scope:
+      path: "orgas.html"
+    values:
+      sitemap: false
