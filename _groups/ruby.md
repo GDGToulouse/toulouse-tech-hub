@@ -10,4 +10,6 @@ social:
     title: "Slack"
 ---
 
-Événements (talks, café, boissons) autour de Ruby (principalement) et d'autres langages.
+Toulouse Ruby and Friends rassemble les personnes qui utilisent Ruby ou souhaitent découvrir le langage, quel que soit leur niveau. Les échanges portent principalement sur Ruby, mais restent ouverts à d'autres langages et pratiques de développement.
+
+La communauté organise des talks, ateliers, cafés et apéros pour partager bonnes pratiques, outils et retours d'expérience. Les anciennes présentations sont disponibles sur YouTube et les discussions se poursuivent sur Slack.
