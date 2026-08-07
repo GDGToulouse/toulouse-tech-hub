@@ -2,11 +2,11 @@
 {% assign conferences_by_name = site.confs | sort_natural: "name" %}
 {% for conf in conferences_by_name %}
 {%- capture conf_img_url -%}{{ site.baseurl }}/confs-imgs/{{ conf.slug }}.jpg{%- endcapture -%}
-{%- assign conference_url = conf.url | default: conf.link -%}
+{%- assign conference_url = conf.url | relative_url -%}
 {%- assign excerpt = conf.content | markdownify | strip_html | strip_newlines | truncate: 120 -%}
 <div class="col">
   <a class="conference-card-item" href="{{ conference_url }}" aria-label="Voir la page de la conférence {{ conf.name | escape }}">
-    <img class="conference-card-image" src="{{ conf_img_url }}" alt="" loading="lazy">
+    <img class="conference-card-image" src="{{ conf_img_url | relative_url }}" alt="" loading="lazy">
     <span class="conference-card-body">
       <span class="conference-card-title">📢 {{ conf.name }}</span>
       {% if excerpt != "" %}

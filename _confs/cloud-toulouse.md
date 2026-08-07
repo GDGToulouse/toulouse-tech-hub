@@ -17,6 +17,6 @@ social:
     title: Page X / Twitter
 ---
 
-Cloud Toulouse est une conference toulousaine entierement dediee aux technologies du cloud. L'evenement reunit des professionnels, des equipes techniques et des entreprises de la region autour d'une vingtaine de conferences, de retours d'experience et d'echanges sur les infrastructures, les plateformes et les pratiques cloud.
+Cloud Toulouse est une conférence toulousaine entièrement dédiée aux technologies du cloud. L'événement réunit des professionnels, des équipes techniques et des entreprises de la région autour d'une vingtaine de conférences, de retours d'expérience et d'échanges sur les infrastructures, les plateformes et les pratiques cloud.
 
-L'edition 2026 est annoncee le 28 mai a Toulouse. Cette fiche centralise le site officiel et les canaux verifies de la conference pour suivre le programme, les actualites et l'ouverture des inscriptions.
+L'édition 2026 est annoncée le 28 mai à Toulouse. Cette fiche centralise le site officiel et les canaux vérifiés de la conférence pour suivre le programme, les actualités et l'ouverture des inscriptions.

@@ -20,6 +20,6 @@ social:
     title: Page X / Twitter
 ---
 
-DevFest Toulouse est une conference toulousaine organisee par des developpeuses et developpeurs pour les developpeuses et developpeurs. Elle met en avant des talks techniques et des retours d'experience sur des sujets comme le web, le cloud, la data, l'IA, le mobile, le DevOps et l'ecosysteme logiciel au sens large.
+DevFest Toulouse est une conférence toulousaine organisée par des développeuses et développeurs pour les développeuses et développeurs. Elle met en avant des talks techniques et des retours d'expérience sur des sujets comme le web, le cloud, la data, l'IA, le mobile, le DevOps et l'écosystème logiciel au sens large.
 
-L'evenement s'appuie sur un reseau de partenaires de l'ecosysteme tech local et propose egalement des replays video des editions precedentes. Cette page reference les sources officielles pour suivre la prochaine edition et ses annonces.
+L'événement s'appuie sur un réseau de partenaires de l'écosystème tech local et propose également des replays vidéo des éditions précédentes. Cette page référence les sources officielles pour suivre la prochaine édition et ses annonces.

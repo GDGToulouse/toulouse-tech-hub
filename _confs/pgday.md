@@ -14,6 +14,6 @@ social:
     title: Chaîne YouTube
 ---
 
-PGDay Toulouse est l'edition toulousaine du rendez-vous annuel de la communaute francophone PostgreSQL. La conference rassemble passionnes, etudiantes et etudiants, DBA, developpeuses, developpeurs et entreprises autour de PostgreSQL, des bases de donnees open source et de leurs usages en production.
+PGDay Toulouse est l'édition toulousaine du rendez-vous annuel de la communauté francophone PostgreSQL. La conférence rassemble passionnés, étudiantes et étudiants, DBA, développeuses, développeurs et entreprises autour de PostgreSQL, des bases de données open source et de leurs usages en production.
 
-L'edition 2026 se deroule les 3 et 4 juin au siege de Meteo-France a Toulouse, avec une journee d'ateliers puis une journee de conferences. Les liens ci-dessus permettent de suivre les informations officielles, le programme et les videos des editions precedentes.
+L'édition 2026 se déroule les 3 et 4 juin au siège de Météo-France à Toulouse, avec une journée d'ateliers puis une journée de conférences. Les liens ci-dessus permettent de suivre les informations officielles, le programme et les vidéos des éditions précédentes.
