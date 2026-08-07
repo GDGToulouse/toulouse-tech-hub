@@ -1,0 +1,31 @@
+---
+layout: null
+permalink: /sitemap.xml
+sitemap: false
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  {%- assign pages_for_sitemap = site.html_pages | where_exp: "page", "page.sitemap != false" -%}
+  {%- for page in pages_for_sitemap -%}
+  <url>
+    <loc>{{ site.url }}{{ site.baseurl }}{{ page.url | replace: "index.html", "" }}</loc>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+  </url>
+  {%- endfor -%}
+
+  {%- assign groups_for_sitemap = site.groups | where_exp: "group", "group.sitemap != false" -%}
+  {%- for group in groups_for_sitemap -%}
+  <url>
+    <loc>{{ site.url }}{{ site.baseurl }}{{ group.url }}</loc>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+  </url>
+  {%- endfor -%}
+
+  {%- assign confs_for_sitemap = site.confs | where_exp: "conf", "conf.sitemap != false" -%}
+  {%- for conf in confs_for_sitemap -%}
+  <url>
+    <loc>{{ site.url }}{{ site.baseurl }}{{ conf.url }}</loc>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+  </url>
+  {%- endfor -%}
+</urlset>
