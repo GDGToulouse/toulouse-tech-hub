@@ -5,9 +5,6 @@ social:
   - icon: bi-globe
     url: https://www.tlse-data-science.fr/
     title: "Site Web"
-  - icon: bi-slack
-    url: https://tinyurl.com/tds-slack
-    title: "Slack"
   - icon: bi-github
     url: https://github.com/TlseDataScience/meetup-cfp/issues/new
     title: "Proposer un sujet"
