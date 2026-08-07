@@ -16,9 +16,9 @@
   {%- endif -%}
 {%- endfor -%}
 
-{%- if future_events.size > 0 -%}
 <section class="mt-5">
   <h2 class="fw-light mb-3">Prochains évènements</h2>
+  {%- if future_events.size > 0 -%}
   <div class="row row-cols-1 row-cols-md-2 row-cols-xxl-3 g-3">
   {%- for event in future_events -%}
     {%- assign date_part = event.dateIso | date: "%Y-%m-%d" -%}
@@ -46,5 +46,7 @@
     </div>
   {%- endfor -%}
   </div>
+  {%- else -%}
+  <p class="text-muted mb-0">Aucun évènement à venir</p>
+  {%- endif -%}
 </section>
-{%- endif -%}
