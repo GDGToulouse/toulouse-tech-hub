@@ -126,6 +126,18 @@ localImg: event-imgs/unique-id.webp
 <p>Event description in HTML format</p>
 ```
 
+### Données structurées SEO des évènements
+
+La page d'accueil publie aussi des données structurées `schema.org/Event` au format JSON-LD pour les évènements à venir.
+
+- Le balisage est injecté directement dans le HTML via `<script type="application/ld+json">`.
+- Il réutilise le même filtrage que l'agenda : évènements futurs uniquement, avec prise en compte des fichiers `.skip`.
+- Les champs `title`, `link`, `dateIso`, `dateIsoEnd`, `community`, `place`, `placeAddr` et le contenu HTML de l'évènement servent de source au JSON-LD.
+- Le champ `image` du JSON-LD pointe vers l'image locale `event-imgs/{nom-du-fichier-evenement}.webp`, comme les autres sorties du site.
+- Si `dateIsoEnd` est absent, une heure de fin par défaut est dérivée comme pour le flux iCal.
+- La description publiée dans le JSON-LD est un extrait tronqué du contenu HTML de l'évènement, pour limiter le poids de la page.
+- Si `place` est vide, l'évènement est publié comme évènement en ligne avec une `VirtualLocation`.
+
 ## Bonnes pratiques
 
 - Les fichiers doivent etre en UTF-8 (voir `.editorconfig`).
