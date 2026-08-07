@@ -1,6 +1,6 @@
 ---
 name: Cloud Toulouse
-date: 2026-05-28
+dateDisplay: 28 mai 2026
 link: https://cloudtoulouse.com/
 social:
   - icon: bi-globe
@@ -16,3 +16,7 @@ social:
     url: https://x.com/cloud_toulouse
     title: Page X / Twitter
 ---
+
+Cloud Toulouse est une conférence toulousaine entièrement dédiée aux technologies du cloud. L'événement réunit des professionnels, des équipes techniques et des entreprises de la région autour d'une vingtaine de conférences, de retours d'expérience et d'échanges sur les infrastructures, les plateformes et les pratiques cloud.
+
+L'édition 2026 est annoncée le 28 mai à Toulouse. Au programme : des prises de parole de haut niveau, des retours terrain et une soirée conviviale pour prolonger les échanges entre passionné·es du cloud.

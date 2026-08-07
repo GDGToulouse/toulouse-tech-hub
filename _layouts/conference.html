@@ -1,0 +1,88 @@
+<!doctype html>
+<html prefix="og: https://ogp.me/ns#">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ page.name | escape }} - Toulouse Tech Hub</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/styles.css">
+    <meta property="og:title" content="{{ page.name | escape }} - Toulouse Tech Hub" />
+    <meta property="og:image" content="{{ site.site }}{{ site.baseurl }}/confs-imgs/{{ page.slug }}.jpg" />
+    <meta property="og:url" content="{{ site.site }}{{ site.baseurl }}{{ page.url }}" />
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-sticky fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-white" href="{{ site.baseurl }}/" style="font-size: 1.3rem;">TOULOUSE TECH HUB</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ site.baseurl }}/#agenda">📅 Agenda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ site.baseurl }}/#conferences">📢 Conférences</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ site.baseurl }}/#communautes">🧑‍💻 Communautés</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container py-4">
+        <div class="row g-4 align-items-start mt-2">
+            <div class="col-lg-6">
+                <img src="{{ site.baseurl }}/confs-imgs/{{ page.slug }}.jpg" class="img-fluid group-hero" alt="Visuel {{ page.name | escape }}" style="aspect-ratio: 16/9; object-fit: cover; width: 100%;">
+            </div>
+            <div class="col-lg-6">
+                <h1 class="group-title mb-3">{{ page.name }}</h1>
+                <div class="d-flex flex-wrap gap-2 align-items-center mb-3">
+                    {% if page.link %}
+                    <a class="btn btn-primary" href="{{ page.link }}" target="_blank" rel="noopener noreferrer">
+                        <i class="bi bi-box-arrow-up-right me-2"></i>Site officiel
+                    </a>
+                    {% endif %}
+                    {% if page.dateDisplay %}
+                    <span class="badge rounded-pill text-bg-light fs-6">
+                        {{ page.dateDisplay }}
+                    </span>
+                    {% elsif page.dateText %}
+                    <span class="badge rounded-pill text-bg-light fs-6">{{ page.dateText }}</span>
+                    {% elsif page.date %}
+                    <span class="badge rounded-pill text-bg-light fs-6">
+                        {{ page.date | date: "%d %B %Y" }}{% if page.end %} - {{ page.end | date: "%d %B %Y" }}{% endif %}
+                    </span>
+                    {% endif %}
+                </div>
+                {% if page.social %}
+                <div class="group-social-links mb-3">
+                    {% for social in page.social %}
+                    <a href="{{ social.url }}" title="{{ social.title | escape }}" target="_blank" rel="noopener noreferrer">
+                        <i class="bi {{ social.icon }}"></i>
+                    </a>
+                    {% endfor %}
+                </div>
+                {% endif %}
+                <div class="group-description">
+                    {{ content }}
+                </div>
+            </div>
+        </div>
+
+        <p class="mt-4 mb-4">
+            <a href="{{ site.baseurl }}/#conferences" class="muted">⬅️ Retour aux conférences</a>
+        </p>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09cYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+
+</html>

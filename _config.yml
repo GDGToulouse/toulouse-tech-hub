@@ -12,7 +12,8 @@ collections:
     output: true
     permalink: /groups/:slug/
   confs:
-    output: false
+    output: true
+    permalink: /conferences/:slug/
   events:
     output: false
 
@@ -22,3 +23,8 @@ defaults:
       type: groups
     values:
       layout: group
+  - scope:
+      path: ""
+      type: confs
+    values:
+      layout: conference
