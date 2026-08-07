@@ -10,4 +10,6 @@ social:
     title: "Page LinkedIn"
 ---
 
-Postgres Toulouse est une communauté pour partager autour du moteur de base de données relationnel PostgreSQL, progresser ensemble et découvrir des retours d'expérience concrets.
+Postgres Toulouse est un groupe d'utilisateurs officiellement reconnu par la communauté PostgreSQL. Il accueille toutes les personnes qui souhaitent découvrir ce système de gestion de base de données relationnelle ou approfondir leur pratique.
+
+Les rencontres permettent de partager des expériences, d'apprendre des autres membres et d'aborder des cas d'usage concrets. Les échanges se poursuivent sur le canal Slack de la communauté.

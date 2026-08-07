@@ -2,6 +2,9 @@
 name: AFUP Toulouse
 link: https://www.meetup.com/afup-toulouse
 social:
+  - icon: bi-link-45deg
+    url: https://linktr.ee/afup_toulouse
+    title: "Tous les liens"
   - icon: bi-linkedin
     url: https://www.linkedin.com/company/afup-toulouse/
     title: "Page LinkedIn"

@@ -1,6 +1,12 @@
 ---
 name: Python Toulouse
 link: https://www.meetup.com/python-toulouse/
+social:
+  - icon: bi-discord
+    url: https://discord.gg/dSSxjwREux
+    title: "Discord"
 ---
 
-On échange autour de Python, de son écosystème, et autour de pizzas 😊 Que ce soit des scripts, des apps, de la data science, de l'IA, ... on en parle !
+Python Toulouse rassemble les utilisateurs et les personnes curieuses de découvrir Python, quel que soit leur niveau ou leur domaine.
+
+Les rencontres abordent le langage et son écosystème à travers des sujets variés : scripts, applications, outils de développement, data science ou intelligence artificielle. Les échanges se prolongent sur le serveur Discord de la communauté.

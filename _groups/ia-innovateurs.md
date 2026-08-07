@@ -5,6 +5,9 @@ social:
   - icon: bi-linkedin
     url: https://www.linkedin.com/groups/15076013/
     title: "Page LinkedIn"
+  - icon: bi-whatsapp
+    url: https://chat.whatsapp.com/BfWXEUob0402c1XAZVEzfg
+    title: "Groupe WhatsApp"
 ---
 
 Rejoignez IA Innovateurs Toulouse, la communauté incontournable pour découvrir, apprendre et innover autour de l'IA. Que vous soyez débutant ou expert, vous trouverez ici un environnement convivial pour explorer le machine learning, le deep learning, le NLP, la vision par ordinateur, et bien plus encore.

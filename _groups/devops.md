@@ -12,8 +12,13 @@ social:
     url: https://bsky.app/profile/toulouse-devops.org
     title: "Bluesky"
   - icon: bi-twitter-x
-    url: http://twitter.com/toulousedevops
+    url: https://twitter.com/toulousedevops
     title: "Page X / Twitter"
+  - icon: bi-github
+    url: https://github.com/toulousedevops
+    title: "GitHub"
 ---
 
-Ce groupe s'adresse à toutes les personnes intéressées par le DevOps. Nous y parlons d'automatisation du déploiement, de livraison continue, de cloud et de sujets associés.
+Toulouse DevOps rassemble les passionnés d'infrastructure, d'automatisation et de culture DevOps, qu'ils soient développeurs, ops, SRE ou simplement curieux.
+
+La communauté organise des meetups gratuits autour de talks techniques et de retours d'expérience. Les échanges portent notamment sur l'automatisation des déploiements, la livraison continue, le cloud et les pratiques qui rapprochent développement et opérations.
