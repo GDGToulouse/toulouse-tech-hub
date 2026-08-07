@@ -22,4 +22,4 @@ social:
 
 Le Capitole du Libre est l'un des grands rendez-vous toulousains consacrés au logiciel libre, à l'open source et aux communs numériques. La conférence rassemble un large public autour de keynotes, conférences, ateliers, village associatif, sujets de vie privée, de sécurité, de création et de culture libre.
 
-L'événement se tient sur deux jours à Toulouse et valorise autant les retours d'expérience techniques que les usages concrets du libre. Les canaux référencés ici pointent vers l'organisation officielle et ses annonces pour l'édition à venir.
+L'événement se tient sur deux jours à Toulouse et valorise autant les retours d'expérience techniques que les usages concrets du libre. Il met aussi en avant la richesse du tissu associatif et des communautés engagées autour du logiciel libre.
