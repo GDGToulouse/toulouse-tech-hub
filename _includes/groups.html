@@ -1,11 +1,11 @@
-<div class="community-links my-3" role="list">
+<div class="community-links my-3">
 {% assign groups_by_name = site.groups | sort_natural: "name" %}
 {% for group in groups_by_name %}
 {%- assign group_img_url = "" -%}
 {%- unless group.img == "none" -%}
   {%- capture group_img_url -%}{{ site.baseurl }}/groups-imgs/{{ group.slug }}.jpg{%- endcapture -%}
 {%- endunless -%}
-<a class="community-link-item" href="{{ group.url | relative_url }}" role="listitem" aria-label="Voir la page de la communauté {{ group.name | escape }}">
+<a class="community-link-item" href="{{ group.url | relative_url }}" aria-label="Voir la page de la communauté {{ group.name | escape }}">
   {% if group_img_url != "" %}
   <img class="community-link-logo" src="{{ group_img_url }}" alt="" loading="lazy">
   {% else %}
