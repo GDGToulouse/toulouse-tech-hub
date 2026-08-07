@@ -9,8 +9,16 @@ archive_days: 365
 
 collections:
   groups:
-    output: false
+    output: true
+    permalink: /groups/:slug/
   confs:
     output: false
   events:
     output: false
+
+defaults:
+  - scope:
+      path: ""
+      type: groups
+    values:
+      layout: group
