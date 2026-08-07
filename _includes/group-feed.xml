@@ -11,7 +11,7 @@
   <link rel="self" href="{{ feed_url }}" />
   <link rel="alternate" href="{{ site.site }}{{ site.baseurl }}/groups/{{ include.group_slug }}/" />
   <id>urn:toulouse-tech-hub:group:{{ include.group_slug }}</id>
-  <updated>{{ site.time | date: "%Y-%m-%dT%T" }}+01:00</updated>
+  <updated>{{ site.time | date_to_xmlschema }}</updated>
 {%- for event in site.events reversed -%}
 {%- if event.groupId != include.group_slug -%}{%- continue -%}{%- endif -%}
 {%- if event.path contains ".skip" -%}{%- continue -%}{%- endif -%}

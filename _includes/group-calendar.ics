@@ -23,7 +23,7 @@ X-WR-TIMEZONE:Europe/Paris
 BEGIN:VEVENT
 DTSTAMP:{{ site.time | date: "%Y%m%dT%H%M%SZ" }}
 DTSTART;TZID=Europe/Paris:{{ event.dateIso | date: "%Y%m%d" }}T{{ event.dateIso | date: "%H%M" }}00
-DTEND;TZID=Europe/Paris:{% if event.dateIsoEnd %}{{ event.dateIsoEnd | date: "%Y%m%d" }}T{{ event.dateIsoEnd | date: "%H%M" }}00{% else %}{{ event.dateIso | date: "%Y%m%d" }}T{{ event.dateIso | date: "%s" | plus: 7200 | date: "%H%M" }}00{% endif %}
+DTEND;TZID=Europe/Paris:{% if event.dateIsoEnd %}{{ event.dateIsoEnd | date: "%Y%m%dT%H%M%S" }}{% else %}{{ event.dateIso | date: "%s" | plus: 7200 | date: "%Y%m%dT%H%M%S" }}{% endif %}
 SEQUENCE:0
 SUMMARY:{{ event.title | strip | replace: "\n", " " | replace: ",", "\\," | replace: ";", "\\;" }}
 UID:{{ event.eventId }}@toulouse-tech-hub.fr
