@@ -19,12 +19,14 @@ layout: null
 {%- endif -%}
   {%- unless is_first_item -%},{%- endunless -%}
   {%- assign is_first_item = false -%}
+  {%- assign event_source_name = event.path | split: "/" | last | split: "." | first -%}
+  {%- capture image_path %}event-imgs/{{ event_source_name }}.webp{% endcapture -%}
   {
     "Id": {{ event.id | jsonify }},
     "Href": {{ event.link | jsonify }},
     "Title": {{ event.title | strip | jsonify }},
     "Start": "{{ event.dateIso | date:"%Y-%m-%dT%T" }}",
-    "Img": {{ site.site | append: "/" | append: site.baseurl | append: "/" | append: event.localImg | jsonify }},
+    "Img": {{ site.site | append: site.baseurl | append: "/" | append: image_path | jsonify }},
     "Group": {{ event.community | strip | jsonify }},
     "Venue": {{ event.place | strip | jsonify }},
     "VenueAddr": {{ event.placeAddr | strip | jsonify }},
