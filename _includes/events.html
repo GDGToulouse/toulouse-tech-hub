@@ -163,7 +163,7 @@
       <a href="{{ event.link }}">
         {%- assign event_source_name = event.path | split: "/" | last | split: "." | first -%}
         {%- capture image_path %}event-imgs/{{ event_source_name }}.webp{% endcapture -%}
-        <img class="w-100" style="aspect-ratio: 16/9; object-fit: contain; background-color: #f8f9fa; display: block;" src="{{ site.baseurl }}/{{ image_path }}" alt="{{ event.title }}"
+        <img class="w-100" style="aspect-ratio: 16/9; object-fit: contain; background-color: #f8f9fa; display: block;" src="{{ site.baseurl }}/{{ image_path }}" alt="{{ event.title | escape }}"
              {%- if event.img and event.img != "" %} onerror="this.onerror=null; this.src='{{ event.img }}';"{% endif -%} />
         <div class="card-body">
           <h5 class="card-title">{{ event.title }}</h5>

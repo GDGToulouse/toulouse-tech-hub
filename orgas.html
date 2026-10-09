@@ -64,7 +64,7 @@ layout: null
             </div>
               {%- assign event_source_name = event.path | split: "/" | last | split: "." | first -%}
               {%- capture image_path %}event-imgs/{{ event_source_name }}.webp{% endcapture -%}
-              <img style="width: 100%; aspect-ratio: 16/9; object-fit: contain; background-color: #f8f9fa; display: block;" src="{{ site.baseurl }}/{{ image_path }}" alt="{{ event.title }}" />
+              <img style="width: 100%; aspect-ratio: 16/9; object-fit: contain; background-color: #f8f9fa; display: block;" src="{{ site.baseurl }}/{{ image_path }}" alt="{{ event.title | escape }}" />
               <div class="card-body text-center">
                 <h5 class="card-title">{{ event.title }}</h5>
                 <p class="card-text">
