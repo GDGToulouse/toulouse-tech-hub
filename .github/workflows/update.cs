@@ -53,6 +53,7 @@ var groups = new IGroup[] {
     new MeetupGroup("toulouse-java-user-group", "jug"),
     new MeetupGroup("mtg-toulouse", "mtg"),
     new MeetupGroup("mug-toulouse-mobile-user-group", "mug-toulouse"),
+    new MeetupGroup("occitanie-open-source", "occitanie-open-source"),
     new MeetupGroup("postgres-toulouse", "postgres"),
     new MeetupGroup("python-toulouse", "python"),
     new MeetupGroup("rust-community-toulouse", "rust"),
