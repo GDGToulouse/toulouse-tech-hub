@@ -42,6 +42,7 @@ Seuls les communautés à but non lucratif sont référencées, et seuls les év
 - [La "Toul Box" du Cloud Natif](https://www.meetup.com/latoulboxducloudnatif/)
 - [MTG:Toulouse](https://www.meetup.com/mtg-toulouse/)
 - [MUG Toulouse](https://www.meetup.com/mug-toulouse-mobile-user-group/)
+- [Occitanie Open Source](https://occos-cluster.com/)
 - [Postgres Toulouse](https://www.meetup.com/postgres-toulouse)
 - [Python Toulouse](https://www.meetup.com/python-toulouse/)
 - [Rust Toulouse](https://www.meetup.com/fr-FR/rust-community-toulouse/)
