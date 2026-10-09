@@ -1,7 +1,6 @@
 ---
 name: "Occitanie Open Source"
 link: https://occos-cluster.com/
-img: none
 social:
   - icon: bi-twitter-x
     url: https://x.com/occoscluster
