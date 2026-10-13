@@ -47,6 +47,7 @@ Mapper le nom de communauté vers son slug en consultant `_groups/` :
 | Swift Toulouse | swift |
 | Tech a Break | tech-a-break |
 | Tech Speak'her | tech-speak-her |
+| Tetalab | tetalab |
 | Toulouse Data Science | tds |
 | Toulouse Data-Viz | dataviz |
 | Toulouse DevOps | devops |
