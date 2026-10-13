@@ -49,6 +49,7 @@ L'objectif est d'abord d'aider les communautés à but non lucratif, et de relay
 - [Swift Toulouse](https://www.meetup.com/swift-toulouse/)
 - [Tech a Break](https://www.meetup.com/tech-a-break/)
 - [Tech Speak'her](https://www.linkedin.com/company/tech-speak-her/)
+- [Tetalab](https://tetalab.org)
 - [Toulouse Data Science](https://www.meetup.com/tlse-data-science/)
 - [Toulouse Data-Viz](https://www.meetup.com/meetup-visualisation-des-donnees-toulouse/)
 - [Toulouse DevOps](https://www.meetup.com/toulouse-devops/)
