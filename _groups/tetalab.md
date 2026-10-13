@@ -1,7 +1,6 @@
 ---
 name: Tetalab
 link: https://tetalab.org
-img: none
 ---
 
 Loin d'être une bande de méchant-e-s hackers comme dépeint dans les médias, Tetalab a à cœur de (re)présenter la culture hacker sous un angle honnête et en accord avec sa réelle philosophie égalitariste : réappropriation des outils technologiques, DIY, logiciels et matériel libres, partage et transmission des connaissances.
