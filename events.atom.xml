@@ -38,10 +38,15 @@ layout: null
     <title>{{ event.dateFr }} à {{ event.timeFr}} : {{ event.title | replace: "&", "&amp;" | replace: "<", "&lt;" }}</title>
     <link rel="alternate" href="{{ event.link }}" />
     <author><name>{{ event.community | replace: "&", "&amp;" | replace: "<", "&lt;" }}</name></author>
+    {%- if event.eventId contains "ics-" -%}
+    <media:thumbnail url="{{ event.img | xml_escape }}" />
+    <link rel="enclosure" type="image/jpeg" href="{{ event.img | xml_escape }}" />
+    {%- else -%}
     {%- assign event_source_name = event.path | split: "/" | last | split: "." | first -%}
     {%- capture image_path %}event-imgs/{{ event_source_name }}.webp{% endcapture -%}
     <media:thumbnail url="{{ site.site }}{{ site.baseurl }}/{{ image_path }}" />
     <link rel="enclosure" type="image/webp" href="{{ site.site }}{{ site.baseurl }}/{{ image_path }}" />
+    {%- endif -%}
     <content type="html">{{ event.content | replace: "&", "&amp;" | replace: "<", "&lt;" | replace: ">", "&gt;" }}</content>
   </entry>
 

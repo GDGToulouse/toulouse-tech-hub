@@ -28,6 +28,18 @@ Exemples de détection :
 - `https://toulousegamedev.fr/` → Site custom (pas de synchronisation auto)
 - `https://www.agiletoulouse.fr/` → Site custom (pas de synchronisation auto)
 
+## Détection d'un flux iCalendar
+
+Si la communauté publie un calendrier iCalendar (`.ics`), ajouter une source `IcsCalendarGroup` dans `.github/workflows/update.cs` avec l'identifiant de la communauté, son nom, l'URL du flux et l'URL d'une image de repli. Les événements seront synchronisés automatiquement, sans scraper la page du calendrier.
+
+Exemple :
+
+```csharp
+new IcsCalendarGroup("aificionados", "AI-ficionados", "https://api.luma.com/ics/get?entity=calendar&id=cal-tFbPFrunYUVD0iG", "https://toulouse-tech-hub.fr/groups-imgs/aificionados.jpg"),
+```
+
+Le flux doit fournir un UID, un titre et une date de début pour chaque évènement. Les champs iCalendar `DTEND`, `URL`, `DESCRIPTION` et `LOCATION` sont facultatifs.
+
 ## Étapes pour créer la PR
 
 ### 1. Créer le fichier `_groups/{slug}.md`
