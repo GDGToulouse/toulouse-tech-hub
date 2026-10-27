@@ -46,6 +46,7 @@ var groups = new IGroup[] {
     new SyndicationGroup("https://toulousegamedev.fr/category/evenements/meetups/feed/", "tgd", "Toulouse Game Dev", knownEvts,
         ToulouseGameDevGroup.ParseEventStart, "La Mêlée", "27 rue d'Aubuisson, 31000 Toulouse"),
     new MeetupGroup("afup-toulouse", "afup-toulouse"),
+    new IcsCalendarGroup("aificionados", "AI-ficionados", "https://api.luma.com/ics/get?entity=calendar&id=cal-tFbPFrunYUVD0iG", "https://toulouse-tech-hub.fr/groups-imgs/aificionados.jpg"),
     new MeetupGroup("agile-toulouse", "agile"),
     new MeetupGroup("artilect-fablab", "artilect"),
     new MeetupGroup("toulouse-amazon-web-services", "aws"),
@@ -144,6 +145,7 @@ var repoRoot = Directory.GetCurrentDirectory();
                 VenueName = yaml.GetValueOrDefault("place", ""),
                 VenueAddr = yaml.GetValueOrDefault("placeAddr", ""),
                 Start = DateTimeOffset.TryParse(yaml.GetValueOrDefault("dateIso", ""), out var start) ? start : DateTimeOffset.MinValue,
+                End = DateTimeOffset.TryParse(yaml.GetValueOrDefault("dateIsoEnd", ""), out var end) ? end : null,
                 PublishedOn = DateTimeOffset.TryParse(yaml.GetValueOrDefault("datePublished", ""), out var pub) ? pub : DateTimeOffset.MinValue,
                 HtmlDescription = htmlContent
             };
@@ -179,7 +181,7 @@ List<Event> evts = [];
 
                 // téléchargement de l'image => event-imgs/YYYY-MM-DD-groupId-eventId.webp
                 // Mise à jour basée sur Last-Modified: télécharge si source plus récente que le fichier local
-                if (!string.IsNullOrEmpty(evt.ImgSrc))
+                if (!evt.IsCancelled && !string.IsNullOrEmpty(evt.ImgSrc) && !evt.ImgSrcIsFallback)
                 {
                     var fileNamePrefix = $"{evt.Start:yyyy-MM-dd}-{evt.GroupId}-{evt.Id}";
                     var localPath = Path.Combine(repoRoot, $"event-imgs/{fileNamePrefix}.webp");
@@ -307,7 +309,30 @@ List<Event> evts = [];
 {
     var eventsDir = Path.Combine(repoRoot, "_events");
     Directory.CreateDirectory(eventsDir);
-    foreach (var evt in evts.Where(e => e.Start >= DateTime.Today).OrderBy(e => e.Start).ThenBy(e => e.Id))
+    foreach (var evt in evts.Where(e => e.IsCancelled))
+    {
+        var knownEvt = knownEvts.FirstOrDefault(e => e.Id == evt.Id && e.GroupId == evt.GroupId);
+        if (knownEvt == null)
+            continue;
+
+        var knownFileNamePrefix = $"{knownEvt.Start:yyyy-MM-dd}-{knownEvt.GroupId}-{knownEvt.Id}";
+        var knownFileName = Path.Combine(eventsDir, $"{knownFileNamePrefix}.html");
+        if (File.Exists(knownFileName))
+            File.Delete(knownFileName);
+        if (File.Exists(knownFileName + ".skip"))
+            File.Delete(knownFileName + ".skip");
+
+        var eventImgsDir = Path.Combine(repoRoot, "event-imgs");
+        if (Directory.Exists(eventImgsDir))
+        {
+            foreach (var image in Directory.GetFiles(eventImgsDir, knownFileNamePrefix + ".*"))
+                File.Delete(image);
+        }
+
+        Console.WriteLine($"🔹🗑️ Évènement annulé supprimé: {knownFileNamePrefix}");
+    }
+
+    foreach (var evt in evts.Where(e => !e.IsCancelled && e.Start >= DateTime.Today).OrderBy(e => e.Start).ThenBy(e => e.Id))
     {
         var fileNamePrefix = $"{evt.Start:yyyy-MM-dd}-{evt.GroupId}-{evt.Id}";
         var fileName = Path.Combine(eventsDir, $"{fileNamePrefix}.html");
@@ -345,6 +370,8 @@ List<Event> evts = [];
         writer.WriteLine($"community: \"{evt.Group.Replace("\\", "\\\\").Replace("\"", "\\\"")}\"");
         writer.WriteLine($"datePublished: {evt.PublishedOn:yyyy-MM-dd HH:mm}");
         writer.WriteLine($"dateIso: {evt.Start:yyyy-MM-dd HH:mm}");
+        if (evt.End.HasValue)
+            writer.WriteLine($"dateIsoEnd: {evt.End.Value:yyyy-MM-dd HH:mm}");
         writer.WriteLine($"dateFr: {evt.Start:dddd d MMMM}");
         writer.WriteLine($"timeFr: '{evt.Start:HH:mm}'");
         writer.WriteLine($"place: \"{(evt.VenueName ?? "").Replace("\\", "\\\\").Replace("\"", "\\\"")}\"");
@@ -379,6 +406,277 @@ interface IGroup
     public string? Name { get; }
 
     IAsyncEnumerable<Event> Scan(IBrowserContext browserContext, IPage page, bool loadPast);
+}
+
+partial class IcsCalendarGroup : IGroup
+{
+    private static readonly HttpClient Http = new() { Timeout = TimeSpan.FromSeconds(30) };
+    private readonly string _calendarUrl;
+    private readonly string _fallbackImageUrl;
+
+    public IcsCalendarGroup(string id, string name, string calendarUrl, string fallbackImageUrl)
+    {
+        Id = id;
+        Name = name;
+        _calendarUrl = calendarUrl;
+        _fallbackImageUrl = fallbackImageUrl;
+    }
+
+    public string Id { get; }
+
+    public string Name { get; }
+
+    public async IAsyncEnumerable<Event> Scan(IBrowserContext _, IPage __, bool loadPast)
+    {
+        string? calendar;
+        try
+        {
+            calendar = await Http.GetStringAsync(_calendarUrl);
+        }
+        catch (Exception ex) when (ex is HttpRequestException or TaskCanceledException)
+        {
+            Console.WriteLine($"⚠️ Impossible de charger le calendrier iCalendar de {Name}: {ex.Message}");
+            calendar = null;
+        }
+
+        if (calendar == null)
+            yield break;
+
+        foreach (var properties in ParseEvents(calendar))
+        {
+            if (!properties.TryGetValue("UID", out var uidProperty) || string.IsNullOrWhiteSpace(uidProperty.Value))
+                continue;
+
+            var recurrenceId = properties.GetValueOrDefault("RECURRENCE-ID");
+            var uidToHash = recurrenceId == null
+                ? uidProperty.Value
+                : $"{uidProperty.Value}\0{recurrenceId.Value}";
+            var uidHash = Convert.ToHexString(SHA256.HashData(Encoding.UTF8.GetBytes(uidToHash))).ToLowerInvariant();
+            var eventId = $"ics-{Id}-{uidHash}";
+            var isCancelled = properties.TryGetValue("STATUS", out var status) &&
+                status.Value.Equals("CANCELLED", StringComparison.OrdinalIgnoreCase);
+            if (isCancelled)
+            {
+                yield return new Event
+                {
+                    Id = eventId,
+                    PublishedOn = DateTimeOffset.UtcNow,
+                    Href = _calendarUrl,
+                    Title = "",
+                    Start = DateTimeOffset.MinValue,
+                    ImgSrc = null,
+                    Group = Name,
+                    GroupId = Id,
+                    IsCancelled = true
+                };
+                continue;
+            }
+
+            if (!properties.TryGetValue("SUMMARY", out var titleProperty) || string.IsNullOrWhiteSpace(titleProperty.Value) ||
+                !properties.TryGetValue("DTSTART", out var startProperty) ||
+                !TryParseDate(startProperty, out var start))
+                continue;
+
+            var localStart = TimeZoneInfo.ConvertTime(start, FrenchLocales.ParisTimeZone);
+            DateTimeOffset? end = null;
+            if (properties.TryGetValue("DTEND", out var endProperty) && TryParseDate(endProperty, out var parsedEnd))
+                end = TimeZoneInfo.ConvertTime(parsedEnd, FrenchLocales.ParisTimeZone);
+
+            if (!loadPast && (end ?? localStart) < FrenchLocales.ParisNow)
+                continue;
+
+            var description = properties.TryGetValue("DESCRIPTION", out var descriptionProperty)
+                ? descriptionProperty.Value
+                : "";
+            var href = properties.TryGetValue("URL", out var urlProperty) &&
+                Uri.TryCreate(urlProperty.Value, UriKind.Absolute, out var eventUrl) &&
+                (eventUrl.Scheme == Uri.UriSchemeHttp || eventUrl.Scheme == Uri.UriSchemeHttps)
+                    ? eventUrl.AbsoluteUri
+                    : ExtractEventUrl(description) ?? _calendarUrl;
+            var htmlDescription = string.IsNullOrWhiteSpace(description)
+                ? null
+                : $"<p>{System.Net.WebUtility.HtmlEncode(description).Replace("\n", "<br>")}</p>";
+            var location = properties.TryGetValue("LOCATION", out var locationProperty)
+                ? locationProperty.Value
+                : "";
+            var title = titleProperty.Value.Replace('\r', ' ').Replace('\n', ' ').Trim();
+            location = location.Replace('\r', ' ').Replace('\n', ' ').Trim();
+
+            yield return new Event
+            {
+                Id = eventId,
+                PublishedOn = DateTimeOffset.UtcNow,
+                Href = href,
+                Title = title,
+                Start = localStart,
+                End = end,
+                ImgSrc = _fallbackImageUrl,
+                ImgSrcIsFallback = true,
+                Group = Name,
+                GroupId = Id,
+                VenueName = location,
+                VenueAddr = "",
+                HtmlDescription = htmlDescription
+            };
+        }
+    }
+
+    private static IEnumerable<Dictionary<string, IcsProperty>> ParseEvents(string calendar)
+    {
+        Dictionary<string, IcsProperty>? currentEvent = null;
+        var componentDepth = 0;
+        foreach (var line in UnfoldLines(calendar))
+        {
+            if (line.StartsWith("BEGIN:", StringComparison.OrdinalIgnoreCase))
+            {
+                if (currentEvent == null && line.Equals("BEGIN:VEVENT", StringComparison.OrdinalIgnoreCase))
+                {
+                    currentEvent = new(StringComparer.OrdinalIgnoreCase);
+                    componentDepth = 1;
+                }
+                else if (currentEvent != null)
+                {
+                    componentDepth++;
+                }
+            }
+            else if (line.StartsWith("END:", StringComparison.OrdinalIgnoreCase) && currentEvent != null)
+            {
+                componentDepth--;
+                if (componentDepth == 0)
+                {
+                    yield return currentEvent;
+                    currentEvent = null;
+                }
+            }
+            else if (currentEvent != null && componentDepth == 1 && ParseProperty(line) is { } property)
+            {
+                currentEvent[property.Name] = property;
+            }
+        }
+    }
+
+    private static IEnumerable<string> UnfoldLines(string calendar)
+    {
+        StringBuilder? currentLine = null;
+        using var reader = new StringReader(calendar);
+        while (reader.ReadLine() is { } line)
+        {
+            if (line.Length > 0 && (line[0] == ' ' || line[0] == '\t') && currentLine != null)
+            {
+                currentLine.Append(line[1..]);
+                continue;
+            }
+
+            if (currentLine != null)
+                yield return currentLine.ToString();
+            currentLine = new StringBuilder(line);
+        }
+
+        if (currentLine != null)
+            yield return currentLine.ToString();
+    }
+
+    private static IcsProperty? ParseProperty(string line)
+    {
+        var colonIndex = line.IndexOf(':');
+        if (colonIndex <= 0)
+            return null;
+
+        var header = line[..colonIndex].Split(';');
+        var parameters = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase);
+        foreach (var parameter in header.Skip(1))
+        {
+            var equalsIndex = parameter.IndexOf('=');
+            if (equalsIndex > 0)
+                parameters[parameter[..equalsIndex]] = parameter[(equalsIndex + 1)..].Trim('"');
+        }
+
+        return new IcsProperty(header[0], Unescape(line[(colonIndex + 1)..]), parameters);
+    }
+
+    private static string Unescape(string value)
+    {
+        var result = new StringBuilder(value.Length);
+        for (var i = 0; i < value.Length; i++)
+        {
+            if (value[i] != '\\' || i + 1 >= value.Length)
+            {
+                result.Append(value[i]);
+                continue;
+            }
+
+            result.Append(value[++i] switch
+            {
+                'n' or 'N' => '\n',
+                ',' => ',',
+                ';' => ';',
+                '\\' => '\\',
+                var escaped => escaped
+            });
+        }
+
+        return result.ToString();
+    }
+
+    private static string? ExtractEventUrl(string description)
+    {
+        var match = Regex.Match(description, @"https?://[^\s<>]+", RegexOptions.IgnoreCase | RegexOptions.CultureInvariant);
+        var candidate = match.Success ? match.Value.TrimEnd('.', ',', ';', ')', ']') : "";
+        return Uri.TryCreate(candidate, UriKind.Absolute, out var uri) &&
+            (uri.Scheme == Uri.UriSchemeHttp || uri.Scheme == Uri.UriSchemeHttps)
+                ? uri.AbsoluteUri
+                : null;
+    }
+
+    private static bool TryParseDate(IcsProperty property, out DateTimeOffset result)
+    {
+        var value = property.Value;
+        if (DateTime.TryParseExact(value, "yyyyMMdd", CultureInfo.InvariantCulture, DateTimeStyles.None, out var date))
+        {
+            var offset = FrenchLocales.ParisTimeZone.GetUtcOffset(date);
+            result = new DateTimeOffset(date, offset);
+            return true;
+        }
+
+        var isUtc = value.EndsWith("Z", StringComparison.OrdinalIgnoreCase);
+        var formats = isUtc
+            ? new[] { "yyyyMMdd'T'HHmmss'Z'", "yyyyMMdd'T'HHmm'Z'" }
+            : new[] { "yyyyMMdd'T'HHmmss", "yyyyMMdd'T'HHmm" };
+        if (!DateTime.TryParseExact(value, formats, CultureInfo.InvariantCulture, DateTimeStyles.None, out var dateTime))
+        {
+            result = default;
+            return false;
+        }
+
+        if (isUtc)
+        {
+            result = new DateTimeOffset(DateTime.SpecifyKind(dateTime, DateTimeKind.Utc));
+            return true;
+        }
+
+        var timeZone = FrenchLocales.ParisTimeZone;
+        if (property.Parameters.TryGetValue("TZID", out var timeZoneId))
+        {
+            try
+            {
+                timeZone = TimeZoneInfo.FindSystemTimeZoneById(timeZoneId);
+            }
+            catch (TimeZoneNotFoundException)
+            {
+                // Use the Toulouse time zone when the feed's time zone is unavailable.
+            }
+            catch (InvalidTimeZoneException)
+            {
+                // Use the Toulouse time zone when the feed's time zone is invalid.
+            }
+        }
+
+        var localDateTime = DateTime.SpecifyKind(dateTime, DateTimeKind.Unspecified);
+        result = new DateTimeOffset(localDateTime, timeZone.GetUtcOffset(localDateTime));
+        return true;
+    }
+
+    private sealed record IcsProperty(string Name, string Value, Dictionary<string, string> Parameters);
 }
 
 sealed class SyndicationGroup : IGroup
@@ -464,9 +762,12 @@ sealed class SyndicationGroup : IGroup
             var sourceId = ReadValue(entry, "guid", "id") ?? link;
             if (!sourceIds.Add(sourceId))
                 continue;
-            var description = entry.Elements().FirstOrDefault(element => element.Name.LocalName == "encoded" && element.Name.NamespaceName == ContentNamespace)
-                ?? entry.Elements().FirstOrDefault(element => element.Name.LocalName == "content" && element.Name.NamespaceName == AtomNamespace)
-                ?? entry.Elements().FirstOrDefault(element => element.Name.LocalName == "description" || element.Name.LocalName == "summary");
+            var description = entry.Elements().FirstOrDefault(element =>
+                    element.Name.LocalName == "encoded" && element.Name.NamespaceName == ContentNamespace)
+                ?? entry.Elements().FirstOrDefault(element =>
+                    element.Name.LocalName == "content" && element.Name.NamespaceName == AtomNamespace)
+                ?? entry.Elements().FirstOrDefault(element =>
+                    element.Name.LocalName == "description" || element.Name.LocalName == "summary");
             var rawDescription = description == null
                 ? null
                 : string.Concat(description.Nodes().Select(node => node switch
@@ -560,7 +861,6 @@ sealed class SyndicationGroup : IGroup
             return null;
         value = value.Trim();
 
-        // Sans fuseau explicite, les horaires des communautés sont ceux de Paris, pas ceux du runner.
         if (!Regex.IsMatch(value, @"(?:Z|[+-]\d{2}:?\d{2})$", RegexOptions.IgnoreCase))
         {
             if (!DateTime.TryParse(value, CultureInfo.InvariantCulture, DateTimeStyles.None, out var local))
@@ -1064,25 +1364,6 @@ partial class ToulouseGameDevGroup : IGroup
 
     public string Name => "Toulouse Game Dev";
 
-    public static DateTimeOffset? ParseEventStart(string text, string link)
-    {
-        var match = Regex.Match(text,
-            @"Rendez-vous\s+le\s+(?:\p{L}+\s+)?(?<day>\d{1,2})\s+(?<month>\p{L}+)(?:\s+(?<year>\d{4}))?\s+à\s+partir\s+de\s+(?<hour>\d{1,2})h(?<minute>\d{2})",
-            RegexOptions.IgnoreCase | RegexOptions.CultureInvariant);
-        if (!match.Success)
-            return null;
-
-        var year = match.Groups["year"].Success
-            ? match.Groups["year"].Value
-            : Regex.Match(new Uri(link).AbsolutePath, @"^/(\d{4})/").Groups[1].Value;
-        var dateText = $"{match.Groups["day"]} {match.Groups["month"]} {year} {match.Groups["hour"]}:{match.Groups["minute"]}";
-        if (!DateTime.TryParseExact(dateText, "d MMMM yyyy H:mm", FrenchLocales.FrenchCultureInfo,
-            DateTimeStyles.None, out var date) || FrenchLocales.ParisTimeZone.IsInvalidTime(date))
-            return null;
-
-        return new DateTimeOffset(date, FrenchLocales.ParisTimeZone.GetUtcOffset(date));
-    }
-
     public async IAsyncEnumerable<Event> Scan(IBrowserContext browserContext, IPage _, bool loadPast)
     {
         Console.WriteLine($"🤖 Début scan page Toulouse Game Dev");
@@ -1251,6 +1532,28 @@ partial class ToulouseGameDevGroup : IGroup
     private static partial Regex VenueLineRegex();
 }
 
+partial class ToulouseGameDevGroup
+{
+    public static DateTimeOffset? ParseEventStart(string text, string link)
+    {
+        var match = Regex.Match(text,
+            @"Rendez-vous\s+le\s+(?:\p{L}+\s+)?(?<day>\d{1,2})\s+(?<month>\p{L}+)(?:\s+(?<year>\d{4}))?\s+à\s+partir\s+de\s+(?<hour>\d{1,2})h(?<minute>\d{2})",
+            RegexOptions.IgnoreCase | RegexOptions.CultureInvariant);
+        if (!match.Success)
+            return null;
+
+        var year = match.Groups["year"].Success
+            ? match.Groups["year"].Value
+            : Regex.Match(new Uri(link).AbsolutePath, @"^/(\d{4})/").Groups[1].Value;
+        var dateText = $"{match.Groups["day"]} {match.Groups["month"]} {year} {match.Groups["hour"]}:{match.Groups["minute"]}";
+        if (!DateTime.TryParseExact(dateText, "d MMMM yyyy H:mm", FrenchLocales.FrenchCultureInfo,
+            DateTimeStyles.None, out var date) || FrenchLocales.ParisTimeZone.IsInvalidTime(date))
+            return null;
+
+        return new DateTimeOffset(date, FrenchLocales.ParisTimeZone.GetUtcOffset(date));
+    }
+}
+
 sealed class Event : IComparable<Event>
 {
     /// <summary>Id unique interne.</summary>
@@ -1266,8 +1569,15 @@ sealed class Event : IComparable<Event>
     /// <summary>Date et heure de début de l'évènement.</summary>
     public required DateTimeOffset Start { get; set; }
 
+    /// <summary>Date et heure de fin de l'évènement, si disponible.</summary>
+    public DateTimeOffset? End { get; set; }
+
+    public bool IsCancelled { get; set; }
+
     /// <summary>URL de l'image par défaut de l'évènement.</summary>
     public required string? ImgSrc { get; set; }
+
+    public bool ImgSrcIsFallback { get; set; }
 
     /// <summary>Nom public du groupe.</summary>
     public required string Group { get; set; }
