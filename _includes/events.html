@@ -93,7 +93,11 @@
   {%- assign is_first_structured_event = false -%}
   {%- assign structured_event_position = structured_event_position | plus: 1 -%}
   {%- assign event_source_name = event.path | split: "/" | last | split: "." | first -%}
-  {%- capture image_url -%}{{ site.site }}{{ site.baseurl }}/event-imgs/{{ event_source_name }}.webp{%- endcapture -%}
+  {%- if event.eventId contains "ics-" -%}
+    {%- assign image_url = event.img -%}
+  {%- else -%}
+    {%- capture image_url -%}{{ site.site }}{{ site.baseurl }}/event-imgs/{{ event_source_name }}.webp{%- endcapture -%}
+  {%- endif -%}
   {%- capture event_url -%}{{ event.link }}{%- endcapture -%}
   {%- capture event_description -%}{{ event.content | strip_html | normalize_whitespace | truncate: 280 }}{%- endcapture -%}
   {%- capture event_end_date -%}{% if event.dateIsoEnd %}{{ event.dateIsoEnd | date: "%Y-%m-%dT%H:%M:%S%:z" }}{% else %}{{ event.dateIso | date: "%s" | plus: 7200 | date: "%Y-%m-%dT%H:%M:%S%:z" }}{% endif %}{%- endcapture -%}

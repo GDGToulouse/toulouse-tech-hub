@@ -177,7 +177,7 @@ List<Event> evts = [];
 
                 // téléchargement de l'image => event-imgs/YYYY-MM-DD-groupId-eventId.webp
                 // Mise à jour basée sur Last-Modified: télécharge si source plus récente que le fichier local
-                if (!string.IsNullOrEmpty(evt.ImgSrc) && !evt.ImgSrcIsFallback)
+                if (!evt.IsCancelled && !string.IsNullOrEmpty(evt.ImgSrc) && !evt.ImgSrcIsFallback)
                 {
                     var fileNamePrefix = $"{evt.Start:yyyy-MM-dd}-{evt.GroupId}-{evt.Id}";
                     var localPath = Path.Combine(repoRoot, $"event-imgs/{fileNamePrefix}.webp");
@@ -305,7 +305,30 @@ List<Event> evts = [];
 {
     var eventsDir = Path.Combine(repoRoot, "_events");
     Directory.CreateDirectory(eventsDir);
-    foreach (var evt in evts.Where(e => e.Start >= DateTime.Today).OrderBy(e => e.Start).ThenBy(e => e.Id))
+    foreach (var evt in evts.Where(e => e.IsCancelled))
+    {
+        var knownEvt = knownEvts.FirstOrDefault(e => e.Id == evt.Id && e.GroupId == evt.GroupId);
+        if (knownEvt == null)
+            continue;
+
+        var knownFileNamePrefix = $"{knownEvt.Start:yyyy-MM-dd}-{knownEvt.GroupId}-{knownEvt.Id}";
+        var knownFileName = Path.Combine(eventsDir, $"{knownFileNamePrefix}.html");
+        if (File.Exists(knownFileName))
+            File.Delete(knownFileName);
+        if (File.Exists(knownFileName + ".skip"))
+            File.Delete(knownFileName + ".skip");
+
+        var eventImgsDir = Path.Combine(repoRoot, "event-imgs");
+        if (Directory.Exists(eventImgsDir))
+        {
+            foreach (var image in Directory.GetFiles(eventImgsDir, knownFileNamePrefix + ".*"))
+                File.Delete(image);
+        }
+
+        Console.WriteLine($"🔹🗑️ Évènement annulé supprimé: {knownFileNamePrefix}");
+    }
+
+    foreach (var evt in evts.Where(e => !e.IsCancelled && e.Start >= DateTime.Today).OrderBy(e => e.Start).ThenBy(e => e.Id))
     {
         var fileNamePrefix = $"{evt.Start:yyyy-MM-dd}-{evt.GroupId}-{evt.Id}";
         var fileName = Path.Combine(eventsDir, $"{fileNamePrefix}.html");
@@ -417,14 +440,37 @@ partial class IcsCalendarGroup : IGroup
 
         foreach (var properties in ParseEvents(calendar))
         {
-            if (!properties.TryGetValue("UID", out var uidProperty) || string.IsNullOrWhiteSpace(uidProperty.Value) ||
-                !properties.TryGetValue("SUMMARY", out var titleProperty) || string.IsNullOrWhiteSpace(titleProperty.Value) ||
-                !properties.TryGetValue("DTSTART", out var startProperty) ||
-                !TryParseDate(startProperty, out var start))
+            if (!properties.TryGetValue("UID", out var uidProperty) || string.IsNullOrWhiteSpace(uidProperty.Value))
                 continue;
 
-            if (properties.TryGetValue("STATUS", out var status) &&
-                status.Value.Equals("CANCELLED", StringComparison.OrdinalIgnoreCase))
+            var recurrenceId = properties.GetValueOrDefault("RECURRENCE-ID");
+            var uidToHash = recurrenceId == null
+                ? uidProperty.Value
+                : $"{uidProperty.Value}\0{recurrenceId.Value}";
+            var uidHash = Convert.ToHexString(SHA256.HashData(Encoding.UTF8.GetBytes(uidToHash))).ToLowerInvariant();
+            var eventId = $"ics-{Id}-{uidHash}";
+            var isCancelled = properties.TryGetValue("STATUS", out var status) &&
+                status.Value.Equals("CANCELLED", StringComparison.OrdinalIgnoreCase);
+            if (isCancelled)
+            {
+                yield return new Event
+                {
+                    Id = eventId,
+                    PublishedOn = DateTimeOffset.UtcNow,
+                    Href = _calendarUrl,
+                    Title = "",
+                    Start = DateTimeOffset.MinValue,
+                    ImgSrc = null,
+                    Group = Name,
+                    GroupId = Id,
+                    IsCancelled = true
+                };
+                continue;
+            }
+
+            if (!properties.TryGetValue("SUMMARY", out var titleProperty) || string.IsNullOrWhiteSpace(titleProperty.Value) ||
+                !properties.TryGetValue("DTSTART", out var startProperty) ||
+                !TryParseDate(startProperty, out var start))
                 continue;
 
             var localStart = TimeZoneInfo.ConvertTime(start, FrenchLocales.ParisTimeZone);
@@ -449,13 +495,12 @@ partial class IcsCalendarGroup : IGroup
             var location = properties.TryGetValue("LOCATION", out var locationProperty)
                 ? locationProperty.Value
                 : "";
-            var uidHash = Convert.ToHexString(SHA256.HashData(Encoding.UTF8.GetBytes(uidProperty.Value))).ToLowerInvariant();
             var title = titleProperty.Value.Replace('\r', ' ').Replace('\n', ' ').Trim();
             location = location.Replace('\r', ' ').Replace('\n', ' ').Trim();
 
             yield return new Event
             {
-                Id = $"ics-{Id}-{uidHash}",
+                Id = eventId,
                 PublishedOn = DateTimeOffset.UtcNow,
                 Href = href,
                 Title = title,
@@ -475,19 +520,31 @@ partial class IcsCalendarGroup : IGroup
     private static IEnumerable<Dictionary<string, IcsProperty>> ParseEvents(string calendar)
     {
         Dictionary<string, IcsProperty>? currentEvent = null;
+        var componentDepth = 0;
         foreach (var line in UnfoldLines(calendar))
         {
-            if (line.Equals("BEGIN:VEVENT", StringComparison.OrdinalIgnoreCase))
+            if (line.StartsWith("BEGIN:", StringComparison.OrdinalIgnoreCase))
             {
-                currentEvent = new(StringComparer.OrdinalIgnoreCase);
+                if (currentEvent == null && line.Equals("BEGIN:VEVENT", StringComparison.OrdinalIgnoreCase))
+                {
+                    currentEvent = new(StringComparer.OrdinalIgnoreCase);
+                    componentDepth = 1;
+                }
+                else if (currentEvent != null)
+                {
+                    componentDepth++;
+                }
             }
-            else if (line.Equals("END:VEVENT", StringComparison.OrdinalIgnoreCase))
+            else if (line.StartsWith("END:", StringComparison.OrdinalIgnoreCase) && currentEvent != null)
             {
-                if (currentEvent != null)
+                componentDepth--;
+                if (componentDepth == 0)
+                {
                     yield return currentEvent;
-                currentEvent = null;
+                    currentEvent = null;
+                }
             }
-            else if (currentEvent != null && ParseProperty(line) is { } property)
+            else if (currentEvent != null && componentDepth == 1 && ParseProperty(line) is { } property)
             {
                 currentEvent[property.Name] = property;
             }
@@ -1220,6 +1277,8 @@ sealed class Event : IComparable<Event>
 
     /// <summary>Date et heure de fin de l'évènement, si disponible.</summary>
     public DateTimeOffset? End { get; set; }
+
+    public bool IsCancelled { get; set; }
 
     /// <summary>URL de l'image par défaut de l'évènement.</summary>
     public required string? ImgSrc { get; set; }
