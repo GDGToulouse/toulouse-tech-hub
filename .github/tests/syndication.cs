@@ -37,7 +37,8 @@ var server = Task.Run(async () =>
         {
             var request = await listener.GetContextAsync();
             var path = request.Request.Url!.AbsolutePath;
-            var body = path == "/feed" ? feed : articles.GetValueOrDefault(path, "<time datetime='2024-01-01'>Publication</time>");
+            var body = path == "/feed" ? feed : path == "/feed.jpg" ? "image" :
+                articles.GetValueOrDefault(path, "<time datetime='2024-01-01'>Publication</time>");
             using var writer = new StreamWriter(request.Response.OutputStream);
             await writer.WriteAsync(body);
         }
@@ -113,6 +114,21 @@ try
     Check(!Get<string>(atomEvent, "HtmlDescription").Contains("<img"), "Le HTML importé est neutralisé");
     Check(Get<string>((await Scan(atom))[0], "Id") == Get<string>(atomEvent, "Id"), "L'id Atom est stable");
 
+    var mediaBeforeDescription = Item("media-description", "Description RSS", null);
+    mediaBeforeDescription.Add(
+        new XElement(XName.Get("content", "http://search.yahoo.com/mrss/"), new XAttribute("url", "/video.mp4"),
+            new XAttribute("type", "video/mp4")),
+        new XElement("description", new XCData("<meta itemprop='startDate' content='2099-06-02T18:30:00'>")));
+    var parsedDescription = (await Scan(Rss(mediaBeforeDescription)))[0];
+    Check(Get<DateTimeOffset>(parsedDescription, "Start").Year == 2099, "media:content ne masque pas la description RSS");
+    Check(Get<string>(parsedDescription, "ImgSrc") == origin + "/feed.jpg", "Une vidéo n'est pas choisie comme image");
+    var imageMedia = Item("image-media", "Image", "2099-06-02T18:30:00+02:00");
+    imageMedia.Add(
+        new XElement(XName.Get("content", "http://search.yahoo.com/mrss/"), new XAttribute("url", "/video.mp4"), new XAttribute("medium", "video")),
+        new XElement(XName.Get("thumbnail", "http://search.yahoo.com/mrss/"), new XAttribute("url", "/poster.jpg")));
+    Check(Get<string>((await Scan(Rss(imageMedia)))[0], "ImgSrc") == origin + "/poster.jpg",
+        "Une miniature image est choisie après media:content vidéo");
+
     var tgdDate = parseTgd("Rendez-vous le mardi 2 Juin à partir de 18h30 !", origin + "/2099/article/");
     Check(tgdDate == DateTimeOffset.Parse("2099-06-02T18:30:00+02:00"), "La date TGD est extraite du texte avec l'année de l'URL");
     Check(parseTgd("Rendez-vous le 2 janvier 2099 à partir de 18h30 !", origin + "/2098/article/")?.Year == 2099, "L'année explicite TGD est prioritaire");
@@ -128,8 +144,14 @@ try
     Set(legacy, "Title", "Meet-up de Juin");
     Set(legacy, "Href", "https://toulousegamedev.fr/evenements/");
     Set(legacy, "Start", DateTimeOffset.Parse("2099-06-02T18:30:00+02:00"));
+    Set(legacy, "VenueName", "La Mêlée");
+    Set(legacy, "VenueAddr", "27 rue d'Aubuisson, Toulouse");
     var migrated = await Scan(Rss(first, second), [legacy]);
     Check(Get<string>(migrated[0], "Id") == "tgd-2099-06-02", "L'identifiant historique TGD est préservé");
+    Check(Get<string>(migrated[0], "VenueName") == "La Mêlée" &&
+        Get<string>(migrated[0], "VenueAddr") == "27 rue d'Aubuisson, Toulouse", "Le lieu existant est conservé");
+    Check(Get<string>(migrated[1], "VenueName") == "Lieu par défaut" &&
+        Get<string>(migrated[1], "VenueAddr") == "Adresse par défaut", "Le lieu par défaut est appliqué aux nouveaux événements");
     Check(Get<string>(migrated[1], "Id") == secondId, "L'autre rencontre du même jour conserve son ID source");
     var nextRun = await Scan(Rss(second, first), migrated);
     Check(Get<string>(nextRun[1], "Id") == "tgd-2099-06-02", "L'ID historique reste stable après migration et réordonnancement");
@@ -176,7 +198,8 @@ XElement Item(string id, string title, string? start) => new("item",
     new XElement("pubDate", "Mon, 01 Jan 2024 10:00:00 GMT"),
     start == null ? null : new XElement("startDate", start));
 
-string Rss(params XElement[] items) => new XElement("rss", new XElement("channel", items)).ToString();
+string Rss(params XElement[] items) => new XElement("rss",
+    new XElement("channel", new XElement("image", new XElement("url", "/feed.jpg")), items)).ToString();
 
 async Task<List<object>> Scan(string xml, IReadOnlyCollection<object>? known = null,
     bool loadPast = false, Func<string, string, DateTimeOffset?>? parser = null)
@@ -185,7 +208,7 @@ async Task<List<object>> Scan(string xml, IReadOnlyCollection<object>? known = n
     var existing = (IList)Activator.CreateInstance(typeof(List<>).MakeGenericType(eventType))!;
     foreach (var evt in known ?? [])
         existing.Add(evt);
-    var group = Activator.CreateInstance(groupType, [origin + "/feed", "tgd", "Test", existing, parser])!;
+    var group = Activator.CreateInstance(groupType, [origin + "/feed", "tgd", "Test", existing, parser, "Lieu par défaut", "Adresse par défaut"])!;
     var results = (IAsyncEnumerable<object>)groupType.GetMethod("Scan")!.Invoke(group, [context, page, loadPast])!;
     var collected = new List<object>();
     await foreach (var evt in results)

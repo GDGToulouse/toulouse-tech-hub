@@ -43,7 +43,8 @@ var utf8CustomEncoder = Encoding.GetEncoding("UTF-8", new EncoderReplacementFall
 // liste des groupes connus
 List<Event> knownEvts = [];
 var groups = new IGroup[] {
-    new SyndicationGroup("https://toulousegamedev.fr/category/evenements/meetups/feed/", "tgd", "Toulouse Game Dev", knownEvts, ToulouseGameDevGroup.ParseEventStart),
+    new SyndicationGroup("https://toulousegamedev.fr/category/evenements/meetups/feed/", "tgd", "Toulouse Game Dev", knownEvts,
+        ToulouseGameDevGroup.ParseEventStart, "La Mêlée", "27 rue d'Aubuisson, 31000 Toulouse"),
     new MeetupGroup("afup-toulouse", "afup-toulouse"),
     new MeetupGroup("agile-toulouse", "agile"),
     new MeetupGroup("artilect-fablab", "artilect"),
@@ -385,16 +386,22 @@ sealed class SyndicationGroup : IGroup
     private static readonly HttpClient Http = new() { Timeout = TimeSpan.FromSeconds(30) };
     private const string ContentNamespace = "http://purl.org/rss/1.0/modules/content/";
     private const string MediaNamespace = "http://search.yahoo.com/mrss/";
+    private const string AtomNamespace = "http://www.w3.org/2005/Atom";
     private readonly string _feedUrl;
     private readonly IReadOnlyCollection<Event> _knownEvents;
     private readonly Func<string, string, DateTimeOffset?>? _parseEventStart;
+    private readonly string? _defaultVenueName;
+    private readonly string? _defaultVenueAddr;
 
     public SyndicationGroup(string feedUrl, string id, string name, IReadOnlyCollection<Event> knownEvents,
-        Func<string, string, DateTimeOffset?>? parseEventStart = null)
+        Func<string, string, DateTimeOffset?>? parseEventStart = null, string? defaultVenueName = null,
+        string? defaultVenueAddr = null)
     {
         _feedUrl = feedUrl;
         _knownEvents = knownEvents;
         _parseEventStart = parseEventStart;
+        _defaultVenueName = defaultVenueName;
+        _defaultVenueAddr = defaultVenueAddr;
         Id = id;
         Name = name;
     }
@@ -458,7 +465,7 @@ sealed class SyndicationGroup : IGroup
             if (!sourceIds.Add(sourceId))
                 continue;
             var description = entry.Elements().FirstOrDefault(element => element.Name.LocalName == "encoded" && element.Name.NamespaceName == ContentNamespace)
-                ?? entry.Elements().FirstOrDefault(element => element.Name.LocalName == "content")
+                ?? entry.Elements().FirstOrDefault(element => element.Name.LocalName == "content" && element.Name.NamespaceName == AtomNamespace)
                 ?? entry.Elements().FirstOrDefault(element => element.Name.LocalName == "description" || element.Name.LocalName == "summary");
             var rawDescription = description == null
                 ? null
@@ -527,11 +534,22 @@ sealed class SyndicationGroup : IGroup
                 GroupId = Id,
                 Group = Name!,
                 Start = start.Value,
-                ImgSrc = FindImage(entry) ?? fallbackImage,
+                ImgSrc = ResolveHttpUrl(FindImage(entry)) ?? ResolveHttpUrl(fallbackImage),
+                VenueName = NonEmpty(knownEvent?.VenueName) ?? _defaultVenueName,
+                VenueAddr = NonEmpty(knownEvent?.VenueAddr) ?? _defaultVenueAddr,
                 HtmlDescription = safeDescription
             };
         }
     }
+
+    private static string? NonEmpty(string? value) => string.IsNullOrWhiteSpace(value) ? null : value;
+
+    private string? ResolveHttpUrl(string? value) =>
+        !string.IsNullOrWhiteSpace(value) &&
+        Uri.TryCreate(new Uri(_feedUrl), value, out var uri) &&
+        (uri.Scheme == Uri.UriSchemeHttps || uri.Scheme == Uri.UriSchemeHttp)
+            ? uri.AbsoluteUri
+            : null;
 
     private static string NormalizeTitle(string title) =>
         Regex.Replace(WebUtility.HtmlDecode(title), @"[\W_]", "").ToLowerInvariant();
@@ -607,6 +625,15 @@ sealed class SyndicationGroup : IGroup
             var isImageLink = element.Name.LocalName == "link" &&
                 (string?)element.Attribute("rel") == "enclosure" &&
                 ((string?)element.Attribute("type"))?.StartsWith("image/", StringComparison.OrdinalIgnoreCase) == true;
+
+            if (isMediaElement)
+            {
+                var medium = (string?)element.Attribute("medium");
+                var type = (string?)element.Attribute("type");
+                if ((!string.IsNullOrWhiteSpace(medium) && !string.Equals(medium, "image", StringComparison.OrdinalIgnoreCase)) ||
+                    (!string.IsNullOrWhiteSpace(type) && !type.StartsWith("image/", StringComparison.OrdinalIgnoreCase)))
+                    continue;
+            }
 
             if (isMediaElement || isImageEnclosure || isImageLink)
             {
