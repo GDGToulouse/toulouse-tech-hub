@@ -52,7 +52,7 @@ Le projet utilise les collections Jekyll :
 ### Flux de mise à jour des événements
 
 1. Job planifié (9h00 et 17h00 UTC)
-2. Script C# (`.github/workflows/update.cs`) qui lit les sources d'événements
+2. Script C# (`.github/workflows/update.cs`) qui lit les sources d'événements (Meetup, Toulouse Game Dev et flux iCalendar)
 3. Génération/maj des fichiers `_events/`
 4. Téléchargement des images dans `event-imgs/`
 5. Génération Jekyll des sorties (HTML, iCal, Atom, JSON)
@@ -83,8 +83,11 @@ Le workflow GitHub correspondant est `.github/workflows/update-data.yml`.
 
 ### Politique de génération
 
-Le job Update Data génère automatiquement des événements (notamment Meetup et Toulouse Game Dev).  
+Le job Update Data génère automatiquement des événements (notamment Meetup, Toulouse Game Dev et iCalendar).
 Ces fichiers peuvent être écrasés à la prochaine exécution.
+
+Les communautés qui publient un calendrier iCalendar peuvent aussi être synchronisées automatiquement en ajoutant une source `IcsCalendarGroup` dans `.github/workflows/update.cs` avec son identifiant, son nom, l'URL du flux et l'URL d'une image de repli.
+Les champs iCalendar `UID`, `SUMMARY`, `DTSTART`, `DTEND`, `URL`, `DESCRIPTION` et `LOCATION` sont repris dans les événements du site.
 
 Pour désactiver la régénération d'un événement auto-généré, ajoutez un fichier `.skip` adjacent :
 
