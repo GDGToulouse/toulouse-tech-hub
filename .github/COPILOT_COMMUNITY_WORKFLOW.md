@@ -10,12 +10,15 @@ L'issue contient les champs suivants :
 - **community-name** : Nom complet de la communauté
 - **community-slug** : Identifiant court (ex: `python`, `js-and-co`)
 - **community-url** : URL du site principal (peut être une page Meetup)
+- **events-feed-url** : URL du flux RSS ou Atom des événements (optionnel)
 - **registration-url** : URL d'inscription aux événements (optionnel, si différent de community-url)
 - **description** : Description de la communauté
 - **logo-url** : URL du logo (optionnel)
 - **social-links** : Liste de liens sociaux (optionnel)
 
-## Détection automatique de Meetup
+## Détection de la source d'événements
+
+Si `events-feed-url` est renseigné, vérifier le flux et suivre la procédure RSS/Atom ci-dessous. Sinon, détecter Meetup depuis `community-url`. Ne pas enregistrer deux sources pour les mêmes événements.
 
 Si `community-url` contient `meetup.com`, c'est une page Meetup :
 1. Extraire le slug Meetup de l'URL (ex: `https://www.meetup.com/python-toulouse/` → `python-toulouse`)
@@ -25,7 +28,7 @@ Si `community-url` contient `meetup.com`, c'est une page Meetup :
 Exemples de détection :
 - `https://www.meetup.com/python-toulouse/` → Meetup (slug: `python-toulouse`)
 - `https://www.meetup.com/fr-FR/rust-community-toulouse/` → Meetup (slug: `rust-community-toulouse`)
-- `https://toulousegamedev.fr/` → Site custom (pas de synchronisation auto)
+- `https://toulousegamedev.fr/category/evenements/meetups/feed/` → RSS (groupe `tgd`)
 - `https://www.agiletoulouse.fr/` → Site custom (pas de synchronisation auto)
 
 ## Étapes pour créer la PR
@@ -88,7 +91,9 @@ Mapping des types sociaux (icon Bootstrap et titre) :
 - `slack` → `bi-slack` (title: "Slack")
 - `mastodon` → `bi-mastodon` (title: "Mastodon")
 
-### 3. Ajouter dans `.github/workflows/update.cs` (si Meetup)
+### 3. Ajouter la source dans `.github/workflows/update.cs`
+
+#### Meetup
 
 **Détection automatique :** Si `community-url` contient `meetup.com` :
 
@@ -105,6 +110,32 @@ new MeetupGroup("{meetup-slug}", "{community-slug}"),
 ```
 
 Maintenir l'ordre alphabétique par `community-slug`.
+
+#### Flux RSS ou Atom
+
+1. Utiliser `events-feed-url`, ou rechercher un lien `<link rel="alternate" type="application/rss+xml">` / `application/atom+xml` sur le site si aucun flux n'est fourni. Vérifier qu'il s'agit bien d'annonces d'événements.
+2. Examiner plusieurs entrées : titre, lien HTTP(S), identifiant source stable (`guid` RSS / `id` Atom, sinon URL de l'article), date réelle de début et image.
+3. La date de début doit être fournie par `startDate` ou `dtstart` dans l'entrée, ou par le HTML du contenu / de la page liée : JSON-LD `Event.startDate`, microdonnée `itemprop="startDate"`, métadonnée `event:start_time` ou `time.dt-start[datetime]`. Les dates sans fuseau sont interprétées en heure de Paris.
+4. Si le site n'annonce la date qu'en texte libre, ajouter un extracteur dédié, passé en dernier argument du constructeur (voir `ToulouseGameDevGroup.ParseEventStart`). Ne jamais assimiler `pubDate`, `published` ou `updated` à la date de rencontre. Une entrée sans date de début reconnue est ignorée avec un avertissement.
+5. Ajouter dans `groups`, en utilisant exactement le slug du fichier `_groups/{slug}.md` :
+
+```csharp
+new SyndicationGroup("https://communaute.example/evenements/feed/", "{community-slug}", "{community-name}", knownEvts),
+```
+
+Exemple TGD (la date est extraite du texte « Rendez-vous le … à partir de … » de l'article, avec l'année explicite ou celle de son URL) :
+
+```csharp
+new SyndicationGroup("https://toulousegamedev.fr/category/evenements/meetups/feed/", "tgd", "Toulouse Game Dev", knownEvts, ToulouseGameDevGroup.ParseEventStart),
+```
+
+Les nouveaux identifiants sont dérivés de l'identifiant source par SHA-256, sans compteur dépendant de l'ordre du flux. Les événements déjà connus sont reconnus par leur lien et conservent leur identifiant ; les anciens IDs TGD `tgd-YYYY-MM-DD` sont aussi conservés si le titre et la date correspondent à l'ancien lien générique.
+
+6. Vérifier l'image : le lecteur accepte les enclosures image, `media:content` / `media:thumbnail`, puis l'image du flux (`image/url`, `logo`, `icon`). Si aucune image n'est disponible, adapter la source avant de l'activer : l'image locale `event-imgs/{nom-du-fichier-evenement}.webp` reste nécessaire aux sorties du site.
+7. Tester sur une copie de travail : `dotnet run .github/workflows/update.cs -- {community-slug}` (ajouter `--load-past` pour examiner aussi les anciennes entrées). Ce script écrit dans `_events/`, télécharge les images et archive les anciens événements ; ne pas inclure ces changements de données dans une PR de configuration sans les vérifier.
+8. Vérifier qu'une annonce déjà publiée pour une rencontre future est importée à la bonne date, puis que réordonner ou retirer une entrée ne change pas les IDs des autres événements.
+
+Le workflow `.github/workflows/update-data.yml` exécute déjà toutes les sources à 9h et 17h UTC et par déclenchement manuel : aucune étape GitHub Actions supplémentaire n'est nécessaire.
 
 ### 4. Mettre à jour le template des issues et instructions workflow
 
@@ -137,11 +168,12 @@ Adds {community-name} to the Toulouse Tech Hub.
 - Website: {community-url}
 {- Registration: {registration-url} (si différent)}
 {- Meetup sync: Yes (slug: {meetup-slug}) (si détecté)}
+{- RSS/Atom sync: {events-feed-url} (si compatible)}
 
 **Changes:**
 - ✅ Created `_groups/{slug}.md`
 {- ✅ Added logo `groups-imgs/{slug}.jpg` (si applicable)}
-{- ✅ Updated `.github/workflows/update.cs` (si Meetup)}
+{- ✅ Updated `.github/workflows/update.cs` (si Meetup ou RSS/Atom)}
 - ✅ Updated `README.md`
 
 Closes #{issue-number}
@@ -189,6 +221,9 @@ Avant de créer la PR, vérifier :
 - [ ] `README.md` mis à jour **(ordre alphabétique respecté)**
 - [ ] Si Meetup : `.github/workflows/update.cs` mis à jour **(ordre alphabétique par community-slug respecté)**
 - [ ] Si Meetup : le slug Meetup est bien extrait de l'URL
+- [ ] Si RSS/Atom : le flux contient des événements, avec une date de début reconnue distincte de la publication
+- [ ] Si RSS/Atom : les identifiants restent stables après réordonnancement ou retrait d'une entrée
+- [ ] Si RSS/Atom : les images locales sont générées et le fuseau horaire est correct
 
 ## Exemple complet
 

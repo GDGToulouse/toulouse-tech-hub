@@ -79,6 +79,37 @@ dotnet run .github/workflows/update.cs
 
 Le workflow GitHub correspondant est `.github/workflows/update-data.yml`.
 
+## Intégrer une communauté utilisant RSS ou Atom
+
+Indiquer l'URL du flux dans le champ optionnel **Flux RSS ou Atom des événements** du formulaire d'ajout de communauté. Utiliser de préférence un flux dédié aux événements.
+
+Dans le tableau `groups` de `.github/workflows/update.cs`, enregistrer la source avec le même slug que `_groups/{slug}.md` :
+
+```csharp
+new SyndicationGroup("https://communaute.example/evenements/feed/", "slug", "Nom de la communauté", knownEvts),
+```
+
+Le lecteur accepte RSS 2.0 (`item`) et Atom (`entry`). La date réelle de début doit être disponible dans `startDate` / `dtstart` de l'entrée, ou dans le HTML du contenu ou de la page liée (JSON-LD `Event.startDate`, `itemprop="startDate"`, `event:start_time` ou `time.dt-start[datetime]`). Sans fuseau explicite, l'horaire est interprété en heure de Paris. Si la date figure uniquement dans du texte libre, fournir un extracteur spécifique en dernier argument du constructeur, comme `ToulouseGameDevGroup.ParseEventStart`.
+
+Les dates de publication RSS/Atom ne sont jamais utilisées comme dates de rencontre. Une entrée sans date de début reconnue est ignorée avec un avertissement. La publication est conservée séparément ; si elle est absente, invalide ou future, la date d'import est utilisée.
+
+Les IDs des nouvelles entrées sont dérivés du `guid` RSS, de l'`id` Atom ou, à défaut, du lien de l'article. Ils ne dépendent pas de l'ordre du flux. Les événements existants reconnus par leur lien gardent leur ID, ainsi que les anciens événements TGD reconnus par leur titre et leur date.
+
+Vérifier également la présence d'une image (enclosure, média ou image du flux), téléchargée localement dans `event-imgs/`. Les descriptions importées sont converties en texte puis échappées avant leur insertion en HTML.
+
+Le guide [d'ajout de communauté](COPILOT_COMMUNITY_WORKFLOW.md#flux-rss-ou-atom) détaille les vérifications et les fichiers à mettre à jour. Le workflow Update Data traite ces sources sans configuration supplémentaire, à 9h et 17h UTC ou sur déclenchement manuel.
+
+### Vérifier le lecteur RSS/Atom
+
+Avec .NET 10 et les navigateurs Playwright installés :
+
+```bash
+dotnet build .github/workflows/update.cs --output /tmp/toulouse-update-build
+dotnet run .github/tests/syndication.cs -- /tmp/toulouse-update-build/update.dll
+```
+
+Le test utilise des flux et articles locaux, sans modifier `_events/`. Pour utiliser un Chromium déjà installé plutôt que celui de Playwright, définir `PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH` avec le chemin de son exécutable.
+
 ## Ajouter ou modifier un événement
 
 ### Politique de génération

@@ -42,6 +42,16 @@ body:
       required: true
 
   - type: input
+    id: events-feed-url
+    attributes:
+      label: Flux RSS ou Atom des événements (optionnel)
+      description: |
+        Si votre communauté annonce ses événements dans un flux RSS ou Atom, indiquez son URL.
+        Privilégiez un flux dédié aux événements plutôt qu'un flux général d'actualités.
+        La date de la rencontre doit figurer dans le flux ou la page liée, pas seulement la date de publication.
+      placeholder: ex. https://votre-communaute.fr/evenements/feed/
+
+  - type: input
     id: registration-url
     attributes:
       label: Site d'inscription aux événements (optionnel)
@@ -104,7 +114,7 @@ body:
         
         Une fois cette issue créée, GitHub Copilot pourra générer automatiquement :
         - Le fichier `_groups/{slug}.md` avec vos informations
-        - L'ajout dans `.github/workflows/update.cs` si vous utilisez Meetup
+        - L'ajout dans `.github/workflows/update.cs` si vous utilisez Meetup ou un flux RSS/Atom compatible
         - La mise à jour des templates d'issue et du worflow pour l'ajout manuel d'évènements
         - La mise à jour du README.md
         - Une pull request prête à être mergée
