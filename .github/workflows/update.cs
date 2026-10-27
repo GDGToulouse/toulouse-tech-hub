@@ -10,9 +10,12 @@
 
 using Microsoft.Playwright;
 using System.Globalization;
+using System.Net;
 using System.Security.Cryptography;
 using System.Text;
 using System.Text.RegularExpressions;
+using System.Xml;
+using System.Xml.Linq;
 
 // gestion des emoticons
 Console.OutputEncoding = Encoding.UTF8;
@@ -38,8 +41,10 @@ Thread.CurrentThread.CurrentUICulture = french;
 var utf8CustomEncoder = Encoding.GetEncoding("UTF-8", new EncoderReplacementFallback(string.Empty), new DecoderExceptionFallback());
 
 // liste des groupes connus
+List<Event> knownEvts = [];
 var groups = new IGroup[] {
-    new ToulouseGameDevGroup(),
+    new SyndicationGroup("https://toulousegamedev.fr/category/evenements/meetups/feed/", "tgd", "Toulouse Game Dev", knownEvts,
+        ToulouseGameDevGroup.ParseEventStart, "La Mêlée", "27 rue d'Aubuisson, 31000 Toulouse"),
     new MeetupGroup("afup-toulouse", "afup-toulouse"),
     new IcsCalendarGroup("aificionados", "AI-ficionados", "https://api.luma.com/ics/get?entity=calendar&id=cal-tFbPFrunYUVD0iG", "https://toulouse-tech-hub.fr/groups-imgs/aificionados.jpg"),
     new MeetupGroup("agile-toulouse", "agile"),
@@ -87,7 +92,6 @@ var repoRoot = Directory.GetCurrentDirectory();
 /****************************/
 /*   load events from YAML  */
 /****************************/
-List<Event> knownEvts = [];
 {
     var eventsDir = Path.Combine(repoRoot, "_events");
     if (Directory.Exists(eventsDir))
@@ -675,6 +679,274 @@ partial class IcsCalendarGroup : IGroup
     private sealed record IcsProperty(string Name, string Value, Dictionary<string, string> Parameters);
 }
 
+sealed class SyndicationGroup : IGroup
+{
+    private static readonly HttpClient Http = new() { Timeout = TimeSpan.FromSeconds(30) };
+    private const string ContentNamespace = "http://purl.org/rss/1.0/modules/content/";
+    private const string MediaNamespace = "http://search.yahoo.com/mrss/";
+    private const string AtomNamespace = "http://www.w3.org/2005/Atom";
+    private readonly string _feedUrl;
+    private readonly IReadOnlyCollection<Event> _knownEvents;
+    private readonly Func<string, string, DateTimeOffset?>? _parseEventStart;
+    private readonly string? _defaultVenueName;
+    private readonly string? _defaultVenueAddr;
+
+    public SyndicationGroup(string feedUrl, string id, string name, IReadOnlyCollection<Event> knownEvents,
+        Func<string, string, DateTimeOffset?>? parseEventStart = null, string? defaultVenueName = null,
+        string? defaultVenueAddr = null)
+    {
+        _feedUrl = feedUrl;
+        _knownEvents = knownEvents;
+        _parseEventStart = parseEventStart;
+        _defaultVenueName = defaultVenueName;
+        _defaultVenueAddr = defaultVenueAddr;
+        Id = id;
+        Name = name;
+    }
+
+    public string Id { get; }
+
+    public string? Name { get; }
+
+    public async IAsyncEnumerable<Event> Scan(IBrowserContext browserContext, IPage page, bool loadPast)
+    {
+        Console.WriteLine($"🤖 Chargement du flux de {Name}...");
+
+        using var response = await Http.GetAsync(_feedUrl, HttpCompletionOption.ResponseHeadersRead);
+        response.EnsureSuccessStatusCode();
+        await using var stream = await response.Content.ReadAsStreamAsync();
+        using var reader = XmlReader.Create(stream, new XmlReaderSettings
+        {
+            Async = true,
+            DtdProcessing = DtdProcessing.Prohibit,
+            XmlResolver = null
+        });
+
+        var document = await XDocument.LoadAsync(reader, LoadOptions.None, CancellationToken.None);
+        var root = document.Root;
+        if (root == null)
+            yield break;
+
+        var channel = root.Name.LocalName == "rss"
+            ? root.Elements().FirstOrDefault(element => element.Name.LocalName == "channel")
+            : root;
+        var entries = root.Name.LocalName == "rss"
+            ? channel?.Elements().Where(element => element.Name.LocalName == "item")
+            : root.Name.LocalName == "feed"
+                ? root.Elements().Where(element => element.Name.LocalName == "entry")
+                : null;
+
+        if (entries == null)
+            yield break;
+
+        var imageElement = channel?.Elements().FirstOrDefault(element => element.Name.LocalName == "image");
+        var fallbackImage = ReadValue(imageElement, "url") ?? ReadValue(channel, "logo", "icon");
+        var sourceIds = new HashSet<string>(StringComparer.Ordinal);
+        var claimedIds = new HashSet<string>(StringComparer.Ordinal);
+
+        foreach (var entry in entries)
+        {
+            var title = ReadValue(entry, "title");
+            if (string.IsNullOrWhiteSpace(title))
+                continue;
+
+            var linkElement = entry.Elements().FirstOrDefault(element =>
+                element.Name.LocalName == "link" &&
+                ((string?)element.Attribute("rel") == null || (string?)element.Attribute("rel") == "alternate"));
+            var link = (string?)linkElement?.Attribute("href") ?? ReadValue(entry, "link");
+            if (string.IsNullOrWhiteSpace(link) || !Uri.TryCreate(new Uri(_feedUrl), link, out var eventUri) ||
+                (eventUri.Scheme != Uri.UriSchemeHttps && eventUri.Scheme != Uri.UriSchemeHttp))
+                continue;
+            link = eventUri.AbsoluteUri;
+
+            var sourceId = ReadValue(entry, "guid", "id") ?? link;
+            if (!sourceIds.Add(sourceId))
+                continue;
+            var description = entry.Elements().FirstOrDefault(element =>
+                    element.Name.LocalName == "encoded" && element.Name.NamespaceName == ContentNamespace)
+                ?? entry.Elements().FirstOrDefault(element =>
+                    element.Name.LocalName == "content" && element.Name.NamespaceName == AtomNamespace)
+                ?? entry.Elements().FirstOrDefault(element =>
+                    element.Name.LocalName == "description" || element.Name.LocalName == "summary");
+            var rawDescription = description == null
+                ? null
+                : string.Concat(description.Nodes().Select(node => node switch
+                {
+                    XCData cdata => cdata.Value,
+                    XText text => text.Value,
+                    _ => node.ToString(SaveOptions.DisableFormatting)
+                }));
+            var start = ParseStart(ReadValue(entry, "startDate", "dtstart"));
+            if (start == null && rawDescription != null)
+                start = await ReadStartFromHtml(page, rawDescription, link);
+            if (start == null)
+            {
+                try
+                {
+                    var html = await Http.GetStringAsync(eventUri);
+                    start = await ReadStartFromHtml(page, html, link);
+                }
+                catch (HttpRequestException ex)
+                {
+                    Console.WriteLine($"⚠️ Article inaccessible pour {title}: {ex.Message}");
+                }
+                catch (TaskCanceledException)
+                {
+                    Console.WriteLine($"⚠️ Délai dépassé pour {title}");
+                }
+            }
+
+            if (start == null)
+            {
+                Console.WriteLine($"⚠️ Date de début introuvable pour {title}, événement ignoré");
+                continue;
+            }
+            if (!loadPast && start <= FrenchLocales.ParisNow)
+                continue;
+
+            var knownEvent = _knownEvents.FirstOrDefault(evt => evt.GroupId == Id && evt.Href == link)
+                ?? _knownEvents.FirstOrDefault(evt =>
+                    evt.GroupId == Id && evt.Id == $"{Id}-{start:yyyy-MM-dd}" &&
+                    evt.Href == "https://toulousegamedev.fr/evenements/" &&
+                    evt.Start.DateTime == start.Value.DateTime &&
+                    NormalizeTitle(evt.Title) == NormalizeTitle(title));
+            var eventId = knownEvent != null && !claimedIds.Contains(knownEvent.Id)
+                ? knownEvent.Id
+                : $"{Id}-{Convert.ToHexString(SHA256.HashData(Encoding.UTF8.GetBytes(sourceId))).ToLowerInvariant()}";
+            if (!claimedIds.Add(eventId))
+                continue;
+
+            var publishedDate = DateTimeOffset.TryParse(ReadValue(entry, "pubDate", "published", "updated"),
+                CultureInfo.InvariantCulture, DateTimeStyles.AssumeUniversal, out var publication)
+                && publication <= DateTimeOffset.UtcNow ? publication : DateTimeOffset.UtcNow;
+            var plainDescription = rawDescription == null
+                ? null
+                : WebUtility.HtmlDecode(Regex.Replace(rawDescription, "<[^>]*>", " "));
+            var safeDescription = string.IsNullOrWhiteSpace(plainDescription)
+                ? null
+                : $"<p>{WebUtility.HtmlEncode(Regex.Replace(plainDescription, @"\s+", " ").Trim())}</p>";
+
+            yield return new Event
+            {
+                Id = eventId,
+                PublishedOn = TimeZoneInfo.ConvertTime(publishedDate, FrenchLocales.ParisTimeZone),
+                Href = link,
+                Title = title,
+                GroupId = Id,
+                Group = Name!,
+                Start = start.Value,
+                ImgSrc = ResolveHttpUrl(FindImage(entry)) ?? ResolveHttpUrl(fallbackImage),
+                VenueName = NonEmpty(knownEvent?.VenueName) ?? _defaultVenueName,
+                VenueAddr = NonEmpty(knownEvent?.VenueAddr) ?? _defaultVenueAddr,
+                HtmlDescription = safeDescription
+            };
+        }
+    }
+
+    private static string? NonEmpty(string? value) => string.IsNullOrWhiteSpace(value) ? null : value;
+
+    private string? ResolveHttpUrl(string? value) =>
+        !string.IsNullOrWhiteSpace(value) &&
+        Uri.TryCreate(new Uri(_feedUrl), value, out var uri) &&
+        (uri.Scheme == Uri.UriSchemeHttps || uri.Scheme == Uri.UriSchemeHttp)
+            ? uri.AbsoluteUri
+            : null;
+
+    private static string NormalizeTitle(string title) =>
+        Regex.Replace(WebUtility.HtmlDecode(title), @"[\W_]", "").ToLowerInvariant();
+
+    private static DateTimeOffset? ParseStart(string? value)
+    {
+        if (string.IsNullOrWhiteSpace(value))
+            return null;
+        value = value.Trim();
+
+        if (!Regex.IsMatch(value, @"(?:Z|[+-]\d{2}:?\d{2})$", RegexOptions.IgnoreCase))
+        {
+            if (!DateTime.TryParse(value, CultureInfo.InvariantCulture, DateTimeStyles.None, out var local))
+                return null;
+            local = DateTime.SpecifyKind(local, DateTimeKind.Unspecified);
+            if (FrenchLocales.ParisTimeZone.IsInvalidTime(local))
+                return null;
+            return new DateTimeOffset(local, FrenchLocales.ParisTimeZone.GetUtcOffset(local));
+        }
+
+        return DateTimeOffset.TryParse(value, CultureInfo.InvariantCulture, DateTimeStyles.None, out var date)
+            ? TimeZoneInfo.ConvertTime(date, FrenchLocales.ParisTimeZone)
+            : null;
+    }
+
+    private async Task<DateTimeOffset?> ReadStartFromHtml(IPage page, string html, string link)
+    {
+        var values = await page.EvaluateAsync<string[]>("""
+            html => {
+                const doc = new DOMParser().parseFromString(html, 'text/html');
+                const eventDate = doc.querySelector('[itemprop~="startDate"], meta[property="event:start_time"], time.dt-start[datetime]');
+                const findEventStart = value => {
+                    if (!value || typeof value !== 'object') return null;
+                    if (Array.isArray(value)) return value.map(findEventStart).find(Boolean);
+                    const types = [].concat(value['@type'] || []);
+                    if (types.some(type => typeof type === 'string' && /(?:^|[/#])\w*Event$/.test(type)) &&
+                        typeof value.startDate === 'string') return value.startDate;
+                    return Object.values(value).map(findEventStart).find(Boolean);
+                };
+                let start = eventDate?.getAttribute('content') || eventDate?.getAttribute('datetime') || eventDate?.textContent?.trim();
+                for (const script of doc.querySelectorAll('script[type="application/ld+json"]')) {
+                    try { start ||= findEventStart(JSON.parse(script.textContent)); } catch {}
+                }
+                return [start || '', doc.body.textContent || ''];
+            }
+            """, html);
+        return ParseStart(values[0]) ?? _parseEventStart?.Invoke(values[1], link);
+    }
+
+    private static string? ReadValue(XElement? parent, params string[] names)
+    {
+        foreach (var name in names)
+        {
+            var value = parent?.Elements()
+                .FirstOrDefault(element => string.Equals(element.Name.LocalName, name, StringComparison.OrdinalIgnoreCase))
+                ?.Value.Trim();
+            if (!string.IsNullOrEmpty(value))
+                return value;
+        }
+
+        return null;
+    }
+
+    private static string? FindImage(XElement entry)
+    {
+        foreach (var element in entry.Elements())
+        {
+            var isMediaElement = element.Name.NamespaceName == MediaNamespace &&
+                (element.Name.LocalName == "content" || element.Name.LocalName == "thumbnail");
+            var isImageEnclosure = element.Name.LocalName == "enclosure" &&
+                ((string?)element.Attribute("type"))?.StartsWith("image/", StringComparison.OrdinalIgnoreCase) == true;
+            var isImageLink = element.Name.LocalName == "link" &&
+                (string?)element.Attribute("rel") == "enclosure" &&
+                ((string?)element.Attribute("type"))?.StartsWith("image/", StringComparison.OrdinalIgnoreCase) == true;
+
+            if (isMediaElement)
+            {
+                var medium = (string?)element.Attribute("medium");
+                var type = (string?)element.Attribute("type");
+                if ((!string.IsNullOrWhiteSpace(medium) && !string.Equals(medium, "image", StringComparison.OrdinalIgnoreCase)) ||
+                    (!string.IsNullOrWhiteSpace(type) && !type.StartsWith("image/", StringComparison.OrdinalIgnoreCase)))
+                    continue;
+            }
+
+            if (isMediaElement || isImageEnclosure || isImageLink)
+            {
+                var image = (string?)element.Attribute("url") ?? (string?)element.Attribute("href");
+                if (!string.IsNullOrWhiteSpace(image))
+                    return image;
+            }
+        }
+
+        return null;
+    }
+}
+
 partial class MeetupGroup : IGroup
 {
     public static int loadTimeoutMs = 30 * 1000;
@@ -1258,6 +1530,28 @@ partial class ToulouseGameDevGroup : IGroup
     /// </summary>
     [GeneratedRegex(@"^\s*(?:(Au |À |Chez )|\d+[\s,]+(rue|bd|boulevard|allée|av\.?|avenue|chemin|impasse|place|square)\b)", RegexOptions.IgnoreCase | RegexOptions.CultureInvariant)]
     private static partial Regex VenueLineRegex();
+}
+
+partial class ToulouseGameDevGroup
+{
+    public static DateTimeOffset? ParseEventStart(string text, string link)
+    {
+        var match = Regex.Match(text,
+            @"Rendez-vous\s+le\s+(?:\p{L}+\s+)?(?<day>\d{1,2})\s+(?<month>\p{L}+)(?:\s+(?<year>\d{4}))?\s+à\s+partir\s+de\s+(?<hour>\d{1,2})h(?<minute>\d{2})",
+            RegexOptions.IgnoreCase | RegexOptions.CultureInvariant);
+        if (!match.Success)
+            return null;
+
+        var year = match.Groups["year"].Success
+            ? match.Groups["year"].Value
+            : Regex.Match(new Uri(link).AbsolutePath, @"^/(\d{4})/").Groups[1].Value;
+        var dateText = $"{match.Groups["day"]} {match.Groups["month"]} {year} {match.Groups["hour"]}:{match.Groups["minute"]}";
+        if (!DateTime.TryParseExact(dateText, "d MMMM yyyy H:mm", FrenchLocales.FrenchCultureInfo,
+            DateTimeStyles.None, out var date) || FrenchLocales.ParisTimeZone.IsInvalidTime(date))
+            return null;
+
+        return new DateTimeOffset(date, FrenchLocales.ParisTimeZone.GetUtcOffset(date));
+    }
 }
 
 sealed class Event : IComparable<Event>
