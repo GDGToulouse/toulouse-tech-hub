@@ -1536,16 +1536,27 @@ partial class ToulouseGameDevGroup
 {
     public static DateTimeOffset? ParseEventStart(string text, string link)
     {
-        var match = Regex.Match(text,
-            @"Rendez-vous\s+le\s+(?:\p{L}+\s+)?(?<day>\d{1,2})\s+(?<month>\p{L}+)(?:\s+(?<year>\d{4}))?\s+à\s+partir\s+de\s+(?<hour>\d{1,2})h(?<minute>\d{2})",
+        var dateMatch = Regex.Match(text,
+            @"(?:Rendez-vous\s+le\s+)?(?:\p{L}+\s+)?(?<day>\d{1,2})\s+(?<month>\p{L}+)\s*(?<year>\d{4})?\s*(?::|à\s+partir\s+de|à)\s*(?<hour>\d{1,2})h(?<minute>\d{2})",
             RegexOptions.IgnoreCase | RegexOptions.CultureInvariant);
-        if (!match.Success)
-            return null;
+        var timeMatch = dateMatch;
+        if (!dateMatch.Success)
+        {
+            // Some TGD articles state the date separately from the opening time in the schedule.
+            dateMatch = Regex.Match(text,
+                @"La conférence aura lieu le\s+(?:\p{L}+\s+)?(?<day>\d{1,2})\s+(?<month>\p{L}+)\s*(?<year>\d{4})?",
+                RegexOptions.IgnoreCase | RegexOptions.CultureInvariant);
+            timeMatch = Regex.Match(text,
+                @"(?<hour>\d{1,2})h(?<minute>\d{2})\s*[:–-]\s*(?:ouverture|accueil)\b",
+                RegexOptions.IgnoreCase | RegexOptions.CultureInvariant);
+            if (!dateMatch.Success || !timeMatch.Success)
+                return null;
+        }
 
-        var year = match.Groups["year"].Success
-            ? match.Groups["year"].Value
+        var year = dateMatch.Groups["year"].Success
+            ? dateMatch.Groups["year"].Value
             : Regex.Match(new Uri(link).AbsolutePath, @"^/(\d{4})/").Groups[1].Value;
-        var dateText = $"{match.Groups["day"]} {match.Groups["month"]} {year} {match.Groups["hour"]}:{match.Groups["minute"]}";
+        var dateText = $"{dateMatch.Groups["day"]} {dateMatch.Groups["month"]} {year} {timeMatch.Groups["hour"]}:{timeMatch.Groups["minute"]}";
         if (!DateTime.TryParseExact(dateText, "d MMMM yyyy H:mm", FrenchLocales.FrenchCultureInfo,
             DateTimeStyles.None, out var date) || FrenchLocales.ParisTimeZone.IsInvalidTime(date))
             return null;
