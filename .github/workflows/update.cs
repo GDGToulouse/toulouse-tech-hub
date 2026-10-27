@@ -10,8 +10,11 @@
 
 using Microsoft.Playwright;
 using System.Globalization;
+using System.Net;
 using System.Text;
 using System.Text.RegularExpressions;
+using System.Xml;
+using System.Xml.Linq;
 
 // gestion des emoticons
 Console.OutputEncoding = Encoding.UTF8;
@@ -38,7 +41,7 @@ var utf8CustomEncoder = Encoding.GetEncoding("UTF-8", new EncoderReplacementFall
 
 // liste des groupes connus
 var groups = new IGroup[] {
-    new ToulouseGameDevGroup(),
+    new SyndicationGroup("https://toulousegamedev.fr/category/evenements/meetups/feed/", "tgd", "Toulouse Game Dev"),
     new MeetupGroup("afup-toulouse", "afup-toulouse"),
     new MeetupGroup("agile-toulouse", "agile"),
     new MeetupGroup("artilect-fablab", "artilect"),
@@ -374,6 +377,152 @@ interface IGroup
     public string? Name { get; }
 
     IAsyncEnumerable<Event> Scan(IBrowserContext browserContext, IPage page, bool loadPast);
+}
+
+sealed class SyndicationGroup : IGroup
+{
+    private static readonly HttpClient Http = new() { Timeout = TimeSpan.FromSeconds(30) };
+    private const string ContentNamespace = "http://purl.org/rss/1.0/modules/content/";
+    private const string MediaNamespace = "http://search.yahoo.com/mrss/";
+    private readonly string _feedUrl;
+
+    public SyndicationGroup(string feedUrl, string id, string name)
+    {
+        _feedUrl = feedUrl;
+        Id = id;
+        Name = name;
+    }
+
+    public string Id { get; }
+
+    public string? Name { get; }
+
+    public async IAsyncEnumerable<Event> Scan(IBrowserContext browserContext, IPage page, bool loadPast)
+    {
+        Console.WriteLine($"🤖 Chargement du flux de {Name}...");
+
+        using var response = await Http.GetAsync(_feedUrl, HttpCompletionOption.ResponseHeadersRead);
+        response.EnsureSuccessStatusCode();
+        await using var stream = await response.Content.ReadAsStreamAsync();
+        using var reader = XmlReader.Create(stream, new XmlReaderSettings
+        {
+            Async = true,
+            DtdProcessing = DtdProcessing.Prohibit,
+            XmlResolver = null
+        });
+
+        var document = await XDocument.LoadAsync(reader, LoadOptions.None, CancellationToken.None);
+        var root = document.Root;
+        if (root == null)
+            yield break;
+
+        var channel = root.Name.LocalName == "rss"
+            ? root.Elements().FirstOrDefault(element => element.Name.LocalName == "channel")
+            : root;
+        var entries = root.Name.LocalName == "rss"
+            ? channel?.Elements().Where(element => element.Name.LocalName == "item")
+            : root.Name.LocalName == "feed"
+                ? root.Elements().Where(element => element.Name.LocalName == "entry")
+                : null;
+
+        if (entries == null)
+            yield break;
+
+        var imageElement = channel?.Elements().FirstOrDefault(element => element.Name.LocalName == "image");
+        var fallbackImage = ReadValue(imageElement, "url") ?? ReadValue(channel, "logo", "icon");
+        var eventIdsByDate = new Dictionary<string, int>();
+
+        foreach (var entry in entries)
+        {
+            var title = ReadValue(entry, "title");
+            var dateValue = ReadValue(entry, "pubDate", "published", "updated", "date");
+            if (string.IsNullOrWhiteSpace(title) || !DateTimeOffset.TryParse(dateValue, CultureInfo.InvariantCulture, DateTimeStyles.AssumeUniversal, out var publishedDate))
+                continue;
+
+            var start = TimeZoneInfo.ConvertTime(publishedDate, FrenchLocales.ParisTimeZone);
+            if (!loadPast && start <= FrenchLocales.ParisNow)
+                continue;
+
+            var linkElement = entry.Elements().FirstOrDefault(element =>
+                element.Name.LocalName == "link" &&
+                ((string?)element.Attribute("rel") == null || (string?)element.Attribute("rel") == "alternate"));
+            var link = (string?)linkElement?.Attribute("href") ?? ReadValue(entry, "link");
+            if (string.IsNullOrWhiteSpace(link))
+                continue;
+
+            var dateKey = start.ToString("yyyy-MM-dd", CultureInfo.InvariantCulture);
+            var occurrence = eventIdsByDate.GetValueOrDefault(dateKey);
+            eventIdsByDate[dateKey] = occurrence + 1;
+            var eventId = $"{Id}-{dateKey}" + (occurrence == 0 ? "" : $"-{occurrence + 1}");
+            var description = entry.Elements().FirstOrDefault(element => element.Name.LocalName == "encoded" && element.Name.NamespaceName == ContentNamespace)
+                ?? entry.Elements().FirstOrDefault(element => element.Name.LocalName == "content")
+                ?? entry.Elements().FirstOrDefault(element => element.Name.LocalName == "description" || element.Name.LocalName == "summary");
+            var rawDescription = description == null
+                ? null
+                : string.Concat(description.Nodes().Select(node => node switch
+                {
+                    XCData cdata => cdata.Value,
+                    XText text => text.Value,
+                    _ => node.ToString(SaveOptions.DisableFormatting)
+                }));
+            var plainDescription = rawDescription == null
+                ? null
+                : WebUtility.HtmlDecode(Regex.Replace(rawDescription, "<[^>]*>", " "));
+            var safeDescription = string.IsNullOrWhiteSpace(plainDescription)
+                ? null
+                : $"<p>{WebUtility.HtmlEncode(Regex.Replace(plainDescription, @"\s+", " ").Trim())}</p>";
+
+            yield return new Event
+            {
+                Id = eventId,
+                PublishedOn = DateTimeOffset.UtcNow,
+                Href = link,
+                Title = title,
+                GroupId = Id,
+                Group = Name!,
+                Start = start,
+                ImgSrc = FindImage(entry) ?? fallbackImage,
+                HtmlDescription = safeDescription
+            };
+        }
+    }
+
+    private static string? ReadValue(XElement? parent, params string[] names)
+    {
+        foreach (var name in names)
+        {
+            var value = parent?.Elements()
+                .FirstOrDefault(element => string.Equals(element.Name.LocalName, name, StringComparison.OrdinalIgnoreCase))
+                ?.Value.Trim();
+            if (!string.IsNullOrEmpty(value))
+                return value;
+        }
+
+        return null;
+    }
+
+    private static string? FindImage(XElement entry)
+    {
+        foreach (var element in entry.Elements())
+        {
+            var isMediaElement = element.Name.NamespaceName == MediaNamespace &&
+                (element.Name.LocalName == "content" || element.Name.LocalName == "thumbnail");
+            var isImageEnclosure = element.Name.LocalName == "enclosure" &&
+                ((string?)element.Attribute("type"))?.StartsWith("image/", StringComparison.OrdinalIgnoreCase) == true;
+            var isImageLink = element.Name.LocalName == "link" &&
+                (string?)element.Attribute("rel") == "enclosure" &&
+                ((string?)element.Attribute("type"))?.StartsWith("image/", StringComparison.OrdinalIgnoreCase) == true;
+
+            if (isMediaElement || isImageEnclosure || isImageLink)
+            {
+                var image = (string?)element.Attribute("url") ?? (string?)element.Attribute("href");
+                if (!string.IsNullOrWhiteSpace(image))
+                    return image;
+            }
+        }
+
+        return null;
+    }
 }
 
 partial class MeetupGroup : IGroup
