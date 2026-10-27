@@ -1,7 +1,6 @@
 ---
 name: Toulouse Game Dev
 link: https://toulousegamedev.fr/
-img: none
 social:
   - icon: bi-discord
     url: https://discord.gg/ej9YV7r
