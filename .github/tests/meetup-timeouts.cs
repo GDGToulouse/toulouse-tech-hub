@@ -61,8 +61,7 @@ var missingDetail = await Scan(new()
     Details = { ["6"] = new(false), ["7"] = new(true) },
     GotoTimeoutDetails = ["6"]
 });
-Check(missingDetail.Events.Count == 2 && Get<string?>(missingDetail.Events[0], "HtmlDescription") == null &&
-    Get<string?>(missingDetail.Events[1], "HtmlDescription") == "<p>detail 7</p>",
+Check(missingDetail.Events.Count == 1 && Get<string?>(missingDetail.Events[0], "HtmlDescription") == "<p>detail 7</p>",
     "An unusable timed-out detail page is skipped without stopping later events");
 
 var staleDetail = await Scan(new()
@@ -72,11 +71,10 @@ var staleDetail = await Scan(new()
     GotoTimeoutDetails = ["9"],
     PreCommitGotoTimeoutDetails = ["9"]
 });
-Check(staleDetail.Events.Count == 3 &&
+Check(staleDetail.Events.Count == 2 &&
     Get<string?>(staleDetail.Events[0], "HtmlDescription") == "<p>detail 8</p>" &&
-    Get<string?>(staleDetail.Events[1], "HtmlDescription") == null &&
-    Get<string?>(staleDetail.Events[2], "HtmlDescription") == "<p>detail 10</p>",
-    "A pre-commit detail timeout cannot reuse the previous event DOM and later events still parse");
+    Get<string?>(staleDetail.Events[1], "HtmlDescription") == "<p>detail 10</p>",
+    "A pre-commit detail timeout skips the failed event and later events still parse");
 
 var staleList = await Scan(new()
 {

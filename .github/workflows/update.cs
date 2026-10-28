@@ -1043,9 +1043,9 @@ partial class MeetupGroup : IGroup
             {
                 // on scanne la page de chaque évènement pour obtenir des infos complémentaires
                 // UNIQUEMENT sur les évènements à venir : meetup bloque l'affichage des évènements passés pour les non membres
-                if (!past)
+                if (!past && !await ScanDetailPage(evtPage, evt))
                 {
-                    await ScanDetailPage(evtPage, evt);
+                    continue;
                 }
 
                 yield return evt;
@@ -1261,7 +1261,7 @@ partial class MeetupGroup : IGroup
             string.Equals(QueryValue(current, "type"), requestedType, StringComparison.OrdinalIgnoreCase);
     }
 
-    private static async Task ScanDetailPage(IPage evtPage, Event evt)
+    private static async Task<bool> ScanDetailPage(IPage evtPage, Event evt)
     {
         Console.Write($"🔹⏳ Chargement page détail évènement {evt.Title}...");
         var loadTimedOut = false;
@@ -1289,7 +1289,7 @@ partial class MeetupGroup : IGroup
         if (loadTimedOut && !IsExpectedMeetupPage(evtPage.Url, evt.Href))
         {
             Console.WriteLine($"🔹⚠️ Navigation interrompue avant le chargement du détail, abandon...");
-            return;
+            return false;
         }
 
         // full image, optionnel
@@ -1303,7 +1303,7 @@ partial class MeetupGroup : IGroup
         if (loadTimedOut && await loc.CountAsync() == 0)
         {
             Console.WriteLine($"🔹⚠️ Contenu détail indisponible après timeout, abandon...");
-            return;
+            return false;
         }
         evt.HtmlDescription = await loc.InnerHTMLAsync();
         evt.TextDescription = await loc.TextContentAsync();
@@ -1338,6 +1338,8 @@ partial class MeetupGroup : IGroup
                 evt.VenueAddr = evt.VenueAddr.Replace(" · ", " ");
             }
         }
+
+        return true;
     }
 
     [GeneratedRegex(@"query=(-?[\d\.]+)%2C%20(-?[\d\.]+)$", RegexOptions.IgnoreCase, "fr-FR")]
