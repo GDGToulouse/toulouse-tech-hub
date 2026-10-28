@@ -1001,14 +1001,17 @@ partial class MeetupGroup : IGroup
         Console.Write($"⏳ Chargement page évènements Meetup {_slug} {(past ? "précédents" : "à venir")}...");
         page.Request += Page_Request;
         page.RequestFinished += Page_RequestFinished;
-        await page.GotoAsync($"{_url}/events/?type={(past ? "past" : "upcoming")}");
+        var listUrl = $"{_url}/events/?type={(past ? "past" : "upcoming")}";
+        var listLoadTimedOut = false;
         try
         {
+            await page.GotoAsync(listUrl);
             await page.WaitForLoadStateAsync(loadStateType, new PageWaitForLoadStateOptions { Timeout = loadTimeoutMs });
             Console.WriteLine($" ✅ terminé");
         }
         catch (TimeoutException)
         {
+            listLoadTimedOut = true;
             if (loadTimeoutScreenshots)
             {
                 var bytes = await page.ScreenshotAsync();
@@ -1023,6 +1026,11 @@ partial class MeetupGroup : IGroup
 
         page.Request -= Page_Request;
         page.RequestFinished -= Page_RequestFinished;
+        if (listLoadTimedOut && !IsExpectedMeetupPage(page.Url, listUrl, checkListType: true))
+        {
+            Console.WriteLine($" ⚠️ navigation interrompue avant le chargement de la liste, abandon...");
+            yield break;
+        }
 
         // on récupère le nom du groupe
         Name = (await page.TitleAsync()).Replace(" Événements", "");
@@ -1217,17 +1225,55 @@ partial class MeetupGroup : IGroup
         };
     }
 
+    private static bool IsExpectedMeetupPage(string currentUrl, string requestedUrl, bool checkListType = false)
+    {
+        if (!Uri.TryCreate(currentUrl, UriKind.Absolute, out var current) ||
+            !Uri.TryCreate(requestedUrl, UriKind.Absolute, out var requested))
+        {
+            return false;
+        }
+
+        static string CanonicalHost(string host) =>
+            host.StartsWith("www.", StringComparison.OrdinalIgnoreCase) ? host[4..] : host;
+
+        static string CanonicalPath(Uri uri) => uri.AbsolutePath.TrimEnd('/');
+
+        if (!string.Equals(CanonicalHost(current.Host), CanonicalHost(requested.Host), StringComparison.OrdinalIgnoreCase) ||
+            !string.Equals(CanonicalPath(current), CanonicalPath(requested), StringComparison.OrdinalIgnoreCase))
+        {
+            return false;
+        }
+
+        if (!checkListType)
+        {
+            return true;
+        }
+
+        static string? QueryValue(Uri uri, string name) =>
+            uri.Query.TrimStart('?').Split('&', StringSplitOptions.RemoveEmptyEntries)
+                .Select(part => part.Split('=', 2))
+                .FirstOrDefault(parts => Uri.UnescapeDataString(parts[0].Replace('+', ' ')) == name) is { } match
+                ? Uri.UnescapeDataString(match.ElementAtOrDefault(1)?.Replace('+', ' ') ?? "")
+                : null;
+
+        var requestedType = QueryValue(requested, "type");
+        return requestedType is not null &&
+            string.Equals(QueryValue(current, "type"), requestedType, StringComparison.OrdinalIgnoreCase);
+    }
+
     private static async Task ScanDetailPage(IPage evtPage, Event evt)
     {
         Console.Write($"🔹⏳ Chargement page détail évènement {evt.Title}...");
-        await evtPage.GotoAsync(evt.Href);
+        var loadTimedOut = false;
         try
         {
+            await evtPage.GotoAsync(evt.Href);
             await evtPage.WaitForLoadStateAsync(loadStateType, new PageWaitForLoadStateOptions { Timeout = loadTimeoutMs });
             Console.WriteLine($" ✅ terminé");
         }
         catch (TimeoutException)
         {
+            loadTimedOut = true;
             if (loadTimeoutScreenshots)
             {
                 var bytes = await evtPage.ScreenshotAsync();
@@ -1240,6 +1286,12 @@ partial class MeetupGroup : IGroup
             }
         }
 
+        if (loadTimedOut && !IsExpectedMeetupPage(evtPage.Url, evt.Href))
+        {
+            Console.WriteLine($"🔹⚠️ Navigation interrompue avant le chargement du détail, abandon...");
+            return;
+        }
+
         // full image, optionnel
         var imgs = evtPage.Locator("main aside img[fetchpriority='high'].object-center");
         if (await imgs.CountAsync() != 0)
@@ -1248,6 +1300,11 @@ partial class MeetupGroup : IGroup
         }
 
         var loc = evtPage.Locator("main section div.flex.flex-col.items-start.gap-ds2-16");
+        if (loadTimedOut && await loc.CountAsync() == 0)
+        {
+            Console.WriteLine($"🔹⚠️ Contenu détail indisponible après timeout, abandon...");
+            return;
+        }
         evt.HtmlDescription = await loc.InnerHTMLAsync();
         evt.TextDescription = await loc.TextContentAsync();
 
